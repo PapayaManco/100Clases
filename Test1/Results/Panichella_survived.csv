@@ -1,0 +1,7 @@
+mutant_name,n_before,n_after
+ReplaceComparisonOperator,1629,1602
+ReplaceArithmeticOperator,236,201
+ReplaceVariable,2248,2214
+InsertUnaryOp,1933,1854
+ReplaceConstant,3089,3082
+ReplaceBitwiseOperator,21,17

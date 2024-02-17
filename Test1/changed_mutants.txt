@@ -1,0 +1,120 @@
+Los mutantes que cambian de la clase:CronText
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> MINUTELY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> DAILY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> HOURLY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> MONTHLY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->InsertUnaryOp Negation of frequency 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceConstant 4 -> 0 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceConstant 4 -> -1 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> HOURLY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> MINUTELY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> MONTHLY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> NO_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> WEEKLY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceConstant 5 -> 6 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceComparisonOperator == -> -2 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> YEARLY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceVariable frequency -> MONTHLY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->InsertUnaryOp Negation of frequency 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->InsertUnaryOp IINC 1 frequency 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceConstant 7 -> 0 
+ com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64-->ReplaceConstant 7 -> -1 
+ com.liferay.portal.kernel.scheduler.CronText.setInterval(I)V:79-->ReplaceVariable interval -> DAILY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:93-->ReplaceArithmeticOperator + -> * 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:97-->InsertUnaryOp -1 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:100-->ReplaceVariable _frequency -> NO_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:100-->ReplaceConstant 2 -> 3 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:101-->ReplaceConstant *_/ ->  
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:101-->ReplaceVariable _interval -> MONTHLY_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:101-->ReplaceVariable _interval -> NO_FREQUENCY 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:102-->ReplaceConstant * ->  
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:104-->ReplaceConstant * ->  
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:108-->InsertUnaryOp Negation 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:108-->ReplaceConstant 3 -> 1 
+ com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String:108-->ReplaceConstant 3 -> 4 
+Los mutantes que cambian de la clase:AZMessageDecoder
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.<init>()V:47-->ReplaceConstant 4 -> 5 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.<init>()V:56-->ReplaceConstant 0 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.<init>()V:66-->ReplaceConstant 0 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.<init>()V:70-->ReplaceConstant 131072 -> 0 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.<init>()V:70-->ReplaceConstant 131072 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.<init>()V:70-->ReplaceConstant 131072 -> -1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.<init>()V:70-->ReplaceConstant 131072 -> 131071 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.<init>()V:70-->ReplaceConstant 131072 -> 131073 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.setMaximumMessageSize(I)V:80-->InsertUnaryOp IINC 1 max_bytes 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.setMaximumMessageSize(I)V:80-->InsertUnaryOp IINC -1 max_bytes 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:89-->ReplaceVariable bytes_remaining -> max_bytes 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:89-->ReplaceComparisonOperator <= -> < 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:90-->ReplaceComparisonOperator == -> != 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:102-->ReplaceVariable bytes_remaining -> max_bytes 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:102-->InsertUnaryOp IINC 1 bytes_remaining 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:104-->InsertUnaryOp Negation of bytes_possible 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:104-->InsertUnaryOp IINC 1 bytes_possible 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:112-->ReplaceConstant 1 -> 0 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:115-->ReplaceConstant 0 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:115-->ReplaceConstant 2 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:115-->ReplaceConstant 2 -> -1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:115-->ReplaceConstant 2 -> 3 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:118-->ReplaceComparisonOperator <= -> -1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:122-->ReplaceVariable bytes_remaining -> bytes_possible 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:122-->ReplaceVariable bytes_remaining -> max_bytes 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:122-->ReplaceVariable bytes_read -> max_bytes 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:122-->ReplaceVariable bytes_read -> bytes_remaining 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:122-->ReplaceArithmeticOperator -> + 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:124-->InsertUnaryOp Negation of bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:124-->InsertUnaryOp IINC -1 bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:124-->ReplaceVariable bytes_possible -> max_bytes 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:124-->ReplaceVariable bytes_possible -> bytes_remaining 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:124-->InsertUnaryOp Negation of bytes_possible 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:124-->InsertUnaryOp IINC 1 bytes_possible 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:124-->ReplaceComparisonOperator >= -> -1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.performStreamDecode(Lcom/aelitis/azureus/core/networkmanager/Transport:124-->ReplaceComparisonOperator >= -> > 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.destroy()Ljava/nio/ByteBuffer:160-->ReplaceConstant 1 -> 0 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.destroy()Ljava/nio/ByteBuffer:161-->ReplaceConstant 1 -> 0 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:219-->InsertUnaryOp IINC 1 allowed 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:225-->ReplaceConstant 0 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:227-->ReplaceConstant 0 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:228-->ReplaceConstant 0 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:230-->ReplaceVariable start_buff -> allowed 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:230-->ReplaceVariable i -> start_buff 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:230-->InsertUnaryOp IINC 1 i 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:230-->ReplaceConstant 2 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:231-->ReplaceVariable i -> start_buff 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:231-->InsertUnaryOp Negation of i 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:231-->InsertUnaryOp IINC -1 i 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:238-->InsertUnaryOp IINC 1 shrink_remaining_buffers 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:239-->ReplaceConstant 0 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:244-->ReplaceVariable remaining -> i 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:244-->ReplaceVariable remaining -> start_buff 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:244-->InsertUnaryOp IINC 1 remaining 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:246-->InsertUnaryOp IINC 1 marked 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:246-->InsertUnaryOp IINC -1 marked 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:247-->ReplaceVariable i -> bytes_available 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:247-->ReplaceVariable i -> allowed 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:247-->ReplaceVariable i -> remaining 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:247-->InsertUnaryOp Negation of i 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.preReadProcess(I)I:247-->InsertUnaryOp IINC 1 i 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:274-->ReplaceComparisonOperator != -> == 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:276-->InsertUnaryOp Negation 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:277-->ReplaceConstant 4 -> -1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->ReplaceVariable curr_position -> prot_bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->ReplaceVariable curr_position -> data_bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->InsertUnaryOp Negation of curr_position 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->InsertUnaryOp IINC 1 curr_position 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->InsertUnaryOp IINC -1 curr_position 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->InsertUnaryOp +1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->ReplaceArithmeticOperator -> % 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->ReplaceArithmeticOperator -> * 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:280-->ReplaceArithmeticOperator -> / 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:282-->InsertUnaryOp IINC 1 curr_position 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:282-->ReplaceConstant 4 -> 1 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:282-->ReplaceComparisonOperator < -> -2 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->ReplaceVariable id_size -> prot_bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->ReplaceVariable id_size -> data_bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->InsertUnaryOp Negation of id_size 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->ReplaceVariable id_size -> prot_bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->ReplaceVariable id_size -> data_bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->InsertUnaryOp Negation of id_size 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->ReplaceVariable id_size -> prot_bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->ReplaceVariable id_size -> data_bytes_read 
+ com.aelitis.azureus.core.peermanager.messaging.azureus.AZMessageDecoder.postReadProcess()I:286-->InsertUnaryOp Negation of id_size 
