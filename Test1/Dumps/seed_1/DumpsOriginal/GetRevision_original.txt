@@ -1,0 +1,111 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: net.sourceforge.jwbf.inyoka.actions.GetRevision
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/23_jwbf/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class net.sourceforge.jwbf.inyoka.actions.GetRevision
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 185
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 63 / 185
+* Search finished after 181s and 5395 generations, 1342325 statements, best individual has fitness: 34.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 80%
+* Total number of goals: 55
+* Number of covered goals: 44
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 87%
+* Total number of goals: 30
+* Number of covered goals: 26
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 89%
+* Total number of goals: 46
+* Number of covered goals: 41
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 58%
+* Total number of goals: 12
+* Number of covered goals: 7
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 87%
+* Total number of goals: 30
+* Number of covered goals: 26
+* Generated 15 tests with total length 40
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 43%
+* There are surviving mutants: 
+--> Mutation 0: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:45 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 1: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:46 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 2: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:47 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 3: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:51 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 4: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:59 - ReplaceComparisonOperator > -> -2 - Status: Killed
+--> Mutation 5: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:59 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 6: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:59 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 7: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:60 - ReplaceConstant - articlename is empty ->  - Status: Survived
+--> Mutation 8: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:66 - ReplaceConstant - / ->  - Status: Killed
+--> Mutation 9: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:66 - ReplaceConstant - ?action=export&format=raw& ->  - Status: Killed
+--> Mutation 10: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:67 - ReplaceConstant - / ->  - Status: Killed
+--> Mutation 11: net.sourceforge.jwbf.inyoka.actions.GetRevision.<init>(Ljava/lang/String;)V:68 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 12: net.sourceforge.jwbf.inyoka.actions.GetRevision.processReturningText(Ljava/lang/String;Lnet/sourceforge/jwbf/core/actions/util/HttpAction;)Ljava/lang/String;:78 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 13: net.sourceforge.jwbf.inyoka.actions.GetRevision.processReturningText(Ljava/lang/String;Lnet/sourceforge/jwbf/core/actions/util/HttpAction;)Ljava/lang/String;:80 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 14: net.sourceforge.jwbf.inyoka.actions.GetRevision.processReturningText(Ljava/lang/String;Lnet/sourceforge/jwbf/core/actions/util/HttpAction;)Ljava/lang/String;:82 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 15: net.sourceforge.jwbf.inyoka.actions.GetRevision.processReturningText(Ljava/lang/String;Lnet/sourceforge/jwbf/core/actions/util/HttpAction;)Ljava/lang/String;:82 - ReplaceConstant - ?action=diff&version= ->  - Status: Survived
+--> Mutation 16: net.sourceforge.jwbf.inyoka.actions.GetRevision.processReturningText(Ljava/lang/String;Lnet/sourceforge/jwbf/core/actions/util/HttpAction;)Ljava/lang/String;:82 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 17: net.sourceforge.jwbf.inyoka.actions.GetRevision.processReturningText(Ljava/lang/String;Lnet/sourceforge/jwbf/core/actions/util/HttpAction;)Ljava/lang/String;:82 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 18: net.sourceforge.jwbf.inyoka.actions.GetRevision.processReturningText(Ljava/lang/String;Lnet/sourceforge/jwbf/core/actions/util/HttpAction;)Ljava/lang/String;:82 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 19: net.sourceforge.jwbf.inyoka.actions.GetRevision.processReturningText(Ljava/lang/String;Lnet/sourceforge/jwbf/core/actions/util/HttpAction;)Ljava/lang/String;:84 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 20: net.sourceforge.jwbf.inyoka.actions.GetRevision.parse(Ljava/lang/String;)V:103 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 21: net.sourceforge.jwbf.inyoka.actions.GetRevision.parse(Ljava/lang/String;)V:104 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 22: net.sourceforge.jwbf.inyoka.actions.GetRevision.parse(Ljava/lang/String;)V:109 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 23: net.sourceforge.jwbf.inyoka.actions.GetRevision.parse(Ljava/lang/String;)V:112 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 24: net.sourceforge.jwbf.inyoka.actions.GetRevision.parse(Ljava/lang/String;)V:118 - ReplaceConstant - no date found ->  - Status: Survived
+--> Mutation 25: net.sourceforge.jwbf.inyoka.actions.GetRevision.parse(Ljava/lang/String;)V:123 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 26: net.sourceforge.jwbf.inyoka.actions.GetRevision.parse(Ljava/lang/String;)V:125 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 27: net.sourceforge.jwbf.inyoka.actions.GetRevision.parse(Ljava/lang/String;)V:128 - ReplaceConstant - no edit sum found found ->  - Status: Survived
+--> Mutation 28: net.sourceforge.jwbf.inyoka.actions.GetRevision.parseVersion(Ljava/lang/String;)V:136 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 29: net.sourceforge.jwbf.inyoka.actions.GetRevision.parseVersion(Ljava/lang/String;)V:137 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 30: net.sourceforge.jwbf.inyoka.actions.GetRevision.hasMoreMessages()Z:147 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 31: net.sourceforge.jwbf.inyoka.actions.GetRevision.hasMoreMessages()Z:147 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 32: net.sourceforge.jwbf.inyoka.actions.GetRevision.hasMoreMessages()Z:147 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 33: net.sourceforge.jwbf.inyoka.actions.GetRevision.hasMoreMessages()Z:147 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 34: net.sourceforge.jwbf.inyoka.actions.GetRevision.hasMoreMessages()Z:147 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 35: net.sourceforge.jwbf.inyoka.actions.GetRevision.hasMoreMessages()Z:147 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 36: net.sourceforge.jwbf.inyoka.actions.GetRevision.hasMoreMessages()Z:148 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 37: net.sourceforge.jwbf.inyoka.actions.GetRevision.hasMoreMessages()Z:149 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 38: net.sourceforge.jwbf.inyoka.actions.GetRevision.getNextMessage()Lnet/sourceforge/jwbf/core/actions/util/HttpAction;:153 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 39: net.sourceforge.jwbf.inyoka.actions.GetRevision.getNextMessage()Lnet/sourceforge/jwbf/core/actions/util/HttpAction;:153 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 40: net.sourceforge.jwbf.inyoka.actions.GetRevision.getNextMessage()Lnet/sourceforge/jwbf/core/actions/util/HttpAction;:154 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 41: net.sourceforge.jwbf.inyoka.actions.GetRevision.getNextMessage()Lnet/sourceforge/jwbf/core/actions/util/HttpAction;:156 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 42: net.sourceforge.jwbf.inyoka.actions.GetRevision.getNextMessage()Lnet/sourceforge/jwbf/core/actions/util/HttpAction;:156 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 43: net.sourceforge.jwbf.inyoka.actions.GetRevision.getNextMessage()Lnet/sourceforge/jwbf/core/actions/util/HttpAction;:157 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 44: net.sourceforge.jwbf.inyoka.actions.GetRevision.getNextMessage()Lnet/sourceforge/jwbf/core/actions/util/HttpAction;:160 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 45: net.sourceforge.jwbf.inyoka.actions.GetRevision.isSelfExecuter()Z:170 - ReplaceConstant - 0 -> 1 - Status: Killed
+* Compiling and checking tests
+* Computation finished

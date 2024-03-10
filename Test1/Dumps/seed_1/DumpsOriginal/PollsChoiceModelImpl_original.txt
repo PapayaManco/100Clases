@@ -1,0 +1,12 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:53:39.579 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+* Writing JUnit test case 'PollsChoiceModelImpl_ESTest' to test_seeds/seed_1/tests
+* Error while initializing target class: java.lang.ExceptionInInitializerError
+* Computation finished

@@ -1,0 +1,128 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.yahoo.platform.yui.compressor.ScriptOrFnScope
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/22_byuic/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.yahoo.platform.yui.compressor.ScriptOrFnScope
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 246
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 87 / 246
+[MASTER] 13:20:06.649 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V: I217 Branch 17 IF_ICMPGE L155 - false
+* Search finished after 181s and 3679 generations, 3478393 statements, best individual has fitness: 57.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 81%
+* Total number of goals: 79
+* Number of covered goals: 64
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 77%
+* Total number of goals: 39
+* Number of covered goals: 30
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 72%
+* Total number of goals: 58
+* Number of covered goals: 42
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 77%
+* Total number of goals: 13
+* Number of covered goals: 10
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 77%
+* Total number of goals: 39
+* Number of covered goals: 30
+* Generated 18 tests with total length 48
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 52%
+* There are surviving mutants: 
+--> Mutation 0: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:22 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 1: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:23 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 2: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:26 - InsertUnaryOp Negation of braceNesting - Status: Killed
+--> Mutation 3: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:26 - InsertUnaryOp IINC 1 braceNesting - Status: Killed
+--> Mutation 4: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:26 - InsertUnaryOp IINC -1 braceNesting - Status: Killed
+--> Mutation 5: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:27 - ReplaceVariable parentScope -> this - Status: Killed
+--> Mutation 6: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:29 - ReplaceVariable parentScope -> this - Status: Killed
+--> Mutation 7: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:29 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 8: com.yahoo.platform.yui.compressor.ScriptOrFnScope.<init>(ILcom/yahoo/platform/yui/compressor/ScriptOrFnScope;)V:30 - ReplaceVariable parentScope -> this - Status: Killed
+--> Mutation 9: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getBraceNesting()I:35 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 10: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getBraceNesting()I:35 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 11: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getBraceNesting()I:35 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 12: com.yahoo.platform.yui.compressor.ScriptOrFnScope.declareIdentifier(Ljava/lang/String;)Lcom/yahoo/platform/yui/compressor/JavaScriptIdentifier;:44 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 13: com.yahoo.platform.yui.compressor.ScriptOrFnScope.addHint(Ljava/lang/String;Ljava/lang/String;)V:56 - ReplaceVariable variableName -> variableType - Status: Survived
+--> Mutation 14: com.yahoo.platform.yui.compressor.ScriptOrFnScope.addHint(Ljava/lang/String;Ljava/lang/String;)V:56 - ReplaceVariable variableType -> variableName - Status: Survived
+--> Mutation 15: com.yahoo.platform.yui.compressor.ScriptOrFnScope.preventMunging()V:60 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 16: com.yahoo.platform.yui.compressor.ScriptOrFnScope.preventMunging()V:63 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 17: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getUsedSymbols()Ljava/util/ArrayList;:70 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 18: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getUsedSymbols()Ljava/util/ArrayList;:73 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 19: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getAllUsedSymbols()Ljava/util/ArrayList;:84 - ReplaceVariable scope -> this - Status: Killed
+--> Mutation 20: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getAllUsedSymbols()Ljava/util/ArrayList;:84 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 21: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getAllUsedSymbols()Ljava/util/ArrayList;:85 - ReplaceVariable scope -> this - Status: Survived
+--> Mutation 22: com.yahoo.platform.yui.compressor.ScriptOrFnScope.getAllUsedSymbols()Ljava/util/ArrayList;:86 - ReplaceVariable scope -> this - Status: Killed
+--> Mutation 23: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:92 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 24: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:92 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 25: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:92 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 26: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:92 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 27: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:92 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 28: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:92 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 29: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:92 - ReplaceArithmeticOperator + -> * - Status: Killed
+--> Mutation 30: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:92 - ReplaceArithmeticOperator + -> / - Status: Killed
+--> Mutation 31: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:93 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 32: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:93 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 33: com.yahoo.platform.yui.compressor.ScriptOrFnScope.incrementVarCount()I:93 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 34: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:98 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 35: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:98 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 36: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:103 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 37: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:106 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 38: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:112 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 39: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:112 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 40: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:112 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 41: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:113 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 42: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:113 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 43: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:113 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 44: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:113 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 45: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:117 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 46: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:117 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 47: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:117 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 48: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:118 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 49: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:118 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 50: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:118 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 51: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:118 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 52: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:118 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 53: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:122 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 54: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:122 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 55: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:122 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 56: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:123 - ReplaceConstant - The YUI Compressor ran out of symbols. Aborting... ->  - Status: Survived
+--> Mutation 57: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:127 - ReplaceComparisonOperator == -> != - Status: Killed
+* Compiling and checking tests
+* Writing tests to file
+* Writing JUnit test case 'ScriptOrFnScope_ESTest' to test_seeds/seed_1/tests_injected
+* Done!
+
+* Computation finished

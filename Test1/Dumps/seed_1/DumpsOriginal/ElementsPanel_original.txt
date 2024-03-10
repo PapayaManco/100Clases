@@ -1,0 +1,37 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: corina.gui.ElementsPanel
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/35_corina/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 21:46:34.525 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 21:46:34.787 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 21:46:36.463 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class corina.gui.ElementsPanel
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1079
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 327 / 1079
+[MASTER] 21:46:37.687 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 21:46:37.982 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 21:46:37.995 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 21:46:38.010 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 21:46:41.630 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 21:46:43.295 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 21:47:12.956 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 21:48:16.844 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 21:48:27.516 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E>.KeySelectionManager : Type points to itself
+* Search finished after 181s and 681 generations, 69846 statements, best individual has fitness: 972.0
+* Computation finished

@@ -1,0 +1,186 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.lts.util.scheduler.NewScheduler
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 14:33:25.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class com.lts.util.scheduler.NewScheduler
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 306
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 133 / 306
+* Search finished after 183s and 1 generations, 705 statements, best individual has fitness: 119.0
+* Minimizing test suite
+[MASTER] 14:47:14.999 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 80%
+* Total number of goals: 82
+* Number of covered goals: 66
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 56%
+* Total number of goals: 39
+* Number of covered goals: 22
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 81%
+* Total number of goals: 111
+* Number of covered goals: 90
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 29%
+* Total number of goals: 7
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 72%
+* Total number of goals: 39
+* Number of covered goals: 28
+* Generated 20 tests with total length 428
+* Resulting test suite's coverage: 61% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 14:57:15.236 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 39%
+* There are surviving mutants: 
+--> Mutation 0: com.lts.util.scheduler.NewScheduler.getInstance()Lcom/lts/util/scheduler/NewScheduler;:78 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 1: com.lts.util.scheduler.NewScheduler.startSystem()V:86 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 2: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceVariable sleepTime -> CYCLE_TIME - Status: Survived
+--> Mutation 3: com.lts.util.scheduler.NewScheduler.process()V:113 - InsertUnaryOp Negation of sleepTime - Status: Survived
+--> Mutation 4: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceConstant - 2000 -> 0 - Status: Survived
+--> Mutation 5: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceConstant - 2000 -> 1 - Status: Survived
+--> Mutation 6: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceConstant - 2000 -> -1 - Status: Survived
+--> Mutation 7: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceConstant - 2000 -> 1999 - Status: Survived
+--> Mutation 8: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceConstant - 2000 -> 2001 - Status: Survived
+--> Mutation 9: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 10: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 11: com.lts.util.scheduler.NewScheduler.process()V:113 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 12: com.lts.util.scheduler.NewScheduler.process()V:114 - ReplaceConstant - 2000 -> 0 - Status: Survived
+--> Mutation 13: com.lts.util.scheduler.NewScheduler.process()V:114 - ReplaceConstant - 2000 -> 1 - Status: Survived
+--> Mutation 14: com.lts.util.scheduler.NewScheduler.process()V:114 - ReplaceConstant - 2000 -> -1 - Status: Survived
+--> Mutation 15: com.lts.util.scheduler.NewScheduler.process()V:114 - ReplaceConstant - 2000 -> 1999 - Status: Survived
+--> Mutation 16: com.lts.util.scheduler.NewScheduler.process()V:114 - ReplaceConstant - 2000 -> 2001 - Status: Survived
+--> Mutation 17: com.lts.util.scheduler.NewScheduler.process()V:116 - ReplaceVariable sleepTime -> CYCLE_TIME - Status: Survived
+--> Mutation 18: com.lts.util.scheduler.NewScheduler.process()V:116 - InsertUnaryOp Negation of sleepTime - Status: Killed
+--> Mutation 19: com.lts.util.scheduler.NewScheduler.deliverEvents()V:124 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 20: com.lts.util.scheduler.NewScheduler.deliverEvents()V:124 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 21: com.lts.util.scheduler.NewScheduler.deliverEvents()V:124 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 22: com.lts.util.scheduler.NewScheduler.deliverEvents()V:125 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 23: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 24: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 25: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - ReplaceVariable now -> CYCLE_TIME - Status: Survived
+--> Mutation 26: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - InsertUnaryOp Negation of now - Status: Survived
+--> Mutation 27: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 28: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 29: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 30: com.lts.util.scheduler.NewScheduler.deliverEvents()V:131 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 31: com.lts.util.scheduler.NewScheduler.deliverEvents()V:132 - ReplaceVariable temp -> event - Status: Survived
+--> Mutation 32: com.lts.util.scheduler.NewScheduler.deliverEvents()V:132 - ReplaceVariable event -> temp - Status: Survived
+--> Mutation 33: com.lts.util.scheduler.NewScheduler.deliverEvents()V:132 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 34: com.lts.util.scheduler.NewScheduler.deliverEvents()V:134 - ReplaceConstant - impossible state! ->  - Status: Survived
+--> Mutation 35: com.lts.util.scheduler.NewScheduler.deliverEvents()V:137 - ReplaceVariable event -> temp - Status: Survived
+--> Mutation 36: com.lts.util.scheduler.NewScheduler.deliverEvents()V:137 - ReplaceVariable event -> temp - Status: Survived
+--> Mutation 37: com.lts.util.scheduler.NewScheduler.deliverEvents()V:139 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 38: com.lts.util.scheduler.NewScheduler.deliverEvents()V:139 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 39: com.lts.util.scheduler.NewScheduler.deliverEvents()V:139 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 40: com.lts.util.scheduler.NewScheduler.deliverEvents()V:140 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 41: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:148 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 42: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:148 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 43: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:148 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 44: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:149 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 45: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceVariable now -> CYCLE_TIME - Status: Killed
+--> Mutation 46: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - InsertUnaryOp Negation of now - Status: Killed
+--> Mutation 47: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceConstant - 2000 -> 0 - Status: Killed
+--> Mutation 48: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceConstant - 2000 -> 1 - Status: Killed
+--> Mutation 49: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceConstant - 2000 -> -1 - Status: Killed
+--> Mutation 50: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceConstant - 2000 -> 1999 - Status: Killed
+--> Mutation 51: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceConstant - 2000 -> 2001 - Status: Killed
+--> Mutation 52: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 53: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 54: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceArithmeticOperator + -> * - Status: Killed
+--> Mutation 55: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:152 - ReplaceArithmeticOperator + -> / - Status: Killed
+--> Mutation 56: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:153 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 57: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:153 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 58: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:153 - ReplaceVariable wakeTime -> CYCLE_TIME - Status: Survived
+--> Mutation 59: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:153 - ReplaceVariable wakeTime -> now - Status: Survived
+--> Mutation 60: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:153 - InsertUnaryOp Negation of wakeTime - Status: Survived
+--> Mutation 61: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:153 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 62: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:153 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 63: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:153 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 64: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:154 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 65: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - ReplaceVariable wakeTime -> CYCLE_TIME - Status: Killed
+--> Mutation 66: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - ReplaceVariable wakeTime -> now - Status: Killed
+--> Mutation 67: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - InsertUnaryOp Negation of wakeTime - Status: Killed
+--> Mutation 68: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - ReplaceVariable now -> wakeTime - Status: Killed
+--> Mutation 69: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - ReplaceVariable now -> CYCLE_TIME - Status: Killed
+--> Mutation 70: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - InsertUnaryOp Negation of now - Status: Killed
+--> Mutation 71: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - ReplaceArithmeticOperator - -> + - Status: Killed
+--> Mutation 72: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 73: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - ReplaceArithmeticOperator - -> * - Status: Killed
+--> Mutation 74: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:156 - ReplaceArithmeticOperator - -> / - Status: Killed
+--> Mutation 75: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:158 - ReplaceVariable sleepTime -> wakeTime - Status: Killed
+--> Mutation 76: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:158 - ReplaceVariable sleepTime -> CYCLE_TIME - Status: Survived
+--> Mutation 77: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:158 - ReplaceVariable sleepTime -> now - Status: Killed
+--> Mutation 78: com.lts.util.scheduler.NewScheduler.getNextSleepTime()J:158 - InsertUnaryOp Negation of sleepTime - Status: Killed
+--> Mutation 79: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:164 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 80: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:167 - ReplaceVariable time -> CYCLE_TIME - Status: Survived
+--> Mutation 81: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:167 - InsertUnaryOp Negation of time - Status: Survived
+--> Mutation 82: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:169 - ReplaceVariable old -> event - Status: Survived
+--> Mutation 83: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:169 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 84: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:171 - ReplaceVariable old -> event - Status: Survived
+--> Mutation 85: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:174 - ReplaceVariable event -> old - Status: Survived
+--> Mutation 86: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:175 - ReplaceVariable event -> old - Status: Survived
+--> Mutation 87: com.lts.util.scheduler.NewScheduler.cancel(Lcom/lts/util/SharedQueue;)V:183 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 88: com.lts.util.scheduler.NewScheduler.implementOneCycle()V:196 - ReplaceVariable currentStatus -> myState - Status: Survived
+--> Mutation 89: com.lts.util.scheduler.NewScheduler.implementOneCycle()V:196 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 90: com.lts.util.scheduler.NewScheduler$ScheduledEvent.<init>(JLcom/lts/util/SharedQueue;Ljava/lang/Object;)V:39 - ReplaceVariable time -> scheduledTime - Status: Killed
+--> Mutation 91: com.lts.util.scheduler.NewScheduler$ScheduledEvent.<init>(JLcom/lts/util/SharedQueue;Ljava/lang/Object;)V:39 - InsertUnaryOp Negation of time - Status: Killed
+--> Mutation 92: com.lts.util.scheduler.NewScheduler$ScheduledEvent.<init>(JLcom/lts/util/SharedQueue;Ljava/lang/Object;)V:40 - ReplaceVariable theData -> data - Status: Survived
+--> Mutation 93: com.lts.util.scheduler.NewScheduler$ScheduledEvent.<init>(JLcom/lts/util/SharedQueue;Ljava/lang/Object;)V:41 - ReplaceVariable queue -> queue - Status: Survived
+--> Mutation 94: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 95: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceVariable o -> this - Status: Killed
+--> Mutation 96: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 97: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 98: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 99: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 100: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 101: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 102: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 103: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 104: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceVariable o -> this - Status: Survived
+--> Mutation 105: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 106: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 107: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 108: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 109: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:49 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 110: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:51 - ReplaceConstant - 0 -> 1 - Status: Killed
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+* Writing tests to file
+* Writing JUnit test case 'NewScheduler_ESTest' to test_seeds/seed_1/tests_injected
+* Done!
+
+* Computation finished

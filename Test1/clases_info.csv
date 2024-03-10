@@ -96,4 +96,3 @@
 93_quickserver,org.quickserver.util.xmlreader.AccessConstraintConfig,AccessConstraintConfig
 96_heal,org.heal.module.metadata.CompleteMetadataBean,CompleteMetadataBean
 99_newzgrabber,Newzgrabber.Search,Search
-Project Name,Class Path,Class Name

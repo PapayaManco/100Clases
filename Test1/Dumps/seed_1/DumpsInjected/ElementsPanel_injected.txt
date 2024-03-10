@@ -1,0 +1,32 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: corina.gui.ElementsPanel
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/35_corina/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 13:29:35.522 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 13:29:35.756 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 13:29:37.081 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class corina.gui.ElementsPanel
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1079
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 327 / 1079
+[MASTER] 13:29:38.008 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 13:29:39.541 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 13:29:42.589 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 13:30:14.885 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JList<E> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {}
+[MASTER] 13:30:36.320 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Computation finished

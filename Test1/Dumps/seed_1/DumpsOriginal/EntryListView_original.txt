@@ -1,0 +1,36 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.lts.caloriecount.ui.entry.EntryListView
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 22:49:42.084 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 22:49:42.498 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 22:49:43.165 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class com.lts.caloriecount.ui.entry.EntryListView
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 321
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 182 / 321
+[MASTER] 22:49:44.280 [logback-1] WARN  TestCluster - Failed to check cache for com.lts.util.notifyinglist.TableBridge<E> : Type points to itself
+[MASTER] 22:49:59.472 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JLayer<V> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {V=class javax.swing.JEditorPane}
+[MASTER] 22:49:59.575 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 22:49:59.593 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 22:49:59.601 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 22:49:59.810 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 22:50:13.594 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 22:51:40.644 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+* Search finished after 181s and 2098 generations, 103448 statements, best individual has fitness: 308.0
+* Computation finished

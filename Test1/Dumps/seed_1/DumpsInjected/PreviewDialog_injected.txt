@@ -1,0 +1,120 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: freemind.controller.printpreview.PreviewDialog
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/105_freemind/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 11:46:57.980 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 11:46:58.363 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 11:47:00.409 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 11:47:00.410 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
+[MASTER] 11:47:00.410 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 11:47:00.410 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 11:47:00.410 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 11:47:00.410 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 11:47:01.434 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 11:47:03.889 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class freemind.controller.printpreview.PreviewDialog
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 98
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 64 / 98
+[MASTER] 11:47:07.248 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 11:47:07.273 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 11:47:07.279 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 11:47:09.757 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 11:47:10.154 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 11:47:50.979 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 11:47:52.069 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 11:48:51.310 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+* Search finished after 181s and 2882 generations, 609905 statements, best individual has fitness: 8.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 0%
+* Total number of goals: 43
+* Number of covered goals: 0
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 8%
+* Total number of goals: 12
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 27
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 50%
+* Total number of goals: 2
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 2
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 0%
+* Total number of goals: 12
+* Number of covered goals: 0
+* Generated 1 tests with total length 1
+* Resulting test suite's coverage: 0% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:49 - ReplaceVariable view -> view - Status: Survived
+--> Mutation 1: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:50 - ReplaceVariable view -> view - Status: Survived
+--> Mutation 2: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:50 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 3: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:50 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 4: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:50 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 5: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:52 - ReplaceConstant - Center ->  - Status: Survived
+--> Mutation 6: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:55 - ReplaceConstant - North ->  - Status: Survived
+--> Mutation 7: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:56 - ReplaceConstant - - 1 - ->  - Status: Survived
+--> Mutation 8: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:57 - ReplaceConstant - Back24.gif ->  - Status: Survived
+--> Mutation 9: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:57 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 10: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:57 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 11: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:57 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 12: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:61 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 13: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:63 - ReplaceConstant - Forward24.gif ->  - Status: Survived
+--> Mutation 14: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:63 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 15: freemind.controller.printpreview.PreviewDialog.<init>(Ljava/lang/String;Lfreemind/view/mindmapview/MapView;)V:66 - ReplaceConstant - ZoomIn24.gif ->  - Status: Survived
+--> Mutation 16: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:93 - ReplaceConstant - images/ ->  - Status: Survived
+--> Mutation 17: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:93 - ReplaceVariable iconName -> name - Status: Survived
+--> Mutation 18: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:95 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 19: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:98 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 20: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:99 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 21: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:100 - ReplaceConstant - SmallIcon ->  - Status: Survived
+--> Mutation 22: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:101 - ReplaceVariable name -> iconName - Status: Survived
+--> Mutation 23: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:101 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 24: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:102 - ReplaceConstant - Name ->  - Status: Survived
+--> Mutation 25: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:102 - ReplaceVariable name -> iconName - Status: Survived
+--> Mutation 26: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:105 - ReplaceVariable name -> iconName - Status: Survived
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         read,write,delete /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/*: 1
+  - java.lang.RuntimePermission: 
+         getStackWalkerWithClassReference: 1
+         writeFileDescriptor: 1
+  - java.net.SocketPermission: 
+         connect,resolve ftp.someFakeButWellFormedURL.org:21: 1
+* Writing tests to file
+* Writing JUnit test case 'PreviewDialog_ESTest' to test_seeds/seed_1/tests_injected
+* Done!
+
+* Computation finished

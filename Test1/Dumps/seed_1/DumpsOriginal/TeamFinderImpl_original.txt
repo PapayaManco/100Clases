@@ -1,0 +1,51 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.liferay.portal.service.persistence.TeamFinderImpl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:39:08.533 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 20:39:09.116 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 20:39:10.878 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 20:39:12.566 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 20:39:16.245 [logback-1] WARN  CheapPurityAnalyzer - net.sf.swarmcache.ObjectCache was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 20:39:16.245 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: net.sf.swarmcache.ObjectCache
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portal.service.persistence.TeamFinderImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 551
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 293 / 551
+[MASTER] 20:39:25.424 [logback-1] WARN  TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 20:39:27.343 [logback-1] WARN  TestCluster - Failed to check cache for com.caucho.amber.collection.SetImpl<E> : Type points to itself
+[MASTER] 20:39:27.497 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 20:39:28.841 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.jbc.collection.CollectionRegionImpl: java.lang.NoClassDefFoundError: org/jboss/cache/Fqn
+[MASTER] 20:39:28.844 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.QueryImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.ParameterMetadata due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.OrdinalParameterDescriptor due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.persister.collection.BasicCollectionPersister due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.cache.jbc.collection.TransactionalAccess due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.hibernate.cache.jbc.collection.CollectionRegionImpl canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 20:39:29.453 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.QueryImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.ParameterMetadata due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.OrdinalParameterDescriptor due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.mapping.OneToOne due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.mapping.JoinedSubclass due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.mapping.SingleTableSubclass due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.mapping.UnionSubclass due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 20:39:37.390 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.QueryImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.ParameterMetadata due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.hibernate.engine.query.ParameterMetadata canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 20:39:41.607 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 20:39:41.737 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.jbc.entity.EntityRegionImpl: java.lang.NoClassDefFoundError: org/jboss/cache/Fqn
+[MASTER] 20:39:49.046 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 20:39:50.176 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 20:39:50.216 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 20:39:50.279 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 20:39:52.939 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.CollectionFilterImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.ParameterMetadata due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.hibernate.engine.query.ParameterMetadata canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 20:39:53.933 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.infinispan.util.CacheAdapter: java.lang.NoClassDefFoundError: org/infinispan/config/Configuration
+[MASTER] 20:40:24.946 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.QueryImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.ParameterMetadata due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.OrdinalParameterDescriptor due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.SessionFactoryImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.jdbc.JDBCContext due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 20:41:19.605 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 20:42:06.874 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.QueryImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.ParameterMetadata due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.amber.collection.MapImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.amber.query.UserQuery due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 20:42:08.572 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.QueryImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.ParameterMetadata due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.amber.collection.MapImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.amber.collection.MapImpl due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 20:42:16.587 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.CollectionFilterImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.ParameterMetadata due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.engine.query.OrdinalParameterDescriptor due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.persister.entity.UnionSubclassEntityPersister due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.cache.jbc.entity.TransactionalAccess due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.hibernate.cache.jbc.entity.EntityRegionImpl canUseFunctionalMocks=true, canBeMocked: false
+* Search finished after 181s and 802 generations, 218472 statements, best individual has fitness: 301.0
+* Computation finished

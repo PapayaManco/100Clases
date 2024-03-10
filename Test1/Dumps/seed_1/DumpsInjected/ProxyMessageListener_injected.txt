@@ -1,0 +1,34 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 12:09:58.742 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 12:09:59.291 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 12:09:59.446 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 124
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 20 / 124
+[MASTER] 12:10:00.389 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 12:10:00.393 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 12:10:00.492 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 12:10:01.043 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getClassLoader.portal
+[MASTER] 12:10:01.822 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 12:11:37.872 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 181s and 3769 generations, 943620 statements, best individual has fitness: 78.0
+* Computation finished

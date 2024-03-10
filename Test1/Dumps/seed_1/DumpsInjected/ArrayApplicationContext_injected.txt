@@ -1,0 +1,34 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.liferay.portal.spring.context.ArrayApplicationContext
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 12:35:18.996 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 12:35:19.820 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 12:35:20.834 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portal.spring.context.ArrayApplicationContext
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 55
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 8 / 55
+[MASTER] 12:35:26.247 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 12:35:31.170 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 12:35:31.883 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 12:35:32.883 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 12:35:34.979 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: ftpClientProvider
+[MASTER] 12:37:40.675 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: closeClassLoader
+* Search finished after 181s and 3105 generations, 658629 statements, best individual has fitness: 8.0
+* Computation finished

@@ -1,0 +1,45 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.liferay.portlet.documentlibrary.util.PDFProcessorImpl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 12:38:54.806 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 12:38:55.168 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 12:38:57.492 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 12:38:57.560 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 12:39:00.664 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portlet.documentlibrary.util.PDFProcessorImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1153
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 341 / 1153
+[MASTER] 12:39:08.734 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 12:39:11.927 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.documentlibrary.model.DLFileVersionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 12:39:14.757 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 12:39:27.849 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: closeClassLoader
+[MASTER] 12:39:35.755 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 12:39:45.250 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 12:39:47.034 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 12:39:50.503 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 12:40:11.419 [logback-1] WARN  ClassResetter - class java.lang.reflect.InvocationTargetException thrown during execution of method  __STATIC_RESET() for class org.geotools.factory.Hints, java.lang.IllegalArgumentException: org.geotools.factory.Hints$ClassKey@4ab899da:0 already registered
+[MASTER] 12:40:38.839 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.Future<V> : Type points to itself
+[MASTER] 12:41:24.793 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 12:41:29.089 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 12:41:29.102 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 12:41:39.077 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 12:41:39.090 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+* Search finished after 181s and 806 generations, 232622 statements, best individual has fitness: 910.0
+* Computation finished

@@ -1,0 +1,36 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.liferay.portal.module.framework.LogBridge
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:31:21.767 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 20:31:22.480 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 20:31:22.682 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portal.module.framework.LogBridge
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 136
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 52 / 136
+[MASTER] 20:31:30.894 [logback-1] WARN  TestCluster - Failed to check cache for org.osgi.framework.ServiceReference<S> : Type points to itself
+[MASTER] 20:31:47.438 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 20:31:52.413 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 20:31:58.017 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowSorter<M> : Type points to itself
+[MASTER] 20:32:02.321 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 20:32:02.343 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 20:32:02.395 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 20:34:09.257 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+* Search finished after 181s and 1469 generations, 218976 statements, best individual has fitness: 110.0
+* Computation finished

@@ -1,0 +1,313 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: bible.util.DbConnectionBroker
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/68_biblestudy/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class bible.util.DbConnectionBroker
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 507
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 155 / 507
+* Search finished after 181s and 2419 generations, 465968 statements, best individual has fitness: 159.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 70%
+* Total number of goals: 98
+* Number of covered goals: 69
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 74%
+* Total number of goals: 54
+* Number of covered goals: 40
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 72%
+* Total number of goals: 233
+* Number of covered goals: 167
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 28%
+* Total number of goals: 40
+* Number of covered goals: 11
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 93%
+* Total number of goals: 14
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 74%
+* Total number of goals: 54
+* Number of covered goals: 40
+* Generated 22 tests with total length 55
+* Resulting test suite's coverage: 70% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 27%
+* There are surviving mutants: 
+--> Mutation 0: bible.util.DbConnectionBroker.<init>()V:197 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 1: bible.util.DbConnectionBroker.<init>()V:198 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 2: bible.util.DbConnectionBroker.<init>()V:199 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 3: bible.util.DbConnectionBroker.<init>()V:199 - ReplaceConstant - 0 -> -1 - Status: Killed
+--> Mutation 4: bible.util.DbConnectionBroker.<init>()V:18 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 5: bible.util.DbConnectionBroker.<init>()V:18 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 6: bible.util.DbConnectionBroker.<init>()V:18 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 7: bible.util.DbConnectionBroker.<init>()V:18 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 8: bible.util.DbConnectionBroker.<init>()V:18 - ReplaceComparisonOperator < -> -2 - Status: Killed
+--> Mutation 9: bible.util.DbConnectionBroker.<init>()V:18 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 10: bible.util.DbConnectionBroker.<init>()V:19 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 11: bible.util.DbConnectionBroker.<init>()V:19 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 12: bible.util.DbConnectionBroker.<init>()V:19 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 13: bible.util.DbConnectionBroker.<init>()V:23 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 14: bible.util.DbConnectionBroker.<init>()V:23 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 15: bible.util.DbConnectionBroker.<init>()V:23 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 16: bible.util.DbConnectionBroker.<init>()V:24 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 17: bible.util.DbConnectionBroker.<init>()V:24 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 18: bible.util.DbConnectionBroker.<init>()V:24 - InsertUnaryOp IINC 1 index - Status: Killed
+--> Mutation 19: bible.util.DbConnectionBroker.<init>()V:24 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 20: bible.util.DbConnectionBroker.<init>()V:24 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 21: bible.util.DbConnectionBroker.<init>()V:24 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 22: bible.util.DbConnectionBroker.<init>()V:24 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 23: bible.util.DbConnectionBroker.<init>()V:24 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 24: bible.util.DbConnectionBroker.<init>()V:24 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 25: bible.util.DbConnectionBroker.<init>()V:24 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 26: bible.util.DbConnectionBroker.<init>()V:25 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 27: bible.util.DbConnectionBroker.<init>()V:25 - InsertUnaryOp IINC 1 index - Status: Killed
+--> Mutation 28: bible.util.DbConnectionBroker.<init>()V:25 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 29: bible.util.DbConnectionBroker.<init>()V:25 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 30: bible.util.DbConnectionBroker.<init>()V:25 - InsertUnaryOp IINC 1 index - Status: Killed
+--> Mutation 31: bible.util.DbConnectionBroker.<init>()V:25 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 32: bible.util.DbConnectionBroker.<init>()V:27 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 33: bible.util.DbConnectionBroker.<init>()V:27 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 34: bible.util.DbConnectionBroker.<init>()V:27 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 35: bible.util.DbConnectionBroker.<init>()V:27 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 36: bible.util.DbConnectionBroker.<init>()V:27 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 37: bible.util.DbConnectionBroker.<init>()V:27 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 38: bible.util.DbConnectionBroker.<init>()V:27 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 39: bible.util.DbConnectionBroker.<init>()V:27 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 40: bible.util.DbConnectionBroker.<init>()V:27 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 41: bible.util.DbConnectionBroker.<init>()V:27 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 42: bible.util.DbConnectionBroker.<init>()V:29 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 43: bible.util.DbConnectionBroker.<init>()V:29 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 44: bible.util.DbConnectionBroker.<init>()V:29 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 45: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 46: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 47: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 48: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 49: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 50: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 51: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 52: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 53: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 54: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:42 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 55: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:43 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 56: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:43 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 57: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:43 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 58: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:43 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 59: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:44 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 60: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:44 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 61: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:44 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 62: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:44 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 63: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:45 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 64: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:45 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 65: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:45 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 66: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:47 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 67: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:47 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 68: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:47 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 69: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:47 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 70: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:47 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 71: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:47 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 72: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:48 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 73: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:48 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 74: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:48 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 75: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:48 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 76: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:48 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 77: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:48 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 78: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:48 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 79: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:48 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 80: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 81: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 82: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 83: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 84: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 85: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 86: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 87: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 88: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:49 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 89: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:50 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 90: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:50 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 91: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:50 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 92: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:52 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 93: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:52 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 94: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:52 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 95: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 96: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 97: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 98: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 99: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 100: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 101: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 102: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 103: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 104: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 105: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 106: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:56 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 107: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:57 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 108: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:57 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 109: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:57 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 110: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:57 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 111: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:58 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 112: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:58 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 113: bible.util.DbConnectionBroker.getConnectionAttributes()Lbible/util/DbConnectionAttributes;:58 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 114: bible.util.DbConnectionBroker.disconnectAll()V:80 - ReplaceConstant - DbConnectionBroker.disconnectAll() ->  - Status: Survived
+--> Mutation 115: bible.util.DbConnectionBroker.disconnectAll()V:81 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 116: bible.util.DbConnectionBroker.disconnectAll()V:81 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 117: bible.util.DbConnectionBroker.disconnectAll()V:81 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 118: bible.util.DbConnectionBroker.disconnectAll()V:81 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 119: bible.util.DbConnectionBroker.disconnectAll()V:81 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 120: bible.util.DbConnectionBroker.disconnectAll()V:81 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 121: bible.util.DbConnectionBroker.disconnectAll()V:81 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 122: bible.util.DbConnectionBroker.disconnectAll()V:81 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 123: bible.util.DbConnectionBroker.disconnectAll()V:81 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 124: bible.util.DbConnectionBroker.disconnectAll()V:81 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 125: bible.util.DbConnectionBroker.disconnectAll()V:82 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 126: bible.util.DbConnectionBroker.disconnectAll()V:82 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 127: bible.util.DbConnectionBroker.disconnectAll()V:82 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 128: bible.util.DbConnectionBroker.disconnectAll()V:82 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 129: bible.util.DbConnectionBroker.disconnectAll()V:83 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 130: bible.util.DbConnectionBroker.disconnectAll()V:83 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 131: bible.util.DbConnectionBroker.disconnectAll()V:83 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 132: bible.util.DbConnectionBroker.disconnectAll()V:84 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 133: bible.util.DbConnectionBroker.disconnectAll()V:84 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 134: bible.util.DbConnectionBroker.disconnectAll()V:84 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 135: bible.util.DbConnectionBroker.disconnectAll()V:84 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 136: bible.util.DbConnectionBroker.disconnectAll()V:85 - ReplaceConstant - DbConnectionBroker.disconnectAll() Freeing in use connection at  ->  - Status: Survived
+--> Mutation 137: bible.util.DbConnectionBroker.disconnectAll()V:85 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 138: bible.util.DbConnectionBroker.disconnectAll()V:85 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 139: bible.util.DbConnectionBroker.disconnectAll()V:85 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 140: bible.util.DbConnectionBroker.disconnectAll()V:86 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 141: bible.util.DbConnectionBroker.disconnectAll()V:86 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 142: bible.util.DbConnectionBroker.disconnectAll()V:86 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 143: bible.util.DbConnectionBroker.disconnectAll()V:87 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 144: bible.util.DbConnectionBroker.disconnectAll()V:87 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 145: bible.util.DbConnectionBroker.disconnectAll()V:87 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 146: bible.util.DbConnectionBroker.disconnectAll()V:87 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 147: bible.util.DbConnectionBroker.disconnectAll()V:87 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 148: bible.util.DbConnectionBroker.disconnectAll()V:87 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 149: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:97 - ReplaceComparisonOperator < -> -2 - Status: Killed
+--> Mutation 150: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:97 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 151: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:97 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 152: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:97 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 153: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:98 - ReplaceConstant - ConnectionBroker.disconnect() freeing orphan:  ->  - Status: Survived
+--> Mutation 154: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 155: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 156: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 157: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 158: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 159: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 160: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 161: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 162: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:108 - ReplaceConstant - ConnectionBroker.release:  ->  - Status: Survived
+--> Mutation 163: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 164: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 165: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 166: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 167: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 168: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 169: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 170: bible.util.DbConnectionBroker.disconnect(Lbible/util/DbConnectionAttributes;)V:112 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 171: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:118 - ReplaceComparisonOperator < -> -2 - Status: Killed
+--> Mutation 172: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:118 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 173: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:118 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 174: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:118 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 175: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:120 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 176: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:120 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 177: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:120 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 178: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:120 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 179: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:120 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 180: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:120 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 181: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:122 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 182: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:122 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 183: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:122 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 184: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:122 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 185: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:122 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 186: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:122 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 187: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:122 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 188: bible.util.DbConnectionBroker.release(Lbible/util/DbConnectionAttributes;)V:122 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 189: bible.util.DbConnectionBroker.getMin()I:133 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 190: bible.util.DbConnectionBroker.getMin()I:133 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 191: bible.util.DbConnectionBroker.getMin()I:133 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 192: bible.util.DbConnectionBroker.getMax()I:137 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 193: bible.util.DbConnectionBroker.getMax()I:137 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 194: bible.util.DbConnectionBroker.getMax()I:137 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 195: bible.util.DbConnectionBroker.getMaxReached()I:141 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 196: bible.util.DbConnectionBroker.getMaxReached()I:141 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 197: bible.util.DbConnectionBroker.getMaxReached()I:141 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 198: bible.util.DbConnectionBroker.toString()Ljava/lang/String;:153 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 199: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - ReplaceConstant - [ options= ->  - Status: Killed
+--> Mutation 200: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - ReplaceConstant - , maxConnections= ->  - Status: Killed
+--> Mutation 201: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 202: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 203: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 204: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - ReplaceConstant - , maxReached= ->  - Status: Killed
+--> Mutation 205: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 206: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 207: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 208: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - ReplaceConstant - , lastTime= ->  - Status: Killed
+--> Mutation 209: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 210: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp Negation of verbose - Status: Survived
+--> Mutation 211: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp IINC 1 verbose - Status: Killed
+--> Mutation 212: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - InsertUnaryOp IINC -1 verbose - Status: Killed
+--> Mutation 213: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 214: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:157 - ReplaceConstant -  Open:  ->  - Status: Killed
+--> Mutation 215: bible.util.DbConnectionBroker.toString(Z)Ljava/lang/String;:161 - ReplaceConstant - ] ->  - Status: Killed
+--> Mutation 216: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 217: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 218: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 219: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 220: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 221: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 222: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 223: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 224: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 225: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:170 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 226: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:171 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 227: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:171 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 228: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:171 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 229: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:171 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 230: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:172 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 231: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:172 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 232: bible.util.DbConnectionBroker.getOpenConnections()Ljava/util/Vector;:172 - InsertUnaryOp IINC -1 index - Status: Survived
+* Compiling and checking tests
+[MASTER] 22:35:56.683 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:01.959 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:07.220 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:12.483 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:17.739 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:22.995 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:28.238 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:33.482 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:38.720 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:43.967 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:36:49.218 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Writing tests to file
+* Writing JUnit test case 'DbConnectionBroker_ESTest' to test_seeds/seed_1/tests
+* Done!
+
+* Computation finished

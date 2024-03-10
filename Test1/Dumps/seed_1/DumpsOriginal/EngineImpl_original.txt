@@ -1,0 +1,37 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: wheel.EngineImpl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:24:14.801 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 23:24:14.972 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+* Finished analyzing classpath
+* Generating tests for class wheel.EngineImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1204
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 320 / 1204
+[MASTER] 23:24:16.382 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 23:24:16.457 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 23:24:16.573 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.components.Form canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 23:24:17.103 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 23:24:18.098 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.ErrorPage canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 23:24:18.131 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 23:24:23.291 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 23:24:23.471 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletResponseWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 23:26:04.394 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.components.Table canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 23:27:07.429 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+* Search finished after 181s and 1423 generations, 722896 statements, best individual has fitness: 775.0
+* Computation finished
