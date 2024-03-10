@@ -1,0 +1,259 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: macaw.presentationLayer.MacawStateEditor
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/69_lhamacaw/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 22:36:52.798 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 22:36:53.166 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 22:36:53.944 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 22:36:54.468 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class macaw.presentationLayer.MacawStateEditor
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 416
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 312 / 416
+[MASTER] 22:36:55.604 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 22:36:55.671 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 22:36:58.383 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 22:36:58.504 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 22:36:58.510 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 22:36:58.513 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 22:37:05.399 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 22:37:10.411 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 22:37:20.079 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 22:37:42.470 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+* Search finished after 181s and 758 generations, 101237 statements, best individual has fitness: 405.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 5%
+* Total number of goals: 111
+* Number of covered goals: 6
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 4%
+* Total number of goals: 26
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 2%
+* Total number of goals: 176
+* Number of covered goals: 3
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 39
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 0%
+* Total number of goals: 19
+* Number of covered goals: 0
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 19
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 4%
+* Total number of goals: 26
+* Number of covered goals: 1
+* Generated 1 tests with total length 2
+* Resulting test suite's coverage: 14% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:94 - ReplaceVariable sessionProperties -> sessionProperties - Status: Survived
+--> Mutation 1: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:95 - ReplaceVariable sessionProperties -> sessionProperties - Status: Survived
+--> Mutation 2: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:96 - ReplaceVariable sessionProperties -> sessionProperties - Status: Survived
+--> Mutation 3: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:96 - ReplaceConstant - database ->  - Status: Survived
+--> Mutation 4: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:97 - ReplaceVariable sessionProperties -> sessionProperties - Status: Survived
+--> Mutation 5: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:97 - ReplaceConstant - currentUser ->  - Status: Survived
+--> Mutation 6: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:99 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 7: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:104 - ReplaceConstant - variableConstantsEditor.nameFieldText ->  - Status: Survived
+--> Mutation 8: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:106 - ReplaceConstant - 20 -> 0 - Status: Survived
+--> Mutation 9: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:106 - ReplaceConstant - 20 -> 1 - Status: Survived
+--> Mutation 10: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:106 - ReplaceConstant - 20 -> -1 - Status: Survived
+--> Mutation 11: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:106 - ReplaceConstant - 20 -> 19 - Status: Survived
+--> Mutation 12: macaw.presentationLayer.MacawStateEditor.<init>(Lmacaw/system/SessionProperties;)V:106 - ReplaceConstant - 20 -> 21 - Status: Survived
+--> Mutation 13: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 14: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 15: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 16: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 17: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 18: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 19: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 20: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 21: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 22: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 23: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 24: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 25: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 26: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 27: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 28: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:121 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 29: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:122 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 30: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:122 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 31: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:122 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 32: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:122 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 33: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:123 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 34: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:123 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 35: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:123 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 36: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:125 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 37: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:125 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 38: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:125 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 39: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:125 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 40: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:125 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 41: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:125 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 42: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:125 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 43: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:125 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 44: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:127 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 45: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:127 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 46: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:127 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 47: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:127 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 48: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:127 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 49: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:127 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 50: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:127 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 51: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:127 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 52: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:128 - ReplaceConstant - 14 -> 0 - Status: Survived
+--> Mutation 53: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:128 - ReplaceConstant - 14 -> 1 - Status: Survived
+--> Mutation 54: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:128 - ReplaceConstant - 14 -> -1 - Status: Survived
+--> Mutation 55: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:128 - ReplaceConstant - 14 -> 13 - Status: Survived
+--> Mutation 56: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:128 - ReplaceConstant - 14 -> 15 - Status: Survived
+--> Mutation 57: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:129 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 58: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:130 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 59: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:130 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 60: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:131 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 61: macaw.presentationLayer.MacawStateEditor.createDefaultMainFormPanel()Ljavax/swing/JPanel;:131 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 62: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 63: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 64: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 65: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 66: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 67: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 68: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 69: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 70: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 71: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 72: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 73: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 74: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 75: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 76: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 77: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:144 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 78: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 79: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 80: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 81: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 82: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 20 -> 0 - Status: Survived
+--> Mutation 83: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 20 -> 1 - Status: Survived
+--> Mutation 84: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 20 -> -1 - Status: Survived
+--> Mutation 85: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 20 -> 19 - Status: Survived
+--> Mutation 86: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:145 - ReplaceConstant - 20 -> 21 - Status: Survived
+--> Mutation 87: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:146 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 88: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:147 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 89: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:147 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 90: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:147 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 91: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:148 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 92: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:148 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 93: macaw.presentationLayer.MacawStateEditor.createInformationPanel()Ljavax/swing/JPanel;:148 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 94: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:160 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 95: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:160 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 96: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:160 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 97: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:160 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 98: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:161 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 99: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:162 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 100: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:162 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 101: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:163 - ReplaceVariable nameFieldLabelText -> listNameOwner - Status: Survived
+--> Mutation 102: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:167 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 103: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:167 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 104: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:167 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 105: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:167 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 106: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:167 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 107: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:167 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 108: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:167 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 109: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:167 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 110: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:168 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 111: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:168 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 112: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:168 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 113: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:168 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 114: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:169 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 115: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:169 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 116: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:169 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 117: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:170 - ReplaceConstant - 30 -> 0 - Status: Survived
+--> Mutation 118: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:170 - ReplaceConstant - 30 -> 1 - Status: Survived
+--> Mutation 119: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:170 - ReplaceConstant - 30 -> -1 - Status: Survived
+--> Mutation 120: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:170 - ReplaceConstant - 30 -> 29 - Status: Survived
+--> Mutation 121: macaw.presentationLayer.MacawStateEditor.createNameFieldPanel()Ljavax/swing/JPanel;:170 - ReplaceConstant - 30 -> 31 - Status: Survived
+--> Mutation 122: macaw.presentationLayer.MacawStateEditor.setDialogTitle(Ljava/lang/String;)V:181 - ReplaceVariable title -> nameFieldLabelText - Status: Survived
+--> Mutation 123: macaw.presentationLayer.MacawStateEditor.setDialogTitle(Ljava/lang/String;)V:181 - ReplaceVariable title -> listNameOwner - Status: Survived
+--> Mutation 124: macaw.presentationLayer.MacawStateEditor.setDialogInformation(Ljava/lang/String;)V:185 - ReplaceVariable dialogInformation -> nameFieldLabelText - Status: Survived
+--> Mutation 125: macaw.presentationLayer.MacawStateEditor.setDialogInformation(Ljava/lang/String;)V:185 - ReplaceVariable dialogInformation -> listNameOwner - Status: Survived
+--> Mutation 126: macaw.presentationLayer.MacawStateEditor.show()V:189 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 127: macaw.presentationLayer.MacawStateEditor.save()V:198 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 128: macaw.presentationLayer.MacawStateEditor.close()V:205 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 129: macaw.presentationLayer.MacawStateEditor.close()V:206 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 130: macaw.presentationLayer.MacawStateEditor.isEditingCancelled()Z:214 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 131: macaw.presentationLayer.MacawStateEditor.setEditableData(Lmacaw/businessLayer/MacawListChoice;Lmacaw/util/DisplayableList;Ljava/lang/String;)V:230 - ReplaceVariable listNameOwner -> nameFieldLabelText - Status: Survived
+--> Mutation 132: macaw.presentationLayer.MacawStateEditor.setEditableData(Lmacaw/businessLayer/MacawListChoice;Lmacaw/util/DisplayableList;Ljava/lang/String;)V:230 - ReplaceVariable listNameOwner -> listNameOwner - Status: Survived
+--> Mutation 133: macaw.presentationLayer.MacawStateEditor.setEditableData(Lmacaw/businessLayer/MacawListChoice;Lmacaw/util/DisplayableList;Ljava/lang/String;)V:231 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 134: macaw.presentationLayer.MacawStateEditor.setEditableData(Lmacaw/businessLayer/MacawListChoice;Lmacaw/util/DisplayableList;Ljava/lang/String;)V:232 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 135: macaw.presentationLayer.MacawStateEditor.setViewableData(Lmacaw/businessLayer/MacawListChoice;)V:239 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 136: macaw.presentationLayer.MacawStateEditor.setViewableData(Lmacaw/businessLayer/MacawListChoice;)V:240 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 137: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:256 - ReplaceVariable newFieldValue -> nameFieldLabelText - Status: Survived
+--> Mutation 138: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:256 - ReplaceVariable newFieldValue -> listNameOwner - Status: Survived
+--> Mutation 139: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:256 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 140: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:256 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 141: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:256 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 142: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:257 - ReplaceConstant - variableConstantsEditor.error.blankNameField ->  - Status: Survived
+--> Mutation 143: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:259 - ReplaceVariable errorMessage -> nameFieldLabelText - Status: Survived
+--> Mutation 144: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:259 - ReplaceVariable errorMessage -> newFieldValue - Status: Survived
+--> Mutation 145: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:259 - ReplaceVariable errorMessage -> listNameOwner - Status: Survived
+--> Mutation 146: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceVariable oldFieldValue -> nameFieldLabelText - Status: Survived
+--> Mutation 147: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceVariable oldFieldValue -> newFieldValue - Status: Survived
+--> Mutation 148: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceVariable oldFieldValue -> listNameOwner - Status: Survived
+--> Mutation 149: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceVariable newFieldValue -> nameFieldLabelText - Status: Survived
+--> Mutation 150: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceVariable newFieldValue -> oldFieldValue - Status: Survived
+--> Mutation 151: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceVariable newFieldValue -> listNameOwner - Status: Survived
+--> Mutation 152: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 153: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 154: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:264 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 155: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:266 - ReplaceVariable newFieldValue -> nameFieldLabelText - Status: Survived
+--> Mutation 156: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:266 - ReplaceVariable newFieldValue -> oldFieldValue - Status: Survived
+--> Mutation 157: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:266 - ReplaceVariable newFieldValue -> listNameOwner - Status: Survived
+--> Mutation 158: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:266 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 159: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:266 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 160: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:268 - ReplaceConstant - supportingDocumentEditor.error.duplicateTitle ->  - Status: Survived
+--> Mutation 161: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:270 - ReplaceVariable errorMessage -> newFieldValue - Status: Survived
+--> Mutation 162: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:270 - ReplaceVariable errorMessage -> nameFieldLabelText - Status: Survived
+--> Mutation 163: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:270 - ReplaceVariable errorMessage -> oldFieldValue - Status: Survived
+--> Mutation 164: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:270 - ReplaceVariable errorMessage -> listNameOwner - Status: Survived
+--> Mutation 165: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:271 - ReplaceVariable errorMessage -> newFieldValue - Status: Survived
+--> Mutation 166: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:271 - ReplaceVariable errorMessage -> nameFieldLabelText - Status: Survived
+--> Mutation 167: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:271 - ReplaceVariable errorMessage -> oldFieldValue - Status: Survived
+--> Mutation 168: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:271 - ReplaceVariable errorMessage -> listNameOwner - Status: Survived
+--> Mutation 169: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:275 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 170: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:275 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 171: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:275 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 172: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:281 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 173: macaw.presentationLayer.MacawStateEditor.isFormValid()Z:284 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 174: macaw.presentationLayer.MacawStateEditor.actionPerformed(Ljava/awt/event/ActionEvent;)V:315 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 175: macaw.presentationLayer.MacawStateEditor.actionPerformed(Ljava/awt/event/ActionEvent;)V:318 - ReplaceComparisonOperator != -> == - Status: Survived
+* Compiling and checking tests
+[MASTER] 22:40:03.439 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 22:40:08.948 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Writing tests to file
+* Writing JUnit test case 'MacawStateEditor_ESTest' to test_seeds/seed_1/tests
+* Done!
+
+* Computation finished

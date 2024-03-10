@@ -1,0 +1,25 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/101_netweaver/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.sap.managementconsole.soap.axis.sapcontrol.DirEntry
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 255
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 69 / 255
+* Search finished after 181s and 5606 generations, 2835114 statements, best individual has fitness: 24.0
+* Computation finished

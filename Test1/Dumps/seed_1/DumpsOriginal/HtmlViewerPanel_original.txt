@@ -1,15 +1,11 @@
-* EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* EvoSuite 1.0.7-SNAPSHOT
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/102_squirrel-sql/evosuite-files/evosuite.properties
-* Connecting to master process on port 7221
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
+* Connecting to master process on port 16626
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 18:34:33.834 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 18:34:34.053 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 18:34:35.408 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 18:34:35.715 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel
 * Test criteria:
@@ -21,16 +17,11 @@
   - Top-Level Method Coverage
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
-* Total number of test goals for DYNAMOSA: 550
-* Using seed 5072178650187
+* Total number of test goals for DYNAMOSA: 547
+* Using seed 1710099708554
 * Starting evolution
-* Initial Number of Goals in DynaMOSA = 192 / 550
-[MASTER] 18:34:54.755 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 18:35:18.317 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 18:35:53.187 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 18:35:53.193 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 18:37:04.578 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 181s and 1784 generations, 674941 statements, best individual has fitness: 95.0
+* Initial Number of Goals in DynMOSA = 189 / 547
+* Search finished after 181s and 2020 generations, 755788 statements, best individual has fitness: 95.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -43,12 +34,12 @@
 * Number of covered goals: 40
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 2
-* Number of covered goals: 2
+* Total number of goals: 1
+* Number of covered goals: 1
 * Coverage analysis for criterion WEAKMUTATION
 * Coverage of criterion WEAKMUTATION: 97%
-* Total number of goals: 306
-* Number of covered goals: 297
+* Total number of goals: 303
+* Number of covered goals: 294
 * Coverage analysis for criterion OUTPUT
 * Coverage of criterion OUTPUT: 71%
 * Total number of goals: 14
@@ -65,7 +56,9 @@
 * Coverage of criterion CBRANCH: 76%
 * Total number of goals: 51
 * Number of covered goals: 39
-* Generated 23 tests with total length 94
-* Resulting test suite's coverage: 83% (average coverage for all fitness functions)
+* Generated 23 tests with total length 93
+* Resulting test suite's coverage: 80% (average coverage for all fitness functions)
 * Generating assertions
+* Resulting test suite's mutation score: 42%
+* Compiling and checking tests
 * Computation finished

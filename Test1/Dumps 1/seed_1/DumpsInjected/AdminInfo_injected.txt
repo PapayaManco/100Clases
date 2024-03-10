@@ -1,0 +1,206 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: org.exolab.jms.tools.admin.AdminInfo
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/66_openjms/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 14:03:32.270 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 14:03:32.453 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 14:03:33.604 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class org.exolab.jms.tools.admin.AdminInfo
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 220
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 112 / 220
+[MASTER] 14:03:38.772 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 14:03:38.934 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 14:03:38.941 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 14:03:38.943 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 14:03:44.107 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 14:03:45.368 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 14:03:51.126 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 14:04:31.347 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 14:05:14.520 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 185s and 2885 generations, 1771446 statements, best individual has fitness: 88.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 59%
+* Total number of goals: 44
+* Number of covered goals: 26
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 76%
+* Total number of goals: 17
+* Number of covered goals: 13
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 67%
+* Total number of goals: 111
+* Number of covered goals: 74
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 11%
+* Total number of goals: 27
+* Number of covered goals: 3
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 76%
+* Total number of goals: 17
+* Number of covered goals: 13
+* Generated 7 tests with total length 30
+* Resulting test suite's coverage: 67% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 2%
+* There are surviving mutants: 
+--> Mutation 0: org.exolab.jms.tools.admin.AdminInfo.<init>()V:76 - ReplaceConstant - No Messages ->  - Status: Survived
+--> Mutation 1: org.exolab.jms.tools.admin.AdminInfo.<init>()V:80 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 2: org.exolab.jms.tools.admin.AdminInfo.<init>()V:80 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 3: org.exolab.jms.tools.admin.AdminInfo.<init>()V:80 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 4: org.exolab.jms.tools.admin.AdminInfo.<init>()V:80 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 5: org.exolab.jms.tools.admin.AdminInfo.<init>()V:80 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 6: org.exolab.jms.tools.admin.AdminInfo.<init>()V:91 - ReplaceConstant - Tree.textBackground ->  - Status: Survived
+--> Mutation 7: org.exolab.jms.tools.admin.AdminInfo.<init>()V:92 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 8: org.exolab.jms.tools.admin.AdminInfo.<init>()V:93 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 9: org.exolab.jms.tools.admin.AdminInfo.<init>()V:94 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 10: org.exolab.jms.tools.admin.AdminInfo.<init>()V:96 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 11: org.exolab.jms.tools.admin.AdminInfo.<init>()V:96 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 12: org.exolab.jms.tools.admin.AdminInfo.<init>()V:96 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 13: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable selected -> expanded - Status: Survived
+--> Mutation 14: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable selected -> leaf - Status: Survived
+--> Mutation 15: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable selected -> hasFocus - Status: Survived
+--> Mutation 16: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp Negation of selected - Status: Survived
+--> Mutation 17: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp IINC 1 selected - Status: Survived
+--> Mutation 18: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp IINC -1 selected - Status: Survived
+--> Mutation 19: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable expanded -> leaf - Status: Survived
+--> Mutation 20: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable expanded -> hasFocus - Status: Survived
+--> Mutation 21: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable expanded -> selected - Status: Survived
+--> Mutation 22: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp Negation of expanded - Status: Survived
+--> Mutation 23: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable leaf -> expanded - Status: Survived
+--> Mutation 24: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable leaf -> hasFocus - Status: Survived
+--> Mutation 25: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable leaf -> selected - Status: Survived
+--> Mutation 26: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp Negation of leaf - Status: Survived
+--> Mutation 27: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> PROPERTIES - Status: Survived
+--> Mutation 28: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> WEST - Status: Survived
+--> Mutation 29: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> WIDTH - Status: Survived
+--> Mutation 30: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> BOTTOM - Status: Survived
+--> Mutation 31: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> PREVIOUS - Status: Survived
+--> Mutation 32: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> FRAMEBITS - Status: Survived
+--> Mutation 33: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> CENTER - Status: Survived
+--> Mutation 34: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> WHEN_FOCUSED - Status: Survived
+--> Mutation 35: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> VERTICAL - Status: Survived
+--> Mutation 36: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> NORTH - Status: Survived
+--> Mutation 37: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> NEXT - Status: Survived
+--> Mutation 38: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> RIGHT - Status: Survived
+--> Mutation 39: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> ERROR - Status: Survived
+--> Mutation 40: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> SOUTH - Status: Survived
+--> Mutation 41: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> EAST - Status: Survived
+--> Mutation 42: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> ABORT - Status: Survived
+--> Mutation 43: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> NORTH_WEST - Status: Survived
+--> Mutation 44: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> SOMEBITS - Status: Survived
+--> Mutation 45: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> LEFT - Status: Survived
+--> Mutation 46: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> TRAILING - Status: Survived
+--> Mutation 47: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> HEIGHT - Status: Survived
+--> Mutation 48: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> LEADING - Status: Survived
+--> Mutation 49: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 50: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 51: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> ALLBITS - Status: Survived
+--> Mutation 52: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> TOP - Status: Survived
+--> Mutation 53: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> NORTH_EAST - Status: Survived
+--> Mutation 54: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> SOUTH_EAST - Status: Survived
+--> Mutation 55: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> HORIZONTAL - Status: Survived
+--> Mutation 56: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> SOUTH_WEST - Status: Survived
+--> Mutation 57: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable row -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 58: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 59: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable hasFocus -> expanded - Status: Survived
+--> Mutation 60: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable hasFocus -> leaf - Status: Survived
+--> Mutation 61: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - ReplaceVariable hasFocus -> selected - Status: Survived
+--> Mutation 62: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp Negation of hasFocus - Status: Survived
+--> Mutation 63: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp IINC 1 hasFocus - Status: Survived
+--> Mutation 64: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:123 - InsertUnaryOp IINC -1 hasFocus - Status: Survived
+--> Mutation 65: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:125 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 66: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:127 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 67: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:128 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 68: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> PROPERTIES - Status: Survived
+--> Mutation 69: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> WEST - Status: Survived
+--> Mutation 70: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> WIDTH - Status: Survived
+--> Mutation 71: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> BOTTOM - Status: Survived
+--> Mutation 72: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> PREVIOUS - Status: Survived
+--> Mutation 73: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> FRAMEBITS - Status: Survived
+--> Mutation 74: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> CENTER - Status: Survived
+--> Mutation 75: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> WHEN_FOCUSED - Status: Survived
+--> Mutation 76: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> VERTICAL - Status: Survived
+--> Mutation 77: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> NORTH - Status: Survived
+--> Mutation 78: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> NEXT - Status: Survived
+--> Mutation 79: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> RIGHT - Status: Survived
+--> Mutation 80: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> ERROR - Status: Survived
+--> Mutation 81: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> row - Status: Survived
+--> Mutation 82: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> SOUTH - Status: Survived
+--> Mutation 83: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> EAST - Status: Survived
+--> Mutation 84: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> ABORT - Status: Survived
+--> Mutation 85: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> NORTH_WEST - Status: Survived
+--> Mutation 86: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> SOMEBITS - Status: Survived
+--> Mutation 87: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> LEFT - Status: Survived
+--> Mutation 88: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> TRAILING - Status: Survived
+--> Mutation 89: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> HEIGHT - Status: Survived
+--> Mutation 90: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> LEADING - Status: Survived
+--> Mutation 91: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 92: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 93: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> ALLBITS - Status: Survived
+--> Mutation 94: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> TOP - Status: Survived
+--> Mutation 95: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> NORTH_EAST - Status: Survived
+--> Mutation 96: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> SOUTH_EAST - Status: Survived
+--> Mutation 97: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> HORIZONTAL - Status: Survived
+--> Mutation 98: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> SOUTH_WEST - Status: Survived
+--> Mutation 99: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - ReplaceVariable num -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 100: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - InsertUnaryOp Negation of num - Status: Survived
+--> Mutation 101: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - InsertUnaryOp IINC 1 num - Status: Survived
+--> Mutation 102: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:133 - InsertUnaryOp IINC -1 num - Status: Survived
+--> Mutation 103: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:134 - ReplaceVariable st -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 104: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:135 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 105: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:137 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 106: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:139 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 107: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:140 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 108: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:142 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 109: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:143 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 110: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:144 - ReplaceComparisonOperator = null -> != null - Status: Killed
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.net.URLPermission: 
+         *:* http://www.someFakeButWellFormedURL.org/fooExample@2x: 6
+         *:* http://www.someFakeButWellFormedURL.org/org.apache.oro.io@2x.AwkFilenameFilter: 1
+  - java.io.FilePermission: 
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT7120692486604796509.tmp: 1
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT9352044958967901545.tmp: 1
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JF7351180649030531842.tmp: 1
+         and other 3 cases of action/name for this exception class
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+  - java.net.SocketPermission: 
+         connect,resolve some:21: 8
+         connect,resolve ftp.someFakeButWellFormedURL.org:21: 4
+* Writing tests to file
+* Writing JUnit test case 'AdminInfo_ESTest' to test_seeds/seed_1/tests_injected
+* Done!
+
+* Computation finished

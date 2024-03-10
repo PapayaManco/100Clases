@@ -1,0 +1,104 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: org.quickserver.util.xmlreader.AccessConstraintConfig
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/93_quickserver/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.quickserver.util.xmlreader.AccessConstraintConfig
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 100
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 33 / 100
+* Search finished after 181s and 5034 generations, 1819537 statements, best individual has fitness: 37.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 61%
+* Total number of goals: 23
+* Number of covered goals: 14
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 68%
+* Total number of goals: 19
+* Number of covered goals: 13
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 38%
+* Total number of goals: 21
+* Number of covered goals: 8
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 75%
+* Total number of goals: 8
+* Number of covered goals: 6
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 68%
+* Total number of goals: 19
+* Number of covered goals: 13
+* Generated 9 tests with total length 34
+* Resulting test suite's coverage: 70% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 33%
+* There are surviving mutants: 
+--> Mutation 0: org.quickserver.util.xmlreader.AccessConstraintConfig.toXML(Ljava/lang/String;)Ljava/lang/String;:54 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 1: org.quickserver.util.xmlreader.AccessConstraintConfig.toXML(Ljava/lang/String;)Ljava/lang/String;:57 - ReplaceConstant - <access-constraint>
+ ->  - Status: Killed
+--> Mutation 2: org.quickserver.util.xmlreader.AccessConstraintConfig.toXML(Ljava/lang/String;)Ljava/lang/String;:58 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 3: org.quickserver.util.xmlreader.AccessConstraintConfig.toXML(Ljava/lang/String;)Ljava/lang/String;:59 - ReplaceConstant - 	 ->  - Status: Killed
+--> Mutation 4: org.quickserver.util.xmlreader.AccessConstraintConfig.toXML(Ljava/lang/String;)Ljava/lang/String;:60 - ReplaceConstant - </access-constraint>
+ ->  - Status: Killed
+--> Mutation 5: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:70 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 6: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:70 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 7: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:70 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 8: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:73 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 9: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:73 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 10: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:73 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 11: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:73 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 12: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:75 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 13: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:75 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 14: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:75 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 15: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:75 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 16: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:75 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 17: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:75 - InsertUnaryOp Negation of accessFlag - Status: Survived
+--> Mutation 18: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:75 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 19: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:79 - ReplaceConstant - IOException :  ->  - Status: Survived
+--> Mutation 20: org.quickserver.util.xmlreader.AccessConstraintConfig.checkAccept(Ljava/net/Socket;)V:82 - ReplaceConstant - Accept denied from  ->  - Status: Survived
+* Compiling and checking tests
+[MASTER] 23:54:16.549 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 23:54:21.832 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 23:54:27.102 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 23:54:32.366 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 23:54:37.615 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 23:54:42.867 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 23:54:48.117 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 23:54:53.372 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 23:54:58.617 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Permissions denied during test execution: 
+  - java.net.SocketPermission: 
+         resolve localhost: 329
+* Writing tests to file
+* Writing JUnit test case 'AccessConstraintConfig_ESTest' to test_seeds/seed_1/tests
+* Done!
+
+* Computation finished

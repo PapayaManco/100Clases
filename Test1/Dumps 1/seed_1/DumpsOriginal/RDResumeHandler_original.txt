@@ -1,0 +1,31 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: org.gudy.azureus2.core3.disk.impl.resume.RDResumeHandler
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:21:32.943 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 19:21:33.608 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class org.gudy.azureus2.core3.disk.impl.resume.RDResumeHandler
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1770
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 312 / 1770
+[MASTER] 19:21:35.607 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 19:21:35.607 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 19:22:48.142 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 19:23:15.221 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.gudy.azureus2.core3.torrent.impl.TOTorrentDeserialiseImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.io.ObjectInputStream due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.gudy.azureus2.pluginsimpl.local.utils.resourcedownloader.ResourceDownloaderAlternateImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.gudy.azureus2.pluginsimpl.local.utils.resourcedownloader.ResourceDownloaderURLImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.gudy.azureus2.pluginsimpl.local.utils.resourcedownloader.ResourceDownloaderMetaRefreshImpl due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+* Search finished after 182s and 22 generations, 7729 statements, best individual has fitness: 1670.0
+* Computation finished

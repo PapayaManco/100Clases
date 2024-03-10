@@ -1,0 +1,93 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/109_pdfsam/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 13:01:08.741 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 13:01:09.043 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 13:01:10.663 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 42
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 16 / 42
+[MASTER] 13:01:11.513 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 13:01:18.343 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 13:01:18.496 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 13:02:44.843 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 13:02:49.103 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 13:04:11.630 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 2806 generations, 601494 statements, best individual has fitness: 39.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 25%
+* Total number of goals: 16
+* Number of covered goals: 4
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 14%
+* Total number of goals: 7
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 10
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 1
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 14%
+* Total number of goals: 7
+* Number of covered goals: 1
+* Generated 1 tests with total length 2
+* Resulting test suite's coverage: 24% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:46 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 1: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:46 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 2: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:46 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 3: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:46 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 4: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:46 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 5: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:50 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 6: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:53 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 7: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:56 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 8: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:59 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 9: org.pdfsam.guiclient.commons.dnd.droppers.AbstractDropper.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:62 - ReplaceConstant - Error:  ->  - Status: Survived
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.net.URLPermission: 
+         *:* http://www.someFakeButWellFormedURL.org/fooExample@2x: 1
+  - java.io.FilePermission: 
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT5996022044919063303.tmp: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing tests to file
+* Writing JUnit test case 'AbstractDropper_ESTest' to test_seeds/seed_1/tests_injected
+* Done!
+
+* Computation finished

@@ -1,14 +1,11 @@
-* EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* EvoSuite 1.0.7-SNAPSHOT
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/102_squirrel-sql/evosuite-files/evosuite.properties
-* Connecting to master process on port 7221
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
+* Connecting to master process on port 21446
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 18:51:36.706 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 18:51:36.945 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 18:51:37.465 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl
 * Test criteria:
@@ -20,12 +17,7 @@
   - Top-Level Method Coverage
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
-* Total number of test goals for DYNAMOSA: 429
-* Using seed 5072178650187
+* Total number of test goals for DYNAMOSA: 422
+* Using seed 1710100690020
 * Starting evolution
-* Initial Number of Goals in DynaMOSA = 207 / 429
-[MASTER] 18:51:41.205 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 18:51:50.310 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 18:52:56.610 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 185s and 1068 generations, 250588 statements, best individual has fitness: 131.0
-* Computation finished
+* Initial Number of Goals in DynMOSA = 200 / 422

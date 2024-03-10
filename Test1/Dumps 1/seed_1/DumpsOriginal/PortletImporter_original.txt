@@ -1,0 +1,55 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.liferay.portal.lar.PortletImporter
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:27:32.094 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 20:27:32.429 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 20:27:33.663 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 20:27:34.398 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portal.lar.PortletImporter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 2360
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 487 / 2360
+[MASTER] 20:27:55.349 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.CallableStatement canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 20:27:55.697 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.security.Timestamp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.security.CodeSigner due to org.evosuite.ga.ConstructionFailedException: Have no generator for class java.security.CodeSigner canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 20:27:57.868 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 20:28:03.759 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.reflect.Constructor<T> : Type points to itself
+[MASTER] 20:28:11.305 [logback-1] WARN  TestCluster - Failed to check cache for java.util.EnumSet<E> : Type points to itself
+[MASTER] 20:28:12.413 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.jbc.entity.EntityRegionImpl: java.lang.NoClassDefFoundError: org/jboss/cache/Fqn
+[MASTER] 20:28:15.341 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 20:28:15.429 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 20:28:16.533 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getClassLoader.portal
+[MASTER] 20:28:25.357 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portlet.PortletPreferencesWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.http.HttpServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 20:28:26.993 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.ResultSet canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 20:28:32.384 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LayoutSetWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.GroupWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.CompanyWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 20:28:38.672 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.asset.model.AssetVocabularyWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 20:28:46.248 [logback-1] WARN  TestUsageChecker - class javax.media.jai.OperationDescriptorImpl$1 looks like an anonymous class, ignoring it (although reflection says false) OperationDescriptorImpl$1
+[MASTER] 20:28:46.434 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 20:28:46.507 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 20:28:46.543 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 20:28:48.621 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.TreeMap due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.collection.PersistentSortedMap due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.collection.PersistentSortedSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.CriteriaImpl due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 20:29:03.308 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.jbc.collection.CollectionRegionImpl: java.lang.NoClassDefFoundError: org/jboss/cache/Fqn
+[MASTER] 20:29:24.150 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.collection.PersistentSortedMap due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.loader.criteria.CriteriaQueryTranslator due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.SessionFactoryImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.persister.entity.UnionSubclassEntityPersister due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 20:29:32.632 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.PortletPreferencesFactoryImpl canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 20:29:32.989 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself
+[MASTER] 20:29:48.868 [logback-1] WARN  TestCluster - Failed to check cache for org.apache.lucene.search.NumericRangeQuery<T> : Type points to itself
+[MASTER] 20:29:56.946 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.LinkedBlockingQueue<E> : Type points to itself
+[MASTER] 20:30:16.469 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 20:30:23.438 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.rts.RunTimeStatisticsImpl due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.sql.execute.rts.RunTimeStatisticsImpl canUseFunctionalMocks=false, canBeMocked: true
+* Search finished after 181s and 511 generations, 195492 statements, best individual has fitness: 2019.0
+* Computation finished

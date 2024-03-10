@@ -1,0 +1,32 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
+* Connecting to master process on port 7221
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:40:42.023 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 19:40:42.174 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 635
+* Using seed 5072178650187
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 99 / 635
+[MASTER] 19:40:43.655 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself
+[MASTER] 19:40:43.655 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 19:40:44.248 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 19:40:56.843 [logback-1] WARN  TestCluster - Failed to check cache for com.aelitis.azureus.ui.common.table.TableView<DATASOURCETYPE> : Type points to itself
+[MASTER] 19:42:52.948 [logback-1] WARN  TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 181s and 2892 generations, 362221 statements, best individual has fitness: 590.0
+* Computation finished
