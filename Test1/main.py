@@ -6,7 +6,9 @@ import os
 import random
 import shutil
 c = 0
-EVOSUITE_JAR = "evosuite-master-1.0.7-SNAPSHOT.jar"
+
+EVOSUITE_JAR = "evosuite-master-1.2.1-SNAPSHOT.jar"
+#EVOSUITE_JAR = "evosuite-master-1.0.7-SNAPSHOT.jar"
 # Funciones de preparación
 copiar_a_proyectos_inyectados(EVOSUITE_JAR)
 copiar_a_original(EVOSUITE_JAR)

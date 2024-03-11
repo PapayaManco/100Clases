@@ -1,9 +1,9 @@
-* EvoSuite 1.0.7-SNAPSHOT
+* EvoSuite 1.2.1-SNAPSHOT
 * Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel
 * Starting Client-0
 * Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
-* Connecting to master process on port 16626
+* Connecting to master process on port 13043
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -17,48 +17,7 @@
   - Top-Level Method Coverage
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
-* Total number of test goals for DYNAMOSA: 547
-* Using seed 1710099708554
+* Total number of test goals for DYNAMOSA: 550
+* Using seed 1710170797044
 * Starting evolution
-* Initial Number of Goals in DynMOSA = 189 / 547
-* Search finished after 181s and 2020 generations, 755788 statements, best individual has fitness: 95.0
-* Minimizing test suite
-* Going to analyze the coverage criteria
-* Coverage analysis for criterion LINE
-* Coverage of criterion LINE: 85%
-* Total number of goals: 106
-* Number of covered goals: 90
-* Coverage analysis for criterion BRANCH
-* Coverage of criterion BRANCH: 78%
-* Total number of goals: 51
-* Number of covered goals: 40
-* Coverage analysis for criterion EXCEPTION
-* Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 1
-* Number of covered goals: 1
-* Coverage analysis for criterion WEAKMUTATION
-* Coverage of criterion WEAKMUTATION: 97%
-* Total number of goals: 303
-* Number of covered goals: 294
-* Coverage analysis for criterion OUTPUT
-* Coverage of criterion OUTPUT: 71%
-* Total number of goals: 14
-* Number of covered goals: 10
-* Coverage analysis for criterion METHOD
-* Coverage of criterion METHOD: 100%
-* Total number of goals: 11
-* Number of covered goals: 11
-* Coverage analysis for criterion METHODNOEXCEPTION
-* Coverage of criterion METHODNOEXCEPTION: 100%
-* Total number of goals: 11
-* Number of covered goals: 11
-* Coverage analysis for criterion CBRANCH
-* Coverage of criterion CBRANCH: 76%
-* Total number of goals: 51
-* Number of covered goals: 39
-* Generated 23 tests with total length 93
-* Resulting test suite's coverage: 80% (average coverage for all fitness functions)
-* Generating assertions
-* Resulting test suite's mutation score: 42%
-* Compiling and checking tests
-* Computation finished
+* Initial Number of Goals in DynaMOSA = 192 / 550
