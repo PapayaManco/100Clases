@@ -5,32 +5,26 @@ import subprocess
 import os
 import random
 import shutil
-c = 0
 
 EVOSUITE_JAR = "evosuite-master-1.2.1-SNAPSHOT.jar"
 #EVOSUITE_JAR = "evosuite-master-1.0.7-SNAPSHOT.jar"
+
 # Funciones de preparación
 copiar_a_proyectos_inyectados(EVOSUITE_JAR)
 copiar_a_original(EVOSUITE_JAR)
 
 projects = [row[0] for row in info]
 projects = list(set(projects))
-
 projects_cp = {}
 for project in projects:
     properties_file_path = f'projects og/{project}/evosuite-files/evosuite.properties'
-    # Check if the properties file exists
     if os.path.exists(properties_file_path):
         with open(properties_file_path, 'r') as f:
-            first_line = f.readline().strip()  # Read the first line and remove leading/trailing whitespace
-            # Extract the value after the '=' character
+            first_line = f.readline().strip()
             value_after_equal_sign = first_line.split('=')[1].strip()
-            # Transform every : into ;
             value_after_equal_sign = value_after_equal_sign.replace(':', ';')
-            # Add the project to the dictionary
             projects_cp[project] = value_after_equal_sign
 
-#original
 for iteracion in range(1,2):
     seed = str(random.randint(1000000000000, 9999999999999))
     for fila in info:
@@ -114,7 +108,6 @@ for iteracion in range(1,2):
 
 #Copiar Tests
 for project in projects:
-    continue
     source_folder = 'projects og/'+project+'/test_seeds'
     destination_folder = 'tests_seeds/'+project
     # Copy the folder and its contents

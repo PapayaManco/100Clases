@@ -5,14 +5,15 @@ import subprocess
 import os
 import random
 import shutil
-c = 0
+
+EVOSUITE_JAR = "evosuite-master-1.2.1-SNAPSHOT.jar"
+#EVOSUITE_JAR = "evosuite-master-1.0.7-SNAPSHOT.jar"
 
 # Funciones de preparación
-copiar_a_proyectos_inyectados()
-copiar_a_original()
+copiar_a_proyectos_inyectados(EVOSUITE_JAR)
+copiar_a_original(EVOSUITE_JAR)
 
-# Obtener un numero random de 13 digitos
-#original
+
 for iteracion in range(1,2):
     seed = str(random.randint(1000000000000, 9999999999999))
     for fila in info:
@@ -22,7 +23,8 @@ for iteracion in range(1,2):
         print("Generando tests a la clase: ",clase)
         # Comando sin redirección
         command = [
-            'java', '-jar', 'evosuite-master-1.2.1-SNAPSHOT.jar',
+            'java', '-jar', EVOSUITE_JAR,
+            "-generateMOSuite",
             '-class', clase_path,
             '-seed', seed,
             '-Dshow_progress=FALSE',
@@ -56,7 +58,8 @@ for iteracion in range(1,2):
         print("Generando tests a la clase: ",clase)
         # Comando sin redirección
         command = [
-            'java', '-jar', 'evosuite-master-1.2.1-SNAPSHOT.jar',
+            'java', '-jar', EVOSUITE_JAR,
+            "-generateMOSuite",
             '-class', clase_path,
             '-seed', seed,
             '-Dshow_progress=FALSE',
