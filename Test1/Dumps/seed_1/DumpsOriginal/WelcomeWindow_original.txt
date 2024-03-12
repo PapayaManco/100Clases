@@ -1,0 +1,10 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: org.gudy.azureus2.ui.swt.welcome.WelcomeWindow
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Error while initializing target class: Cannot load 32-bit SWT libraries on 64-bit JVM
+* Computation finished

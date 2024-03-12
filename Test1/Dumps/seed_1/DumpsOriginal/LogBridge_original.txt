@@ -1,0 +1,130 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.liferay.portal.module.framework.LogBridge
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:26:05.278 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 01:26:05.633 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 01:26:05.741 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portal.module.framework.LogBridge
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 136
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 52 / 136
+[MASTER] 01:26:09.990 [logback-1] WARN  TestCluster - Failed to check cache for org.osgi.framework.ServiceReference<S> : Type points to itself
+[MASTER] 01:26:11.115 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:26:30.447 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 01:26:31.377 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 01:26:39.187 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 01:27:18.455 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+* Search finished after 181s and 3590 generations, 531990 statements, best individual has fitness: 110.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 33%
+* Total number of goals: 33
+* Number of covered goals: 11
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 25%
+* Total number of goals: 24
+* Number of covered goals: 6
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 39
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 2
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 29%
+* Total number of goals: 7
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 25%
+* Total number of goals: 24
+* Number of covered goals: 6
+* Generated 6 tests with total length 16
+* Resulting test suite's coverage: 31% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:57 - ReplaceConstant - . ->  - Status: Survived
+--> Mutation 1: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:57 - ReplaceConstant - _ ->  - Status: Survived
+--> Mutation 2: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:59 - ReplaceConstant - osgi.logging. ->  - Status: Survived
+--> Mutation 3: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:65 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 4: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:66 - ReplaceVariable message -> symbolicName - Status: Survived
+--> Mutation 5: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:66 - ReplaceConstant -   ->  - Status: Survived
+--> Mutation 6: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - InsertUnaryOp Negation of level - Status: Survived
+--> Mutation 7: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - InsertUnaryOp IINC 1 level - Status: Survived
+--> Mutation 8: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - InsertUnaryOp IINC -1 level - Status: Survived
+--> Mutation 9: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 10: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 11: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 12: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 13: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 14: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 15: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 16: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 17: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:69 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 18: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:70 - ReplaceVariable message -> symbolicName - Status: Survived
+--> Mutation 19: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:72 - InsertUnaryOp Negation of level - Status: Survived
+--> Mutation 20: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:72 - InsertUnaryOp IINC 1 level - Status: Survived
+--> Mutation 21: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:72 - InsertUnaryOp IINC -1 level - Status: Survived
+--> Mutation 22: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:72 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 23: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:72 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 24: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:72 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 25: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:73 - ReplaceVariable message -> symbolicName - Status: Survived
+--> Mutation 26: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - InsertUnaryOp Negation of level - Status: Survived
+--> Mutation 27: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - InsertUnaryOp IINC 1 level - Status: Survived
+--> Mutation 28: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - InsertUnaryOp IINC -1 level - Status: Survived
+--> Mutation 29: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 30: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 31: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 32: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 33: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 34: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 35: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 36: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 37: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 38: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:76 - ReplaceVariable message -> symbolicName - Status: Survived
+* Compiling and checking tests
+[MASTER] 01:29:18.878 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 01:29:24.367 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 01:29:29.826 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 01:29:35.289 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 01:29:40.734 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 01:29:46.184 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         preferences: 1
+         getStackWalkerWithClassReference: 1
+         writeFileDescriptor: 2
+  - java.security.AllPermission: 
+         <all actions> <all permissions>: 45006
+* Writing tests to file
+* Writing JUnit test case 'LogBridge_ESTest' to test_seeds/seed_1/tests_original
+* Done!
+
+* Computation finished

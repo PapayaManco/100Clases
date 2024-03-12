@@ -1,0 +1,33 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 06:39:31.356 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 06:39:31.831 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 06:39:31.948 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 124
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 20 / 124
+[MASTER] 06:39:32.881 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 06:39:34.522 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 06:39:45.020 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getClassLoader.portal
+[MASTER] 06:41:52.387 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 06:41:52.395 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+* Search finished after 181s and 2913 generations, 961946 statements, best individual has fitness: 77.0
+* Computation finished

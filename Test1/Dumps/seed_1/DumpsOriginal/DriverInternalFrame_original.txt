@@ -1,11 +1,15 @@
-* EvoSuite 1.0.7-SNAPSHOT
-* Configuration: EvoSuite_fixed
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame
 * Starting Client-0
-* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
-* Connecting to master process on port 5681
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:30:32.066 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 23:30:32.822 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 23:30:33.670 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 23:30:33.801 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame
 * Test criteria:
@@ -17,49 +21,13 @@
   - Top-Level Method Coverage
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
-* Total number of test goals for DYNAMOSA: 1020
-* Using seed 1710099900595
+* Total number of test goals for DYNAMOSA: 1045
+* Using seed 2482030657809
 * Starting evolution
-* Initial Number of Goals in DynMOSA = 650 / 1020
-[MASTER] 16:45:10.011 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.JSpinner$ListEditor due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.JSpinner due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.SpinnerNumberModel due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.time.DynamicTimeSeriesCollection due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-* Search finished after 181s and 1294 generations, 631502 statements, best individual has fitness: 438.0
-* Minimizing test suite
-* Going to analyze the coverage criteria
-* Coverage analysis for criterion LINE
-* Coverage of criterion LINE: 68%
-* Total number of goals: 338
-* Number of covered goals: 231
-* Coverage analysis for criterion BRANCH
-* Coverage of criterion BRANCH: 36%
-* Total number of goals: 99
-* Number of covered goals: 36
-* Coverage analysis for criterion EXCEPTION
-* Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 3
-* Number of covered goals: 3
-* Coverage analysis for criterion WEAKMUTATION
-* Coverage of criterion WEAKMUTATION: 59%
-* Total number of goals: 463
-* Number of covered goals: 274
-* Coverage analysis for criterion OUTPUT
-* Coverage of criterion OUTPUT: 67%
-* Total number of goals: 3
-* Number of covered goals: 2
-* Coverage analysis for criterion METHOD
-* Coverage of criterion METHOD: 33%
-* Total number of goals: 9
-* Number of covered goals: 3
-* Coverage analysis for criterion METHODNOEXCEPTION
-* Coverage of criterion METHODNOEXCEPTION: 33%
-* Total number of goals: 9
-* Number of covered goals: 3
-* Coverage analysis for criterion CBRANCH
-* Coverage of criterion CBRANCH: 36%
-* Total number of goals: 99
-* Number of covered goals: 36
-* Generated 11 tests with total length 65
-* Resulting test suite's coverage: 48% (average coverage for all fitness functions)
-* Generating assertions
-* Resulting test suite's mutation score: 16%
-* Compiling and checking tests
+* Initial Number of Goals in DynaMOSA = 652 / 1045
+[MASTER] 23:30:43.816 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 23:30:43.824 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 23:30:44.051 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 23:30:52.325 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+* Search finished after 181s and 1174 generations, 639397 statements, best individual has fitness: 438.0
 * Computation finished

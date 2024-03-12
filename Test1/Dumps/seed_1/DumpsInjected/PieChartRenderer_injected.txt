@@ -1,0 +1,197 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: de.progra.charting.render.PieChartRenderer
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/88_jopenchart/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 09:32:34.516 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 09:32:34.554 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+* Finished analyzing classpath
+* Generating tests for class de.progra.charting.render.PieChartRenderer
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 201
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 63 / 201
+* Search finished after 182s and 25 generations, 15608 statements, best individual has fitness: 59.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 67%
+* Total number of goals: 39
+* Number of covered goals: 26
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 43%
+* Total number of goals: 14
+* Number of covered goals: 6
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 86%
+* Total number of goals: 128
+* Number of covered goals: 110
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 67%
+* Total number of goals: 3
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 43%
+* Total number of goals: 14
+* Number of covered goals: 6
+* Generated 3 tests with total length 18
+* Resulting test suite's coverage: 68% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:70 - ReplaceVariable m -> model - Status: Survived
+--> Mutation 1: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:72 - ReplaceConstant - 2147483647 -> 0 - Status: Survived
+--> Mutation 2: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:72 - ReplaceConstant - 2147483647 -> 1 - Status: Survived
+--> Mutation 3: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:72 - ReplaceConstant - 2147483647 -> -1 - Status: Survived
+--> Mutation 4: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:72 - ReplaceConstant - 2147483647 -> 2147483646 - Status: Survived
+--> Mutation 5: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:72 - ReplaceConstant - 2147483647 -> -2147483648 - Status: Survived
+--> Mutation 6: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 7: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceVariable i -> min_length - Status: Survived
+--> Mutation 8: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceVariable i -> datenreihen - Status: Survived
+--> Mutation 9: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 10: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 11: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 12: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceVariable datenreihen -> min_length - Status: Survived
+--> Mutation 13: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceVariable datenreihen -> i - Status: Survived
+--> Mutation 14: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - InsertUnaryOp Negation of datenreihen - Status: Survived
+--> Mutation 15: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - InsertUnaryOp IINC 1 datenreihen - Status: Survived
+--> Mutation 16: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - InsertUnaryOp IINC -1 datenreihen - Status: Survived
+--> Mutation 17: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 18: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 19: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 20: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - ReplaceVariable min_length -> i - Status: Survived
+--> Mutation 21: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - ReplaceVariable min_length -> datenreihen - Status: Survived
+--> Mutation 22: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - InsertUnaryOp Negation of min_length - Status: Survived
+--> Mutation 23: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - InsertUnaryOp IINC 1 min_length - Status: Survived
+--> Mutation 24: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - InsertUnaryOp IINC -1 min_length - Status: Survived
+--> Mutation 25: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - ReplaceVariable m -> model - Status: Survived
+--> Mutation 26: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - ReplaceVariable i -> min_length - Status: Survived
+--> Mutation 27: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - ReplaceVariable i -> datenreihen - Status: Survived
+--> Mutation 28: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 29: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 30: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:75 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 31: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceVariable i -> min_length - Status: Survived
+--> Mutation 32: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:74 - ReplaceVariable i -> datenreihen - Status: Survived
+--> Mutation 33: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceVariable width -> center_y - Status: Survived
+--> Mutation 34: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceVariable width -> height - Status: Survived
+--> Mutation 35: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceVariable width -> center_x - Status: Survived
+--> Mutation 36: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - InsertUnaryOp Negation of width - Status: Survived
+--> Mutation 37: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> 0.0 - Status: Survived
+--> Mutation 38: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> 1.0 - Status: Survived
+--> Mutation 39: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> -1.0 - Status: Survived
+--> Mutation 40: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> -0.09999999999999998 - Status: Survived
+--> Mutation 41: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> 1.9 - Status: Survived
+--> Mutation 42: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 43: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 44: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 45: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 46: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceVariable height -> width - Status: Survived
+--> Mutation 47: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceVariable height -> center_y - Status: Survived
+--> Mutation 48: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceVariable height -> center_x - Status: Survived
+--> Mutation 49: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - InsertUnaryOp Negation of height - Status: Survived
+--> Mutation 50: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> 0.0 - Status: Survived
+--> Mutation 51: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> 1.0 - Status: Survived
+--> Mutation 52: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> -1.0 - Status: Survived
+--> Mutation 53: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> -0.09999999999999998 - Status: Survived
+--> Mutation 54: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceConstant - 0.9 -> 1.9 - Status: Survived
+--> Mutation 55: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 56: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 57: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 58: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:80 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 59: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:81 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 60: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:81 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 61: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - ReplaceVariable min_length -> datenreihen - Status: Survived
+--> Mutation 62: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - InsertUnaryOp Negation of min_length - Status: Survived
+--> Mutation 63: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - InsertUnaryOp IINC 1 min_length - Status: Survived
+--> Mutation 64: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - InsertUnaryOp IINC -1 min_length - Status: Survived
+--> Mutation 65: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - ReplaceVariable reihe -> min_length - Status: Survived
+--> Mutation 66: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - ReplaceVariable reihe -> datenreihen - Status: Survived
+--> Mutation 67: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - InsertUnaryOp Negation of reihe - Status: Survived
+--> Mutation 68: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - InsertUnaryOp IINC 1 reihe - Status: Survived
+--> Mutation 69: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - InsertUnaryOp IINC -1 reihe - Status: Survived
+--> Mutation 70: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 71: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:82 - ReplaceComparisonOperator < -> >= - Status: Survived
+--> Mutation 72: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable rad -> width - Status: Survived
+--> Mutation 73: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable rad -> modelVal - Status: Survived
+--> Mutation 74: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable rad -> center_y - Status: Survived
+--> Mutation 75: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable rad -> height - Status: Survived
+--> Mutation 76: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable rad -> center_x - Status: Survived
+--> Mutation 77: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - InsertUnaryOp Negation of rad - Status: Survived
+--> Mutation 78: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable min_length -> datenreihen - Status: Survived
+--> Mutation 79: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable min_length -> reihe - Status: Survived
+--> Mutation 80: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - InsertUnaryOp Negation of min_length - Status: Survived
+--> Mutation 81: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - InsertUnaryOp IINC 1 min_length - Status: Survived
+--> Mutation 82: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - InsertUnaryOp IINC -1 min_length - Status: Survived
+--> Mutation 83: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 84: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 85: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 86: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 87: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable reihe -> min_length - Status: Survived
+--> Mutation 88: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceVariable reihe -> datenreihen - Status: Survived
+--> Mutation 89: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - InsertUnaryOp Negation of reihe - Status: Survived
+--> Mutation 90: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - InsertUnaryOp IINC 1 reihe - Status: Survived
+--> Mutation 91: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - InsertUnaryOp IINC -1 reihe - Status: Survived
+--> Mutation 92: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 93: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 94: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 95: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:84 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 96: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_x -> kreis - Status: Survived
+--> Mutation 97: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_x -> modelVal - Status: Survived
+--> Mutation 98: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_x -> rad - Status: Survived
+--> Mutation 99: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_x -> width - Status: Survived
+--> Mutation 100: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_x -> center_y - Status: Survived
+--> Mutation 101: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_x -> height - Status: Survived
+--> Mutation 102: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - InsertUnaryOp Negation of center_x - Status: Survived
+--> Mutation 103: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable kreis -> modelVal - Status: Survived
+--> Mutation 104: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable kreis -> rad - Status: Survived
+--> Mutation 105: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable kreis -> width - Status: Survived
+--> Mutation 106: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable kreis -> center_y - Status: Survived
+--> Mutation 107: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable kreis -> height - Status: Survived
+--> Mutation 108: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable kreis -> center_x - Status: Survived
+--> Mutation 109: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - InsertUnaryOp Negation of kreis - Status: Survived
+--> Mutation 110: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceConstant - 2.0 -> 0.0 - Status: Survived
+--> Mutation 111: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceConstant - 2.0 -> 1.0 - Status: Survived
+--> Mutation 112: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceConstant - 2.0 -> -1.0 - Status: Survived
+--> Mutation 113: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceConstant - 2.0 -> 3.0 - Status: Survived
+--> Mutation 114: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 115: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 116: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 117: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 118: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 119: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 120: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 121: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 122: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_y -> kreis - Status: Survived
+--> Mutation 123: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_y -> modelVal - Status: Survived
+--> Mutation 124: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_y -> rad - Status: Survived
+--> Mutation 125: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_y -> width - Status: Survived
+--> Mutation 126: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_y -> height - Status: Survived
+--> Mutation 127: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_y -> center_x - Status: Survived
+* Compiling and checking tests
+* Writing tests to file
+* Writing JUnit test case 'PieChartRenderer_ESTest' to test_seeds/seed_1/tests_injected
+* Done!
+
+* Computation finished

@@ -1,0 +1,31 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.aelitis.azureus.core.nat.NATTraverser
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/104_vuze/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 05:34:47.471 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 05:34:47.934 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class com.aelitis.azureus.core.nat.NATTraverser
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 235
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 72 / 235
+[MASTER] 05:35:20.785 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.aelitis.azureus.core.nat.NATTraverser.sendMessage(Lcom/aelitis/azureus/core/nat/NATTraversalHandler;Ljava/net/InetSocketAddress;Ljava/net/InetSocketAddress;Ljava/util/Map;)Ljava/util/Map;
+[MASTER] 05:37:57.788 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.aelitis.azureus.core.nat.NATTraverser.syncTraverse(Lcom/aelitis/azureus/core/nat/NATTraversalHandler;Ljava/net/InetSocketAddress;Ljava/util/Map;Lcom/aelitis/azureus/core/nat/NATTraversalObserver;)V: Line 150
+[MASTER] 05:37:57.788 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.aelitis.azureus.core.nat.NATTraverser.syncTraverse(Lcom/aelitis/azureus/core/nat/NATTraversalHandler;Ljava/net/InetSocketAddress;Ljava/util/Map;Lcom/aelitis/azureus/core/nat/NATTraversalObserver;)V: Line 148
+[MASTER] 05:37:57.789 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 24: com.aelitis.azureus.core.nat.NATTraverser.syncTraverse(Lcom/aelitis/azureus/core/nat/NATTraversalHandler;Ljava/net/InetSocketAddress;Ljava/util/Map;Lcom/aelitis/azureus/core/nat/NATTraversalObserver;)V:150 - ReplaceComparisonOperator != null -> = null
+* Search finished after 188s and 5 generations, 1939 statements, best individual has fitness: 166.0
+* Computation finished

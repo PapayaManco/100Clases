@@ -1,0 +1,421 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.lts.swing.table.JTableUtils
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:55:30.297 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 03:55:30.506 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 03:55:31.362 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class com.lts.swing.table.JTableUtils
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 582
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 221 / 582
+[MASTER] 03:55:31.871 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 03:55:31.880 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 03:55:31.920 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 03:55:34.602 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 03:55:42.285 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowSorter<M> : Type points to itself
+[MASTER] 03:57:38.287 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+* Search finished after 181s and 975 generations, 405834 statements, best individual has fitness: 64.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 97%
+* Total number of goals: 104
+* Number of covered goals: 101
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 90%
+* Total number of goals: 49
+* Number of covered goals: 44
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 320
+* Number of covered goals: 308
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 46%
+* Total number of goals: 28
+* Number of covered goals: 13
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 16
+* Number of covered goals: 16
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 16
+* Number of covered goals: 16
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 90%
+* Total number of goals: 49
+* Number of covered goals: 44
+* Generated 42 tests with total length 143
+* Resulting test suite's coverage: 80% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 26%
+* There are surviving mutants: 
+--> Mutation 0: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp Negation of columnIndex - Status: Survived
+--> Mutation 1: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp IINC 1 columnIndex - Status: Killed
+--> Mutation 2: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp IINC -1 columnIndex - Status: Killed
+--> Mutation 3: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;[Ljava/lang/String;)Ljavax/swing/JComboBox;:86 - InsertUnaryOp Negation of columnIndex - Status: Killed
+--> Mutation 4: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;[Ljava/lang/String;)Ljavax/swing/JComboBox;:86 - InsertUnaryOp IINC 1 columnIndex - Status: Survived
+--> Mutation 5: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;[Ljava/lang/String;)Ljavax/swing/JComboBox;:86 - InsertUnaryOp IINC -1 columnIndex - Status: Survived
+--> Mutation 6: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:97 - InsertUnaryOp Negation of column - Status: Killed
+--> Mutation 7: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:97 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 8: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:97 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 9: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:100 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 10: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:106 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 11: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:110 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 12: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:129 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 13: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:132 - ReplaceVariable gp -> p - Status: Survived
+--> Mutation 14: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:132 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 15: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:134 - ReplaceVariable gp -> p - Status: Killed
+--> Mutation 16: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:137 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 17: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:137 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 18: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - ReplaceVariable row -> col - Status: Survived
+--> Mutation 19: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 20: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - InsertUnaryOp IINC 1 row - Status: Survived
+--> Mutation 21: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - InsertUnaryOp IINC -1 row - Status: Survived
+--> Mutation 22: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - ReplaceVariable col -> row - Status: Survived
+--> Mutation 23: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - InsertUnaryOp Negation of col - Status: Survived
+--> Mutation 24: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - InsertUnaryOp IINC 1 col - Status: Survived
+--> Mutation 25: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - InsertUnaryOp IINC -1 col - Status: Survived
+--> Mutation 26: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:142 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 27: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:144 - ReplaceVariable viewrect -> cellrect - Status: Survived
+--> Mutation 28: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:144 - ReplaceVariable cellrect -> viewrect - Status: Survived
+--> Mutation 29: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:144 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 30: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:146 - ReplaceVariable viewrect -> cellrect - Status: Survived
+--> Mutation 31: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:146 - ReplaceVariable cellrect -> viewrect - Status: Survived
+--> Mutation 32: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceVariable union -> viewrect - Status: Survived
+--> Mutation 33: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceVariable union -> cellrect - Status: Survived
+--> Mutation 34: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceVariable union -> viewrect - Status: Survived
+--> Mutation 35: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceVariable union -> cellrect - Status: Survived
+--> Mutation 36: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 37: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 38: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 39: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 40: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceVariable viewrect -> cellrect - Status: Survived
+--> Mutation 41: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceVariable viewrect -> union - Status: Survived
+--> Mutation 42: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 43: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 44: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 45: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:147 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 46: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceVariable union -> viewrect - Status: Survived
+--> Mutation 47: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceVariable union -> cellrect - Status: Survived
+--> Mutation 48: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceVariable union -> viewrect - Status: Survived
+--> Mutation 49: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceVariable union -> cellrect - Status: Survived
+--> Mutation 50: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 51: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 52: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 53: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 54: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceVariable viewrect -> cellrect - Status: Survived
+--> Mutation 55: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceVariable viewrect -> union - Status: Survived
+--> Mutation 56: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 57: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 58: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 59: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:148 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 60: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - ReplaceVariable x -> col - Status: Survived
+--> Mutation 61: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - ReplaceVariable x -> y - Status: Survived
+--> Mutation 62: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - ReplaceVariable x -> row - Status: Survived
+--> Mutation 63: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - InsertUnaryOp Negation of x - Status: Survived
+--> Mutation 64: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - InsertUnaryOp IINC 1 x - Status: Survived
+--> Mutation 65: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - InsertUnaryOp IINC -1 x - Status: Survived
+--> Mutation 66: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - ReplaceVariable y -> x - Status: Survived
+--> Mutation 67: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - ReplaceVariable y -> col - Status: Survived
+--> Mutation 68: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - ReplaceVariable y -> row - Status: Survived
+--> Mutation 69: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - InsertUnaryOp Negation of y - Status: Survived
+--> Mutation 70: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - InsertUnaryOp IINC 1 y - Status: Survived
+--> Mutation 71: com.lts.swing.table.JTableUtils.scrollToCell(Ljavax/swing/JTable;II)V:149 - InsertUnaryOp IINC -1 y - Status: Survived
+--> Mutation 72: com.lts.swing.table.JTableUtils.scrollToRow(Ljavax/swing/JTable;I)V:157 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 73: com.lts.swing.table.JTableUtils.scrollToRow(Ljavax/swing/JTable;I)V:157 - InsertUnaryOp IINC 1 row - Status: Survived
+--> Mutation 74: com.lts.swing.table.JTableUtils.scrollToRow(Ljavax/swing/JTable;I)V:157 - InsertUnaryOp IINC -1 row - Status: Survived
+--> Mutation 75: com.lts.swing.table.JTableUtils.scrollToRow(Ljavax/swing/JTable;I)V:157 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 76: com.lts.swing.table.JTableUtils.scrollToRow(Ljavax/swing/JTable;I)V:157 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 77: com.lts.swing.table.JTableUtils.setSelectedRow(Ljavax/swing/JTable;I)V:194 - InsertUnaryOp Negation of row - Status: Killed
+--> Mutation 78: com.lts.swing.table.JTableUtils.setSelectedRow(Ljavax/swing/JTable;I)V:194 - InsertUnaryOp IINC 1 row - Status: Survived
+--> Mutation 79: com.lts.swing.table.JTableUtils.setSelectedRow(Ljavax/swing/JTable;I)V:194 - InsertUnaryOp IINC -1 row - Status: Survived
+--> Mutation 80: com.lts.swing.table.JTableUtils.setSelectedRow(Ljavax/swing/JTable;I)V:194 - InsertUnaryOp Negation of row - Status: Killed
+--> Mutation 81: com.lts.swing.table.JTableUtils.setSelectedRow(Ljavax/swing/JTable;I)V:194 - InsertUnaryOp IINC 1 row - Status: Survived
+--> Mutation 82: com.lts.swing.table.JTableUtils.setSelectedRow(Ljavax/swing/JTable;I)V:194 - InsertUnaryOp IINC -1 row - Status: Survived
+--> Mutation 83: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - ReplaceVariable start -> end - Status: Survived
+--> Mutation 84: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp Negation of start - Status: Killed
+--> Mutation 85: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp IINC 1 start - Status: Survived
+--> Mutation 86: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp IINC -1 start - Status: Survived
+--> Mutation 87: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - ReplaceVariable end -> start - Status: Survived
+--> Mutation 88: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp Negation of end - Status: Killed
+--> Mutation 89: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp IINC 1 end - Status: Survived
+--> Mutation 90: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp IINC -1 end - Status: Survived
+--> Mutation 91: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 92: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 93: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 94: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - InsertUnaryOp Negation of rowIndex - Status: Killed
+--> Mutation 95: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - InsertUnaryOp IINC 1 rowIndex - Status: Killed
+--> Mutation 96: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - InsertUnaryOp IINC -1 rowIndex - Status: Killed
+--> Mutation 97: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 98: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 99: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 100: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 101: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceVariable i -> colCount - Status: Survived
+--> Mutation 102: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceVariable i -> rowIndex - Status: Killed
+--> Mutation 103: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 104: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 105: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 106: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceVariable colCount -> i - Status: Survived
+--> Mutation 107: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceVariable colCount -> rowIndex - Status: Survived
+--> Mutation 108: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - InsertUnaryOp Negation of colCount - Status: Survived
+--> Mutation 109: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - InsertUnaryOp IINC 1 colCount - Status: Killed
+--> Mutation 110: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - InsertUnaryOp IINC -1 colCount - Status: Survived
+--> Mutation 111: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 112: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 113: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 114: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - ReplaceVariable rowIndex -> colCount - Status: Survived
+--> Mutation 115: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - ReplaceVariable rowIndex -> i - Status: Survived
+--> Mutation 116: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - InsertUnaryOp Negation of rowIndex - Status: Survived
+--> Mutation 117: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - InsertUnaryOp IINC 1 rowIndex - Status: Survived
+--> Mutation 118: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - InsertUnaryOp IINC -1 rowIndex - Status: Survived
+--> Mutation 119: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - ReplaceVariable i -> colCount - Status: Survived
+--> Mutation 120: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - ReplaceVariable i -> rowIndex - Status: Survived
+--> Mutation 121: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 122: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 123: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:216 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 124: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceVariable i -> colCount - Status: Survived
+--> Mutation 125: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:214 - ReplaceVariable i -> rowIndex - Status: Survived
+--> Mutation 126: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:228 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 127: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:228 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 128: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 129: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 130: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 131: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 132: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 133: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 134: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 135: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp Negation of total - Status: Survived
+--> Mutation 136: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 137: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 138: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 139: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 140: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 141: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 142: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 143: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 144: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 145: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 146: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 147: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 148: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 149: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 150: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:234 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 151: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:234 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 152: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:234 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 153: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 154: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 155: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 156: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 157: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 158: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 159: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp Negation of total - Status: Survived
+--> Mutation 160: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 161: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 162: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 163: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 164: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 165: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 166: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 167: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 168: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:332 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 169: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:335 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 170: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:335 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 171: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 172: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - ReplaceVariable i -> count - Status: Killed
+--> Mutation 173: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - ReplaceVariable i -> tableColumns - Status: Killed
+--> Mutation 174: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 175: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 176: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 177: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 178: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 179: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 180: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - ReplaceVariable i -> count - Status: Survived
+--> Mutation 181: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - ReplaceVariable i -> tableColumns - Status: Killed
+--> Mutation 182: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 183: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 184: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 185: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 186: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 187: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 188: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 189: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:338 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 190: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - InsertUnaryOp Negation of total - Status: Survived
+--> Mutation 191: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - ReplaceVariable i -> count - Status: Survived
+--> Mutation 192: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - ReplaceVariable i -> tableColumns - Status: Killed
+--> Mutation 193: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 194: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 195: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 196: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 197: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 198: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 199: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:340 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 200: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:341 - ReplaceVariable count -> i - Status: Survived
+--> Mutation 201: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:341 - ReplaceVariable count -> tableColumns - Status: Killed
+--> Mutation 202: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - ReplaceVariable i -> count - Status: Killed
+--> Mutation 203: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:336 - ReplaceVariable i -> tableColumns - Status: Killed
+--> Mutation 204: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 205: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 206: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 207: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - ReplaceVariable tableColumns -> count - Status: Survived
+--> Mutation 208: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - InsertUnaryOp Negation of tableColumns - Status: Survived
+--> Mutation 209: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - InsertUnaryOp IINC 1 tableColumns - Status: Killed
+--> Mutation 210: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - InsertUnaryOp IINC -1 tableColumns - Status: Killed
+--> Mutation 211: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 212: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 213: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 214: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:348 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 215: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - ReplaceVariable count -> tableColumns - Status: Survived
+--> Mutation 216: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - InsertUnaryOp Negation of count - Status: Survived
+--> Mutation 217: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - InsertUnaryOp IINC 1 count - Status: Survived
+--> Mutation 218: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - InsertUnaryOp IINC -1 count - Status: Survived
+--> Mutation 219: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - ReplaceVariable tableColumns -> count - Status: Survived
+--> Mutation 220: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - InsertUnaryOp Negation of tableColumns - Status: Survived
+--> Mutation 221: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - InsertUnaryOp IINC 1 tableColumns - Status: Killed
+--> Mutation 222: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - InsertUnaryOp IINC -1 tableColumns - Status: Killed
+--> Mutation 223: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 224: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 225: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:349 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 226: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceVariable total -> standardAmount - Status: Survived
+--> Mutation 227: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - InsertUnaryOp Negation of total - Status: Survived
+--> Mutation 228: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceVariable tableColumns -> count - Status: Survived
+--> Mutation 229: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - InsertUnaryOp Negation of tableColumns - Status: Survived
+--> Mutation 230: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - InsertUnaryOp IINC 1 tableColumns - Status: Killed
+--> Mutation 231: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - InsertUnaryOp IINC -1 tableColumns - Status: Survived
+--> Mutation 232: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceVariable count -> tableColumns - Status: Survived
+--> Mutation 233: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - InsertUnaryOp Negation of count - Status: Survived
+--> Mutation 234: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - InsertUnaryOp IINC 1 count - Status: Survived
+--> Mutation 235: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - InsertUnaryOp IINC -1 count - Status: Survived
+--> Mutation 236: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 237: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator - -> % - Status: Killed
+--> Mutation 238: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 239: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator - -> / - Status: Killed
+--> Mutation 240: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceVariable standardAmount -> total - Status: Survived
+--> Mutation 241: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - InsertUnaryOp Negation of standardAmount - Status: Survived
+--> Mutation 242: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 243: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 244: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 245: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 246: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 247: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 248: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 249: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:351 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 250: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:359 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 251: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:359 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 252: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:359 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 253: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - ReplaceVariable tableWidth -> count - Status: Survived
+--> Mutation 254: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - ReplaceVariable tableWidth -> tableColumns - Status: Survived
+--> Mutation 255: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - InsertUnaryOp Negation of tableWidth - Status: Survived
+--> Mutation 256: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - InsertUnaryOp IINC 1 tableWidth - Status: Survived
+--> Mutation 257: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - InsertUnaryOp IINC -1 tableWidth - Status: Survived
+--> Mutation 258: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - ReplaceVariable total -> standardAmount - Status: Survived
+--> Mutation 259: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - InsertUnaryOp Negation of total - Status: Survived
+--> Mutation 260: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 261: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 262: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 263: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:360 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 264: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:366 - ReplaceVariable tableColumns -> count - Status: Killed
+--> Mutation 265: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:366 - ReplaceVariable tableColumns -> tableWidth - Status: Killed
+--> Mutation 266: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:366 - InsertUnaryOp Negation of tableColumns - Status: Killed
+--> Mutation 267: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:366 - InsertUnaryOp IINC 1 tableColumns - Status: Killed
+--> Mutation 268: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:366 - InsertUnaryOp IINC -1 tableColumns - Status: Killed
+--> Mutation 269: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 270: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - ReplaceVariable i -> count - Status: Killed
+--> Mutation 271: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - ReplaceVariable i -> tableColumns - Status: Survived
+--> Mutation 272: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - ReplaceVariable i -> tableWidth - Status: Survived
+--> Mutation 273: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 274: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 275: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 276: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 277: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 278: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:367 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 279: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> count - Status: Killed
+--> Mutation 280: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> tableColumns - Status: Survived
+--> Mutation 281: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> tableWidth - Status: Survived
+--> Mutation 282: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 283: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 284: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 285: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 286: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 287: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator >= -> == - Status: Killed
+--> Mutation 288: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> count - Status: Killed
+--> Mutation 289: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> tableColumns - Status: Killed
+--> Mutation 290: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> tableWidth - Status: Killed
+--> Mutation 291: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 292: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 293: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 294: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 295: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 296: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 297: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 298: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 299: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - ReplaceVariable i -> count - Status: Survived
+--> Mutation 300: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - ReplaceVariable i -> tableColumns - Status: Killed
+--> Mutation 301: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - ReplaceVariable i -> tableWidth - Status: Killed
+--> Mutation 302: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 303: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 304: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 305: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - ReplaceVariable colIndex -> width - Status: Survived
+--> Mutation 306: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - InsertUnaryOp Negation of colIndex - Status: Killed
+--> Mutation 307: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - InsertUnaryOp IINC 1 colIndex - Status: Survived
+--> Mutation 308: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - InsertUnaryOp IINC -1 colIndex - Status: Survived
+--> Mutation 309: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:395 - ReplaceVariable width -> colIndex - Status: Survived
+--> Mutation 310: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:395 - InsertUnaryOp Negation of width - Status: Survived
+--> Mutation 311: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:395 - InsertUnaryOp IINC 1 width - Status: Survived
+--> Mutation 312: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:395 - InsertUnaryOp IINC -1 width - Status: Survived
+--> Mutation 313: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:396 - ReplaceVariable width -> colIndex - Status: Survived
+--> Mutation 314: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:396 - InsertUnaryOp Negation of width - Status: Survived
+--> Mutation 315: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:396 - InsertUnaryOp IINC 1 width - Status: Survived
+--> Mutation 316: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:396 - InsertUnaryOp IINC -1 width - Status: Survived
+--> Mutation 317: com.lts.swing.table.JTableUtils$DoubleClickListener.doubleClick()V:175 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 318: com.lts.swing.table.JTableUtils$DoubleClickListener.doubleClick()V:175 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 319: com.lts.swing.table.JTableUtils$DoubleClickListener.doubleClick()V:175 - ReplaceConstant - -1 -> -2 - Status: Survived
+* Compiling and checking tests
+[MASTER] 03:58:45.247 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:58:50.514 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:58:55.760 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:59:01.010 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:59:06.279 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:59:11.534 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:59:16.784 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:59:22.043 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:59:27.319 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:59:32.576 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:59:37.832 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+[MASTER] 03:59:37.834 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT9356980241580580697.tmp: 1
+         read,write,delete /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/*: 1
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT698774402134487653.tmp: 1
+         and other 2 cases of action/name for this exception class
+  - java.lang.RuntimePermission: 
+         queuePrintJob: 113
+         writeFileDescriptor: 3
+  - java.net.SocketPermission: 
+         connect,resolve ftp.someFakeButWellFormedURL.org:21: 1
+* Writing tests to file
+* Writing JUnit test case 'JTableUtils_ESTest' to test_seeds/seed_1/tests_original
+* Done!
+
+* Computation finished

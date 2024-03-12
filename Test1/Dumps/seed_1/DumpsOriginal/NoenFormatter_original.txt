@@ -1,0 +1,114 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: fi.vtt.noen.testgen.observations.formatter.NoenFormatter
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/61_noen/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:20:04.989 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class fi.vtt.noen.testgen.observations.formatter.NoenFormatter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 128
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 57 / 128
+* Search finished after 182s and 1587 generations, 349454 statements, best individual has fitness: 16.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 41
+* Number of covered goals: 41
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 33%
+* Total number of goals: 12
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Generated 15 tests with total length 61
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 28%
+* There are surviving mutants: 
+--> Mutation 0: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.header()Ljava/lang/String;:48 - ReplaceConstant - <?xml version="1.0" encoding="UTF-8"?> ->  - Status: Killed
+--> Mutation 1: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.header()Ljava/lang/String;:49 - ReplaceConstant - <Observations> ->  - Status: Killed
+--> Mutation 2: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.header()Ljava/lang/String;:50 - ReplaceConstant - <Source program="ToBeImplemented"/> ->  - Status: Killed
+--> Mutation 3: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.footer()Ljava/lang/String;:56 - ReplaceConstant - </Observations> ->  - Status: Killed
+--> Mutation 4: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:63 - ReplaceConstant - <ExecutionScenario id=" ->  - Status: Survived
+--> Mutation 5: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:63 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 6: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:63 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 7: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:63 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 8: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:63 - ReplaceConstant - " description=" ->  - Status: Survived
+--> Mutation 9: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:63 - ReplaceConstant - "> ->  - Status: Survived
+--> Mutation 10: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:64 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 11: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:64 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 12: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:64 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 13: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:64 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 14: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:64 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 15: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:64 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 16: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:64 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 17: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:64 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 18: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:65 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 19: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:67 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 20: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:70 - ReplaceConstant - <Event name=" ->  - Status: Survived
+--> Mutation 21: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:70 - ReplaceConstant - "> ->  - Status: Survived
+--> Mutation 22: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:72 - ReplaceVariable ai -> ei - Status: Survived
+--> Mutation 23: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:72 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 24: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:73 - ReplaceVariable ai -> ei - Status: Killed
+--> Mutation 25: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:74 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 26: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:77 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 27: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:78 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 28: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.fileNameExtension()Ljava/lang/String;:96 - ReplaceConstant - xml ->  - Status: Killed
+* Compiling and checking tests
+[MASTER] 03:23:16.594 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:23:21.941 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:23:27.293 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:23:32.622 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:23:37.947 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:23:43.281 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:23:48.642 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:23:53.979 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:23:59.302 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:24:04.626 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:24:09.957 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:24:09.959 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 226
+* Writing tests to file
+* Writing JUnit test case 'NoenFormatter_ESTest' to test_seeds/seed_1/tests_original
+* Done!
+
+* Computation finished

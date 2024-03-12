@@ -1,0 +1,43 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 07:12:14.693 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portlet.shopping.model.ShoppingCategoryWrapper
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 499
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 313 / 499
+[MASTER] 07:12:16.162 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutRevisionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:12:16.589 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.shopping.model.ShoppingCategoryWrapper canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 07:12:16.637 [logback-1] WARN  TestCluster - Failed to check cache for com.liferay.portal.model.CacheModel<T> : Type points to itself
+[MASTER] 07:12:19.742 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ContactWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:12:20.764 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 07:12:32.989 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.JapaneseChronology canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 07:12:35.336 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.service.ServiceContext canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:12:50.139 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.AddressWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:13:03.814 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.WebsiteWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:13:47.811 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 07:13:51.869 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.MinguoChronology canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 07:14:13.161 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.HijrahChronology canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 07:14:25.185 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.ThaiBuddhistChronology canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 07:14:33.733 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.TeamWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:15:03.456 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PhoneWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:15:05.953 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 07:15:13.751 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.LinkedList due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.kernel.exception.PortalException due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.kernel.exception.PortalException due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.lang.MockThrowable due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+* Search finished after 181s and 4531 generations, 965644 statements, best individual has fitness: 72.0
+* Computation finished

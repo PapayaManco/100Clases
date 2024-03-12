@@ -1,0 +1,32 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: de.huxhorn.lilith.swing.OpenPreviousDialog
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/43_lilith/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:00:42.149 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 03:00:42.387 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 03:00:44.167 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class de.huxhorn.lilith.swing.OpenPreviousDialog
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 479
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 247 / 479
+[MASTER] 03:00:45.730 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 03:00:49.899 [logback-1] WARN  TestCluster - Failed to check cache for de.huxhorn.lilith.swing.table.model.EventWrapperTableModel<T> : Type points to itself
+[MASTER] 03:01:13.745 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
+[MASTER] 03:01:37.404 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+* Search finished after 181s and 1388 generations, 143373 statements, best individual has fitness: 8.0
+* Computation finished

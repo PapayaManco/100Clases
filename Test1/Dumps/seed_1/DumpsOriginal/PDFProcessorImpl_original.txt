@@ -1,0 +1,42 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.liferay.portlet.documentlibrary.util.PDFProcessorImpl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:40:09.083 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 01:40:09.417 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 01:40:11.739 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 01:40:11.812 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 01:40:15.163 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portlet.documentlibrary.util.PDFProcessorImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1153
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 341 / 1153
+[MASTER] 01:40:20.391 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:40:27.955 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 01:40:30.414 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LockWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.repository.proxy.FileEntryProxyBean canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:40:31.112 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.documentlibrary.model.DLFileVersionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:40:33.864 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 01:40:47.126 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 01:40:54.737 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 01:41:10.068 [logback-1] WARN  TestUsageChecker - class org.dom4j.dom.DOMNodeHelper$1 looks like an anonymous class, ignoring it (although reflection says false) DOMNodeHelper$1
+[MASTER] 01:41:42.583 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.io.PipedInputStream due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 01:42:06.591 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.Future<V> : Type points to itself
+[MASTER] 01:42:27.624 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: ftpClientProvider
+[MASTER] 01:42:51.820 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ContactWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.UserWrapper canUseFunctionalMocks=false, canBeMocked: true
+* Search finished after 181s and 904 generations, 255862 statements, best individual has fitness: 896.0
+* Computation finished

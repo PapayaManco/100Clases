@@ -1,0 +1,40 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: wheel.EngineImpl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 04:18:08.665 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 04:18:08.802 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+* Finished analyzing classpath
+* Generating tests for class wheel.EngineImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1204
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 320 / 1204
+[MASTER] 04:18:09.191 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 04:18:10.036 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:18:10.103 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.ErrorPage canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:18:10.522 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.components.Form canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:18:10.769 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:18:10.774 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletResponseWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:18:10.909 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:18:12.581 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 04:18:13.335 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 04:18:18.366 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.util.Locale$LanguageRange canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 04:18:23.844 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.EngineImpl canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 04:18:42.075 [logback-1] WARN  TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 04:19:17.485 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.LinkedHashSet due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+* Search finished after 181s and 1306 generations, 278713 statements, best individual has fitness: 1159.0
+* Computation finished

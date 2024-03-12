@@ -1,0 +1,40 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.liferay.util.axis.AxisServlet
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:07:04.971 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class com.liferay.util.axis.AxisServlet
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 444
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 132 / 444
+[MASTER] 02:07:05.415 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 02:07:06.022 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 02:07:08.897 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+[MASTER] 02:07:09.652 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 02:07:11.864 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 02:07:27.340 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:08:16.782 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:08:31.748 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 02:08:31.757 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 02:08:32.748 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 02:08:38.259 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.awt.datatransfer.SystemFlavorMap canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 02:08:56.580 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.media.jai.CollectionOp due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:09:13.863 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.ClassImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.TestRunner due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.Configuration due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.annotations.JDK15AnnotationFinder due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:09:51.226 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 181s and 2884 generations, 523735 statements, best individual has fitness: 163.0
+* Computation finished

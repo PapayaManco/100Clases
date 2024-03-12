@@ -1,0 +1,40 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.liferay.util.axis.AxisServlet
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 07:26:29.189 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class com.liferay.util.axis.AxisServlet
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 444
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 132 / 444
+[MASTER] 07:26:29.502 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 07:26:30.075 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 07:26:33.344 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+[MASTER] 07:26:34.284 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 07:26:35.762 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 07:26:35.762 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 07:26:40.867 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.ClonedMethod due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.TestNGMethod due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.annotations.JDK15AnnotationFinder due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 07:26:42.500 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.codehaus.groovy.control.CompilerConfiguration due to org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.Connection canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:26:48.949 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.awt.datatransfer.SystemFlavorMap canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 07:27:00.725 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.TestRunner due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.testng.TestRunner canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 07:27:27.567 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 07:27:59.228 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.media.jai.CollectionOp due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 07:28:08.435 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.renderable.RenderContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.geotools.factory.Hints due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 07:29:29.067 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
+* Search finished after 181s and 2576 generations, 458142 statements, best individual has fitness: 168.0
+* Computation finished

@@ -1,0 +1,27 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/104_vuze/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 364
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 241 / 364
+[MASTER] 05:28:30.975 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 05:28:49.829 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 2857 generations, 1205132 statements, best individual has fitness: 34.0
+* Computation finished

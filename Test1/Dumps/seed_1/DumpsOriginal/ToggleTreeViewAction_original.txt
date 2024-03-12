@@ -1,11 +1,14 @@
-* EvoSuite 1.0.7-SNAPSHOT
-* Configuration: EvoSuite_fixed
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.mainframe.action.ToggleTreeViewAction
 * Starting Client-0
-* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
-* Connecting to master process on port 14697
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:33:39.724 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 23:33:39.997 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 23:33:41.275 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class net.sourceforge.squirrel_sql.client.mainframe.action.ToggleTreeViewAction
 * Test criteria:
@@ -18,47 +21,48 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 42
-* Using seed 1710100103225
+* Using seed 2482030657809
 * Starting evolution
-* Initial Number of Goals in DynMOSA = 17 / 42
-* Search finished after 183s and 420 generations, 135339 statements, best individual has fitness: 30.0
+* Initial Number of Goals in DynaMOSA = 17 / 42
+[MASTER] 23:33:43.607 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 23:33:43.618 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 23:33:43.651 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 23:33:44.238 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 23:33:51.420 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 23:36:30.506 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+* Search finished after 181s and 5163 generations, 310031 statements, best individual has fitness: 8.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
-* Coverage of criterion LINE: 43%
+* Coverage of criterion LINE: 0%
 * Total number of goals: 14
-* Number of covered goals: 6
+* Number of covered goals: 0
 * Coverage analysis for criterion BRANCH
-* Coverage of criterion BRANCH: 25%
+* Coverage of criterion BRANCH: 12%
 * Total number of goals: 8
-* Number of covered goals: 2
+* Number of covered goals: 1
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 3
-* Number of covered goals: 3
+* Total number of goals: 1
+* Number of covered goals: 1
 * Coverage analysis for criterion WEAKMUTATION
 * Coverage of criterion WEAKMUTATION: 0%
 * Total number of goals: 3
 * Number of covered goals: 0
 * Coverage analysis for criterion OUTPUT
-* Coverage of criterion OUTPUT: 33%
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 3
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 33%
 * Total number of goals: 3
 * Number of covered goals: 1
-* Coverage analysis for criterion METHOD
-* Coverage of criterion METHOD: 100%
-* Total number of goals: 3
-* Number of covered goals: 3
 * Coverage analysis for criterion METHODNOEXCEPTION
-* Coverage of criterion METHODNOEXCEPTION: 67%
+* Coverage of criterion METHODNOEXCEPTION: 0%
 * Total number of goals: 3
-* Number of covered goals: 2
+* Number of covered goals: 0
 * Coverage analysis for criterion CBRANCH
-* Coverage of criterion CBRANCH: 25%
+* Coverage of criterion CBRANCH: 0%
 * Total number of goals: 8
-* Number of covered goals: 2
-* Generated 4 tests with total length 13
-* Resulting test suite's coverage: 39% (average coverage for all fitness functions)
-* Generating assertions
-* Resulting test suite's mutation score: 0%
-* Compiling and checking tests
+* Number of covered goals: 0
 * Computation finished

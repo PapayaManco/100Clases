@@ -1,0 +1,398 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 04:59:37.981 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 04:59:38.198 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 04:59:39.430 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 04:59:39.706 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 550
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 192 / 550
+[MASTER] 05:00:09.910 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 05:00:20.945 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 05:00:20.951 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 05:00:21.133 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 05:00:42.339 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 05:01:20.492 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 05:02:13.154 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+* Search finished after 181s and 1737 generations, 587830 statements, best individual has fitness: 96.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 85%
+* Total number of goals: 106
+* Number of covered goals: 90
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 78%
+* Total number of goals: 51
+* Number of covered goals: 40
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 306
+* Number of covered goals: 297
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 71%
+* Total number of goals: 14
+* Number of covered goals: 10
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 76%
+* Total number of goals: 51
+* Number of covered goals: 39
+* Generated 22 tests with total length 86
+* Resulting test suite's coverage: 80% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 57%
+* There are surviving mutants: 
+--> Mutation 0: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.<init>(Ljava/net/URL;)V:77 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 1: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.<init>(Ljava/net/URL;)V:77 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 2: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.<init>(Ljava/net/URL;)V:77 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 3: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:151 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 4: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:153 - ReplaceConstant - URL == null ->  - Status: Survived
+--> Mutation 5: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:155 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 6: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> ABORT - Status: Killed
+--> Mutation 7: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> PROPERTIES - Status: Killed
+--> Mutation 8: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> SOMEBITS - Status: Killed
+--> Mutation 9: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> WIDTH - Status: Killed
+--> Mutation 10: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> HEIGHT - Status: Killed
+--> Mutation 11: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 12: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> FRAMEBITS - Status: Killed
+--> Mutation 13: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Killed
+--> Mutation 14: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> WHEN_FOCUSED - Status: Survived
+--> Mutation 15: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> ALLBITS - Status: Killed
+--> Mutation 16: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> ERROR - Status: Killed
+--> Mutation 17: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceVariable _historyIndex -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 18: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 19: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 20: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 21: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 22: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 23: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 24: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceArithmeticOperator + -> * - Status: Killed
+--> Mutation 25: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:157 - ReplaceArithmeticOperator + -> / - Status: Killed
+--> Mutation 26: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:158 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 27: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:164 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 28: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:164 - ReplaceArithmeticOperator - -> + - Status: Killed
+--> Mutation 29: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:164 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 30: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:164 - ReplaceArithmeticOperator - -> * - Status: Killed
+--> Mutation 31: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.gotoURL(Ljava/net/URL;)V:164 - ReplaceArithmeticOperator - -> / - Status: Killed
+--> Mutation 32: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> ABORT - Status: Killed
+--> Mutation 33: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> PROPERTIES - Status: Killed
+--> Mutation 34: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> SOMEBITS - Status: Killed
+--> Mutation 35: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> WIDTH - Status: Killed
+--> Mutation 36: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> HEIGHT - Status: Killed
+--> Mutation 37: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 38: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> FRAMEBITS - Status: Killed
+--> Mutation 39: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Killed
+--> Mutation 40: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> WHEN_FOCUSED - Status: Killed
+--> Mutation 41: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> ALLBITS - Status: Killed
+--> Mutation 42: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> ERROR - Status: Killed
+--> Mutation 43: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 44: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 45: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 46: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 47: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 48: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 49: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 50: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> ABORT - Status: Killed
+--> Mutation 51: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> PROPERTIES - Status: Killed
+--> Mutation 52: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> SOMEBITS - Status: Survived
+--> Mutation 53: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> WIDTH - Status: Survived
+--> Mutation 54: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> HEIGHT - Status: Survived
+--> Mutation 55: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 56: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> FRAMEBITS - Status: Killed
+--> Mutation 57: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 58: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> WHEN_FOCUSED - Status: Survived
+--> Mutation 59: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> ALLBITS - Status: Killed
+--> Mutation 60: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> ERROR - Status: Killed
+--> Mutation 61: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceVariable _historyIndex -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 62: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 63: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 64: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 65: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 66: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 67: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:173 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 68: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> ABORT - Status: Killed
+--> Mutation 69: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> PROPERTIES - Status: Killed
+--> Mutation 70: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> SOMEBITS - Status: Killed
+--> Mutation 71: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> WIDTH - Status: Survived
+--> Mutation 72: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> HEIGHT - Status: Killed
+--> Mutation 73: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 74: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> FRAMEBITS - Status: Killed
+--> Mutation 75: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 76: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> WHEN_FOCUSED - Status: Survived
+--> Mutation 77: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> ALLBITS - Status: Killed
+--> Mutation 78: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> ERROR - Status: Killed
+--> Mutation 79: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceVariable _historyIndex -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 80: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 81: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 82: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 83: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 84: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceArithmeticOperator - -> + - Status: Killed
+--> Mutation 85: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 86: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceArithmeticOperator - -> * - Status: Killed
+--> Mutation 87: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goBack()V:175 - ReplaceArithmeticOperator - -> / - Status: Killed
+--> Mutation 88: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> ABORT - Status: Survived
+--> Mutation 89: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> PROPERTIES - Status: Survived
+--> Mutation 90: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> SOMEBITS - Status: Survived
+--> Mutation 91: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> WIDTH - Status: Survived
+--> Mutation 92: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> HEIGHT - Status: Survived
+--> Mutation 93: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 94: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> FRAMEBITS - Status: Survived
+--> Mutation 95: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 96: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> WHEN_FOCUSED - Status: Survived
+--> Mutation 97: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> ALLBITS - Status: Survived
+--> Mutation 98: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> ERROR - Status: Survived
+--> Mutation 99: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 100: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 101: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 102: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 103: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 104: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 105: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 106: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 107: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 108: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 109: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> ABORT - Status: Survived
+--> Mutation 110: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> PROPERTIES - Status: Killed
+--> Mutation 111: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> SOMEBITS - Status: Killed
+--> Mutation 112: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> WIDTH - Status: Killed
+--> Mutation 113: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> HEIGHT - Status: Killed
+--> Mutation 114: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 115: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> FRAMEBITS - Status: Killed
+--> Mutation 116: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 117: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> WHEN_FOCUSED - Status: Killed
+--> Mutation 118: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> ALLBITS - Status: Killed
+--> Mutation 119: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> ERROR - Status: Survived
+--> Mutation 120: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceVariable _historyIndex -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 121: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 122: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 123: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 124: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 125: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceArithmeticOperator - -> + - Status: Killed
+--> Mutation 126: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceArithmeticOperator - -> % - Status: Killed
+--> Mutation 127: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 128: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceArithmeticOperator - -> / - Status: Killed
+--> Mutation 129: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 130: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 131: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:181 - ReplaceComparisonOperator >= -> == - Status: Killed
+--> Mutation 132: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> ABORT - Status: Killed
+--> Mutation 133: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> PROPERTIES - Status: Killed
+--> Mutation 134: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> SOMEBITS - Status: Killed
+--> Mutation 135: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> WIDTH - Status: Killed
+--> Mutation 136: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> HEIGHT - Status: Killed
+--> Mutation 137: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 138: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> FRAMEBITS - Status: Survived
+--> Mutation 139: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 140: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> WHEN_FOCUSED - Status: Survived
+--> Mutation 141: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> ALLBITS - Status: Survived
+--> Mutation 142: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> ERROR - Status: Killed
+--> Mutation 143: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceVariable _historyIndex -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 144: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 145: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 146: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 147: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 148: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 149: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 150: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceArithmeticOperator + -> * - Status: Killed
+--> Mutation 151: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goForward()V:183 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 152: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.goHome()V:189 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 153: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.setURL(Ljava/net/URL;)V:207 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 154: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.setURL(Ljava/net/URL;)V:217 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 155: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.displayURL(Ljava/net/URL;)V:234 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 156: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.displayURL(Ljava/net/URL;)V:245 - ReplaceConstant - HtmlViewerPanel.error.displayurl ->  - Status: Survived
+--> Mutation 157: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 158: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 159: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 160: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 161: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 162: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceArithmeticOperator - -> % - Status: Killed
+--> Mutation 163: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceArithmeticOperator - -> * - Status: Killed
+--> Mutation 164: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 165: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> ABORT - Status: Killed
+--> Mutation 166: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> PROPERTIES - Status: Killed
+--> Mutation 167: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> SOMEBITS - Status: Killed
+--> Mutation 168: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> WIDTH - Status: Killed
+--> Mutation 169: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> HEIGHT - Status: Killed
+--> Mutation 170: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 171: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> FRAMEBITS - Status: Killed
+--> Mutation 172: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Killed
+--> Mutation 173: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> WHEN_FOCUSED - Status: Killed
+--> Mutation 174: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> ALLBITS - Status: Killed
+--> Mutation 175: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> ERROR - Status: Killed
+--> Mutation 176: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 177: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 178: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 179: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 180: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceComparisonOperator < -> -2 - Status: Killed
+--> Mutation 181: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 182: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:260 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 183: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 184: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 185: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 186: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 187: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 188: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 189: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 190: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 191: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 192: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 193: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 194: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 195: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 196: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 197: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 198: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:262 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 199: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:265 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 200: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 201: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 202: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 203: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 204: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 205: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 206: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 207: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 208: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 209: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 210: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 211: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 212: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 213: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 214: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 215: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 216: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 217: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 218: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 219: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireURLChanged()V:269 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 220: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 221: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 222: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 223: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 224: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceArithmeticOperator - -> + - Status: Killed
+--> Mutation 225: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceArithmeticOperator - -> % - Status: Killed
+--> Mutation 226: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceArithmeticOperator - -> * - Status: Killed
+--> Mutation 227: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceArithmeticOperator - -> / - Status: Killed
+--> Mutation 228: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> ABORT - Status: Killed
+--> Mutation 229: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> PROPERTIES - Status: Killed
+--> Mutation 230: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> SOMEBITS - Status: Killed
+--> Mutation 231: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> WIDTH - Status: Killed
+--> Mutation 232: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> HEIGHT - Status: Killed
+--> Mutation 233: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 234: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> FRAMEBITS - Status: Killed
+--> Mutation 235: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Killed
+--> Mutation 236: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> WHEN_FOCUSED - Status: Killed
+--> Mutation 237: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> ALLBITS - Status: Killed
+--> Mutation 238: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> ERROR - Status: Killed
+--> Mutation 239: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 240: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 241: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 242: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 243: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceComparisonOperator < -> -2 - Status: Killed
+--> Mutation 244: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 245: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:284 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 246: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> ABORT - Status: Killed
+--> Mutation 247: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> PROPERTIES - Status: Killed
+--> Mutation 248: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> SOMEBITS - Status: Killed
+--> Mutation 249: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 250: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 251: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 252: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> FRAMEBITS - Status: Killed
+--> Mutation 253: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 254: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 255: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> ALLBITS - Status: Killed
+--> Mutation 256: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> ERROR - Status: Killed
+--> Mutation 257: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 258: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 259: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 260: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 261: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:286 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 262: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:289 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 263: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> ABORT - Status: Killed
+--> Mutation 264: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> PROPERTIES - Status: Killed
+--> Mutation 265: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> SOMEBITS - Status: Killed
+--> Mutation 266: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> WIDTH - Status: Killed
+--> Mutation 267: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 268: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 269: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> FRAMEBITS - Status: Killed
+--> Mutation 270: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Killed
+--> Mutation 271: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 272: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> ALLBITS - Status: Killed
+--> Mutation 273: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 274: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 275: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 276: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 277: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 278: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 279: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 280: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 281: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceArithmeticOperator + -> * - Status: Killed
+--> Mutation 282: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.fireHomeURLChanged()V:293 - ReplaceArithmeticOperator + -> / - Status: Killed
+--> Mutation 283: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createGUI()V:304 - ReplaceConstant - Center ->  - Status: Killed
+--> Mutation 284: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:312 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 285: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:313 - ReplaceConstant - text/html ->  - Status: Killed
+--> Mutation 286: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:335 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 287: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:335 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 288: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:335 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 289: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:335 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 290: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 22 -> 0 - Status: Killed
+--> Mutation 291: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 22 -> 1 - Status: Killed
+--> Mutation 292: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 22 -> -1 - Status: Killed
+--> Mutation 293: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 22 -> 21 - Status: Survived
+--> Mutation 294: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 22 -> 23 - Status: Killed
+--> Mutation 295: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 296: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 297: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 298: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 32 -> 31 - Status: Survived
+--> Mutation 299: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:337 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 300: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel.createMainPanel()Ljavax/swing/JPanel;:340 - ReplaceConstant - Center ->  - Status: Killed
+--> Mutation 301: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel$1.mousePressed(Ljava/awt/event/MouseEvent;)V:320 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 302: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel$1.mouseReleased(Ljava/awt/event/MouseEvent;)V:327 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 303: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel$2.hyperlinkUpdate(Ljavax/swing/event/HyperlinkEvent;)V:351 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 304: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel$2.hyperlinkUpdate(Ljavax/swing/event/HyperlinkEvent;)V:353 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 305: net.sourceforge.squirrel_sql.client.gui.HtmlViewerPanel$2.hyperlinkUpdate(Ljavax/swing/event/HyperlinkEvent;)V:366 - ReplaceConstant - HtmlViewerPanel.error.processhyperlink ->  - Status: Survived
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JF9928685219009193905.tmp: 1
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT16835212223194712602.tmp: 1
+         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT8219644463390567404.tmp: 1
+         and other 3 cases of action/name for this exception class
+  - java.net.URLPermission: 
+         *:* http://www.someFakeButWellFormedURL.org/fooExample@2x: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 7
+  - java.net.SocketPermission: 
+         connect,resolve some:21: 2
+* Writing tests to file
+* Writing JUnit test case 'HtmlViewerPanel_ESTest' to test_seeds/seed_1/tests_injected
+* Done!
+
+* Computation finished

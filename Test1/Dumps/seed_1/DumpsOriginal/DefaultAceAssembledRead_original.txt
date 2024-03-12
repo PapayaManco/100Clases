@@ -1,0 +1,264 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 04:32:55.046 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 644
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 350 / 644
+[MASTER] 04:32:56.528 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 04:32:57.198 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 181s and 1081 generations, 270045 statements, best individual has fitness: 613.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 5%
+* Total number of goals: 125
+* Number of covered goals: 6
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 3%
+* Total number of goals: 91
+* Number of covered goals: 3
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 11%
+* Total number of goals: 186
+* Number of covered goals: 20
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 61
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 4%
+* Total number of goals: 45
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 4%
+* Total number of goals: 45
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 2%
+* Total number of goals: 91
+* Number of covered goals: 2
+* Generated 4 tests with total length 18
+* Resulting test suite's coverage: 9% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 4%
+* There are surviving mutants: 
+--> Mutation 0: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable reference -> validBases - Status: Survived
+--> Mutation 1: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable validBases -> reference - Status: Survived
+--> Mutation 2: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable offset -> ungappedFullLength - Status: Survived
+--> Mutation 3: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp Negation of offset - Status: Survived
+--> Mutation 4: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp IINC 1 offset - Status: Killed
+--> Mutation 5: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp IINC -1 offset - Status: Killed
+--> Mutation 6: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable ungappedFullLength -> offset - Status: Survived
+--> Mutation 7: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp Negation of ungappedFullLength - Status: Survived
+--> Mutation 8: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp IINC 1 ungappedFullLength - Status: Killed
+--> Mutation 9: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp IINC -1 ungappedFullLength - Status: Killed
+--> Mutation 10: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.toString()Ljava/lang/String;:69 - ReplaceConstant - DefaultAcePlacedRead [placedRead= ->  - Status: Survived
+--> Mutation 11: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.toString()Ljava/lang/String;:69 - ReplaceConstant - , phdInfo= ->  - Status: Survived
+--> Mutation 12: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.toString()Ljava/lang/String;:69 - ReplaceConstant - ] ->  - Status: Survived
+--> Mutation 13: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.toGappedValidRangeOffset(J)J:136 - InsertUnaryOp Negation of referenceIndex - Status: Survived
+--> Mutation 14: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.toReferenceOffset(J)J:144 - InsertUnaryOp Negation of validRangeIndex - Status: Survived
+--> Mutation 15: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:151 - ReplaceConstant - 31 -> 0 - Status: Survived
+--> Mutation 16: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:151 - ReplaceConstant - 31 -> 1 - Status: Survived
+--> Mutation 17: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:151 - ReplaceConstant - 31 -> -1 - Status: Survived
+--> Mutation 18: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:151 - ReplaceConstant - 31 -> 30 - Status: Survived
+--> Mutation 19: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:151 - ReplaceConstant - 31 -> 32 - Status: Survived
+--> Mutation 20: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:152 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 21: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceConstant - 31 -> 0 - Status: Survived
+--> Mutation 22: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceConstant - 31 -> 1 - Status: Survived
+--> Mutation 23: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceConstant - 31 -> -1 - Status: Survived
+--> Mutation 24: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceConstant - 31 -> 30 - Status: Survived
+--> Mutation 25: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceConstant - 31 -> 32 - Status: Survived
+--> Mutation 26: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceVariable result -> prime - Status: Survived
+--> Mutation 27: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 28: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 29: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 30: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 31: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 32: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 33: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 34: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 35: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 36: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 37: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 38: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 39: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:153 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 40: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceConstant - 31 -> 0 - Status: Survived
+--> Mutation 41: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceConstant - 31 -> 1 - Status: Survived
+--> Mutation 42: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceConstant - 31 -> -1 - Status: Survived
+--> Mutation 43: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceConstant - 31 -> 30 - Status: Survived
+--> Mutation 44: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceConstant - 31 -> 32 - Status: Survived
+--> Mutation 45: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceVariable result -> prime - Status: Survived
+--> Mutation 46: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 47: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 48: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 49: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 50: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 51: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 52: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 53: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 54: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:154 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 55: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:155 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 56: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:155 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 57: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:155 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 58: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:155 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 59: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:156 - ReplaceVariable result -> prime - Status: Survived
+--> Mutation 60: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:156 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 61: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:156 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 62: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.hashCode()I:156 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 63: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:164 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 64: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:165 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 65: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:167 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 66: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:168 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 67: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:170 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 68: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:171 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 69: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:174 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 70: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:175 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 71: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:175 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 72: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:176 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 73: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:178 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 74: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:178 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 75: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:179 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 76: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:181 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 77: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:182 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 78: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:182 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 79: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:183 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 80: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:185 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 81: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:185 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 82: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:186 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 83: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:188 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 84: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable reference -> validBases - Status: Survived
+--> Mutation 85: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable validBases -> reference - Status: Survived
+--> Mutation 86: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable offset -> ungappedFullLength - Status: Survived
+--> Mutation 87: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp Negation of offset - Status: Survived
+--> Mutation 88: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp IINC 1 offset - Status: Killed
+--> Mutation 89: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp IINC -1 offset - Status: Killed
+--> Mutation 90: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable ungappedFullLength -> offset - Status: Survived
+--> Mutation 91: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp Negation of ungappedFullLength - Status: Survived
+--> Mutation 92: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp IINC 1 ungappedFullLength - Status: Killed
+--> Mutation 93: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp IINC -1 ungappedFullLength - Status: Killed
+--> Mutation 94: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;)V:207 - ReplaceVariable copy -> this - Status: Survived
+--> Mutation 95: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;)V:208 - ReplaceVariable copy -> this - Status: Survived
+--> Mutation 96: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.reference(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:228 - InsertUnaryOp Negation of newOffset - Status: Survived
+--> Mutation 97: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.reference(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:228 - InsertUnaryOp IINC 1 newOffset - Status: Survived
+--> Mutation 98: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.reference(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:228 - InsertUnaryOp IINC -1 newOffset - Status: Survived
+--> Mutation 99: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.setStartOffset(I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:250 - InsertUnaryOp Negation of newOffset - Status: Survived
+--> Mutation 100: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.setStartOffset(I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:250 - InsertUnaryOp IINC 1 newOffset - Status: Survived
+--> Mutation 101: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.setStartOffset(I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:250 - InsertUnaryOp IINC -1 newOffset - Status: Survived
+--> Mutation 102: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.shift(I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:261 - InsertUnaryOp Negation of numberOfBases - Status: Survived
+--> Mutation 103: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.shift(I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:261 - InsertUnaryOp IINC 1 numberOfBases - Status: Survived
+--> Mutation 104: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.shift(I)Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;:261 - InsertUnaryOp IINC -1 numberOfBases - Status: Survived
+--> Mutation 105: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILjava/lang/String;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:378 - InsertUnaryOp Negation of offset - Status: Survived
+--> Mutation 106: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILjava/lang/String;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:378 - InsertUnaryOp IINC 1 offset - Status: Survived
+--> Mutation 107: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILjava/lang/String;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:378 - InsertUnaryOp IINC -1 offset - Status: Survived
+--> Mutation 108: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.replace(ILorg/jcvi/jillion/core/residue/nt/Nucleotide;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:386 - InsertUnaryOp Negation of offset - Status: Survived
+--> Mutation 109: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.replace(ILorg/jcvi/jillion/core/residue/nt/Nucleotide;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:386 - InsertUnaryOp IINC 1 offset - Status: Survived
+--> Mutation 110: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.replace(ILorg/jcvi/jillion/core/residue/nt/Nucleotide;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:386 - InsertUnaryOp IINC -1 offset - Status: Survived
+--> Mutation 111: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILjava/lang/Iterable;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:426 - InsertUnaryOp Negation of offset - Status: Survived
+--> Mutation 112: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILjava/lang/Iterable;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:426 - InsertUnaryOp IINC 1 offset - Status: Survived
+--> Mutation 113: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILjava/lang/Iterable;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:426 - InsertUnaryOp IINC -1 offset - Status: Survived
+--> Mutation 114: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILorg/jcvi/jillion/core/residue/nt/Nucleotide;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:434 - InsertUnaryOp Negation of offset - Status: Survived
+--> Mutation 115: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILorg/jcvi/jillion/core/residue/nt/Nucleotide;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:434 - InsertUnaryOp IINC 1 offset - Status: Survived
+--> Mutation 116: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.insert(ILorg/jcvi/jillion/core/residue/nt/Nucleotide;)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:434 - InsertUnaryOp IINC -1 offset - Status: Survived
+--> Mutation 117: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:455 - ReplaceConstant - 31 -> 0 - Status: Survived
+--> Mutation 118: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:455 - ReplaceConstant - 31 -> 1 - Status: Survived
+--> Mutation 119: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:455 - ReplaceConstant - 31 -> -1 - Status: Survived
+--> Mutation 120: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:455 - ReplaceConstant - 31 -> 30 - Status: Survived
+--> Mutation 121: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:455 - ReplaceConstant - 31 -> 32 - Status: Survived
+--> Mutation 122: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:456 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 123: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceConstant - 31 -> 0 - Status: Survived
+--> Mutation 124: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceConstant - 31 -> 1 - Status: Survived
+--> Mutation 125: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceConstant - 31 -> -1 - Status: Survived
+--> Mutation 126: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceConstant - 31 -> 30 - Status: Survived
+--> Mutation 127: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceConstant - 31 -> 32 - Status: Survived
+--> Mutation 128: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceVariable result -> prime - Status: Survived
+--> Mutation 129: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 130: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 131: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 132: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 133: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 134: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 135: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 136: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 137: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:457 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 138: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:460 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 139: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:460 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 140: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:460 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 141: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:460 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 142: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceConstant - 31 -> 0 - Status: Survived
+--> Mutation 143: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceConstant - 31 -> 1 - Status: Survived
+--> Mutation 144: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceConstant - 31 -> -1 - Status: Survived
+--> Mutation 145: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceConstant - 31 -> 30 - Status: Survived
+--> Mutation 146: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceConstant - 31 -> 32 - Status: Survived
+--> Mutation 147: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceVariable result -> prime - Status: Survived
+--> Mutation 148: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 149: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 150: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 151: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 152: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 153: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 154: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 155: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 156: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:461 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 157: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:462 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 158: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:462 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 159: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:462 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 160: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:462 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 161: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:463 - ReplaceVariable result -> prime - Status: Survived
+--> Mutation 162: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:463 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 163: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:463 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 164: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.hashCode()I:463 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 165: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:472 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 166: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:473 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 167: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:475 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 168: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:476 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 169: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:478 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 170: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:479 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 171: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:482 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 172: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:483 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 173: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:483 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 174: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:484 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 175: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:486 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 176: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:486 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 177: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:487 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 178: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:489 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 179: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:490 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 180: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:490 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 181: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:491 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 182: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:493 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 183: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:493 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 184: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:494 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 185: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:496 - ReplaceConstant - 1 -> 0 - Status: Survived
+* Compiling and checking tests
+[MASTER] 04:36:03.287 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:36:08.569 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:36:13.849 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:36:19.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:36:24.409 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:36:29.682 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Writing tests to file
+* Writing JUnit test case 'DefaultAceAssembledRead_ESTest' to test_seeds/seed_1/tests_original
+* Done!
+
+* Computation finished

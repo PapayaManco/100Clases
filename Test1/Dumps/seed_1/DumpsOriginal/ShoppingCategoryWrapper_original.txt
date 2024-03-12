@@ -1,0 +1,39 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:46:49.280 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portlet.shopping.model.ShoppingCategoryWrapper
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 499
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 313 / 499
+[MASTER] 01:46:51.064 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutRevisionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:46:51.541 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.shopping.model.ShoppingCategoryWrapper canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 01:46:51.597 [logback-1] WARN  TestCluster - Failed to check cache for com.liferay.portal.model.CacheModel<T> : Type points to itself
+[MASTER] 01:46:54.655 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ContactWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:46:55.565 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 01:47:07.169 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.JapaneseChronology canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 01:47:39.638 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.AccountWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:47:42.238 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.AddressWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:47:52.030 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PasswordPolicyWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:48:16.316 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.service.ServiceContext canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:48:29.982 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutSetBranchWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:48:36.377 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.ThaiBuddhistChronology canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 01:48:57.580 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.HijrahChronology canUseFunctionalMocks=true, canBeMocked: false
+* Search finished after 181s and 4649 generations, 1006869 statements, best individual has fitness: 71.0
+* Computation finished

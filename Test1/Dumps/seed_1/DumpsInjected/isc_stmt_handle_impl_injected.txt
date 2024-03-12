@@ -1,0 +1,438 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 07:32:43.463 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 07:32:43.578 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 700
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 533 / 700
+[MASTER] 07:32:44.131 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addWarning(Lorg/firebirdsql/gds/GDSException;)V
+* Search finished after 181s and 6059 generations, 2669637 statements, best individual has fitness: 20.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 73
+* Number of covered goals: 73
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 45
+* Number of covered goals: 45
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 358
+* Number of covered goals: 358
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 83%
+* Total number of goals: 103
+* Number of covered goals: 86
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 38
+* Number of covered goals: 38
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 38
+* Number of covered goals: 38
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 45
+* Number of covered goals: 45
+* Generated 77 tests with total length 265
+* Resulting test suite's coverage: 93% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 92%
+* There are surviving mutants: 
+--> Mutation 0: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.<init>()V:43 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 1: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.<init>()V:50 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 2: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.<init>()V:51 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 3: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.<init>()V:52 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 4: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 5: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_DELETE - Status: Survived
+--> Mutation 6: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_PUT_SEGMENT - Status: Survived
+--> Mutation 7: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_INSERT - Status: Survived
+--> Mutation 8: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_UPDATE - Status: Survived
+--> Mutation 9: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_SELECT - Status: Survived
+--> Mutation 10: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_DDL - Status: Survived
+--> Mutation 11: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_COMMIT - Status: Survived
+--> Mutation 12: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_SELECT_FOR_UPDATE - Status: Survived
+--> Mutation 13: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_UNKNOWN - Status: Survived
+--> Mutation 14: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_START_TRANS - Status: Survived
+--> Mutation 15: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_EXEC_PROCEDURE - Status: Survived
+--> Mutation 16: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_GET_SEGMENT - Status: Survived
+--> Mutation 17: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_ROLLBACK - Status: Survived
+--> Mutation 18: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceVariable maxSize -> TYPE_SET_GENERATOR - Status: Survived
+--> Mutation 19: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - InsertUnaryOp Negation of maxSize - Status: Survived
+--> Mutation 20: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - InsertUnaryOp IINC 1 maxSize - Status: Survived
+--> Mutation 21: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - InsertUnaryOp IINC -1 maxSize - Status: Survived
+--> Mutation 22: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 23: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 24: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:86 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 25: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_DELETE - Status: Killed
+--> Mutation 26: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 27: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_INSERT - Status: Killed
+--> Mutation 28: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_UPDATE - Status: Killed
+--> Mutation 29: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_SELECT - Status: Killed
+--> Mutation 30: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_DDL - Status: Killed
+--> Mutation 31: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_COMMIT - Status: Killed
+--> Mutation 32: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 33: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 34: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_START_TRANS - Status: Killed
+--> Mutation 35: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 36: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 37: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 38: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - ReplaceVariable maxSize -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 39: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - InsertUnaryOp Negation of maxSize - Status: Killed
+--> Mutation 40: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - InsertUnaryOp IINC 1 maxSize - Status: Killed
+--> Mutation 41: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:87 - InsertUnaryOp IINC -1 maxSize - Status: Killed
+--> Mutation 42: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.ensureCapacity(I)V:88 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 43: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.clearRows()V:92 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 44: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.clearRows()V:93 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 45: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.clearRows()V:95 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 46: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.clearRows()V:96 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 47: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_DELETE - Status: Killed
+--> Mutation 48: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 49: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_INSERT - Status: Killed
+--> Mutation 50: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_UPDATE - Status: Killed
+--> Mutation 51: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_SELECT - Status: Killed
+--> Mutation 52: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_DDL - Status: Killed
+--> Mutation 53: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_COMMIT - Status: Killed
+--> Mutation 54: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 55: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 56: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_START_TRANS - Status: Killed
+--> Mutation 57: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 58: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 59: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 60: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - ReplaceVariable value -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 61: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 62: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 63: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setStatementType(I)V:100 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 64: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_DELETE - Status: Killed
+--> Mutation 65: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 66: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_INSERT - Status: Killed
+--> Mutation 67: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_UPDATE - Status: Killed
+--> Mutation 68: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_SELECT - Status: Killed
+--> Mutation 69: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_DDL - Status: Killed
+--> Mutation 70: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_COMMIT - Status: Killed
+--> Mutation 71: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 72: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 73: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_START_TRANS - Status: Killed
+--> Mutation 74: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 75: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 76: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 77: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - ReplaceVariable statementType -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 78: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 79: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 80: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getStatementType()I:104 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 81: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_DELETE - Status: Killed
+--> Mutation 82: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 83: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_INSERT - Status: Killed
+--> Mutation 84: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_UPDATE - Status: Killed
+--> Mutation 85: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_SELECT - Status: Killed
+--> Mutation 86: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_DDL - Status: Killed
+--> Mutation 87: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_COMMIT - Status: Killed
+--> Mutation 88: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 89: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 90: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_START_TRANS - Status: Killed
+--> Mutation 91: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 92: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 93: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 94: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - ReplaceVariable value -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 95: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 96: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 97: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setInsertCount(I)V:108 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 98: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_DELETE - Status: Killed
+--> Mutation 99: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 100: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_INSERT - Status: Killed
+--> Mutation 101: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_UPDATE - Status: Killed
+--> Mutation 102: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_SELECT - Status: Killed
+--> Mutation 103: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_DDL - Status: Killed
+--> Mutation 104: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_COMMIT - Status: Killed
+--> Mutation 105: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 106: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 107: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_START_TRANS - Status: Killed
+--> Mutation 108: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 109: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 110: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 111: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - ReplaceVariable insertCount -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 112: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 113: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 114: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getInsertCount()I:112 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 115: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_DELETE - Status: Killed
+--> Mutation 116: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 117: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_INSERT - Status: Killed
+--> Mutation 118: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_UPDATE - Status: Killed
+--> Mutation 119: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_SELECT - Status: Killed
+--> Mutation 120: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_DDL - Status: Killed
+--> Mutation 121: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_COMMIT - Status: Killed
+--> Mutation 122: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 123: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 124: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_START_TRANS - Status: Killed
+--> Mutation 125: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 126: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 127: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 128: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - ReplaceVariable value -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 129: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 130: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 131: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setUpdateCount(I)V:116 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 132: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_DELETE - Status: Killed
+--> Mutation 133: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 134: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_INSERT - Status: Killed
+--> Mutation 135: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_UPDATE - Status: Killed
+--> Mutation 136: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_SELECT - Status: Killed
+--> Mutation 137: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_DDL - Status: Killed
+--> Mutation 138: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_COMMIT - Status: Killed
+--> Mutation 139: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 140: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 141: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_START_TRANS - Status: Killed
+--> Mutation 142: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 143: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 144: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 145: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - ReplaceVariable updateCount -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 146: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 147: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 148: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getUpdateCount()I:120 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 149: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_DELETE - Status: Killed
+--> Mutation 150: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 151: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_INSERT - Status: Killed
+--> Mutation 152: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_UPDATE - Status: Killed
+--> Mutation 153: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_SELECT - Status: Killed
+--> Mutation 154: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_DDL - Status: Killed
+--> Mutation 155: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_COMMIT - Status: Killed
+--> Mutation 156: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 157: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 158: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_START_TRANS - Status: Killed
+--> Mutation 159: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 160: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 161: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 162: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - ReplaceVariable value -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 163: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 164: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 165: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setDeleteCount(I)V:124 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 166: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_DELETE - Status: Killed
+--> Mutation 167: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 168: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_INSERT - Status: Killed
+--> Mutation 169: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_UPDATE - Status: Killed
+--> Mutation 170: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_SELECT - Status: Killed
+--> Mutation 171: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_DDL - Status: Killed
+--> Mutation 172: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_COMMIT - Status: Killed
+--> Mutation 173: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 174: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 175: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_START_TRANS - Status: Killed
+--> Mutation 176: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 177: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 178: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 179: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - ReplaceVariable deleteCount -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 180: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 181: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 182: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getDeleteCount()I:128 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 183: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_DELETE - Status: Killed
+--> Mutation 184: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 185: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_INSERT - Status: Killed
+--> Mutation 186: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_UPDATE - Status: Killed
+--> Mutation 187: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_SELECT - Status: Killed
+--> Mutation 188: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_DDL - Status: Killed
+--> Mutation 189: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_COMMIT - Status: Killed
+--> Mutation 190: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 191: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 192: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_START_TRANS - Status: Killed
+--> Mutation 193: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 194: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 195: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 196: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - ReplaceVariable value -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 197: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 198: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 199: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSelectCount(I)V:132 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 200: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_DELETE - Status: Killed
+--> Mutation 201: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 202: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_INSERT - Status: Killed
+--> Mutation 203: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_UPDATE - Status: Killed
+--> Mutation 204: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_SELECT - Status: Killed
+--> Mutation 205: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_DDL - Status: Killed
+--> Mutation 206: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_COMMIT - Status: Killed
+--> Mutation 207: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 208: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 209: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_START_TRANS - Status: Killed
+--> Mutation 210: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 211: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 212: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 213: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - ReplaceVariable selectCount -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 214: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 215: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 216: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getSelectCount()I:136 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 217: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.isAllRowsFetched()Z:140 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 218: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setAllRowsFetched(Z)V:144 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 219: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setAllRowsFetched(Z)V:144 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 220: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setAllRowsFetched(Z)V:144 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 221: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.isSingletonResult()Z:148 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 222: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSingletonResult(Z)V:152 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 223: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSingletonResult(Z)V:152 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 224: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setSingletonResult(Z)V:152 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 225: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_DELETE - Status: Killed
+--> Mutation 226: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 227: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_INSERT - Status: Killed
+--> Mutation 228: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_UPDATE - Status: Killed
+--> Mutation 229: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_SELECT - Status: Killed
+--> Mutation 230: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_DDL - Status: Killed
+--> Mutation 231: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_COMMIT - Status: Killed
+--> Mutation 232: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 233: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 234: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_START_TRANS - Status: Killed
+--> Mutation 235: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 236: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 237: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 238: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - ReplaceVariable rsr_id -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 239: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 240: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 241: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsrId()I:156 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 242: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_DELETE - Status: Killed
+--> Mutation 243: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 244: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_INSERT - Status: Killed
+--> Mutation 245: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_UPDATE - Status: Killed
+--> Mutation 246: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_SELECT - Status: Killed
+--> Mutation 247: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_DDL - Status: Killed
+--> Mutation 248: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_COMMIT - Status: Killed
+--> Mutation 249: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 250: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 251: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_START_TRANS - Status: Killed
+--> Mutation 252: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 253: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 254: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 255: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - ReplaceVariable value -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 256: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 257: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 258: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsrId(I)V:160 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 259: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_DELETE - Status: Killed
+--> Mutation 260: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 261: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_INSERT - Status: Killed
+--> Mutation 262: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_UPDATE - Status: Killed
+--> Mutation 263: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_SELECT - Status: Killed
+--> Mutation 264: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_DDL - Status: Killed
+--> Mutation 265: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_COMMIT - Status: Killed
+--> Mutation 266: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 267: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 268: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_START_TRANS - Status: Killed
+--> Mutation 269: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 270: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 271: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 272: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - ReplaceVariable rsr_id_ptr -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 273: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 274: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 275: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.getRsr_id_ptr()I:164 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 276: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_DELETE - Status: Killed
+--> Mutation 277: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 278: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_INSERT - Status: Killed
+--> Mutation 279: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_UPDATE - Status: Killed
+--> Mutation 280: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_SELECT - Status: Killed
+--> Mutation 281: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_DDL - Status: Killed
+--> Mutation 282: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_COMMIT - Status: Killed
+--> Mutation 283: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 284: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 285: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_START_TRANS - Status: Killed
+--> Mutation 286: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> rsr_id_ptr - Status: Killed
+--> Mutation 287: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 288: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 289: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 290: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - ReplaceVariable value -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 291: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 292: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 293: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:168 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 294: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_DELETE - Status: Killed
+--> Mutation 295: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 296: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_INSERT - Status: Killed
+--> Mutation 297: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_UPDATE - Status: Killed
+--> Mutation 298: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_SELECT - Status: Killed
+--> Mutation 299: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_DDL - Status: Killed
+--> Mutation 300: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_COMMIT - Status: Killed
+--> Mutation 301: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 302: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 303: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_START_TRANS - Status: Killed
+--> Mutation 304: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 305: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 306: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> value - Status: Killed
+--> Mutation 307: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 308: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - ReplaceVariable rsr_id_ptr -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 309: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - InsertUnaryOp Negation of rsr_id_ptr - Status: Killed
+--> Mutation 310: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - InsertUnaryOp IINC 1 rsr_id_ptr - Status: Killed
+--> Mutation 311: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.setRsr_id_ptr(II)V:169 - InsertUnaryOp IINC -1 rsr_id_ptr - Status: Killed
+--> Mutation 312: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.isValid()Z:181 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 313: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.isValid()Z:181 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 314: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.isValid()Z:181 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 315: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.isValid()Z:181 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 316: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.hasOpenResultSet()Z:185 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 317: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.notifyOpenResultSet()V:189 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 318: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_DELETE - Status: Killed
+--> Mutation 319: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 320: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_INSERT - Status: Killed
+--> Mutation 321: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_UPDATE - Status: Killed
+--> Mutation 322: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_SELECT - Status: Killed
+--> Mutation 323: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_DDL - Status: Killed
+--> Mutation 324: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_COMMIT - Status: Killed
+--> Mutation 325: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 326: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 327: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_START_TRANS - Status: Killed
+--> Mutation 328: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 329: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 330: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 331: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - ReplaceVariable size -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 332: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 333: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 334: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.size()I:193 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 335: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.removeRows()V:202 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 336: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_DELETE - Status: Killed
+--> Mutation 337: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_PUT_SEGMENT - Status: Killed
+--> Mutation 338: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_INSERT - Status: Killed
+--> Mutation 339: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_UPDATE - Status: Killed
+--> Mutation 340: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_SELECT - Status: Killed
+--> Mutation 341: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_DDL - Status: Killed
+--> Mutation 342: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_COMMIT - Status: Killed
+--> Mutation 343: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_SELECT_FOR_UPDATE - Status: Killed
+--> Mutation 344: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_UNKNOWN - Status: Killed
+--> Mutation 345: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_START_TRANS - Status: Killed
+--> Mutation 346: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_EXEC_PROCEDURE - Status: Killed
+--> Mutation 347: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_GET_SEGMENT - Status: Killed
+--> Mutation 348: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_ROLLBACK - Status: Killed
+--> Mutation 349: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceVariable size -> TYPE_SET_GENERATOR - Status: Killed
+--> Mutation 350: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 351: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 352: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 353: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 354: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 355: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 356: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceArithmeticOperator + -> * - Status: Killed
+--> Mutation 357: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceArithmeticOperator + -> / - Status: Killed
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.security.SecurityPermission: 
+         createAccessControlContext: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+  - javax.security.auth.AuthPermission: 
+         getSubject: 5
+         setReadOnly: 1
+* Writing tests to file
+* Writing JUnit test case 'isc_stmt_handle_impl_ESTest' to test_seeds/seed_1/tests_injected
+* Done!
+
+* Computation finished

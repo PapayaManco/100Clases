@@ -1,0 +1,31 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/104_vuze/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 06:03:36.238 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 06:03:36.336 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 635
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 99 / 635
+[MASTER] 06:03:37.869 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself
+[MASTER] 06:03:37.869 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 06:03:42.912 [logback-1] WARN  TestCluster - Failed to check cache for com.aelitis.azureus.ui.common.table.TableView<DATASOURCETYPE> : Type points to itself
+[MASTER] 06:03:44.425 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 2870 generations, 355724 statements, best individual has fitness: 590.0
+* Computation finished

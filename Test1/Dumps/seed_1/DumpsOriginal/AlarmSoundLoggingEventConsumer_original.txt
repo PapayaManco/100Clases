@@ -1,0 +1,88 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/43_lilith/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 63
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 15 / 63
+* Search finished after 3s and 14 generations, 16727 statements, best individual has fitness: 1.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 15
+* Number of covered goals: 15
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Generated 8 tests with total length 46
+* Resulting test suite's coverage: 94% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 9%
+* There are surviving mutants: 
+--> Mutation 0: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:45 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 1: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:47 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 2: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:48 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 3: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:51 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 4: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:51 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 5: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:53 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 6: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:57 - InsertUnaryOp Negation of errorDetected - Status: Survived
+--> Mutation 7: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:57 - InsertUnaryOp IINC 1 errorDetected - Status: Survived
+--> Mutation 8: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:57 - InsertUnaryOp IINC -1 errorDetected - Status: Survived
+--> Mutation 9: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:57 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 10: de.huxhorn.lilith.consumers.AlarmSoundLoggingEventConsumer.consume(Ljava/util/List;)V:59 - ReplaceConstant - errorEventAlarm ->  - Status: Survived
+* Compiling and checking tests
+[MASTER] 02:52:47.750 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 02:52:53.034 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 02:52:58.315 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 02:53:03.605 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 02:53:08.890 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 02:53:14.167 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 02:53:19.432 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 02:53:24.704 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Writing tests to file
+* Writing JUnit test case 'AlarmSoundLoggingEventConsumer_ESTest' to test_seeds/seed_1/tests_original
+* Done!
+
+* Computation finished

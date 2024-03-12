@@ -1,0 +1,26 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: com.aelitis.azureus.core.dht.router.impl.DHTRouterNodeImpl
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.aelitis.azureus.core.dht.router.impl.DHTRouterNodeImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 770
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 169 / 770
+[MASTER] 23:53:46.684 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.aelitis.azureus.core.dht.router.impl.DHTRouterNodeImpl.getDepth()I
+* Search finished after 183s and 322 generations, 274856 statements, best individual has fitness: 45.0
+* Computation finished

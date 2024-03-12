@@ -1,0 +1,48 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: net.sourceforge.squirrel_sql.client.session.mainpanel.objecttree.ObjectTreeCellRenderer
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 05:09:13.509 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 05:09:13.744 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 05:09:15.171 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+[MASTER] 05:09:15.398 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class net.sourceforge.squirrel_sql.client.session.mainpanel.objecttree.ObjectTreeCellRenderer
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 343
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 188 / 343
+[MASTER] 05:09:18.066 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 05:09:19.462 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.LookupOp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.RenderingHints due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.category.CategoryToPieDataset due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.jdbc.JDBCCategoryDataset due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:09:27.413 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 05:09:27.464 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 05:09:27.471 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 05:09:27.475 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 05:09:39.841 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.ColorConvertOp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.RenderingHints due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for net.sourceforge.squirrel_sql.client.session.mainpanel.objecttree.ObjectTreeNode due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:09:48.640 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 05:09:58.703 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.BufferedImage due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.IndexColorModel due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:10:30.316 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:10:36.141 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.LookupOp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.RenderingHints due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for net.sourceforge.squirrel_sql.client.session.mainpanel.objecttree.ObjectTreeCellRenderer due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:10:41.655 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.ColorConvertOp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.RenderingHints due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for net.sourceforge.squirrel_sql.client.session.mainpanel.objecttree.ObjectTreeCellRenderer due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:10:45.396 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.BufferedImage due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:10:51.179 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.Point due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:10:53.898 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.BufferedImage due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.Point due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:11:18.767 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 05:11:34.191 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.ColorConvertOp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.color.ICC_ColorSpace due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.io.PipedInputStream due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:11:54.424 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.AffineTransformOp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.RenderingHints due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for net.sourceforge.squirrel_sql.client.session.mainpanel.objecttree.ObjectTreeCellRenderer due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 05:12:00.888 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.ColorConvertOp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.color.ICC_ColorSpace due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.io.MockFileInputStream due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+* Search finished after 181s and 1930 generations, 438380 statements, best individual has fitness: 211.0
+* Computation finished

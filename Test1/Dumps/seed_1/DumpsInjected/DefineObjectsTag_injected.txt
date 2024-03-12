@@ -1,0 +1,37 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.liferay.taglib.portlet.DefineObjectsTag
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/108_liferay/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 07:15:25.806 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 07:15:28.440 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 07:15:30.620 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
+* Finished analyzing classpath
+* Generating tests for class com.liferay.taglib.portlet.DefineObjectsTag
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 134
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 26 / 134
+[MASTER] 07:15:40.644 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 07:15:42.428 [logback-1] WARN  TestCluster - Failed to check cache for com.caucho.amber.collection.SetImpl<E> : Type points to itself
+[MASTER] 07:15:42.557 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
+[MASTER] 07:15:53.821 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 07:16:08.407 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 07:16:11.313 [logback-1] WARN  TestCluster - Failed to check cache for com.liferay.portal.model.BaseModel<T> : Type points to itself
+[MASTER] 07:16:30.392 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.reflect.Constructor<T> : Type points to itself
+[MASTER] 07:17:30.625 [logback-1] WARN  TestCluster - Failed to check cache for java.util.PriorityQueue<E> : Type points to itself
+[MASTER] 07:18:02.634 [logback-1] WARN  ClassResetter - class java.lang.reflect.InvocationTargetException thrown during execution of method  __STATIC_RESET() for class org.geotools.factory.Hints, java.lang.IllegalArgumentException: org.geotools.factory.Hints$ClassKey@27fdfdb3:0 already registered
+* Search finished after 181s and 4337 generations, 580625 statements, best individual has fitness: 126.0
+* Computation finished

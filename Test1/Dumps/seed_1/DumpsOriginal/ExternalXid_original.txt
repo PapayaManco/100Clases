@@ -1,0 +1,344 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: org.exolab.jms.tranlog.ExternalXid
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/66_openjms/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:28:12.056 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 03:28:12.137 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class org.exolab.jms.tranlog.ExternalXid
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 510
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 91 / 510
+* Search finished after 181s and 77 generations, 27360 statements, best individual has fitness: 56.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 91%
+* Total number of goals: 86
+* Number of covered goals: 78
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 88%
+* Total number of goals: 65
+* Number of covered goals: 57
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 91%
+* Total number of goals: 258
+* Number of covered goals: 234
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 86%
+* Total number of goals: 14
+* Number of covered goals: 12
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 91%
+* Total number of goals: 11
+* Number of covered goals: 10
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 88%
+* Total number of goals: 65
+* Number of covered goals: 57
+* Generated 31 tests with total length 106
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 57%
+* There are surviving mutants: 
+--> Mutation 0: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:133 - ReplaceVariable formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 1: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:133 - ReplaceVariable formatId -> MAXGTRIDSIZE - Status: Killed
+--> Mutation 2: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:133 - InsertUnaryOp Negation of formatId - Status: Killed
+--> Mutation 3: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:133 - InsertUnaryOp IINC 1 formatId - Status: Killed
+--> Mutation 4: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:133 - InsertUnaryOp IINC -1 formatId - Status: Killed
+--> Mutation 5: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:136 - ReplaceVariable global -> branch - Status: Survived
+--> Mutation 6: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:136 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 7: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:136 - ReplaceVariable global -> branch - Status: Killed
+--> Mutation 8: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:136 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 9: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:136 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 10: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:136 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 11: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:138 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 12: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:140 - ReplaceVariable global -> branch - Status: Killed
+--> Mutation 13: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:141 - ReplaceVariable global -> branch - Status: Killed
+--> Mutation 14: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:141 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 15: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:141 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 16: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:141 - ReplaceVariable global -> branch - Status: Killed
+--> Mutation 17: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:145 - ReplaceVariable branch -> global - Status: Killed
+--> Mutation 18: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:145 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 19: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:145 - ReplaceVariable branch -> global - Status: Survived
+--> Mutation 20: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:145 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 21: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:145 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 22: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:145 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 23: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:147 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 24: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:149 - ReplaceVariable branch -> global - Status: Survived
+--> Mutation 25: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:150 - ReplaceVariable branch -> global - Status: Killed
+--> Mutation 26: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:150 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 27: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:150 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 28: org.exolab.jms.tranlog.ExternalXid.<init>(I[B[B)V:150 - ReplaceVariable branch -> global - Status: Survived
+--> Mutation 29: org.exolab.jms.tranlog.ExternalXid.getFormatId()I:156 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 30: org.exolab.jms.tranlog.ExternalXid.getFormatId()I:156 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Killed
+--> Mutation 31: org.exolab.jms.tranlog.ExternalXid.getFormatId()I:156 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 32: org.exolab.jms.tranlog.ExternalXid.getFormatId()I:156 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 33: org.exolab.jms.tranlog.ExternalXid.getFormatId()I:156 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 34: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:177 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 35: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:178 - ReplaceConstant - xid:// ->  - Status: Killed
+--> Mutation 36: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 37: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Survived
+--> Mutation 38: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 39: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 40: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 41: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 28 -> 0 - Status: Killed
+--> Mutation 42: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 28 -> 1 - Status: Killed
+--> Mutation 43: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 28 -> -1 - Status: Survived
+--> Mutation 44: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 28 -> 27 - Status: Survived
+--> Mutation 45: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 28 -> 29 - Status: Survived
+--> Mutation 46: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceBitwiseOperator >> I -> << I - Status: Survived
+--> Mutation 47: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceBitwiseOperator >> I -> >>> I - Status: Survived
+--> Mutation 48: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 15 -> 0 - Status: Killed
+--> Mutation 49: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 15 -> 1 - Status: Survived
+--> Mutation 50: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 15 -> -1 - Status: Killed
+--> Mutation 51: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 15 -> 14 - Status: Killed
+--> Mutation 52: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceConstant - 15 -> 16 - Status: Killed
+--> Mutation 53: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceBitwiseOperator & -> | - Status: Killed
+--> Mutation 54: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:179 - ReplaceBitwiseOperator & -> ^ - Status: Killed
+--> Mutation 55: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 56: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Survived
+--> Mutation 57: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 58: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 59: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 60: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 24 -> 0 - Status: Killed
+--> Mutation 61: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 24 -> 1 - Status: Killed
+--> Mutation 62: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 24 -> -1 - Status: Survived
+--> Mutation 63: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 24 -> 23 - Status: Survived
+--> Mutation 64: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 24 -> 25 - Status: Survived
+--> Mutation 65: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceBitwiseOperator >> I -> << I - Status: Survived
+--> Mutation 66: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceBitwiseOperator >> I -> >>> I - Status: Survived
+--> Mutation 67: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 15 -> 0 - Status: Killed
+--> Mutation 68: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 15 -> 1 - Status: Killed
+--> Mutation 69: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 15 -> -1 - Status: Survived
+--> Mutation 70: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 15 -> 14 - Status: Killed
+--> Mutation 71: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceConstant - 15 -> 16 - Status: Killed
+--> Mutation 72: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceBitwiseOperator & -> | - Status: Killed
+--> Mutation 73: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:180 - ReplaceBitwiseOperator & -> ^ - Status: Killed
+--> Mutation 74: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 75: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Survived
+--> Mutation 76: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 77: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 78: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 79: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 20 -> 0 - Status: Killed
+--> Mutation 80: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 20 -> 1 - Status: Killed
+--> Mutation 81: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 20 -> -1 - Status: Survived
+--> Mutation 82: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 20 -> 19 - Status: Survived
+--> Mutation 83: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 20 -> 21 - Status: Survived
+--> Mutation 84: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceBitwiseOperator >> I -> << I - Status: Survived
+--> Mutation 85: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceBitwiseOperator >> I -> >>> I - Status: Survived
+--> Mutation 86: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 15 -> 0 - Status: Survived
+--> Mutation 87: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 15 -> 1 - Status: Survived
+--> Mutation 88: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 15 -> -1 - Status: Killed
+--> Mutation 89: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 15 -> 14 - Status: Killed
+--> Mutation 90: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceConstant - 15 -> 16 - Status: Killed
+--> Mutation 91: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceBitwiseOperator & -> | - Status: Killed
+--> Mutation 92: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:181 - ReplaceBitwiseOperator & -> ^ - Status: Killed
+--> Mutation 93: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 94: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Killed
+--> Mutation 95: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 96: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 97: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 98: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 16 -> 0 - Status: Killed
+--> Mutation 99: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 16 -> 1 - Status: Killed
+--> Mutation 100: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 16 -> -1 - Status: Survived
+--> Mutation 101: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 16 -> 15 - Status: Survived
+--> Mutation 102: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 16 -> 17 - Status: Survived
+--> Mutation 103: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceBitwiseOperator >> I -> << I - Status: Killed
+--> Mutation 104: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceBitwiseOperator >> I -> >>> I - Status: Survived
+--> Mutation 105: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 15 -> 0 - Status: Survived
+--> Mutation 106: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 15 -> 1 - Status: Killed
+--> Mutation 107: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 15 -> -1 - Status: Killed
+--> Mutation 108: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 15 -> 14 - Status: Killed
+--> Mutation 109: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceConstant - 15 -> 16 - Status: Killed
+--> Mutation 110: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceBitwiseOperator & -> | - Status: Killed
+--> Mutation 111: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:182 - ReplaceBitwiseOperator & -> ^ - Status: Killed
+--> Mutation 112: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Survived
+--> Mutation 113: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Survived
+--> Mutation 114: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 115: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 116: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 117: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 12 -> 0 - Status: Killed
+--> Mutation 118: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 12 -> 1 - Status: Survived
+--> Mutation 119: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 12 -> -1 - Status: Survived
+--> Mutation 120: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 12 -> 11 - Status: Survived
+--> Mutation 121: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 12 -> 13 - Status: Survived
+--> Mutation 122: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceBitwiseOperator >> I -> << I - Status: Killed
+--> Mutation 123: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceBitwiseOperator >> I -> >>> I - Status: Survived
+--> Mutation 124: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 15 -> 0 - Status: Killed
+--> Mutation 125: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 15 -> 1 - Status: Survived
+--> Mutation 126: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 15 -> -1 - Status: Killed
+--> Mutation 127: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 15 -> 14 - Status: Survived
+--> Mutation 128: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceConstant - 15 -> 16 - Status: Survived
+--> Mutation 129: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceBitwiseOperator & -> | - Status: Killed
+--> Mutation 130: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:183 - ReplaceBitwiseOperator & -> ^ - Status: Killed
+--> Mutation 131: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 132: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Survived
+--> Mutation 133: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 134: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 135: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 136: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 8 -> 0 - Status: Killed
+--> Mutation 137: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 8 -> 1 - Status: Killed
+--> Mutation 138: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 8 -> -1 - Status: Killed
+--> Mutation 139: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 8 -> 7 - Status: Survived
+--> Mutation 140: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 8 -> 9 - Status: Killed
+--> Mutation 141: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceBitwiseOperator >> I -> << I - Status: Survived
+--> Mutation 142: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceBitwiseOperator >> I -> >>> I - Status: Survived
+--> Mutation 143: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 15 -> 0 - Status: Killed
+--> Mutation 144: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 15 -> 1 - Status: Killed
+--> Mutation 145: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 15 -> -1 - Status: Killed
+--> Mutation 146: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 15 -> 14 - Status: Survived
+--> Mutation 147: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceConstant - 15 -> 16 - Status: Killed
+--> Mutation 148: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceBitwiseOperator & -> | - Status: Killed
+--> Mutation 149: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:184 - ReplaceBitwiseOperator & -> ^ - Status: Killed
+--> Mutation 150: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 151: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Killed
+--> Mutation 152: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 153: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 154: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 155: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 156: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 157: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 158: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 159: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 160: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceBitwiseOperator >> I -> << I - Status: Killed
+--> Mutation 161: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceBitwiseOperator >> I -> >>> I - Status: Survived
+--> Mutation 162: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 15 -> 0 - Status: Killed
+--> Mutation 163: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 15 -> 1 - Status: Killed
+--> Mutation 164: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 15 -> -1 - Status: Killed
+--> Mutation 165: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 15 -> 14 - Status: Survived
+--> Mutation 166: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceConstant - 15 -> 16 - Status: Survived
+--> Mutation 167: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceBitwiseOperator & -> | - Status: Killed
+--> Mutation 168: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:185 - ReplaceBitwiseOperator & -> ^ - Status: Killed
+--> Mutation 169: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 170: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Killed
+--> Mutation 171: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 172: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 173: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 174: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceConstant - 15 -> 0 - Status: Survived
+--> Mutation 175: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceConstant - 15 -> 1 - Status: Killed
+--> Mutation 176: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceConstant - 15 -> -1 - Status: Killed
+--> Mutation 177: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceConstant - 15 -> 14 - Status: Killed
+--> Mutation 178: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceConstant - 15 -> 16 - Status: Survived
+--> Mutation 179: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceBitwiseOperator & -> | - Status: Killed
+--> Mutation 180: org.exolab.jms.tranlog.ExternalXid.toString()Ljava/lang/String;:186 - ReplaceBitwiseOperator & -> ^ - Status: Killed
+--> Mutation 181: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:215 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 182: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:216 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 183: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:219 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 184: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:223 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Killed
+--> Mutation 185: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:223 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Killed
+--> Mutation 186: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:223 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 187: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:223 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 188: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:223 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 189: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:223 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 190: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:223 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 191: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:223 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 192: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:224 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 193: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:229 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 194: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:229 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 195: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:229 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 196: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:229 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 197: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:231 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 198: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:231 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 199: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:231 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 200: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:231 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 201: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:233 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 202: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:236 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 203: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:236 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 204: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:236 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 205: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:237 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 206: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 207: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - ReplaceVariable index -> MAXBQUALSIZE - Status: Survived
+--> Mutation 208: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - ReplaceVariable index -> MAXGTRIDSIZE - Status: Survived
+--> Mutation 209: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 210: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 211: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 212: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 213: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 214: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:240 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 215: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - ReplaceVariable index -> MAXBQUALSIZE - Status: Killed
+--> Mutation 216: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - ReplaceVariable index -> MAXGTRIDSIZE - Status: Killed
+--> Mutation 217: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 218: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - InsertUnaryOp IINC 1 index - Status: Killed
+--> Mutation 219: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 220: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - ReplaceVariable index -> MAXBQUALSIZE - Status: Killed
+--> Mutation 221: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - ReplaceVariable index -> MAXGTRIDSIZE - Status: Killed
+--> Mutation 222: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - InsertUnaryOp Negation of index - Status: Killed
+--> Mutation 223: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - InsertUnaryOp IINC 1 index - Status: Killed
+--> Mutation 224: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - InsertUnaryOp IINC -1 index - Status: Killed
+--> Mutation 225: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 226: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 227: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:241 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 228: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:242 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 229: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:249 - ReplaceVariable branch -> global - Status: Survived
+--> Mutation 230: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:249 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 231: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:249 - ReplaceVariable branch -> global - Status: Survived
+--> Mutation 232: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:249 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 233: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:249 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 234: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:249 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 235: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:251 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 236: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:251 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 237: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:251 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 238: org.exolab.jms.tranlog.ExternalXid.equals(Ljava/lang/Object;)Z:251 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 239: org.exolab.jms.tranlog.ExternalXid.writeExternal(Ljava/io/ObjectOutput;)V:275 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 240: org.exolab.jms.tranlog.ExternalXid.writeExternal(Ljava/io/ObjectOutput;)V:275 - ReplaceConstant - 1 -> -1 - Status: Survived
+--> Mutation 241: org.exolab.jms.tranlog.ExternalXid.writeExternal(Ljava/io/ObjectOutput;)V:275 - ReplaceConstant - 1 -> 2 - Status: Survived
+--> Mutation 242: org.exolab.jms.tranlog.ExternalXid.writeExternal(Ljava/io/ObjectOutput;)V:276 - ReplaceVariable _formatId -> MAXBQUALSIZE - Status: Survived
+--> Mutation 243: org.exolab.jms.tranlog.ExternalXid.writeExternal(Ljava/io/ObjectOutput;)V:276 - ReplaceVariable _formatId -> MAXGTRIDSIZE - Status: Survived
+--> Mutation 244: org.exolab.jms.tranlog.ExternalXid.writeExternal(Ljava/io/ObjectOutput;)V:276 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 245: org.exolab.jms.tranlog.ExternalXid.writeExternal(Ljava/io/ObjectOutput;)V:276 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 246: org.exolab.jms.tranlog.ExternalXid.writeExternal(Ljava/io/ObjectOutput;)V:276 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 247: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:291 - ReplaceVariable version -> serialVersionUID - Status: Survived
+--> Mutation 248: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:291 - InsertUnaryOp Negation of version - Status: Survived
+--> Mutation 249: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:291 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 250: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:291 - ReplaceConstant - 1 -> -1 - Status: Survived
+--> Mutation 251: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:291 - ReplaceConstant - 1 -> 2 - Status: Survived
+--> Mutation 252: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:291 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 253: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:291 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 254: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:291 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 255: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:301 - ReplaceConstant - No support for ExternalXid with version  ->  - Status: Survived
+--> Mutation 256: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:301 - ReplaceVariable version -> serialVersionUID - Status: Survived
+--> Mutation 257: org.exolab.jms.tranlog.ExternalXid.readExternal(Ljava/io/ObjectInput;)V:301 - InsertUnaryOp Negation of version - Status: Survived
+* Compiling and checking tests
+[MASTER] 03:31:22.991 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:31:28.237 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:31:33.496 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:31:38.746 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:31:43.998 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:31:49.270 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:31:54.530 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:31:59.780 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:32:05.033 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:32:10.295 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:32:15.541 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 03:32:15.543 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 24
+* Writing tests to file
+* Writing JUnit test case 'ExternalXid_ESTest' to test_seeds/seed_1/tests_original
+* Done!
+
+* Computation finished

@@ -1,0 +1,126 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: org.heal.module.metadata.CompleteMetadataBean
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/96_heal/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 04:48:37.519 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class org.heal.module.metadata.CompleteMetadataBean
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 602
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 354 / 602
+[MASTER] 04:48:41.382 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 04:48:41.957 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 04:48:52.316 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+* Search finished after 181s and 4391 generations, 1994894 statements, best individual has fitness: 31.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 195
+* Number of covered goals: 195
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 89
+* Number of covered goals: 89
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 16
+* Number of covered goals: 16
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 36
+* Number of covered goals: 33
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 82%
+* Total number of goals: 105
+* Number of covered goals: 86
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 44
+* Number of covered goals: 44
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 44
+* Number of covered goals: 44
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 89
+* Number of covered goals: 89
+* Generated 88 tests with total length 316
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 75%
+* There are surviving mutants: 
+--> Mutation 0: org.heal.module.metadata.CompleteMetadataBean.setTargetUserGroups(Ljava/util/ArrayList;)V:133 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 1: org.heal.module.metadata.CompleteMetadataBean.getCopyright()Ljava/lang/String;:159 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 2: org.heal.module.metadata.CompleteMetadataBean.getCopyright()Ljava/lang/String;:159 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 3: org.heal.module.metadata.CompleteMetadataBean.getCopyright()Ljava/lang/String;:159 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 4: org.heal.module.metadata.CompleteMetadataBean.getCopyright()Ljava/lang/String;:159 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 5: org.heal.module.metadata.CompleteMetadataBean.getCopyright()Ljava/lang/String;:160 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 6: org.heal.module.metadata.CompleteMetadataBean.getCopyright()Ljava/lang/String;:161 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 7: org.heal.module.metadata.CompleteMetadataBean.getCopyright()Ljava/lang/String;:163 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 8: org.heal.module.metadata.CompleteMetadataBean.getContributorList()Ljava/util/List;:289 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 9: org.heal.module.metadata.CompleteMetadataBean.addContributor(Lorg/heal/module/metadata/ContributorBean;)V:319 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 10: org.heal.module.metadata.CompleteMetadataBean.setFormats(Ljava/util/ArrayList;)V:404 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 11: org.heal.module.metadata.CompleteMetadataBean.setFormats(Ljava/util/ArrayList;)V:404 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 12: org.heal.module.metadata.CompleteMetadataBean.setFormats(Ljava/util/ArrayList;)V:404 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 13: org.heal.module.metadata.CompleteMetadataBean.setFormats(Ljava/util/ArrayList;)V:404 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 14: org.heal.module.metadata.CompleteMetadataBean.setFormats(Ljava/util/ArrayList;)V:405 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 15: org.heal.module.metadata.CompleteMetadataBean.addFormat(Lorg/heal/module/metadata/FormatBean;)V:414 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 16: org.heal.module.metadata.CompleteMetadataBean.addFormat(Lorg/heal/module/metadata/FormatBean;)V:414 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 17: org.heal.module.metadata.CompleteMetadataBean.addFormat(Lorg/heal/module/metadata/FormatBean;)V:414 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 18: org.heal.module.metadata.CompleteMetadataBean.addFormat(Lorg/heal/module/metadata/FormatBean;)V:414 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 19: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:438 - ReplaceConstant - line.separator ->  - Status: Killed
+--> Mutation 20: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:439 - ReplaceConstant - Complete Metadata:  ->  - Status: Killed
+--> Mutation 21: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:441 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 22: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:442 - ReplaceConstant - Disease Diagnoses: 
+ ->  - Status: Killed
+--> Mutation 23: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:445 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 24: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:446 - ReplaceConstant - Copyrights: 
+ ->  - Status: Killed
+--> Mutation 25: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:449 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 26: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:450 - ReplaceConstant - TaxonPaths: 
+ ->  - Status: Killed
+--> Mutation 27: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:453 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 28: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:454 - ReplaceConstant - CopyrightHolders: 
+ ->  - Status: Killed
+--> Mutation 29: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:457 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 30: org.heal.module.metadata.CompleteMetadataBean.toString()Ljava/lang/String;:458 - ReplaceConstant - ContextURLs: 
+ ->  - Status: Killed
+--> Mutation 31: org.heal.module.metadata.CompleteMetadataBean.collectionToString(Ljava/util/Collection;)Ljava/lang/String;:498 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 32: org.heal.module.metadata.CompleteMetadataBean.collectionToString(Ljava/util/Collection;)Ljava/lang/String;:502 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 33: org.heal.module.metadata.CompleteMetadataBean.collectionToString(Ljava/util/Collection;)Ljava/lang/String;:503 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 34: org.heal.module.metadata.CompleteMetadataBean.collectionToString(Ljava/util/Collection;)Ljava/lang/String;:504 - ReplaceConstant - NULL
+ ->  - Status: Killed
+--> Mutation 35: org.heal.module.metadata.CompleteMetadataBean.collectionToString(Ljava/util/Collection;)Ljava/lang/String;:506 - ReplaceConstant - 
+ ->  - Status: Survived
+* Compiling and checking tests
+[MASTER] 04:51:53.906 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:51:59.167 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:52:04.425 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:52:09.673 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:52:14.930 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:52:20.189 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:52:25.429 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:52:30.739 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:52:35.985 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 04:52:41.241 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Writing tests to file
+* Writing JUnit test case 'CompleteMetadataBean_ESTest' to test_seeds/seed_1/tests_original
+* Done!
+
+* Computation finished

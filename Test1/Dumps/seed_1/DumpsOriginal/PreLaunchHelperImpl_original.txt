@@ -1,11 +1,14 @@
-* EvoSuite 1.0.7-SNAPSHOT
-* Configuration: EvoSuite_fixed
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl
 * Starting Client-0
-* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
-* Connecting to master process on port 21446
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:44:18.693 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 23:44:18.929 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 23:44:19.455 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl
 * Test criteria:
@@ -17,7 +20,16 @@
   - Top-Level Method Coverage
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
-* Total number of test goals for DYNAMOSA: 422
-* Using seed 1710100690020
+* Total number of test goals for DYNAMOSA: 429
+* Using seed 2482030657809
 * Starting evolution
-* Initial Number of Goals in DynMOSA = 200 / 422
+* Initial Number of Goals in DynaMOSA = 207 / 429
+[MASTER] 23:44:22.071 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 23:44:23.246 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 23:44:38.354 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 23:44:51.619 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 23:44:51.625 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
+[MASTER] 23:44:52.049 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 23:46:19.531 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 183s and 1491 generations, 348446 statements, best individual has fitness: 131.0
+* Computation finished

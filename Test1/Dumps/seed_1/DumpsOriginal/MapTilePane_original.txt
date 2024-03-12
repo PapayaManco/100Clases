@@ -1,0 +1,159 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Going to generate test cases for class: MapTilePane
+* Starting Client-0
+* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/27_gangup/evosuite-files/evosuite.properties
+* Connecting to master process on port 3310
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:41:51.265 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+[MASTER] 02:41:51.373 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 02:41:52.678 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+* Finished analyzing classpath
+* Generating tests for class MapTilePane
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 164
+* Using seed 2482030657809
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 52 / 164
+[MASTER] 02:41:56.224 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 02:41:56.230 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
+[MASTER] 02:41:56.234 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 02:42:01.717 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 02:42:25.359 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 02:43:43.566 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 02:44:52.777 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 181s and 3901 generations, 280463 statements, best individual has fitness: 155.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 13%
+* Total number of goals: 54
+* Number of covered goals: 7
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 8%
+* Total number of goals: 12
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 80
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 33%
+* Total number of goals: 3
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 3
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 8%
+* Total number of goals: 12
+* Number of covered goals: 1
+* Generated 1 tests with total length 1
+* Resulting test suite's coverage: 27% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: MapTilePane.<init>(LMapManager;)V:1065 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 1: MapTilePane.<init>(LMapManager;)V:1066 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 2: MapTilePane.<init>(LMapManager;)V:1068 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 3: MapTilePane.<init>(LMapManager;)V:1068 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 4: MapTilePane.<init>(LMapManager;)V:1069 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 5: MapTilePane.<init>(LMapManager;)V:1069 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 6: MapTilePane.<init>(LMapManager;)V:1069 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 7: MapTilePane.<init>(LMapManager;)V:1070 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 8: MapTilePane.<init>(LMapManager;)V:1072 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 9: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1109 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 10: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1123 - ReplaceConstant - .*_/(.*).png ->  - Status: Survived
+--> Mutation 11: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 12: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 13: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 14: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 15: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 16: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 17: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 18: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 19: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 20: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 21: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 22: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 23: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 24: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 25: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 26: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 27: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 28: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1126 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 29: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 30: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 31: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 32: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 33: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 34: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 35: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 36: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 37: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 38: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 39: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 40: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 41: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 42: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 43: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 44: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 45: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 46: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 47: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 48: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 49: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 50: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1127 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 51: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 52: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 53: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 54: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 55: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 56: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 57: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 58: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 59: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 60: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 61: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1128 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 62: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1129 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 63: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1129 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 64: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1129 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 65: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1130 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 66: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 67: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 68: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 69: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 70: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 71: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 72: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 73: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 74: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 75: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 76: MapTilePane.update(LMapManager;Ljava/lang/Object;)V:1132 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 77: MapTilePane.update(Ljava/util/Observable;Ljava/lang/Object;)V:1155 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 78: MapTilePane$ListItemListener.itemStateChanged(Ljava/awt/event/ItemEvent;)V:1035 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 79: MapTilePane$ListItemListener.itemStateChanged(Ljava/awt/event/ItemEvent;)V:1035 - ReplaceComparisonOperator != -> == - Status: Survived
+* Compiling and checking tests
+[MASTER] 02:45:00.430 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+[MASTER] 02:45:05.750 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
+* Writing tests to file
+* Writing JUnit test case 'MapTilePane_ESTest' to test_seeds/seed_1/tests_original
+* Done!
+
+* Computation finished

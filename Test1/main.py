@@ -50,7 +50,8 @@ for iteracion in range(1,2):
             "-Dplot=false",
             "-Dclient_on_thread=false",
             "-class", clase_path,
-            "-projectCP", projects_cp[proyecto]
+            "-projectCP", projects_cp[proyecto],
+            f'-Dtest_dir=test_seeds/seed_{iteracion}/tests_original'
             ]
         # Nombre del archivo de salida
         output_file = f'Dumps/seed_{iteracion}/DumpsOriginal/' + clase + '_original.txt'
@@ -90,7 +91,8 @@ for iteracion in range(1,2):
             "-mem","2500",
             "-Dplot=false",
             "-Dclient_on_thread=false",
-            "-class", clase_path
+            "-class", clase_path,
+            f'-Dtest_dir=test_seeds/seed_{iteracion}/tests_injected'
             ]
         # Nombre del archivo de salida
         output_file = f'Dumps/seed_{iteracion}/DumpsInjected/' + clase + '_injected.txt'
