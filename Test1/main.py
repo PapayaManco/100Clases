@@ -115,3 +115,14 @@ for project in projects:
     # Copy the folder and its contents
     if os.path.exists(source_folder):
         shutil.copytree(source_folder, destination_folder)
+    injected_folder = 'projects/'+project+'/test_seeds'
+    destination_folder = 'tests_seeds/'+project
+    # Copy the folder and its contents
+    if os.path.exists(injected_folder):
+        for root, dirs, files in os.walk(injected_folder):
+            for file in files:
+                src_file = os.path.join(root, file)
+                dst_file = os.path.join(destination_folder, os.path.relpath(src_file, injected_folder))
+                # Ensure the destination directory for the current file exists
+                os.makedirs(os.path.dirname(dst_file), exist_ok=True)
+                shutil.copy2(src_file, dst_file)
