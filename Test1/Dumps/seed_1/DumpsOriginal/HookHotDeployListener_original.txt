@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portal.deploy.hot.HookHotDeployListener
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 3192
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Error while initializing target class: Method too large: com/liferay/portal/deploy/hot/HookHotDeployListener.initCustomJspBag (Ljava/lang/String;Ljava/lang/String;Lcom/liferay/portal/deploy/hot/HookHotDeployListener$CustomJspBag;)V

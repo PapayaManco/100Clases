@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/102_squirrel-sql/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
+* Connecting to master process on port 17155
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,28 +18,28 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 2676
-* Using seed 2482030657809
+* Using seed 1710471805762
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 896 / 2676
-* Search finished after 182s and 1284 generations, 548175 statements, best individual has fitness: 2335.0
+* Search finished after 181s and 1733 generations, 741495 statements, best individual has fitness: 2165.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
-* Coverage of criterion LINE: 13%
+* Coverage of criterion LINE: 22%
 * Total number of goals: 916
-* Number of covered goals: 115
+* Number of covered goals: 198
 * Coverage analysis for criterion BRANCH
-* Coverage of criterion BRANCH: 13%
+* Coverage of criterion BRANCH: 18%
 * Total number of goals: 557
-* Number of covered goals: 70
+* Number of covered goals: 99
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 13
-* Number of covered goals: 13
+* Total number of goals: 12
+* Number of covered goals: 12
 * Coverage analysis for criterion WEAKMUTATION
-* Coverage of criterion WEAKMUTATION: 10%
+* Coverage of criterion WEAKMUTATION: 16%
 * Total number of goals: 600
-* Number of covered goals: 63
+* Number of covered goals: 97
 * Coverage analysis for criterion OUTPUT
 * Coverage of criterion OUTPUT: 75%
 * Total number of goals: 16
@@ -53,13 +53,13 @@
 * Total number of goals: 15
 * Number of covered goals: 15
 * Coverage analysis for criterion CBRANCH
-* Coverage of criterion CBRANCH: 13%
+* Coverage of criterion CBRANCH: 18%
 * Total number of goals: 557
-* Number of covered goals: 70
-* Generated 41 tests with total length 218
-* Resulting test suite's coverage: 47% (average coverage for all fitness functions)
+* Number of covered goals: 99
+* Generated 43 tests with total length 230
+* Resulting test suite's coverage: 50% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 4%
+* Resulting test suite's mutation score: 5%
 * There are surviving mutants: 
 --> Mutation 0: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.fireStatementAdded(Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/completions/SQLStatement;)V:43 - ReplaceConstant - 0 -> 1 - Status: Survived
 --> Mutation 1: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.fireStatementAdded(Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/completions/SQLStatement;)V:43 - InsertUnaryOp Negation of i - Status: Survived
@@ -81,7 +81,7 @@
 --> Mutation 17: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Error(I)V:92 - ReplaceConstant - 2 -> 1 - Status: Survived
 --> Mutation 18: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Error(I)V:92 - ReplaceConstant - 2 -> -1 - Status: Survived
 --> Mutation 19: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Error(I)V:92 - ReplaceConstant - 2 -> 3 - Status: Survived
---> Mutation 20: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Error(I)V:92 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 20: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Error(I)V:92 - ReplaceComparisonOperator < -> != - Status: Killed
 --> Mutation 21: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Error(I)V:92 - ReplaceComparisonOperator < -> -2 - Status: Survived
 --> Mutation 22: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Error(I)V:92 - ReplaceComparisonOperator < -> <= - Status: Survived
 --> Mutation 23: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Error(I)V:92 - InsertUnaryOp Negation of n - Status: Survived
@@ -133,12 +133,12 @@
 --> Mutation 69: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:133 - ReplaceComparisonOperator > -> != - Status: Killed
 --> Mutation 70: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:133 - ReplaceComparisonOperator > -> -2 - Status: Survived
 --> Mutation 71: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:133 - ReplaceComparisonOperator > -> >= - Status: Survived
---> Mutation 72: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 72: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - InsertUnaryOp Negation - Status: Killed
 --> Mutation 73: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 74: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - InsertUnaryOp -1 - Status: Survived
 --> Mutation 75: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - ReplaceConstant - 1 -> 0 - Status: Survived
---> Mutation 76: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - ReplaceArithmeticOperator + -> % - Status: Survived
---> Mutation 77: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 76: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 77: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - ReplaceArithmeticOperator + -> - - Status: Killed
 --> Mutation 78: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - ReplaceArithmeticOperator + -> * - Status: Survived
 --> Mutation 79: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Get()V:135 - ReplaceArithmeticOperator + -> / - Status: Survived
 --> Mutation 80: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Expect(I)V:145 - InsertUnaryOp Negation - Status: Killed
@@ -202,10 +202,10 @@
 --> Mutation 138: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.ExpectWeak(II)V:168 - InsertUnaryOp IINC 1 follow - Status: Survived
 --> Mutation 139: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.ExpectWeak(II)V:168 - InsertUnaryOp IINC -1 follow - Status: Survived
 --> Mutation 140: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.ExpectWeak(II)V:168 - ReplaceComparisonOperator != -> == - Status: Survived
---> Mutation 141: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:174 - ReplaceConstant - 104 -> 0 - Status: Survived
---> Mutation 142: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:174 - ReplaceConstant - 104 -> 1 - Status: Killed
+--> Mutation 141: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:174 - ReplaceConstant - 104 -> 0 - Status: Killed
+--> Mutation 142: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:174 - ReplaceConstant - 104 -> 1 - Status: Survived
 --> Mutation 143: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:174 - ReplaceConstant - 104 -> -1 - Status: Killed
---> Mutation 144: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:174 - ReplaceConstant - 104 -> 103 - Status: Survived
+--> Mutation 144: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:174 - ReplaceConstant - 104 -> 103 - Status: Killed
 --> Mutation 145: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:174 - ReplaceConstant - 104 -> 105 - Status: Survived
 --> Mutation 146: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:175 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 147: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:175 - InsertUnaryOp +1 - Status: Killed
@@ -217,7 +217,7 @@
 --> Mutation 153: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:175 - InsertUnaryOp IINC -1 n - Status: Killed
 --> Mutation 154: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:175 - ReplaceComparisonOperator != -> -1 - Status: Killed
 --> Mutation 155: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:175 - ReplaceComparisonOperator != -> < - Status: Killed
---> Mutation 156: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:175 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 156: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:175 - ReplaceComparisonOperator != -> > - Status: Killed
 --> Mutation 157: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:178 - ReplaceConstant - 1 -> 0 - Status: Killed
 --> Mutation 158: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:180 - ReplaceVariable repFol -> syFol - Status: Killed
 --> Mutation 159: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:180 - ReplaceVariable repFol -> n - Status: Killed
@@ -226,36 +226,36 @@
 --> Mutation 162: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:180 - InsertUnaryOp IINC -1 repFol - Status: Killed
 --> Mutation 163: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:180 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 164: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:181 - ReplaceConstant - 0 -> 1 - Status: Killed
---> Mutation 165: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 165: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 166: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceVariable i -> syFol - Status: Killed
---> Mutation 167: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceVariable i -> repFol - Status: Killed
+--> Mutation 167: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceVariable i -> repFol - Status: Survived
 --> Mutation 168: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceVariable i -> n - Status: Killed
---> Mutation 169: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 169: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - InsertUnaryOp Negation of i - Status: Killed
 --> Mutation 170: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - InsertUnaryOp IINC 1 i - Status: Killed
 --> Mutation 171: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - InsertUnaryOp IINC -1 i - Status: Survived
 --> Mutation 172: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceConstant - 103 -> 0 - Status: Survived
 --> Mutation 173: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceConstant - 103 -> 1 - Status: Survived
 --> Mutation 174: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceConstant - 103 -> -1 - Status: Survived
 --> Mutation 175: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceConstant - 103 -> 102 - Status: Survived
---> Mutation 176: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceConstant - 103 -> 104 - Status: Killed
+--> Mutation 176: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceConstant - 103 -> 104 - Status: Survived
 --> Mutation 177: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceComparisonOperator > -> != - Status: Killed
---> Mutation 178: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 178: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceComparisonOperator > -> -2 - Status: Killed
 --> Mutation 179: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceComparisonOperator > -> >= - Status: Survived
---> Mutation 180: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> syFol - Status: Survived
---> Mutation 181: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> repFol - Status: Survived
+--> Mutation 180: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> syFol - Status: Killed
+--> Mutation 181: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> repFol - Status: Killed
 --> Mutation 182: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> n - Status: Killed
---> Mutation 183: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 183: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of i - Status: Killed
 --> Mutation 184: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC 1 i - Status: Killed
 --> Mutation 185: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC -1 i - Status: Killed
---> Mutation 186: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable syFol -> i - Status: Survived
+--> Mutation 186: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable syFol -> i - Status: Killed
 --> Mutation 187: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable syFol -> repFol - Status: Survived
 --> Mutation 188: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable syFol -> n - Status: Survived
 --> Mutation 189: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of syFol - Status: Killed
 --> Mutation 190: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> syFol - Status: Survived
 --> Mutation 191: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> repFol - Status: Survived
 --> Mutation 192: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> n - Status: Survived
---> Mutation 193: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of i - Status: Survived
---> Mutation 194: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 193: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 194: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC 1 i - Status: Survived
 --> Mutation 195: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC -1 i - Status: Killed
 --> Mutation 196: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator != -> -1 - Status: Survived
 --> Mutation 197: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator != -> < - Status: Survived
@@ -266,26 +266,26 @@
 --> Mutation 202: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of repFol - Status: Killed
 --> Mutation 203: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> syFol - Status: Survived
 --> Mutation 204: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> repFol - Status: Survived
---> Mutation 205: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> n - Status: Killed
+--> Mutation 205: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> n - Status: Survived
 --> Mutation 206: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of i - Status: Killed
---> Mutation 207: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 207: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC 1 i - Status: Survived
 --> Mutation 208: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC -1 i - Status: Survived
 --> Mutation 209: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator != -> -1 - Status: Survived
 --> Mutation 210: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator != -> < - Status: Survived
 --> Mutation 211: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator != -> > - Status: Survived
---> Mutation 212: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceConstant - 0 -> 1 - Status: Survived
---> Mutation 213: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> syFol - Status: Survived
---> Mutation 214: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> repFol - Status: Survived
+--> Mutation 212: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 213: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> syFol - Status: Killed
+--> Mutation 214: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> repFol - Status: Killed
 --> Mutation 215: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceVariable i -> n - Status: Killed
---> Mutation 216: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of i - Status: Survived
---> Mutation 217: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 216: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 217: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC 1 i - Status: Killed
 --> Mutation 218: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - InsertUnaryOp IINC -1 i - Status: Killed
 --> Mutation 219: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator == -> -2 - Status: Survived
---> Mutation 220: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 220: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator == -> >= - Status: Killed
 --> Mutation 221: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceComparisonOperator == -> <= - Status: Survived
---> Mutation 222: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 222: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceConstant - 1 -> 0 - Status: Killed
 --> Mutation 223: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:186 - ReplaceConstant - 0 -> 1 - Status: Survived
---> Mutation 224: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceVariable i -> syFol - Status: Killed
+--> Mutation 224: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceVariable i -> syFol - Status: Survived
 --> Mutation 225: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceVariable i -> repFol - Status: Killed
 --> Mutation 226: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:184 - ReplaceVariable i -> n - Status: Killed
 --> Mutation 227: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:188 - ReplaceVariable n -> syFol - Status: Survived
@@ -293,7 +293,7 @@
 --> Mutation 229: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:188 - InsertUnaryOp Negation of n - Status: Survived
 --> Mutation 230: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:188 - InsertUnaryOp IINC 1 n - Status: Survived
 --> Mutation 231: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:188 - InsertUnaryOp IINC -1 n - Status: Survived
---> Mutation 232: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:189 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 232: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:189 - InsertUnaryOp Negation - Status: Killed
 --> Mutation 233: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:189 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 234: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:189 - InsertUnaryOp -1 - Status: Survived
 --> Mutation 235: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.WeakSeparator(III)Z:189 - ReplaceComparisonOperator != -> == - Status: Survived
@@ -1396,7 +1396,7 @@
 --> Mutation 1332: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Term()V:863 - ReplaceConstant - 6 -> -1 - Status: Survived
 --> Mutation 1333: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Term()V:863 - ReplaceConstant - 6 -> 5 - Status: Survived
 --> Mutation 1334: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Term()V:863 - ReplaceConstant - 6 -> 7 - Status: Survived
---> Mutation 1335: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Term()V:863 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 1335: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Term()V:863 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 1336: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Term()V:867 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 1337: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Term()V:867 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 1338: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Term()V:867 - InsertUnaryOp -1 - Status: Survived
@@ -1470,12 +1470,12 @@
 --> Mutation 1406: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:936 - ReplaceComparisonOperator != -> -1 - Status: Survived
 --> Mutation 1407: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:936 - ReplaceComparisonOperator != -> < - Status: Survived
 --> Mutation 1408: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:936 - ReplaceComparisonOperator != -> > - Status: Survived
---> Mutation 1409: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:941 - ReplaceConstant - 8 -> 0 - Status: Survived
+--> Mutation 1409: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:941 - ReplaceConstant - 8 -> 0 - Status: Killed
 --> Mutation 1410: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:941 - ReplaceConstant - 8 -> 1 - Status: Survived
 --> Mutation 1411: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:941 - ReplaceConstant - 8 -> -1 - Status: Survived
 --> Mutation 1412: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:941 - ReplaceConstant - 8 -> 7 - Status: Survived
 --> Mutation 1413: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:941 - ReplaceConstant - 8 -> 9 - Status: Survived
---> Mutation 1414: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:941 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 1414: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:941 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 1415: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:944 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 1416: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:944 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 1417: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleExpression()V:944 - InsertUnaryOp -1 - Status: Survived
@@ -2392,7 +2392,7 @@
 --> Mutation 2328: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Expression()V:1486 - ReplaceConstant - 14 -> 0 - Status: Survived
 --> Mutation 2329: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Expression()V:1486 - ReplaceConstant - 14 -> 1 - Status: Survived
 --> Mutation 2330: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Expression()V:1486 - ReplaceConstant - 14 -> -1 - Status: Survived
---> Mutation 2331: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Expression()V:1486 - ReplaceConstant - 14 -> 13 - Status: Survived
+--> Mutation 2331: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Expression()V:1486 - ReplaceConstant - 14 -> 13 - Status: Killed
 --> Mutation 2332: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Expression()V:1486 - ReplaceConstant - 14 -> 15 - Status: Survived
 --> Mutation 2333: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Expression()V:1486 - ReplaceComparisonOperator == -> != - Status: Survived
 --> Mutation 2334: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.ColumnName()V:1496 - InsertUnaryOp Negation - Status: Survived
@@ -2499,7 +2499,7 @@
 --> Mutation 2435: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateFieldList()V:1554 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 2436: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateFieldList()V:1554 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 2437: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateFieldList()V:1554 - InsertUnaryOp -1 - Status: Survived
---> Mutation 2438: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateFieldList()V:1554 - ReplaceConstant - 101 -> 0 - Status: Survived
+--> Mutation 2438: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateFieldList()V:1554 - ReplaceConstant - 101 -> 0 - Status: Killed
 --> Mutation 2439: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateFieldList()V:1554 - ReplaceConstant - 101 -> 1 - Status: Survived
 --> Mutation 2440: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateFieldList()V:1554 - ReplaceConstant - 101 -> -1 - Status: Survived
 --> Mutation 2441: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateFieldList()V:1554 - ReplaceConstant - 101 -> 100 - Status: Survived
@@ -2630,12 +2630,12 @@
 --> Mutation 2566: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleSelect()V:1622 - ReplaceComparisonOperator != -> < - Status: Survived
 --> Mutation 2567: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SimpleSelect()V:1622 - ReplaceComparisonOperator != -> > - Status: Survived
 --> Mutation 2568: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - InsertUnaryOp Negation - Status: Killed
---> Mutation 2569: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 2569: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 2570: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - InsertUnaryOp -1 - Status: Killed
 --> Mutation 2571: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceConstant - 69 -> 0 - Status: Killed
 --> Mutation 2572: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceConstant - 69 -> 1 - Status: Killed
---> Mutation 2573: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceConstant - 69 -> -1 - Status: Killed
---> Mutation 2574: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceConstant - 69 -> 68 - Status: Killed
+--> Mutation 2573: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceConstant - 69 -> -1 - Status: Survived
+--> Mutation 2574: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceConstant - 69 -> 68 - Status: Survived
 --> Mutation 2575: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceConstant - 69 -> 70 - Status: Killed
 --> Mutation 2576: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceComparisonOperator != -> -1 - Status: Killed
 --> Mutation 2577: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Transaction()V:1631 - ReplaceComparisonOperator != -> < - Status: Survived
@@ -2715,7 +2715,7 @@
 --> Mutation 2651: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.AlterTable()V:1665 - ReplaceConstant - 143 -> -1 - Status: Survived
 --> Mutation 2652: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.AlterTable()V:1665 - ReplaceConstant - 143 -> 142 - Status: Survived
 --> Mutation 2653: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.AlterTable()V:1665 - ReplaceConstant - 143 -> 144 - Status: Survived
---> Mutation 2654: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1670 - ReplaceConstant - 96 -> 0 - Status: Killed
+--> Mutation 2654: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1670 - ReplaceConstant - 96 -> 0 - Status: Survived
 --> Mutation 2655: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1670 - ReplaceConstant - 96 -> 1 - Status: Killed
 --> Mutation 2656: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1670 - ReplaceConstant - 96 -> -1 - Status: Killed
 --> Mutation 2657: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1670 - ReplaceConstant - 96 -> 95 - Status: Killed
@@ -2723,14 +2723,14 @@
 --> Mutation 2659: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 2660: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 2661: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - InsertUnaryOp -1 - Status: Survived
---> Mutation 2662: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceConstant - 94 -> 0 - Status: Survived
+--> Mutation 2662: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceConstant - 94 -> 0 - Status: Killed
 --> Mutation 2663: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceConstant - 94 -> 1 - Status: Survived
 --> Mutation 2664: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceConstant - 94 -> -1 - Status: Survived
 --> Mutation 2665: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceConstant - 94 -> 93 - Status: Survived
 --> Mutation 2666: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceConstant - 94 -> 95 - Status: Survived
 --> Mutation 2667: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceComparisonOperator != -> -1 - Status: Survived
 --> Mutation 2668: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceComparisonOperator != -> < - Status: Survived
---> Mutation 2669: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 2669: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1671 - ReplaceComparisonOperator != -> > - Status: Survived
 --> Mutation 2670: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1675 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 2671: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1675 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 2672: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1675 - InsertUnaryOp -1 - Status: Survived
@@ -2747,10 +2747,10 @@
 --> Mutation 2683: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1680 - ReplaceConstant - 144 -> -1 - Status: Survived
 --> Mutation 2684: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1680 - ReplaceConstant - 144 -> 143 - Status: Survived
 --> Mutation 2685: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.Drop()V:1680 - ReplaceConstant - 144 -> 145 - Status: Survived
---> Mutation 2686: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1685 - ReplaceConstant - 93 -> 0 - Status: Survived
+--> Mutation 2686: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1685 - ReplaceConstant - 93 -> 0 - Status: Killed
 --> Mutation 2687: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1685 - ReplaceConstant - 93 -> 1 - Status: Survived
 --> Mutation 2688: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1685 - ReplaceConstant - 93 -> -1 - Status: Survived
---> Mutation 2689: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1685 - ReplaceConstant - 93 -> 92 - Status: Survived
+--> Mutation 2689: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1685 - ReplaceConstant - 93 -> 92 - Status: Killed
 --> Mutation 2690: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1685 - ReplaceConstant - 93 -> 94 - Status: Survived
 --> Mutation 2691: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1686 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 2692: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1686 - InsertUnaryOp +1 - Status: Survived
@@ -2794,7 +2794,7 @@
 --> Mutation 2730: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1694 - ReplaceConstant - -1005 -> -1006 - Status: Survived
 --> Mutation 2731: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1694 - ReplaceConstant - -1005 -> -1004 - Status: Survived
 --> Mutation 2732: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1694 - ReplaceComparisonOperator != -> -1 - Status: Survived
---> Mutation 2733: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1694 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 2733: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1694 - ReplaceComparisonOperator != -> < - Status: Killed
 --> Mutation 2734: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1694 - ReplaceComparisonOperator != -> > - Status: Survived
 --> Mutation 2735: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1699 - ReplaceConstant - 145 -> 0 - Status: Survived
 --> Mutation 2736: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.CreateStmt()V:1699 - ReplaceConstant - 145 -> 1 - Status: Survived
@@ -2814,10 +2814,10 @@
 --> Mutation 2750: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1712 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 2751: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1712 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 2752: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1712 - InsertUnaryOp -1 - Status: Survived
---> Mutation 2753: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> 0 - Status: Survived
---> Mutation 2754: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> 1 - Status: Survived
---> Mutation 2755: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> -1 - Status: Survived
---> Mutation 2756: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> 17 - Status: Survived
+--> Mutation 2753: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> 0 - Status: Killed
+--> Mutation 2754: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> 1 - Status: Killed
+--> Mutation 2755: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> -1 - Status: Killed
+--> Mutation 2756: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> 17 - Status: Killed
 --> Mutation 2757: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1715 - ReplaceConstant - 18 -> 19 - Status: Survived
 --> Mutation 2758: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1716 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 2759: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.DeleteStmt()V:1716 - InsertUnaryOp +1 - Status: Survived
@@ -2862,7 +2862,7 @@
 --> Mutation 2798: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateStmt()V:1734 - ReplaceArithmeticOperator + -> / - Status: Survived
 --> Mutation 2799: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateStmt()V:1738 - ReplaceConstant - 12 -> 0 - Status: Survived
 --> Mutation 2800: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateStmt()V:1738 - ReplaceConstant - 12 -> 1 - Status: Survived
---> Mutation 2801: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateStmt()V:1738 - ReplaceConstant - 12 -> -1 - Status: Survived
+--> Mutation 2801: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateStmt()V:1738 - ReplaceConstant - 12 -> -1 - Status: Killed
 --> Mutation 2802: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateStmt()V:1738 - ReplaceConstant - 12 -> 11 - Status: Survived
 --> Mutation 2803: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateStmt()V:1738 - ReplaceConstant - 12 -> 13 - Status: Survived
 --> Mutation 2804: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.UpdateStmt()V:1739 - InsertUnaryOp Negation - Status: Survived
@@ -2905,8 +2905,8 @@
 --> Mutation 2841: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1756 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 2842: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1756 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 2843: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1756 - InsertUnaryOp -1 - Status: Survived
---> Mutation 2844: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1759 - ReplaceConstant - 15 -> 0 - Status: Killed
---> Mutation 2845: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1759 - ReplaceConstant - 15 -> 1 - Status: Killed
+--> Mutation 2844: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1759 - ReplaceConstant - 15 -> 0 - Status: Survived
+--> Mutation 2845: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1759 - ReplaceConstant - 15 -> 1 - Status: Survived
 --> Mutation 2846: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1759 - ReplaceConstant - 15 -> -1 - Status: Killed
 --> Mutation 2847: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1759 - ReplaceConstant - 15 -> 14 - Status: Killed
 --> Mutation 2848: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.InsertStmt()V:1759 - ReplaceConstant - 15 -> 16 - Status: Killed
@@ -2983,16 +2983,16 @@
 --> Mutation 2919: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1854 - ReplaceConstant - 147 -> -1 - Status: Survived
 --> Mutation 2920: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1854 - ReplaceConstant - 147 -> 146 - Status: Survived
 --> Mutation 2921: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1854 - ReplaceConstant - 147 -> 148 - Status: Survived
---> Mutation 2922: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - InsertUnaryOp Negation - Status: Survived
---> Mutation 2923: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - InsertUnaryOp +1 - Status: Survived
---> Mutation 2924: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - InsertUnaryOp -1 - Status: Survived
---> Mutation 2925: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> 0 - Status: Survived
---> Mutation 2926: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> 1 - Status: Survived
---> Mutation 2927: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> -1 - Status: Survived
+--> Mutation 2922: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 2923: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 2924: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 2925: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> 0 - Status: Killed
+--> Mutation 2926: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> 1 - Status: Killed
+--> Mutation 2927: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> -1 - Status: Killed
 --> Mutation 2928: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> 5 - Status: Survived
---> Mutation 2929: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> 7 - Status: Survived
---> Mutation 2930: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceComparisonOperator != -> -1 - Status: Survived
---> Mutation 2931: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 2929: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceConstant - 6 -> 7 - Status: Killed
+--> Mutation 2930: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 2931: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceComparisonOperator != -> < - Status: Killed
 --> Mutation 2932: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.SQLStatement()V:1856 - ReplaceComparisonOperator != -> > - Status: Killed
 --> Mutation 2933: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.squirrelSQL()V:1865 - ReplaceConstant - 17 -> 0 - Status: Killed
 --> Mutation 2934: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.squirrelSQL()V:1865 - ReplaceConstant - 17 -> 1 - Status: Killed
@@ -3001,25 +3001,9 @@
 --> Mutation 2937: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.squirrelSQL()V:1865 - ReplaceConstant - 17 -> 18 - Status: Survived
 --> Mutation 2938: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.squirrelSQL()V:1865 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 2939: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.squirrelSQL()V:1869 - ReplaceConstant - 0 -> 1 - Status: Killed
---> Mutation 2940: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.<init>(Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/Scanner;Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/SQLSchema;)V:16 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 2940: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.<init>(Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/Scanner;Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/SQLSchema;)V:16 - ReplaceConstant - 2 -> 0 - Status: Killed
 --> Mutation 2941: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.<init>(Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/Scanner;Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/SQLSchema;)V:16 - ReplaceConstant - 2 -> 1 - Status: Survived
---> Mutation 2942: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.<init>(Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/Scanner;Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/SQLSchema;)V:16 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 2942: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.<init>(Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/Scanner;Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/SQLSchema;)V:16 - ReplaceConstant - 2 -> -1 - Status: Killed
 --> Mutation 2943: net.sourceforge.squirrel_sql.client.session.parser.kernel.Parser.<init>(Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/Scanner;Lnet/sourceforge/squirrel_sql/client/session/parser/kernel/SQLSchema;)V:16 - ReplaceConstant - 2 -> 3 - Status: Survived
 * Compiling and checking tests
-[MASTER] 23:43:21.629 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:43:26.902 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:43:32.190 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:43:37.458 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:43:42.720 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:43:47.978 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:43:53.240 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:43:58.506 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:44:03.782 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:44:09.053 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:44:14.325 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 23:44:14.327 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
-* Writing tests to file
-* Writing JUnit test case 'Parser_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

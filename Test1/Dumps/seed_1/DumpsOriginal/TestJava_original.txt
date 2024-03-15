@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.TestJava
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/19_jmca/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\19_jmca\evosuite-files\evosuite.properties
+* Connecting to master process on port 5375
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:26:50.497 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 02:26:50.578 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class com.soops.CEN4010.JMCA.JParser.TestJava
 * Test criteria:
@@ -20,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 81
-* Using seed 2482030657809
+* Using seed 1710481858621
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 30 / 81
-* Search finished after 182s and 1559 generations, 410315 statements, best individual has fitness: 6.0
+* Search finished after 184s and 670 generations, 210267 statements, best individual has fitness: 6.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -54,7 +52,7 @@
 * Coverage of criterion CBRANCH: 91%
 * Total number of goals: 11
 * Number of covered goals: 10
-* Generated 5 tests with total length 12
+* Generated 5 tests with total length 19
 * Resulting test suite's coverage: 96% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 0%
@@ -97,15 +95,4 @@
 --> Mutation 35: com.soops.CEN4010.JMCA.JParser.TestJava.method2()V:32 - ReplaceComparisonOperator != -> > - Status: Survived
 --> Mutation 36: com.soops.CEN4010.JMCA.JParser.TestJava.method2()V:33 - InsertUnaryOp Negation - Status: Survived
 * Compiling and checking tests
-[MASTER] 02:29:59.482 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:30:04.776 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:30:10.047 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:30:15.330 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:30:20.606 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:30:25.894 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:30:31.165 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'TestJava_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

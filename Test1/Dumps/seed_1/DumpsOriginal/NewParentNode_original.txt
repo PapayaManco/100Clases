@@ -1,21 +1,17 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: accessories.plugins.NewParentNode
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/105_freemind/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\105_freemind\evosuite-files\evosuite.properties
+* Connecting to master process on port 13995
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:43:02.244 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:43:03.087 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 00:43:04.247 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:43:04.247 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
-[MASTER] 00:43:04.247 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:43:04.247 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:43:04.247 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:43:04.247 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:43:06.754 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 00:43:08.307 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+[MASTER] 01:06:46.931 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:06:46.931 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
+[MASTER] 01:06:46.931 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:06:46.931 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:06:46.931 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:06:46.932 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
 * Finished analyzing classpath
 * Generating tests for class accessories.plugins.NewParentNode
 * Test criteria:
@@ -28,16 +24,129 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 188
-* Using seed 2482030657809
+* Using seed 1710475603848
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 50 / 188
-[MASTER] 00:43:10.519 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 00:44:19.232 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-[MASTER] 00:44:35.809 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 00:44:49.953 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 00:44:49.971 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 00:44:49.973 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 00:44:53.438 [logback-1] WARN  TestCluster - Failed to check cache for java.util.ListIterator<E> : Type points to itself
-[MASTER] 00:45:52.751 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-* Search finished after 181s and 2754 generations, 415549 statements, best individual has fitness: 182.0
+[MASTER] 01:06:58.957 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:08:21.311 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 181s and 3291 generations, 505900 statements, best individual has fitness: 182.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 5%
+* Total number of goals: 59
+* Number of covered goals: 3
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 5%
+* Total number of goals: 22
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 81
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 2
+* Number of covered goals: 1
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 5%
+* Total number of goals: 22
+* Number of covered goals: 1
+* Generated 1 tests with total length 2
+* Resulting test suite's coverage: 33% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:75 - ReplaceVariable focussed -> rootNode - Status: Survived
+--> Mutation 1: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:79 - ReplaceVariable selectedNodes -> selecteds - Status: Survived
+--> Mutation 2: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:81 - ReplaceVariable focussed -> selectedNode - Status: Survived
+--> Mutation 3: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:81 - ReplaceVariable focussed -> rootNode - Status: Survived
+--> Mutation 4: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:81 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 5: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:82 - ReplaceVariable selecteds -> selectedNodes - Status: Survived
+--> Mutation 6: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:82 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 7: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:82 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 8: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:84 - ReplaceVariable rootNode -> focussed - Status: Survived
+--> Mutation 9: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:84 - ReplaceVariable rootNode -> selectedNode - Status: Survived
+--> Mutation 10: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:88 - ReplaceVariable rootNode -> focussed - Status: Survived
+--> Mutation 11: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:88 - ReplaceVariable rootNode -> selectedNode - Status: Survived
+--> Mutation 12: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:89 - ReplaceVariable rootNode -> focussed - Status: Survived
+--> Mutation 13: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:89 - ReplaceVariable rootNode -> selectedNode - Status: Survived
+--> Mutation 14: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:95 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 15: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:96 - ReplaceVariable childrenNew -> children - Status: Survived
+--> Mutation 16: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:96 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 17: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:98 - ReplaceVariable children -> childrenNew - Status: Survived
+--> Mutation 18: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:98 - ReplaceVariable rootCopy -> focussed - Status: Survived
+--> Mutation 19: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:98 - ReplaceVariable rootCopy -> selectedNode - Status: Survived
+--> Mutation 20: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:98 - ReplaceVariable rootCopy -> rootNode - Status: Survived
+--> Mutation 21: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:98 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 22: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:99 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 23: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:103 - InsertUnaryOp Negation of found - Status: Survived
+--> Mutation 24: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:103 - InsertUnaryOp IINC 1 found - Status: Survived
+--> Mutation 25: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:103 - InsertUnaryOp IINC -1 found - Status: Survived
+--> Mutation 26: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:103 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 27: accessories.plugins.NewParentNode.invoke(Lfreemind/modes/MindMapNode;)V:104 - ReplaceConstant - New node not found in list of all children. Strange... ->  - Status: Survived
+--> Mutation 28: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:135 - ReplaceVariable selectedNode -> rootNode - Status: Survived
+--> Mutation 29: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:136 - ReplaceVariable selectedParent -> selectedNode - Status: Survived
+--> Mutation 30: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:136 - ReplaceVariable selectedParent -> rootNode - Status: Survived
+--> Mutation 31: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:136 - ReplaceVariable selectedNode -> selectedParent - Status: Survived
+--> Mutation 32: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:136 - ReplaceVariable selectedNode -> rootNode - Status: Survived
+--> Mutation 33: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:137 - ReplaceVariable selectedParent -> selectedNode - Status: Survived
+--> Mutation 34: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:137 - ReplaceVariable selectedParent -> rootNode - Status: Survived
+--> Mutation 35: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:137 - InsertUnaryOp Negation of childPosition - Status: Survived
+--> Mutation 36: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:137 - InsertUnaryOp IINC 1 childPosition - Status: Survived
+--> Mutation 37: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:137 - InsertUnaryOp IINC -1 childPosition - Status: Survived
+--> Mutation 38: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:137 - ReplaceVariable selectedNode -> selectedParent - Status: Survived
+--> Mutation 39: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:137 - ReplaceVariable selectedNode -> rootNode - Status: Survived
+--> Mutation 40: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable rootNode -> newNode - Status: Survived
+--> Mutation 41: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable rootNode -> selectedParent - Status: Survived
+--> Mutation 42: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable rootNode -> selectedNode - Status: Survived
+--> Mutation 43: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable selectedParent -> newNode - Status: Survived
+--> Mutation 44: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable selectedParent -> selectedNode - Status: Survived
+--> Mutation 45: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable selectedParent -> rootNode - Status: Survived
+--> Mutation 46: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable newNode -> selectedParent - Status: Survived
+--> Mutation 47: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable newNode -> selectedNode - Status: Survived
+--> Mutation 48: accessories.plugins.NewParentNode.moveToNewParent(Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;Ljava/util/List;)Lfreemind/modes/MindMapNode;:139 - ReplaceVariable newNode -> rootNode - Status: Survived
+--> Mutation 49: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:144 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 50: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:144 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 51: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:144 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 52: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:146 - ReplaceVariable newNode -> selectedParent - Status: Survived
+--> Mutation 53: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:146 - ReplaceVariable newNode -> rootNode - Status: Survived
+--> Mutation 54: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:152 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 55: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:154 - ReplaceVariable node -> newNode - Status: Survived
+--> Mutation 56: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:154 - ReplaceVariable node -> selectedParent - Status: Survived
+--> Mutation 57: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:154 - ReplaceVariable node -> rootNode - Status: Survived
+--> Mutation 58: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:154 - ReplaceVariable selectedParent -> node - Status: Survived
+--> Mutation 59: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:154 - ReplaceVariable selectedParent -> newNode - Status: Survived
+--> Mutation 60: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:154 - ReplaceVariable selectedParent -> rootNode - Status: Survived
+--> Mutation 61: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:154 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 62: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:155 - ReplaceConstant - cannot_add_parent_diff_parents ->  - Status: Survived
+--> Mutation 63: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:159 - ReplaceVariable node -> newNode - Status: Survived
+--> Mutation 64: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:159 - ReplaceVariable node -> selectedParent - Status: Survived
+--> Mutation 65: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:159 - ReplaceVariable node -> rootNode - Status: Survived
+--> Mutation 66: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:159 - ReplaceVariable rootNode -> node - Status: Survived
+--> Mutation 67: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:159 - ReplaceVariable rootNode -> newNode - Status: Survived
+--> Mutation 68: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:159 - ReplaceVariable rootNode -> selectedParent - Status: Survived
+--> Mutation 69: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:159 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 70: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:160 - ReplaceConstant - cannot_add_parent_to_root ->  - Status: Survived
+--> Mutation 71: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:171 - ReplaceVariable newNode -> selectedParent - Status: Survived
+--> Mutation 72: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:171 - ReplaceVariable newNode -> rootNode - Status: Survived
+--> Mutation 73: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:172 - ReplaceVariable selectedParent -> newNode - Status: Survived
+--> Mutation 74: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:172 - ReplaceVariable selectedParent -> rootNode - Status: Survived
+--> Mutation 75: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:172 - ReplaceVariable selectedParent -> newNode - Status: Survived
+--> Mutation 76: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:172 - ReplaceVariable selectedParent -> rootNode - Status: Survived
+--> Mutation 77: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:174 - ReplaceVariable selectedParent -> newNode - Status: Survived
+--> Mutation 78: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:174 - ReplaceVariable selectedParent -> rootNode - Status: Survived
+--> Mutation 79: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:176 - ReplaceVariable newNode -> selectedParent - Status: Survived
+--> Mutation 80: accessories.plugins.NewParentNode.moveToOtherNode(Lfreemind/modes/MindMapNode;Ljava/util/List;Lfreemind/modes/MindMapNode;Lfreemind/modes/MindMapNode;)Lfreemind/modes/MindMapNode;:176 - ReplaceVariable newNode -> rootNode - Status: Survived
+* Compiling and checking tests
 * Computation finished

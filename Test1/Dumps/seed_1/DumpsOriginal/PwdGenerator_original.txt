@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.util.PwdGenerator
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 2722
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,11 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 340
-* Using seed 2482030657809
+* Using seed 1710480239373
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 174 / 340
-[MASTER] 01:53:32.748 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-* Search finished after 182s and 93 generations, 17534 statements, best individual has fitness: 36.0
+* Search finished after 187s and 4 generations, 1114 statements, best individual has fitness: 22.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -30,13 +29,13 @@
 * Total number of goals: 48
 * Number of covered goals: 46
 * Coverage analysis for criterion BRANCH
-* Coverage of criterion BRANCH: 93%
+* Coverage of criterion BRANCH: 95%
 * Total number of goals: 42
-* Number of covered goals: 39
+* Number of covered goals: 40
 * Coverage analysis for criterion EXCEPTION
-* Coverage of criterion EXCEPTION: 93%
-* Total number of goals: 30
-* Number of covered goals: 28
+* Coverage of criterion EXCEPTION: 83%
+* Total number of goals: 12
+* Number of covered goals: 10
 * Coverage analysis for criterion WEAKMUTATION
 * Coverage of criterion WEAKMUTATION: 99%
 * Total number of goals: 161
@@ -57,10 +56,10 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 42
 * Number of covered goals: 42
-* Generated 39 tests with total length 48
-* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generated 20 tests with total length 38
+* Resulting test suite's coverage: 89% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 70%
+* Resulting test suite's mutation score: 73%
 * There are surviving mutants: 
 --> Mutation 0: com.liferay.util.PwdGenerator.getPassword()Ljava/lang/String;:37 - ReplaceConstant - 8 -> 0 - Status: Killed
 --> Mutation 1: com.liferay.util.PwdGenerator.getPassword()Ljava/lang/String;:37 - ReplaceConstant - 8 -> 1 - Status: Killed
@@ -91,10 +90,10 @@
 --> Mutation 26: com.liferay.util.PwdGenerator.getPassword(Ljava/lang/String;IZ)Ljava/lang/String;:51 - InsertUnaryOp IINC 1 useAllKeys - Status: Survived
 --> Mutation 27: com.liferay.util.PwdGenerator.getPassword(Ljava/lang/String;IZ)Ljava/lang/String;:51 - InsertUnaryOp IINC -1 useAllKeys - Status: Survived
 --> Mutation 28: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 0 -> 1 - Status: Survived
---> Mutation 29: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 0123456789 ->  - Status: Killed
---> Mutation 30: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 29: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 0123456789 ->  - Status: Survived
+--> Mutation 30: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 4 -> 0 - Status: Survived
 --> Mutation 31: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 4 -> 1 - Status: Killed
---> Mutation 32: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 32: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 4 -> -1 - Status: Survived
 --> Mutation 33: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 4 -> 3 - Status: Killed
 --> Mutation 34: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 4 -> 5 - Status: Killed
 --> Mutation 35: com.liferay.util.PwdGenerator.getPinNumber()Ljava/lang/String;:55 - ReplaceConstant - 1 -> 0 - Status: Survived
@@ -134,8 +133,8 @@
 --> Mutation 69: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:81 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 70: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:82 - ReplaceVariable keysCount -> length - Status: Killed
 --> Mutation 71: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:85 - ReplaceVariable key -> KEY2 - Status: Killed
---> Mutation 72: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:85 - ReplaceVariable key -> KEY1 - Status: Survived
---> Mutation 73: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:85 - ReplaceVariable key -> KEY3 - Status: Survived
+--> Mutation 72: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:85 - ReplaceVariable key -> KEY1 - Status: Killed
+--> Mutation 73: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:85 - ReplaceVariable key -> KEY3 - Status: Killed
 --> Mutation 74: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:85 - ReplaceConstant - ABCDEFGHIJKLMNOPQRSTUVWXYZ ->  - Status: Killed
 --> Mutation 75: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:85 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 76: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:86 - ReplaceVariable keysCount -> length - Status: Killed
@@ -146,22 +145,22 @@
 --> Mutation 81: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:89 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 82: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:90 - ReplaceVariable keysCount -> length - Status: Killed
 --> Mutation 83: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - ReplaceVariable keysCount -> length - Status: Killed
---> Mutation 84: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - InsertUnaryOp Negation of keysCount - Status: Killed
+--> Mutation 84: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - InsertUnaryOp Negation of keysCount - Status: Survived
 --> Mutation 85: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - InsertUnaryOp IINC 1 keysCount - Status: Killed
---> Mutation 86: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - InsertUnaryOp IINC -1 keysCount - Status: Survived
+--> Mutation 86: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - InsertUnaryOp IINC -1 keysCount - Status: Killed
 --> Mutation 87: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - ReplaceVariable length -> keysCount - Status: Killed
 --> Mutation 88: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - InsertUnaryOp Negation of length - Status: Killed
 --> Mutation 89: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - InsertUnaryOp IINC 1 length - Status: Killed
 --> Mutation 90: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - InsertUnaryOp IINC -1 length - Status: Killed
 --> Mutation 91: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - ReplaceComparisonOperator <= -> -1 - Status: Killed
---> Mutation 92: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 92: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - ReplaceComparisonOperator <= -> < - Status: Survived
 --> Mutation 93: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:93 - ReplaceComparisonOperator <= -> == - Status: Killed
---> Mutation 94: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:94 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 94: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:94 - ReplaceComparisonOperator == -> != - Status: Survived
 --> Mutation 95: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:95 - ReplaceConstant - Length is too short ->  - Status: Survived
---> Mutation 96: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:98 - ReplaceVariable keysCount -> length - Status: Survived
---> Mutation 97: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:98 - InsertUnaryOp Negation of keysCount - Status: Survived
---> Mutation 98: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:98 - InsertUnaryOp IINC 1 keysCount - Status: Survived
---> Mutation 99: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:98 - InsertUnaryOp IINC -1 keysCount - Status: Survived
+--> Mutation 96: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:98 - ReplaceVariable keysCount -> length - Status: Killed
+--> Mutation 97: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:98 - InsertUnaryOp Negation of keysCount - Status: Killed
+--> Mutation 98: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:98 - InsertUnaryOp IINC 1 keysCount - Status: Killed
+--> Mutation 99: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:98 - InsertUnaryOp IINC -1 keysCount - Status: Killed
 --> Mutation 100: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:101 - ReplaceVariable length -> keysCount - Status: Survived
 --> Mutation 101: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:101 - InsertUnaryOp Negation of length - Status: Killed
 --> Mutation 102: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:101 - InsertUnaryOp IINC 1 length - Status: Killed
@@ -200,7 +199,7 @@
 --> Mutation 135: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:109 - InsertUnaryOp Negation of useAllKeys - Status: Survived
 --> Mutation 136: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:109 - InsertUnaryOp IINC 1 useAllKeys - Status: Survived
 --> Mutation 137: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:109 - InsertUnaryOp IINC -1 useAllKeys - Status: Survived
---> Mutation 138: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:109 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 138: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:109 - ReplaceComparisonOperator != -> == - Status: Killed
 --> Mutation 139: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:110 - ReplaceVariable password -> KEY2 - Status: Killed
 --> Mutation 140: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:110 - ReplaceVariable password -> KEY1 - Status: Killed
 --> Mutation 141: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:110 - ReplaceVariable password -> key - Status: Killed
@@ -208,39 +207,20 @@
 --> Mutation 143: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:113 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 144: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:115 - ReplaceVariable key -> KEY2 - Status: Survived
 --> Mutation 145: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:115 - ReplaceVariable key -> KEY1 - Status: Killed
---> Mutation 146: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:115 - ReplaceVariable key -> password - Status: Survived
---> Mutation 147: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:115 - ReplaceVariable key -> KEY3 - Status: Survived
+--> Mutation 146: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:115 - ReplaceVariable key -> password - Status: Killed
+--> Mutation 147: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:115 - ReplaceVariable key -> KEY3 - Status: Killed
 --> Mutation 148: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:115 - ReplaceConstant - 0123456789 ->  - Status: Killed
 --> Mutation 149: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:115 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 150: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:116 - ReplaceVariable password -> KEY2 - Status: Killed
---> Mutation 151: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:116 - ReplaceVariable password -> KEY1 - Status: Survived
---> Mutation 152: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:116 - ReplaceVariable password -> key - Status: Survived
+--> Mutation 151: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:116 - ReplaceVariable password -> KEY1 - Status: Killed
+--> Mutation 152: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:116 - ReplaceVariable password -> key - Status: Killed
 --> Mutation 153: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:116 - ReplaceVariable password -> KEY3 - Status: Killed
 --> Mutation 154: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:116 - ReplaceComparisonOperator == -> != - Status: Killed
---> Mutation 155: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:117 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 155: com.liferay.util.PwdGenerator._getPassword(ZLjava/lang/String;IZ)Ljava/lang/String;:117 - ReplaceConstant - 1 -> 0 - Status: Killed
 --> Mutation 156: com.liferay.util.PwdGenerator._random(Z)D:142 - InsertUnaryOp Negation of secure - Status: Survived
 --> Mutation 157: com.liferay.util.PwdGenerator._random(Z)D:142 - InsertUnaryOp IINC 1 secure - Status: Survived
 --> Mutation 158: com.liferay.util.PwdGenerator._random(Z)D:142 - InsertUnaryOp IINC -1 secure - Status: Survived
 --> Mutation 159: com.liferay.util.PwdGenerator._random(Z)D:142 - ReplaceComparisonOperator == -> != - Status: Survived
---> Mutation 160: com.liferay.util.PwdGenerator._random(Z)D:143 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 160: com.liferay.util.PwdGenerator._random(Z)D:143 - ReplaceComparisonOperator != null -> = null - Status: Survived
 * Compiling and checking tests
-[MASTER] 02:06:10.437 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:06:15.886 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:06:21.323 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:06:26.762 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:06:32.314 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:06:37.764 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:06:43.191 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:06:48.679 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:06:54.168 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Permissions denied during test execution: 
-  - java.io.FilePermission: 
-         write /dev/random: 1
-  - java.lang.RuntimePermission: 
-         getStackWalkerWithClassReference: 1
-         writeFileDescriptor: 10
-* Writing tests to file
-* Writing JUnit test case 'PwdGenerator_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

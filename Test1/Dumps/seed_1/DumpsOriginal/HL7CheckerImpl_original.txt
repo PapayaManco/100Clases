@@ -1,18 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/75_openhre/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\75_openhre\evosuite-files\evosuite.properties
+* Connecting to master process on port 2416
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:46:05.160 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 03:46:05.172 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:46:11.060 [logback-1] WARN  CheapPurityAnalyzer - org.apache.xerces.dom.DeferredDocumentImpl was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 03:46:11.060 [logback-1] WARN  CheapPurityAnalyzer - org.apache.xerces.dom.DeferredDocumentImpl was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 03:46:11.060 [logback-1] WARN  CheapPurityAnalyzer - org.apache.xerces.dom.DeferredDocumentImpl was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 03:46:11.060 [logback-1] WARN  CheapPurityAnalyzer - org.apache.xerces.dom.DeferredDocumentImpl was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 03:46:11.060 [logback-1] WARN  CheapPurityAnalyzer - org.apache.xerces.dom.DeferredDocumentImpl was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
 * Finished analyzing classpath
 * Generating tests for class com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl
 * Test criteria:
@@ -25,9 +18,172 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 583
-* Using seed 2482030657809
+* Using seed 1710486226056
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 201 / 583
-[MASTER] 03:47:15.736 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 181s and 4243 generations, 834000 statements, best individual has fitness: 177.0
+[MASTER] 04:06:43.606 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.xalan.transformer.TransformerImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.xalan.templates.StylesheetRoot due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.xml.utils.DefaultErrorHandler due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.io.MockPrintStream due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+* Search finished after 181s and 7547 generations, 1758785 statements, best individual has fitness: 148.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 70%
+* Total number of goals: 164
+* Number of covered goals: 115
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 77%
+* Total number of goals: 109
+* Number of covered goals: 84
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 76%
+* Total number of goals: 123
+* Number of covered goals: 93
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100%
+* Total number of goals: 24
+* Number of covered goals: 24
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 27
+* Number of covered goals: 27
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 27
+* Number of covered goals: 26
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 77%
+* Total number of goals: 109
+* Number of covered goals: 84
+* Generated 71 tests with total length 345
+* Resulting test suite's coverage: 82% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 11%
+* There are surviving mutants: 
+--> Mutation 0: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.<init>()V:52 - ReplaceConstant - 300 -> 0 - Status: Survived
+--> Mutation 1: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.<init>()V:52 - ReplaceConstant - 300 -> 1 - Status: Survived
+--> Mutation 2: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.<init>()V:52 - ReplaceConstant - 300 -> -1 - Status: Killed
+--> Mutation 3: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.<init>()V:52 - ReplaceConstant - 300 -> 299 - Status: Survived
+--> Mutation 4: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.<init>()V:52 - ReplaceConstant - 300 -> 301 - Status: Survived
+--> Mutation 5: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.readData(Ljava/io/Reader;Ljava/lang/String;)V:64 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 6: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.readData(Ljava/io/Reader;Ljava/lang/String;)V:65 - ReplaceConstant - 13 -> 0 - Status: Survived
+--> Mutation 7: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.readData(Ljava/io/Reader;Ljava/lang/String;)V:65 - ReplaceConstant - 13 -> 1 - Status: Survived
+--> Mutation 8: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.readData(Ljava/io/Reader;Ljava/lang/String;)V:65 - ReplaceConstant - 13 -> -1 - Status: Survived
+--> Mutation 9: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.readData(Ljava/io/Reader;Ljava/lang/String;)V:65 - ReplaceConstant - 13 -> 12 - Status: Survived
+--> Mutation 10: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.readData(Ljava/io/Reader;Ljava/lang/String;)V:65 - ReplaceConstant - 13 -> 14 - Status: Survived
+--> Mutation 11: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.messageTracerErrorEvent(Ljava/lang/String;)V:80 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 12: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.messageTracerErrorEvent(Ljava/lang/String;)V:81 - ReplaceConstant - 14 -> 0 - Status: Survived
+--> Mutation 13: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.messageTracerErrorEvent(Ljava/lang/String;)V:81 - ReplaceConstant - 14 -> 1 - Status: Survived
+--> Mutation 14: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.messageTracerErrorEvent(Ljava/lang/String;)V:81 - ReplaceConstant - 14 -> -1 - Status: Survived
+--> Mutation 15: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.messageTracerErrorEvent(Ljava/lang/String;)V:81 - ReplaceConstant - 14 -> 13 - Status: Survived
+--> Mutation 16: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.messageTracerErrorEvent(Ljava/lang/String;)V:81 - ReplaceConstant - 14 -> 15 - Status: Survived
+--> Mutation 17: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginSegment(Ljava/lang/String;)V:94 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 18: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginSegment(Ljava/lang/String;)V:98 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 19: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginSegment(Ljava/lang/String;)V:100 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 20: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.endSegment()V:109 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 21: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.endSegment()V:110 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 22: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginField()V:117 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 23: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginField()V:119 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 24: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginField()V:120 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 25: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginField()V:122 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 26: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginField()V:123 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 27: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.endField()V:129 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 28: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.endField()V:130 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 29: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginFieldRepeate()V:136 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 30: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginFieldRepeate()V:138 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 31: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginFieldRepeate()V:139 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 32: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginFieldRepeate()V:141 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 33: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginFieldRepeate()V:142 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 34: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyRepeateField()V:148 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 35: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyRepeateField()V:149 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 36: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyRepeateField()V:151 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 37: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyRepeateField()V:153 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 38: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyRepeateField()V:154 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 39: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyRepeateField()V:156 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 40: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyField()V:162 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 41: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyField()V:163 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 42: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyField()V:165 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 43: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyField()V:167 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 44: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyField()V:168 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 45: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.emptyField()V:170 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 46: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:176 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 47: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:177 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 48: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:177 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 49: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:177 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 50: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:178 - ReplaceConstant - 19 -> 0 - Status: Survived
+--> Mutation 51: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:178 - ReplaceConstant - 19 -> 1 - Status: Survived
+--> Mutation 52: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:178 - ReplaceConstant - 19 -> -1 - Status: Survived
+--> Mutation 53: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:178 - ReplaceConstant - 19 -> 18 - Status: Survived
+--> Mutation 54: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:178 - ReplaceConstant - 19 -> 20 - Status: Survived
+--> Mutation 55: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:178 - ReplaceConstant -  length  ->  - Status: Survived
+--> Mutation 56: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:178 - ReplaceConstant -  maximum length:  ->  - Status: Survived
+--> Mutation 57: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:181 - InsertUnaryOp Negation of empty - Status: Survived
+--> Mutation 58: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:181 - InsertUnaryOp IINC 1 empty - Status: Survived
+--> Mutation 59: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processEndField(Z)V:181 - InsertUnaryOp IINC -1 empty - Status: Survived
+--> Mutation 60: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.controlEmptyRequired()V:189 - ReplaceConstant - 18 -> 0 - Status: Survived
+--> Mutation 61: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.controlEmptyRequired()V:189 - ReplaceConstant - 18 -> 1 - Status: Survived
+--> Mutation 62: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.controlEmptyRequired()V:189 - ReplaceConstant - 18 -> -1 - Status: Survived
+--> Mutation 63: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.controlEmptyRequired()V:189 - ReplaceConstant - 18 -> 17 - Status: Survived
+--> Mutation 64: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.controlEmptyRequired()V:189 - ReplaceConstant - 18 -> 19 - Status: Survived
+--> Mutation 65: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginComponent()V:196 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 66: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginComponent()V:198 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 67: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginComponent()V:199 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 68: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.beginComponent()V:203 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 69: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.endComponent()V:208 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 70: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.endComponent()V:209 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 71: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.updatePatterns(Ljava/lang/String;)V:215 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 72: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.updatePatterns(Ljava/lang/String;)V:215 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 73: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.updatePatterns(Ljava/lang/String;)V:216 - ReplaceConstant - . ->  - Status: Survived
+--> Mutation 74: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.updatePatterns(Ljava/lang/String;)V:217 - ReplaceVariable pattern -> value - Status: Survived
+--> Mutation 75: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.updatePatterns(Ljava/lang/String;)V:217 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 76: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.updatePatterns(Ljava/lang/String;)V:218 - ReplaceVariable pattern -> value - Status: Survived
+--> Mutation 77: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.updatePatterns(Ljava/lang/String;)V:218 - ReplaceVariable value -> pattern - Status: Survived
+--> Mutation 78: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:225 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 79: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:229 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 80: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:233 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 81: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:235 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 82: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:241 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 83: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:245 - InsertUnaryOp Negation of isValueEmpty - Status: Survived
+--> Mutation 84: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:245 - InsertUnaryOp IINC 1 isValueEmpty - Status: Survived
+--> Mutation 85: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:245 - InsertUnaryOp IINC -1 isValueEmpty - Status: Survived
+--> Mutation 86: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:245 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 87: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:253 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 88: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:257 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 89: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:258 - InsertUnaryOp Negation of isValueEmpty - Status: Survived
+--> Mutation 90: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:258 - InsertUnaryOp IINC 1 isValueEmpty - Status: Survived
+--> Mutation 91: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.component(Ljava/lang/String;)V:258 - InsertUnaryOp IINC -1 isValueEmpty - Status: Survived
+--> Mutation 92: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.subComponent(Ljava/lang/String;)V:279 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 93: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.subComponent(Ljava/lang/String;)V:280 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 94: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.subComponent(Ljava/lang/String;)V:282 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 95: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.endOfRecord()V:296 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 96: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processPrimitiveValue(Lcom/browsersoft/openhre/hl7/api/config/HL7DataType;Ljava/lang/String;)V:303 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 97: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.processPrimitiveValue(Lcom/browsersoft/openhre/hl7/api/config/HL7DataType;Ljava/lang/String;)V:304 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 98: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateBeginField(Z)V:320 - InsertUnaryOp Negation of empty - Status: Survived
+--> Mutation 99: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateBeginField(Z)V:320 - InsertUnaryOp IINC 1 empty - Status: Survived
+--> Mutation 100: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateBeginField(Z)V:320 - InsertUnaryOp IINC -1 empty - Status: Survived
+--> Mutation 101: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateEndField(Z)V:324 - InsertUnaryOp Negation of empty - Status: Survived
+--> Mutation 102: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateEndField(Z)V:324 - InsertUnaryOp IINC 1 empty - Status: Survived
+--> Mutation 103: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateEndField(Z)V:324 - InsertUnaryOp IINC -1 empty - Status: Survived
+--> Mutation 104: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateBeginComponent(Z)V:330 - InsertUnaryOp Negation of empty - Status: Survived
+--> Mutation 105: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateBeginComponent(Z)V:330 - InsertUnaryOp IINC 1 empty - Status: Survived
+--> Mutation 106: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateBeginComponent(Z)V:330 - InsertUnaryOp IINC -1 empty - Status: Survived
+--> Mutation 107: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateEndComponent(Z)V:334 - InsertUnaryOp Negation of empty - Status: Survived
+--> Mutation 108: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateEndComponent(Z)V:334 - InsertUnaryOp IINC 1 empty - Status: Survived
+--> Mutation 109: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.generateEndComponent(Z)V:334 - InsertUnaryOp IINC -1 empty - Status: Survived
+--> Mutation 110: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualSegment()Ljava/lang/String;:342 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 111: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualSegment()Ljava/lang/String;:342 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 112: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualSegment()Ljava/lang/String;:342 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 113: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualSegment()Ljava/lang/String;:342 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 114: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualSegment()Ljava/lang/String;:342 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 115: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualSegment()Ljava/lang/String;:342 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 116: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualField()Ljava/lang/String;:346 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 117: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualField()Ljava/lang/String;:346 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 118: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualField()Ljava/lang/String;:346 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 119: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualField()Ljava/lang/String;:346 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 120: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualField()Ljava/lang/String;:346 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 121: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualField()Ljava/lang/String;:346 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 122: com.browsersoft.openhre.hl7.impl.parser.HL7CheckerImpl.getNameOfActualField()Ljava/lang/String;:346 - ReplaceConstant - . ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

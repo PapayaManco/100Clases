@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.gudy.azureus2.ui.console.commands.Show
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 5446
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:20:40.759 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:20:40.786 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class org.gudy.azureus2.ui.console.commands.Show
 * Test criteria:
@@ -20,11 +18,359 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 1419
-* Using seed 2482030657809
+* Using seed 1710474226617
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 355 / 1419
-[MASTER] 00:20:43.352 [logback-1] WARN  TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
-[MASTER] 00:21:20.489 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V
-[MASTER] 00:23:02.056 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 186s and 16 generations, 7486 statements, best individual has fitness: 1027.0
+[MASTER] 00:44:23.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;
+[MASTER] 00:44:38.883 [logback-1] WARN  TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 00:46:02.127 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 183s and 24 generations, 12500 statements, best individual has fitness: 1024.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 17%
+* Total number of goals: 362
+* Number of covered goals: 60
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 34%
+* Total number of goals: 360
+* Number of covered goals: 122
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 27%
+* Total number of goals: 307
+* Number of covered goals: 82
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 25%
+* Total number of goals: 12
+* Number of covered goals: 3
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 89%
+* Total number of goals: 9
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 78%
+* Total number of goals: 9
+* Number of covered goals: 7
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 34%
+* Total number of goals: 360
+* Number of covered goals: 122
+* Generated 64 tests with total length 166
+* Resulting test suite's coverage: 43% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 3%
+* There are surviving mutants: 
+--> Mutation 0: org.gudy.azureus2.ui.console.commands.Show.getCommandDescriptions()Ljava/lang/String;:79 - ReplaceConstant - show [<various options>]	sh	Show info. Use without parameter to get a list of available options. ->  - Status: Killed
+--> Mutation 1: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:83 - ReplaceConstant - > ----- ->  - Status: Survived
+--> Mutation 2: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:84 - ReplaceConstant - 'show' options:  ->  - Status: Survived
+--> Mutation 3: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:85 - ReplaceConstant - <#>				Further info on a single torrent. Run 'show torrents' first for the number. ->  - Status: Survived
+--> Mutation 4: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:86 - ReplaceConstant - options			o	Show list of options for 'set' (also available by 'set' without parameters). ->  - Status: Survived
+--> Mutation 5: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:87 - ReplaceConstant - files			f	Show list of files found from the 'add -f' command (also available by 'add -l') ->  - Status: Survived
+--> Mutation 6: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:88 - ReplaceConstant - dht			d	Show distributed database statistics ->  - Status: Survived
+--> Mutation 7: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:89 - ReplaceConstant - nat			n	Show NAT status ->  - Status: Survived
+--> Mutation 8: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:90 - ReplaceConstant - stats [pattern] [on|off]	s	Show stats [with a given pattern] [turn averages on/off] ->  - Status: Survived
+--> Mutation 9: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:91 - ReplaceConstant - torrents [opts] [expr]	t	Show list of torrents. torrent options may be any (or none) of: ->  - Status: Survived
+--> Mutation 10: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:92 - ReplaceConstant - 		transferring	x	Show only transferring torrents. ->  - Status: Survived
+--> Mutation 11: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:93 - ReplaceConstant - 		active		a	Show only active torrents. ->  - Status: Survived
+--> Mutation 12: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:94 - ReplaceConstant - 		complete	c	Show only complete torrents. ->  - Status: Survived
+--> Mutation 13: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:95 - ReplaceConstant - 		incomplete	i	Show only incomplete torrents. ->  - Status: Survived
+--> Mutation 14: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:96 - ReplaceConstant - 	e.g. show t a *Az* - shows all active torrents with 'Az' occurring in their name. ->  - Status: Survived
+--> Mutation 15: org.gudy.azureus2.ui.console.commands.Show.printHelpExtra(Ljava/io/PrintStream;Ljava/util/List;)V:97 - ReplaceConstant - > ----- ->  - Status: Survived
+--> Mutation 16: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:101 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 17: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:101 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 18: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:101 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 19: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:101 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 20: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:101 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 21: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:101 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 22: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:106 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 23: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceVariable subCommand -> commandName - Status: Survived
+--> Mutation 24: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceConstant - options ->  - Status: Survived
+--> Mutation 25: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 26: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 27: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 28: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceVariable subCommand -> commandName - Status: Survived
+--> Mutation 29: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceConstant - o ->  - Status: Survived
+--> Mutation 30: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 31: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 32: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:107 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 33: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:108 - ReplaceConstant - set ->  - Status: Survived
+--> Mutation 34: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceVariable subCommand -> commandName - Status: Survived
+--> Mutation 35: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceConstant - files ->  - Status: Survived
+--> Mutation 36: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 37: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 38: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 39: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceVariable subCommand -> commandName - Status: Survived
+--> Mutation 40: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceConstant - f ->  - Status: Survived
+--> Mutation 41: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 42: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 43: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:109 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 44: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:110 - ReplaceConstant - add ->  - Status: Survived
+--> Mutation 45: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:110 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 46: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:110 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 47: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:110 - ReplaceConstant - --list ->  - Status: Survived
+--> Mutation 48: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceVariable subCommand -> commandName - Status: Survived
+--> Mutation 49: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceConstant - torrents ->  - Status: Survived
+--> Mutation 50: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 51: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 52: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 53: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceVariable subCommand -> commandName - Status: Survived
+--> Mutation 54: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceConstant - t ->  - Status: Survived
+--> Mutation 55: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 56: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 57: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:111 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 58: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:112 - ReplaceConstant - > ----- ->  - Status: Survived
+--> Mutation 59: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:117 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 60: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:117 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 61: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:117 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 62: org.gudy.azureus2.ui.console.commands.Show.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:117 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 63: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:323 - ReplaceConstant - 48 -> 0 - Status: Survived
+--> Mutation 64: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:323 - ReplaceConstant - 48 -> 1 - Status: Survived
+--> Mutation 65: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:323 - ReplaceConstant - 48 -> -1 - Status: Survived
+--> Mutation 66: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:323 - ReplaceConstant - 48 -> 47 - Status: Survived
+--> Mutation 67: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:323 - ReplaceConstant - 48 -> 49 - Status: Survived
+--> Mutation 68: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:325 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 69: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:325 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 70: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:325 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 71: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:325 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 72: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:325 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 73: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:325 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 74: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:325 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 75: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:326 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 76: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:326 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 77: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:326 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 78: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceVariable ch -> lastch - Status: Survived
+--> Mutation 79: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - InsertUnaryOp Negation of ch - Status: Survived
+--> Mutation 80: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - InsertUnaryOp IINC 1 ch - Status: Survived
+--> Mutation 81: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - InsertUnaryOp IINC -1 ch - Status: Survived
+--> Mutation 82: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 37 -> 0 - Status: Survived
+--> Mutation 83: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 37 -> 1 - Status: Survived
+--> Mutation 84: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 37 -> -1 - Status: Survived
+--> Mutation 85: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 37 -> 36 - Status: Survived
+--> Mutation 86: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 37 -> 38 - Status: Survived
+--> Mutation 87: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 88: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 89: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 90: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceVariable lastch -> ch - Status: Survived
+--> Mutation 91: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - InsertUnaryOp Negation of lastch - Status: Survived
+--> Mutation 92: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - InsertUnaryOp IINC 1 lastch - Status: Survived
+--> Mutation 93: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - InsertUnaryOp IINC -1 lastch - Status: Survived
+--> Mutation 94: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 92 -> 0 - Status: Survived
+--> Mutation 95: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 92 -> 1 - Status: Survived
+--> Mutation 96: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 92 -> -1 - Status: Survived
+--> Mutation 97: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 92 -> 91 - Status: Survived
+--> Mutation 98: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceConstant - 92 -> 93 - Status: Survived
+--> Mutation 99: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 100: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 101: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:327 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 102: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:330 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 103: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:330 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 104: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:330 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 105: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:330 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 106: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:330 - ReplaceComparisonOperator < -> -2 - Status: Survived
+--> Mutation 107: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:330 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 108: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:331 - ReplaceConstant - 37 -> 0 - Status: Survived
+--> Mutation 109: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:331 - ReplaceConstant - 37 -> 1 - Status: Survived
+--> Mutation 110: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:331 - ReplaceConstant - 37 -> -1 - Status: Survived
+--> Mutation 111: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:331 - ReplaceConstant - 37 -> 36 - Status: Survived
+--> Mutation 112: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:331 - ReplaceConstant - 37 -> 38 - Status: Survived
+--> Mutation 113: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:333 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 114: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:333 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 115: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:333 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 116: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:336 - ReplaceVariable ch -> lastch - Status: Survived
+--> Mutation 117: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:336 - InsertUnaryOp Negation of ch - Status: Survived
+--> Mutation 118: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:336 - InsertUnaryOp IINC 1 ch - Status: Survived
+--> Mutation 119: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:336 - InsertUnaryOp IINC -1 ch - Status: Survived
+--> Mutation 120: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:338 - ReplaceVariable ch -> lastch - Status: Survived
+--> Mutation 121: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:338 - InsertUnaryOp Negation of ch - Status: Survived
+--> Mutation 122: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:338 - InsertUnaryOp IINC 1 ch - Status: Survived
+--> Mutation 123: org.gudy.azureus2.ui.console.commands.Show.getTorrentSummary(Lorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:338 - InsertUnaryOp IINC -1 ch - Status: Survived
+--> Mutation 124: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:368 - InsertUnaryOp Negation of variable - Status: Survived
+--> Mutation 125: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:368 - InsertUnaryOp IINC 1 variable - Status: Killed
+--> Mutation 126: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:368 - InsertUnaryOp IINC -1 variable - Status: Killed
+--> Mutation 127: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:373 - ReplaceConstant - 000.0% ->  - Status: Survived
+--> Mutation 128: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceConstant - 1000.0 -> 0.0 - Status: Survived
+--> Mutation 129: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceConstant - 1000.0 -> 1.0 - Status: Survived
+--> Mutation 130: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceConstant - 1000.0 -> -1.0 - Status: Survived
+--> Mutation 131: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceConstant - 1000.0 -> 999.0 - Status: Survived
+--> Mutation 132: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceConstant - 1000.0 -> 1001.0 - Status: Survived
+--> Mutation 133: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 134: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 135: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 136: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:374 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 137: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:376 - ReplaceConstant - 100 -> 0 - Status: Survived
+--> Mutation 138: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:376 - ReplaceConstant - 100 -> 1 - Status: Survived
+--> Mutation 139: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:376 - ReplaceConstant - 100 -> -1 - Status: Survived
+--> Mutation 140: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:376 - ReplaceConstant - 100 -> 99 - Status: Survived
+--> Mutation 141: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:376 - ReplaceConstant - 100 -> 101 - Status: Survived
+--> Mutation 142: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:376 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 143: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:376 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 144: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:376 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 145: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:379 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 146: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:380 - ReplaceConstant - ? ->  - Status: Survived
+--> Mutation 147: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:389 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 148: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:389 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 149: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:390 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 150: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:390 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 151: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:391 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 152: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:393 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 153: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:394 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 154: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:394 - ReplaceComparisonOperator <= -> > - Status: Survived
+--> Mutation 155: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:395 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 156: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:396 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 157: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:396 - ReplaceVariable i -> c - Status: Survived
+--> Mutation 158: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:396 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 159: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:396 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 160: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:396 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 161: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:396 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 162: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:396 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 163: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:396 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 164: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:397 - ReplaceVariable i -> c - Status: Survived
+--> Mutation 165: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:397 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 166: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:397 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 167: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:397 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 168: org.gudy.azureus2.ui.console.commands.Show.expandVariable(CLorg/gudy/azureus2/core3/download/DownloadManager;)Ljava/lang/String;:397 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 169: org.gudy.azureus2.ui.console.commands.Show.getDefaultSummaryFormat()Ljava/lang/String;:463 - ReplaceConstant - [%a] %c	%t (%z) ETA: %e
+%r	Speed: %d%I / %u%O	Amount: %D / %U	Connections: %s(%S) / %p(%P) ->  - Status: Killed
+--> Mutation 170: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:473 - InsertUnaryOp Negation of dmstate - Status: Survived
+--> Mutation 171: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:473 - InsertUnaryOp IINC 1 dmstate - Status: Survived
+--> Mutation 172: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:473 - InsertUnaryOp IINC -1 dmstate - Status: Survived
+--> Mutation 173: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:476 - ReplaceConstant - I ->  - Status: Survived
+--> Mutation 174: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:478 - ReplaceConstant - A ->  - Status: Survived
+--> Mutation 175: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:480 - ReplaceConstant - C ->  - Status: Survived
+--> Mutation 176: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:482 - ReplaceConstant - > ->  - Status: Survived
+--> Mutation 177: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:484 - ReplaceConstant - E ->  - Status: Survived
+--> Mutation 178: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:486 - ReplaceConstant - * ->  - Status: Survived
+--> Mutation 179: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:488 - ReplaceConstant - ! ->  - Status: Survived
+--> Mutation 180: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:490 - ReplaceConstant - . ->  - Status: Survived
+--> Mutation 181: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:492 - ReplaceConstant - : ->  - Status: Survived
+--> Mutation 182: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:494 - ReplaceConstant - - ->  - Status: Survived
+--> Mutation 183: org.gudy.azureus2.ui.console.commands.Show.getShortStateString(I)Ljava/lang/String;:496 - ReplaceConstant - ? ->  - Status: Survived
+--> Mutation 184: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:509 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 185: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:510 - ReplaceConstant - ? ->  - Status: Survived
+--> Mutation 186: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:511 - ReplaceConstant - > ----- ->  - Status: Survived
+--> Mutation 187: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:512 - ReplaceConstant - Info on Torrent # ->  - Status: Survived
+--> Mutation 188: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:512 - InsertUnaryOp Negation of torrentNum - Status: Survived
+--> Mutation 189: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:512 - InsertUnaryOp IINC 1 torrentNum - Status: Survived
+--> Mutation 190: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:512 - InsertUnaryOp IINC -1 torrentNum - Status: Survived
+--> Mutation 191: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:512 - ReplaceConstant -  ( ->  - Status: Survived
+--> Mutation 192: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:512 - ReplaceConstant - ) ->  - Status: Survived
+--> Mutation 193: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:513 - ReplaceConstant - - General Info - ->  - Status: Survived
+--> Mutation 194: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 6 -> 0 - Status: Survived
+--> Mutation 195: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 6 -> 1 - Status: Survived
+--> Mutation 196: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 6 -> -1 - Status: Survived
+--> Mutation 197: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 6 -> 5 - Status: Survived
+--> Mutation 198: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 6 -> 7 - Status: Survived
+--> Mutation 199: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 200: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - - no info - ->  - Status: Survived
+--> Mutation 201: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 202: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - stopped ->  - Status: Survived
+--> Mutation 203: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 204: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 205: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 206: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 207: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - no remote connections ->  - Status: Survived
+--> Mutation 208: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 209: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 210: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 211: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 212: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 213: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - no tracker ->  - Status: Survived
+--> Mutation 214: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 215: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 216: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 217: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 218: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 219: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - OK ->  - Status: Survived
+--> Mutation 220: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 221: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 222: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 223: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 224: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 225: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:514 - ReplaceConstant - ko ->  - Status: Survived
+--> Mutation 226: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:516 - ReplaceConstant - Health:  ->  - Status: Survived
+--> Mutation 227: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:518 - ReplaceConstant - Health:  ->  - Status: Survived
+--> Mutation 228: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:518 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 229: org.gudy.azureus2.ui.console.commands.Show.printTorrentDetails(Ljava/io/PrintStream;Lorg/gudy/azureus2/core3/download/DownloadManager;IZ)V:520 - ReplaceConstant - State:  ->  - Status: Survived
+--> Mutation 230: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:637 - ReplaceVariable dht_pi -> def - Status: Survived
+--> Mutation 231: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:637 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 232: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:639 - ReplaceConstant - 	DHT isn't present ->  - Status: Survived
+--> Mutation 233: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:644 - ReplaceVariable dht_pi -> def - Status: Survived
+--> Mutation 234: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:646 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 235: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:646 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 236: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:646 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 237: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:646 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 238: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:646 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 239: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:646 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 240: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:646 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 241: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:646 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 242: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:648 - ReplaceConstant - 	DHT isn't running yet (disabled or initialising) ->  - Status: Survived
+--> Mutation 243: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:655 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 244: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:655 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 245: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:655 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 246: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:655 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 247: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:655 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 248: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:655 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 249: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:655 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 250: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:657 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 251: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:657 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 252: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:657 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 253: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:657 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 254: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:657 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 255: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:657 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 256: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:661 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 257: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:661 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 258: org.gudy.azureus2.ui.console.commands.Show.showDHTStats(Lorg/gudy/azureus2/ui/console/ConsoleInput;)V:661 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 259: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:61 - ReplaceVariable a -> b - Status: Survived
+--> Mutation 260: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:62 - ReplaceVariable b -> a - Status: Survived
+--> Mutation 261: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceVariable aDL -> bDL - Status: Survived
+--> Mutation 262: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 263: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceConstant - 1000 -> 0 - Status: Survived
+--> Mutation 264: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceConstant - 1000 -> 1 - Status: Survived
+--> Mutation 265: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceConstant - 1000 -> -1 - Status: Survived
+--> Mutation 266: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceConstant - 1000 -> 999 - Status: Survived
+--> Mutation 267: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceConstant - 1000 -> 1001 - Status: Survived
+--> Mutation 268: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 269: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 270: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 271: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 272: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:63 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 273: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceVariable bDL -> aDL - Status: Survived
+--> Mutation 274: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 275: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceConstant - 1000 -> 0 - Status: Survived
+--> Mutation 276: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceConstant - 1000 -> 1 - Status: Survived
+--> Mutation 277: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceConstant - 1000 -> -1 - Status: Survived
+--> Mutation 278: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceConstant - 1000 -> 999 - Status: Survived
+--> Mutation 279: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceConstant - 1000 -> 1001 - Status: Survived
+--> Mutation 280: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 281: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 282: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 283: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 284: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:64 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 285: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:65 - ReplaceVariable aIsComplete -> bIsComplete - Status: Survived
+--> Mutation 286: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:65 - InsertUnaryOp Negation of aIsComplete - Status: Survived
+--> Mutation 287: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:65 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 288: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:65 - ReplaceVariable bIsComplete -> aIsComplete - Status: Survived
+--> Mutation 289: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:65 - InsertUnaryOp Negation of bIsComplete - Status: Survived
+--> Mutation 290: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:65 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 291: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:66 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 292: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:67 - ReplaceVariable aIsComplete -> bIsComplete - Status: Survived
+--> Mutation 293: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:67 - InsertUnaryOp Negation of aIsComplete - Status: Survived
+--> Mutation 294: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:67 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 295: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:67 - ReplaceVariable bIsComplete -> aIsComplete - Status: Survived
+--> Mutation 296: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:67 - InsertUnaryOp Negation of bIsComplete - Status: Survived
+--> Mutation 297: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:67 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 298: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:68 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 299: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:68 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 300: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:68 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 301: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:69 - ReplaceVariable aDL -> bDL - Status: Survived
+--> Mutation 302: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:69 - ReplaceVariable bDL -> aDL - Status: Survived
+--> Mutation 303: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:69 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 304: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:69 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 305: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:69 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 306: org.gudy.azureus2.ui.console.commands.Show$TorrentComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I:69 - ReplaceArithmeticOperator - -> / - Status: Survived
+* Compiling and checking tests
 * Computation finished

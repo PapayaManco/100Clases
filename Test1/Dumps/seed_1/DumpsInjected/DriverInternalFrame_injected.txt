@@ -2,14 +2,10 @@
 * Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/102_squirrel-sql/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects\102_squirrel-sql\evosuite-files\evosuite.properties
+* Connecting to master process on port 7309
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 05:02:57.682 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 05:02:58.345 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 05:02:59.156 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 05:02:59.281 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame
 * Test criteria:
@@ -22,15 +18,6 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 1045
-* Using seed 2482030657809
+* Using seed 1710491225015
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 652 / 1045
-[MASTER] 05:03:00.228 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
-[MASTER] 05:03:05.302 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
-[MASTER] 05:03:34.425 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 05:03:44.618 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 05:03:58.802 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
-[MASTER] 05:05:47.873 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.JSpinner$NumberEditor due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.JSpinner due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.SpinnerListModel due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.JList due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-[MASTER] 05:06:00.627 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.JSpinner$NumberEditor due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.JSpinner due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.SpinnerListModel due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.ArrayList due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.PriorityQueue due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-* Search finished after 181s and 1161 generations, 623734 statements, best individual has fitness: 439.0
-* Computation finished

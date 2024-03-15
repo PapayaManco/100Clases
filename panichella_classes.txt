@@ -27,8 +27,8 @@
 105_freemind NewParentNode
 105_freemind PreviewDialog
 105_freemind FileNodeModel
-106_checkstyle Module_ESTest
-107_weka ItemSet_ESTest
+106_checkstyle Module
+107_weka ItemSet
 107_weka AlphabeticTokenizer
 107_weka Version
 107_weka SubstringLabeler

@@ -1,21 +1,17 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: freemind.controller.printpreview.PreviewDialog
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/105_freemind/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\105_freemind\evosuite-files\evosuite.properties
+* Connecting to master process on port 2079
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:46:15.644 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 00:46:15.965 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:46:18.126 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:46:18.126 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
-[MASTER] 00:46:18.126 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:46:18.126 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:46:18.126 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:46:18.126 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:46:19.246 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 00:46:21.826 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+[MASTER] 01:09:59.037 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:09:59.037 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
+[MASTER] 01:09:59.037 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:09:59.037 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:09:59.037 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:09:59.037 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
 * Finished analyzing classpath
 * Generating tests for class freemind.controller.printpreview.PreviewDialog
 * Test criteria:
@@ -28,19 +24,15 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 98
-* Using seed 2482030657809
+* Using seed 1710475795910
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 64 / 98
-[MASTER] 00:46:28.411 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 00:46:28.595 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
-[MASTER] 00:46:29.043 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JList<E> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {}
-[MASTER] 00:46:29.055 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
-[MASTER] 00:46:45.012 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 00:47:05.831 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 00:47:05.848 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 00:47:05.853 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 00:47:55.403 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-* Search finished after 181s and 2752 generations, 560737 statements, best individual has fitness: 8.0
+[MASTER] 01:10:03.834 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 01:10:06.424 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:10:25.305 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 01:10:42.099 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 01:11:06.620 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JList<E> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {V=javax.swing.JList<java.lang.Integer>}
+* Search finished after 181s and 4552 generations, 817322 statements, best individual has fitness: 8.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -106,15 +98,4 @@
 --> Mutation 25: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:102 - ReplaceVariable name -> iconName - Status: Survived
 --> Mutation 26: freemind.controller.printpreview.PreviewDialog.getButton(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/AbstractAction;)Ljavax/swing/JButton;:105 - ReplaceVariable name -> iconName - Status: Survived
 * Compiling and checking tests
-[MASTER] 00:49:31.090 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:49:36.434 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Permissions denied during test execution: 
-  - java.io.FilePermission: 
-         read,write,delete /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/*: 1
-  - java.lang.RuntimePermission: 
-         getStackWalkerWithClassReference: 1
-* Writing tests to file
-* Writing JUnit test case 'PreviewDialog_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

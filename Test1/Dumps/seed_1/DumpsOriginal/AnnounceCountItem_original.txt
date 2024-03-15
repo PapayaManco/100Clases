@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 15171
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:36:37.390 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 00:36:37.457 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
 * Finished analyzing classpath
 * Generating tests for class org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem
 * Test criteria:
@@ -20,11 +18,60 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 38
-* Using seed 2482030657809
+* Using seed 1710475217621
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 18 / 38
-[MASTER] 00:36:48.691 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 00:37:46.983 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
-[MASTER] 00:38:20.910 [logback-1] WARN  TestCluster - Failed to check cache for com.aelitis.azureus.ui.common.table.TableView<DATASOURCETYPE> : Type points to itself
-* Search finished after 181s and 2039 generations, 696775 statements, best individual has fitness: 7.0
+[MASTER] 01:00:44.515 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 01:01:04.985 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 01:01:38.656 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 182s and 2117 generations, 698112 statements, best individual has fitness: 4.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 86%
+* Total number of goals: 7
+* Number of covered goals: 6
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 86%
+* Total number of goals: 7
+* Number of covered goals: 6
+* Generated 4 tests with total length 13
+* Resulting test suite's coverage: 90% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 64%
+* There are surviving mutants: 
+--> Mutation 0: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.<init>()V:39 - ReplaceConstant - -2 -> 0 - Status: Killed
+--> Mutation 1: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.<init>()V:39 - ReplaceConstant - -2 -> 1 - Status: Killed
+--> Mutation 2: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.<init>()V:39 - ReplaceConstant - -2 -> -1 - Status: Killed
+--> Mutation 3: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.<init>()V:39 - ReplaceConstant - -2 -> -3 - Status: Killed
+--> Mutation 4: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:44 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 5: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:44 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 6: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:44 - ReplaceConstant - 0 -> -1 - Status: Killed
+--> Mutation 7: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:46 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 8: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:46 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 9: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:46 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 10: org.gudy.azureus2.ui.swt.views.tableitems.mytracker.AnnounceCountItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:50 - InsertUnaryOp Negation of value - Status: Survived
+* Compiling and checking tests
 * Computation finished

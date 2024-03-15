@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: MapTilePane
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/27_gangup/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\27_gangup\evosuite-files\evosuite.properties
+* Connecting to master process on port 20537
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:41:51.265 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 02:41:51.373 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 02:41:52.678 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class MapTilePane
 * Test criteria:
@@ -20,18 +17,18 @@
   - Top-Level Method Coverage
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
-* Total number of test goals for DYNAMOSA: 164
-* Using seed 2482030657809
+* Total number of test goals for DYNAMOSA: 166
+* Using seed 1710482606947
 * Starting evolution
-* Initial Number of Goals in DynaMOSA = 52 / 164
-[MASTER] 02:41:56.224 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 02:41:56.230 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 02:41:56.234 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 02:42:01.717 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
-[MASTER] 02:42:25.359 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 02:43:43.566 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
-[MASTER] 02:44:52.777 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 181s and 3901 generations, 280463 statements, best individual has fitness: 155.0
+* Initial Number of Goals in DynaMOSA = 52 / 166
+[MASTER] 03:03:33.974 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 03:04:00.988 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 03:04:06.350 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 03:04:21.596 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 03:04:42.476 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JList<E> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {E=class MapManager}
+[MASTER] 03:04:42.477 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 03:05:40.876 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+* Search finished after 181s and 6838 generations, 469696 statements, best individual has fitness: 157.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -53,19 +50,19 @@
 * Coverage analysis for criterion OUTPUT
 * Coverage of criterion OUTPUT: 100% (no goals)
 * Coverage analysis for criterion METHOD
-* Coverage of criterion METHOD: 33%
-* Total number of goals: 3
+* Coverage of criterion METHOD: 25%
+* Total number of goals: 4
 * Number of covered goals: 1
 * Coverage analysis for criterion METHODNOEXCEPTION
 * Coverage of criterion METHODNOEXCEPTION: 0%
-* Total number of goals: 3
+* Total number of goals: 4
 * Number of covered goals: 0
 * Coverage analysis for criterion CBRANCH
 * Coverage of criterion CBRANCH: 8%
 * Total number of goals: 12
 * Number of covered goals: 1
 * Generated 1 tests with total length 1
-* Resulting test suite's coverage: 27% (average coverage for all fitness functions)
+* Resulting test suite's coverage: 26% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 0%
 * There are surviving mutants: 
@@ -150,10 +147,4 @@
 --> Mutation 78: MapTilePane$ListItemListener.itemStateChanged(Ljava/awt/event/ItemEvent;)V:1035 - ReplaceConstant - 1 -> 0 - Status: Survived
 --> Mutation 79: MapTilePane$ListItemListener.itemStateChanged(Ljava/awt/event/ItemEvent;)V:1035 - ReplaceComparisonOperator != -> == - Status: Survived
 * Compiling and checking tests
-[MASTER] 02:45:00.430 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:45:05.750 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'MapTilePane_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

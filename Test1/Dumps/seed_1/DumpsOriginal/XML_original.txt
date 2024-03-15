@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.gudy.azureus2.ui.console.commands.XML
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 21316
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:23:53.102 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:23:53.137 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class org.gudy.azureus2.ui.console.commands.XML
 * Test criteria:
@@ -20,9 +18,64 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 67
-* Using seed 2482030657809
+* Using seed 1710474423218
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 21 / 67
-[MASTER] 00:25:14.195 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 184s and 48 generations, 19137 statements, best individual has fitness: 10.0
+[MASTER] 00:48:20.077 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 186s and 35 generations, 18203 statements, best individual has fitness: 9.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 83%
+* Total number of goals: 23
+* Number of covered goals: 19
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 87%
+* Total number of goals: 15
+* Number of covered goals: 13
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 33%
+* Total number of goals: 3
+* Number of covered goals: 1
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Generated 5 tests with total length 18
+* Resulting test suite's coverage: 82% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 40%
+* There are surviving mutants: 
+--> Mutation 0: org.gudy.azureus2.ui.console.commands.XML.getCommandDescriptions()Ljava/lang/String;:30 - ReplaceConstant - xml [<file>]				Output stats in xml format (to <file> if given) ->  - Status: Killed
+--> Mutation 1: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:36 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 2: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:36 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 3: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:36 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 4: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:36 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 5: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:36 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 6: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:36 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 7: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:36 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 8: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:37 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 9: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:38 - ReplaceVariable file -> commandName - Status: Survived
+--> Mutation 10: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:38 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 11: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:40 - ReplaceConstant - > ----- ->  - Status: Survived
+--> Mutation 12: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:42 - ReplaceConstant - > ----- ->  - Status: Survived
+--> Mutation 13: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:44 - ReplaceConstant - > Exception while trying to output xml stats: ->  - Status: Survived
+--> Mutation 14: org.gudy.azureus2.ui.console.commands.XML.execute(Ljava/lang/String;Lorg/gudy/azureus2/ui/console/ConsoleInput;Ljava/util/List;)V:48 - ReplaceVariable file -> commandName - Status: Survived
+* Compiling and checking tests
 * Computation finished

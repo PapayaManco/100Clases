@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.eteks.sweethome3d.viewcontroller.PhotoController
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/103_sweethome3d/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\103_sweethome3d\evosuite-files\evosuite.properties
+* Connecting to master process on port 6324
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 23:47:29.069 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 23:47:29.391 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 23:47:30.803 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class com.eteks.sweethome3d.viewcontroller.PhotoController
 * Test criteria:
@@ -21,12 +18,360 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 701
-* Using seed 2482030657809
+* Using seed 1710472200720
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 243 / 701
-[MASTER] 23:47:33.942 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 23:47:35.063 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: ftpClientProvider
-[MASTER] 23:47:48.331 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 23:48:21.069 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-* Search finished after 181s and 1473 generations, 658615 statements, best individual has fitness: 75.0
+[MASTER] 00:10:06.109 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 00:10:08.484 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: ftpClientProvider
+[MASTER] 00:10:34.644 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 00:10:51.707 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 00:10:59.566 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 00:10:59.622 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JComboBox<E> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {E=class java.awt.Component$BaselineResizeBehavior}
+[MASTER] 00:11:53.403 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+* Search finished after 183s and 2027 generations, 897750 statements, best individual has fitness: 71.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 96%
+* Total number of goals: 147
+* Number of covered goals: 141
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 91%
+* Total number of goals: 80
+* Number of covered goals: 73
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 305
+* Number of covered goals: 295
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 77%
+* Total number of goals: 31
+* Number of covered goals: 24
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 90%
+* Total number of goals: 29
+* Number of covered goals: 26
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 83%
+* Total number of goals: 29
+* Number of covered goals: 24
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 62%
+* Total number of goals: 80
+* Number of covered goals: 50
+* Generated 50 tests with total length 255
+* Resulting test suite's coverage: 82% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 55%
+* There are surviving mutants: 
+--> Mutation 0: com.eteks.sweethome3d.viewcontroller.PhotoController.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Lcom/eteks/sweethome3d/viewcontroller/View;Lcom/eteks/sweethome3d/viewcontroller/ViewFactory;Lcom/eteks/sweethome3d/viewcontroller/ContentManager;)V:71 - ReplaceConstant - 1.0 -> 0.0 - Status: Killed
+--> Mutation 1: com.eteks.sweethome3d.viewcontroller.PhotoController.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Lcom/eteks/sweethome3d/viewcontroller/View;Lcom/eteks/sweethome3d/viewcontroller/ViewFactory;Lcom/eteks/sweethome3d/viewcontroller/ContentManager;)V:71 - ReplaceConstant - 1.0 -> -1.0 - Status: Killed
+--> Mutation 2: com.eteks.sweethome3d.viewcontroller.PhotoController.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Lcom/eteks/sweethome3d/viewcontroller/View;Lcom/eteks/sweethome3d/viewcontroller/ViewFactory;Lcom/eteks/sweethome3d/viewcontroller/ContentManager;)V:71 - ReplaceConstant - 1.0 -> 2.0 - Status: Killed
+--> Mutation 3: com.eteks.sweethome3d.viewcontroller.PhotoController.getView()Lcom/eteks/sweethome3d/viewcontroller/DialogView;:154 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 4: com.eteks.sweethome3d.viewcontroller.PhotoController.updateProperties()V:194 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 5: com.eteks.sweethome3d.viewcontroller.PhotoController.updateProperties()V:195 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 6: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:206 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 7: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:208 - ReplaceVariable aspectRatio -> oldAspectRatio - Status: Killed
+--> Mutation 8: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:209 - ReplaceVariable oldAspectRatio -> aspectRatio - Status: Survived
+--> Mutation 9: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:209 - ReplaceVariable aspectRatio -> oldAspectRatio - Status: Survived
+--> Mutation 10: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:211 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 11: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:212 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 12: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:212 - ReplaceConstant - Infinity -> 0.0 - Status: Survived
+--> Mutation 13: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:212 - ReplaceConstant - Infinity -> 1.0 - Status: Killed
+--> Mutation 14: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:212 - ReplaceConstant - Infinity -> -1.0 - Status: Survived
+--> Mutation 15: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:212 - ReplaceConstant - Infinity -> Infinity - Status: Survived
+--> Mutation 16: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:212 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 17: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:212 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 18: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:212 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 19: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 20: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 21: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 22: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 23: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - ReplaceArithmeticOperator / -> + - Status: Killed
+--> Mutation 24: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 25: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - ReplaceArithmeticOperator / -> - - Status: Killed
+--> Mutation 26: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 27: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:213 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 28: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:215 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 29: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:216 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 30: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:216 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 31: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:216 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 32: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:216 - ReplaceArithmeticOperator / -> + - Status: Killed
+--> Mutation 33: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:216 - ReplaceArithmeticOperator / -> % - Status: Killed
+--> Mutation 34: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:216 - ReplaceArithmeticOperator / -> - - Status: Killed
+--> Mutation 35: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:216 - ReplaceArithmeticOperator / -> * - Status: Killed
+--> Mutation 36: com.eteks.sweethome3d.viewcontroller.PhotoController.setAspectRatio(Lcom/eteks/sweethome3d/model/AspectRatio;)V:216 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 37: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(I)V:232 - InsertUnaryOp Negation of width - Status: Killed
+--> Mutation 38: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(I)V:232 - InsertUnaryOp IINC 1 width - Status: Killed
+--> Mutation 39: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(I)V:232 - InsertUnaryOp IINC -1 width - Status: Killed
+--> Mutation 40: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(I)V:232 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 41: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 42: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 43: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 44: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - InsertUnaryOp Negation of width - Status: Survived
+--> Mutation 45: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - InsertUnaryOp IINC 1 width - Status: Killed
+--> Mutation 46: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - InsertUnaryOp IINC -1 width - Status: Killed
+--> Mutation 47: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 48: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 49: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:236 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 50: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:237 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 51: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:237 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 52: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:237 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 53: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:238 - ReplaceVariable width -> oldWidth - Status: Killed
+--> Mutation 54: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:238 - InsertUnaryOp Negation of width - Status: Killed
+--> Mutation 55: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:238 - InsertUnaryOp IINC 1 width - Status: Killed
+--> Mutation 56: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:238 - InsertUnaryOp IINC -1 width - Status: Killed
+--> Mutation 57: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:239 - ReplaceVariable oldWidth -> width - Status: Survived
+--> Mutation 58: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:239 - InsertUnaryOp Negation of oldWidth - Status: Survived
+--> Mutation 59: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:239 - InsertUnaryOp IINC 1 oldWidth - Status: Survived
+--> Mutation 60: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:239 - InsertUnaryOp IINC -1 oldWidth - Status: Survived
+--> Mutation 61: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:239 - ReplaceVariable width -> oldWidth - Status: Survived
+--> Mutation 62: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:239 - InsertUnaryOp Negation of width - Status: Survived
+--> Mutation 63: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:239 - InsertUnaryOp IINC 1 width - Status: Killed
+--> Mutation 64: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:239 - InsertUnaryOp IINC -1 width - Status: Killed
+--> Mutation 65: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:240 - InsertUnaryOp Negation of updateHeight - Status: Survived
+--> Mutation 66: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:240 - InsertUnaryOp IINC 1 updateHeight - Status: Killed
+--> Mutation 67: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:240 - InsertUnaryOp IINC -1 updateHeight - Status: Killed
+--> Mutation 68: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:240 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 69: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:241 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 70: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:242 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 71: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:242 - ReplaceConstant - Infinity -> 0.0 - Status: Killed
+--> Mutation 72: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:242 - ReplaceConstant - Infinity -> 1.0 - Status: Killed
+--> Mutation 73: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:242 - ReplaceConstant - Infinity -> -1.0 - Status: Survived
+--> Mutation 74: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:242 - ReplaceConstant - Infinity -> Infinity - Status: Survived
+--> Mutation 75: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:242 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 76: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:242 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 77: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:242 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 78: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - ReplaceVariable width -> oldWidth - Status: Killed
+--> Mutation 79: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - InsertUnaryOp Negation of width - Status: Killed
+--> Mutation 80: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - InsertUnaryOp IINC 1 width - Status: Killed
+--> Mutation 81: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - InsertUnaryOp IINC -1 width - Status: Killed
+--> Mutation 82: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 83: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - ReplaceArithmeticOperator / -> + - Status: Killed
+--> Mutation 84: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 85: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - ReplaceArithmeticOperator / -> - - Status: Killed
+--> Mutation 86: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 87: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:243 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 88: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:245 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 89: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - ReplaceVariable width -> oldWidth - Status: Survived
+--> Mutation 90: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - InsertUnaryOp Negation of width - Status: Survived
+--> Mutation 91: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - InsertUnaryOp IINC 1 width - Status: Survived
+--> Mutation 92: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - InsertUnaryOp IINC -1 width - Status: Killed
+--> Mutation 93: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - ReplaceArithmeticOperator / -> + - Status: Killed
+--> Mutation 94: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 95: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 96: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - ReplaceArithmeticOperator / -> * - Status: Killed
+--> Mutation 97: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:246 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 98: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:249 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 99: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:249 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 100: com.eteks.sweethome3d.viewcontroller.PhotoController.setWidth(IZ)V:249 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 101: com.eteks.sweethome3d.viewcontroller.PhotoController.getWidth()I:257 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 102: com.eteks.sweethome3d.viewcontroller.PhotoController.getWidth()I:257 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 103: com.eteks.sweethome3d.viewcontroller.PhotoController.getWidth()I:257 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 104: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(I)V:264 - InsertUnaryOp Negation of height - Status: Killed
+--> Mutation 105: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(I)V:264 - InsertUnaryOp IINC 1 height - Status: Killed
+--> Mutation 106: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(I)V:264 - InsertUnaryOp IINC -1 height - Status: Killed
+--> Mutation 107: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(I)V:264 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 108: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 109: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 110: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 111: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - InsertUnaryOp Negation of height - Status: Survived
+--> Mutation 112: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - InsertUnaryOp IINC 1 height - Status: Killed
+--> Mutation 113: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - InsertUnaryOp IINC -1 height - Status: Killed
+--> Mutation 114: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 115: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 116: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:268 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 117: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:269 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 118: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:269 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 119: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:269 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 120: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:270 - ReplaceVariable height -> oldHeight - Status: Killed
+--> Mutation 121: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:270 - InsertUnaryOp Negation of height - Status: Killed
+--> Mutation 122: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:270 - InsertUnaryOp IINC 1 height - Status: Killed
+--> Mutation 123: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:270 - InsertUnaryOp IINC -1 height - Status: Killed
+--> Mutation 124: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:271 - ReplaceVariable oldHeight -> height - Status: Survived
+--> Mutation 125: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:271 - InsertUnaryOp Negation of oldHeight - Status: Survived
+--> Mutation 126: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:271 - InsertUnaryOp IINC 1 oldHeight - Status: Survived
+--> Mutation 127: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:271 - InsertUnaryOp IINC -1 oldHeight - Status: Survived
+--> Mutation 128: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:271 - ReplaceVariable height -> oldHeight - Status: Survived
+--> Mutation 129: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:271 - InsertUnaryOp Negation of height - Status: Survived
+--> Mutation 130: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:271 - InsertUnaryOp IINC 1 height - Status: Killed
+--> Mutation 131: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:271 - InsertUnaryOp IINC -1 height - Status: Killed
+--> Mutation 132: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:272 - InsertUnaryOp Negation of updateWidth - Status: Survived
+--> Mutation 133: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:272 - InsertUnaryOp IINC 1 updateWidth - Status: Killed
+--> Mutation 134: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:272 - InsertUnaryOp IINC -1 updateWidth - Status: Killed
+--> Mutation 135: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:272 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 136: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:273 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 137: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:274 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 138: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:274 - ReplaceConstant - Infinity -> 0.0 - Status: Survived
+--> Mutation 139: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:274 - ReplaceConstant - Infinity -> 1.0 - Status: Killed
+--> Mutation 140: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:274 - ReplaceConstant - Infinity -> -1.0 - Status: Survived
+--> Mutation 141: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:274 - ReplaceConstant - Infinity -> Infinity - Status: Survived
+--> Mutation 142: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:274 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 143: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:274 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 144: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:274 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 145: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - ReplaceVariable height -> oldHeight - Status: Killed
+--> Mutation 146: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - InsertUnaryOp Negation of height - Status: Survived
+--> Mutation 147: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - InsertUnaryOp IINC 1 height - Status: Killed
+--> Mutation 148: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - InsertUnaryOp IINC -1 height - Status: Survived
+--> Mutation 149: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 150: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - ReplaceArithmeticOperator * -> + - Status: Killed
+--> Mutation 151: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 152: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 153: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - ReplaceArithmeticOperator * -> / - Status: Killed
+--> Mutation 154: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:275 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 155: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:277 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 156: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - ReplaceVariable height -> oldHeight - Status: Survived
+--> Mutation 157: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - InsertUnaryOp Negation of height - Status: Survived
+--> Mutation 158: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - InsertUnaryOp IINC 1 height - Status: Killed
+--> Mutation 159: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - InsertUnaryOp IINC -1 height - Status: Survived
+--> Mutation 160: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - ReplaceArithmeticOperator * -> + - Status: Killed
+--> Mutation 161: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - ReplaceArithmeticOperator * -> % - Status: Killed
+--> Mutation 162: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 163: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - ReplaceArithmeticOperator * -> / - Status: Killed
+--> Mutation 164: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:278 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 165: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:281 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 166: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:281 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 167: com.eteks.sweethome3d.viewcontroller.PhotoController.setHeight(IZ)V:281 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 168: com.eteks.sweethome3d.viewcontroller.PhotoController.getHeight()I:289 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 169: com.eteks.sweethome3d.viewcontroller.PhotoController.getHeight()I:289 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 170: com.eteks.sweethome3d.viewcontroller.PhotoController.getHeight()I:289 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 171: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 172: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 173: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 174: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - InsertUnaryOp Negation of quality - Status: Survived
+--> Mutation 175: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - InsertUnaryOp IINC 1 quality - Status: Killed
+--> Mutation 176: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - InsertUnaryOp IINC -1 quality - Status: Killed
+--> Mutation 177: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 178: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 179: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:296 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 180: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:297 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 181: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:297 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 182: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:297 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 183: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - ReplaceVariable quality -> oldQuality - Status: Killed
+--> Mutation 184: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - InsertUnaryOp Negation of quality - Status: Killed
+--> Mutation 185: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - InsertUnaryOp IINC 1 quality - Status: Killed
+--> Mutation 186: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - InsertUnaryOp IINC -1 quality - Status: Killed
+--> Mutation 187: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 188: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 189: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 190: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - ReplaceArithmeticOperator - -> * - Status: Killed
+--> Mutation 191: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:298 - ReplaceArithmeticOperator - -> / - Status: Killed
+--> Mutation 192: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:299 - ReplaceVariable oldQuality -> quality - Status: Survived
+--> Mutation 193: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:299 - InsertUnaryOp Negation of oldQuality - Status: Survived
+--> Mutation 194: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:299 - InsertUnaryOp IINC 1 oldQuality - Status: Survived
+--> Mutation 195: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:299 - InsertUnaryOp IINC -1 oldQuality - Status: Survived
+--> Mutation 196: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:299 - ReplaceVariable quality -> oldQuality - Status: Survived
+--> Mutation 197: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:299 - InsertUnaryOp Negation of quality - Status: Survived
+--> Mutation 198: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:299 - InsertUnaryOp IINC 1 quality - Status: Survived
+--> Mutation 199: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:299 - InsertUnaryOp IINC -1 quality - Status: Survived
+--> Mutation 200: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:300 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 201: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:300 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 202: com.eteks.sweethome3d.viewcontroller.PhotoController.setQuality(I)V:300 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 203: com.eteks.sweethome3d.viewcontroller.PhotoController.getQuality()I:308 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 204: com.eteks.sweethome3d.viewcontroller.PhotoController.getQuality()I:308 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 205: com.eteks.sweethome3d.viewcontroller.PhotoController.getQuality()I:308 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 206: com.eteks.sweethome3d.viewcontroller.PhotoController.getQualityLevelCount()I:315 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 207: com.eteks.sweethome3d.viewcontroller.PhotoController.getQualityLevelCount()I:315 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 208: com.eteks.sweethome3d.viewcontroller.PhotoController.getQualityLevelCount()I:315 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 209: com.eteks.sweethome3d.viewcontroller.PhotoController.getQualityLevelCount()I:315 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 210: com.eteks.sweethome3d.viewcontroller.PhotoController.getQualityLevelCount()I:315 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 211: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:323 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 212: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:323 - InsertUnaryOp Negation of time - Status: Survived
+--> Mutation 213: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:323 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 214: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:323 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 215: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:323 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 216: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:324 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 217: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:325 - ReplaceVariable time -> oldTime - Status: Killed
+--> Mutation 218: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:325 - InsertUnaryOp Negation of time - Status: Killed
+--> Mutation 219: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:326 - ReplaceVariable oldTime -> time - Status: Survived
+--> Mutation 220: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:326 - InsertUnaryOp Negation of oldTime - Status: Survived
+--> Mutation 221: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:326 - ReplaceVariable time -> oldTime - Status: Survived
+--> Mutation 222: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:326 - InsertUnaryOp Negation of time - Status: Survived
+--> Mutation 223: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:327 - ReplaceVariable time -> oldTime - Status: Killed
+--> Mutation 224: com.eteks.sweethome3d.viewcontroller.PhotoController.setTime(J)V:327 - InsertUnaryOp Negation of time - Status: Killed
+--> Mutation 225: com.eteks.sweethome3d.viewcontroller.PhotoController.getTime()J:335 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 226: com.eteks.sweethome3d.viewcontroller.PhotoController.setLens(Lcom/eteks/sweethome3d/model/Camera$Lens;)V:342 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 227: com.eteks.sweethome3d.viewcontroller.PhotoController.setLens(Lcom/eteks/sweethome3d/model/Camera$Lens;)V:344 - ReplaceVariable lens -> oldLens - Status: Survived
+--> Mutation 228: com.eteks.sweethome3d.viewcontroller.PhotoController.setLens(Lcom/eteks/sweethome3d/model/Camera$Lens;)V:345 - ReplaceVariable oldLens -> lens - Status: Survived
+--> Mutation 229: com.eteks.sweethome3d.viewcontroller.PhotoController.setLens(Lcom/eteks/sweethome3d/model/Camera$Lens;)V:345 - ReplaceVariable lens -> oldLens - Status: Survived
+--> Mutation 230: com.eteks.sweethome3d.viewcontroller.PhotoController.setLens(Lcom/eteks/sweethome3d/model/Camera$Lens;)V:346 - ReplaceVariable lens -> oldLens - Status: Killed
+--> Mutation 231: com.eteks.sweethome3d.viewcontroller.PhotoController.setLens(Lcom/eteks/sweethome3d/model/Camera$Lens;)V:346 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 232: com.eteks.sweethome3d.viewcontroller.PhotoController.setLens(Lcom/eteks/sweethome3d/model/Camera$Lens;)V:348 - ReplaceVariable lens -> oldLens - Status: Killed
+--> Mutation 233: com.eteks.sweethome3d.viewcontroller.PhotoController.setLens(Lcom/eteks/sweethome3d/model/Camera$Lens;)V:348 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 234: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 235: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 236: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 237: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - InsertUnaryOp Negation of ceilingLightColor - Status: Survived
+--> Mutation 238: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - InsertUnaryOp IINC 1 ceilingLightColor - Status: Killed
+--> Mutation 239: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - InsertUnaryOp IINC -1 ceilingLightColor - Status: Killed
+--> Mutation 240: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 241: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 242: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:366 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 243: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:367 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 244: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:367 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 245: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:367 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 246: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:368 - ReplaceVariable ceilingLightColor -> oldCeilingLightColor - Status: Killed
+--> Mutation 247: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:368 - InsertUnaryOp Negation of ceilingLightColor - Status: Killed
+--> Mutation 248: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:368 - InsertUnaryOp IINC 1 ceilingLightColor - Status: Killed
+--> Mutation 249: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:368 - InsertUnaryOp IINC -1 ceilingLightColor - Status: Killed
+--> Mutation 250: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:369 - ReplaceVariable oldCeilingLightColor -> ceilingLightColor - Status: Survived
+--> Mutation 251: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:369 - InsertUnaryOp Negation of oldCeilingLightColor - Status: Survived
+--> Mutation 252: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:369 - InsertUnaryOp IINC 1 oldCeilingLightColor - Status: Survived
+--> Mutation 253: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:369 - InsertUnaryOp IINC -1 oldCeilingLightColor - Status: Survived
+--> Mutation 254: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:369 - ReplaceVariable ceilingLightColor -> oldCeilingLightColor - Status: Survived
+--> Mutation 255: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:369 - InsertUnaryOp Negation of ceilingLightColor - Status: Survived
+--> Mutation 256: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:369 - InsertUnaryOp IINC 1 ceilingLightColor - Status: Killed
+--> Mutation 257: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:369 - InsertUnaryOp IINC -1 ceilingLightColor - Status: Killed
+--> Mutation 258: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:370 - ReplaceVariable ceilingLightColor -> oldCeilingLightColor - Status: Killed
+--> Mutation 259: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:370 - InsertUnaryOp Negation of ceilingLightColor - Status: Killed
+--> Mutation 260: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:370 - InsertUnaryOp IINC 1 ceilingLightColor - Status: Killed
+--> Mutation 261: com.eteks.sweethome3d.viewcontroller.PhotoController.setCeilingLightColor(I)V:370 - InsertUnaryOp IINC -1 ceilingLightColor - Status: Killed
+--> Mutation 262: com.eteks.sweethome3d.viewcontroller.PhotoController.getCeilingLightColor()I:378 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 263: com.eteks.sweethome3d.viewcontroller.PhotoController.getCeilingLightColor()I:378 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 264: com.eteks.sweethome3d.viewcontroller.PhotoController.getCeilingLightColor()I:378 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 265: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:385 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 266: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:385 - InsertUnaryOp Negation of view3DAspectRatio - Status: Killed
+--> Mutation 267: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:385 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 268: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:385 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 269: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:385 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 270: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:386 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 271: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:387 - ReplaceVariable view3DAspectRatio -> oldAspectRatio - Status: Killed
+--> Mutation 272: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:387 - InsertUnaryOp Negation of view3DAspectRatio - Status: Killed
+--> Mutation 273: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:388 - ReplaceVariable oldAspectRatio -> view3DAspectRatio - Status: Survived
+--> Mutation 274: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:388 - InsertUnaryOp Negation of oldAspectRatio - Status: Survived
+--> Mutation 275: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:388 - ReplaceVariable view3DAspectRatio -> oldAspectRatio - Status: Survived
+--> Mutation 276: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:388 - InsertUnaryOp Negation of view3DAspectRatio - Status: Survived
+--> Mutation 277: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 278: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 279: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - ReplaceConstant - Infinity -> 0.0 - Status: Killed
+--> Mutation 280: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - ReplaceConstant - Infinity -> 1.0 - Status: Killed
+--> Mutation 281: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - ReplaceConstant - Infinity -> -1.0 - Status: Survived
+--> Mutation 282: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - ReplaceConstant - Infinity -> Infinity - Status: Survived
+--> Mutation 283: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 284: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 285: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:389 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 286: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 287: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 288: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 289: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 290: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - ReplaceArithmeticOperator / -> + - Status: Killed
+--> Mutation 291: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - ReplaceArithmeticOperator / -> % - Status: Killed
+--> Mutation 292: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - ReplaceArithmeticOperator / -> - - Status: Killed
+--> Mutation 293: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - ReplaceArithmeticOperator / -> * - Status: Killed
+--> Mutation 294: com.eteks.sweethome3d.viewcontroller.PhotoController.set3DViewAspectRatio(F)V:391 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 295: com.eteks.sweethome3d.viewcontroller.PhotoController.get3DViewAspectRatio()F:400 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 296: com.eteks.sweethome3d.viewcontroller.PhotoController$CameraChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:118 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 297: com.eteks.sweethome3d.viewcontroller.PhotoController$HomeEnvironmentChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:140 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 298: com.eteks.sweethome3d.viewcontroller.PhotoController$HomeEnvironmentChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:142 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 299: com.eteks.sweethome3d.viewcontroller.PhotoController$HomeEnvironmentChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:142 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 300: com.eteks.sweethome3d.viewcontroller.PhotoController$HomeEnvironmentChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:142 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 301: com.eteks.sweethome3d.viewcontroller.PhotoController$HomeEnvironmentChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:143 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 302: com.eteks.sweethome3d.viewcontroller.PhotoController$HomeEnvironmentChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:143 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 303: com.eteks.sweethome3d.viewcontroller.PhotoController$HomeEnvironmentChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:143 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 304: com.eteks.sweethome3d.viewcontroller.PhotoController$HomeCameraChangeListener.propertyChange(Ljava/beans/PropertyChangeEvent;)V:94 - ReplaceComparisonOperator != null -> = null - Status: Survived
+* Compiling and checking tests
 * Computation finished

@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.bouncycastle.crypto.params.ElGamalKeyParameters
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 17513
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 41
-* Using seed 2482030657809
+* Using seed 1710473832188
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 14 / 41
-* Search finished after 0s and 1 generations, 1806 statements, best individual has fitness: 1.0
+* Search finished after 5s and 3 generations, 4484 statements, best individual has fitness: 1.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -56,7 +56,7 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 8
 * Number of covered goals: 8
-* Generated 7 tests with total length 28
+* Generated 7 tests with total length 25
 * Resulting test suite's coverage: 94% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 100%
@@ -69,15 +69,4 @@
 --> Mutation 5: org.bouncycastle.crypto.params.ElGamalKeyParameters.equals(Ljava/lang/Object;)Z:33 - ReplaceConstant - 1 -> 0 - Status: Killed
 --> Mutation 6: org.bouncycastle.crypto.params.ElGamalKeyParameters.equals(Ljava/lang/Object;)Z:33 - ReplaceConstant - 0 -> 1 - Status: Killed
 * Compiling and checking tests
-[MASTER] 00:13:41.740 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:13:47.010 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:13:52.280 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:13:57.550 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:14:02.801 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:14:08.052 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:14:13.307 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'ElGamalKeyParameters_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

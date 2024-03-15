@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.jcvi.jillion.core.residue.nt.DefaultNucleotideSequence
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/92_jcvi-javacommon/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\92_jcvi-javacommon\evosuite-files\evosuite.properties
+* Connecting to master process on port 10413
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 04:36:32.607 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 04:36:32.612 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class org.jcvi.jillion.core.residue.nt.DefaultNucleotideSequence
 * Test criteria:
@@ -20,12 +18,13 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 209
-* Using seed 2482030657809
+* Using seed 1710489909382
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 77 / 209
-[MASTER] 04:36:33.382 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 04:38:36.166 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-* Search finished after 181s and 2114 generations, 805604 statements, best individual has fitness: 54.0
+[MASTER] 05:05:10.949 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 05:06:08.940 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 05:07:36.983 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 2613 generations, 952731 statements, best individual has fitness: 54.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -60,7 +59,7 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 27
 * Number of covered goals: 27
-* Generated 71 tests with total length 318
+* Generated 71 tests with total length 321
 * Resulting test suite's coverage: 90% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 28%
@@ -130,20 +129,4 @@
 --> Mutation 62: org.jcvi.jillion.core.residue.nt.DefaultNucleotideSequence.equals(Ljava/lang/Object;)Z:137 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 63: org.jcvi.jillion.core.residue.nt.DefaultNucleotideSequence.equals(Ljava/lang/Object;)Z:140 - ReplaceConstant - 1 -> 0 - Status: Killed
 * Compiling and checking tests
-[MASTER] 04:39:44.367 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:39:49.610 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:39:54.851 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:00.094 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:05.329 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:10.599 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:15.841 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:21.078 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:26.318 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:31.558 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:36.806 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:40:36.808 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
-* Writing tests to file
-* Writing JUnit test case 'DefaultNucleotideSequence_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

@@ -1,12 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.util.axis.AxisServlet
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 14584
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:07:04.971 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class com.liferay.util.axis.AxisServlet
 * Test criteria:
@@ -19,22 +18,266 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 444
-* Using seed 2482030657809
+* Using seed 1710480684605
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 132 / 444
-[MASTER] 02:07:05.415 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 02:07:06.022 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 02:07:08.897 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
-[MASTER] 02:07:09.652 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-[MASTER] 02:07:11.864 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 02:07:27.340 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 02:08:16.782 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 02:08:31.748 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 02:08:31.757 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 02:08:32.748 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 02:08:38.259 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.awt.datatransfer.SystemFlavorMap canUseFunctionalMocks=false, canBeMocked: false
-[MASTER] 02:08:56.580 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.media.jai.CollectionOp due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-[MASTER] 02:09:13.863 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.ClassImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.TestRunner due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.Configuration due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.annotations.JDK15AnnotationFinder due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-[MASTER] 02:09:51.226 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-* Search finished after 181s and 2884 generations, 523735 statements, best individual has fitness: 163.0
+[MASTER] 02:32:23.022 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 02:32:57.005 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:33:09.752 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 181s and 1576 generations, 290743 statements, best individual has fitness: 166.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 62%
+* Total number of goals: 128
+* Number of covered goals: 79
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 46%
+* Total number of goals: 39
+* Number of covered goals: 18
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 71%
+* Total number of goals: 7
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 75%
+* Total number of goals: 213
+* Number of covered goals: 159
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 67%
+* Total number of goals: 3
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 64%
+* Total number of goals: 11
+* Number of covered goals: 7
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 55%
+* Total number of goals: 11
+* Number of covered goals: 6
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 36%
+* Total number of goals: 39
+* Number of covered goals: 14
+* Generated 10 tests with total length 25
+* Resulting test suite's coverage: 57% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 5%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.util.axis.AxisServlet.destroy()V:50 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 1: com.liferay.util.axis.AxisServlet.destroy()V:67 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 2: com.liferay.util.axis.AxisServlet.destroy()V:68 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 3: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:82 - ReplaceConstant - 9 -> 0 - Status: Survived
+--> Mutation 4: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:82 - ReplaceConstant - 9 -> 1 - Status: Survived
+--> Mutation 5: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:82 - ReplaceConstant - 9 -> -1 - Status: Survived
+--> Mutation 6: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:82 - ReplaceConstant - 9 -> 8 - Status: Survived
+--> Mutation 7: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:82 - ReplaceConstant - 9 -> 10 - Status: Survived
+--> Mutation 8: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:84 - ReplaceConstant - <complexType abstract="true" name="OrderByComparator"> ->  - Status: Survived
+--> Mutation 9: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:85 - ReplaceConstant - <sequence><element name="ascending"  ->  - Status: Survived
+--> Mutation 10: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:86 - ReplaceConstant - type="xsd:boolean"/><element name="orderBy"  ->  - Status: Survived
+--> Mutation 11: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:87 - ReplaceConstant - nillable="true" type="soapenc:string"/><element  ->  - Status: Survived
+--> Mutation 12: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:88 - ReplaceConstant - name="orderByConditionFields" nillable="true"  ->  - Status: Survived
+--> Mutation 13: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:89 - ReplaceConstant - type="impl:ArrayOf_xsd_string"/><element  ->  - Status: Survived
+--> Mutation 14: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:90 - ReplaceConstant - name="orderByFields" nillable="true"  ->  - Status: Survived
+--> Mutation 15: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:91 - ReplaceConstant - type="impl:ArrayOf_xsd_string"/></sequence> ->  - Status: Survived
+--> Mutation 16: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:92 - ReplaceConstant - </complexType> ->  - Status: Survived
+--> Mutation 17: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:96 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 18: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:96 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 19: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:96 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 20: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:96 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 21: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:96 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 22: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:98 - ReplaceConstant - <complexType name="ArrayOf_xsd_long"><complexContent> ->  - Status: Survived
+--> Mutation 23: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:99 - ReplaceConstant - <restriction base="soapenc:Array"><attribute  ->  - Status: Survived
+--> Mutation 24: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:100 - ReplaceConstant - ref="soapenc:arrayType"  ->  - Status: Survived
+--> Mutation 25: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:101 - ReplaceConstant - wsdl:arrayType="soapenc:long[]"/></restriction> ->  - Status: Survived
+--> Mutation 26: com.liferay.util.axis.AxisServlet.init(Ljavax/servlet/ServletConfig;)V:102 - ReplaceConstant - </complexContent></complexType> ->  - Status: Survived
+--> Mutation 27: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:171 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 28: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:171 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 29: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:213 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 30: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:182 - ReplaceVariable contentType -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 31: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:182 - ReplaceVariable contentType -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 32: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:182 - ReplaceVariable contentType -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 33: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:182 - ReplaceVariable contentType -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 34: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:182 - ReplaceVariable contentType -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 35: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:182 - ReplaceVariable contentType -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 36: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:186 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 37: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:186 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 38: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceVariable contentType -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 39: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceVariable contentType -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 40: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceVariable contentType -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 41: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceVariable contentType -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 42: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceVariable contentType -> content - Status: Survived
+--> Mutation 43: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceVariable contentType -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 44: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceVariable contentType -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 45: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceConstant - text/html ->  - Status: Survived
+--> Mutation 46: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:187 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 47: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceConstant - <html><body> ->  - Status: Survived
+--> Mutation 48: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceVariable content -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 49: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceVariable content -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 50: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceVariable content -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 51: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceVariable content -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 52: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceVariable content -> contentType - Status: Survived
+--> Mutation 53: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceVariable content -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 54: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceVariable content -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 55: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:188 - ReplaceConstant - </body></html> ->  - Status: Survived
+--> Mutation 56: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceVariable contentType -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 57: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceVariable contentType -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 58: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceVariable contentType -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 59: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceVariable contentType -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 60: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceVariable contentType -> content - Status: Survived
+--> Mutation 61: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceVariable contentType -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 62: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceVariable contentType -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 63: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceConstant - text/xml ->  - Status: Survived
+--> Mutation 64: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:191 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 65: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:192 - ReplaceVariable content -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 66: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:192 - ReplaceVariable content -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 67: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:192 - ReplaceVariable content -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 68: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:192 - ReplaceVariable content -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 69: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:192 - ReplaceVariable content -> contentType - Status: Survived
+--> Mutation 70: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:192 - ReplaceVariable content -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 71: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:192 - ReplaceVariable content -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 72: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:196 - ReplaceVariable content -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 73: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:196 - ReplaceVariable content -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 74: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:196 - ReplaceVariable content -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 75: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:196 - ReplaceVariable content -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 76: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:196 - ReplaceVariable content -> contentType - Status: Survived
+--> Mutation 77: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:196 - ReplaceVariable content -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 78: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:196 - ReplaceVariable content -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 79: com.liferay.util.axis.AxisServlet.service(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:196 - ReplaceConstant - UTF-8 ->  - Status: Survived
+--> Mutation 80: com.liferay.util.axis.AxisServlet.doDestroy()V:224 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 81: com.liferay.util.axis.AxisServlet.doInit()V:232 - ReplaceConstant - fix-content ->  - Status: Survived
+--> Mutation 82: com.liferay.util.axis.AxisServlet.doInit()V:233 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 83: com.liferay.util.axis.AxisServlet.doInit()V:235 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 84: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:239 - ReplaceVariable xml -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 85: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:239 - ReplaceVariable xml -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 86: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:239 - ReplaceVariable xml -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 87: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:239 - ReplaceVariable xml -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 88: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:239 - ReplaceVariable xml -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 89: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:239 - ReplaceVariable xml -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 90: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:239 - ReplaceConstant - <wsdl:definitions ->  - Status: Killed
+--> Mutation 91: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:239 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 92: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:240 - ReplaceVariable xml -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Killed
+--> Mutation 93: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:240 - ReplaceVariable xml -> INIT_PROPERTY_SERVICES_PATH - Status: Killed
+--> Mutation 94: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:240 - ReplaceVariable xml -> INIT_PROPERTY_ENABLE_LIST - Status: Killed
+--> Mutation 95: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:240 - ReplaceVariable xml -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Killed
+--> Mutation 96: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:240 - ReplaceVariable xml -> INIT_PROPERTY_TRANSPORT_NAME - Status: Killed
+--> Mutation 97: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:240 - ReplaceVariable xml -> INIT_PROPERTY_USE_SECURITY - Status: Killed
+--> Mutation 98: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable xml -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 99: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable xml -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 100: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable xml -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 101: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable xml -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 102: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable xml -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 103: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable xml -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 104: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> 0 - Status: Survived
+--> Mutation 105: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> 1 - Status: Survived
+--> Mutation 106: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> -1 - Status: Survived
+--> Mutation 107: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> 6 - Status: Survived
+--> Mutation 108: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> 8 - Status: Survived
+--> Mutation 109: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 110: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 
+ ->  - Status: Survived
+--> Mutation 111: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 112: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 
+ ->  - Status: Survived
+--> Mutation 113: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 114: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 115: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 116: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 117: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant -    ->  - Status: Survived
+--> Mutation 118: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 119: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 120: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 121: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 122: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 123: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - > < ->  - Status: Survived
+--> Mutation 124: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 125: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 126: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 127: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 128: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 129: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectOrderByComparator -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 130: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectOrderByComparator -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 131: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectOrderByComparator -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 132: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectOrderByComparator -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 133: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectOrderByComparator -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 134: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectOrderByComparator -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 135: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 136: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 137: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 138: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 139: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 140: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectLongArray -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 141: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectLongArray -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 142: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectLongArray -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 143: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectLongArray -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 144: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectLongArray -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 145: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectLongArray -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 146: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> 0 - Status: Survived
+--> Mutation 147: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> 1 - Status: Survived
+--> Mutation 148: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> -1 - Status: Survived
+--> Mutation 149: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> 5 - Status: Survived
+--> Mutation 150: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> 7 - Status: Survived
+--> Mutation 151: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectStringArray -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 152: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectStringArray -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 153: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectStringArray -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 154: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectStringArray -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 155: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectStringArray -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 156: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _incorrectStringArray -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 157: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> 0 - Status: Survived
+--> Mutation 158: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> 1 - Status: Survived
+--> Mutation 159: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> -1 - Status: Survived
+--> Mutation 160: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> 6 - Status: Survived
+--> Mutation 161: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 7 -> 8 - Status: Survived
+--> Mutation 162: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 163: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 164: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 165: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 166: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 167: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 168: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 169: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 170: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 171: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 172: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 173: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - >< ->  - Status: Survived
+--> Mutation 174: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 175: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 176: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 177: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 178: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 179: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctOrderByComparator -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 180: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctOrderByComparator -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 181: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctOrderByComparator -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 182: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctOrderByComparator -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 183: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctOrderByComparator -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 184: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctOrderByComparator -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 185: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 186: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 187: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 188: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 189: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 190: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctLongArray -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 191: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctLongArray -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 192: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctLongArray -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 193: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctLongArray -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 194: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctLongArray -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 195: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctLongArray -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 196: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> 0 - Status: Survived
+--> Mutation 197: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> 1 - Status: Survived
+--> Mutation 198: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> -1 - Status: Survived
+--> Mutation 199: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> 5 - Status: Survived
+--> Mutation 200: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceConstant - 6 -> 7 - Status: Survived
+--> Mutation 201: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctStringArray -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 202: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctStringArray -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 203: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctStringArray -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 204: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctStringArray -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 205: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctStringArray -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 206: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:243 - ReplaceVariable _correctStringArray -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+--> Mutation 207: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:255 - ReplaceVariable xml -> INIT_PROPERTY_DISABLE_SERVICES_LIST - Status: Survived
+--> Mutation 208: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:255 - ReplaceVariable xml -> INIT_PROPERTY_SERVICES_PATH - Status: Survived
+--> Mutation 209: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:255 - ReplaceVariable xml -> INIT_PROPERTY_ENABLE_LIST - Status: Survived
+--> Mutation 210: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:255 - ReplaceVariable xml -> INIT_PROPERTY_JWS_CLASS_DIR - Status: Survived
+--> Mutation 211: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:255 - ReplaceVariable xml -> INIT_PROPERTY_TRANSPORT_NAME - Status: Survived
+--> Mutation 212: com.liferay.util.axis.AxisServlet.fixXml(Ljava/lang/String;)Ljava/lang/String;:255 - ReplaceVariable xml -> INIT_PROPERTY_USE_SECURITY - Status: Survived
+* Compiling and checking tests
 * Computation finished

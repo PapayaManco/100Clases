@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: weka.core.Version
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/107_weka/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\107_weka\evosuite-files\evosuite.properties
+* Connecting to master process on port 11723
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 454
-* Using seed 2482030657809
+* Using seed 1710476179901
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 163 / 454
-* Search finished after 182s and 2830 generations, 799413 statements, best individual has fitness: 22.0
+* Search finished after 181s and 4707 generations, 1331109 statements, best individual has fitness: 22.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -54,10 +54,10 @@
 * Coverage of criterion CBRANCH: 94%
 * Total number of goals: 34
 * Number of covered goals: 32
-* Generated 20 tests with total length 58
+* Generated 18 tests with total length 46
 * Resulting test suite's coverage: 96% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 56%
+* Resulting test suite's mutation score: 55%
 * There are surviving mutants: 
 --> Mutation 0: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:88 - ReplaceConstant - 0 -> 1 - Status: Survived
 --> Mutation 1: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:89 - ReplaceConstant - 0 -> 1 - Status: Survived
@@ -95,7 +95,7 @@
 --> Mutation 33: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:96 - ReplaceVariable tmpStr -> VERSION_FILE - Status: Killed
 --> Mutation 34: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:96 - ReplaceVariable tmpStr -> version - Status: Survived
 --> Mutation 35: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:96 - ReplaceConstant - . ->  - Status: Killed
---> Mutation 36: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:97 - ReplaceVariable tmpStr -> VERSION - Status: Killed
+--> Mutation 36: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:97 - ReplaceVariable tmpStr -> VERSION - Status: Survived
 --> Mutation 37: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:97 - ReplaceVariable tmpStr -> VERSION_FILE - Status: Killed
 --> Mutation 38: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:97 - ReplaceVariable tmpStr -> version - Status: Survived
 --> Mutation 39: weka.core.Version.parseVersion(Ljava/lang/String;[I[I[I)V:97 - ReplaceVariable tmpStr -> VERSION - Status: Survived
@@ -171,7 +171,7 @@
 --> Mutation 109: weka.core.Version.compareTo(Ljava/lang/Object;)I:150 - ReplaceVariable maj -> min - Status: Killed
 --> Mutation 110: weka.core.Version.compareTo(Ljava/lang/Object;)I:150 - ReplaceVariable min -> rev - Status: Killed
 --> Mutation 111: weka.core.Version.compareTo(Ljava/lang/Object;)I:150 - ReplaceVariable min -> maj - Status: Killed
---> Mutation 112: weka.core.Version.compareTo(Ljava/lang/Object;)I:150 - ReplaceVariable rev -> min - Status: Survived
+--> Mutation 112: weka.core.Version.compareTo(Ljava/lang/Object;)I:150 - ReplaceVariable rev -> min - Status: Killed
 --> Mutation 113: weka.core.Version.compareTo(Ljava/lang/Object;)I:150 - ReplaceVariable rev -> maj - Status: Killed
 --> Mutation 114: weka.core.Version.compareTo(Ljava/lang/Object;)I:151 - ReplaceVariable maj -> rev - Status: Killed
 --> Mutation 115: weka.core.Version.compareTo(Ljava/lang/Object;)I:151 - ReplaceVariable maj -> min - Status: Killed
@@ -180,11 +180,11 @@
 --> Mutation 118: weka.core.Version.compareTo(Ljava/lang/Object;)I:152 - ReplaceVariable min -> maj - Status: Killed
 --> Mutation 119: weka.core.Version.compareTo(Ljava/lang/Object;)I:152 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 120: weka.core.Version.compareTo(Ljava/lang/Object;)I:153 - ReplaceVariable rev -> min - Status: Survived
---> Mutation 121: weka.core.Version.compareTo(Ljava/lang/Object;)I:153 - ReplaceVariable rev -> maj - Status: Killed
+--> Mutation 121: weka.core.Version.compareTo(Ljava/lang/Object;)I:153 - ReplaceVariable rev -> maj - Status: Survived
 --> Mutation 122: weka.core.Version.compareTo(Ljava/lang/Object;)I:153 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 123: weka.core.Version.compareTo(Ljava/lang/Object;)I:156 - ReplaceConstant - : no version-string for comparTo povided! ->  - Status: Survived
---> Mutation 124: weka.core.Version.compareTo(Ljava/lang/Object;)I:157 - ReplaceConstant - -1 -> 0 - Status: Survived
---> Mutation 125: weka.core.Version.compareTo(Ljava/lang/Object;)I:157 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 124: weka.core.Version.compareTo(Ljava/lang/Object;)I:157 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 125: weka.core.Version.compareTo(Ljava/lang/Object;)I:157 - ReplaceConstant - -1 -> 1 - Status: Killed
 --> Mutation 126: weka.core.Version.compareTo(Ljava/lang/Object;)I:157 - ReplaceConstant - -1 -> -2 - Status: Survived
 --> Mutation 127: weka.core.Version.compareTo(Ljava/lang/Object;)I:158 - ReplaceConstant - -1 -> 0 - Status: Survived
 --> Mutation 128: weka.core.Version.compareTo(Ljava/lang/Object;)I:158 - ReplaceConstant - -1 -> 1 - Status: Survived
@@ -220,7 +220,7 @@
 --> Mutation 158: weka.core.Version.compareTo(Ljava/lang/Object;)I:165 - ReplaceVariable major -> MAJOR - Status: Survived
 --> Mutation 159: weka.core.Version.compareTo(Ljava/lang/Object;)I:165 - ReplaceVariable major -> MINOR - Status: Killed
 --> Mutation 160: weka.core.Version.compareTo(Ljava/lang/Object;)I:165 - ReplaceVariable major -> minor - Status: Killed
---> Mutation 161: weka.core.Version.compareTo(Ljava/lang/Object;)I:165 - ReplaceVariable major -> revision - Status: Killed
+--> Mutation 161: weka.core.Version.compareTo(Ljava/lang/Object;)I:165 - ReplaceVariable major -> revision - Status: Survived
 --> Mutation 162: weka.core.Version.compareTo(Ljava/lang/Object;)I:165 - InsertUnaryOp Negation of major - Status: Killed
 --> Mutation 163: weka.core.Version.compareTo(Ljava/lang/Object;)I:165 - InsertUnaryOp IINC 1 major - Status: Killed
 --> Mutation 164: weka.core.Version.compareTo(Ljava/lang/Object;)I:165 - InsertUnaryOp IINC -1 major - Status: Killed
@@ -232,7 +232,7 @@
 --> Mutation 170: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - InsertUnaryOp Negation - Status: Killed
 --> Mutation 171: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 172: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - InsertUnaryOp -1 - Status: Killed
---> Mutation 173: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceVariable minor -> REVISION - Status: Killed
+--> Mutation 173: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceVariable minor -> REVISION - Status: Survived
 --> Mutation 174: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceVariable minor -> MAJOR - Status: Survived
 --> Mutation 175: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceVariable minor -> MINOR - Status: Killed
 --> Mutation 176: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceVariable minor -> major - Status: Killed
@@ -242,18 +242,18 @@
 --> Mutation 180: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - InsertUnaryOp IINC -1 minor - Status: Killed
 --> Mutation 181: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceComparisonOperator >= -> -1 - Status: Killed
 --> Mutation 182: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceComparisonOperator >= -> > - Status: Killed
---> Mutation 183: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 183: weka.core.Version.compareTo(Ljava/lang/Object;)I:166 - ReplaceComparisonOperator >= -> == - Status: Killed
 --> Mutation 184: weka.core.Version.compareTo(Ljava/lang/Object;)I:167 - ReplaceConstant - -1 -> 0 - Status: Killed
 --> Mutation 185: weka.core.Version.compareTo(Ljava/lang/Object;)I:167 - ReplaceConstant - -1 -> 1 - Status: Killed
 --> Mutation 186: weka.core.Version.compareTo(Ljava/lang/Object;)I:167 - ReplaceConstant - -1 -> -2 - Status: Killed
---> Mutation 187: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable MINOR -> REVISION - Status: Killed
+--> Mutation 187: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable MINOR -> REVISION - Status: Survived
 --> Mutation 188: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable MINOR -> MAJOR - Status: Killed
 --> Mutation 189: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - InsertUnaryOp Negation - Status: Killed
 --> Mutation 190: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - InsertUnaryOp +1 - Status: Killed
---> Mutation 191: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - InsertUnaryOp -1 - Status: Killed
---> Mutation 192: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable minor -> REVISION - Status: Survived
+--> Mutation 191: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 192: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable minor -> REVISION - Status: Killed
 --> Mutation 193: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable minor -> MAJOR - Status: Killed
---> Mutation 194: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable minor -> MINOR - Status: Killed
+--> Mutation 194: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable minor -> MINOR - Status: Survived
 --> Mutation 195: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable minor -> major - Status: Killed
 --> Mutation 196: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - ReplaceVariable minor -> revision - Status: Survived
 --> Mutation 197: weka.core.Version.compareTo(Ljava/lang/Object;)I:169 - InsertUnaryOp Negation of minor - Status: Killed
@@ -266,26 +266,26 @@
 --> Mutation 204: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable REVISION -> MINOR - Status: Survived
 --> Mutation 205: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp Negation - Status: Killed
 --> Mutation 206: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp +1 - Status: Survived
---> Mutation 207: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp -1 - Status: Survived
---> Mutation 208: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable revision -> REVISION - Status: Killed
---> Mutation 209: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable revision -> MAJOR - Status: Killed
+--> Mutation 207: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 208: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable revision -> REVISION - Status: Survived
+--> Mutation 209: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable revision -> MAJOR - Status: Survived
 --> Mutation 210: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable revision -> MINOR - Status: Survived
---> Mutation 211: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable revision -> major - Status: Killed
+--> Mutation 211: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable revision -> major - Status: Survived
 --> Mutation 212: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceVariable revision -> minor - Status: Survived
---> Mutation 213: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp Negation of revision - Status: Killed
---> Mutation 214: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp IINC 1 revision - Status: Survived
+--> Mutation 213: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp Negation of revision - Status: Survived
+--> Mutation 214: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp IINC 1 revision - Status: Killed
 --> Mutation 215: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - InsertUnaryOp IINC -1 revision - Status: Killed
---> Mutation 216: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceComparisonOperator >= -> -1 - Status: Survived
---> Mutation 217: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 216: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 217: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceComparisonOperator >= -> > - Status: Killed
 --> Mutation 218: weka.core.Version.compareTo(Ljava/lang/Object;)I:170 - ReplaceComparisonOperator >= -> == - Status: Killed
 --> Mutation 219: weka.core.Version.compareTo(Ljava/lang/Object;)I:171 - ReplaceConstant - -1 -> 0 - Status: Survived
---> Mutation 220: weka.core.Version.compareTo(Ljava/lang/Object;)I:171 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 220: weka.core.Version.compareTo(Ljava/lang/Object;)I:171 - ReplaceConstant - -1 -> 1 - Status: Survived
 --> Mutation 221: weka.core.Version.compareTo(Ljava/lang/Object;)I:171 - ReplaceConstant - -1 -> -2 - Status: Killed
 --> Mutation 222: weka.core.Version.equals(Ljava/lang/Object;)Z:198 - ReplaceComparisonOperator != -> -1 - Status: Killed
 --> Mutation 223: weka.core.Version.equals(Ljava/lang/Object;)Z:198 - ReplaceComparisonOperator != -> < - Status: Survived
 --> Mutation 224: weka.core.Version.equals(Ljava/lang/Object;)Z:198 - ReplaceComparisonOperator != -> > - Status: Killed
---> Mutation 225: weka.core.Version.equals(Ljava/lang/Object;)Z:198 - ReplaceConstant - 1 -> 0 - Status: Killed
---> Mutation 226: weka.core.Version.equals(Ljava/lang/Object;)Z:198 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 225: weka.core.Version.equals(Ljava/lang/Object;)Z:198 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 226: weka.core.Version.equals(Ljava/lang/Object;)Z:198 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 227: weka.core.Version.isOlder(Ljava/lang/Object;)Z:209 - ReplaceConstant - -1 -> 0 - Status: Killed
 --> Mutation 228: weka.core.Version.isOlder(Ljava/lang/Object;)Z:209 - ReplaceConstant - -1 -> 1 - Status: Killed
 --> Mutation 229: weka.core.Version.isOlder(Ljava/lang/Object;)Z:209 - ReplaceConstant - -1 -> -2 - Status: Killed
@@ -324,19 +324,4 @@ comparing with  ->  - Status: Survived
 --> Mutation 260: weka.core.Version.main([Ljava/lang/String;)V:263 - ReplaceVariable tmpStr -> VERSION - Status: Survived
 --> Mutation 261: weka.core.Version.main([Ljava/lang/String;)V:263 - ReplaceVariable tmpStr -> VERSION_FILE - Status: Survived
 * Compiling and checking tests
-[MASTER] 00:56:03.453 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:08.717 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:13.966 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:19.219 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:24.457 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:29.703 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:34.949 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:40.200 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:45.436 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:50.681 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 00:56:55.915 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'Version_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

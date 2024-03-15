@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.jsecurity.web.attr.CookieAttribute
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/18_jsecurity/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\18_jsecurity\evosuite-files\evosuite.properties
+* Connecting to master process on port 21469
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:23:43.699 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 02:23:45.085 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 02:23:45.661 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class org.jsecurity.web.attr.CookieAttribute
 * Test criteria:
@@ -21,13 +18,206 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 346
-* Using seed 2482030657809
+* Using seed 1710481670435
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 207 / 346
-[MASTER] 02:23:58.620 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.ServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 02:24:01.100 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 02:24:18.784 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.Frame due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.JCheckBox due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.swing.ImageIcon due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.awt.image.BufferedImage due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-[MASTER] 02:24:19.109 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
-[MASTER] 02:24:26.181 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-* Search finished after 181s and 1472 generations, 388421 statements, best individual has fitness: 125.0
+[MASTER] 02:47:52.863 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 02:47:57.162 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.ServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:48:30.066 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 02:50:48.281 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 181s and 4528 generations, 1198519 statements, best individual has fitness: 127.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 72%
+* Total number of goals: 80
+* Number of covered goals: 58
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 44%
+* Total number of goals: 36
+* Number of covered goals: 16
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 68%
+* Total number of goals: 154
+* Number of covered goals: 105
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 80%
+* Total number of goals: 10
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 15
+* Number of covered goals: 15
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 87%
+* Total number of goals: 15
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 44%
+* Total number of goals: 36
+* Number of covered goals: 16
+* Generated 25 tests with total length 84
+* Resulting test suite's coverage: 67% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 43%
+* There are surviving mutants: 
+--> Mutation 0: org.jsecurity.web.attr.CookieAttribute.<init>()V:70 - ReplaceVariable DEFAULT_PATH -> name - Status: Killed
+--> Mutation 1: org.jsecurity.web.attr.CookieAttribute.<init>()V:70 - ReplaceVariable DEFAULT_PATH -> DEFAULT_NAME - Status: Killed
+--> Mutation 2: org.jsecurity.web.attr.CookieAttribute.<init>()V:71 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 3: org.jsecurity.web.attr.CookieAttribute.<init>()V:71 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 4: org.jsecurity.web.attr.CookieAttribute.<init>()V:71 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 5: org.jsecurity.web.attr.CookieAttribute.<init>()V:72 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 6: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;)V:70 - ReplaceVariable DEFAULT_PATH -> name - Status: Survived
+--> Mutation 7: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;)V:70 - ReplaceVariable DEFAULT_PATH -> DEFAULT_NAME - Status: Survived
+--> Mutation 8: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;)V:71 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 9: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;)V:71 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 10: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;)V:71 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 11: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;)V:72 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 12: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:70 - ReplaceVariable DEFAULT_PATH -> name - Status: Survived
+--> Mutation 13: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:70 - ReplaceVariable DEFAULT_PATH -> DEFAULT_NAME - Status: Survived
+--> Mutation 14: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:71 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 15: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:71 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 16: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:71 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 17: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:72 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 18: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:102 - ReplaceVariable path -> name - Status: Killed
+--> Mutation 19: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:102 - ReplaceVariable path -> DEFAULT_NAME - Status: Killed
+--> Mutation 20: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;)V:102 - ReplaceVariable path -> DEFAULT_PATH - Status: Survived
+--> Mutation 21: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:70 - ReplaceVariable DEFAULT_PATH -> name - Status: Survived
+--> Mutation 22: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:70 - ReplaceVariable DEFAULT_PATH -> DEFAULT_NAME - Status: Survived
+--> Mutation 23: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:71 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 24: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:71 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 25: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:71 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 26: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:72 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 27: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:117 - ReplaceVariable maxAge -> INDEFINITE - Status: Killed
+--> Mutation 28: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:117 - ReplaceVariable maxAge -> DEFAULT_MAX_AGE - Status: Killed
+--> Mutation 29: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:117 - ReplaceVariable maxAge -> ONE_YEAR - Status: Killed
+--> Mutation 30: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:117 - InsertUnaryOp Negation of maxAge - Status: Killed
+--> Mutation 31: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:117 - InsertUnaryOp IINC 1 maxAge - Status: Killed
+--> Mutation 32: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;I)V:117 - InsertUnaryOp IINC -1 maxAge - Status: Killed
+--> Mutation 33: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;I)V:131 - ReplaceVariable maxAge -> INDEFINITE - Status: Killed
+--> Mutation 34: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;I)V:131 - ReplaceVariable maxAge -> DEFAULT_MAX_AGE - Status: Killed
+--> Mutation 35: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;I)V:131 - ReplaceVariable maxAge -> ONE_YEAR - Status: Killed
+--> Mutation 36: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;I)V:131 - InsertUnaryOp Negation of maxAge - Status: Killed
+--> Mutation 37: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;I)V:131 - InsertUnaryOp IINC 1 maxAge - Status: Killed
+--> Mutation 38: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;I)V:131 - InsertUnaryOp IINC -1 maxAge - Status: Killed
+--> Mutation 39: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:70 - ReplaceVariable DEFAULT_PATH -> name - Status: Survived
+--> Mutation 40: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:70 - ReplaceVariable DEFAULT_PATH -> DEFAULT_NAME - Status: Survived
+--> Mutation 41: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:71 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 42: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:71 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 43: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:71 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 44: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:72 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 45: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:148 - ReplaceVariable path -> name - Status: Survived
+--> Mutation 46: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:148 - ReplaceVariable path -> DEFAULT_NAME - Status: Killed
+--> Mutation 47: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:148 - ReplaceVariable path -> DEFAULT_PATH - Status: Killed
+--> Mutation 48: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:149 - ReplaceVariable maxAge -> INDEFINITE - Status: Killed
+--> Mutation 49: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:149 - ReplaceVariable maxAge -> DEFAULT_MAX_AGE - Status: Killed
+--> Mutation 50: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:149 - ReplaceVariable maxAge -> ONE_YEAR - Status: Killed
+--> Mutation 51: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:149 - InsertUnaryOp Negation of maxAge - Status: Killed
+--> Mutation 52: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:149 - InsertUnaryOp IINC 1 maxAge - Status: Killed
+--> Mutation 53: org.jsecurity.web.attr.CookieAttribute.<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Class;)V:149 - InsertUnaryOp IINC -1 maxAge - Status: Killed
+--> Mutation 54: org.jsecurity.web.attr.CookieAttribute.getPath()Ljava/lang/String;:162 - ReplaceVariable path -> name - Status: Killed
+--> Mutation 55: org.jsecurity.web.attr.CookieAttribute.getPath()Ljava/lang/String;:162 - ReplaceVariable path -> DEFAULT_NAME - Status: Killed
+--> Mutation 56: org.jsecurity.web.attr.CookieAttribute.getPath()Ljava/lang/String;:162 - ReplaceVariable path -> DEFAULT_PATH - Status: Killed
+--> Mutation 57: org.jsecurity.web.attr.CookieAttribute.setPath(Ljava/lang/String;)V:175 - ReplaceVariable path -> name - Status: Killed
+--> Mutation 58: org.jsecurity.web.attr.CookieAttribute.setPath(Ljava/lang/String;)V:175 - ReplaceVariable path -> DEFAULT_NAME - Status: Killed
+--> Mutation 59: org.jsecurity.web.attr.CookieAttribute.setPath(Ljava/lang/String;)V:175 - ReplaceVariable path -> DEFAULT_PATH - Status: Killed
+--> Mutation 60: org.jsecurity.web.attr.CookieAttribute.getMaxAge()I:187 - ReplaceVariable maxAge -> INDEFINITE - Status: Killed
+--> Mutation 61: org.jsecurity.web.attr.CookieAttribute.getMaxAge()I:187 - ReplaceVariable maxAge -> DEFAULT_MAX_AGE - Status: Killed
+--> Mutation 62: org.jsecurity.web.attr.CookieAttribute.getMaxAge()I:187 - ReplaceVariable maxAge -> ONE_YEAR - Status: Killed
+--> Mutation 63: org.jsecurity.web.attr.CookieAttribute.getMaxAge()I:187 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 64: org.jsecurity.web.attr.CookieAttribute.getMaxAge()I:187 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 65: org.jsecurity.web.attr.CookieAttribute.getMaxAge()I:187 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 66: org.jsecurity.web.attr.CookieAttribute.setMaxAge(I)V:199 - ReplaceVariable maxAge -> INDEFINITE - Status: Killed
+--> Mutation 67: org.jsecurity.web.attr.CookieAttribute.setMaxAge(I)V:199 - ReplaceVariable maxAge -> DEFAULT_MAX_AGE - Status: Killed
+--> Mutation 68: org.jsecurity.web.attr.CookieAttribute.setMaxAge(I)V:199 - ReplaceVariable maxAge -> ONE_YEAR - Status: Killed
+--> Mutation 69: org.jsecurity.web.attr.CookieAttribute.setMaxAge(I)V:199 - InsertUnaryOp Negation of maxAge - Status: Killed
+--> Mutation 70: org.jsecurity.web.attr.CookieAttribute.setMaxAge(I)V:199 - InsertUnaryOp IINC 1 maxAge - Status: Killed
+--> Mutation 71: org.jsecurity.web.attr.CookieAttribute.setMaxAge(I)V:199 - InsertUnaryOp IINC -1 maxAge - Status: Killed
+--> Mutation 72: org.jsecurity.web.attr.CookieAttribute.isSecure()Z:203 - ReplaceVariable secure -> mutable - Status: Killed
+--> Mutation 73: org.jsecurity.web.attr.CookieAttribute.isSecure()Z:203 - ReplaceVariable secure -> DEFAULT_SECURE - Status: Killed
+--> Mutation 74: org.jsecurity.web.attr.CookieAttribute.isSecure()Z:203 - ReplaceVariable secure -> checkRequestParamsFirst - Status: Killed
+--> Mutation 75: org.jsecurity.web.attr.CookieAttribute.isSecure()Z:203 - ReplaceVariable secure -> checkRequestParams - Status: Killed
+--> Mutation 76: org.jsecurity.web.attr.CookieAttribute.isSecure()Z:203 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 77: org.jsecurity.web.attr.CookieAttribute.setSecure(Z)V:207 - ReplaceVariable secure -> mutable - Status: Killed
+--> Mutation 78: org.jsecurity.web.attr.CookieAttribute.setSecure(Z)V:207 - ReplaceVariable secure -> DEFAULT_SECURE - Status: Killed
+--> Mutation 79: org.jsecurity.web.attr.CookieAttribute.setSecure(Z)V:207 - ReplaceVariable secure -> checkRequestParamsFirst - Status: Killed
+--> Mutation 80: org.jsecurity.web.attr.CookieAttribute.setSecure(Z)V:207 - ReplaceVariable secure -> checkRequestParams - Status: Killed
+--> Mutation 81: org.jsecurity.web.attr.CookieAttribute.setSecure(Z)V:207 - InsertUnaryOp Negation of secure - Status: Survived
+--> Mutation 82: org.jsecurity.web.attr.CookieAttribute.setSecure(Z)V:207 - InsertUnaryOp IINC 1 secure - Status: Killed
+--> Mutation 83: org.jsecurity.web.attr.CookieAttribute.setSecure(Z)V:207 - InsertUnaryOp IINC -1 secure - Status: Killed
+--> Mutation 84: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:221 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 85: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:222 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 86: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:222 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 87: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:222 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 88: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:222 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 89: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:223 - ReplaceVariable cookieName -> DEFAULT_NAME - Status: Survived
+--> Mutation 90: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:223 - ReplaceVariable cookieName -> DEFAULT_PATH - Status: Survived
+--> Mutation 91: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:223 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 92: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:223 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 93: org.jsecurity.web.attr.CookieAttribute.getCookie(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljavax/servlet/http/Cookie;:223 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 94: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:236 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 95: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:236 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 96: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:236 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 97: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:236 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 98: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:238 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 99: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:239 - ReplaceConstant - Found string value [ ->  - Status: Survived
+--> Mutation 100: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:239 - ReplaceVariable stringValue -> name - Status: Survived
+--> Mutation 101: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:239 - ReplaceVariable stringValue -> DEFAULT_NAME - Status: Survived
+--> Mutation 102: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:239 - ReplaceVariable stringValue -> DEFAULT_PATH - Status: Survived
+--> Mutation 103: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:239 - ReplaceConstant - ] from HttpServletRequest Cookie [ ->  - Status: Survived
+--> Mutation 104: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:239 - ReplaceConstant - ] ->  - Status: Survived
+--> Mutation 105: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:241 - ReplaceVariable stringValue -> name - Status: Survived
+--> Mutation 106: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:241 - ReplaceVariable stringValue -> DEFAULT_NAME - Status: Survived
+--> Mutation 107: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:241 - ReplaceVariable stringValue -> DEFAULT_PATH - Status: Survived
+--> Mutation 108: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:243 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 109: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:244 - ReplaceConstant - No value found in request Cookies under cookie name [ ->  - Status: Survived
+--> Mutation 110: org.jsecurity.web.attr.CookieAttribute.onRetrieveValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljava/lang/Object;:244 - ReplaceConstant - ] ->  - Status: Survived
+--> Mutation 111: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:258 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 112: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable name -> name - Status: Survived
+--> Mutation 113: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable name -> path - Status: Survived
+--> Mutation 114: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable name -> stringValue - Status: Survived
+--> Mutation 115: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable name -> DEFAULT_NAME - Status: Survived
+--> Mutation 116: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable name -> DEFAULT_PATH - Status: Survived
+--> Mutation 117: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable stringValue -> name - Status: Survived
+--> Mutation 118: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable stringValue -> path - Status: Survived
+--> Mutation 119: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable stringValue -> DEFAULT_NAME - Status: Survived
+--> Mutation 120: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:261 - ReplaceVariable stringValue -> DEFAULT_PATH - Status: Survived
+--> Mutation 121: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:262 - ReplaceVariable maxAge -> INDEFINITE - Status: Survived
+--> Mutation 122: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:262 - ReplaceVariable maxAge -> DEFAULT_MAX_AGE - Status: Survived
+--> Mutation 123: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:262 - ReplaceVariable maxAge -> ONE_YEAR - Status: Survived
+--> Mutation 124: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:262 - InsertUnaryOp Negation of maxAge - Status: Survived
+--> Mutation 125: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:262 - InsertUnaryOp IINC 1 maxAge - Status: Survived
+--> Mutation 126: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:262 - InsertUnaryOp IINC -1 maxAge - Status: Survived
+--> Mutation 127: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:263 - ReplaceVariable path -> name - Status: Survived
+--> Mutation 128: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:263 - ReplaceVariable path -> stringValue - Status: Survived
+--> Mutation 129: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:263 - ReplaceVariable path -> DEFAULT_NAME - Status: Survived
+--> Mutation 130: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:263 - ReplaceVariable path -> DEFAULT_PATH - Status: Survived
+--> Mutation 131: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:264 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 132: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:265 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 133: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:269 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 134: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceConstant - Added Cookie [ ->  - Status: Survived
+--> Mutation 135: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable name -> name - Status: Survived
+--> Mutation 136: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable name -> path - Status: Survived
+--> Mutation 137: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable name -> stringValue - Status: Survived
+--> Mutation 138: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable name -> DEFAULT_NAME - Status: Survived
+--> Mutation 139: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable name -> DEFAULT_PATH - Status: Survived
+--> Mutation 140: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceConstant - ] to path [ ->  - Status: Survived
+--> Mutation 141: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable path -> name - Status: Survived
+--> Mutation 142: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable path -> stringValue - Status: Survived
+--> Mutation 143: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable path -> DEFAULT_NAME - Status: Survived
+--> Mutation 144: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable path -> DEFAULT_PATH - Status: Survived
+--> Mutation 145: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceConstant - ] with value [ ->  - Status: Survived
+--> Mutation 146: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable stringValue -> name - Status: Survived
+--> Mutation 147: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable stringValue -> path - Status: Survived
+--> Mutation 148: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable stringValue -> DEFAULT_NAME - Status: Survived
+--> Mutation 149: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceVariable stringValue -> DEFAULT_PATH - Status: Survived
+--> Mutation 150: org.jsecurity.web.attr.CookieAttribute.onStoreValue(Ljava/lang/Object;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:270 - ReplaceConstant - ] to the HttpServletResponse. ->  - Status: Survived
+--> Mutation 151: org.jsecurity.web.attr.CookieAttribute.removeValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:278 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 152: org.jsecurity.web.attr.CookieAttribute.removeValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:279 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 153: org.jsecurity.web.attr.CookieAttribute.removeValue(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:282 - ReplaceComparisonOperator != null -> = null - Status: Survived
+* Compiling and checking tests
 * Computation finished

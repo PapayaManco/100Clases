@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: de.huxhorn.lilith.swing.OpenPreviousDialog
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/43_lilith/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\43_lilith\evosuite-files\evosuite.properties
+* Connecting to master process on port 21885
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:00:42.149 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 03:00:42.387 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:00:44.167 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class de.huxhorn.lilith.swing.OpenPreviousDialog
 * Test criteria:
@@ -21,12 +18,214 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 479
-* Using seed 2482030657809
+* Using seed 1710483563405
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 247 / 479
-[MASTER] 03:00:45.730 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 03:00:49.899 [logback-1] WARN  TestCluster - Failed to check cache for de.huxhorn.lilith.swing.table.model.EventWrapperTableModel<T> : Type points to itself
-[MASTER] 03:01:13.745 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
-[MASTER] 03:01:37.404 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
-* Search finished after 181s and 1388 generations, 143373 statements, best individual has fitness: 8.0
+[MASTER] 03:19:28.500 [logback-1] WARN  TestCluster - Failed to check cache for de.huxhorn.lilith.swing.table.model.EventWrapperTableModel<T> : Type points to itself
+[MASTER] 03:19:38.787 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
+* Search finished after 181s and 2780 generations, 385356 statements, best individual has fitness: 8.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 0%
+* Total number of goals: 177
+* Number of covered goals: 0
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 2%
+* Total number of goals: 58
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 164
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 9%
+* Total number of goals: 11
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 11
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 0%
+* Total number of goals: 58
+* Number of covered goals: 0
+* Generated 1 tests with total length 1
+* Resulting test suite's coverage: 0% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: de.huxhorn.lilith.swing.OpenPreviousDialog.createUI()V:94 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 1: de.huxhorn.lilith.swing.OpenPreviousDialog.createUI()V:99 - ReplaceVariable contentPane -> buttonPanel - Status: Survived
+--> Mutation 2: de.huxhorn.lilith.swing.OpenPreviousDialog.createUI()V:99 - ReplaceConstant - OPEN_ACTION ->  - Status: Survived
+--> Mutation 3: de.huxhorn.lilith.swing.OpenPreviousDialog.createUI()V:100 - ReplaceVariable contentPane -> buttonPanel - Status: Survived
+--> Mutation 4: de.huxhorn.lilith.swing.OpenPreviousDialog.setVisible(Z)V:110 - InsertUnaryOp Negation of b - Status: Survived
+--> Mutation 5: de.huxhorn.lilith.swing.OpenPreviousDialog.setVisible(Z)V:110 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 6: de.huxhorn.lilith.swing.OpenPreviousDialog.setVisible(Z)V:114 - InsertUnaryOp Negation of b - Status: Survived
+--> Mutation 7: de.huxhorn.lilith.swing.OpenPreviousDialog.setVisible(Z)V:114 - InsertUnaryOp IINC 1 b - Status: Survived
+--> Mutation 8: de.huxhorn.lilith.swing.OpenPreviousDialog.setVisible(Z)V:114 - InsertUnaryOp IINC -1 b - Status: Survived
+--> Mutation 9: de.huxhorn.lilith.swing.OpenPreviousDialog.initOpenAction()V:127 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 10: de.huxhorn.lilith.swing.OpenPreviousDialog.initOpenAction()V:131 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 11: de.huxhorn.lilith.swing.OpenPreviousDialog.initOpenAction()V:131 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 12: de.huxhorn.lilith.swing.OpenPreviousDialog.initOpenAction()V:131 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 13: de.huxhorn.lilith.swing.OpenPreviousDialog.openSelection()V:139 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 14: de.huxhorn.lilith.swing.OpenPreviousDialog.openSelection()V:143 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 15: de.huxhorn.lilith.swing.OpenPreviousDialog.openSelection()V:145 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 16: de.huxhorn.lilith.swing.OpenPreviousDialog.openSelection()V:155 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 17: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;Lde/huxhorn/lilith/engine/LogFileFactory;Lde/huxhorn/lilith/swing/OpenPreviousDialog$EventType;)V:219 - ReplaceConstant - #,### ->  - Status: Survived
+--> Mutation 18: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.setSelectedSource(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)V:240 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 19: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.setSelectedSource(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)V:240 - ReplaceConstant - Selected source: {} ->  - Status: Survived
+--> Mutation 20: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:251 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 21: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:254 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 22: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:259 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 23: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:259 - ReplaceConstant - Primary ->  - Status: Survived
+--> Mutation 24: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 200 -> 0 - Status: Survived
+--> Mutation 25: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 200 -> 1 - Status: Survived
+--> Mutation 26: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 200 -> -1 - Status: Survived
+--> Mutation 27: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 200 -> 199 - Status: Survived
+--> Mutation 28: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 200 -> 201 - Status: Survived
+--> Mutation 29: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 300 -> 0 - Status: Survived
+--> Mutation 30: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 300 -> 1 - Status: Survived
+--> Mutation 31: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 300 -> -1 - Status: Survived
+--> Mutation 32: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 300 -> 299 - Status: Survived
+--> Mutation 33: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:260 - ReplaceConstant - 300 -> 301 - Status: Survived
+--> Mutation 34: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceVariable secondaryPane -> primaryPane - Status: Survived
+--> Mutation 35: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> 0 - Status: Survived
+--> Mutation 36: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> 1 - Status: Survived
+--> Mutation 37: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> -1 - Status: Survived
+--> Mutation 38: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> 299 - Status: Survived
+--> Mutation 39: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> 301 - Status: Survived
+--> Mutation 40: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> 0 - Status: Survived
+--> Mutation 41: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> 1 - Status: Survived
+--> Mutation 42: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> -1 - Status: Survived
+--> Mutation 43: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> 299 - Status: Survived
+--> Mutation 44: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:262 - ReplaceConstant - 300 -> 301 - Status: Survived
+--> Mutation 45: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:263 - ReplaceVariable secondaryPane -> primaryPane - Status: Survived
+--> Mutation 46: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:263 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 47: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.createUI()V:263 - ReplaceConstant - Secondary ->  - Status: Survived
+--> Mutation 48: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:279 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 49: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:282 - ReplaceVariable primary -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 50: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:283 - ReplaceVariable sourceList -> inactives - Status: Survived
+--> Mutation 51: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:283 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 52: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:286 - ReplaceVariable primary -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 53: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:286 - ReplaceVariable sourceList -> inactives - Status: Survived
+--> Mutation 54: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:288 - ReplaceVariable sourceList -> inactives - Status: Survived
+--> Mutation 55: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> ABORT - Status: Survived
+--> Mutation 56: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> PROPERTIES - Status: Survived
+--> Mutation 57: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> SOMEBITS - Status: Survived
+--> Mutation 58: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> WIDTH - Status: Survived
+--> Mutation 59: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> HEIGHT - Status: Survived
+--> Mutation 60: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 61: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> FRAMEBITS - Status: Survived
+--> Mutation 62: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 63: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> WHEN_FOCUSED - Status: Survived
+--> Mutation 64: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> ALLBITS - Status: Survived
+--> Mutation 65: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> ERROR - Status: Survived
+--> Mutation 66: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceVariable primaryCount -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 67: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - InsertUnaryOp Negation of primaryCount - Status: Survived
+--> Mutation 68: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - InsertUnaryOp IINC 1 primaryCount - Status: Survived
+--> Mutation 69: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - InsertUnaryOp IINC -1 primaryCount - Status: Survived
+--> Mutation 70: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 71: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 72: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:292 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 73: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> ABORT - Status: Survived
+--> Mutation 74: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> PROPERTIES - Status: Survived
+--> Mutation 75: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> SOMEBITS - Status: Survived
+--> Mutation 76: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> WIDTH - Status: Survived
+--> Mutation 77: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> HEIGHT - Status: Survived
+--> Mutation 78: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 79: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> FRAMEBITS - Status: Survived
+--> Mutation 80: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 81: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> WHEN_FOCUSED - Status: Survived
+--> Mutation 82: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> ALLBITS - Status: Survived
+--> Mutation 83: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> ERROR - Status: Survived
+--> Mutation 84: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - ReplaceVariable primaryCount -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 85: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - InsertUnaryOp Negation of primaryCount - Status: Survived
+--> Mutation 86: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - InsertUnaryOp IINC 1 primaryCount - Status: Survived
+--> Mutation 87: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:294 - InsertUnaryOp IINC -1 primaryCount - Status: Survived
+--> Mutation 88: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> ABORT - Status: Survived
+--> Mutation 89: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> PROPERTIES - Status: Survived
+--> Mutation 90: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> SOMEBITS - Status: Survived
+--> Mutation 91: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> WIDTH - Status: Survived
+--> Mutation 92: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> HEIGHT - Status: Survived
+--> Mutation 93: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 94: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> FRAMEBITS - Status: Survived
+--> Mutation 95: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 96: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> WHEN_FOCUSED - Status: Survived
+--> Mutation 97: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> ALLBITS - Status: Survived
+--> Mutation 98: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> ERROR - Status: Survived
+--> Mutation 99: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - ReplaceVariable primaryCount -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 100: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - InsertUnaryOp Negation of primaryCount - Status: Survived
+--> Mutation 101: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - InsertUnaryOp IINC 1 primaryCount - Status: Survived
+--> Mutation 102: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:295 - InsertUnaryOp IINC -1 primaryCount - Status: Survived
+--> Mutation 103: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.initUI()V:296 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 104: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:318 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 105: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:326 - ReplaceVariable secondary -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 106: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:326 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 107: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:328 - ReplaceConstant -  -  ->  - Status: Survived
+--> Mutation 108: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:330 - ReplaceConstant - 
+ ->  - Status: Survived
+--> Mutation 109: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:332 - ReplaceConstant - Number of events:  ->  - Status: Survived
+--> Mutation 110: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:333 - ReplaceConstant - 
+ ->  - Status: Survived
+--> Mutation 111: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:334 - ReplaceConstant - Size:  ->  - Status: Survived
+--> Mutation 112: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:335 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 113: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:335 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 114: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel.getLogInfo(Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;)Ljava/lang/String;:335 - ReplaceConstant - bytes ->  - Status: Survived
+--> Mutation 115: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenAction.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;)V:174 - ReplaceConstant - ENTER ->  - Status: Survived
+--> Mutation 116: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenAction.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;)V:175 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 117: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenAction.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;)V:175 - ReplaceConstant - accelerator: {} ->  - Status: Survived
+--> Mutation 118: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenAction.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;)V:176 - ReplaceConstant - AcceleratorKey ->  - Status: Survived
+--> Mutation 119: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenAction.actionPerformed(Ljava/awt/event/ActionEvent;)V:182 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 120: de.huxhorn.lilith.swing.OpenPreviousDialog$CancelAction.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;)V:192 - ReplaceConstant - ESCAPE ->  - Status: Survived
+--> Mutation 121: de.huxhorn.lilith.swing.OpenPreviousDialog$CancelAction.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;)V:193 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 122: de.huxhorn.lilith.swing.OpenPreviousDialog$CancelAction.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;)V:193 - ReplaceConstant - accelerator: {} ->  - Status: Survived
+--> Mutation 123: de.huxhorn.lilith.swing.OpenPreviousDialog$CancelAction.<init>(Lde/huxhorn/lilith/swing/OpenPreviousDialog;)V:194 - ReplaceConstant - AcceleratorKey ->  - Status: Survived
+--> Mutation 124: de.huxhorn.lilith.swing.OpenPreviousDialog$CancelAction.actionPerformed(Ljava/awt/event/ActionEvent;)V:199 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 125: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - InsertUnaryOp Negation of selectedIndex - Status: Survived
+--> Mutation 126: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - InsertUnaryOp IINC 1 selectedIndex - Status: Survived
+--> Mutation 127: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - InsertUnaryOp IINC -1 selectedIndex - Status: Survived
+--> Mutation 128: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - ReplaceComparisonOperator < -> -2 - Status: Survived
+--> Mutation 129: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 130: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 131: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - InsertUnaryOp Negation of selectedIndex - Status: Survived
+--> Mutation 132: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - InsertUnaryOp IINC 1 selectedIndex - Status: Survived
+--> Mutation 133: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - InsertUnaryOp IINC -1 selectedIndex - Status: Survived
+--> Mutation 134: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 135: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 136: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:355 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 137: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:357 - InsertUnaryOp Negation of selectedIndex - Status: Survived
+--> Mutation 138: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:357 - InsertUnaryOp IINC 1 selectedIndex - Status: Survived
+--> Mutation 139: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:357 - InsertUnaryOp IINC -1 selectedIndex - Status: Survived
+--> Mutation 140: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$PrimaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:359 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 141: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - InsertUnaryOp Negation of selectedIndex - Status: Survived
+--> Mutation 142: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - InsertUnaryOp IINC 1 selectedIndex - Status: Survived
+--> Mutation 143: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - InsertUnaryOp IINC -1 selectedIndex - Status: Survived
+--> Mutation 144: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 145: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 146: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 147: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 148: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 149: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:376 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 150: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:378 - InsertUnaryOp Negation of selectedIndex - Status: Survived
+--> Mutation 151: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:378 - InsertUnaryOp IINC 1 selectedIndex - Status: Survived
+--> Mutation 152: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:378 - InsertUnaryOp IINC -1 selectedIndex - Status: Survived
+--> Mutation 153: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:378 - InsertUnaryOp Negation of selectedIndex - Status: Survived
+--> Mutation 154: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:378 - InsertUnaryOp IINC 1 selectedIndex - Status: Survived
+--> Mutation 155: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:378 - InsertUnaryOp IINC -1 selectedIndex - Status: Survived
+--> Mutation 156: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryListSelectionListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:379 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 157: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryMouseListener.mouseClicked(Ljava/awt/event/MouseEvent;)V:396 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 158: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryMouseListener.mouseClicked(Ljava/awt/event/MouseEvent;)V:396 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 159: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryMouseListener.mouseClicked(Ljava/awt/event/MouseEvent;)V:396 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 160: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryMouseListener.mouseClicked(Ljava/awt/event/MouseEvent;)V:396 - ReplaceComparisonOperator <= -> > - Status: Survived
+--> Mutation 161: de.huxhorn.lilith.swing.OpenPreviousDialog$OpenPreviousPanel$SecondaryMouseListener.mouseClicked(Ljava/awt/event/MouseEvent;)V:399 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 162: de.huxhorn.lilith.swing.OpenPreviousDialog$TabChangeListener.stateChanged(Ljavax/swing/event/ChangeEvent;)V:163 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 163: de.huxhorn.lilith.swing.OpenPreviousDialog$TabChangeListener.stateChanged(Ljavax/swing/event/ChangeEvent;)V:163 - ReplaceConstant - stateChanged ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

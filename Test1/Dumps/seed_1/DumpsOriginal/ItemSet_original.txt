@@ -1,0 +1,900 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: weka.associations.ItemSet
+* Starting Client-0
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\107_weka\evosuite-files\evosuite.properties
+* Connecting to master process on port 3741
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class weka.associations.ItemSet
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1321
+* Using seed 1710508465678
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 226 / 1321
+[MASTER] 10:14:41.900 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 10:15:35.808 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 181s and 817 generations, 351931 statements, best individual has fitness: 676.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 48%
+* Total number of goals: 176
+* Number of covered goals: 84
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 52%
+* Total number of goals: 125
+* Number of covered goals: 65
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 47%
+* Total number of goals: 833
+* Number of covered goals: 390
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 83%
+* Total number of goals: 24
+* Number of covered goals: 20
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 95%
+* Total number of goals: 19
+* Number of covered goals: 18
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 50%
+* Total number of goals: 125
+* Number of covered goals: 62
+* Generated 55 tests with total length 245
+* Resulting test suite's coverage: 65% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 29%
+* There are surviving mutants: 
+--> Mutation 0: weka.associations.ItemSet.<init>(I)V:64 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 1: weka.associations.ItemSet.<init>(I)V:71 - ReplaceVariable totalTrans -> m_counter - Status: Survived
+--> Mutation 2: weka.associations.ItemSet.<init>(I)V:71 - ReplaceVariable totalTrans -> m_totalTransactions - Status: Survived
+--> Mutation 3: weka.associations.ItemSet.<init>(I)V:71 - InsertUnaryOp Negation of totalTrans - Status: Survived
+--> Mutation 4: weka.associations.ItemSet.<init>(I)V:71 - InsertUnaryOp IINC 1 totalTrans - Status: Survived
+--> Mutation 5: weka.associations.ItemSet.<init>(I)V:71 - InsertUnaryOp IINC -1 totalTrans - Status: Survived
+--> Mutation 6: weka.associations.ItemSet.<init>(I[I)V:64 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 7: weka.associations.ItemSet.<init>(I[I)V:81 - ReplaceVariable totalTrans -> m_counter - Status: Survived
+--> Mutation 8: weka.associations.ItemSet.<init>(I[I)V:81 - ReplaceVariable totalTrans -> m_totalTransactions - Status: Survived
+--> Mutation 9: weka.associations.ItemSet.<init>(I[I)V:81 - InsertUnaryOp Negation of totalTrans - Status: Survived
+--> Mutation 10: weka.associations.ItemSet.<init>(I[I)V:81 - InsertUnaryOp IINC 1 totalTrans - Status: Survived
+--> Mutation 11: weka.associations.ItemSet.<init>(I[I)V:81 - InsertUnaryOp IINC -1 totalTrans - Status: Survived
+--> Mutation 12: weka.associations.ItemSet.<init>(I[I)V:82 - ReplaceVariable array -> m_items - Status: Killed
+--> Mutation 13: weka.associations.ItemSet.<init>(I[I)V:83 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 14: weka.associations.ItemSet.<init>([I)V:64 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 15: weka.associations.ItemSet.<init>([I)V:91 - ReplaceVariable array -> m_items - Status: Killed
+--> Mutation 16: weka.associations.ItemSet.<init>([I)V:92 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 17: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:103 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 18: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:103 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 19: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:103 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 20: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 21: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 22: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p1 -> m_counter - Status: Survived
+--> Mutation 23: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p1 -> m_totalTransactions - Status: Survived
+--> Mutation 24: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p1 -> numItemSetVals - Status: Survived
+--> Mutation 25: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p1 -> p2 - Status: Survived
+--> Mutation 26: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p1 -> numInstVals - Status: Survived
+--> Mutation 27: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp Negation of p1 - Status: Survived
+--> Mutation 28: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp IINC 1 p1 - Status: Survived
+--> Mutation 29: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp IINC -1 p1 - Status: Killed
+--> Mutation 30: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numInstVals -> m_counter - Status: Survived
+--> Mutation 31: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numInstVals -> m_totalTransactions - Status: Killed
+--> Mutation 32: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numInstVals -> p1 - Status: Survived
+--> Mutation 33: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numInstVals -> numItemSetVals - Status: Survived
+--> Mutation 34: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numInstVals -> p2 - Status: Survived
+--> Mutation 35: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp Negation of numInstVals - Status: Survived
+--> Mutation 36: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp IINC 1 numInstVals - Status: Killed
+--> Mutation 37: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp IINC -1 numInstVals - Status: Survived
+--> Mutation 38: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 39: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceComparisonOperator < -> -2 - Status: Survived
+--> Mutation 40: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceComparisonOperator < -> <= - Status: Killed
+--> Mutation 41: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p2 -> m_counter - Status: Survived
+--> Mutation 42: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p2 -> m_totalTransactions - Status: Survived
+--> Mutation 43: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p2 -> p1 - Status: Survived
+--> Mutation 44: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p2 -> numItemSetVals - Status: Killed
+--> Mutation 45: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable p2 -> numInstVals - Status: Survived
+--> Mutation 46: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp Negation of p2 - Status: Survived
+--> Mutation 47: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp IINC 1 p2 - Status: Survived
+--> Mutation 48: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp IINC -1 p2 - Status: Killed
+--> Mutation 49: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numItemSetVals -> m_counter - Status: Killed
+--> Mutation 50: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numItemSetVals -> m_totalTransactions - Status: Killed
+--> Mutation 51: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numItemSetVals -> p1 - Status: Killed
+--> Mutation 52: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numItemSetVals -> p2 - Status: Killed
+--> Mutation 53: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceVariable numItemSetVals -> numInstVals - Status: Killed
+--> Mutation 54: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp Negation of numItemSetVals - Status: Killed
+--> Mutation 55: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp IINC 1 numItemSetVals - Status: Killed
+--> Mutation 56: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - InsertUnaryOp IINC -1 numItemSetVals - Status: Survived
+--> Mutation 57: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 58: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 59: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:107 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 60: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:108 - ReplaceConstant - 2147483647 -> 0 - Status: Killed
+--> Mutation 61: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:108 - ReplaceConstant - 2147483647 -> 1 - Status: Killed
+--> Mutation 62: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:108 - ReplaceConstant - 2147483647 -> -1 - Status: Survived
+--> Mutation 63: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:108 - ReplaceConstant - 2147483647 -> 2147483646 - Status: Survived
+--> Mutation 64: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:108 - ReplaceConstant - 2147483647 -> -2147483648 - Status: Killed
+--> Mutation 65: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable p1 -> m_counter - Status: Survived
+--> Mutation 66: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable p1 -> m_totalTransactions - Status: Killed
+--> Mutation 67: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable p1 -> numItemSetVals - Status: Survived
+--> Mutation 68: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable p1 -> p2 - Status: Survived
+--> Mutation 69: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable p1 -> numInstVals - Status: Survived
+--> Mutation 70: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable p1 -> instIndex - Status: Survived
+--> Mutation 71: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - InsertUnaryOp Negation of p1 - Status: Killed
+--> Mutation 72: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - InsertUnaryOp IINC 1 p1 - Status: Survived
+--> Mutation 73: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - InsertUnaryOp IINC -1 p1 - Status: Killed
+--> Mutation 74: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable numInstVals -> m_counter - Status: Killed
+--> Mutation 75: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable numInstVals -> m_totalTransactions - Status: Survived
+--> Mutation 76: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable numInstVals -> p1 - Status: Survived
+--> Mutation 77: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable numInstVals -> numItemSetVals - Status: Killed
+--> Mutation 78: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable numInstVals -> p2 - Status: Killed
+--> Mutation 79: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceVariable numInstVals -> instIndex - Status: Killed
+--> Mutation 80: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - InsertUnaryOp Negation of numInstVals - Status: Survived
+--> Mutation 81: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - InsertUnaryOp IINC 1 numInstVals - Status: Killed
+--> Mutation 82: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - InsertUnaryOp IINC -1 numInstVals - Status: Survived
+--> Mutation 83: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 84: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 85: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:109 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 86: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - ReplaceVariable p1 -> m_counter - Status: Killed
+--> Mutation 87: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - ReplaceVariable p1 -> m_totalTransactions - Status: Killed
+--> Mutation 88: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - ReplaceVariable p1 -> numItemSetVals - Status: Killed
+--> Mutation 89: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - ReplaceVariable p1 -> p2 - Status: Killed
+--> Mutation 90: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - ReplaceVariable p1 -> numInstVals - Status: Killed
+--> Mutation 91: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - ReplaceVariable p1 -> instIndex - Status: Killed
+--> Mutation 92: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - InsertUnaryOp Negation of p1 - Status: Survived
+--> Mutation 93: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - InsertUnaryOp IINC 1 p1 - Status: Killed
+--> Mutation 94: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:110 - InsertUnaryOp IINC -1 p1 - Status: Killed
+--> Mutation 95: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - ReplaceVariable p2 -> m_counter - Status: Killed
+--> Mutation 96: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - ReplaceVariable p2 -> m_totalTransactions - Status: Killed
+--> Mutation 97: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - ReplaceVariable p2 -> p1 - Status: Killed
+--> Mutation 98: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - ReplaceVariable p2 -> numItemSetVals - Status: Killed
+--> Mutation 99: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - ReplaceVariable p2 -> numInstVals - Status: Killed
+--> Mutation 100: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - ReplaceVariable p2 -> instIndex - Status: Survived
+--> Mutation 101: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - InsertUnaryOp Negation of p2 - Status: Killed
+--> Mutation 102: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - InsertUnaryOp IINC 1 p2 - Status: Killed
+--> Mutation 103: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:112 - InsertUnaryOp IINC -1 p2 - Status: Killed
+--> Mutation 104: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceVariable itemIndex -> m_counter - Status: Survived
+--> Mutation 105: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceVariable itemIndex -> m_totalTransactions - Status: Killed
+--> Mutation 106: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceVariable itemIndex -> p1 - Status: Killed
+--> Mutation 107: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceVariable itemIndex -> numItemSetVals - Status: Killed
+--> Mutation 108: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceVariable itemIndex -> p2 - Status: Survived
+--> Mutation 109: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceVariable itemIndex -> instIndex - Status: Killed
+--> Mutation 110: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceVariable itemIndex -> numInstVals - Status: Killed
+--> Mutation 111: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - InsertUnaryOp Negation of itemIndex - Status: Killed
+--> Mutation 112: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - InsertUnaryOp IINC 1 itemIndex - Status: Killed
+--> Mutation 113: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - InsertUnaryOp IINC -1 itemIndex - Status: Killed
+--> Mutation 114: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 115: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 116: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 117: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 118: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 119: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:114 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 120: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable itemIndex -> m_counter - Status: Survived
+--> Mutation 121: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable itemIndex -> m_totalTransactions - Status: Survived
+--> Mutation 122: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable itemIndex -> p1 - Status: Survived
+--> Mutation 123: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable itemIndex -> numItemSetVals - Status: Survived
+--> Mutation 124: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable itemIndex -> p2 - Status: Survived
+--> Mutation 125: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable itemIndex -> instIndex - Status: Killed
+--> Mutation 126: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable itemIndex -> numInstVals - Status: Survived
+--> Mutation 127: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - InsertUnaryOp Negation of itemIndex - Status: Survived
+--> Mutation 128: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - InsertUnaryOp IINC 1 itemIndex - Status: Survived
+--> Mutation 129: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - InsertUnaryOp IINC -1 itemIndex - Status: Survived
+--> Mutation 130: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable instIndex -> m_counter - Status: Survived
+--> Mutation 131: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable instIndex -> m_totalTransactions - Status: Survived
+--> Mutation 132: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable instIndex -> p1 - Status: Killed
+--> Mutation 133: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable instIndex -> numItemSetVals - Status: Survived
+--> Mutation 134: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable instIndex -> p2 - Status: Killed
+--> Mutation 135: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable instIndex -> itemIndex - Status: Killed
+--> Mutation 136: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceVariable instIndex -> numInstVals - Status: Survived
+--> Mutation 137: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - InsertUnaryOp Negation of instIndex - Status: Survived
+--> Mutation 138: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - InsertUnaryOp IINC 1 instIndex - Status: Survived
+--> Mutation 139: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - InsertUnaryOp IINC -1 instIndex - Status: Survived
+--> Mutation 140: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 141: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 142: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:115 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 143: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:116 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 144: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - ReplaceVariable p1 -> m_counter - Status: Survived
+--> Mutation 145: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - ReplaceVariable p1 -> m_totalTransactions - Status: Killed
+--> Mutation 146: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - ReplaceVariable p1 -> numItemSetVals - Status: Killed
+--> Mutation 147: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - ReplaceVariable p1 -> p2 - Status: Survived
+--> Mutation 148: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - ReplaceVariable p1 -> instIndex - Status: Survived
+--> Mutation 149: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - ReplaceVariable p1 -> itemIndex - Status: Killed
+--> Mutation 150: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - ReplaceVariable p1 -> numInstVals - Status: Killed
+--> Mutation 151: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - InsertUnaryOp Negation of p1 - Status: Survived
+--> Mutation 152: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - InsertUnaryOp IINC 1 p1 - Status: Killed
+--> Mutation 153: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - InsertUnaryOp IINC -1 p1 - Status: Killed
+--> Mutation 154: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:118 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 155: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:119 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 156: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable itemIndex -> m_counter - Status: Survived
+--> Mutation 157: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable itemIndex -> m_totalTransactions - Status: Killed
+--> Mutation 158: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable itemIndex -> p1 - Status: Survived
+--> Mutation 159: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable itemIndex -> numItemSetVals - Status: Killed
+--> Mutation 160: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable itemIndex -> p2 - Status: Survived
+--> Mutation 161: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable itemIndex -> instIndex - Status: Survived
+--> Mutation 162: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable itemIndex -> numInstVals - Status: Survived
+--> Mutation 163: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - InsertUnaryOp Negation of itemIndex - Status: Killed
+--> Mutation 164: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - InsertUnaryOp IINC 1 itemIndex - Status: Survived
+--> Mutation 165: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - InsertUnaryOp IINC -1 itemIndex - Status: Survived
+--> Mutation 166: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable p1 -> m_counter - Status: Survived
+--> Mutation 167: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable p1 -> m_totalTransactions - Status: Survived
+--> Mutation 168: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable p1 -> numItemSetVals - Status: Killed
+--> Mutation 169: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable p1 -> p2 - Status: Killed
+--> Mutation 170: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable p1 -> instIndex - Status: Survived
+--> Mutation 171: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable p1 -> itemIndex - Status: Survived
+--> Mutation 172: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceVariable p1 -> numInstVals - Status: Killed
+--> Mutation 173: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - InsertUnaryOp Negation of p1 - Status: Survived
+--> Mutation 174: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - InsertUnaryOp IINC 1 p1 - Status: Killed
+--> Mutation 175: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - InsertUnaryOp IINC -1 p1 - Status: Survived
+--> Mutation 176: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 177: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 178: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:121 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 179: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:122 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 180: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:126 - ReplaceVariable p1 -> itemIndex - Status: Survived
+--> Mutation 181: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:126 - ReplaceVariable p1 -> numItemSetVals - Status: Survived
+--> Mutation 182: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:126 - ReplaceVariable p1 -> p2 - Status: Survived
+--> Mutation 183: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:126 - ReplaceVariable p1 -> numInstVals - Status: Survived
+--> Mutation 184: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:126 - ReplaceVariable p1 -> instIndex - Status: Survived
+--> Mutation 185: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:127 - ReplaceVariable p2 -> itemIndex - Status: Survived
+--> Mutation 186: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:127 - ReplaceVariable p2 -> p1 - Status: Survived
+--> Mutation 187: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:127 - ReplaceVariable p2 -> numItemSetVals - Status: Survived
+--> Mutation 188: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:127 - ReplaceVariable p2 -> numInstVals - Status: Killed
+--> Mutation 189: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:127 - ReplaceVariable p2 -> instIndex - Status: Survived
+--> Mutation 190: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable itemIndex -> m_counter - Status: Survived
+--> Mutation 191: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable itemIndex -> m_totalTransactions - Status: Survived
+--> Mutation 192: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable itemIndex -> p1 - Status: Survived
+--> Mutation 193: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable itemIndex -> numItemSetVals - Status: Killed
+--> Mutation 194: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable itemIndex -> p2 - Status: Survived
+--> Mutation 195: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable itemIndex -> instIndex - Status: Killed
+--> Mutation 196: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable itemIndex -> numInstVals - Status: Killed
+--> Mutation 197: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - InsertUnaryOp Negation of itemIndex - Status: Survived
+--> Mutation 198: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - InsertUnaryOp IINC 1 itemIndex - Status: Killed
+--> Mutation 199: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - InsertUnaryOp IINC -1 itemIndex - Status: Survived
+--> Mutation 200: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable instIndex -> m_counter - Status: Survived
+--> Mutation 201: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable instIndex -> m_totalTransactions - Status: Killed
+--> Mutation 202: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable instIndex -> p1 - Status: Killed
+--> Mutation 203: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable instIndex -> numItemSetVals - Status: Survived
+--> Mutation 204: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable instIndex -> p2 - Status: Killed
+--> Mutation 205: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable instIndex -> itemIndex - Status: Killed
+--> Mutation 206: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceVariable instIndex -> numInstVals - Status: Killed
+--> Mutation 207: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - InsertUnaryOp Negation of instIndex - Status: Killed
+--> Mutation 208: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - InsertUnaryOp IINC 1 instIndex - Status: Survived
+--> Mutation 209: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - InsertUnaryOp IINC -1 instIndex - Status: Survived
+--> Mutation 210: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 211: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 212: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:129 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 213: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:130 - ReplaceVariable p2 -> itemIndex - Status: Killed
+--> Mutation 214: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:130 - ReplaceVariable p2 -> p1 - Status: Killed
+--> Mutation 215: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:130 - ReplaceVariable p2 -> numItemSetVals - Status: Killed
+--> Mutation 216: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:130 - ReplaceVariable p2 -> numInstVals - Status: Killed
+--> Mutation 217: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:130 - ReplaceVariable p2 -> instIndex - Status: Killed
+--> Mutation 218: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable itemIndex -> m_counter - Status: Survived
+--> Mutation 219: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable itemIndex -> m_totalTransactions - Status: Survived
+--> Mutation 220: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable itemIndex -> p1 - Status: Killed
+--> Mutation 221: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable itemIndex -> numItemSetVals - Status: Killed
+--> Mutation 222: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable itemIndex -> p2 - Status: Survived
+--> Mutation 223: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable itemIndex -> instIndex - Status: Survived
+--> Mutation 224: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable itemIndex -> numInstVals - Status: Survived
+--> Mutation 225: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - InsertUnaryOp Negation of itemIndex - Status: Survived
+--> Mutation 226: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - InsertUnaryOp IINC 1 itemIndex - Status: Killed
+--> Mutation 227: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - InsertUnaryOp IINC -1 itemIndex - Status: Killed
+--> Mutation 228: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable instIndex -> m_counter - Status: Survived
+--> Mutation 229: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable instIndex -> m_totalTransactions - Status: Survived
+--> Mutation 230: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable instIndex -> p1 - Status: Killed
+--> Mutation 231: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable instIndex -> numItemSetVals - Status: Survived
+--> Mutation 232: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable instIndex -> p2 - Status: Survived
+--> Mutation 233: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable instIndex -> itemIndex - Status: Survived
+--> Mutation 234: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceVariable instIndex -> numInstVals - Status: Killed
+--> Mutation 235: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - InsertUnaryOp Negation of instIndex - Status: Killed
+--> Mutation 236: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - InsertUnaryOp IINC 1 instIndex - Status: Killed
+--> Mutation 237: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - InsertUnaryOp IINC -1 instIndex - Status: Survived
+--> Mutation 238: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 239: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 240: weka.associations.ItemSet.containedBy(Lweka/core/Instance;)Z:131 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 241: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 242: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceVariable i -> maxSupport - Status: Survived
+--> Mutation 243: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceVariable i -> minSupport - Status: Survived
+--> Mutation 244: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 245: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 246: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 247: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceVariable itemSets -> newVector - Status: Survived
+--> Mutation 248: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 249: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 250: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 251: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:164 - ReplaceVariable itemSets -> newVector - Status: Survived
+--> Mutation 252: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:164 - ReplaceVariable i -> maxSupport - Status: Survived
+--> Mutation 253: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:164 - ReplaceVariable i -> minSupport - Status: Survived
+--> Mutation 254: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:164 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 255: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:164 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 256: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:164 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 257: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 258: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 259: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 260: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceVariable minSupport -> maxSupport - Status: Survived
+--> Mutation 261: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceVariable minSupport -> i - Status: Survived
+--> Mutation 262: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp Negation of minSupport - Status: Survived
+--> Mutation 263: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp IINC 1 minSupport - Status: Survived
+--> Mutation 264: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp IINC -1 minSupport - Status: Survived
+--> Mutation 265: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 266: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceComparisonOperator < -> -2 - Status: Survived
+--> Mutation 267: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 268: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 269: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 270: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 271: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceVariable maxSupport -> i - Status: Survived
+--> Mutation 272: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceVariable maxSupport -> minSupport - Status: Survived
+--> Mutation 273: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp Negation of maxSupport - Status: Survived
+--> Mutation 274: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp IINC 1 maxSupport - Status: Survived
+--> Mutation 275: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - InsertUnaryOp IINC -1 maxSupport - Status: Survived
+--> Mutation 276: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 277: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 278: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:165 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 279: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:167 - ReplaceVariable newVector -> itemSets - Status: Survived
+--> Mutation 280: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceVariable i -> maxSupport - Status: Survived
+--> Mutation 281: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:163 - ReplaceVariable i -> minSupport - Status: Survived
+--> Mutation 282: weka.associations.ItemSet.deleteItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:169 - ReplaceVariable newVector -> itemSets - Status: Survived
+--> Mutation 283: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:180 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 284: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:180 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 285: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:181 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 286: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:183 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 287: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:183 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 288: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:183 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 289: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:184 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 290: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 291: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - ReplaceVariable i -> m_counter - Status: Killed
+--> Mutation 292: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 293: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 294: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 295: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 296: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 297: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 298: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:185 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 299: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - ReplaceVariable i -> m_counter - Status: Killed
+--> Mutation 300: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 301: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 302: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 303: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 304: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - ReplaceVariable i -> m_counter - Status: Survived
+--> Mutation 305: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 306: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 307: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 308: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 309: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 310: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 311: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:186 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 312: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:187 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 313: weka.associations.ItemSet.equals(Ljava/lang/Object;)Z:188 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 314: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:200 - InsertUnaryOp Negation of initialSize - Status: Survived
+--> Mutation 315: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:200 - InsertUnaryOp IINC 1 initialSize - Status: Survived
+--> Mutation 316: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:200 - InsertUnaryOp IINC -1 initialSize - Status: Survived
+--> Mutation 317: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 318: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - ReplaceVariable i -> initialSize - Status: Survived
+--> Mutation 319: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 320: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 321: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 322: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 323: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 324: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 325: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:203 - ReplaceVariable i -> initialSize - Status: Survived
+--> Mutation 326: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:203 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 327: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:203 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 328: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:203 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 329: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:204 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 330: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:204 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 331: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:204 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 332: weka.associations.ItemSet.getHashtable(Lweka/core/FastVector;I)Ljava/util/Hashtable;:202 - ReplaceVariable i -> initialSize - Status: Survived
+--> Mutation 333: weka.associations.ItemSet.hashCode()I:216 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 334: weka.associations.ItemSet.hashCode()I:216 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 335: weka.associations.ItemSet.hashCode()I:218 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 336: weka.associations.ItemSet.hashCode()I:218 - ReplaceArithmeticOperator - -> + - Status: Killed
+--> Mutation 337: weka.associations.ItemSet.hashCode()I:218 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 338: weka.associations.ItemSet.hashCode()I:218 - ReplaceArithmeticOperator - -> * - Status: Killed
+--> Mutation 339: weka.associations.ItemSet.hashCode()I:218 - ReplaceArithmeticOperator - -> / - Status: Killed
+--> Mutation 340: weka.associations.ItemSet.hashCode()I:218 - ReplaceVariable i -> m_counter - Status: Killed
+--> Mutation 341: weka.associations.ItemSet.hashCode()I:218 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 342: weka.associations.ItemSet.hashCode()I:218 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 343: weka.associations.ItemSet.hashCode()I:218 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 344: weka.associations.ItemSet.hashCode()I:218 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 345: weka.associations.ItemSet.hashCode()I:218 - ReplaceComparisonOperator < -> -2 - Status: Killed
+--> Mutation 346: weka.associations.ItemSet.hashCode()I:218 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 347: weka.associations.ItemSet.hashCode()I:218 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 348: weka.associations.ItemSet.hashCode()I:219 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 349: weka.associations.ItemSet.hashCode()I:219 - ReplaceVariable i -> m_counter - Status: Survived
+--> Mutation 350: weka.associations.ItemSet.hashCode()I:219 - ReplaceVariable i -> m_totalTransactions - Status: Survived
+--> Mutation 351: weka.associations.ItemSet.hashCode()I:219 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 352: weka.associations.ItemSet.hashCode()I:219 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 353: weka.associations.ItemSet.hashCode()I:219 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 354: weka.associations.ItemSet.hashCode()I:219 - ReplaceVariable i -> m_counter - Status: Survived
+--> Mutation 355: weka.associations.ItemSet.hashCode()I:219 - ReplaceVariable i -> m_totalTransactions - Status: Survived
+--> Mutation 356: weka.associations.ItemSet.hashCode()I:219 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 357: weka.associations.ItemSet.hashCode()I:219 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 358: weka.associations.ItemSet.hashCode()I:219 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 359: weka.associations.ItemSet.hashCode()I:219 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 360: weka.associations.ItemSet.hashCode()I:219 - ReplaceArithmeticOperator * -> % - Status: Killed
+--> Mutation 361: weka.associations.ItemSet.hashCode()I:219 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 362: weka.associations.ItemSet.hashCode()I:219 - ReplaceArithmeticOperator * -> / - Status: Killed
+--> Mutation 363: weka.associations.ItemSet.hashCode()I:219 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 364: weka.associations.ItemSet.hashCode()I:219 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 365: weka.associations.ItemSet.hashCode()I:219 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 366: weka.associations.ItemSet.hashCode()I:219 - ReplaceArithmeticOperator + -> / - Status: Killed
+--> Mutation 367: weka.associations.ItemSet.hashCode()I:220 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 368: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 369: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 370: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - ReplaceVariable i -> totalTrans - Status: Survived
+--> Mutation 371: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 372: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 373: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 374: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - ReplaceVariable itemSets -> newVector - Status: Survived
+--> Mutation 375: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 376: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 377: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:237 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 378: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:238 - ReplaceVariable itemSets -> newVector - Status: Survived
+--> Mutation 379: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:238 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 380: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:238 - ReplaceVariable i -> totalTrans - Status: Survived
+--> Mutation 381: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:238 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 382: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:238 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 383: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:238 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 384: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 385: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceVariable i -> totalTrans - Status: Survived
+--> Mutation 386: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 387: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 388: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 389: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 390: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 391: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 392: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 393: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 394: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 395: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceVariable j -> size - Status: Survived
+--> Mutation 396: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceVariable j -> totalTrans - Status: Survived
+--> Mutation 397: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 398: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 399: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 400: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceVariable itemSets -> newVector - Status: Survived
+--> Mutation 401: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 402: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 403: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:240 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 404: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:241 - ReplaceVariable itemSets -> newVector - Status: Survived
+--> Mutation 405: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:241 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 406: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:241 - ReplaceVariable j -> size - Status: Survived
+--> Mutation 407: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:241 - ReplaceVariable j -> totalTrans - Status: Survived
+--> Mutation 408: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:241 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 409: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:241 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 410: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:241 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 411: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:242 - ReplaceVariable totalTrans -> i - Status: Survived
+--> Mutation 412: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:242 - ReplaceVariable totalTrans -> j - Status: Survived
+--> Mutation 413: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:242 - ReplaceVariable totalTrans -> size - Status: Survived
+--> Mutation 414: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:242 - InsertUnaryOp Negation of totalTrans - Status: Survived
+--> Mutation 415: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:242 - InsertUnaryOp IINC 1 totalTrans - Status: Survived
+--> Mutation 416: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:242 - InsertUnaryOp IINC -1 totalTrans - Status: Survived
+--> Mutation 417: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:243 - ReplaceVariable result -> first - Status: Survived
+--> Mutation 418: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:243 - ReplaceVariable result -> second - Status: Survived
+--> Mutation 419: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:243 - ReplaceVariable first -> result - Status: Survived
+--> Mutation 420: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:243 - ReplaceVariable first -> second - Status: Survived
+--> Mutation 421: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:246 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 422: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:247 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 423: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable numFound -> i - Status: Survived
+--> Mutation 424: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable numFound -> j - Status: Survived
+--> Mutation 425: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable numFound -> k - Status: Survived
+--> Mutation 426: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable numFound -> size - Status: Survived
+--> Mutation 427: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable numFound -> totalTrans - Status: Survived
+--> Mutation 428: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - InsertUnaryOp Negation of numFound - Status: Survived
+--> Mutation 429: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - InsertUnaryOp IINC 1 numFound - Status: Survived
+--> Mutation 430: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - InsertUnaryOp IINC -1 numFound - Status: Survived
+--> Mutation 431: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable size -> i - Status: Survived
+--> Mutation 432: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable size -> j - Status: Survived
+--> Mutation 433: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable size -> k - Status: Survived
+--> Mutation 434: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable size -> totalTrans - Status: Survived
+--> Mutation 435: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceVariable size -> numFound - Status: Survived
+--> Mutation 436: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - InsertUnaryOp Negation of size - Status: Survived
+--> Mutation 437: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - InsertUnaryOp IINC 1 size - Status: Survived
+--> Mutation 438: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - InsertUnaryOp IINC -1 size - Status: Survived
+--> Mutation 439: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 440: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 441: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:248 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 442: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable first -> result - Status: Survived
+--> Mutation 443: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable first -> second - Status: Survived
+--> Mutation 444: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 445: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 446: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> size - Status: Survived
+--> Mutation 447: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> totalTrans - Status: Survived
+--> Mutation 448: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> numFound - Status: Survived
+--> Mutation 449: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 450: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 451: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 452: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable second -> result - Status: Survived
+--> Mutation 453: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable second -> first - Status: Survived
+--> Mutation 454: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 455: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 456: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> size - Status: Survived
+--> Mutation 457: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> totalTrans - Status: Survived
+--> Mutation 458: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceVariable k -> numFound - Status: Survived
+--> Mutation 459: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 460: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 461: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 462: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 463: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 464: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:249 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 465: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceVariable first -> result - Status: Survived
+--> Mutation 466: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceVariable first -> second - Status: Survived
+--> Mutation 467: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 468: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 469: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceVariable k -> size - Status: Survived
+--> Mutation 470: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceVariable k -> totalTrans - Status: Survived
+--> Mutation 471: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceVariable k -> numFound - Status: Survived
+--> Mutation 472: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 473: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 474: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 475: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 476: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 477: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 478: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 479: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 480: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:250 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 481: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:251 - ReplaceVariable numFound -> i - Status: Survived
+--> Mutation 482: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:251 - ReplaceVariable numFound -> j - Status: Survived
+--> Mutation 483: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:251 - ReplaceVariable numFound -> k - Status: Survived
+--> Mutation 484: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:251 - ReplaceVariable numFound -> size - Status: Survived
+--> Mutation 485: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:251 - ReplaceVariable numFound -> totalTrans - Status: Survived
+--> Mutation 486: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable result -> first - Status: Survived
+--> Mutation 487: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable result -> second - Status: Survived
+--> Mutation 488: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 489: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 490: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> size - Status: Survived
+--> Mutation 491: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> totalTrans - Status: Survived
+--> Mutation 492: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> numFound - Status: Survived
+--> Mutation 493: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 494: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 495: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 496: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable first -> result - Status: Survived
+--> Mutation 497: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable first -> second - Status: Survived
+--> Mutation 498: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 499: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 500: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> size - Status: Survived
+--> Mutation 501: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> totalTrans - Status: Survived
+--> Mutation 502: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - ReplaceVariable k -> numFound - Status: Survived
+--> Mutation 503: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 504: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 505: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:252 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 506: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:255 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 507: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:255 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 508: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:255 - ReplaceVariable k -> size - Status: Survived
+--> Mutation 509: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:255 - ReplaceVariable k -> totalTrans - Status: Survived
+--> Mutation 510: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:255 - ReplaceVariable k -> numFound - Status: Survived
+--> Mutation 511: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 512: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 513: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceVariable k -> size - Status: Survived
+--> Mutation 514: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceVariable k -> totalTrans - Status: Survived
+--> Mutation 515: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceVariable k -> numFound - Status: Survived
+--> Mutation 516: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 517: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 518: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 519: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceVariable first -> result - Status: Survived
+--> Mutation 520: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceVariable first -> second - Status: Survived
+--> Mutation 521: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 522: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 523: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:259 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 524: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - ReplaceVariable first -> result - Status: Survived
+--> Mutation 525: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - ReplaceVariable first -> second - Status: Survived
+--> Mutation 526: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 527: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 528: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - ReplaceVariable k -> size - Status: Survived
+--> Mutation 529: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - ReplaceVariable k -> totalTrans - Status: Survived
+--> Mutation 530: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - ReplaceVariable k -> numFound - Status: Survived
+--> Mutation 531: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 532: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 533: weka.associations.ItemSet.mergeAllItemSets(Lweka/core/FastVector;II)Lweka/core/FastVector;:260 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 534: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 535: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 536: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 537: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 538: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - ReplaceVariable toPrune -> newVector - Status: Survived
+--> Mutation 539: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 540: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 541: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 542: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:293 - ReplaceVariable toPrune -> newVector - Status: Survived
+--> Mutation 543: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:293 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 544: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:293 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 545: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:293 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 546: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 547: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 548: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 549: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 550: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 551: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 552: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 553: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 554: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 555: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 556: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 557: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 558: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 559: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 560: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 561: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 562: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 563: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:295 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 564: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:296 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 565: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:296 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 566: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:296 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 567: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:296 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 568: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:297 - ReplaceVariable j -> help - Status: Survived
+--> Mutation 569: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:297 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 570: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:297 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 571: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:297 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 572: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:297 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 573: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:297 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 574: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:297 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 575: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:297 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 576: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:298 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 577: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - ReplaceVariable j -> help - Status: Survived
+--> Mutation 578: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 579: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 580: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 581: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 582: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - ReplaceVariable help -> i - Status: Survived
+--> Mutation 583: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - ReplaceVariable help -> j - Status: Survived
+--> Mutation 584: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - InsertUnaryOp Negation of help - Status: Survived
+--> Mutation 585: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - InsertUnaryOp IINC 1 help - Status: Survived
+--> Mutation 586: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:299 - InsertUnaryOp IINC -1 help - Status: Survived
+--> Mutation 587: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - ReplaceVariable j -> help - Status: Survived
+--> Mutation 588: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 589: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 590: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 591: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 592: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - ReplaceVariable help -> i - Status: Survived
+--> Mutation 593: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - ReplaceVariable help -> j - Status: Survived
+--> Mutation 594: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - InsertUnaryOp Negation of help - Status: Survived
+--> Mutation 595: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - InsertUnaryOp IINC 1 help - Status: Survived
+--> Mutation 596: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:302 - InsertUnaryOp IINC -1 help - Status: Survived
+--> Mutation 597: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:294 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 598: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:305 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 599: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:305 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 600: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:305 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 601: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:305 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 602: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:305 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 603: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:305 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 604: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:305 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 605: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:306 - ReplaceVariable newVector -> toPrune - Status: Survived
+--> Mutation 606: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:292 - ReplaceVariable i -> j - Status: Survived
+--> Mutation 607: weka.associations.ItemSet.pruneItemSets(Lweka/core/FastVector;Ljava/util/Hashtable;)Lweka/core/FastVector;:308 - ReplaceVariable newVector -> toPrune - Status: Survived
+--> Mutation 608: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:320 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 609: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:321 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 610: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:322 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 611: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:322 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 612: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:322 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 613: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:322 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 614: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:325 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 615: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:325 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 616: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:325 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 617: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:325 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 618: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:325 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 619: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:325 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 620: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:325 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 621: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:325 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 622: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:326 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 623: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:326 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 624: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:326 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 625: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:326 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 626: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:326 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 627: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:327 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 628: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:327 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 629: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:327 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 630: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:327 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 631: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:327 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 632: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:328 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 633: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:328 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 634: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:328 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 635: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:328 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 636: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:328 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 637: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:331 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 638: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:331 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 639: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:331 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 640: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:331 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 641: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:331 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 642: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:331 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 643: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:331 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 644: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:331 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 645: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 646: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 647: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 648: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 649: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 650: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 651: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 652: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - InsertUnaryOp Negation of minConfidence - Status: Survived
+--> Mutation 653: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - ReplaceComparisonOperator < -> -2 - Status: Survived
+--> Mutation 654: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 655: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:332 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 656: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - ReplaceVariable newPremises -> newLift - Status: Survived
+--> Mutation 657: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - ReplaceVariable newPremises -> newConsequences - Status: Survived
+--> Mutation 658: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - ReplaceVariable newPremises -> newLev - Status: Survived
+--> Mutation 659: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - ReplaceVariable newPremises -> newConf - Status: Survived
+--> Mutation 660: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - ReplaceVariable newPremises -> newConv - Status: Survived
+--> Mutation 661: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 662: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 663: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 664: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:334 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 665: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - ReplaceVariable newConsequences -> newLift - Status: Survived
+--> Mutation 666: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - ReplaceVariable newConsequences -> newLev - Status: Survived
+--> Mutation 667: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - ReplaceVariable newConsequences -> newConf - Status: Survived
+--> Mutation 668: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - ReplaceVariable newConsequences -> newConv - Status: Survived
+--> Mutation 669: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - ReplaceVariable newConsequences -> newPremises - Status: Survived
+--> Mutation 670: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 671: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 672: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 673: weka.associations.ItemSet.pruneRules([Lweka/core/FastVector;D)V:335 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 674: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:369 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 675: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:369 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 676: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:369 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 677: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:369 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 678: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:369 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 679: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:369 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 680: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:369 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 681: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:370 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 682: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:370 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 683: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:370 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 684: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:370 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 685: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:371 - ReplaceConstant - Can't handle numeric attributes! ->  - Status: Survived
+--> Mutation 686: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 687: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 688: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 689: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 690: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 691: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - ReplaceVariable i -> j - Status: Survived
+--> Mutation 692: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 693: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 694: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 695: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 696: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 697: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 698: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 699: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 700: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 701: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 702: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 703: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 704: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 705: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 706: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 707: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:376 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 708: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:376 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 709: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:376 - InsertUnaryOp Negation of k - Status: Survived
+--> Mutation 710: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:376 - InsertUnaryOp IINC 1 k - Status: Survived
+--> Mutation 711: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:376 - InsertUnaryOp IINC -1 k - Status: Survived
+--> Mutation 712: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:376 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 713: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:376 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 714: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:376 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 715: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - ReplaceVariable k -> i - Status: Survived
+--> Mutation 716: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:375 - ReplaceVariable k -> j - Status: Survived
+--> Mutation 717: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:377 - ReplaceVariable i -> j - Status: Survived
+--> Mutation 718: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:377 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 719: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:377 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 720: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:377 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 721: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:377 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 722: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:377 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 723: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:377 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 724: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:377 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 725: weka.associations.ItemSet.singletons(Lweka/core/Instances;)Lweka/core/FastVector;:372 - ReplaceVariable j -> i - Status: Survived
+--> Mutation 726: weka.associations.ItemSet.support()I:392 - ReplaceVariable m_counter -> m_totalTransactions - Status: Killed
+--> Mutation 727: weka.associations.ItemSet.support()I:392 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 728: weka.associations.ItemSet.support()I:392 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 729: weka.associations.ItemSet.support()I:392 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 730: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 731: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - ReplaceVariable i -> m_counter - Status: Killed
+--> Mutation 732: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 733: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 734: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 735: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 736: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 737: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 738: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:405 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 739: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - ReplaceVariable i -> m_counter - Status: Killed
+--> Mutation 740: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 741: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 742: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 743: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 744: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 745: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 746: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 747: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 748: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 749: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:406 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 750: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - ReplaceVariable i -> m_counter - Status: Killed
+--> Mutation 751: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 752: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 753: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 754: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 755: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - ReplaceConstant - 61 -> 0 - Status: Killed
+--> Mutation 756: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - ReplaceConstant - 61 -> 1 - Status: Killed
+--> Mutation 757: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - ReplaceConstant - 61 -> -1 - Status: Killed
+--> Mutation 758: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - ReplaceConstant - 61 -> 60 - Status: Killed
+--> Mutation 759: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:407 - ReplaceConstant - 61 -> 62 - Status: Killed
+--> Mutation 760: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceVariable i -> m_counter - Status: Killed
+--> Mutation 761: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 762: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 763: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 764: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 765: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceVariable i -> m_counter - Status: Killed
+--> Mutation 766: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceVariable i -> m_totalTransactions - Status: Killed
+--> Mutation 767: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 768: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 769: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 770: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 771: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 772: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 773: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceConstant - 32 -> 31 - Status: Killed
+--> Mutation 774: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:408 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 775: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:410 - ReplaceVariable m_counter -> m_totalTransactions - Status: Killed
+--> Mutation 776: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:410 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 777: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:410 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 778: weka.associations.ItemSet.toString(Lweka/core/Instances;)Ljava/lang/String;:410 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 779: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:421 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 780: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - ReplaceVariable m_counter -> m_totalTransactions - Status: Killed
+--> Mutation 781: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 782: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 783: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 784: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 785: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 786: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 787: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - ReplaceArithmeticOperator + -> * - Status: Killed
+--> Mutation 788: weka.associations.ItemSet.upDateCounter(Lweka/core/Instance;)V:422 - ReplaceArithmeticOperator + -> / - Status: Killed
+--> Mutation 789: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:433 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 790: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:433 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 791: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:433 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 792: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:433 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 793: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:433 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 794: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:433 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 795: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:433 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 796: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:435 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 797: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:436 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 798: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:436 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 799: weka.associations.ItemSet.upDateCounters(Lweka/core/FastVector;Lweka/core/Instances;)V:436 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 800: weka.associations.ItemSet.counter()I:445 - ReplaceVariable m_counter -> m_totalTransactions - Status: Killed
+--> Mutation 801: weka.associations.ItemSet.counter()I:445 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 802: weka.associations.ItemSet.counter()I:445 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 803: weka.associations.ItemSet.counter()I:445 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 804: weka.associations.ItemSet.itemAt(I)I:462 - ReplaceVariable k -> m_counter - Status: Survived
+--> Mutation 805: weka.associations.ItemSet.itemAt(I)I:462 - ReplaceVariable k -> m_totalTransactions - Status: Killed
+--> Mutation 806: weka.associations.ItemSet.itemAt(I)I:462 - InsertUnaryOp Negation of k - Status: Killed
+--> Mutation 807: weka.associations.ItemSet.itemAt(I)I:462 - InsertUnaryOp IINC 1 k - Status: Killed
+--> Mutation 808: weka.associations.ItemSet.itemAt(I)I:462 - InsertUnaryOp IINC -1 k - Status: Killed
+--> Mutation 809: weka.associations.ItemSet.setCounter(I)V:470 - ReplaceVariable count -> m_counter - Status: Killed
+--> Mutation 810: weka.associations.ItemSet.setCounter(I)V:470 - ReplaceVariable count -> m_totalTransactions - Status: Killed
+--> Mutation 811: weka.associations.ItemSet.setCounter(I)V:470 - InsertUnaryOp Negation of count - Status: Killed
+--> Mutation 812: weka.associations.ItemSet.setCounter(I)V:470 - InsertUnaryOp IINC 1 count - Status: Killed
+--> Mutation 813: weka.associations.ItemSet.setCounter(I)V:470 - InsertUnaryOp IINC -1 count - Status: Killed
+--> Mutation 814: weka.associations.ItemSet.setItem([I)V:478 - ReplaceVariable items -> m_items - Status: Killed
+--> Mutation 815: weka.associations.ItemSet.setItemAt(II)V:487 - ReplaceVariable k -> m_counter - Status: Killed
+--> Mutation 816: weka.associations.ItemSet.setItemAt(II)V:487 - ReplaceVariable k -> m_totalTransactions - Status: Killed
+--> Mutation 817: weka.associations.ItemSet.setItemAt(II)V:487 - ReplaceVariable k -> value - Status: Killed
+--> Mutation 818: weka.associations.ItemSet.setItemAt(II)V:487 - InsertUnaryOp Negation of k - Status: Killed
+--> Mutation 819: weka.associations.ItemSet.setItemAt(II)V:487 - InsertUnaryOp IINC 1 k - Status: Killed
+--> Mutation 820: weka.associations.ItemSet.setItemAt(II)V:487 - InsertUnaryOp IINC -1 k - Status: Killed
+--> Mutation 821: weka.associations.ItemSet.setItemAt(II)V:487 - ReplaceVariable value -> m_counter - Status: Killed
+--> Mutation 822: weka.associations.ItemSet.setItemAt(II)V:487 - ReplaceVariable value -> m_totalTransactions - Status: Killed
+--> Mutation 823: weka.associations.ItemSet.setItemAt(II)V:487 - ReplaceVariable value -> k - Status: Killed
+--> Mutation 824: weka.associations.ItemSet.setItemAt(II)V:487 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 825: weka.associations.ItemSet.setItemAt(II)V:487 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 826: weka.associations.ItemSet.setItemAt(II)V:487 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 827: weka.associations.ItemSet.setTreatZeroAsMissing(Z)V:497 - ReplaceVariable z -> m_treatZeroAsMissing - Status: Killed
+--> Mutation 828: weka.associations.ItemSet.setTreatZeroAsMissing(Z)V:497 - InsertUnaryOp Negation of z - Status: Survived
+--> Mutation 829: weka.associations.ItemSet.setTreatZeroAsMissing(Z)V:497 - InsertUnaryOp IINC 1 z - Status: Killed
+--> Mutation 830: weka.associations.ItemSet.setTreatZeroAsMissing(Z)V:497 - InsertUnaryOp IINC -1 z - Status: Killed
+--> Mutation 831: weka.associations.ItemSet.getTreatZeroAsMissing()Z:507 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 832: weka.associations.ItemSet.getRevision()Ljava/lang/String;:516 - ReplaceConstant - $Revision: 8034 $ ->  - Status: Killed
+* Compiling and checking tests
+* Computation finished

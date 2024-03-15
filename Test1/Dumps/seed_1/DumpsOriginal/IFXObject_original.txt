@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.sourceforge.ifx.basetypes.IFXObject
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/84_ifx-framework/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\84_ifx-framework\evosuite-files\evosuite.properties
+* Connecting to master process on port 10862
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 397
-* Using seed 2482030657809
+* Using seed 1710489300941
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 45 / 397
-* Search finished after 181s and 4202 generations, 1205340 statements, best individual has fitness: 175.0
+* Search finished after 181s and 7195 generations, 2087909 statements, best individual has fitness: 175.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -56,7 +56,7 @@
 * Coverage of criterion CBRANCH: 43%
 * Total number of goals: 72
 * Number of covered goals: 31
-* Generated 7 tests with total length 18
+* Generated 7 tests with total length 19
 * Resulting test suite's coverage: 65% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 60%
@@ -197,15 +197,4 @@
 --> Mutation 132: org.sourceforge.ifx.basetypes.IFXObject.tab(I)Ljava/lang/String;:223 - ReplaceConstant -    ->  - Status: Killed
 --> Mutation 133: org.sourceforge.ifx.basetypes.IFXObject.tab(I)Ljava/lang/String;:222 - ReplaceVariable i -> level - Status: Killed
 * Compiling and checking tests
-[MASTER] 04:27:28.174 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:27:33.455 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:27:38.713 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:27:43.965 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:27:49.221 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:27:54.485 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:27:59.739 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'IFXObject_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

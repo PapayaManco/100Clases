@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.sourceforge.jwbf.inyoka.actions.GetRevision
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/23_jwbf/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\23_jwbf\evosuite-files\evosuite.properties
+* Connecting to master process on port 9566
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 185
-* Using seed 2482030657809
+* Using seed 1710482421044
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 63 / 185
-* Search finished after 181s and 6037 generations, 1544640 statements, best individual has fitness: 32.0
+* Search finished after 182s and 9748 generations, 2415609 statements, best individual has fitness: 32.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -56,7 +56,7 @@
 * Coverage of criterion CBRANCH: 87%
 * Total number of goals: 30
 * Number of covered goals: 26
-* Generated 14 tests with total length 38
+* Generated 15 tests with total length 43
 * Resulting test suite's coverage: 82% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 43%

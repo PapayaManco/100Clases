@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.lts.caloriecount.ui.entry.EntryListView
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/78_caloriecount/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\78_caloriecount\evosuite-files\evosuite.properties
+* Connecting to master process on port 10647
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:49:17.241 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 03:49:17.611 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:49:18.136 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class com.lts.caloriecount.ui.entry.EntryListView
 * Test criteria:
@@ -21,14 +18,202 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 321
-* Using seed 2482030657809
+* Using seed 1710486415366
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 182 / 321
-[MASTER] 03:49:19.371 [logback-1] WARN  TestCluster - Failed to check cache for com.lts.util.notifyinglist.TableBridge<E> : Type points to itself
-[MASTER] 03:49:23.869 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 03:49:32.346 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:49:32.351 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:49:32.423 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 03:49:49.386 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-* Search finished after 181s and 2580 generations, 79004 statements, best individual has fitness: 308.0
+[MASTER] 04:06:58.390 [logback-1] WARN  TestCluster - Failed to check cache for com.lts.util.notifyinglist.TableBridge<E> : Type points to itself
+[MASTER] 04:07:04.281 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 04:07:14.090 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 04:07:17.292 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowSorter<M> : Type points to itself
+[MASTER] 04:07:24.038 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 04:09:53.030 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+* Search finished after 181s and 4107 generations, 200575 statements, best individual has fitness: 308.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 7%
+* Total number of goals: 83
+* Number of covered goals: 6
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 9%
+* Total number of goals: 32
+* Number of covered goals: 3
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 1%
+* Total number of goals: 148
+* Number of covered goals: 1
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 14
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 33%
+* Total number of goals: 6
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 6
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 9%
+* Total number of goals: 32
+* Number of covered goals: 3
+* Generated 2 tests with total length 2
+* Resulting test suite's coverage: 14% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: com.lts.caloriecount.ui.entry.EntryListView.getViewName()Ljava/lang/String;:39 - ReplaceConstant - EntryView ->  - Status: Survived
+--> Mutation 1: com.lts.caloriecount.ui.entry.EntryListView.initialize(Ljavax/swing/JFrame;)V:44 - ReplaceConstant - EntryList ->  - Status: Survived
+--> Mutation 2: com.lts.caloriecount.ui.entry.EntryListView.initialize(Ljavax/swing/JFrame;)V:48 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 3: com.lts.caloriecount.ui.entry.EntryListView.createTablePanel()Ljavax/swing/JPanel;:72 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 4: com.lts.caloriecount.ui.entry.EntryListView.createTablePanel()Ljavax/swing/JPanel;:72 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 5: com.lts.caloriecount.ui.entry.EntryListView.createTablePanel()Ljavax/swing/JPanel;:72 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 6: com.lts.caloriecount.ui.entry.EntryListView.createTablePanel()Ljavax/swing/JPanel;:72 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 7: com.lts.caloriecount.ui.entry.EntryListView.createTablePanel()Ljavax/swing/JPanel;:72 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 8: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 9: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 10: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 11: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BUTTON_OK - Status: Survived
+--> Mutation 12: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> RESULT_YES - Status: Survived
+--> Mutation 13: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> PROPERTIES - Status: Survived
+--> Mutation 14: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> RESULT_NO - Status: Survived
+--> Mutation 15: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> WIDTH - Status: Survived
+--> Mutation 16: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> RESULT_CANCEL - Status: Survived
+--> Mutation 17: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> FRAMEBITS - Status: Survived
+--> Mutation 18: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BOTTOM_PANEL_SELECT - Status: Survived
+--> Mutation 19: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BOTTOM_PANEL_YES_NO - Status: Survived
+--> Mutation 20: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BOTTOM_PANEL_YES_NO_CANCEL - Status: Survived
+--> Mutation 21: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> WHEN_FOCUSED - Status: Survived
+--> Mutation 22: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BUTTON_CLOSE - Status: Survived
+--> Mutation 23: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BOTTOM_PANEL_OK_CANCEL - Status: Survived
+--> Mutation 24: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> RESULT_OK - Status: Survived
+--> Mutation 25: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> ERROR - Status: Survived
+--> Mutation 26: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BOTTOM_PANEL_NONE - Status: Survived
+--> Mutation 27: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BOTTOM_PANEL_OK - Status: Survived
+--> Mutation 28: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BOTTOM_PANEL_CANCEL - Status: Survived
+--> Mutation 29: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> ABORT - Status: Survived
+--> Mutation 30: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> SOMEBITS - Status: Survived
+--> Mutation 31: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BUTTON_YES - Status: Survived
+--> Mutation 32: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BUTTON_NO - Status: Survived
+--> Mutation 33: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> HEIGHT - Status: Survived
+--> Mutation 34: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 35: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 36: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> ALLBITS - Status: Survived
+--> Mutation 37: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BOTTOM_PANEL_CLOSE - Status: Survived
+--> Mutation 38: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> BUTTON_CANCEL - Status: Survived
+--> Mutation 39: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceVariable index -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 40: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 41: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 42: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 43: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 44: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 45: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:89 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 46: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BUTTON_OK - Status: Survived
+--> Mutation 47: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> RESULT_YES - Status: Survived
+--> Mutation 48: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> PROPERTIES - Status: Survived
+--> Mutation 49: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> RESULT_NO - Status: Survived
+--> Mutation 50: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> WIDTH - Status: Survived
+--> Mutation 51: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> RESULT_CANCEL - Status: Survived
+--> Mutation 52: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> FRAMEBITS - Status: Survived
+--> Mutation 53: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BOTTOM_PANEL_SELECT - Status: Survived
+--> Mutation 54: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BOTTOM_PANEL_YES_NO - Status: Survived
+--> Mutation 55: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BOTTOM_PANEL_YES_NO_CANCEL - Status: Survived
+--> Mutation 56: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> WHEN_FOCUSED - Status: Survived
+--> Mutation 57: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BUTTON_CLOSE - Status: Survived
+--> Mutation 58: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BOTTOM_PANEL_OK_CANCEL - Status: Survived
+--> Mutation 59: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> RESULT_OK - Status: Survived
+--> Mutation 60: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> ERROR - Status: Survived
+--> Mutation 61: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BOTTOM_PANEL_NONE - Status: Survived
+--> Mutation 62: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BOTTOM_PANEL_OK - Status: Survived
+--> Mutation 63: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BOTTOM_PANEL_CANCEL - Status: Survived
+--> Mutation 64: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> ABORT - Status: Survived
+--> Mutation 65: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> SOMEBITS - Status: Survived
+--> Mutation 66: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BUTTON_YES - Status: Survived
+--> Mutation 67: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BUTTON_NO - Status: Survived
+--> Mutation 68: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> HEIGHT - Status: Survived
+--> Mutation 69: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 70: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 71: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> ALLBITS - Status: Survived
+--> Mutation 72: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BOTTOM_PANEL_CLOSE - Status: Survived
+--> Mutation 73: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> BUTTON_CANCEL - Status: Survived
+--> Mutation 74: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - ReplaceVariable index -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 75: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - InsertUnaryOp Negation of index - Status: Survived
+--> Mutation 76: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - InsertUnaryOp IINC 1 index - Status: Survived
+--> Mutation 77: com.lts.caloriecount.ui.entry.EntryListView.getSelectedEntry()Lcom/lts/caloriecount/data/entry/Entry;:92 - InsertUnaryOp IINC -1 index - Status: Survived
+--> Mutation 78: com.lts.caloriecount.ui.entry.EntryListView.editEntry()V:99 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 79: com.lts.caloriecount.ui.entry.EntryListView.editEntry()V:104 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 80: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:127 - ReplaceConstant - Create Meal ->  - Status: Survived
+--> Mutation 81: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:129 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 82: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:129 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 83: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:129 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 84: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:129 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 85: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:129 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 86: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:139 - ReplaceConstant - Create Adjustment ->  - Status: Survived
+--> Mutation 87: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:141 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 88: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:141 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 89: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:141 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 90: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:141 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 91: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:141 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 92: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:152 - ReplaceConstant - Edit ->  - Status: Survived
+--> Mutation 93: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:154 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 94: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:154 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 95: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:154 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 96: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:154 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 97: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:154 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 98: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:161 - ReplaceConstant - Delete ->  - Status: Survived
+--> Mutation 99: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:163 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 100: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:163 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 101: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:163 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 102: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:163 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 103: com.lts.caloriecount.ui.entry.EntryListView.createControlPanel()Ljavax/swing/JPanel;:163 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 104: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:179 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 105: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:179 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 106: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:179 - ReplaceComparisonOperator >= -> < - Status: Survived
+--> Mutation 107: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:184 - ReplaceConstant - Delete entry(ies)? ->  - Status: Survived
+--> Mutation 108: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:186 - ReplaceVariable msg -> WINDOW_PROPERTY_NAME - Status: Survived
+--> Mutation 109: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:186 - ReplaceVariable msg -> TEXT_GET_WINDOW_SIZE - Status: Survived
+--> Mutation 110: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:186 - ReplaceVariable msg -> PROPERTY_WINDOW_SIZE - Status: Survived
+--> Mutation 111: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:186 - ReplaceVariable msg -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 112: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BUTTON_OK - Status: Survived
+--> Mutation 113: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> RESULT_YES - Status: Survived
+--> Mutation 114: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> PROPERTIES - Status: Survived
+--> Mutation 115: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> RESULT_NO - Status: Survived
+--> Mutation 116: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> WIDTH - Status: Survived
+--> Mutation 117: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> RESULT_CANCEL - Status: Survived
+--> Mutation 118: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> FRAMEBITS - Status: Survived
+--> Mutation 119: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BOTTOM_PANEL_SELECT - Status: Survived
+--> Mutation 120: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BOTTOM_PANEL_YES_NO - Status: Survived
+--> Mutation 121: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BOTTOM_PANEL_YES_NO_CANCEL - Status: Survived
+--> Mutation 122: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> WHEN_FOCUSED - Status: Survived
+--> Mutation 123: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BUTTON_CLOSE - Status: Survived
+--> Mutation 124: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BOTTOM_PANEL_OK_CANCEL - Status: Survived
+--> Mutation 125: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> RESULT_OK - Status: Survived
+--> Mutation 126: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> ERROR - Status: Survived
+--> Mutation 127: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BOTTOM_PANEL_NONE - Status: Survived
+--> Mutation 128: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BOTTOM_PANEL_OK - Status: Survived
+--> Mutation 129: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BOTTOM_PANEL_CANCEL - Status: Survived
+--> Mutation 130: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> ABORT - Status: Survived
+--> Mutation 131: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> SOMEBITS - Status: Survived
+--> Mutation 132: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BUTTON_YES - Status: Survived
+--> Mutation 133: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BUTTON_NO - Status: Survived
+--> Mutation 134: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> HEIGHT - Status: Survived
+--> Mutation 135: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 136: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 137: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> ALLBITS - Status: Survived
+--> Mutation 138: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BOTTOM_PANEL_CLOSE - Status: Survived
+--> Mutation 139: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> BUTTON_CANCEL - Status: Survived
+--> Mutation 140: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceVariable result -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 141: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 142: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 143: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 144: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 145: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 146: com.lts.caloriecount.ui.entry.EntryListView.deleteEntry()V:187 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 147: com.lts.caloriecount.ui.entry.EntryListView.showView()V:212 - ReplaceConstant - 1 -> 0 - Status: Survived
+* Compiling and checking tests
 * Computation finished

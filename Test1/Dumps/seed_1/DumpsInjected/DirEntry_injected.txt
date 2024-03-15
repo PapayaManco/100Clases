@@ -2,8 +2,8 @@
 * Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects/101_netweaver/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects\101_netweaver\evosuite-files\evosuite.properties
+* Connecting to master process on port 5554
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,8 +18,117 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 255
-* Using seed 2482030657809
+* Using seed 1710490845849
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 69 / 255
-* Search finished after 181s and 5800 generations, 2913064 statements, best individual has fitness: 24.0
+* Search finished after 181s and 9374 generations, 4737284 statements, best individual has fitness: 24.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 96%
+* Total number of goals: 49
+* Number of covered goals: 47
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 89%
+* Total number of goals: 45
+* Number of covered goals: 40
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 90%
+* Total number of goals: 71
+* Number of covered goals: 64
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 74%
+* Total number of goals: 19
+* Number of covered goals: 14
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 89%
+* Total number of goals: 45
+* Number of covered goals: 40
+* Generated 24 tests with total length 69
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 51%
+* There are surviving mutants: 
+--> Mutation 0: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.<init>()V:119 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 1: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.<init>(Ljava/lang/String;JLjava/lang/String;)V:119 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 2: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.<init>(Ljava/lang/String;JLjava/lang/String;)V:31 - ReplaceVariable filename -> modtime - Status: Killed
+--> Mutation 3: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.<init>(Ljava/lang/String;JLjava/lang/String;)V:32 - InsertUnaryOp Negation of size - Status: Killed
+--> Mutation 4: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.<init>(Ljava/lang/String;JLjava/lang/String;)V:33 - ReplaceVariable modtime -> filename - Status: Killed
+--> Mutation 5: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.getSize()J:63 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 6: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.setSize(J)V:73 - InsertUnaryOp Negation of size - Status: Killed
+--> Mutation 7: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:98 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 8: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:98 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 9: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:100 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 10: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:100 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 11: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:101 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 12: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:101 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 13: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:102 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 14: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:103 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 15: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:103 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 16: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:103 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 17: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:107 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 18: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:107 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 19: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:108 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 20: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:108 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 21: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:108 - ReplaceVariable other -> this - Status: Survived
+--> Mutation 22: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:110 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 23: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:110 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 24: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:110 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 25: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:110 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 26: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:110 - ReplaceVariable other -> this - Status: Killed
+--> Mutation 27: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:111 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 28: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:111 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 29: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:111 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 30: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:111 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 31: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:111 - ReplaceVariable other -> this - Status: Killed
+--> Mutation 32: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:112 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 33: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:112 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 34: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:112 - ReplaceVariable other -> this - Status: Killed
+--> Mutation 35: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:114 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 36: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:114 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 37: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:114 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 38: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:114 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 39: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:114 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 40: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.equals(Ljava/lang/Object;)Z:116 - InsertUnaryOp Negation of _equals - Status: Survived
+--> Mutation 41: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:121 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 42: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:121 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 43: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:122 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 44: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:124 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 45: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:125 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 46: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:126 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 47: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:127 - InsertUnaryOp Negation of _hashCode - Status: Survived
+--> Mutation 48: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:127 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 49: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:127 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 50: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:127 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 51: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:127 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 52: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:129 - InsertUnaryOp Negation of _hashCode - Status: Survived
+--> Mutation 53: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:129 - InsertUnaryOp IINC 1 _hashCode - Status: Survived
+--> Mutation 54: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:129 - InsertUnaryOp IINC -1 _hashCode - Status: Survived
+--> Mutation 55: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:129 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 56: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:129 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 57: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:129 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 58: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:129 - ReplaceArithmeticOperator + -> / - Status: Killed
+--> Mutation 59: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:130 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 60: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:131 - InsertUnaryOp Negation of _hashCode - Status: Survived
+--> Mutation 61: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:131 - InsertUnaryOp IINC 1 _hashCode - Status: Survived
+--> Mutation 62: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:131 - InsertUnaryOp IINC -1 _hashCode - Status: Survived
+--> Mutation 63: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:131 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 64: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:131 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 65: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:131 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 66: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:131 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 67: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:133 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 68: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:134 - InsertUnaryOp Negation of _hashCode - Status: Survived
+--> Mutation 69: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:134 - InsertUnaryOp IINC 1 _hashCode - Status: Survived
+--> Mutation 70: com.sap.managementconsole.soap.axis.sapcontrol.DirEntry.hashCode()I:134 - InsertUnaryOp IINC -1 _hashCode - Status: Survived
+* Compiling and checking tests
 * Computation finished

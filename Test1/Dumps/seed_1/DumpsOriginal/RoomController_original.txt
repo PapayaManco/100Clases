@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.eteks.sweethome3d.viewcontroller.RoomController
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/103_sweethome3d/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\103_sweethome3d\evosuite-files\evosuite.properties
+* Connecting to master process on port 13810
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 23:50:37.164 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 23:50:37.344 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 23:50:38.429 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class com.eteks.sweethome3d.viewcontroller.RoomController
 * Test criteria:
@@ -21,16 +18,188 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 838
-* Using seed 2482030657809
+* Using seed 1710472409800
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 259 / 838
-[MASTER] 23:50:39.517 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 23:50:41.618 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 23:50:42.504 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: ftpClientProvider
-[MASTER] 23:50:54.674 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 23:50:54.682 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 23:52:28.603 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
-[MASTER] 23:52:28.668 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
-[MASTER] 23:53:14.456 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-* Search finished after 181s and 1046 generations, 420672 statements, best individual has fitness: 668.0
+[MASTER] 00:13:35.019 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 00:13:35.266 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: ftpClientProvider
+[MASTER] 00:13:36.245 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 00:15:08.795 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 00:15:22.179 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 182s and 617 generations, 255239 statements, best individual has fitness: 672.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 24%
+* Total number of goals: 289
+* Number of covered goals: 68
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 21%
+* Total number of goals: 154
+* Number of covered goals: 33
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 30%
+* Total number of goals: 135
+* Number of covered goals: 41
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 38
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 3%
+* Total number of goals: 34
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 34
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 16%
+* Total number of goals: 154
+* Number of covered goals: 24
+* Generated 5 tests with total length 52
+* Resulting test suite's coverage: 18% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: com.eteks.sweethome3d.viewcontroller.RoomController.getFloorTextureController()Lcom/eteks/sweethome3d/viewcontroller/TextureChoiceController;:99 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 1: com.eteks.sweethome3d.viewcontroller.RoomController.getFloorTextureController()Lcom/eteks/sweethome3d/viewcontroller/TextureChoiceController;:100 - ReplaceConstant - floorTextureTitle ->  - Status: Survived
+--> Mutation 2: com.eteks.sweethome3d.viewcontroller.RoomController.getFloorTextureController()Lcom/eteks/sweethome3d/viewcontroller/TextureChoiceController;:100 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 3: com.eteks.sweethome3d.viewcontroller.RoomController.getCeilingTextureController()Lcom/eteks/sweethome3d/viewcontroller/TextureChoiceController;:118 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 4: com.eteks.sweethome3d.viewcontroller.RoomController.getCeilingTextureController()Lcom/eteks/sweethome3d/viewcontroller/TextureChoiceController;:119 - ReplaceConstant - ceilingTextureTitle ->  - Status: Survived
+--> Mutation 5: com.eteks.sweethome3d.viewcontroller.RoomController.getCeilingTextureController()Lcom/eteks/sweethome3d/viewcontroller/TextureChoiceController;:119 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 6: com.eteks.sweethome3d.viewcontroller.RoomController.getView()Lcom/eteks/sweethome3d/viewcontroller/DialogView;:137 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 7: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:169 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 8: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:169 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 9: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:169 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 10: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:169 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 11: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:169 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 12: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:169 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 13: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:181 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 14: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:184 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 15: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:185 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 16: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:185 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 17: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:185 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 18: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:185 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 19: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:185 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 20: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:185 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 21: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:185 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 22: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:186 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 23: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:186 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 24: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:186 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 25: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:186 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 26: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:186 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 27: com.eteks.sweethome3d.viewcontroller.RoomController.updateProperties()V:186 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 28: com.eteks.sweethome3d.viewcontroller.RoomController.setName(Ljava/lang/String;)V:314 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 29: com.eteks.sweethome3d.viewcontroller.RoomController.setName(Ljava/lang/String;)V:316 - ReplaceVariable name -> oldName - Status: Survived
+--> Mutation 30: com.eteks.sweethome3d.viewcontroller.RoomController.setName(Ljava/lang/String;)V:317 - ReplaceVariable oldName -> name - Status: Survived
+--> Mutation 31: com.eteks.sweethome3d.viewcontroller.RoomController.setName(Ljava/lang/String;)V:317 - ReplaceVariable name -> oldName - Status: Survived
+--> Mutation 32: com.eteks.sweethome3d.viewcontroller.RoomController.setAreaVisible(Ljava/lang/Boolean;)V:332 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 33: com.eteks.sweethome3d.viewcontroller.RoomController.setAreaVisible(Ljava/lang/Boolean;)V:334 - ReplaceVariable areaVisible -> oldAreaVisible - Status: Survived
+--> Mutation 34: com.eteks.sweethome3d.viewcontroller.RoomController.setAreaVisible(Ljava/lang/Boolean;)V:335 - ReplaceVariable oldAreaVisible -> areaVisible - Status: Survived
+--> Mutation 35: com.eteks.sweethome3d.viewcontroller.RoomController.setAreaVisible(Ljava/lang/Boolean;)V:335 - ReplaceVariable areaVisible -> oldAreaVisible - Status: Survived
+--> Mutation 36: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorVisible(Ljava/lang/Boolean;)V:350 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 37: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorVisible(Ljava/lang/Boolean;)V:352 - ReplaceVariable floorVisible -> oldFloorVisible - Status: Survived
+--> Mutation 38: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorVisible(Ljava/lang/Boolean;)V:353 - ReplaceVariable oldFloorVisible -> floorVisible - Status: Survived
+--> Mutation 39: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorVisible(Ljava/lang/Boolean;)V:353 - ReplaceVariable floorVisible -> oldFloorVisible - Status: Survived
+--> Mutation 40: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorColor(Ljava/lang/Integer;)V:368 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 41: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorColor(Ljava/lang/Integer;)V:370 - ReplaceVariable floorColor -> oldFloorColor - Status: Survived
+--> Mutation 42: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorColor(Ljava/lang/Integer;)V:371 - ReplaceVariable oldFloorColor -> floorColor - Status: Survived
+--> Mutation 43: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorColor(Ljava/lang/Integer;)V:371 - ReplaceVariable floorColor -> oldFloorColor - Status: Survived
+--> Mutation 44: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorPaint(Lcom/eteks/sweethome3d/viewcontroller/RoomController$RoomPaint;)V:388 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 45: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorPaint(Lcom/eteks/sweethome3d/viewcontroller/RoomController$RoomPaint;)V:390 - ReplaceVariable floorPaint -> oldFloorPaint - Status: Survived
+--> Mutation 46: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorPaint(Lcom/eteks/sweethome3d/viewcontroller/RoomController$RoomPaint;)V:391 - ReplaceVariable oldFloorPaint -> floorPaint - Status: Survived
+--> Mutation 47: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorPaint(Lcom/eteks/sweethome3d/viewcontroller/RoomController$RoomPaint;)V:391 - ReplaceVariable floorPaint -> oldFloorPaint - Status: Survived
+--> Mutation 48: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorShininess(Ljava/lang/Float;)V:406 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 49: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorShininess(Ljava/lang/Float;)V:408 - ReplaceVariable floorShininess -> oldFloorShininess - Status: Survived
+--> Mutation 50: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorShininess(Ljava/lang/Float;)V:409 - ReplaceVariable oldFloorShininess -> floorShininess - Status: Survived
+--> Mutation 51: com.eteks.sweethome3d.viewcontroller.RoomController.setFloorShininess(Ljava/lang/Float;)V:409 - ReplaceVariable floorShininess -> oldFloorShininess - Status: Survived
+--> Mutation 52: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingVisible(Ljava/lang/Boolean;)V:424 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 53: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingVisible(Ljava/lang/Boolean;)V:426 - ReplaceVariable ceilingCeilingVisible -> oldCeilingVisible - Status: Survived
+--> Mutation 54: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingVisible(Ljava/lang/Boolean;)V:427 - ReplaceVariable oldCeilingVisible -> ceilingCeilingVisible - Status: Survived
+--> Mutation 55: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingVisible(Ljava/lang/Boolean;)V:427 - ReplaceVariable ceilingCeilingVisible -> oldCeilingVisible - Status: Survived
+--> Mutation 56: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingColor(Ljava/lang/Integer;)V:442 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 57: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingColor(Ljava/lang/Integer;)V:444 - ReplaceVariable ceilingColor -> oldCeilingColor - Status: Survived
+--> Mutation 58: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingColor(Ljava/lang/Integer;)V:445 - ReplaceVariable oldCeilingColor -> ceilingColor - Status: Survived
+--> Mutation 59: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingColor(Ljava/lang/Integer;)V:445 - ReplaceVariable ceilingColor -> oldCeilingColor - Status: Survived
+--> Mutation 60: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingPaint(Lcom/eteks/sweethome3d/viewcontroller/RoomController$RoomPaint;)V:462 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 61: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingPaint(Lcom/eteks/sweethome3d/viewcontroller/RoomController$RoomPaint;)V:464 - ReplaceVariable ceilingPaint -> oldCeilingPaint - Status: Survived
+--> Mutation 62: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingPaint(Lcom/eteks/sweethome3d/viewcontroller/RoomController$RoomPaint;)V:465 - ReplaceVariable oldCeilingPaint -> ceilingPaint - Status: Survived
+--> Mutation 63: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingPaint(Lcom/eteks/sweethome3d/viewcontroller/RoomController$RoomPaint;)V:465 - ReplaceVariable ceilingPaint -> oldCeilingPaint - Status: Survived
+--> Mutation 64: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingShininess(Ljava/lang/Float;)V:480 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 65: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingShininess(Ljava/lang/Float;)V:482 - ReplaceVariable ceilingShininess -> oldCeilingShininess - Status: Survived
+--> Mutation 66: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingShininess(Ljava/lang/Float;)V:483 - ReplaceVariable oldCeilingShininess -> ceilingShininess - Status: Survived
+--> Mutation 67: com.eteks.sweethome3d.viewcontroller.RoomController.setCeilingShininess(Ljava/lang/Float;)V:483 - ReplaceVariable ceilingShininess -> oldCeilingShininess - Status: Survived
+--> Mutation 68: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:500 - ReplaceVariable selectedRooms -> oldSelection - Status: Survived
+--> Mutation 69: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:500 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 70: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:500 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 71: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:500 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 72: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:500 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 73: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:500 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 74: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:500 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 75: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:504 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 76: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:506 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 77: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:510 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 78: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:512 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 79: com.eteks.sweethome3d.viewcontroller.RoomController.modifyRooms()V:517 - ReplaceVariable selectedRooms -> oldSelection - Status: Survived
+--> Mutation 80: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:617 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 81: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:617 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 82: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:617 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 83: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:617 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 84: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:619 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 85: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:622 - ReplaceVariable areaVisible -> ceilingVisible - Status: Survived
+--> Mutation 86: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:622 - ReplaceVariable areaVisible -> floorVisible - Status: Survived
+--> Mutation 87: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:622 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 88: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:623 - ReplaceVariable areaVisible -> ceilingVisible - Status: Survived
+--> Mutation 89: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:623 - ReplaceVariable areaVisible -> floorVisible - Status: Survived
+--> Mutation 90: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:625 - ReplaceVariable floorVisible -> ceilingVisible - Status: Survived
+--> Mutation 91: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:625 - ReplaceVariable floorVisible -> areaVisible - Status: Survived
+--> Mutation 92: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:625 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 93: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:626 - ReplaceVariable floorVisible -> ceilingVisible - Status: Survived
+--> Mutation 94: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:626 - ReplaceVariable floorVisible -> areaVisible - Status: Survived
+--> Mutation 95: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:628 - ReplaceVariable floorTexture -> ceilingTexture - Status: Survived
+--> Mutation 96: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:628 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 97: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:629 - ReplaceVariable floorTexture -> ceilingTexture - Status: Survived
+--> Mutation 98: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:631 - ReplaceVariable floorColor -> ceilingColor - Status: Survived
+--> Mutation 99: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:631 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 100: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:632 - ReplaceVariable floorColor -> ceilingColor - Status: Survived
+--> Mutation 101: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:635 - ReplaceVariable floorShininess -> ceilingShininess - Status: Survived
+--> Mutation 102: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:635 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 103: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:636 - ReplaceVariable floorShininess -> ceilingShininess - Status: Survived
+--> Mutation 104: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:638 - ReplaceVariable ceilingVisible -> floorVisible - Status: Survived
+--> Mutation 105: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:638 - ReplaceVariable ceilingVisible -> areaVisible - Status: Survived
+--> Mutation 106: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:638 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 107: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:639 - ReplaceVariable ceilingVisible -> floorVisible - Status: Survived
+--> Mutation 108: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:639 - ReplaceVariable ceilingVisible -> areaVisible - Status: Survived
+--> Mutation 109: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:641 - ReplaceVariable ceilingTexture -> floorTexture - Status: Survived
+--> Mutation 110: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:641 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 111: com.eteks.sweethome3d.viewcontroller.RoomController.doModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Float;)V:642 - ReplaceVariable ceilingTexture -> floorTexture - Status: Survived
+--> Mutation 112: com.eteks.sweethome3d.viewcontroller.RoomController.undoModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;)V:658 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 113: com.eteks.sweethome3d.viewcontroller.RoomController.undoModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;)V:658 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 114: com.eteks.sweethome3d.viewcontroller.RoomController.undoModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;)V:658 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 115: com.eteks.sweethome3d.viewcontroller.RoomController.undoModifyRooms([Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;)V:658 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 116: com.eteks.sweethome3d.viewcontroller.RoomController$ModifiedRoom.reset()V:699 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 117: com.eteks.sweethome3d.viewcontroller.RoomController$ModifiedRoom.reset()V:700 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 118: com.eteks.sweethome3d.viewcontroller.RoomController$ModifiedRoom.reset()V:703 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 119: com.eteks.sweethome3d.viewcontroller.RoomController$ModifiedRoom.reset()V:704 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 120: com.eteks.sweethome3d.viewcontroller.RoomController$ModifiedRoom.reset()V:707 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 121: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:577 - ReplaceVariable areaVisible -> ceilingVisible - Status: Survived
+--> Mutation 122: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:577 - ReplaceVariable areaVisible -> floorVisible - Status: Survived
+--> Mutation 123: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:578 - ReplaceVariable floorColor -> ceilingColor - Status: Survived
+--> Mutation 124: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:579 - ReplaceVariable floorTexture -> ceilingTexture - Status: Survived
+--> Mutation 125: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:580 - ReplaceVariable floorVisible -> ceilingVisible - Status: Survived
+--> Mutation 126: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:580 - ReplaceVariable floorVisible -> areaVisible - Status: Survived
+--> Mutation 127: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:581 - ReplaceVariable floorShininess -> ceilingShininess - Status: Survived
+--> Mutation 128: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:582 - ReplaceVariable ceilingColor -> floorColor - Status: Survived
+--> Mutation 129: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:583 - ReplaceVariable ceilingTexture -> floorTexture - Status: Survived
+--> Mutation 130: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:584 - ReplaceVariable ceilingVisible -> floorVisible - Status: Survived
+--> Mutation 131: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:584 - ReplaceVariable ceilingVisible -> areaVisible - Status: Survived
+--> Mutation 132: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.<init>(Lcom/eteks/sweethome3d/model/Home;Lcom/eteks/sweethome3d/model/UserPreferences;Ljava/util/List;[Lcom/eteks/sweethome3d/viewcontroller/RoomController$ModifiedRoom;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;Ljava/lang/Integer;Lcom/eteks/sweethome3d/model/HomeTexture;Ljava/lang/Boolean;Ljava/lang/Float;)V:585 - ReplaceVariable ceilingShininess -> floorShininess - Status: Survived
+--> Mutation 133: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.getPresentationName()Ljava/lang/String;:606 - ReplaceConstant - undoModifyRoomsName ->  - Status: Survived
+--> Mutation 134: com.eteks.sweethome3d.viewcontroller.RoomController$RoomsModificationUndoableEdit.getPresentationName()Ljava/lang/String;:606 - ReplaceConstant - 0 -> 1 - Status: Survived
+* Compiling and checking tests
 * Computation finished

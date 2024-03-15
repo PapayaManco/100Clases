@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.jcvi.jillion.fasta.pos.PositionFastaRecord
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/92_jcvi-javacommon/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\92_jcvi-javacommon\evosuite-files\evosuite.properties
+* Connecting to master process on port 17260
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 160
-* Using seed 2482030657809
+* Using seed 1710490095900
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 90 / 160
-* Search finished after 181s and 3661 generations, 1086328 statements, best individual has fitness: 10.0
+* Search finished after 181s and 7087 generations, 2110077 statements, best individual has fitness: 10.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -56,7 +56,7 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 18
 * Number of covered goals: 18
-* Generated 15 tests with total length 46
+* Generated 14 tests with total length 46
 * Resulting test suite's coverage: 88% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 29%
@@ -127,19 +127,4 @@
 --> Mutation 63: org.jcvi.jillion.fasta.pos.PositionFastaRecord.equals(Ljava/lang/Object;)Z:98 - ReplaceConstant - 1 -> 0 - Status: Killed
 --> Mutation 64: org.jcvi.jillion.fasta.pos.PositionFastaRecord.equals(Ljava/lang/Object;)Z:98 - ReplaceConstant - 0 -> 1 - Status: Killed
 * Compiling and checking tests
-[MASTER] 04:43:49.010 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:43:54.272 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:43:59.518 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:44:04.768 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:44:10.007 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:44:15.253 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:44:20.500 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:44:25.749 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:44:31.001 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:44:36.244 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:44:41.497 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'PositionFastaRecord_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

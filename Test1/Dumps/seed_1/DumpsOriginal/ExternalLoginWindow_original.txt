@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 7245
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:00:01.921 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:00:02.327 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow
 * Test criteria:
@@ -20,9 +18,232 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 516
-* Using seed 2482030657809
+* Using seed 1710473042932
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 176 / 516
-[MASTER] 00:00:03.552 [logback-1] WARN  TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
-* Search finished after 181s and 2056 generations, 528431 statements, best individual has fitness: 501.0
+[MASTER] 00:24:07.201 [logback-1] WARN  TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 00:25:44.036 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 181s and 3035 generations, 763261 statements, best individual has fitness: 501.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 5%
+* Total number of goals: 167
+* Number of covered goals: 8
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 0%
+* Total number of goals: 74
+* Number of covered goals: 0
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 67%
+* Total number of goals: 3
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 5%
+* Total number of goals: 182
+* Number of covered goals: 9
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 5
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 29%
+* Total number of goals: 7
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 7
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 0%
+* Total number of goals: 74
+* Number of covered goals: 0
+* Generated 3 tests with total length 5
+* Resulting test suite's coverage: 9% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:60 - ReplaceVariable _listener -> listener - Status: Survived
+--> Mutation 1: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:61 - ReplaceVariable _loginUrl -> authMode - Status: Survived
+--> Mutation 2: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:61 - ReplaceVariable _loginUrl -> name - Status: Survived
+--> Mutation 3: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:61 - ReplaceVariable _loginUrl -> originalLoginUrl - Status: Survived
+--> Mutation 4: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:63 - ReplaceConstant - 96 -> 0 - Status: Survived
+--> Mutation 5: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:63 - ReplaceConstant - 96 -> 1 - Status: Survived
+--> Mutation 6: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:63 - ReplaceConstant - 96 -> -1 - Status: Survived
+--> Mutation 7: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:63 - ReplaceConstant - 96 -> 95 - Status: Survived
+--> Mutation 8: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:63 - ReplaceConstant - 96 -> 97 - Status: Survived
+--> Mutation 9: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 800 -> 0 - Status: Survived
+--> Mutation 10: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 800 -> 1 - Status: Survived
+--> Mutation 11: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 800 -> -1 - Status: Survived
+--> Mutation 12: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 800 -> 799 - Status: Survived
+--> Mutation 13: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 800 -> 801 - Status: Survived
+--> Mutation 14: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 600 -> 0 - Status: Survived
+--> Mutation 15: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 600 -> 1 - Status: Survived
+--> Mutation 16: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 600 -> -1 - Status: Survived
+--> Mutation 17: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 600 -> 599 - Status: Survived
+--> Mutation 18: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:64 - ReplaceConstant - 600 -> 601 - Status: Survived
+--> Mutation 19: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:68 - ReplaceConstant - externalLogin.title ->  - Status: Survived
+--> Mutation 20: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:87 - ReplaceConstant - 64 -> 0 - Status: Survived
+--> Mutation 21: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:87 - ReplaceConstant - 64 -> 1 - Status: Survived
+--> Mutation 22: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:87 - ReplaceConstant - 64 -> -1 - Status: Survived
+--> Mutation 23: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:87 - ReplaceConstant - 64 -> 63 - Status: Survived
+--> Mutation 24: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:87 - ReplaceConstant - 64 -> 65 - Status: Survived
+--> Mutation 25: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:88 - ReplaceVariable captureMode -> isMine - Status: Survived
+--> Mutation 26: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:88 - InsertUnaryOp Negation of captureMode - Status: Survived
+--> Mutation 27: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:88 - InsertUnaryOp IINC 1 captureMode - Status: Survived
+--> Mutation 28: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:88 - InsertUnaryOp IINC -1 captureMode - Status: Survived
+--> Mutation 29: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:88 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 30: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:89 - ReplaceConstant - externalLogin.explanation.capture ->  - Status: Survived
+--> Mutation 31: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:89 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 32: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:89 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 33: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:89 - ReplaceVariable name -> _loginUrl - Status: Survived
+--> Mutation 34: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:89 - ReplaceVariable name -> authMode - Status: Survived
+--> Mutation 35: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:89 - ReplaceVariable name -> originalLoginUrl - Status: Survived
+--> Mutation 36: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:91 - ReplaceConstant - externalLogin.explanation ->  - Status: Survived
+--> Mutation 37: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:91 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 38: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:91 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 39: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:91 - ReplaceVariable name -> _loginUrl - Status: Survived
+--> Mutation 40: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:91 - ReplaceVariable name -> authMode - Status: Survived
+--> Mutation 41: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.<init>(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginListener;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V:91 - ReplaceVariable name -> originalLoginUrl - Status: Survived
+--> Mutation 42: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:208 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 43: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:215 - ReplaceVariable show_progress -> transparent - Status: Survived
+--> Mutation 44: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:215 - InsertUnaryOp Negation of show_progress - Status: Survived
+--> Mutation 45: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:215 - InsertUnaryOp IINC 1 show_progress - Status: Survived
+--> Mutation 46: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:215 - InsertUnaryOp IINC -1 show_progress - Status: Survived
+--> Mutation 47: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:215 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 48: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - externalLogin.wait ->  - Status: Survived
+--> Mutation 49: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 2144 -> 0 - Status: Survived
+--> Mutation 50: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 2144 -> 1 - Status: Survived
+--> Mutation 51: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 2144 -> -1 - Status: Survived
+--> Mutation 52: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 2144 -> 2143 - Status: Survived
+--> Mutation 53: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 2144 -> 2145 - Status: Survived
+--> Mutation 54: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 500 -> 0 - Status: Survived
+--> Mutation 55: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 500 -> 1 - Status: Survived
+--> Mutation 56: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 500 -> -1 - Status: Survived
+--> Mutation 57: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 500 -> 499 - Status: Survived
+--> Mutation 58: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:217 - ReplaceConstant - 500 -> 501 - Status: Survived
+--> Mutation 59: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:220 - ReplaceVariable browser -> browser - Status: Survived
+--> Mutation 60: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:220 - ReplaceVariable browser -> browser - Status: Survived
+--> Mutation 61: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:243 - ReplaceVariable transparent -> show_progress - Status: Survived
+--> Mutation 62: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:243 - InsertUnaryOp Negation of transparent - Status: Survived
+--> Mutation 63: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:243 - InsertUnaryOp IINC 1 transparent - Status: Survived
+--> Mutation 64: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:243 - InsertUnaryOp IINC -1 transparent - Status: Survived
+--> Mutation 65: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:243 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 66: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:245 - ReplaceVariable browser -> browser - Status: Survived
+--> Mutation 67: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:253 - ReplaceVariable this_sniffer -> sniffer - Status: Survived
+--> Mutation 68: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:253 - ReplaceVariable this_sniffer -> sniffer - Status: Survived
+--> Mutation 69: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:269 - ReplaceVariable this_sniffer -> sniffer - Status: Survived
+--> Mutation 70: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:273 - ReplaceVariable str -> originalLoginUrl - Status: Survived
+--> Mutation 71: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:273 - ReplaceConstant - :// ->  - Status: Survived
+--> Mutation 72: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceVariable str -> originalLoginUrl - Status: Survived
+--> Mutation 73: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - InsertUnaryOp Negation of pos - Status: Survived
+--> Mutation 74: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - InsertUnaryOp IINC 1 pos - Status: Survived
+--> Mutation 75: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - InsertUnaryOp IINC -1 pos - Status: Survived
+--> Mutation 76: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 77: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 78: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 79: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 80: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 81: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 82: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 83: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 84: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:275 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 85: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:277 - ReplaceVariable str -> originalLoginUrl - Status: Survived
+--> Mutation 86: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.setCaptureMethod(Lcom/aelitis/azureus/ui/swt/browser/BrowserWrapper;ZZ)V:277 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 87: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:303 - ReplaceVariable _cookies -> originalLoginUrl - Status: Survived
+--> Mutation 88: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:303 - ReplaceConstant - ; ->  - Status: Survived
+--> Mutation 89: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:307 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 90: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:307 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 91: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:307 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 92: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:307 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 93: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:307 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 94: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:307 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 95: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:307 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 96: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:309 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 97: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:309 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 98: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:309 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 99: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:311 - ReplaceVariable cookie -> _cookies - Status: Survived
+--> Mutation 100: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:311 - ReplaceVariable cookie -> originalLoginUrl - Status: Survived
+--> Mutation 101: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:311 - ReplaceConstant - = ->  - Status: Survived
+--> Mutation 102: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:313 - ReplaceVariable bits -> x - Status: Survived
+--> Mutation 103: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:313 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 104: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:313 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 105: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:313 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 106: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:313 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 107: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:313 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 108: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:313 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 109: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:313 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 110: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:315 - ReplaceVariable bits -> x - Status: Survived
+--> Mutation 111: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:315 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 112: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:316 - ReplaceVariable bits -> x - Status: Survived
+--> Mutation 113: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:316 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 114: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:318 - InsertUnaryOp Negation of _from_js - Status: Survived
+--> Mutation 115: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:318 - InsertUnaryOp IINC 1 _from_js - Status: Survived
+--> Mutation 116: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:318 - InsertUnaryOp IINC -1 _from_js - Status: Survived
+--> Mutation 117: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:318 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 118: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:320 - ReplaceVariable js_cookies -> sniffer_cookies - Status: Survived
+--> Mutation 119: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:320 - ReplaceVariable name -> _cookies - Status: Survived
+--> Mutation 120: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:320 - ReplaceVariable name -> cookie - Status: Survived
+--> Mutation 121: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:320 - ReplaceVariable name -> originalLoginUrl - Status: Survived
+--> Mutation 122: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:320 - ReplaceVariable name -> value - Status: Survived
+--> Mutation 123: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:324 - ReplaceVariable sniffer_cookies -> js_cookies - Status: Survived
+--> Mutation 124: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:324 - ReplaceVariable name -> _cookies - Status: Survived
+--> Mutation 125: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:324 - ReplaceVariable name -> cookie - Status: Survived
+--> Mutation 126: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:324 - ReplaceVariable name -> originalLoginUrl - Status: Survived
+--> Mutation 127: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:324 - ReplaceVariable name -> value - Status: Survived
+--> Mutation 128: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:327 - ReplaceVariable name -> _cookies - Status: Survived
+--> Mutation 129: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:327 - ReplaceVariable name -> cookie - Status: Survived
+--> Mutation 130: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:327 - ReplaceVariable name -> originalLoginUrl - Status: Survived
+--> Mutation 131: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:327 - ReplaceVariable name -> value - Status: Survived
+--> Mutation 132: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:327 - ReplaceVariable value -> _cookies - Status: Survived
+--> Mutation 133: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:327 - ReplaceVariable value -> name - Status: Survived
+--> Mutation 134: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:327 - ReplaceVariable value -> cookie - Status: Survived
+--> Mutation 135: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:327 - ReplaceVariable value -> originalLoginUrl - Status: Survived
+--> Mutation 136: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.foundCookies(Ljava/lang/String;Z)V:332 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 137: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:347 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 138: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:351 - ReplaceVariable res -> originalLoginUrl - Status: Survived
+--> Mutation 139: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:351 - ReplaceVariable res -> originalLoginUrl - Status: Survived
+--> Mutation 140: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:351 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 141: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:351 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 142: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:351 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 143: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:351 - ReplaceConstant - ; ->  - Status: Survived
+--> Mutation 144: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:351 - ReplaceConstant - = ->  - Status: Survived
+--> Mutation 145: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.cookiesToString()Ljava/lang/String;:354 - ReplaceVariable res -> originalLoginUrl - Status: Survived
+--> Mutation 146: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:363 - ReplaceVariable sniffer_cookies -> js_cookies - Status: Survived
+--> Mutation 147: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:363 - ReplaceVariable js_cookies -> sniffer_cookies - Status: Survived
+--> Mutation 148: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:363 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 149: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:363 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 150: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:363 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 151: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:365 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 152: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:368 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 153: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:368 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 154: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:368 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 155: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.proxyCaptureModeRequired()Z:368 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 156: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.main([Ljava/lang/String;)V:381 - ReplaceConstant - test ->  - Status: Survived
+--> Mutation 157: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.main([Ljava/lang/String;)V:381 - ReplaceConstant - http://www.sf.net/ ->  - Status: Survived
+--> Mutation 158: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.main([Ljava/lang/String;)V:381 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 159: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.main([Ljava/lang/String;)V:381 - ReplaceConstant - proxy ->  - Status: Survived
+--> Mutation 160: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.main([Ljava/lang/String;)V:381 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 161: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.main([Ljava/lang/String;)V:412 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 162: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.main([Ljava/lang/String;)V:413 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 163: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow.main([Ljava/lang/String;)V:418 - ReplaceConstant - Found httponly cookies= ->  - Status: Survived
+--> Mutation 164: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$1.widgetDisposed(Lorg/eclipse/swt/events/DisposeEvent;)V:79 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 165: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$2.cookiesFound(Ljava/lang/String;)V:101 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 166: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$3.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:124 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 167: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$3.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:124 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 168: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$3.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:124 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 169: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$3.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:124 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 170: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$6.completed(Lorg/eclipse/swt/browser/ProgressEvent;)V:233 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 171: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$6.completed(Lorg/eclipse/swt/browser/ProgressEvent;)V:233 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 172: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$7.cookieFound(Lcom/aelitis/azureus/core/util/http/HTTPAuthHelper;Ljava/lang/String;Ljava/lang/String;)V:262 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 173: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$7.cookieFound(Lcom/aelitis/azureus/core/util/http/HTTPAuthHelper;Ljava/lang/String;Ljava/lang/String;)V:264 - ReplaceVariable cookie_name -> cookie_value - Status: Survived
+--> Mutation 174: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$7.cookieFound(Lcom/aelitis/azureus/core/util/http/HTTPAuthHelper;Ljava/lang/String;Ljava/lang/String;)V:264 - ReplaceConstant - = ->  - Status: Survived
+--> Mutation 175: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$7.cookieFound(Lcom/aelitis/azureus/core/util/http/HTTPAuthHelper;Ljava/lang/String;Ljava/lang/String;)V:264 - ReplaceVariable cookie_value -> cookie_name - Status: Survived
+--> Mutation 176: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$7.cookieFound(Lcom/aelitis/azureus/core/util/http/HTTPAuthHelper;Ljava/lang/String;Ljava/lang/String;)V:264 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 177: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$4.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:139 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 178: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$5.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:148 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 179: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$9.cookiesFound(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginWindow;Ljava/lang/String;)V:389 - ReplaceConstant - Cookies found:  ->  - Status: Survived
+--> Mutation 180: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$9.canceled(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginWindow;)V:396 - ReplaceConstant - Cancelled ->  - Status: Survived
+--> Mutation 181: com.aelitis.azureus.core.metasearch.impl.ExternalLoginWindow$9.done(Lcom/aelitis/azureus/core/metasearch/impl/ExternalLoginWindow;Ljava/lang/String;)V:403 - ReplaceConstant - Done ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: wheel.EngineImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/80_wheelwebtool/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\80_wheelwebtool\evosuite-files\evosuite.properties
+* Connecting to master process on port 2114
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 04:18:08.665 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 04:18:08.802 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
 * Finished analyzing classpath
 * Generating tests for class wheel.EngineImpl
 * Test criteria:
@@ -20,21 +18,222 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 1204
-* Using seed 2482030657809
+* Using seed 1710488921615
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 320 / 1204
-[MASTER] 04:18:09.191 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
-[MASTER] 04:18:10.036 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 04:18:10.103 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.ErrorPage canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 04:18:10.522 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.components.Form canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 04:18:10.769 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 04:18:10.774 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletResponseWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 04:18:10.909 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 04:18:12.581 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 04:18:13.335 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-[MASTER] 04:18:18.366 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.util.Locale$LanguageRange canUseFunctionalMocks=true, canBeMocked: false
-[MASTER] 04:18:23.844 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.EngineImpl canUseFunctionalMocks=false, canBeMocked: false
-[MASTER] 04:18:42.075 [logback-1] WARN  TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
-[MASTER] 04:19:17.485 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.LinkedHashSet due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-* Search finished after 181s and 1306 generations, 278713 statements, best individual has fitness: 1159.0
+[MASTER] 04:48:43.626 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 04:48:44.205 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:48:44.294 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.components.Form canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:48:44.636 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:48:44.653 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletResponseWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:48:44.746 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletResponseWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:48:44.757 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 04:48:44.947 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class wheel.ErrorPage canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 04:49:02.632 [logback-1] WARN  TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 04:49:07.959 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.io.MockPrintWriter due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.io.MockFile due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.io.MockFile due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 04:49:16.774 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.HashMap due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 8, type java.util.Map<java.lang.String, java.util.List<java.util.Locale>> is not assignable to java.util.Map<? extends java.lang.String, ? extends java.util.List<java.lang.String>>
+[MASTER] 04:49:22.529 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.HashMap due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 10, type java.util.HashMap<java.lang.String, java.util.List<java.util.Locale>> is not assignable to java.util.Map<? extends java.lang.String, ? extends java.util.List<java.lang.String>>
+[MASTER] 04:49:23.104 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 04:49:33.995 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.LinkedList due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 04:49:52.305 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.LinkedHashSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.LinkedList due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 04:49:54.260 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.LinkedHashSet due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 04:50:05.657 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.io.MockPrintWriter due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.io.MockPrintStream due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.io.MockFile due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 04:50:13.783 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.HashMap due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 9, type java.util.HashMap<java.lang.String, java.util.List<java.lang.Object>> is not assignable to java.util.Map<? extends java.lang.String, ? extends java.util.List<java.lang.String>>
+[MASTER] 04:50:58.196 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.HashMap due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 8, type java.util.Map<java.lang.String, java.util.List<java.lang.Object>> is not assignable to java.util.Map<? extends java.lang.String, ? extends java.util.List<java.lang.String>>
+[MASTER] 04:51:01.553 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.util.HashMap due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 8, type java.util.HashMap<java.lang.String, java.util.List<java.lang.Object>> is not assignable to java.util.Map<? extends java.lang.String, ? extends java.util.List<java.lang.String>>
+* Search finished after 181s and 2364 generations, 1267813 statements, best individual has fitness: 770.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 33%
+* Total number of goals: 381
+* Number of covered goals: 124
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 26%
+* Total number of goals: 262
+* Number of covered goals: 69
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 95%
+* Total number of goals: 20
+* Number of covered goals: 19
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 56%
+* Total number of goals: 154
+* Number of covered goals: 86
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 51%
+* Total number of goals: 81
+* Number of covered goals: 41
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 32
+* Number of covered goals: 32
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 94%
+* Total number of goals: 32
+* Number of covered goals: 30
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 26%
+* Total number of goals: 262
+* Number of covered goals: 69
+* Generated 56 tests with total length 509
+* Resulting test suite's coverage: 55% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 12%
+* There are surviving mutants: 
+--> Mutation 0: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:63 - ReplaceConstant - UTF-8 ->  - Status: Killed
+--> Mutation 1: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:72 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 2: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:84 - ReplaceConstant - basePackageForPages ->  - Status: Survived
+--> Mutation 3: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:86 - ReplaceConstant - wheelStartPage ->  - Status: Survived
+--> Mutation 4: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:87 - ReplaceConstant - wheelCssPath ->  - Status: Survived
+--> Mutation 5: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:88 - ReplaceConstant - wheelJsPath ->  - Status: Survived
+--> Mutation 6: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:90 - ReplaceConstant - wheelUnitTestMode ->  - Status: Survived
+--> Mutation 7: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:90 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 8: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:91 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 9: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:93 - ReplaceConstant - wheelDevelopmentMode ->  - Status: Survived
+--> Mutation 10: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:93 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 11: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:94 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 12: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:100 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 13: wheel.EngineImpl.<init>(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/ServletContext;)V:102 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 14: wheel.EngineImpl.processRequestInternal()V:119 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 15: wheel.EngineImpl.processRequestInternal()V:119 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 16: wheel.EngineImpl.processRequestInternal()V:119 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 17: wheel.EngineImpl.processRequestInternal()V:119 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 18: wheel.EngineImpl.processRequestInternal()V:121 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 19: wheel.EngineImpl.processRequestInternal()V:245 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 20: wheel.EngineImpl.processRequestInternal()V:249 - ReplaceConstant - Failed to close output stream. ->  - Status: Survived
+--> Mutation 21: wheel.EngineImpl.processRequestInternal()V:252 - ReplaceConstant - wheel.componentTypes ->  - Status: Survived
+--> Mutation 22: wheel.EngineImpl.processRequestInternal()V:124 - ReplaceConstant - Could not redirect to '/ ->  - Status: Survived
+--> Mutation 23: wheel.EngineImpl.processRequestInternal()V:124 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 24: wheel.EngineImpl.processRequestInternal()V:124 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 25: wheel.EngineImpl.processRequestInternal()V:124 - ReplaceConstant - '. ->  - Status: Survived
+--> Mutation 26: wheel.EngineImpl.processRequestInternal()V:127 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 27: wheel.EngineImpl.processRequestInternal()V:127 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 28: wheel.EngineImpl.processRequestInternal()V:127 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 29: wheel.EngineImpl.processRequestInternal()V:127 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 30: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:273 - ReplaceVariable pagePath -> targetComponent - Status: Survived
+--> Mutation 31: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:275 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 32: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:279 - ReplaceConstant - wheelSubmitId ->  - Status: Survived
+--> Mutation 33: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:279 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 34: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:279 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 35: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:279 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 36: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:279 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 37: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:279 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 38: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:279 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 39: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:280 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 40: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:284 - ReplaceConstant - wheelSubmitId ->  - Status: Survived
+--> Mutation 41: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:284 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 42: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:286 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 43: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:287 - ReplaceConstant - Could not find a Form component that matches the recieved submit. ->  - Status: Survived
+--> Mutation 44: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:291 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 45: wheel.EngineImpl.buildRenderable(Ljava/lang/String;Lwheel/components/ElExpression;Ljava/lang/String;Ljava/util/Map;Z)Lwheel/components/RenderableComponent;:296 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 46: wheel.EngineImpl.renderErrorPage()V:446 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 47: wheel.EngineImpl.renderErrorPage()V:446 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 48: wheel.EngineImpl.renderErrorPage()V:446 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 49: wheel.EngineImpl.renderErrorPage()V:446 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 50: wheel.EngineImpl.renderErrorPage()V:446 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 51: wheel.EngineImpl.renderErrorPage()V:446 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 52: wheel.EngineImpl.renderErrorPage()V:446 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 53: wheel.EngineImpl.renderErrorPage()V:446 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 54: wheel.EngineImpl.renderErrorPage()V:449 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 55: wheel.EngineImpl.renderErrorPage()V:453 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 56: wheel.EngineImpl.renderErrorPage()V:453 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 57: wheel.EngineImpl.renderErrorPage()V:454 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 58: wheel.EngineImpl.renderErrorPage()V:459 - ReplaceConstant - Failed to render error page. ->  - Status: Survived
+--> Mutation 59: wheel.EngineImpl.renderErrorPage()V:461 - ReplaceConstant - 500 -> 0 - Status: Survived
+--> Mutation 60: wheel.EngineImpl.renderErrorPage()V:461 - ReplaceConstant - 500 -> 1 - Status: Survived
+--> Mutation 61: wheel.EngineImpl.renderErrorPage()V:461 - ReplaceConstant - 500 -> -1 - Status: Survived
+--> Mutation 62: wheel.EngineImpl.renderErrorPage()V:461 - ReplaceConstant - 500 -> 499 - Status: Survived
+--> Mutation 63: wheel.EngineImpl.renderErrorPage()V:461 - ReplaceConstant - 500 -> 501 - Status: Survived
+--> Mutation 64: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:467 - ReplaceConstant - 6 -> 0 - Status: Survived
+--> Mutation 65: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:467 - ReplaceConstant - 6 -> 1 - Status: Survived
+--> Mutation 66: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:467 - ReplaceConstant - 6 -> -1 - Status: Survived
+--> Mutation 67: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:467 - ReplaceConstant - 6 -> 5 - Status: Survived
+--> Mutation 68: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:467 - ReplaceConstant - 6 -> 7 - Status: Survived
+--> Mutation 69: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:469 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 70: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:469 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 71: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:470 - ReplaceVariable assetPath -> packageName - Status: Survived
+--> Mutation 72: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:470 - ReplaceVariable packageName -> assetPath - Status: Survived
+--> Mutation 73: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:472 - ReplaceVariable assetName -> assetPath - Status: Survived
+--> Mutation 74: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:472 - ReplaceVariable assetName -> packageName - Status: Survived
+--> Mutation 75: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:473 - ReplaceVariable mimeType -> assetName - Status: Survived
+--> Mutation 76: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:473 - ReplaceVariable mimeType -> packageName - Status: Survived
+--> Mutation 77: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:473 - ReplaceVariable mimeType -> assetPath - Status: Survived
+--> Mutation 78: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:475 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 79: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:477 - ReplaceConstant - wheelDevelopmentMode ->  - Status: Survived
+--> Mutation 80: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:477 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 81: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:478 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 82: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:480 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 83: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:482 - InsertUnaryOp Negation of developmentMode - Status: Survived
+--> Mutation 84: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:482 - InsertUnaryOp IINC 1 developmentMode - Status: Survived
+--> Mutation 85: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:482 - InsertUnaryOp IINC -1 developmentMode - Status: Survived
+--> Mutation 86: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:482 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 87: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:483 - ReplaceConstant - expires ->  - Status: Survived
+--> Mutation 88: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:486 - ReplaceVariable expiresS -> assetName - Status: Survived
+--> Mutation 89: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:486 - ReplaceVariable expiresS -> packageName - Status: Survived
+--> Mutation 90: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:486 - ReplaceVariable expiresS -> mimeType - Status: Survived
+--> Mutation 91: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:486 - ReplaceVariable expiresS -> assetPath - Status: Survived
+--> Mutation 92: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:488 - ReplaceConstant - Could not get a valid expiration time for an asset. Recieved value was ' ->  - Status: Survived
+--> Mutation 93: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:488 - ReplaceVariable expiresS -> assetName - Status: Survived
+--> Mutation 94: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:488 - ReplaceVariable expiresS -> packageName - Status: Survived
+--> Mutation 95: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:488 - ReplaceVariable expiresS -> mimeType - Status: Survived
+--> Mutation 96: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:488 - ReplaceVariable expiresS -> assetPath - Status: Survived
+--> Mutation 97: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:488 - ReplaceConstant - '. ->  - Status: Survived
+--> Mutation 98: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:491 - InsertUnaryOp Negation of expires - Status: Survived
+--> Mutation 99: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:491 - InsertUnaryOp IINC 1 expires - Status: Survived
+--> Mutation 100: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:491 - InsertUnaryOp IINC -1 expires - Status: Survived
+--> Mutation 101: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:491 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 102: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:491 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 103: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:491 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 104: wheel.EngineImpl.processAssetRequest(Ljava/lang/String;)V:493 - ReplaceConstant - Date ->  - Status: Survived
+--> Mutation 105: wheel.EngineImpl.getCssPath()Ljava/lang/String;:602 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 106: wheel.EngineImpl.getCssPath()Ljava/lang/String;:602 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 107: wheel.EngineImpl.getCssPath()Ljava/lang/String;:603 - ReplaceConstant - asset/file/ ->  - Status: Survived
+--> Mutation 108: wheel.EngineImpl.getCssPath()Ljava/lang/String;:603 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 109: wheel.EngineImpl.getCssPath()Ljava/lang/String;:605 - ReplaceConstant - / ->  - Status: Killed
+--> Mutation 110: wheel.EngineImpl.getCssPath()Ljava/lang/String;:605 - ReplaceConstant - / ->  - Status: Killed
+--> Mutation 111: wheel.EngineImpl.getJsPath()Ljava/lang/String;:609 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 112: wheel.EngineImpl.getJsPath()Ljava/lang/String;:609 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 113: wheel.EngineImpl.getJsPath()Ljava/lang/String;:610 - ReplaceConstant - asset/file/ ->  - Status: Survived
+--> Mutation 114: wheel.EngineImpl.getJsPath()Ljava/lang/String;:610 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 115: wheel.EngineImpl.getJsPath()Ljava/lang/String;:612 - ReplaceConstant - / ->  - Status: Killed
+--> Mutation 116: wheel.EngineImpl.getJsPath()Ljava/lang/String;:612 - ReplaceConstant - / ->  - Status: Killed
+--> Mutation 117: wheel.EngineImpl._getXmlSerializer()Lorg/xmlpull/v1/XmlSerializer;:621 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 118: wheel.EngineImpl._getXmlSerializer()Lorg/xmlpull/v1/XmlSerializer;:622 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 119: wheel.EngineImpl._getXmlSerializer()Lorg/xmlpull/v1/XmlSerializer;:627 - ReplaceConstant - http://xmlpull.org/v1/doc/properties.html#serializer-indentation ->  - Status: Survived
+--> Mutation 120: wheel.EngineImpl._getXmlSerializer()Lorg/xmlpull/v1/XmlSerializer;:627 - ReplaceConstant -    ->  - Status: Survived
+--> Mutation 121: wheel.EngineImpl.getObjectStore()Lwheel/persistence/IObjectStore;:648 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 122: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:655 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 123: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceVariable className -> pagePath - Status: Survived
+--> Mutation 124: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 47 -> 0 - Status: Survived
+--> Mutation 125: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 47 -> 1 - Status: Survived
+--> Mutation 126: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 47 -> -1 - Status: Survived
+--> Mutation 127: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 47 -> 46 - Status: Survived
+--> Mutation 128: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 47 -> 48 - Status: Survived
+--> Mutation 129: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 46 -> 0 - Status: Survived
+--> Mutation 130: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 46 -> 1 - Status: Survived
+--> Mutation 131: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 46 -> -1 - Status: Survived
+--> Mutation 132: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 46 -> 45 - Status: Survived
+--> Mutation 133: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:656 - ReplaceConstant - 46 -> 47 - Status: Survived
+--> Mutation 134: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:658 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 135: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:658 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 136: wheel.EngineImpl.loadPage(Ljava/lang/String;)Lwheel/components/StandaloneComponent;:659 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 137: wheel.EngineImpl.addErrorMapping(Ljava/lang/String;Ljava/lang/String;)V:674 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 138: wheel.EngineImpl.addErrorMapping(Ljava/lang/String;Ljava/lang/String;)V:677 - ReplaceVariable exceptionClassName -> errorPageName - Status: Survived
+--> Mutation 139: wheel.EngineImpl.addErrorMapping(Ljava/lang/String;Ljava/lang/String;)V:677 - ReplaceVariable errorPageName -> exceptionClassName - Status: Survived
+--> Mutation 140: wheel.EngineImpl.isAjaxRequest()Z:712 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 141: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:716 - ReplaceConstant - wheelPreviousPagename ->  - Status: Survived
+--> Mutation 142: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:718 - ReplaceVariable previousPagename -> pageName - Status: Killed
+--> Mutation 143: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:718 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 144: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:718 - ReplaceVariable previousPagename -> pageName - Status: Survived
+--> Mutation 145: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:718 - ReplaceVariable pageName -> previousPagename - Status: Survived
+--> Mutation 146: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:718 - ReplaceComparisonOperator > -> -2 - Status: Killed
+--> Mutation 147: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:718 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 148: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:718 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 149: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:720 - ReplaceVariable pageName -> previousPagename - Status: Survived
+--> Mutation 150: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:723 - ReplaceConstant - wheelPreviousPagename ->  - Status: Survived
+--> Mutation 151: wheel.EngineImpl.evictPageScope(Ljava/lang/String;)V:723 - ReplaceVariable pageName -> previousPagename - Status: Survived
+--> Mutation 152: wheel.EngineImpl._addComponentType(Ljava/lang/String;Ljava/lang/String;)V:739 - ReplaceVariable key -> type - Status: Survived
+--> Mutation 153: wheel.EngineImpl._addComponentType(Ljava/lang/String;Ljava/lang/String;)V:739 - ReplaceVariable type -> key - Status: Survived
+* Compiling and checking tests
 * Computation finished

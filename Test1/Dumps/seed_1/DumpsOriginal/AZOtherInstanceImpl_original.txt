@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 4789
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,163 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 352
-* Using seed 2482030657809
+* Using seed 1710472851547
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 229 / 352
-[MASTER] 23:56:53.226 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
-[MASTER] 23:57:27.776 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-* Search finished after 181s and 2589 generations, 1245934 statements, best individual has fitness: 37.0
+[MASTER] 00:20:53.035 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+* Search finished after 185s and 74 generations, 44439 statements, best individual has fitness: 52.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 90%
+* Total number of goals: 60
+* Number of covered goals: 54
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 85%
+* Total number of goals: 34
+* Number of covered goals: 29
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 90%
+* Total number of goals: 114
+* Number of covered goals: 103
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 73%
+* Total number of goals: 84
+* Number of covered goals: 61
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 85%
+* Total number of goals: 34
+* Number of covered goals: 29
+* Generated 41 tests with total length 177
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 66%
+* There are surviving mutants: 
+--> Mutation 0: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:43 - ReplaceConstant - id ->  - Status: Killed
+--> Mutation 1: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:44 - ReplaceConstant - iip ->  - Status: Killed
+--> Mutation 2: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:45 - ReplaceConstant - eip ->  - Status: Killed
+--> Mutation 3: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:46 - ReplaceConstant - tp ->  - Status: Killed
+--> Mutation 4: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:47 - ReplaceConstant - dp ->  - Status: Killed
+--> Mutation 5: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:49 - ReplaceConstant - dp2 ->  - Status: Killed
+--> Mutation 6: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:51 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 7: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:51 - ReplaceVariable udp -> tcp - Status: Survived
+--> Mutation 8: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:51 - InsertUnaryOp Negation of udp - Status: Survived
+--> Mutation 9: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:51 - InsertUnaryOp IINC 1 udp - Status: Survived
+--> Mutation 10: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:51 - InsertUnaryOp IINC -1 udp - Status: Survived
+--> Mutation 11: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:53 - ReplaceConstant - ai ->  - Status: Killed
+--> Mutation 12: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:57 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 13: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:59 - ReplaceConstant - az_4.2.0.2 ->  - Status: Survived
+--> Mutation 14: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:66 - ReplaceConstant - pr ->  - Status: Survived
+--> Mutation 15: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:69 - ReplaceVariable int_ip -> id - Status: Survived
+--> Mutation 16: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:69 - ReplaceVariable int_ip -> app_id - Status: Survived
+--> Mutation 17: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:69 - ReplaceVariable int_ip -> ext_ip - Status: Survived
+--> Mutation 18: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:69 - ReplaceConstant - 0.0.0.0 ->  - Status: Survived
+--> Mutation 19: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:69 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 20: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:69 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 21: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:69 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 22: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:71 - ReplaceVariable int_ip -> id - Status: Survived
+--> Mutation 23: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:71 - ReplaceVariable int_ip -> app_id - Status: Survived
+--> Mutation 24: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.decode(Ljava/net/InetAddress;Ljava/util/Map;)Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;:71 - ReplaceVariable int_ip -> ext_ip - Status: Survived
+--> Mutation 25: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:116 - ReplaceVariable _id -> _app_id - Status: Killed
+--> Mutation 26: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:117 - ReplaceVariable _app_id -> _id - Status: Killed
+--> Mutation 27: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:119 - ReplaceVariable _internal_address -> _external_address - Status: Survived
+--> Mutation 28: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:121 - ReplaceVariable _external_address -> _internal_address - Status: Killed
+--> Mutation 29: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:122 - ReplaceVariable _tcp_port -> _udp_non_data_port - Status: Killed
+--> Mutation 30: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:122 - ReplaceVariable _tcp_port -> _udp_port - Status: Killed
+--> Mutation 31: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:122 - InsertUnaryOp Negation of _tcp_port - Status: Killed
+--> Mutation 32: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:122 - InsertUnaryOp IINC 1 _tcp_port - Status: Killed
+--> Mutation 33: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:122 - InsertUnaryOp IINC -1 _tcp_port - Status: Killed
+--> Mutation 34: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:123 - ReplaceVariable _udp_port -> _udp_non_data_port - Status: Killed
+--> Mutation 35: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:123 - ReplaceVariable _udp_port -> _tcp_port - Status: Killed
+--> Mutation 36: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:123 - InsertUnaryOp Negation of _udp_port - Status: Killed
+--> Mutation 37: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:123 - InsertUnaryOp IINC 1 _udp_port - Status: Killed
+--> Mutation 38: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:123 - InsertUnaryOp IINC -1 _udp_port - Status: Killed
+--> Mutation 39: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:124 - ReplaceVariable _udp_non_data_port -> _udp_port - Status: Killed
+--> Mutation 40: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:124 - ReplaceVariable _udp_non_data_port -> _tcp_port - Status: Killed
+--> Mutation 41: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:124 - InsertUnaryOp Negation of _udp_non_data_port - Status: Killed
+--> Mutation 42: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:124 - InsertUnaryOp IINC 1 _udp_non_data_port - Status: Killed
+--> Mutation 43: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/net/InetAddress;Ljava/net/InetAddress;IIILjava/util/Map;)V:124 - InsertUnaryOp IINC -1 _udp_non_data_port - Status: Killed
+--> Mutation 44: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:137 - ReplaceVariable new_inst -> this - Status: Survived
+--> Mutation 45: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:139 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 46: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:141 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 47: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:141 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 48: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:141 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 49: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:141 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 50: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:141 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 51: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:141 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 52: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:143 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 53: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:147 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 54: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:152 - InsertUnaryOp Negation of same - Status: Survived
+--> Mutation 55: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:152 - InsertUnaryOp IINC 1 same - Status: Survived
+--> Mutation 56: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:152 - InsertUnaryOp IINC -1 same - Status: Killed
+--> Mutation 57: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:152 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 58: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:152 - ReplaceVariable new_inst -> this - Status: Survived
+--> Mutation 59: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 60: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 61: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 62: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 63: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceVariable new_inst -> this - Status: Survived
+--> Mutation 64: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 65: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 66: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 67: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 68: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 69: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 70: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 71: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 72: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 73: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceVariable new_inst -> this - Status: Killed
+--> Mutation 74: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 75: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 76: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 77: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 78: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 79: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 80: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 81: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:153 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 82: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:158 - ReplaceVariable new_inst -> this - Status: Survived
+--> Mutation 83: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:159 - ReplaceVariable new_inst -> this - Status: Killed
+--> Mutation 84: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:159 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 85: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:159 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 86: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:159 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 87: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:160 - ReplaceVariable new_inst -> this - Status: Killed
+--> Mutation 88: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:160 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 89: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:160 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 90: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:160 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 91: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:162 - InsertUnaryOp Negation of same - Status: Survived
+--> Mutation 92: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:162 - InsertUnaryOp IINC 1 same - Status: Killed
+--> Mutation 93: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:162 - InsertUnaryOp IINC -1 same - Status: Killed
+--> Mutation 94: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:162 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 95: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:162 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 96: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.update(Lcom/aelitis/azureus/core/instancemanager/impl/AZOtherInstanceImpl;)Z:162 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 97: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getInternalAddress()Ljava/net/InetAddress;:180 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 98: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getTCPListenPort()I:198 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 99: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getTCPListenPort()I:198 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 100: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getTCPListenPort()I:198 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 101: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getUDPListenPort()I:204 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 102: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getUDPListenPort()I:204 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 103: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getUDPListenPort()I:204 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 104: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getUDPNonDataListenPort()I:210 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 105: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getUDPNonDataListenPort()I:210 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 106: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getUDPNonDataListenPort()I:210 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 107: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getAliveTime()J:224 - InsertUnaryOp Negation of now - Status: Survived
+--> Mutation 108: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getAliveTime()J:224 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 109: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getAliveTime()J:224 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 110: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getAliveTime()J:224 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 111: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getAliveTime()J:224 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 112: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getAliveTime()J:226 - InsertUnaryOp Negation of now - Status: Survived
+--> Mutation 113: com.aelitis.azureus.core.instancemanager.impl.AZOtherInstanceImpl.getAliveTime()J:229 - InsertUnaryOp Negation - Status: Killed
+* Compiling and checking tests
 * Computation finished

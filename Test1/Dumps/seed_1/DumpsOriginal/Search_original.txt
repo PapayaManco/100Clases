@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: Newzgrabber.Search
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/99_newzgrabber/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\99_newzgrabber\evosuite-files\evosuite.properties
+* Connecting to master process on port 18022
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 145
-* Using seed 2482030657809
+* Using seed 1710490660030
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 22 / 145
-* Search finished after 181s and 3079 generations, 2082383 statements, best individual has fitness: 5.0
+* Search finished after 181s and 5675 generations, 3288599 statements, best individual has fitness: 5.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -56,10 +56,10 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 17
 * Number of covered goals: 17
-* Generated 8 tests with total length 12
+* Generated 8 tests with total length 11
 * Resulting test suite's coverage: 89% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 72%
+* Resulting test suite's mutation score: 74%
 * There are surviving mutants: 
 --> Mutation 0: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:16 - ReplaceVariable tmpPat -> pattern - Status: Survived
 --> Mutation 1: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:16 - ReplaceConstant - * ->  - Status: Killed
@@ -112,7 +112,7 @@
 --> Mutation 48: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:37 - ReplaceConstant - 42 -> 43 - Status: Killed
 --> Mutation 49: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:37 - ReplaceComparisonOperator != -> -1 - Status: Killed
 --> Mutation 50: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:37 - ReplaceComparisonOperator != -> < - Status: Killed
---> Mutation 51: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:37 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 51: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:37 - ReplaceComparisonOperator != -> > - Status: Killed
 --> Mutation 52: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:37 - ReplaceConstant - 1 -> 0 - Status: Killed
 --> Mutation 53: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:37 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 54: Newzgrabber.Search.formatPattern(Ljava/lang/String;)Ljava/lang/String;:37 - ReplaceComparisonOperator != -> == - Status: Killed
@@ -135,16 +135,4 @@
 --> Mutation 71: Newzgrabber.Search.main([Ljava/lang/String;)V:64 - ReplaceConstant - The formatted pattern is:
  ->  - Status: Survived
 * Compiling and checking tests
-[MASTER] 04:55:51.745 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:55:57.010 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:56:02.272 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:56:07.522 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:56:12.772 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:56:18.028 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:56:23.277 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:56:28.529 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'Search_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

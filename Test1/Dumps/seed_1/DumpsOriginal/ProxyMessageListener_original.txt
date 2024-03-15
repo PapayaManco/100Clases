@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 18805
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:11:14.018 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 01:11:14.600 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 01:11:14.766 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener
 * Test criteria:
@@ -21,13 +18,56 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 124
-* Using seed 2482030657809
+* Using seed 1710477187149
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 20 / 124
-[MASTER] 01:11:15.892 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-[MASTER] 01:11:17.458 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 01:11:28.454 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getClassLoader.portal
-[MASTER] 01:11:37.149 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 01:11:37.151 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-* Search finished after 185s and 1411 generations, 436324 statements, best individual has fitness: 77.0
+[MASTER] 01:33:13.752 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:33:19.305 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getClassLoader.portal
+* Search finished after 185s and 1338 generations, 338744 statements, best individual has fitness: 80.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 71%
+* Total number of goals: 34
+* Number of covered goals: 24
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 24%
+* Total number of goals: 37
+* Number of covered goals: 9
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 62%
+* Total number of goals: 8
+* Number of covered goals: 5
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 75%
+* Total number of goals: 4
+* Number of covered goals: 3
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 24%
+* Total number of goals: 37
+* Number of covered goals: 9
+* Generated 5 tests with total length 16
+* Resulting test suite's coverage: 60% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener.receive(Lcom/liferay/portal/kernel/messaging/Message;)V:39 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 1: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener.receive(Lcom/liferay/portal/kernel/messaging/Message;)V:40 - ReplaceConstant - Payload is null ->  - Status: Survived
+--> Mutation 2: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener.receive(Lcom/liferay/portal/kernel/messaging/Message;)V:42 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 3: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener.receive(Lcom/liferay/portal/kernel/messaging/Message;)V:43 - ReplaceConstant - Payload  ->  - Status: Survived
+--> Mutation 4: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener.receive(Lcom/liferay/portal/kernel/messaging/Message;)V:44 - ReplaceConstant -  is not of type  ->  - Status: Survived
+--> Mutation 5: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener.receive(Lcom/liferay/portal/kernel/messaging/Message;)V:52 - ReplaceVariable result -> payload - Status: Survived
+--> Mutation 6: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener.receive(Lcom/liferay/portal/kernel/messaging/Message;)V:64 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 7: com.liferay.portal.kernel.messaging.proxy.ProxyMessageListener.receive(Lcom/liferay/portal/kernel/messaging/Message;)V:68 - ReplaceVariable responseMessage -> message - Status: Survived
+* Compiling and checking tests
 * Computation finished

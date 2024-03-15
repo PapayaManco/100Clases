@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: corina.gui.ElementsPanel
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/35_corina/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\35_corina\evosuite-files\evosuite.properties
+* Connecting to master process on port 18968
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:45:10.493 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 02:45:10.708 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 02:45:12.116 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class corina.gui.ElementsPanel
 * Test criteria:
@@ -21,13 +18,620 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 1079
-* Using seed 2482030657809
+* Using seed 1710482794150
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 327 / 1079
-[MASTER] 02:45:13.399 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 02:45:14.037 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 02:46:18.619 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 02:47:47.194 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
-[MASTER] 02:47:49.412 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
-* Search finished after 181s and 939 generations, 94654 statements, best individual has fitness: 972.0
+[MASTER] 03:06:38.769 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 03:07:30.797 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 1178 generations, 114364 statements, best individual has fitness: 972.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 23%
+* Total number of goals: 237
+* Number of covered goals: 54
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 16%
+* Total number of goals: 120
+* Number of covered goals: 19
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 9%
+* Total number of goals: 572
+* Number of covered goals: 49
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 7%
+* Total number of goals: 15
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 15
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 9%
+* Total number of goals: 120
+* Number of covered goals: 11
+* Generated 3 tests with total length 7
+* Resulting test suite's coverage: 25% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> ABORT - Status: Survived
+--> Mutation 1: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> PROPERTIES - Status: Survived
+--> Mutation 2: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> SOMEBITS - Status: Survived
+--> Mutation 3: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> VIEW_ALL - Status: Survived
+--> Mutation 4: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> WIDTH - Status: Survived
+--> Mutation 5: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> HEIGHT - Status: Survived
+--> Mutation 6: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 7: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> FRAMEBITS - Status: Survived
+--> Mutation 8: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 9: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 10: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> WHEN_FOCUSED - Status: Survived
+--> Mutation 11: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> ALLBITS - Status: Survived
+--> Mutation 12: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> VIEW_FILENAMES - Status: Survived
+--> Mutation 13: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> VIEW_STANDARD - Status: Survived
+--> Mutation 14: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> ERROR - Status: Survived
+--> Mutation 15: corina.gui.ElementsPanel.update()V:105 - ReplaceVariable currentView -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 16: corina.gui.ElementsPanel.update()V:105 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 17: corina.gui.ElementsPanel.update()V:105 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 18: corina.gui.ElementsPanel.update()V:105 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 19: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:369 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 20: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:369 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 21: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:369 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 22: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:503 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 23: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:503 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 24: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:503 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 25: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:263 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 26: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:267 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 27: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:274 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 28: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:276 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 29: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:276 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 30: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:276 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 31: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:276 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 32: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:277 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 33: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:277 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 34: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 22 -> 0 - Status: Survived
+--> Mutation 35: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 22 -> 1 - Status: Survived
+--> Mutation 36: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 22 -> -1 - Status: Survived
+--> Mutation 37: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 22 -> 21 - Status: Survived
+--> Mutation 38: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 22 -> 23 - Status: Survived
+--> Mutation 39: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 30 -> 0 - Status: Survived
+--> Mutation 40: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 30 -> 1 - Status: Survived
+--> Mutation 41: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 30 -> -1 - Status: Survived
+--> Mutation 42: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 30 -> 29 - Status: Survived
+--> Mutation 43: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:278 - ReplaceConstant - 30 -> 31 - Status: Survived
+--> Mutation 44: corina.gui.ElementsPanel.<init>(Lcorina/Sample;Ljava/util/List;)V:281 - ReplaceConstant - Center ->  - Status: Survived
+--> Mutation 45: corina.gui.ElementsPanel.removeSelectedRows()V:317 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 46: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 47: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 48: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 49: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 50: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> VIEW_ALL - Status: Survived
+--> Mutation 51: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 52: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 53: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 54: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 55: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 56: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> deleted - Status: Survived
+--> Mutation 57: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 58: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 59: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 60: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> VIEW_FILENAMES - Status: Survived
+--> Mutation 61: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> VIEW_STANDARD - Status: Survived
+--> Mutation 62: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 63: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 64: corina.gui.ElementsPanel.removeSelectedRows()V:318 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 65: corina.gui.ElementsPanel.removeSelectedRows()V:318 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 66: corina.gui.ElementsPanel.removeSelectedRows()V:318 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 67: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 68: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 69: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 70: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 71: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 72: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 73: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> VIEW_ALL - Status: Survived
+--> Mutation 74: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 75: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 76: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 77: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 78: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 79: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> deleted - Status: Survived
+--> Mutation 80: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 81: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 82: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 83: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> VIEW_FILENAMES - Status: Survived
+--> Mutation 84: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> VIEW_STANDARD - Status: Survived
+--> Mutation 85: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 86: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 87: corina.gui.ElementsPanel.removeSelectedRows()V:319 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 88: corina.gui.ElementsPanel.removeSelectedRows()V:319 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 89: corina.gui.ElementsPanel.removeSelectedRows()V:319 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 90: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> ABORT - Status: Survived
+--> Mutation 91: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> PROPERTIES - Status: Survived
+--> Mutation 92: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> SOMEBITS - Status: Survived
+--> Mutation 93: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> VIEW_ALL - Status: Survived
+--> Mutation 94: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> i - Status: Survived
+--> Mutation 95: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> WIDTH - Status: Survived
+--> Mutation 96: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> HEIGHT - Status: Survived
+--> Mutation 97: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 98: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> FRAMEBITS - Status: Survived
+--> Mutation 99: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 100: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 101: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> WHEN_FOCUSED - Status: Survived
+--> Mutation 102: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> ALLBITS - Status: Survived
+--> Mutation 103: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> VIEW_FILENAMES - Status: Survived
+--> Mutation 104: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> VIEW_STANDARD - Status: Survived
+--> Mutation 105: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> ERROR - Status: Survived
+--> Mutation 106: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceVariable deleted -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 107: corina.gui.ElementsPanel.removeSelectedRows()V:319 - InsertUnaryOp Negation of deleted - Status: Survived
+--> Mutation 108: corina.gui.ElementsPanel.removeSelectedRows()V:319 - InsertUnaryOp IINC 1 deleted - Status: Survived
+--> Mutation 109: corina.gui.ElementsPanel.removeSelectedRows()V:319 - InsertUnaryOp IINC -1 deleted - Status: Survived
+--> Mutation 110: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 111: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 112: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 113: corina.gui.ElementsPanel.removeSelectedRows()V:319 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 114: corina.gui.ElementsPanel.removeSelectedRows()V:320 - ReplaceVariable s -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 115: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 116: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 117: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 118: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> VIEW_ALL - Status: Survived
+--> Mutation 119: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 120: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 121: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 122: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 123: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 124: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> deleted - Status: Survived
+--> Mutation 125: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 126: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 127: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 128: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> VIEW_FILENAMES - Status: Survived
+--> Mutation 129: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> VIEW_STANDARD - Status: Survived
+--> Mutation 130: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 131: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 132: corina.gui.ElementsPanel.removeSelectedRows()V:321 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 133: corina.gui.ElementsPanel.removeSelectedRows()V:321 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 134: corina.gui.ElementsPanel.removeSelectedRows()V:321 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 135: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> ABORT - Status: Survived
+--> Mutation 136: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> PROPERTIES - Status: Survived
+--> Mutation 137: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> SOMEBITS - Status: Survived
+--> Mutation 138: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> VIEW_ALL - Status: Survived
+--> Mutation 139: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> i - Status: Survived
+--> Mutation 140: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> WIDTH - Status: Survived
+--> Mutation 141: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> HEIGHT - Status: Survived
+--> Mutation 142: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 143: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> FRAMEBITS - Status: Survived
+--> Mutation 144: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 145: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 146: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> WHEN_FOCUSED - Status: Survived
+--> Mutation 147: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> ALLBITS - Status: Survived
+--> Mutation 148: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> VIEW_FILENAMES - Status: Survived
+--> Mutation 149: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> VIEW_STANDARD - Status: Survived
+--> Mutation 150: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> ERROR - Status: Survived
+--> Mutation 151: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceVariable deleted -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 152: corina.gui.ElementsPanel.removeSelectedRows()V:321 - InsertUnaryOp Negation of deleted - Status: Survived
+--> Mutation 153: corina.gui.ElementsPanel.removeSelectedRows()V:321 - InsertUnaryOp IINC 1 deleted - Status: Survived
+--> Mutation 154: corina.gui.ElementsPanel.removeSelectedRows()V:321 - InsertUnaryOp IINC -1 deleted - Status: Survived
+--> Mutation 155: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 156: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 157: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 158: corina.gui.ElementsPanel.removeSelectedRows()V:321 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 159: corina.gui.ElementsPanel.removeSelectedRows()V:322 - ReplaceVariable deleted -> i - Status: Survived
+--> Mutation 160: corina.gui.ElementsPanel.removeSelectedRows()V:318 - ReplaceVariable i -> deleted - Status: Survived
+--> Mutation 161: corina.gui.ElementsPanel.removeSelectedRows()V:326 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 162: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> ABORT - Status: Survived
+--> Mutation 163: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> PROPERTIES - Status: Survived
+--> Mutation 164: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> SOMEBITS - Status: Survived
+--> Mutation 165: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> VIEW_ALL - Status: Survived
+--> Mutation 166: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> WIDTH - Status: Survived
+--> Mutation 167: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> HEIGHT - Status: Survived
+--> Mutation 168: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 169: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> FRAMEBITS - Status: Survived
+--> Mutation 170: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 171: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 172: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> WHEN_FOCUSED - Status: Survived
+--> Mutation 173: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> ALLBITS - Status: Survived
+--> Mutation 174: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> VIEW_FILENAMES - Status: Survived
+--> Mutation 175: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> VIEW_STANDARD - Status: Survived
+--> Mutation 176: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> ERROR - Status: Survived
+--> Mutation 177: corina.gui.ElementsPanel.setView(I)V:372 - ReplaceVariable view -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 178: corina.gui.ElementsPanel.setView(I)V:372 - InsertUnaryOp Negation of view - Status: Survived
+--> Mutation 179: corina.gui.ElementsPanel.setView(I)V:372 - InsertUnaryOp IINC 1 view - Status: Survived
+--> Mutation 180: corina.gui.ElementsPanel.setView(I)V:372 - InsertUnaryOp IINC -1 view - Status: Survived
+--> Mutation 181: corina.gui.ElementsPanel.setView(I)V:376 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 182: corina.gui.ElementsPanel.setView(I)V:376 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 183: corina.gui.ElementsPanel.setView(I)V:376 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 184: corina.gui.ElementsPanel.setView(I)V:376 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 185: corina.gui.ElementsPanel.setView(I)V:376 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 186: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 6 -> 0 - Status: Survived
+--> Mutation 187: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 6 -> 1 - Status: Survived
+--> Mutation 188: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 6 -> -1 - Status: Survived
+--> Mutation 189: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 6 -> 5 - Status: Survived
+--> Mutation 190: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 6 -> 7 - Status: Survived
+--> Mutation 191: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 192: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - unmeas_pre ->  - Status: Survived
+--> Mutation 193: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 194: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - unmeas_post ->  - Status: Survived
+--> Mutation 195: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 196: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 197: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 198: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 199: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - species ->  - Status: Survived
+--> Mutation 200: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 201: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 202: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 203: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 204: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 205: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - sapwood ->  - Status: Survived
+--> Mutation 206: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 207: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 208: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 209: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 210: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 211: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - terminal ->  - Status: Survived
+--> Mutation 212: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 213: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 214: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 215: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 216: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 217: corina.gui.ElementsPanel.setView(I)V:386 - ReplaceConstant - quality ->  - Status: Survived
+--> Mutation 218: corina.gui.ElementsPanel.setView(I)V:391 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 219: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 220: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> ABORT - Status: Survived
+--> Mutation 221: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> PROPERTIES - Status: Survived
+--> Mutation 222: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> SOMEBITS - Status: Survived
+--> Mutation 223: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> VIEW_ALL - Status: Survived
+--> Mutation 224: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> WIDTH - Status: Survived
+--> Mutation 225: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> HEIGHT - Status: Survived
+--> Mutation 226: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 227: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> FRAMEBITS - Status: Survived
+--> Mutation 228: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 229: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> view - Status: Survived
+--> Mutation 230: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 231: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> WHEN_FOCUSED - Status: Survived
+--> Mutation 232: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> ALLBITS - Status: Survived
+--> Mutation 233: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> VIEW_FILENAMES - Status: Survived
+--> Mutation 234: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> VIEW_STANDARD - Status: Survived
+--> Mutation 235: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> ERROR - Status: Survived
+--> Mutation 236: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 237: corina.gui.ElementsPanel.setView(I)V:394 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 238: corina.gui.ElementsPanel.setView(I)V:394 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 239: corina.gui.ElementsPanel.setView(I)V:394 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 240: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 241: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 242: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 243: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> ABORT - Status: Survived
+--> Mutation 244: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> PROPERTIES - Status: Survived
+--> Mutation 245: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> SOMEBITS - Status: Survived
+--> Mutation 246: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> VIEW_ALL - Status: Survived
+--> Mutation 247: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> WIDTH - Status: Survived
+--> Mutation 248: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> HEIGHT - Status: Survived
+--> Mutation 249: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 250: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> FRAMEBITS - Status: Survived
+--> Mutation 251: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> VIEW_FILENAMES_MINIMAL - Status: Survived
+--> Mutation 252: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> view - Status: Survived
+--> Mutation 253: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 254: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> WHEN_FOCUSED - Status: Survived
+--> Mutation 255: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> ALLBITS - Status: Survived
+--> Mutation 256: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> VIEW_FILENAMES - Status: Survived
+--> Mutation 257: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> VIEW_STANDARD - Status: Survived
+--> Mutation 258: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> ERROR - Status: Survived
+--> Mutation 259: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceVariable j -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 260: corina.gui.ElementsPanel.setView(I)V:395 - InsertUnaryOp Negation of j - Status: Survived
+--> Mutation 261: corina.gui.ElementsPanel.setView(I)V:395 - InsertUnaryOp IINC 1 j - Status: Survived
+--> Mutation 262: corina.gui.ElementsPanel.setView(I)V:395 - InsertUnaryOp IINC -1 j - Status: Survived
+--> Mutation 263: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 264: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 265: corina.gui.ElementsPanel.setView(I)V:395 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 266: corina.gui.ElementsPanel.setView(I)V:394 - ReplaceVariable j -> view - Status: Survived
+--> Mutation 267: corina.gui.ElementsPanel.setView(I)V:400 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 268: corina.gui.ElementsPanel.setView(I)V:400 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 269: corina.gui.ElementsPanel.setView(I)V:400 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 270: corina.gui.ElementsPanel.setView(I)V:400 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 271: corina.gui.ElementsPanel.setView(I)V:400 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 272: corina.gui.ElementsPanel$ContextPopup.<init>(Lcorina/gui/ElementsPanel;)V:159 - ReplaceConstant - Open ->  - Status: Survived
+--> Mutation 273: corina.gui.ElementsPanel$ContextPopup.<init>(Lcorina/gui/ElementsPanel;)V:186 - ReplaceConstant - Change directory... ->  - Status: Survived
+--> Mutation 274: corina.gui.ElementsPanel$ContextPopup.<init>(Lcorina/gui/ElementsPanel;)V:187 - ReplaceVariable changeDir -> open - Status: Survived
+--> Mutation 275: corina.gui.ElementsPanel$ContextPopup.<init>(Lcorina/gui/ElementsPanel;)V:240 - ReplaceVariable changeDir -> open - Status: Survived
+--> Mutation 276: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:467 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 277: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:470 - InsertUnaryOp Negation of isSelected - Status: Survived
+--> Mutation 278: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:470 - InsertUnaryOp IINC 1 isSelected - Status: Survived
+--> Mutation 279: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:470 - InsertUnaryOp IINC -1 isSelected - Status: Survived
+--> Mutation 280: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:470 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 281: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:473 - InsertUnaryOp Negation of isSelected - Status: Survived
+--> Mutation 282: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:473 - InsertUnaryOp IINC 1 isSelected - Status: Survived
+--> Mutation 283: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:473 - InsertUnaryOp IINC -1 isSelected - Status: Survived
+--> Mutation 284: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:473 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 285: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:483 - ReplaceVariable fore -> back - Status: Survived
+--> Mutation 286: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:484 - ReplaceVariable fore -> back - Status: Survived
+--> Mutation 287: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:485 - ReplaceVariable back -> fore - Status: Survived
+--> Mutation 288: corina.gui.ElementsPanel$3.getTableCellEditorComponent(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;:486 - ReplaceVariable back -> fore - Status: Survived
+--> Mutation 289: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:508 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 290: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:508 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 291: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:512 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 292: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:513 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 293: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:513 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 294: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:513 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 295: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:513 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 296: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:513 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 297: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:515 - InsertUnaryOp Negation of col - Status: Survived
+--> Mutation 298: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:515 - InsertUnaryOp IINC 1 col - Status: Survived
+--> Mutation 299: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:515 - InsertUnaryOp IINC -1 col - Status: Survived
+--> Mutation 300: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:520 - InsertUnaryOp Negation of col - Status: Survived
+--> Mutation 301: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:520 - InsertUnaryOp IINC 1 col - Status: Survived
+--> Mutation 302: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:520 - InsertUnaryOp IINC -1 col - Status: Survived
+--> Mutation 303: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:520 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 304: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:520 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 305: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:520 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 306: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:520 - ReplaceVariable first -> last - Status: Survived
+--> Mutation 307: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:520 - ReplaceVariable last -> first - Status: Survived
+--> Mutation 308: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:521 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 309: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:521 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 310: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:521 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 311: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:521 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 312: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:521 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 313: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:522 - ReplaceConstant - basename ->  - Status: Survived
+--> Mutation 314: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:522 - InsertUnaryOp Negation of reverse - Status: Survived
+--> Mutation 315: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:522 - InsertUnaryOp IINC 1 reverse - Status: Survived
+--> Mutation 316: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:522 - InsertUnaryOp IINC -1 reverse - Status: Survived
+--> Mutation 317: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:535 - InsertUnaryOp Negation of col - Status: Survived
+--> Mutation 318: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:535 - InsertUnaryOp IINC 1 col - Status: Survived
+--> Mutation 319: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:535 - InsertUnaryOp IINC -1 col - Status: Survived
+--> Mutation 320: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:535 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 321: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:535 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 322: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:535 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 323: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:535 - ReplaceVariable first -> last - Status: Survived
+--> Mutation 324: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:535 - ReplaceVariable last -> first - Status: Survived
+--> Mutation 325: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:536 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 326: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:536 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 327: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:536 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 328: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:536 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 329: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:536 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 330: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:537 - ReplaceConstant - range ->  - Status: Survived
+--> Mutation 331: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:537 - InsertUnaryOp Negation of reverse - Status: Survived
+--> Mutation 332: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:537 - InsertUnaryOp IINC 1 reverse - Status: Survived
+--> Mutation 333: corina.gui.ElementsPanel$4.mouseClicked(Ljava/awt/event/MouseEvent;)V:537 - InsertUnaryOp IINC -1 reverse - Status: Survived
+--> Mutation 334: corina.gui.ElementsPanel$ContextPopup$1.actionPerformed(Ljava/awt/event/ActionEvent;)V:164 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 335: corina.gui.ElementsPanel$ContextPopup$1.actionPerformed(Ljava/awt/event/ActionEvent;)V:164 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 336: corina.gui.ElementsPanel$ContextPopup$1.actionPerformed(Ljava/awt/event/ActionEvent;)V:164 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 337: corina.gui.ElementsPanel$ContextPopup$1.actionPerformed(Ljava/awt/event/ActionEvent;)V:171 - ReplaceConstant - Error Loading Sample ->  - Status: Survived
+--> Mutation 338: corina.gui.ElementsPanel$ContextPopup$1.actionPerformed(Ljava/awt/event/ActionEvent;)V:171 - ReplaceConstant - Can't open this file:  ->  - Status: Survived
+--> Mutation 339: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:190 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 340: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:191 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 341: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:191 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 342: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:191 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 343: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:191 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 344: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:191 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 345: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:191 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 346: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:191 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 347: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 348: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 349: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 350: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 351: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> SELECTED_KEY - Status: Survived
+--> Mutation 352: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 353: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 354: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> SMALL_ICON - Status: Survived
+--> Mutation 355: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 356: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 357: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> MNEMONIC_KEY - Status: Survived
+--> Mutation 358: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> DEFAULT - Status: Survived
+--> Mutation 359: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 360: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:194 - ReplaceVariable prefix -> NAME - Status: Survived
+--> Mutation 361: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:195 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 362: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:195 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 363: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:195 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 364: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:195 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 365: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 366: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> SELECTED_KEY - Status: Survived
+--> Mutation 367: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 368: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 369: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> SMALL_ICON - Status: Survived
+--> Mutation 370: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 371: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 372: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> MNEMONIC_KEY - Status: Survived
+--> Mutation 373: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> DEFAULT - Status: Survived
+--> Mutation 374: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 375: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:196 - ReplaceVariable prefix -> NAME - Status: Survived
+--> Mutation 376: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - ReplaceVariable slash -> i - Status: Survived
+--> Mutation 377: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - InsertUnaryOp Negation of slash - Status: Survived
+--> Mutation 378: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - InsertUnaryOp IINC 1 slash - Status: Survived
+--> Mutation 379: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - InsertUnaryOp IINC -1 slash - Status: Survived
+--> Mutation 380: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 381: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 382: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 383: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 384: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 385: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:197 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 386: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 387: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> SELECTED_KEY - Status: Survived
+--> Mutation 388: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 389: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 390: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> SMALL_ICON - Status: Survived
+--> Mutation 391: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 392: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 393: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> MNEMONIC_KEY - Status: Survived
+--> Mutation 394: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> DEFAULT - Status: Survived
+--> Mutation 395: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 396: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable prefix -> NAME - Status: Survived
+--> Mutation 397: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 398: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - ReplaceVariable slash -> i - Status: Survived
+--> Mutation 399: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:201 - InsertUnaryOp Negation of slash - Status: Survived
+--> Mutation 400: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 401: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> SELECTED_KEY - Status: Survived
+--> Mutation 402: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 403: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 404: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> SMALL_ICON - Status: Survived
+--> Mutation 405: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 406: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 407: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> MNEMONIC_KEY - Status: Survived
+--> Mutation 408: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> DEFAULT - Status: Survived
+--> Mutation 409: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 410: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceVariable prefix -> NAME - Status: Survived
+--> Mutation 411: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 412: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 413: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:206 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 414: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 415: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> SELECTED_KEY - Status: Survived
+--> Mutation 416: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 417: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 418: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> SMALL_ICON - Status: Survived
+--> Mutation 419: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 420: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 421: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> MNEMONIC_KEY - Status: Survived
+--> Mutation 422: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> DEFAULT - Status: Survived
+--> Mutation 423: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 424: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:207 - ReplaceVariable prefix -> NAME - Status: Survived
+--> Mutation 425: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceConstant - Enter a new directory: ->  - Status: Survived
+--> Mutation 426: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceConstant - Choose new directory ->  - Status: Survived
+--> Mutation 427: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 428: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 429: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 430: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 431: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 432: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 433: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> SELECTED_KEY - Status: Survived
+--> Mutation 434: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 435: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 436: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> SMALL_ICON - Status: Survived
+--> Mutation 437: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 438: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 439: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> MNEMONIC_KEY - Status: Survived
+--> Mutation 440: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> DEFAULT - Status: Survived
+--> Mutation 441: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 442: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:210 - ReplaceVariable prefix -> NAME - Status: Survived
+--> Mutation 443: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 444: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> SELECTED_KEY - Status: Survived
+--> Mutation 445: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 446: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> prefix - Status: Survived
+--> Mutation 447: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 448: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> SMALL_ICON - Status: Survived
+--> Mutation 449: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 450: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 451: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> MNEMONIC_KEY - Status: Survived
+--> Mutation 452: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> DEFAULT - Status: Survived
+--> Mutation 453: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 454: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> NAME - Status: Survived
+--> Mutation 455: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 456: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 457: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> SELECTED_KEY - Status: Survived
+--> Mutation 458: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 459: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> prefix - Status: Survived
+--> Mutation 460: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 461: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> SMALL_ICON - Status: Survived
+--> Mutation 462: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 463: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 464: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> MNEMONIC_KEY - Status: Survived
+--> Mutation 465: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> DEFAULT - Status: Survived
+--> Mutation 466: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 467: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable target -> NAME - Status: Survived
+--> Mutation 468: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 469: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> SELECTED_KEY - Status: Survived
+--> Mutation 470: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 471: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 472: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> SMALL_ICON - Status: Survived
+--> Mutation 473: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 474: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 475: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> MNEMONIC_KEY - Status: Survived
+--> Mutation 476: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> DEFAULT - Status: Survived
+--> Mutation 477: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> target - Status: Survived
+--> Mutation 478: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 479: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceVariable prefix -> NAME - Status: Survived
+--> Mutation 480: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 481: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 482: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:216 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 483: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> LARGE_ICON_KEY - Status: Survived
+--> Mutation 484: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> SELECTED_KEY - Status: Survived
+--> Mutation 485: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> SHORT_DESCRIPTION - Status: Survived
+--> Mutation 486: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> prefix - Status: Survived
+--> Mutation 487: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> ACTION_COMMAND_KEY - Status: Survived
+--> Mutation 488: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> SMALL_ICON - Status: Survived
+--> Mutation 489: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> LONG_DESCRIPTION - Status: Survived
+--> Mutation 490: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> ACCELERATOR_KEY - Status: Survived
+--> Mutation 491: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> MNEMONIC_KEY - Status: Survived
+--> Mutation 492: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> DEFAULT - Status: Survived
+--> Mutation 493: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> DISPLAYED_MNEMONIC_INDEX_KEY - Status: Survived
+--> Mutation 494: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceVariable target -> NAME - Status: Survived
+--> Mutation 495: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 496: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 497: corina.gui.ElementsPanel$ContextPopup$2.actionPerformed(Ljava/awt/event/ActionEvent;)V:220 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 498: corina.gui.ElementsPanel$DropLoader.dragEnter(Ljava/awt/dnd/DropTargetDragEvent;)V:111 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 499: corina.gui.ElementsPanel$DropLoader.dragEnter(Ljava/awt/dnd/DropTargetDragEvent;)V:111 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 500: corina.gui.ElementsPanel$DropLoader.dragEnter(Ljava/awt/dnd/DropTargetDragEvent;)V:111 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 501: corina.gui.ElementsPanel$DropLoader.dragEnter(Ljava/awt/dnd/DropTargetDragEvent;)V:111 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 502: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:129 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 503: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:130 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 504: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:130 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 505: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:130 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 506: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:130 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 507: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:135 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 508: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:135 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 509: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:135 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 510: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:135 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 511: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:135 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 512: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:135 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 513: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:135 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 514: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:136 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 515: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:136 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 516: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:136 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 517: corina.gui.ElementsPanel$DropLoader.drop(Ljava/awt/dnd/DropTargetDropEvent;)V:139 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 518: corina.gui.ElementsPanel$2.undo()V:337 - ReplaceVariable after -> before - Status: Survived
+--> Mutation 519: corina.gui.ElementsPanel$2.undo()V:339 - ReplaceVariable before -> after - Status: Survived
+--> Mutation 520: corina.gui.ElementsPanel$2.redo()V:345 - ReplaceVariable after -> before - Status: Survived
+--> Mutation 521: corina.gui.ElementsPanel$2.canRedo()Z:350 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 522: corina.gui.ElementsPanel$2.getPresentationName()Ljava/lang/String;:354 - ReplaceConstant - Remove ->  - Status: Survived
+--> Mutation 523: corina.gui.ElementsPanel$Metasorter.<init>(Ljava/lang/String;Z)V:565 - InsertUnaryOp Negation of reverse - Status: Survived
+--> Mutation 524: corina.gui.ElementsPanel$Metasorter.<init>(Ljava/lang/String;Z)V:565 - InsertUnaryOp IINC 1 reverse - Status: Survived
+--> Mutation 525: corina.gui.ElementsPanel$Metasorter.<init>(Ljava/lang/String;Z)V:565 - InsertUnaryOp IINC -1 reverse - Status: Survived
+--> Mutation 526: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:570 - ReplaceVariable o1 -> o2 - Status: Survived
+--> Mutation 527: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:571 - ReplaceVariable o2 -> o1 - Status: Survived
+--> Mutation 528: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:571 - ReplaceVariable o2 -> v1 - Status: Survived
+--> Mutation 529: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:572 - ReplaceVariable v1 -> o1 - Status: Survived
+--> Mutation 530: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:572 - ReplaceVariable v1 -> o2 - Status: Survived
+--> Mutation 531: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:572 - ReplaceVariable v1 -> v2 - Status: Survived
+--> Mutation 532: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:572 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 533: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:572 - ReplaceVariable v2 -> o1 - Status: Survived
+--> Mutation 534: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:572 - ReplaceVariable v2 -> o2 - Status: Survived
+--> Mutation 535: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:572 - ReplaceVariable v2 -> v1 - Status: Survived
+--> Mutation 536: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:572 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 537: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:573 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 538: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:574 - ReplaceVariable v1 -> o1 - Status: Survived
+--> Mutation 539: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:574 - ReplaceVariable v1 -> o2 - Status: Survived
+--> Mutation 540: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:574 - ReplaceVariable v1 -> v2 - Status: Survived
+--> Mutation 541: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:574 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 542: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:574 - ReplaceVariable v2 -> o1 - Status: Survived
+--> Mutation 543: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:574 - ReplaceVariable v2 -> o2 - Status: Survived
+--> Mutation 544: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:574 - ReplaceVariable v2 -> v1 - Status: Survived
+--> Mutation 545: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:574 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 546: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:575 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 547: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:575 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 548: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:575 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 549: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:576 - ReplaceVariable v1 -> o1 - Status: Survived
+--> Mutation 550: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:576 - ReplaceVariable v1 -> o2 - Status: Survived
+--> Mutation 551: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:576 - ReplaceVariable v1 -> v2 - Status: Survived
+--> Mutation 552: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:576 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 553: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:576 - ReplaceVariable v2 -> o1 - Status: Survived
+--> Mutation 554: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:576 - ReplaceVariable v2 -> o2 - Status: Survived
+--> Mutation 555: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:576 - ReplaceVariable v2 -> v1 - Status: Survived
+--> Mutation 556: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:576 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 557: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:577 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 558: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:578 - ReplaceVariable v1 -> o1 - Status: Survived
+--> Mutation 559: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:578 - ReplaceVariable v1 -> o2 - Status: Survived
+--> Mutation 560: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:578 - ReplaceVariable v1 -> v2 - Status: Survived
+--> Mutation 561: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:578 - ReplaceVariable v2 -> o1 - Status: Survived
+--> Mutation 562: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:578 - ReplaceVariable v2 -> o2 - Status: Survived
+--> Mutation 563: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:578 - ReplaceVariable v2 -> v1 - Status: Survived
+--> Mutation 564: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:579 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 565: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:579 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 566: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:579 - InsertUnaryOp Negation of x - Status: Survived
+--> Mutation 567: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:579 - InsertUnaryOp IINC 1 x - Status: Survived
+--> Mutation 568: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:579 - InsertUnaryOp IINC -1 x - Status: Survived
+--> Mutation 569: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:579 - InsertUnaryOp Negation of x - Status: Survived
+--> Mutation 570: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:579 - InsertUnaryOp IINC 1 x - Status: Survived
+--> Mutation 571: corina.gui.ElementsPanel$Metasorter.compare(Ljava/lang/Object;Ljava/lang/Object;)I:579 - InsertUnaryOp IINC -1 x - Status: Survived
+* Compiling and checking tests
 * Computation finished

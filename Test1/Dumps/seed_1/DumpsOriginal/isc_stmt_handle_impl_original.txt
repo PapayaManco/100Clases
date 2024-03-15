@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/110_firebird/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\110_firebird\evosuite-files\evosuite.properties
+* Connecting to master process on port 15797
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:13:19.065 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 02:13:19.207 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
 * Finished analyzing classpath
 * Generating tests for class org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl
 * Test criteria:
@@ -20,11 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 662
-* Using seed 2482030657809
+* Using seed 1710481071452
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 495 / 662
-[MASTER] 02:13:19.914 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addWarning(Lorg/firebirdsql/gds/GDSException;)V
-* Search finished after 181s and 6876 generations, 1414713 statements, best individual has fitness: 6.0
+* Search finished after 181s and 10679 generations, 7056124 statements, best individual has fitness: 5.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -59,7 +56,7 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 45
 * Number of covered goals: 45
-* Generated 70 tests with total length 232
+* Generated 71 tests with total length 232
 * Resulting test suite's coverage: 94% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 92%
@@ -423,27 +420,4 @@
 --> Mutation 356: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceArithmeticOperator + -> * - Status: Killed
 --> Mutation 357: org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl.addRow([[B)V:206 - ReplaceArithmeticOperator + -> / - Status: Killed
 * Compiling and checking tests
-[MASTER] 02:16:32.691 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:16:37.942 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:16:43.189 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:16:48.449 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:16:53.698 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:16:58.946 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:17:04.196 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:17:09.445 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:17:14.695 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:17:19.948 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:17:25.187 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Permissions denied during test execution: 
-[MASTER] 02:17:25.189 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
-  - java.lang.RuntimePermission: 
-         writeFileDescriptor: 55
-  - javax.security.auth.AuthPermission: 
-         getSubject: 3
-         doAs: 2
-         setReadOnly: 1
-* Writing tests to file
-* Writing JUnit test case 'isc_stmt_handle_impl_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.exolab.jms.tools.admin.AdminInfo
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/66_openjms/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\66_openjms\evosuite-files\evosuite.properties
+* Connecting to master process on port 15164
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:24:20.729 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 03:24:20.859 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:24:22.223 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class org.exolab.jms.tools.admin.AdminInfo
 * Test criteria:
@@ -21,20 +18,15 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 220
-* Using seed 2482030657809
+* Using seed 1710485086523
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 112 / 220
-[MASTER] 03:24:26.415 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 03:24:39.890 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 03:24:55.173 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JLayer<V> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {E=class java.awt.Component$BaselineResizeBehavior}
-[MASTER] 03:24:55.184 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
-[MASTER] 03:24:58.966 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:24:58.971 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:24:59.004 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 03:25:04.225 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 03:25:08.466 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
-[MASTER] 03:25:23.951 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
-* Search finished after 181s and 2437 generations, 1323867 statements, best individual has fitness: 89.0
+[MASTER] 03:44:52.355 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 03:45:01.419 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 03:45:03.852 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 03:45:19.531 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 03:47:48.213 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+* Search finished after 182s and 4651 generations, 2688764 statements, best individual has fitness: 89.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -69,7 +61,7 @@
 * Coverage of criterion CBRANCH: 76%
 * Total number of goals: 17
 * Number of covered goals: 13
-* Generated 8 tests with total length 31
+* Generated 8 tests with total length 32
 * Resulting test suite's coverage: 67% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 2%
@@ -186,29 +178,4 @@
 --> Mutation 109: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:143 - ReplaceComparisonOperator == -> != - Status: Survived
 --> Mutation 110: org.exolab.jms.tools.admin.AdminInfo.getTreeCellRendererComponent(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;:144 - ReplaceComparisonOperator = null -> != null - Status: Killed
 * Compiling and checking tests
-[MASTER] 03:27:31.822 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:27:37.096 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:27:42.368 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:27:47.638 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:27:52.923 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:27:58.194 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:28:03.462 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:28:08.733 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Permissions denied during test execution: 
-  - java.io.FilePermission: 
-         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT5953751146936253080.tmp: 1
-         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT2877995740107716915.tmp: 1
-         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT4931068425248189023.tmp: 1
-         and other 6 cases of action/name for this exception class
-  - java.net.URLPermission: 
-         *:* http://www.someFakeButWellFormedURL.org/fooExample@2x: 2
-  - java.lang.RuntimePermission: 
-         writeFileDescriptor: 7
-  - java.net.SocketPermission: 
-         connect,resolve some:21: 7
-         connect,resolve ftp.someFakeButWellFormedURL.org:21: 5
-* Writing tests to file
-* Writing JUnit test case 'AdminInfo_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

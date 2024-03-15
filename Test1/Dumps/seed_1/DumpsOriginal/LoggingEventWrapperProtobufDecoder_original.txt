@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: de.huxhorn.lilith.data.logging.protobuf.LoggingEventWrapperProtobufDecoder
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/43_lilith/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\43_lilith\evosuite-files\evosuite.properties
+* Connecting to master process on port 15098
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:53:28.499 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 02:53:28.804 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 02:53:28.962 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class de.huxhorn.lilith.data.logging.protobuf.LoggingEventWrapperProtobufDecoder
 * Test criteria:
@@ -21,11 +18,11 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 143
-* Using seed 2482030657809
+* Using seed 1710483187152
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 48 / 143
-[MASTER] 02:53:35.048 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 182s and 80 generations, 48075 statements, best individual has fitness: 25.0
+[MASTER] 03:13:09.316 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 185s and 66 generations, 38552 statements, best individual has fitness: 26.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -57,11 +54,11 @@
 * Total number of goals: 7
 * Number of covered goals: 7
 * Coverage analysis for criterion CBRANCH
-* Coverage of criterion CBRANCH: 80%
+* Coverage of criterion CBRANCH: 76%
 * Total number of goals: 25
-* Number of covered goals: 20
-* Generated 14 tests with total length 35
-* Resulting test suite's coverage: 82% (average coverage for all fitness functions)
+* Number of covered goals: 19
+* Generated 14 tests with total length 40
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 53%
 * There are surviving mutants: 
@@ -85,23 +82,4 @@
 --> Mutation 17: de.huxhorn.lilith.data.logging.protobuf.LoggingEventWrapperProtobufDecoder.convert(Lde/huxhorn/lilith/data/logging/protobuf/generated/LoggingProto$SourceIdentifier;)Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;:134 - ReplaceComparisonOperator == -> != - Status: Survived
 --> Mutation 18: de.huxhorn.lilith.data.logging.protobuf.LoggingEventWrapperProtobufDecoder.convert(Lde/huxhorn/lilith/data/logging/protobuf/generated/LoggingProto$SourceIdentifier;)Lde/huxhorn/lilith/data/eventsource/SourceIdentifier;:138 - ReplaceComparisonOperator == -> != - Status: Survived
 * Compiling and checking tests
-[MASTER] 02:56:40.131 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:56:45.453 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:56:50.761 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:56:56.063 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:57:01.364 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:57:06.640 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:57:11.920 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:57:17.216 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:57:22.503 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:57:27.797 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:57:33.089 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:57:33.092 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
-* Permissions denied during test execution: 
-  - java.lang.RuntimePermission: 
-         writeFileDescriptor: 1
-* Writing tests to file
-* Writing JUnit test case 'LoggingEventWrapperProtobufDecoder_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

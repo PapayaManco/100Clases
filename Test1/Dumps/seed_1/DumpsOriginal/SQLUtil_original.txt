@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.databene.jdbacl.SQLUtil
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/13_jdbacl/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\13_jdbacl\evosuite-files\evosuite.properties
+* Connecting to master process on port 5958
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:17:29.184 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 02:17:29.341 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 02:17:29.590 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
 * Finished analyzing classpath
 * Generating tests for class org.databene.jdbacl.SQLUtil
 * Test criteria:
@@ -21,10 +18,647 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 1400
-* Using seed 2482030657809
+* Using seed 1710481259226
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 540 / 1400
-[MASTER] 02:17:34.595 [logback-1] WARN  TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
-[MASTER] 02:17:40.779 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-* Search finished after 181s and 1140 generations, 445050 statements, best individual has fitness: 165.0
+[MASTER] 02:41:03.451 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 02:41:04.251 [logback-1] WARN  TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+[MASTER] 02:41:59.286 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 02:42:32.328 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 1493 generations, 547561 statements, best individual has fitness: 176.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 89%
+* Total number of goals: 257
+* Number of covered goals: 230
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 90%
+* Total number of goals: 188
+* Number of covered goals: 170
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 51
+* Number of covered goals: 51
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 90%
+* Total number of goals: 595
+* Number of covered goals: 533
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 59%
+* Total number of goals: 94
+* Number of covered goals: 55
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 39
+* Number of covered goals: 39
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 39
+* Number of covered goals: 39
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 91%
+* Total number of goals: 188
+* Number of covered goals: 171
+* Generated 125 tests with total length 385
+* Resulting test suite's coverage: 86% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 67%
+* There are surviving mutants: 
+--> Mutation 0: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:70 - ReplaceConstant - 40 -> 0 - Status: Killed
+--> Mutation 1: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:70 - ReplaceConstant - 40 -> 1 - Status: Killed
+--> Mutation 2: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:70 - ReplaceConstant - 40 -> -1 - Status: Killed
+--> Mutation 3: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:70 - ReplaceConstant - 40 -> 39 - Status: Killed
+--> Mutation 4: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:70 - ReplaceConstant - 40 -> 41 - Status: Killed
+--> Mutation 5: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:71 - InsertUnaryOp Negation of lparen - Status: Killed
+--> Mutation 6: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:71 - InsertUnaryOp IINC 1 lparen - Status: Killed
+--> Mutation 7: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:71 - InsertUnaryOp IINC -1 lparen - Status: Killed
+--> Mutation 8: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:71 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 9: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:71 - ReplaceComparisonOperator >= -> == - Status: Killed
+--> Mutation 10: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:71 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 11: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:72 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 12: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:72 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 13: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:73 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 14: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:73 - InsertUnaryOp Negation of lparen - Status: Killed
+--> Mutation 15: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - ReplaceVariable spec -> type - Status: Killed
+--> Mutation 16: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - ReplaceConstant - 41 -> 0 - Status: Killed
+--> Mutation 17: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - ReplaceConstant - 41 -> 1 - Status: Killed
+--> Mutation 18: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - ReplaceConstant - 41 -> -1 - Status: Killed
+--> Mutation 19: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - ReplaceConstant - 41 -> 40 - Status: Killed
+--> Mutation 20: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - ReplaceConstant - 41 -> 42 - Status: Killed
+--> Mutation 21: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - InsertUnaryOp Negation of lparen - Status: Survived
+--> Mutation 22: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - InsertUnaryOp IINC 1 lparen - Status: Killed
+--> Mutation 23: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:74 - InsertUnaryOp IINC -1 lparen - Status: Killed
+--> Mutation 24: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:75 - ReplaceVariable rparen -> lparen - Status: Survived
+--> Mutation 25: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:75 - InsertUnaryOp Negation of rparen - Status: Killed
+--> Mutation 26: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:75 - InsertUnaryOp IINC 1 rparen - Status: Killed
+--> Mutation 27: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:75 - InsertUnaryOp IINC -1 rparen - Status: Killed
+--> Mutation 28: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:75 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 29: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:75 - ReplaceComparisonOperator >= -> == - Status: Killed
+--> Mutation 30: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:75 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 31: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:76 - ReplaceConstant - Illegal column type format:  ->  - Status: Survived
+--> Mutation 32: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:76 - ReplaceVariable spec -> type - Status: Survived
+--> Mutation 33: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceVariable spec -> type - Status: Killed
+--> Mutation 34: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceVariable lparen -> rparen - Status: Killed
+--> Mutation 35: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - InsertUnaryOp Negation of lparen - Status: Killed
+--> Mutation 36: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - InsertUnaryOp IINC 1 lparen - Status: Killed
+--> Mutation 37: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - InsertUnaryOp IINC -1 lparen - Status: Killed
+--> Mutation 38: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 39: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 40: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 41: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceArithmeticOperator + -> * - Status: Killed
+--> Mutation 42: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceArithmeticOperator + -> / - Status: Killed
+--> Mutation 43: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceVariable rparen -> lparen - Status: Killed
+--> Mutation 44: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - InsertUnaryOp Negation of rparen - Status: Killed
+--> Mutation 45: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - InsertUnaryOp IINC 1 rparen - Status: Killed
+--> Mutation 46: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - InsertUnaryOp IINC -1 rparen - Status: Killed
+--> Mutation 47: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:77 - ReplaceConstant - , ->  - Status: Killed
+--> Mutation 48: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:78 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 49: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:78 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 50: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:79 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 51: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:79 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 52: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:79 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 53: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:79 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 54: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:79 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 55: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:79 - ReplaceVariable type -> spec - Status: Survived
+--> Mutation 56: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:79 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 57: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:79 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 58: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 3 -> 0 - Status: Killed
+--> Mutation 59: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 3 -> 1 - Status: Killed
+--> Mutation 60: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 3 -> -1 - Status: Killed
+--> Mutation 61: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 3 -> 2 - Status: Killed
+--> Mutation 62: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 3 -> 4 - Status: Killed
+--> Mutation 63: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 64: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceVariable type -> spec - Status: Survived
+--> Mutation 65: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 66: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 67: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 68: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 69: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 70: org.databene.jdbacl.SQLUtil.parseColumnTypeAndSize(Ljava/lang/String;)[Ljava/lang/Object;:81 - ReplaceConstant - 2 -> 3 - Status: Killed
+--> Mutation 71: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:88 - ReplaceConstant - create table  ->  - Status: Killed
+--> Mutation 72: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:90 - ReplaceConstant -  ( ->  - Status: Killed
+--> Mutation 73: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:93 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 74: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:93 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 75: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:93 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 76: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:93 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 77: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:93 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 78: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:93 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 79: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:93 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 80: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:94 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 81: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:94 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 82: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:94 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 83: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:94 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 84: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:94 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 85: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:94 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 86: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:95 - ReplaceConstant - 44 -> 0 - Status: Survived
+--> Mutation 87: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:95 - ReplaceConstant - 44 -> 1 - Status: Survived
+--> Mutation 88: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:95 - ReplaceConstant - 44 -> -1 - Status: Survived
+--> Mutation 89: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:95 - ReplaceConstant - 44 -> 43 - Status: Survived
+--> Mutation 90: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:95 - ReplaceConstant - 44 -> 45 - Status: Survived
+--> Mutation 91: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:97 - ReplaceConstant - 9 -> 0 - Status: Survived
+--> Mutation 92: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:97 - ReplaceConstant - 9 -> 1 - Status: Survived
+--> Mutation 93: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:97 - ReplaceConstant - 9 -> -1 - Status: Survived
+--> Mutation 94: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:97 - ReplaceConstant - 9 -> 8 - Status: Survived
+--> Mutation 95: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:97 - ReplaceConstant - 9 -> 10 - Status: Survived
+--> Mutation 96: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:98 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 97: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:98 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 98: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:98 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 99: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:102 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 100: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:103 - ReplaceConstant - , ->  - Status: Killed
+--> Mutation 101: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:104 - ReplaceConstant - 9 -> 0 - Status: Killed
+--> Mutation 102: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:104 - ReplaceConstant - 9 -> 1 - Status: Killed
+--> Mutation 103: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:104 - ReplaceConstant - 9 -> -1 - Status: Killed
+--> Mutation 104: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:104 - ReplaceConstant - 9 -> 8 - Status: Killed
+--> Mutation 105: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:104 - ReplaceConstant - 9 -> 10 - Status: Killed
+--> Mutation 106: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:108 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 107: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:109 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 108: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:110 - ReplaceConstant - , ->  - Status: Survived
+--> Mutation 109: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:111 - ReplaceConstant - 9 -> 0 - Status: Survived
+--> Mutation 110: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:111 - ReplaceConstant - 9 -> 1 - Status: Survived
+--> Mutation 111: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:111 - ReplaceConstant - 9 -> -1 - Status: Survived
+--> Mutation 112: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:111 - ReplaceConstant - 9 -> 8 - Status: Survived
+--> Mutation 113: org.databene.jdbacl.SQLUtil.renderCreateTable(Lorg/databene/jdbacl/model/DBTable;ZLorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:111 - ReplaceConstant - 9 -> 10 - Status: Survived
+--> Mutation 114: org.databene.jdbacl.SQLUtil.renderAddForeignKey(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:135 - ReplaceConstant - ALTER TABLE  ->  - Status: Survived
+--> Mutation 115: org.databene.jdbacl.SQLUtil.renderAddForeignKey(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:135 - ReplaceConstant -  ADD  ->  - Status: Survived
+--> Mutation 116: org.databene.jdbacl.SQLUtil.renderAddForeignKey(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:136 - ReplaceConstant - 9 -> 0 - Status: Survived
+--> Mutation 117: org.databene.jdbacl.SQLUtil.renderAddForeignKey(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:136 - ReplaceConstant - 9 -> 1 - Status: Survived
+--> Mutation 118: org.databene.jdbacl.SQLUtil.renderAddForeignKey(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:136 - ReplaceConstant - 9 -> -1 - Status: Survived
+--> Mutation 119: org.databene.jdbacl.SQLUtil.renderAddForeignKey(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:136 - ReplaceConstant - 9 -> 8 - Status: Survived
+--> Mutation 120: org.databene.jdbacl.SQLUtil.renderAddForeignKey(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;Ljava/io/PrintWriter;)V:136 - ReplaceConstant - 9 -> 10 - Status: Survived
+--> Mutation 121: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:141 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 122: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:142 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 123: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:142 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 124: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:142 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 125: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:142 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 126: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:142 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 127: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:142 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 128: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:142 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 129: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:143 - ReplaceConstant - ,  ->  - Status: Survived
+--> Mutation 130: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:143 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 131: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:143 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 132: org.databene.jdbacl.SQLUtil.renderColumnNames([Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:143 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 133: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:148 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 134: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:149 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 135: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:149 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 136: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:149 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 137: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:149 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 138: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:149 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 139: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:149 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 140: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:149 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 141: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:150 - ReplaceConstant - ,  ->  - Status: Killed
+--> Mutation 142: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:150 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 143: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:150 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 144: org.databene.jdbacl.SQLUtil.renderColumnNames(Ljava/util/List;)Ljava/lang/String;:150 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 145: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 40 -> 0 - Status: Killed
+--> Mutation 146: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 40 -> 1 - Status: Killed
+--> Mutation 147: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 40 -> -1 - Status: Killed
+--> Mutation 148: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 40 -> 39 - Status: Killed
+--> Mutation 149: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 40 -> 41 - Status: Killed
+--> Mutation 150: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 41 -> 0 - Status: Killed
+--> Mutation 151: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 41 -> 1 - Status: Killed
+--> Mutation 152: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 41 -> -1 - Status: Killed
+--> Mutation 153: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 41 -> 40 - Status: Killed
+--> Mutation 154: org.databene.jdbacl.SQLUtil.renderColumnNames([Ljava/lang/String;)Ljava/lang/String;:155 - ReplaceConstant - 41 -> 42 - Status: Killed
+--> Mutation 155: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:165 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 156: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:165 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 157: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:165 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 158: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:165 - ReplaceConstant - 32 -> 31 - Status: Killed
+--> Mutation 159: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:165 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 160: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:169 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 161: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:170 - ReplaceConstant -  DEFAULT  ->  - Status: Killed
+--> Mutation 162: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:173 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 163: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:174 - ReplaceConstant -  NOT ->  - Status: Survived
+--> Mutation 164: org.databene.jdbacl.SQLUtil.renderColumn(Lorg/databene/jdbacl/model/DBColumn;)Ljava/lang/String;:175 - ReplaceConstant -  NULL ->  - Status: Killed
+--> Mutation 165: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:189 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 166: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:189 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 167: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:189 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 168: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:189 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 169: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:189 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 170: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:189 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 171: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:189 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 172: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:190 - ReplaceConstant - ( ->  - Status: Killed
+--> Mutation 173: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:191 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 174: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:192 - ReplaceConstant - , ->  - Status: Killed
+--> Mutation 175: org.databene.jdbacl.SQLUtil.renderColumnTypeWithSize(Lorg/databene/jdbacl/model/DBColumn;Ljava/lang/StringBuilder;)V:193 - ReplaceConstant - ) ->  - Status: Killed
+--> Mutation 176: org.databene.jdbacl.SQLUtil.substituteMarkers(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;:198 - ReplaceVariable sql -> marker - Status: Survived
+--> Mutation 177: org.databene.jdbacl.SQLUtil.substituteMarkers(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;:198 - ReplaceVariable marker -> sql - Status: Survived
+--> Mutation 178: org.databene.jdbacl.SQLUtil.renderQuery(Lorg/databene/jdbacl/model/DBTable;[Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:202 - ReplaceConstant - SELECT * FROM  ->  - Status: Killed
+--> Mutation 179: org.databene.jdbacl.SQLUtil.renderQuery(Lorg/databene/jdbacl/model/DBTable;[Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:203 - ReplaceConstant -  WHERE  ->  - Status: Killed
+--> Mutation 180: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:209 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 181: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:209 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 182: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:209 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 183: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:209 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 184: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:209 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 185: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:209 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 186: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:209 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 187: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:210 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 188: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:210 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 189: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:210 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 190: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:210 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 191: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:210 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 192: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:210 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 193: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:211 - ReplaceConstant -  AND  ->  - Status: Killed
+--> Mutation 194: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:212 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 195: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:212 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 196: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:212 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 197: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:212 - ReplaceConstant -  =  ->  - Status: Killed
+--> Mutation 198: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:212 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 199: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:212 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 200: org.databene.jdbacl.SQLUtil.renderWhereClause([Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;:212 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 201: org.databene.jdbacl.SQLUtil.renderValue(Ljava/lang/Object;)Ljava/lang/String;:218 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 202: org.databene.jdbacl.SQLUtil.renderValue(Ljava/lang/Object;)Ljava/lang/String;:218 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 203: org.databene.jdbacl.SQLUtil.renderValue(Ljava/lang/Object;)Ljava/lang/String;:219 - ReplaceConstant - ' ->  - Status: Killed
+--> Mutation 204: org.databene.jdbacl.SQLUtil.renderValue(Ljava/lang/Object;)Ljava/lang/String;:219 - ReplaceConstant - ' ->  - Status: Killed
+--> Mutation 205: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:227 - ReplaceConstant - alter session ->  - Status: Killed
+--> Mutation 206: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:227 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 207: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:227 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 208: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:227 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 209: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:227 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 210: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:228 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 211: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:231 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 212: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:232 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 213: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:233 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 214: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:234 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 215: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:235 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 216: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:236 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 217: org.databene.jdbacl.SQLUtil.mutatesStructure(Ljava/lang/String;)Ljava/lang/Boolean;:241 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 218: org.databene.jdbacl.SQLUtil.mutatesStructure(Ljava/lang/String;)Ljava/lang/Boolean;:242 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 219: org.databene.jdbacl.SQLUtil.mutatesStructure(Ljava/lang/String;)Ljava/lang/Boolean;:243 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 220: org.databene.jdbacl.SQLUtil.mutatesStructure(Ljava/lang/String;)Ljava/lang/Boolean;:244 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 221: org.databene.jdbacl.SQLUtil.mutatesStructure(Ljava/lang/String;)Ljava/lang/Boolean;:245 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 222: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:250 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 223: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceVariable sql -> ddl - Status: Killed
+--> Mutation 224: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceVariable ddl -> sql - Status: Killed
+--> Mutation 225: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 226: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 227: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 228: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 229: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:252 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 230: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:253 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 231: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:258 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 232: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:259 - ReplaceVariable sql -> ddl - Status: Killed
+--> Mutation 233: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:259 - ReplaceVariable ddl -> sql - Status: Killed
+--> Mutation 234: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:259 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 235: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:259 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 236: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:259 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 237: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:259 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 238: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:260 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 239: org.databene.jdbacl.SQLUtil.isDML(Ljava/lang/String;)Z:261 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 240: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:266 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 241: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceVariable sql -> call - Status: Killed
+--> Mutation 242: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceVariable call -> sql - Status: Killed
+--> Mutation 243: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 244: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 245: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 246: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 247: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:268 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 248: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:269 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 249: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:275 - ReplaceConstant - select ->  - Status: Killed
+--> Mutation 250: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:275 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 251: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:275 - ReplaceComparisonOperator > -> -2 - Status: Killed
+--> Mutation 252: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:275 - ReplaceComparisonOperator > -> != - Status: Killed
+--> Mutation 253: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:275 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 254: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:276 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 255: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:279 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 256: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:280 - ReplaceConstant - into ->  - Status: Killed
+--> Mutation 257: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:280 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 258: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:280 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 259: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:280 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 260: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:281 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 261: org.databene.jdbacl.SQLUtil.isQuery(Ljava/lang/String;)Z:283 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 262: org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;:288 - ReplaceConstant - /* ->  - Status: Killed
+--> Mutation 263: org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;:288 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 264: org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;:289 - ReplaceConstant - /* ->  - Status: Survived
+--> Mutation 265: org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;:289 - ReplaceConstant - *_/ ->  - Status: Survived
+--> Mutation 266: org.databene.jdbacl.SQLUtil.constraintSpec(Lorg/databene/jdbacl/model/DBConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:294 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 267: org.databene.jdbacl.SQLUtil.constraintSpec(Lorg/databene/jdbacl/model/DBConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:296 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 268: org.databene.jdbacl.SQLUtil.constraintSpec(Lorg/databene/jdbacl/model/DBConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:298 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 269: org.databene.jdbacl.SQLUtil.constraintSpec(Lorg/databene/jdbacl/model/DBConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:300 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 270: org.databene.jdbacl.SQLUtil.constraintSpec(Lorg/databene/jdbacl/model/DBConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:302 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 271: org.databene.jdbacl.SQLUtil.constraintSpec(Lorg/databene/jdbacl/model/DBConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:305 - ReplaceConstant - Unknown constraint type:  ->  - Status: Survived
+--> Mutation 272: org.databene.jdbacl.SQLUtil.checkSpec(Lorg/databene/jdbacl/model/DBCheckConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:311 - ReplaceConstant - CHECK  ->  - Status: Killed
+--> Mutation 273: org.databene.jdbacl.SQLUtil.notNullSpec(Lorg/databene/jdbacl/model/DBNotNullConstraint;)Ljava/lang/String;:316 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 274: org.databene.jdbacl.SQLUtil.notNullSpec(Lorg/databene/jdbacl/model/DBNotNullConstraint;)Ljava/lang/String;:316 - ReplaceConstant -  NOT NULL ->  - Status: Killed
+--> Mutation 275: org.databene.jdbacl.SQLUtil.pkSpec(Lorg/databene/jdbacl/model/DBPrimaryKeyConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:321 - ReplaceConstant - PRIMARY KEY  ->  - Status: Killed
+--> Mutation 276: org.databene.jdbacl.SQLUtil.ukSpec(Lorg/databene/jdbacl/model/DBUniqueConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:327 - ReplaceConstant - UNIQUE  ->  - Status: Killed
+--> Mutation 277: org.databene.jdbacl.SQLUtil.fkSpec(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:333 - ReplaceConstant - FOREIGN KEY  ->  - Status: Killed
+--> Mutation 278: org.databene.jdbacl.SQLUtil.fkSpec(Lorg/databene/jdbacl/model/DBForeignKeyConstraint;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/String;:334 - ReplaceConstant -  REFERENCES  ->  - Status: Killed
+--> Mutation 279: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceConstant - left ->  - Status: Killed
+--> Mutation 280: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceVariable alias1 -> table2 - Status: Killed
+--> Mutation 281: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceVariable alias1 -> alias2 - Status: Killed
+--> Mutation 282: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceVariable columns1 -> columns2 - Status: Survived
+--> Mutation 283: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceVariable table2 -> alias1 - Status: Killed
+--> Mutation 284: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceVariable table2 -> alias2 - Status: Killed
+--> Mutation 285: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceVariable alias2 -> alias1 - Status: Survived
+--> Mutation 286: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceVariable alias2 -> table2 - Status: Killed
+--> Mutation 287: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:345 - ReplaceVariable columns2 -> columns1 - Status: Survived
+--> Mutation 288: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceConstant - inner ->  - Status: Survived
+--> Mutation 289: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceVariable alias1 -> table2 - Status: Killed
+--> Mutation 290: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceVariable alias1 -> alias2 - Status: Killed
+--> Mutation 291: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceVariable columns1 -> columns2 - Status: Survived
+--> Mutation 292: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceVariable table2 -> alias1 - Status: Killed
+--> Mutation 293: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceVariable table2 -> alias2 - Status: Killed
+--> Mutation 294: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceVariable alias2 -> alias1 - Status: Killed
+--> Mutation 295: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceVariable alias2 -> table2 - Status: Killed
+--> Mutation 296: org.databene.jdbacl.SQLUtil.innerJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:350 - ReplaceVariable columns2 -> columns1 - Status: Survived
+--> Mutation 297: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refererAlias - Status: Killed
+--> Mutation 298: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refereeAlias - Status: Killed
+--> Mutation 299: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refereeTable - Status: Killed
+--> Mutation 300: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 301: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceConstant - inner ->  - Status: Killed
+--> Mutation 302: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refererAlias - Status: Killed
+--> Mutation 303: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refereeAlias - Status: Killed
+--> Mutation 304: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refereeTable - Status: Killed
+--> Mutation 305: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceComparisonOperator > -> -2 - Status: Killed
+--> Mutation 306: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceComparisonOperator > -> != - Status: Killed
+--> Mutation 307: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 308: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:357 - ReplaceVariable type -> refererAlias - Status: Killed
+--> Mutation 309: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:357 - ReplaceVariable type -> refereeAlias - Status: Killed
+--> Mutation 310: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:357 - ReplaceVariable type -> refereeTable - Status: Killed
+--> Mutation 311: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:357 - ReplaceConstant -  join  ->  - Status: Killed
+--> Mutation 312: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeTable -> refererAlias - Status: Killed
+--> Mutation 313: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeTable -> refereeAlias - Status: Killed
+--> Mutation 314: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeTable -> type - Status: Killed
+--> Mutation 315: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceConstant -  as  ->  - Status: Killed
+--> Mutation 316: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeAlias -> refererAlias - Status: Killed
+--> Mutation 317: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeAlias -> type - Status: Killed
+--> Mutation 318: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeAlias -> refereeTable - Status: Killed
+--> Mutation 319: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceConstant -  on  ->  - Status: Killed
+--> Mutation 320: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 321: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 322: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 323: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 324: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - ReplaceVariable refererColumns -> refereeColumns - Status: Survived
+--> Mutation 325: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 326: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 327: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 328: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 329: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 330: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 331: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 332: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 333: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 334: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:361 - ReplaceConstant -  and  ->  - Status: Killed
+--> Mutation 335: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceVariable refererAlias -> refereeAlias - Status: Killed
+--> Mutation 336: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceVariable refererAlias -> type - Status: Killed
+--> Mutation 337: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceVariable refererAlias -> refereeTable - Status: Killed
+--> Mutation 338: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> 0 - Status: Killed
+--> Mutation 339: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> 1 - Status: Killed
+--> Mutation 340: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> -1 - Status: Killed
+--> Mutation 341: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> 45 - Status: Killed
+--> Mutation 342: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> 47 - Status: Killed
+--> Mutation 343: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceVariable refererColumns -> refereeColumns - Status: Survived
+--> Mutation 344: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 345: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 346: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 347: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant -  =  ->  - Status: Killed
+--> Mutation 348: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceVariable refereeAlias -> refererAlias - Status: Killed
+--> Mutation 349: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceVariable refereeAlias -> type - Status: Killed
+--> Mutation 350: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceVariable refereeAlias -> refereeTable - Status: Killed
+--> Mutation 351: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> 0 - Status: Killed
+--> Mutation 352: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> 1 - Status: Killed
+--> Mutation 353: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> -1 - Status: Killed
+--> Mutation 354: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> 45 - Status: Killed
+--> Mutation 355: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> 47 - Status: Killed
+--> Mutation 356: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceVariable refereeColumns -> refererColumns - Status: Survived
+--> Mutation 357: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 358: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 359: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 360: org.databene.jdbacl.SQLUtil.addRequiredCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:369 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 361: org.databene.jdbacl.SQLUtil.addRequiredCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:369 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 362: org.databene.jdbacl.SQLUtil.addRequiredCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:369 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 363: org.databene.jdbacl.SQLUtil.addRequiredCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:370 - ReplaceConstant -  and  ->  - Status: Killed
+--> Mutation 364: org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:375 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 365: org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:375 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 366: org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:375 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 367: org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:376 - ReplaceConstant -  or  ->  - Status: Killed
+--> Mutation 368: org.databene.jdbacl.SQLUtil.ownerDotComponent(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:381 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 369: org.databene.jdbacl.SQLUtil.ownerDotComponent(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:381 - ReplaceConstant - . ->  - Status: Killed
+--> Mutation 370: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:385 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 371: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:385 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 372: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:385 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 373: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:385 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 374: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:386 - ReplaceConstant - CONSTRAINT  ->  - Status: Killed
+--> Mutation 375: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:386 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 376: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:386 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 377: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:386 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 378: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:386 - ReplaceConstant - 32 -> 31 - Status: Killed
+--> Mutation 379: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;Lorg/databene/jdbacl/NameSpec;)Ljava/lang/StringBuilder;:386 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 380: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;)V:391 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 381: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;)V:392 - ReplaceConstant - CONSTRAINT  ->  - Status: Killed
+--> Mutation 382: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;)V:392 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 383: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;)V:392 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 384: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;)V:392 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 385: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;)V:392 - ReplaceConstant - 32 -> 31 - Status: Killed
+--> Mutation 386: org.databene.jdbacl.SQLUtil.appendConstraintName(Lorg/databene/jdbacl/model/DBConstraint;Ljava/lang/StringBuilder;)V:392 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 387: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 388: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceConstant - CONSTRAINT  ->  - Status: Killed
+--> Mutation 389: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:397 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 390: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:397 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 391: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:397 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 392: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:397 - ReplaceConstant - 32 -> 31 - Status: Killed
+--> Mutation 393: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:397 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 394: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:402 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 395: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:405 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 396: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:405 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 397: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:406 - ReplaceConstant - constraint ->  - Status: Survived
+--> Mutation 398: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 399: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 400: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 401: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> 31 - Status: Killed
+--> Mutation 402: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 403: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:414 - ReplaceVariable result -> sql - Status: Survived
+--> Mutation 404: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:415 - ReplaceVariable tmp -> result - Status: Survived
+--> Mutation 405: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:415 - ReplaceVariable tmp -> sql - Status: Survived
+--> Mutation 406: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:415 - ReplaceConstant - /* ->  - Status: Survived
+--> Mutation 407: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:415 - ReplaceConstant - *_/ ->  - Status: Survived
+--> Mutation 408: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:416 - ReplaceVariable result -> tmp - Status: Survived
+--> Mutation 409: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:416 - ReplaceVariable result -> sql - Status: Survived
+--> Mutation 410: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:416 - ReplaceVariable tmp -> result - Status: Survived
+--> Mutation 411: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:416 - ReplaceVariable tmp -> sql - Status: Survived
+--> Mutation 412: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:416 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 413: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:416 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 414: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:416 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 415: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:417 - ReplaceVariable result -> tmp - Status: Survived
+--> Mutation 416: org.databene.jdbacl.SQLUtil.removeComments(Ljava/lang/String;)Ljava/lang/String;:417 - ReplaceVariable result -> sql - Status: Survived
+--> Mutation 417: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:421 - InsertUnaryOp Negation of removeComments - Status: Survived
+--> Mutation 418: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:421 - InsertUnaryOp IINC 1 removeComments - Status: Killed
+--> Mutation 419: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:421 - InsertUnaryOp IINC -1 removeComments - Status: Killed
+--> Mutation 420: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:421 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 421: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:422 - ReplaceConstant - -- ->  - Status: Killed
+--> Mutation 422: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:422 - ReplaceConstant - // ->  - Status: Survived
+--> Mutation 423: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> 0 - Status: Killed
+--> Mutation 424: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> 1 - Status: Killed
+--> Mutation 425: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> -1 - Status: Killed
+--> Mutation 426: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> 64 - Status: Killed
+--> Mutation 427: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> 66 - Status: Killed
+--> Mutation 428: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> 0 - Status: Killed
+--> Mutation 429: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> 1 - Status: Killed
+--> Mutation 430: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> -1 - Status: Killed
+--> Mutation 431: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> 89 - Status: Survived
+--> Mutation 432: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> 91 - Status: Survived
+--> Mutation 433: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> 0 - Status: Killed
+--> Mutation 434: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> 1 - Status: Killed
+--> Mutation 435: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> -1 - Status: Killed
+--> Mutation 436: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> 96 - Status: Survived
+--> Mutation 437: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> 98 - Status: Killed
+--> Mutation 438: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> 0 - Status: Killed
+--> Mutation 439: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> 1 - Status: Killed
+--> Mutation 440: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> -1 - Status: Killed
+--> Mutation 441: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> 121 - Status: Survived
+--> Mutation 442: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> 123 - Status: Survived
+--> Mutation 443: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> 0 - Status: Killed
+--> Mutation 444: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> 1 - Status: Killed
+--> Mutation 445: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> -1 - Status: Killed
+--> Mutation 446: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> 47 - Status: Killed
+--> Mutation 447: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> 49 - Status: Killed
+--> Mutation 448: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> 0 - Status: Killed
+--> Mutation 449: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> 1 - Status: Killed
+--> Mutation 450: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> -1 - Status: Killed
+--> Mutation 451: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> 56 - Status: Killed
+--> Mutation 452: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> 58 - Status: Survived
+--> Mutation 453: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 0 - Status: Killed
+--> Mutation 454: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 1 - Status: Killed
+--> Mutation 455: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> -1 - Status: Killed
+--> Mutation 456: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 94 - Status: Survived
+--> Mutation 457: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 96 - Status: Killed
+--> Mutation 458: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 0 - Status: Killed
+--> Mutation 459: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 1 - Status: Killed
+--> Mutation 460: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> -1 - Status: Survived
+--> Mutation 461: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 94 - Status: Killed
+--> Mutation 462: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 96 - Status: Survived
+--> Mutation 463: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 0 - Status: Survived
+--> Mutation 464: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 1 - Status: Survived
+--> Mutation 465: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> -1 - Status: Survived
+--> Mutation 466: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 31 - Status: Survived
+--> Mutation 467: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 468: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 469: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 470: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 471: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 31 - Status: Killed
+--> Mutation 472: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 473: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 0 - Status: Survived
+--> Mutation 474: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 1 - Status: Survived
+--> Mutation 475: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> -1 - Status: Survived
+--> Mutation 476: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 9 - Status: Survived
+--> Mutation 477: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 11 - Status: Survived
+--> Mutation 478: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 0 - Status: Survived
+--> Mutation 479: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 1 - Status: Survived
+--> Mutation 480: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> -1 - Status: Survived
+--> Mutation 481: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 9 - Status: Survived
+--> Mutation 482: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 11 - Status: Survived
+--> Mutation 483: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 0 - Status: Survived
+--> Mutation 484: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 1 - Status: Survived
+--> Mutation 485: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> -1 - Status: Survived
+--> Mutation 486: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 12 - Status: Survived
+--> Mutation 487: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 14 - Status: Survived
+--> Mutation 488: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 0 - Status: Survived
+--> Mutation 489: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 1 - Status: Survived
+--> Mutation 490: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> -1 - Status: Survived
+--> Mutation 491: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 12 - Status: Survived
+--> Mutation 492: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 14 - Status: Survived
+--> Mutation 493: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 0 - Status: Survived
+--> Mutation 494: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 1 - Status: Survived
+--> Mutation 495: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> -1 - Status: Survived
+--> Mutation 496: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 8 - Status: Survived
+--> Mutation 497: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 10 - Status: Survived
+--> Mutation 498: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 0 - Status: Survived
+--> Mutation 499: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 1 - Status: Survived
+--> Mutation 500: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> -1 - Status: Survived
+--> Mutation 501: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 8 - Status: Survived
+--> Mutation 502: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 10 - Status: Survived
+--> Mutation 503: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> 0 - Status: Killed
+--> Mutation 504: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> 1 - Status: Survived
+--> Mutation 505: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> -1 - Status: Killed
+--> Mutation 506: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> 38 - Status: Killed
+--> Mutation 507: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> 40 - Status: Killed
+--> Mutation 508: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> 0 - Status: Killed
+--> Mutation 509: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> 1 - Status: Killed
+--> Mutation 510: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> -1 - Status: Killed
+--> Mutation 511: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> 33 - Status: Killed
+--> Mutation 512: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> 35 - Status: Killed
+--> Mutation 513: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:435 - InsertUnaryOp Negation of removeComments - Status: Survived
+--> Mutation 514: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:435 - InsertUnaryOp IINC 1 removeComments - Status: Killed
+--> Mutation 515: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:435 - InsertUnaryOp IINC -1 removeComments - Status: Killed
+--> Mutation 516: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:435 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 517: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:436 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 518: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:437 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 519: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:440 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 520: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:440 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 521: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:440 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 522: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 523: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 524: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 525: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 526: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 527: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 528: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:467 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 529: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:468 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 530: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:468 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 531: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:468 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 532: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:468 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 533: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:468 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 534: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:469 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 535: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:471 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 536: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:476 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 537: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:476 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 538: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:476 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 539: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:476 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 540: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:476 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 541: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:476 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 542: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:476 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 543: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:477 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 544: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:477 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 545: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:477 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 546: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:477 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 547: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:477 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 548: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:477 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 549: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:478 - ReplaceConstant - ,  ->  - Status: Survived
+--> Mutation 550: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:479 - ReplaceConstant - 46 -> 0 - Status: Survived
+--> Mutation 551: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:479 - ReplaceConstant - 46 -> 1 - Status: Survived
+--> Mutation 552: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:479 - ReplaceConstant - 46 -> -1 - Status: Survived
+--> Mutation 553: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:479 - ReplaceConstant - 46 -> 45 - Status: Survived
+--> Mutation 554: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:479 - ReplaceConstant - 46 -> 47 - Status: Survived
+--> Mutation 555: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:479 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 556: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:479 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 557: org.databene.jdbacl.SQLUtil.renderColumnListWithTableName(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:479 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 558: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 559: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 560: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - ReplaceConstant - 0 -> -1 - Status: Killed
+--> Mutation 561: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 562: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 563: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 564: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:488 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 565: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:490 - ReplaceConstant - -  ->  - Status: Killed
+--> Mutation 566: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:490 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 567: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:494 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 568: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:494 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 569: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:494 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 570: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:494 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 571: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:494 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 572: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:494 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 573: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:495 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 574: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:497 - ReplaceConstant - -  ->  - Status: Survived
+--> Mutation 575: org.databene.jdbacl.SQLUtil.renderDouble(D)Ljava/lang/String;:497 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 576: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 577: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 578: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 579: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 580: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 32 -> 31 - Status: Killed
+--> Mutation 581: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 582: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceComparisonOperator < -> -2 - Status: Killed
+--> Mutation 583: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceComparisonOperator < -> != - Status: Killed
+--> Mutation 584: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceComparisonOperator < -> <= - Status: Killed
+--> Mutation 585: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> 0 - Status: Killed
+--> Mutation 586: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> 1 - Status: Killed
+--> Mutation 587: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> -1 - Status: Killed
+--> Mutation 588: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> 33 - Status: Killed
+--> Mutation 589: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> 35 - Status: Killed
+--> Mutation 590: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> 0 - Status: Killed
+--> Mutation 591: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> 1 - Status: Killed
+--> Mutation 592: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> -1 - Status: Killed
+--> Mutation 593: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> 33 - Status: Killed
+--> Mutation 594: org.databene.jdbacl.SQLUtil.quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;:501 - ReplaceConstant - 34 -> 35 - Status: Killed
+* Compiling and checking tests
 * Computation finished

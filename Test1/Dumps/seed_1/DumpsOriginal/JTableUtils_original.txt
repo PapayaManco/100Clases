@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.lts.swing.table.JTableUtils
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/78_caloriecount/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\78_caloriecount\evosuite-files\evosuite.properties
+* Connecting to master process on port 20220
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:55:30.297 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 03:55:30.506 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:55:31.362 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class com.lts.swing.table.JTableUtils
 * Test criteria:
@@ -21,16 +18,13 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 582
-* Using seed 2482030657809
+* Using seed 1710486768084
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 221 / 582
-[MASTER] 03:55:31.871 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:55:31.880 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:55:31.920 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 03:55:34.602 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 03:55:42.285 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowSorter<M> : Type points to itself
-[MASTER] 03:57:38.287 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-* Search finished after 181s and 975 generations, 405834 statements, best individual has fitness: 64.0
+[MASTER] 04:12:51.249 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 04:13:09.908 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowSorter<M> : Type points to itself
+* Search finished after 700s and 143 generations, 62269 statements, best individual has fitness: 61.0
+[MASTER] 04:24:30.859 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 520 seconds more than allowed.
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -43,12 +37,12 @@
 * Number of covered goals: 44
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 22
-* Number of covered goals: 22
+* Total number of goals: 18
+* Number of covered goals: 18
 * Coverage analysis for criterion WEAKMUTATION
 * Coverage of criterion WEAKMUTATION: 96%
 * Total number of goals: 320
-* Number of covered goals: 308
+* Number of covered goals: 306
 * Coverage analysis for criterion OUTPUT
 * Coverage of criterion OUTPUT: 46%
 * Total number of goals: 28
@@ -65,17 +59,17 @@
 * Coverage of criterion CBRANCH: 90%
 * Total number of goals: 49
 * Number of covered goals: 44
-* Generated 42 tests with total length 143
+* Generated 39 tests with total length 112
 * Resulting test suite's coverage: 80% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 26%
+* Resulting test suite's mutation score: 25%
 * There are surviving mutants: 
---> Mutation 0: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp Negation of columnIndex - Status: Survived
---> Mutation 1: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp IINC 1 columnIndex - Status: Killed
---> Mutation 2: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp IINC -1 columnIndex - Status: Killed
---> Mutation 3: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;[Ljava/lang/String;)Ljavax/swing/JComboBox;:86 - InsertUnaryOp Negation of columnIndex - Status: Killed
+--> Mutation 0: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp Negation of columnIndex - Status: Killed
+--> Mutation 1: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp IINC 1 columnIndex - Status: Survived
+--> Mutation 2: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;Ljava/util/List;)Ljavax/swing/JComboBox;:73 - InsertUnaryOp IINC -1 columnIndex - Status: Survived
+--> Mutation 3: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;[Ljava/lang/String;)Ljavax/swing/JComboBox;:86 - InsertUnaryOp Negation of columnIndex - Status: Survived
 --> Mutation 4: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;[Ljava/lang/String;)Ljavax/swing/JComboBox;:86 - InsertUnaryOp IINC 1 columnIndex - Status: Survived
---> Mutation 5: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;[Ljava/lang/String;)Ljavax/swing/JComboBox;:86 - InsertUnaryOp IINC -1 columnIndex - Status: Survived
+--> Mutation 5: com.lts.swing.table.JTableUtils.setupComboBox(ILjavax/swing/JTable;[Ljava/lang/String;)Ljavax/swing/JComboBox;:86 - InsertUnaryOp IINC -1 columnIndex - Status: Killed
 --> Mutation 6: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:97 - InsertUnaryOp Negation of column - Status: Killed
 --> Mutation 7: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:97 - InsertUnaryOp IINC 1 column - Status: Survived
 --> Mutation 8: com.lts.swing.table.JTableUtils.centerColumn(ILjavax/swing/JTable;)V:97 - InsertUnaryOp IINC -1 column - Status: Survived
@@ -160,7 +154,7 @@
 --> Mutation 87: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - ReplaceVariable end -> start - Status: Survived
 --> Mutation 88: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp Negation of end - Status: Killed
 --> Mutation 89: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp IINC 1 end - Status: Survived
---> Mutation 90: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp IINC -1 end - Status: Survived
+--> Mutation 90: com.lts.swing.table.JTableUtils.setSelectedRows(Ljavax/swing/JTable;II)V:201 - InsertUnaryOp IINC -1 end - Status: Killed
 --> Mutation 91: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceConstant - -1 -> 0 - Status: Killed
 --> Mutation 92: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceConstant - -1 -> 1 - Status: Killed
 --> Mutation 93: com.lts.swing.table.JTableUtils.getSelectedColumns(Ljavax/swing/JTable;)Ljava/util/List;:209 - ReplaceConstant - -1 -> -2 - Status: Killed
@@ -206,7 +200,7 @@
 --> Mutation 133: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - ReplaceComparisonOperator >= -> > - Status: Survived
 --> Mutation 134: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:229 - ReplaceComparisonOperator >= -> == - Status: Survived
 --> Mutation 135: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp Negation of total - Status: Survived
---> Mutation 136: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 136: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp Negation of i - Status: Survived
 --> Mutation 137: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp IINC 1 i - Status: Survived
 --> Mutation 138: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - InsertUnaryOp IINC -1 i - Status: Killed
 --> Mutation 139: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:230 - ReplaceArithmeticOperator + -> % - Status: Survived
@@ -220,13 +214,13 @@
 --> Mutation 147: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - ReplaceComparisonOperator >= -> -1 - Status: Survived
 --> Mutation 148: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - ReplaceComparisonOperator >= -> > - Status: Killed
 --> Mutation 149: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:232 - ReplaceComparisonOperator >= -> == - Status: Survived
---> Mutation 150: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:234 - InsertUnaryOp Negation of i - Status: Killed
---> Mutation 151: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:234 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 150: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:234 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 151: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:234 - InsertUnaryOp IINC 1 i - Status: Killed
 --> Mutation 152: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:234 - InsertUnaryOp IINC -1 i - Status: Killed
 --> Mutation 153: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 154: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 155: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp -1 - Status: Survived
---> Mutation 156: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 156: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp Negation of i - Status: Survived
 --> Mutation 157: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp IINC 1 i - Status: Survived
 --> Mutation 158: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp IINC -1 i - Status: Killed
 --> Mutation 159: com.lts.swing.table.JTableUtils.setPreferredColumnPercents2(Ljavax/swing/JTable;[D)V:235 - InsertUnaryOp Negation of total - Status: Survived
@@ -353,16 +347,16 @@
 --> Mutation 280: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> tableColumns - Status: Survived
 --> Mutation 281: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> tableWidth - Status: Survived
 --> Mutation 282: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp Negation of i - Status: Killed
---> Mutation 283: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC 1 i - Status: Killed
---> Mutation 284: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 283: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 284: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC -1 i - Status: Survived
 --> Mutation 285: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator >= -> -1 - Status: Survived
 --> Mutation 286: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator >= -> > - Status: Killed
 --> Mutation 287: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceComparisonOperator >= -> == - Status: Killed
---> Mutation 288: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> count - Status: Killed
+--> Mutation 288: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> count - Status: Survived
 --> Mutation 289: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> tableColumns - Status: Killed
 --> Mutation 290: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceVariable i -> tableWidth - Status: Killed
---> Mutation 291: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp Negation of i - Status: Survived
---> Mutation 292: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 291: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 292: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC 1 i - Status: Survived
 --> Mutation 293: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - InsertUnaryOp IINC -1 i - Status: Killed
 --> Mutation 294: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
 --> Mutation 295: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:369 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
@@ -372,13 +366,13 @@
 --> Mutation 299: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - ReplaceVariable i -> count - Status: Survived
 --> Mutation 300: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - ReplaceVariable i -> tableColumns - Status: Killed
 --> Mutation 301: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - ReplaceVariable i -> tableWidth - Status: Killed
---> Mutation 302: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - InsertUnaryOp Negation of i - Status: Survived
---> Mutation 303: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 302: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - InsertUnaryOp Negation of i - Status: Killed
+--> Mutation 303: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - InsertUnaryOp IINC 1 i - Status: Survived
 --> Mutation 304: com.lts.swing.table.JTableUtils.setPreferredColumnPercents(Ljavax/swing/JTable;[D)V:370 - InsertUnaryOp IINC -1 i - Status: Killed
---> Mutation 305: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - ReplaceVariable colIndex -> width - Status: Survived
---> Mutation 306: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - InsertUnaryOp Negation of colIndex - Status: Killed
+--> Mutation 305: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - ReplaceVariable colIndex -> width - Status: Killed
+--> Mutation 306: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - InsertUnaryOp Negation of colIndex - Status: Survived
 --> Mutation 307: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - InsertUnaryOp IINC 1 colIndex - Status: Survived
---> Mutation 308: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - InsertUnaryOp IINC -1 colIndex - Status: Survived
+--> Mutation 308: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:394 - InsertUnaryOp IINC -1 colIndex - Status: Killed
 --> Mutation 309: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:395 - ReplaceVariable width -> colIndex - Status: Survived
 --> Mutation 310: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:395 - InsertUnaryOp Negation of width - Status: Survived
 --> Mutation 311: com.lts.swing.table.JTableUtils.setColumnWidth(Ljavax/swing/JTable;II)V:395 - InsertUnaryOp IINC 1 width - Status: Survived
@@ -391,31 +385,4 @@
 --> Mutation 318: com.lts.swing.table.JTableUtils$DoubleClickListener.doubleClick()V:175 - ReplaceConstant - -1 -> 1 - Status: Survived
 --> Mutation 319: com.lts.swing.table.JTableUtils$DoubleClickListener.doubleClick()V:175 - ReplaceConstant - -1 -> -2 - Status: Survived
 * Compiling and checking tests
-[MASTER] 03:58:45.247 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:58:50.514 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:58:55.760 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:59:01.010 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:59:06.279 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:59:11.534 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:59:16.784 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:59:22.043 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:59:27.319 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:59:32.576 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:59:37.832 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Permissions denied during test execution: 
-  - java.io.FilePermission: 
-[MASTER] 03:59:37.834 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
-         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT9356980241580580697.tmp: 1
-         read,write,delete /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/*: 1
-         write /var/folders/zt/9k543zcs7kb243_mzg2jl49w0000gn/T/+~JT698774402134487653.tmp: 1
-         and other 2 cases of action/name for this exception class
-  - java.lang.RuntimePermission: 
-         queuePrintJob: 113
-         writeFileDescriptor: 3
-  - java.net.SocketPermission: 
-         connect,resolve ftp.someFakeButWellFormedURL.org:21: 1
-* Writing tests to file
-* Writing JUnit test case 'JTableUtils_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

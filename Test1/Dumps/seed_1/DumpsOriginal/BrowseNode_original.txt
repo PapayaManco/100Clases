@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.kencochrane.a4j.beans.BrowseNode
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/2_a4j/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\2_a4j\evosuite-files\evosuite.properties
+* Connecting to master process on port 19169
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,12 +18,12 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 189
-* Using seed 2482030657809
+* Using seed 1710482047351
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 74 / 189
-[MASTER] 02:30:51.986 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
-[MASTER] 02:32:07.696 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-* Search finished after 181s and 5468 generations, 1730838 statements, best individual has fitness: 14.0
+[MASTER] 02:54:15.487 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 02:54:28.291 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 9852 generations, 2968950 statements, best individual has fitness: 14.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -58,12 +58,12 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 27
 * Number of covered goals: 27
-* Generated 28 tests with total length 92
+* Generated 28 tests with total length 88
 * Resulting test suite's coverage: 90% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 51%
+* Resulting test suite's mutation score: 53%
 * There are surviving mutants: 
---> Mutation 0: net.kencochrane.a4j.beans.BrowseNode.addSubNode(Lnet/kencochrane/a4j/beans/BrowseNode;)V:67 - ReplaceVariable sNode -> this - Status: Survived
+--> Mutation 0: net.kencochrane.a4j.beans.BrowseNode.addSubNode(Lnet/kencochrane/a4j/beans/BrowseNode;)V:67 - ReplaceVariable sNode -> this - Status: Killed
 --> Mutation 1: net.kencochrane.a4j.beans.BrowseNode.getSubNode(Ljava/lang/String;)Lnet/kencochrane/a4j/beans/BrowseNode;:71 - ReplaceComparisonOperator = null -> != null - Status: Killed
 --> Mutation 2: net.kencochrane.a4j.beans.BrowseNode.getSubNode(Ljava/lang/String;)Lnet/kencochrane/a4j/beans/BrowseNode;:71 - ReplaceComparisonOperator <= -> -1 - Status: Killed
 --> Mutation 3: net.kencochrane.a4j.beans.BrowseNode.getSubNode(Ljava/lang/String;)Lnet/kencochrane/a4j/beans/BrowseNode;:71 - ReplaceComparisonOperator <= -> == - Status: Survived
@@ -108,19 +108,4 @@
 --> Mutation 41: net.kencochrane.a4j.beans.BrowseNode.toString()Ljava/lang/String;:116 - ReplaceConstant -  -  ->  - Status: Killed
 --> Mutation 42: net.kencochrane.a4j.beans.BrowseNode.toString()Ljava/lang/String;:116 - ReplaceConstant -  --  ->  - Status: Killed
 * Compiling and checking tests
-[MASTER] 02:33:43.550 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:33:48.790 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:33:54.036 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:33:59.286 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:34:04.528 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:34:09.769 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:34:15.001 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:34:20.261 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:34:25.496 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:34:30.740 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:34:35.981 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'BrowseNode_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

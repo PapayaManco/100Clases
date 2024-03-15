@@ -1,12 +1,992 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portlet.calendar.model.impl.CalEventModelImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 10291
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:39:50.235 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-* Writing JUnit test case 'CalEventModelImpl_ESTest' to test_seeds/seed_1/tests_original
-* Error while initializing target class: java.lang.ExceptionInInitializerError
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portlet.calendar.model.impl.CalEventModelImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 2026
+* Using seed 1710478820956
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 1364 / 2026
+[MASTER] 02:00:36.756 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.LinkedTransferQueue<E> : Type points to itself
+[MASTER] 02:00:37.626 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ReleaseWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ReleaseWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:37.810 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.ResultSet canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:37.849 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.rts.RunTimeStatisticsImpl due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.sql.execute.rts.RunTimeStatisticsImpl canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:38.022 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.CallableStatement canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:38.080 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ContactWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:00:38.318 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.TicketWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.TicketWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:38.484 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.xy.DefaultHighLowDataset due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portlet.mobiledevicerules.model.MDRRuleGroupInstanceWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.mobiledevicerules.model.MDRRuleGroupInstanceWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:42.086 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.reflect.Constructor<T> : Type points to itself
+[MASTER] 02:00:42.259 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.http.HttpServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.upload.UploadPortletRequestImpl due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:00:42.341 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.iapi.types.SQLTime due to org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.CallableStatement canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:43.162 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.UserWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:43.198 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.xy.OHLCDataItem due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:00:44.207 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.iapi.types.SQLTime due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.store.raw.xact.InternalXact canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:44.541 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserTrackerWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.UserTrackerWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:44.744 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.infinispan.util.CacheAdapter: java.lang.NoClassDefFoundError: org/infinispan/config/Configuration
+[MASTER] 02:00:44.833 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ResourceTypePermissionWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ResourceTypePermissionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:49.714 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portlet.mobiledevicerules.model.MDRRuleGroupInstanceWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.mobiledevicerules.model.MDRRuleGroupInstanceWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:49.953 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.iapi.types.UserType due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserTrackerWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.UserTrackerWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:50.989 [logback-1] WARN  TestCluster - Failed to check cache for java.util.ArrayDeque<E> : Type points to itself
+[MASTER] 02:00:51.701 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ShardWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ShardWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:52.466 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ServiceComponentWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ServiceComponentWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:53.239 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.AddressWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.OrganizationWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.OrganizationWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:53.373 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.PortalPreferencesWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PortalPreferencesWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:53.570 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.jbc.entity.EntityRegionImpl: java.lang.NoClassDefFoundError: org/jboss/cache/Fqn
+[MASTER] 02:00:58.250 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 02:00:58.723 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.PasswordTrackerWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PasswordTrackerWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:00:58.944 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.ScrollInsensitiveResultSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.AnyResultSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.OnceResultSet due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.sql.execute.ScrollInsensitiveResultSet canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:01.017 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LayoutSetWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutSetWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:02.267 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.WebDAVPropsWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.WebDAVPropsWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:02.513 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.jbc.collection.CollectionRegionImpl: java.lang.NoClassDefFoundError: org/jboss/cache/Fqn
+[MASTER] 02:01:02.959 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself
+[MASTER] 02:01:05.623 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserGroupGroupRoleWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.UserGroupGroupRoleWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:05.794 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.TestRunner due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.iapi.sql.dictionary.TableDescriptor due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.iapi.sql.dictionary.SchemaDescriptor due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:01:10.145 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.e_app.EarAdmin due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.webapp.WebAppExpandDeployGenerator due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.webapp.WebAppContainer due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:01:12.339 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.config.timer.EjbTimer due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.config.timer.TimerTask due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.config.types.CronType due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:01:16.390 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserTrackerPathWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.UserTrackerPathWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:18.319 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.OrgGroupRoleWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.OrgGroupRoleWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:21.319 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 02:01:22.582 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 02:01:22.645 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.AccountWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.CompanyWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.portlet.filter.PortletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:01:33.524 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.AccountWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.CompanyWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.portlet.filter.ResourceRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:01:33.959 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.http.HttpServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.upload.UploadServletRequestImpl due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:01:35.381 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.e_app.EarDeployGenerator due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.webapp.WebAppContainer due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.lifecycle.Lifecycle due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:01:35.970 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 02:01:44.293 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 02:01:46.082 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LayoutWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:46.585 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ContactWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.theme.ThemeDisplay canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:49.510 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.RepositoryEntryWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.RepositoryEntryWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:01:51.807 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.webapp.WebAppController due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.webapp.WebAppContainer due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.cluster.Server due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:01:52.133 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ClusterGroupWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ClusterGroupWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:11.813 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.PortletPreferencesWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PortletPreferencesWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:18.254 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.collection.PersistentSortedSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.CriteriaImpl due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:02:22.870 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LayoutSetPrototypeWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutSetPrototypeWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:23.724 [logback-1] WARN  TestCluster - Failed to check cache for com.caucho.amber.collection.SetImpl<E> : Type points to itself
+[MASTER] 02:02:26.295 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.bouncycastle.asn1.DERGeneralizedTime due to org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.CallableStatement canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:26.830 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.CriteriaImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.collection.PersistentSortedSet due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:02:27.299 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ImageWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ImageWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:27.346 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ResourcePermissionWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ResourcePermissionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:30.068 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.store.raw.xact.InternalXact canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:30.932 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowSorter<M> : Type points to itself
+[MASTER] 02:02:32.051 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ResourceBlockPermissionWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ResourceBlockPermissionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:32.528 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ContactWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.portlet.filter.PortletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:02:34.060 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.MembershipRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.MembershipRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:43.598 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.portlet.filter.ActionRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:02:43.777 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LockWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LockWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:44.503 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ResourceActionWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ResourceActionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:47.339 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LayoutWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.impl.LayoutTypePortletImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LayoutPrototypeWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutPrototypeWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:47.993 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:02:49.638 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.iapi.types.SQLDate due to org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.CallableStatement canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:52.549 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.AnyResultSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.OnceResultSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.ScrollInsensitiveResultSet due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.sql.execute.ScrollInsensitiveResultSet canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:52.593 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.security.CodeSigner due to org.evosuite.ga.ConstructionFailedException: Have no generator for class java.security.CodeSigner canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 02:02:55.379 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.OrganizationWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.OrganizationWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:55.545 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.iapi.types.SQLTimestamp due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.store.raw.xact.InternalXact canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:56.039 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.UserIdMapperWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.UserIdMapperWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:56.262 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.VirtualHostWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.VirtualHostWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:56.537 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.rts.RunTimeStatisticsImpl due to org.evosuite.ga.ConstructionFailedException: Have no generator for class interbase.interclient.CallableStatement canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:02:59.137 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ListTypeWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ListTypeWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:03:01.079 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.time.SimpleTimePeriod due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portlet.calendar.model.CalEventWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:03:02.148 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.PasswordPolicyRelWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PasswordPolicyRelWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:03:02.921 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.store.access.RAMTransaction canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:03:03.618 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.RoleWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.RoleWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:03:07.381 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.LayoutBranchWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutBranchWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:03:07.658 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.xy.DefaultHighLowDataset due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hibernate.impl.CriteriaImpl due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:03:11.457 [logback-1] WARN  TestCluster - Failed to check cache for com.caucho.amber.collection.CollectionImpl<E> : Type points to itself
+[MASTER] 02:03:17.394 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.text.MockSimpleDateFormat due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.http.HttpRequest due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.server.cluster.Server due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.caucho.env.service.ResinSystem due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:03:19.213 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.AccountWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.CompanyWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.upload.UploadServletRequestImpl due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:03:21.400 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.AnyResultSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.OnceResultSet due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.derby.impl.sql.execute.ScrollInsensitiveResultSet due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.derby.impl.sql.execute.AnyResultSet canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:03:23.169 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.OrgLaborWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.OrgLaborWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:03:27.467 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.ClassNameWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ClassNameWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:03:27.564 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.CompanyWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.CompanyWrapper canUseFunctionalMocks=false, canBeMocked: true
+* Search finished after 182s and 1985 generations, 537555 statements, best individual has fitness: 106.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 99%
+* Total number of goals: 507
+* Number of covered goals: 503
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 95%
+* Total number of goals: 184
+* Number of covered goals: 175
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 836
+* Number of covered goals: 814
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 67%
+* Total number of goals: 155
+* Number of covered goals: 104
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 80
+* Number of covered goals: 80
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 80
+* Number of covered goals: 77
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 95%
+* Total number of goals: 184
+* Number of covered goals: 175
+* Generated 133 tests with total length 400
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 70%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toModel(Lcom/liferay/portlet/calendar/model/CalEventSoap;)Lcom/liferay/portlet/calendar/model/CalEvent;:123 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 1: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toModels([Lcom/liferay/portlet/calendar/model/CalEventSoap;)Ljava/util/List;:163 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 2: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toModels([Lcom/liferay/portlet/calendar/model/CalEventSoap;)Ljava/util/List;:169 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 3: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toModels([Lcom/liferay/portlet/calendar/model/CalEventSoap;)Ljava/util/List;:169 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 4: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toModels([Lcom/liferay/portlet/calendar/model/CalEventSoap;)Ljava/util/List;:169 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 5: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toModels([Lcom/liferay/portlet/calendar/model/CalEventSoap;)Ljava/util/List;:169 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 6: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKey()J:183 - ReplaceVariable _eventId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 7: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKey()J:183 - ReplaceVariable _eventId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 8: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKey()J:183 - ReplaceVariable _eventId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 9: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKey()J:183 - ReplaceVariable _eventId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 10: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKey()J:183 - ReplaceVariable _eventId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 11: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKey()J:183 - ReplaceVariable _eventId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 12: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKey()J:183 - ReplaceVariable _eventId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 13: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKey()J:183 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 14: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setPrimaryKey(J)V:187 - ReplaceVariable primaryKey -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 15: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setPrimaryKey(J)V:187 - ReplaceVariable primaryKey -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 16: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setPrimaryKey(J)V:187 - ReplaceVariable primaryKey -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 17: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setPrimaryKey(J)V:187 - ReplaceVariable primaryKey -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 18: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setPrimaryKey(J)V:187 - ReplaceVariable primaryKey -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 19: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setPrimaryKey(J)V:187 - ReplaceVariable primaryKey -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 20: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setPrimaryKey(J)V:187 - ReplaceVariable primaryKey -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 21: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setPrimaryKey(J)V:187 - InsertUnaryOp Negation of primaryKey - Status: Killed
+--> Mutation 22: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:191 - ReplaceVariable _eventId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 23: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:191 - ReplaceVariable _eventId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 24: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:191 - ReplaceVariable _eventId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 25: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:191 - ReplaceVariable _eventId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 26: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:191 - ReplaceVariable _eventId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 27: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:191 - ReplaceVariable _eventId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 28: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:191 - ReplaceVariable _eventId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 29: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:191 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 30: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:210 - ReplaceConstant - uuid ->  - Status: Survived
+--> Mutation 31: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:211 - ReplaceConstant - eventId ->  - Status: Survived
+--> Mutation 32: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:212 - ReplaceConstant - groupId ->  - Status: Survived
+--> Mutation 33: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:213 - ReplaceConstant - companyId ->  - Status: Survived
+--> Mutation 34: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:214 - ReplaceConstant - userId ->  - Status: Survived
+--> Mutation 35: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:215 - ReplaceConstant - userName ->  - Status: Survived
+--> Mutation 36: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:216 - ReplaceConstant - createDate ->  - Status: Survived
+--> Mutation 37: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:217 - ReplaceConstant - modifiedDate ->  - Status: Survived
+--> Mutation 38: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:218 - ReplaceConstant - title ->  - Status: Survived
+--> Mutation 39: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:219 - ReplaceConstant - description ->  - Status: Survived
+--> Mutation 40: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:220 - ReplaceConstant - location ->  - Status: Survived
+--> Mutation 41: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:221 - ReplaceConstant - startDate ->  - Status: Survived
+--> Mutation 42: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getModelAttributes()Ljava/util/Map;:222 - ReplaceConstant - endDate ->  - Status: Survived
+--> Mutation 43: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:239 - ReplaceConstant - uuid ->  - Status: Survived
+--> Mutation 44: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 45: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceVariable uuid -> TX_MANAGER - Status: Survived
+--> Mutation 46: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceVariable uuid -> TABLE_NAME - Status: Survived
+--> Mutation 47: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 48: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceVariable uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 49: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 50: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 51: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 52: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 53: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:242 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 54: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:242 - ReplaceVariable uuid -> TX_MANAGER - Status: Killed
+--> Mutation 55: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:242 - ReplaceVariable uuid -> TABLE_NAME - Status: Survived
+--> Mutation 56: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:242 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 57: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:242 - ReplaceVariable uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 58: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:242 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 59: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:242 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 60: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:242 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 61: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:245 - ReplaceConstant - eventId ->  - Status: Survived
+--> Mutation 62: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:247 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 63: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:251 - ReplaceConstant - groupId ->  - Status: Killed
+--> Mutation 64: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:253 - ReplaceVariable groupId -> eventId - Status: Killed
+--> Mutation 65: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:253 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 66: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:254 - ReplaceVariable groupId -> eventId - Status: Killed
+--> Mutation 67: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:257 - ReplaceConstant - companyId ->  - Status: Killed
+--> Mutation 68: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:259 - ReplaceVariable companyId -> eventId - Status: Killed
+--> Mutation 69: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:259 - ReplaceVariable companyId -> groupId - Status: Killed
+--> Mutation 70: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:259 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 71: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:260 - ReplaceVariable companyId -> eventId - Status: Killed
+--> Mutation 72: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:260 - ReplaceVariable companyId -> groupId - Status: Killed
+--> Mutation 73: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:263 - ReplaceConstant - userId ->  - Status: Killed
+--> Mutation 74: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:265 - ReplaceVariable userId -> eventId - Status: Killed
+--> Mutation 75: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:265 - ReplaceVariable userId -> companyId - Status: Survived
+--> Mutation 76: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:265 - ReplaceVariable userId -> groupId - Status: Killed
+--> Mutation 77: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:265 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 78: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:266 - ReplaceVariable userId -> eventId - Status: Killed
+--> Mutation 79: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:266 - ReplaceVariable userId -> companyId - Status: Killed
+--> Mutation 80: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:266 - ReplaceVariable userId -> groupId - Status: Killed
+--> Mutation 81: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:269 - ReplaceConstant - userName ->  - Status: Killed
+--> Mutation 82: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 83: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> TX_MANAGER - Status: Survived
+--> Mutation 84: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> TABLE_NAME - Status: Survived
+--> Mutation 85: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 86: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> DATA_SOURCE - Status: Survived
+--> Mutation 87: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 88: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> uuid - Status: Killed
+--> Mutation 89: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> ORDER_BY_SQL - Status: Survived
+--> Mutation 90: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceVariable userName -> SESSION_FACTORY - Status: Survived
+--> Mutation 91: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:271 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 92: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 93: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> TX_MANAGER - Status: Killed
+--> Mutation 94: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> TABLE_NAME - Status: Killed
+--> Mutation 95: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 96: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> DATA_SOURCE - Status: Killed
+--> Mutation 97: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 98: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> uuid - Status: Killed
+--> Mutation 99: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> ORDER_BY_SQL - Status: Killed
+--> Mutation 100: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:272 - ReplaceVariable userName -> SESSION_FACTORY - Status: Killed
+--> Mutation 101: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:275 - ReplaceConstant - createDate ->  - Status: Killed
+--> Mutation 102: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setModelAttributes(Ljava/util/Map;)V:277 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 103: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceVariable _uuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 104: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceVariable _uuid -> TX_MANAGER - Status: Killed
+--> Mutation 105: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceVariable _uuid -> TABLE_NAME - Status: Survived
+--> Mutation 106: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceVariable _uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 107: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceVariable _uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 108: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceVariable _uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 109: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceVariable _uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 110: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceVariable _uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 111: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:380 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 112: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:384 - ReplaceVariable _uuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 113: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:384 - ReplaceVariable _uuid -> TX_MANAGER - Status: Killed
+--> Mutation 114: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:384 - ReplaceVariable _uuid -> TABLE_NAME - Status: Killed
+--> Mutation 115: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:384 - ReplaceVariable _uuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 116: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:384 - ReplaceVariable _uuid -> DATA_SOURCE - Status: Killed
+--> Mutation 117: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:384 - ReplaceVariable _uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 118: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:384 - ReplaceVariable _uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 119: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUuid()Ljava/lang/String;:384 - ReplaceVariable _uuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 120: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceVariable _originalUuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 121: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceVariable _originalUuid -> TX_MANAGER - Status: Killed
+--> Mutation 122: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceVariable _originalUuid -> TABLE_NAME - Status: Killed
+--> Mutation 123: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceVariable _originalUuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 124: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceVariable _originalUuid -> DATA_SOURCE - Status: Killed
+--> Mutation 125: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceVariable _originalUuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 126: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceVariable _originalUuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 127: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceVariable _originalUuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 128: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:389 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 129: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:390 - ReplaceVariable _uuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 130: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:390 - ReplaceVariable _uuid -> TX_MANAGER - Status: Killed
+--> Mutation 131: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:390 - ReplaceVariable _uuid -> TABLE_NAME - Status: Killed
+--> Mutation 132: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:390 - ReplaceVariable _uuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 133: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:390 - ReplaceVariable _uuid -> DATA_SOURCE - Status: Killed
+--> Mutation 134: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:390 - ReplaceVariable _uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 135: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:390 - ReplaceVariable _uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 136: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:390 - ReplaceVariable _uuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 137: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:393 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 138: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:393 - ReplaceVariable uuid -> TX_MANAGER - Status: Killed
+--> Mutation 139: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:393 - ReplaceVariable uuid -> TABLE_NAME - Status: Killed
+--> Mutation 140: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:393 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 141: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:393 - ReplaceVariable uuid -> DATA_SOURCE - Status: Killed
+--> Mutation 142: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:393 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 143: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:393 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 144: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUuid(Ljava/lang/String;)V:393 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 145: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalUuid()Ljava/lang/String;:397 - ReplaceVariable _originalUuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 146: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalUuid()Ljava/lang/String;:397 - ReplaceVariable _originalUuid -> TX_MANAGER - Status: Killed
+--> Mutation 147: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalUuid()Ljava/lang/String;:397 - ReplaceVariable _originalUuid -> TABLE_NAME - Status: Killed
+--> Mutation 148: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalUuid()Ljava/lang/String;:397 - ReplaceVariable _originalUuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 149: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalUuid()Ljava/lang/String;:397 - ReplaceVariable _originalUuid -> DATA_SOURCE - Status: Killed
+--> Mutation 150: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalUuid()Ljava/lang/String;:397 - ReplaceVariable _originalUuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 151: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalUuid()Ljava/lang/String;:397 - ReplaceVariable _originalUuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 152: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalUuid()Ljava/lang/String;:397 - ReplaceVariable _originalUuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 153: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getEventId()J:402 - ReplaceVariable _eventId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 154: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getEventId()J:402 - ReplaceVariable _eventId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 155: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getEventId()J:402 - ReplaceVariable _eventId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 156: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getEventId()J:402 - ReplaceVariable _eventId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 157: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getEventId()J:402 - ReplaceVariable _eventId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 158: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getEventId()J:402 - ReplaceVariable _eventId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 159: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getEventId()J:402 - ReplaceVariable _eventId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 160: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getEventId()J:402 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 161: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setEventId(J)V:406 - ReplaceVariable eventId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 162: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setEventId(J)V:406 - ReplaceVariable eventId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 163: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setEventId(J)V:406 - ReplaceVariable eventId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 164: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setEventId(J)V:406 - ReplaceVariable eventId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 165: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setEventId(J)V:406 - ReplaceVariable eventId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 166: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setEventId(J)V:406 - ReplaceVariable eventId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 167: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setEventId(J)V:406 - ReplaceVariable eventId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 168: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setEventId(J)V:406 - InsertUnaryOp Negation of eventId - Status: Killed
+--> Mutation 169: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getGroupId()J:411 - ReplaceVariable _groupId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 170: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getGroupId()J:411 - ReplaceVariable _groupId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 171: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getGroupId()J:411 - ReplaceVariable _groupId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 172: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getGroupId()J:411 - ReplaceVariable _groupId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 173: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getGroupId()J:411 - ReplaceVariable _groupId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 174: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getGroupId()J:411 - ReplaceVariable _groupId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 175: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getGroupId()J:411 - ReplaceVariable _groupId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 176: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getGroupId()J:411 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 177: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable _columnBitmask -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 178: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable _columnBitmask -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 179: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable _columnBitmask -> GROUPID_COLUMN_BITMASK - Status: Survived
+--> Mutation 180: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 181: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 182: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable _columnBitmask -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 183: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable _columnBitmask -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 184: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 185: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable GROUPID_COLUMN_BITMASK -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 186: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable GROUPID_COLUMN_BITMASK -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 187: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable GROUPID_COLUMN_BITMASK -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 188: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable GROUPID_COLUMN_BITMASK -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 189: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable GROUPID_COLUMN_BITMASK -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 190: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceVariable GROUPID_COLUMN_BITMASK -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 191: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 192: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceBitwiseOperator | -> ^ - Status: Killed
+--> Mutation 193: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:415 - ReplaceBitwiseOperator | -> & - Status: Killed
+--> Mutation 194: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:417 - ReplaceVariable _setOriginalGroupId -> COLUMN_BITMASK_ENABLED - Status: Survived
+--> Mutation 195: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:417 - ReplaceVariable _setOriginalGroupId -> FINDER_CACHE_ENABLED - Status: Survived
+--> Mutation 196: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:417 - ReplaceVariable _setOriginalGroupId -> ENTITY_CACHE_ENABLED - Status: Survived
+--> Mutation 197: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:417 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 198: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:417 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 199: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:418 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 200: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:420 - ReplaceVariable _groupId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 201: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:420 - ReplaceVariable _groupId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 202: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:420 - ReplaceVariable _groupId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 203: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:420 - ReplaceVariable _groupId -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 204: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:420 - ReplaceVariable _groupId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 205: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:420 - ReplaceVariable _groupId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 206: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:420 - ReplaceVariable _groupId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 207: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:420 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 208: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:423 - ReplaceVariable groupId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 209: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:423 - ReplaceVariable groupId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 210: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:423 - ReplaceVariable groupId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 211: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:423 - ReplaceVariable groupId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 212: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:423 - ReplaceVariable groupId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 213: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:423 - ReplaceVariable groupId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 214: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:423 - ReplaceVariable groupId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 215: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setGroupId(J)V:423 - InsertUnaryOp Negation of groupId - Status: Killed
+--> Mutation 216: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalGroupId()J:427 - ReplaceVariable _originalGroupId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 217: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalGroupId()J:427 - ReplaceVariable _originalGroupId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 218: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalGroupId()J:427 - ReplaceVariable _originalGroupId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 219: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalGroupId()J:427 - ReplaceVariable _originalGroupId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 220: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalGroupId()J:427 - ReplaceVariable _originalGroupId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 221: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalGroupId()J:427 - ReplaceVariable _originalGroupId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 222: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalGroupId()J:427 - ReplaceVariable _originalGroupId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 223: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalGroupId()J:427 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 224: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getCompanyId()J:432 - ReplaceVariable _companyId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 225: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getCompanyId()J:432 - ReplaceVariable _companyId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 226: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getCompanyId()J:432 - ReplaceVariable _companyId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 227: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getCompanyId()J:432 - ReplaceVariable _companyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 228: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getCompanyId()J:432 - ReplaceVariable _companyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 229: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getCompanyId()J:432 - ReplaceVariable _companyId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 230: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getCompanyId()J:432 - ReplaceVariable _companyId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 231: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getCompanyId()J:432 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 232: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable _columnBitmask -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 233: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable _columnBitmask -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 234: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable _columnBitmask -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 235: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 236: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Survived
+--> Mutation 237: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable _columnBitmask -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 238: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable _columnBitmask -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 239: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 240: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 241: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 242: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 243: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 244: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 245: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 246: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 247: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceBitwiseOperator | -> ^ - Status: Killed
+--> Mutation 248: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:436 - ReplaceBitwiseOperator | -> & - Status: Killed
+--> Mutation 249: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:438 - ReplaceVariable _setOriginalCompanyId -> COLUMN_BITMASK_ENABLED - Status: Survived
+--> Mutation 250: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:438 - ReplaceVariable _setOriginalCompanyId -> FINDER_CACHE_ENABLED - Status: Survived
+--> Mutation 251: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:438 - ReplaceVariable _setOriginalCompanyId -> ENTITY_CACHE_ENABLED - Status: Survived
+--> Mutation 252: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:438 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 253: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:438 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 254: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:439 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 255: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:441 - ReplaceVariable _companyId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 256: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:441 - ReplaceVariable _companyId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 257: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:441 - ReplaceVariable _companyId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 258: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:441 - ReplaceVariable _companyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 259: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:441 - ReplaceVariable _companyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 260: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:441 - ReplaceVariable _companyId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 261: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:441 - ReplaceVariable _companyId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 262: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:441 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 263: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:444 - ReplaceVariable companyId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 264: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:444 - ReplaceVariable companyId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 265: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:444 - ReplaceVariable companyId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 266: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:444 - ReplaceVariable companyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 267: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:444 - ReplaceVariable companyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 268: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:444 - ReplaceVariable companyId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 269: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:444 - ReplaceVariable companyId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 270: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setCompanyId(J)V:444 - InsertUnaryOp Negation of companyId - Status: Killed
+--> Mutation 271: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalCompanyId()J:448 - ReplaceVariable _originalCompanyId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 272: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalCompanyId()J:448 - ReplaceVariable _originalCompanyId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 273: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalCompanyId()J:448 - ReplaceVariable _originalCompanyId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 274: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalCompanyId()J:448 - ReplaceVariable _originalCompanyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 275: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalCompanyId()J:448 - ReplaceVariable _originalCompanyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 276: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalCompanyId()J:448 - ReplaceVariable _originalCompanyId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 277: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalCompanyId()J:448 - ReplaceVariable _originalCompanyId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 278: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalCompanyId()J:448 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 279: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserId()J:453 - ReplaceVariable _userId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 280: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserId()J:453 - ReplaceVariable _userId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 281: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserId()J:453 - ReplaceVariable _userId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 282: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserId()J:453 - ReplaceVariable _userId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 283: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserId()J:453 - ReplaceVariable _userId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 284: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserId()J:453 - ReplaceVariable _userId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 285: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserId()J:453 - ReplaceVariable _userId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 286: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserId()J:453 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 287: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserId(J)V:457 - ReplaceVariable userId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 288: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserId(J)V:457 - ReplaceVariable userId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 289: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserId(J)V:457 - ReplaceVariable userId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 290: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserId(J)V:457 - ReplaceVariable userId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 291: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserId(J)V:457 - ReplaceVariable userId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 292: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserId(J)V:457 - ReplaceVariable userId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 293: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserId(J)V:457 - ReplaceVariable userId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 294: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserId(J)V:457 - InsertUnaryOp Negation of userId - Status: Killed
+--> Mutation 295: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceConstant - uuid ->  - Status: Survived
+--> Mutation 296: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceVariable _userUuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 297: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceVariable _userUuid -> TX_MANAGER - Status: Survived
+--> Mutation 298: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceVariable _userUuid -> TABLE_NAME - Status: Survived
+--> Mutation 299: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceVariable _userUuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 300: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceVariable _userUuid -> DATA_SOURCE - Status: Survived
+--> Mutation 301: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceVariable _userUuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 302: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceVariable _userUuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 303: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserUuid()Ljava/lang/String;:461 - ReplaceVariable _userUuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 304: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserUuid(Ljava/lang/String;)V:465 - ReplaceVariable userUuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 305: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserUuid(Ljava/lang/String;)V:465 - ReplaceVariable userUuid -> TX_MANAGER - Status: Survived
+--> Mutation 306: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserUuid(Ljava/lang/String;)V:465 - ReplaceVariable userUuid -> TABLE_NAME - Status: Survived
+--> Mutation 307: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserUuid(Ljava/lang/String;)V:465 - ReplaceVariable userUuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 308: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserUuid(Ljava/lang/String;)V:465 - ReplaceVariable userUuid -> DATA_SOURCE - Status: Survived
+--> Mutation 309: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserUuid(Ljava/lang/String;)V:465 - ReplaceVariable userUuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 310: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserUuid(Ljava/lang/String;)V:465 - ReplaceVariable userUuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 311: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserUuid(Ljava/lang/String;)V:465 - ReplaceVariable userUuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 312: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceVariable _userName -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 313: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceVariable _userName -> TX_MANAGER - Status: Killed
+--> Mutation 314: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceVariable _userName -> TABLE_NAME - Status: Killed
+--> Mutation 315: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceVariable _userName -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 316: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceVariable _userName -> DATA_SOURCE - Status: Killed
+--> Mutation 317: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceVariable _userName -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 318: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceVariable _userName -> ORDER_BY_SQL - Status: Killed
+--> Mutation 319: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceVariable _userName -> SESSION_FACTORY - Status: Killed
+--> Mutation 320: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:470 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 321: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:474 - ReplaceVariable _userName -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 322: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:474 - ReplaceVariable _userName -> TX_MANAGER - Status: Killed
+--> Mutation 323: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:474 - ReplaceVariable _userName -> TABLE_NAME - Status: Killed
+--> Mutation 324: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:474 - ReplaceVariable _userName -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 325: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:474 - ReplaceVariable _userName -> DATA_SOURCE - Status: Killed
+--> Mutation 326: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:474 - ReplaceVariable _userName -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 327: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:474 - ReplaceVariable _userName -> ORDER_BY_SQL - Status: Killed
+--> Mutation 328: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getUserName()Ljava/lang/String;:474 - ReplaceVariable _userName -> SESSION_FACTORY - Status: Killed
+--> Mutation 329: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserName(Ljava/lang/String;)V:479 - ReplaceVariable userName -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 330: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserName(Ljava/lang/String;)V:479 - ReplaceVariable userName -> TX_MANAGER - Status: Killed
+--> Mutation 331: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserName(Ljava/lang/String;)V:479 - ReplaceVariable userName -> TABLE_NAME - Status: Killed
+--> Mutation 332: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserName(Ljava/lang/String;)V:479 - ReplaceVariable userName -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 333: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserName(Ljava/lang/String;)V:479 - ReplaceVariable userName -> DATA_SOURCE - Status: Killed
+--> Mutation 334: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserName(Ljava/lang/String;)V:479 - ReplaceVariable userName -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 335: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserName(Ljava/lang/String;)V:479 - ReplaceVariable userName -> ORDER_BY_SQL - Status: Killed
+--> Mutation 336: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setUserName(Ljava/lang/String;)V:479 - ReplaceVariable userName -> SESSION_FACTORY - Status: Killed
+--> Mutation 337: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceVariable _title -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 338: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceVariable _title -> TX_MANAGER - Status: Killed
+--> Mutation 339: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceVariable _title -> TABLE_NAME - Status: Killed
+--> Mutation 340: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceVariable _title -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 341: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceVariable _title -> DATA_SOURCE - Status: Killed
+--> Mutation 342: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceVariable _title -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 343: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceVariable _title -> ORDER_BY_SQL - Status: Killed
+--> Mutation 344: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceVariable _title -> SESSION_FACTORY - Status: Killed
+--> Mutation 345: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:502 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 346: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:506 - ReplaceVariable _title -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 347: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:506 - ReplaceVariable _title -> TX_MANAGER - Status: Killed
+--> Mutation 348: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:506 - ReplaceVariable _title -> TABLE_NAME - Status: Killed
+--> Mutation 349: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:506 - ReplaceVariable _title -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 350: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:506 - ReplaceVariable _title -> DATA_SOURCE - Status: Killed
+--> Mutation 351: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:506 - ReplaceVariable _title -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 352: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:506 - ReplaceVariable _title -> ORDER_BY_SQL - Status: Killed
+--> Mutation 353: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTitle()Ljava/lang/String;:506 - ReplaceVariable _title -> SESSION_FACTORY - Status: Killed
+--> Mutation 354: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:511 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 355: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:511 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 356: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:511 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 357: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:513 - ReplaceVariable title -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 358: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:513 - ReplaceVariable title -> TX_MANAGER - Status: Killed
+--> Mutation 359: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:513 - ReplaceVariable title -> TABLE_NAME - Status: Killed
+--> Mutation 360: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:513 - ReplaceVariable title -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 361: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:513 - ReplaceVariable title -> DATA_SOURCE - Status: Killed
+--> Mutation 362: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:513 - ReplaceVariable title -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 363: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:513 - ReplaceVariable title -> ORDER_BY_SQL - Status: Killed
+--> Mutation 364: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTitle(Ljava/lang/String;)V:513 - ReplaceVariable title -> SESSION_FACTORY - Status: Killed
+--> Mutation 365: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceVariable _description -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 366: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceVariable _description -> TX_MANAGER - Status: Killed
+--> Mutation 367: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceVariable _description -> TABLE_NAME - Status: Killed
+--> Mutation 368: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceVariable _description -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 369: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceVariable _description -> DATA_SOURCE - Status: Killed
+--> Mutation 370: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceVariable _description -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 371: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceVariable _description -> ORDER_BY_SQL - Status: Killed
+--> Mutation 372: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceVariable _description -> SESSION_FACTORY - Status: Killed
+--> Mutation 373: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:518 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 374: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:522 - ReplaceVariable _description -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 375: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:522 - ReplaceVariable _description -> TX_MANAGER - Status: Survived
+--> Mutation 376: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:522 - ReplaceVariable _description -> TABLE_NAME - Status: Survived
+--> Mutation 377: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:522 - ReplaceVariable _description -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 378: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:522 - ReplaceVariable _description -> DATA_SOURCE - Status: Killed
+--> Mutation 379: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:522 - ReplaceVariable _description -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 380: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:522 - ReplaceVariable _description -> ORDER_BY_SQL - Status: Killed
+--> Mutation 381: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDescription()Ljava/lang/String;:522 - ReplaceVariable _description -> SESSION_FACTORY - Status: Killed
+--> Mutation 382: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDescription(Ljava/lang/String;)V:527 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 383: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDescription(Ljava/lang/String;)V:527 - ReplaceVariable description -> TX_MANAGER - Status: Killed
+--> Mutation 384: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDescription(Ljava/lang/String;)V:527 - ReplaceVariable description -> TABLE_NAME - Status: Killed
+--> Mutation 385: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDescription(Ljava/lang/String;)V:527 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 386: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDescription(Ljava/lang/String;)V:527 - ReplaceVariable description -> DATA_SOURCE - Status: Killed
+--> Mutation 387: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDescription(Ljava/lang/String;)V:527 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 388: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDescription(Ljava/lang/String;)V:527 - ReplaceVariable description -> ORDER_BY_SQL - Status: Killed
+--> Mutation 389: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDescription(Ljava/lang/String;)V:527 - ReplaceVariable description -> SESSION_FACTORY - Status: Killed
+--> Mutation 390: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceVariable _location -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 391: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceVariable _location -> TX_MANAGER - Status: Killed
+--> Mutation 392: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceVariable _location -> TABLE_NAME - Status: Killed
+--> Mutation 393: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceVariable _location -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 394: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceVariable _location -> DATA_SOURCE - Status: Killed
+--> Mutation 395: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceVariable _location -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 396: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceVariable _location -> ORDER_BY_SQL - Status: Killed
+--> Mutation 397: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceVariable _location -> SESSION_FACTORY - Status: Killed
+--> Mutation 398: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:532 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 399: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:536 - ReplaceVariable _location -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 400: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:536 - ReplaceVariable _location -> TX_MANAGER - Status: Killed
+--> Mutation 401: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:536 - ReplaceVariable _location -> TABLE_NAME - Status: Killed
+--> Mutation 402: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:536 - ReplaceVariable _location -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 403: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:536 - ReplaceVariable _location -> DATA_SOURCE - Status: Killed
+--> Mutation 404: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:536 - ReplaceVariable _location -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 405: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:536 - ReplaceVariable _location -> ORDER_BY_SQL - Status: Killed
+--> Mutation 406: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getLocation()Ljava/lang/String;:536 - ReplaceVariable _location -> SESSION_FACTORY - Status: Killed
+--> Mutation 407: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setLocation(Ljava/lang/String;)V:541 - ReplaceVariable location -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 408: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setLocation(Ljava/lang/String;)V:541 - ReplaceVariable location -> TX_MANAGER - Status: Killed
+--> Mutation 409: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setLocation(Ljava/lang/String;)V:541 - ReplaceVariable location -> TABLE_NAME - Status: Killed
+--> Mutation 410: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setLocation(Ljava/lang/String;)V:541 - ReplaceVariable location -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 411: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setLocation(Ljava/lang/String;)V:541 - ReplaceVariable location -> DATA_SOURCE - Status: Killed
+--> Mutation 412: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setLocation(Ljava/lang/String;)V:541 - ReplaceVariable location -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 413: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setLocation(Ljava/lang/String;)V:541 - ReplaceVariable location -> ORDER_BY_SQL - Status: Killed
+--> Mutation 414: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setLocation(Ljava/lang/String;)V:541 - ReplaceVariable location -> SESSION_FACTORY - Status: Killed
+--> Mutation 415: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setStartDate(Ljava/util/Date;)V:550 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 416: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setStartDate(Ljava/util/Date;)V:550 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 417: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setStartDate(Ljava/util/Date;)V:550 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 418: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDurationHour()I:566 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 419: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDurationHour()I:566 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 420: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDurationHour()I:566 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 421: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDurationHour(I)V:570 - InsertUnaryOp Negation of durationHour - Status: Killed
+--> Mutation 422: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDurationHour(I)V:570 - InsertUnaryOp IINC 1 durationHour - Status: Killed
+--> Mutation 423: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDurationHour(I)V:570 - InsertUnaryOp IINC -1 durationHour - Status: Killed
+--> Mutation 424: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDurationMinute()I:575 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 425: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDurationMinute()I:575 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 426: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getDurationMinute()I:575 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 427: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDurationMinute(I)V:579 - InsertUnaryOp Negation of durationMinute - Status: Killed
+--> Mutation 428: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDurationMinute(I)V:579 - InsertUnaryOp IINC 1 durationMinute - Status: Killed
+--> Mutation 429: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setDurationMinute(I)V:579 - InsertUnaryOp IINC -1 durationMinute - Status: Killed
+--> Mutation 430: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getAllDay()Z:584 - ReplaceVariable _allDay -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 431: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getAllDay()Z:584 - ReplaceVariable _allDay -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 432: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getAllDay()Z:584 - ReplaceVariable _allDay -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 433: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getAllDay()Z:584 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 434: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isAllDay()Z:588 - ReplaceVariable _allDay -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 435: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isAllDay()Z:588 - ReplaceVariable _allDay -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 436: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isAllDay()Z:588 - ReplaceVariable _allDay -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 437: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isAllDay()Z:588 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 438: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setAllDay(Z)V:592 - ReplaceVariable allDay -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 439: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setAllDay(Z)V:592 - ReplaceVariable allDay -> FINDER_CACHE_ENABLED - Status: Survived
+--> Mutation 440: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setAllDay(Z)V:592 - ReplaceVariable allDay -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 441: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setAllDay(Z)V:592 - InsertUnaryOp Negation of allDay - Status: Survived
+--> Mutation 442: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setAllDay(Z)V:592 - InsertUnaryOp IINC 1 allDay - Status: Killed
+--> Mutation 443: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setAllDay(Z)V:592 - InsertUnaryOp IINC -1 allDay - Status: Killed
+--> Mutation 444: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTimeZoneSensitive()Z:597 - ReplaceVariable _timeZoneSensitive -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 445: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTimeZoneSensitive()Z:597 - ReplaceVariable _timeZoneSensitive -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 446: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTimeZoneSensitive()Z:597 - ReplaceVariable _timeZoneSensitive -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 447: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getTimeZoneSensitive()Z:597 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 448: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isTimeZoneSensitive()Z:601 - ReplaceVariable _timeZoneSensitive -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 449: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isTimeZoneSensitive()Z:601 - ReplaceVariable _timeZoneSensitive -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 450: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isTimeZoneSensitive()Z:601 - ReplaceVariable _timeZoneSensitive -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 451: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isTimeZoneSensitive()Z:601 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 452: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTimeZoneSensitive(Z)V:605 - ReplaceVariable timeZoneSensitive -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 453: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTimeZoneSensitive(Z)V:605 - ReplaceVariable timeZoneSensitive -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 454: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTimeZoneSensitive(Z)V:605 - ReplaceVariable timeZoneSensitive -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 455: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTimeZoneSensitive(Z)V:605 - InsertUnaryOp Negation of timeZoneSensitive - Status: Survived
+--> Mutation 456: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTimeZoneSensitive(Z)V:605 - InsertUnaryOp IINC 1 timeZoneSensitive - Status: Killed
+--> Mutation 457: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setTimeZoneSensitive(Z)V:605 - InsertUnaryOp IINC -1 timeZoneSensitive - Status: Killed
+--> Mutation 458: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceVariable _type -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 459: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceVariable _type -> TX_MANAGER - Status: Killed
+--> Mutation 460: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceVariable _type -> TABLE_NAME - Status: Killed
+--> Mutation 461: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceVariable _type -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 462: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceVariable _type -> DATA_SOURCE - Status: Killed
+--> Mutation 463: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceVariable _type -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 464: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceVariable _type -> ORDER_BY_SQL - Status: Killed
+--> Mutation 465: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceVariable _type -> SESSION_FACTORY - Status: Killed
+--> Mutation 466: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:610 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 467: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:614 - ReplaceVariable _type -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 468: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:614 - ReplaceVariable _type -> TX_MANAGER - Status: Killed
+--> Mutation 469: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:614 - ReplaceVariable _type -> TABLE_NAME - Status: Killed
+--> Mutation 470: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:614 - ReplaceVariable _type -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 471: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:614 - ReplaceVariable _type -> DATA_SOURCE - Status: Killed
+--> Mutation 472: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:614 - ReplaceVariable _type -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 473: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:614 - ReplaceVariable _type -> ORDER_BY_SQL - Status: Killed
+--> Mutation 474: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getType()Ljava/lang/String;:614 - ReplaceVariable _type -> SESSION_FACTORY - Status: Killed
+--> Mutation 475: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable _columnBitmask -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 476: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable _columnBitmask -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 477: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable _columnBitmask -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 478: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 479: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 480: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable _columnBitmask -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 481: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable _columnBitmask -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 482: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 483: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable TYPE_COLUMN_BITMASK -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 484: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable TYPE_COLUMN_BITMASK -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 485: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable TYPE_COLUMN_BITMASK -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 486: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable TYPE_COLUMN_BITMASK -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 487: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable TYPE_COLUMN_BITMASK -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 488: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceVariable TYPE_COLUMN_BITMASK -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 489: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 490: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceBitwiseOperator | -> ^ - Status: Killed
+--> Mutation 491: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:619 - ReplaceBitwiseOperator | -> & - Status: Killed
+--> Mutation 492: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceVariable _originalType -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 493: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceVariable _originalType -> TX_MANAGER - Status: Survived
+--> Mutation 494: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceVariable _originalType -> TABLE_NAME - Status: Survived
+--> Mutation 495: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceVariable _originalType -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 496: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceVariable _originalType -> DATA_SOURCE - Status: Survived
+--> Mutation 497: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceVariable _originalType -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 498: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceVariable _originalType -> ORDER_BY_SQL - Status: Survived
+--> Mutation 499: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceVariable _originalType -> SESSION_FACTORY - Status: Survived
+--> Mutation 500: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:621 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 501: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:622 - ReplaceVariable _type -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 502: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:622 - ReplaceVariable _type -> TX_MANAGER - Status: Survived
+--> Mutation 503: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:622 - ReplaceVariable _type -> TABLE_NAME - Status: Survived
+--> Mutation 504: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:622 - ReplaceVariable _type -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 505: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:622 - ReplaceVariable _type -> DATA_SOURCE - Status: Survived
+--> Mutation 506: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:622 - ReplaceVariable _type -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 507: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:622 - ReplaceVariable _type -> ORDER_BY_SQL - Status: Survived
+--> Mutation 508: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:622 - ReplaceVariable _type -> SESSION_FACTORY - Status: Survived
+--> Mutation 509: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:625 - ReplaceVariable type -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 510: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:625 - ReplaceVariable type -> TX_MANAGER - Status: Killed
+--> Mutation 511: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:625 - ReplaceVariable type -> TABLE_NAME - Status: Killed
+--> Mutation 512: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:625 - ReplaceVariable type -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 513: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:625 - ReplaceVariable type -> DATA_SOURCE - Status: Killed
+--> Mutation 514: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:625 - ReplaceVariable type -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 515: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:625 - ReplaceVariable type -> ORDER_BY_SQL - Status: Killed
+--> Mutation 516: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setType(Ljava/lang/String;)V:625 - ReplaceVariable type -> SESSION_FACTORY - Status: Killed
+--> Mutation 517: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalType()Ljava/lang/String;:629 - ReplaceVariable _originalType -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 518: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalType()Ljava/lang/String;:629 - ReplaceVariable _originalType -> TX_MANAGER - Status: Killed
+--> Mutation 519: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalType()Ljava/lang/String;:629 - ReplaceVariable _originalType -> TABLE_NAME - Status: Killed
+--> Mutation 520: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalType()Ljava/lang/String;:629 - ReplaceVariable _originalType -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 521: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalType()Ljava/lang/String;:629 - ReplaceVariable _originalType -> DATA_SOURCE - Status: Killed
+--> Mutation 522: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalType()Ljava/lang/String;:629 - ReplaceVariable _originalType -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 523: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalType()Ljava/lang/String;:629 - ReplaceVariable _originalType -> ORDER_BY_SQL - Status: Killed
+--> Mutation 524: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalType()Ljava/lang/String;:629 - ReplaceVariable _originalType -> SESSION_FACTORY - Status: Killed
+--> Mutation 525: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRepeating()Z:634 - ReplaceVariable _repeating -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 526: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRepeating()Z:634 - ReplaceVariable _repeating -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 527: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRepeating()Z:634 - ReplaceVariable _repeating -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 528: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRepeating()Z:634 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 529: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isRepeating()Z:638 - ReplaceVariable _repeating -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 530: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isRepeating()Z:638 - ReplaceVariable _repeating -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 531: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isRepeating()Z:638 - ReplaceVariable _repeating -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 532: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.isRepeating()Z:638 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 533: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable _columnBitmask -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 534: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable _columnBitmask -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 535: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable _columnBitmask -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 536: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 537: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 538: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable _columnBitmask -> REPEATING_COLUMN_BITMASK - Status: Survived
+--> Mutation 539: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable _columnBitmask -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 540: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 541: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable REPEATING_COLUMN_BITMASK -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 542: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable REPEATING_COLUMN_BITMASK -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 543: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable REPEATING_COLUMN_BITMASK -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 544: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable REPEATING_COLUMN_BITMASK -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 545: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable REPEATING_COLUMN_BITMASK -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 546: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceVariable REPEATING_COLUMN_BITMASK -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 547: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 548: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceBitwiseOperator | -> ^ - Status: Killed
+--> Mutation 549: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:642 - ReplaceBitwiseOperator | -> & - Status: Killed
+--> Mutation 550: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:644 - ReplaceVariable _setOriginalRepeating -> COLUMN_BITMASK_ENABLED - Status: Survived
+--> Mutation 551: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:644 - ReplaceVariable _setOriginalRepeating -> FINDER_CACHE_ENABLED - Status: Survived
+--> Mutation 552: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:644 - ReplaceVariable _setOriginalRepeating -> ENTITY_CACHE_ENABLED - Status: Survived
+--> Mutation 553: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:644 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 554: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:644 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 555: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:645 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 556: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:647 - ReplaceVariable _repeating -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 557: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:647 - ReplaceVariable _repeating -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 558: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:647 - ReplaceVariable _repeating -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 559: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:647 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 560: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:650 - ReplaceVariable repeating -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 561: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:650 - ReplaceVariable repeating -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 562: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:650 - ReplaceVariable repeating -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 563: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:650 - InsertUnaryOp Negation of repeating - Status: Survived
+--> Mutation 564: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:650 - InsertUnaryOp IINC 1 repeating - Status: Killed
+--> Mutation 565: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRepeating(Z)V:650 - InsertUnaryOp IINC -1 repeating - Status: Killed
+--> Mutation 566: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalRepeating()Z:654 - ReplaceVariable _originalRepeating -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 567: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalRepeating()Z:654 - ReplaceVariable _originalRepeating -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 568: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalRepeating()Z:654 - ReplaceVariable _originalRepeating -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 569: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalRepeating()Z:654 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 570: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceVariable _recurrence -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 571: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceVariable _recurrence -> TX_MANAGER - Status: Killed
+--> Mutation 572: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceVariable _recurrence -> TABLE_NAME - Status: Killed
+--> Mutation 573: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceVariable _recurrence -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 574: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceVariable _recurrence -> DATA_SOURCE - Status: Killed
+--> Mutation 575: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceVariable _recurrence -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 576: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceVariable _recurrence -> ORDER_BY_SQL - Status: Killed
+--> Mutation 577: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceVariable _recurrence -> SESSION_FACTORY - Status: Killed
+--> Mutation 578: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:659 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 579: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:663 - ReplaceVariable _recurrence -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 580: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:663 - ReplaceVariable _recurrence -> TX_MANAGER - Status: Survived
+--> Mutation 581: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:663 - ReplaceVariable _recurrence -> TABLE_NAME - Status: Killed
+--> Mutation 582: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:663 - ReplaceVariable _recurrence -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 583: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:663 - ReplaceVariable _recurrence -> DATA_SOURCE - Status: Killed
+--> Mutation 584: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:663 - ReplaceVariable _recurrence -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 585: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:663 - ReplaceVariable _recurrence -> ORDER_BY_SQL - Status: Killed
+--> Mutation 586: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRecurrence()Ljava/lang/String;:663 - ReplaceVariable _recurrence -> SESSION_FACTORY - Status: Killed
+--> Mutation 587: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRecurrence(Ljava/lang/String;)V:668 - ReplaceVariable recurrence -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 588: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRecurrence(Ljava/lang/String;)V:668 - ReplaceVariable recurrence -> TX_MANAGER - Status: Killed
+--> Mutation 589: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRecurrence(Ljava/lang/String;)V:668 - ReplaceVariable recurrence -> TABLE_NAME - Status: Killed
+--> Mutation 590: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRecurrence(Ljava/lang/String;)V:668 - ReplaceVariable recurrence -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 591: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRecurrence(Ljava/lang/String;)V:668 - ReplaceVariable recurrence -> DATA_SOURCE - Status: Killed
+--> Mutation 592: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRecurrence(Ljava/lang/String;)V:668 - ReplaceVariable recurrence -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 593: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRecurrence(Ljava/lang/String;)V:668 - ReplaceVariable recurrence -> ORDER_BY_SQL - Status: Killed
+--> Mutation 594: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRecurrence(Ljava/lang/String;)V:668 - ReplaceVariable recurrence -> SESSION_FACTORY - Status: Killed
+--> Mutation 595: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRemindBy()I:673 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 596: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRemindBy()I:673 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 597: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getRemindBy()I:673 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 598: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable _columnBitmask -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 599: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable _columnBitmask -> REMINDBY_COLUMN_BITMASK - Status: Survived
+--> Mutation 600: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable _columnBitmask -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 601: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 602: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 603: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable _columnBitmask -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 604: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable _columnBitmask -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 605: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 606: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable REMINDBY_COLUMN_BITMASK -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 607: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable REMINDBY_COLUMN_BITMASK -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 608: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable REMINDBY_COLUMN_BITMASK -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 609: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable REMINDBY_COLUMN_BITMASK -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 610: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable REMINDBY_COLUMN_BITMASK -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 611: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceVariable REMINDBY_COLUMN_BITMASK -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 612: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 613: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceBitwiseOperator | -> ^ - Status: Killed
+--> Mutation 614: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:677 - ReplaceBitwiseOperator | -> & - Status: Killed
+--> Mutation 615: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:679 - ReplaceVariable _setOriginalRemindBy -> COLUMN_BITMASK_ENABLED - Status: Survived
+--> Mutation 616: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:679 - ReplaceVariable _setOriginalRemindBy -> FINDER_CACHE_ENABLED - Status: Survived
+--> Mutation 617: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:679 - ReplaceVariable _setOriginalRemindBy -> ENTITY_CACHE_ENABLED - Status: Survived
+--> Mutation 618: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:679 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 619: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:679 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 620: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:680 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 621: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:682 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 622: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:682 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 623: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:682 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 624: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:685 - InsertUnaryOp Negation of remindBy - Status: Killed
+--> Mutation 625: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:685 - InsertUnaryOp IINC 1 remindBy - Status: Killed
+--> Mutation 626: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setRemindBy(I)V:685 - InsertUnaryOp IINC -1 remindBy - Status: Killed
+--> Mutation 627: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalRemindBy()I:689 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 628: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalRemindBy()I:689 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 629: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getOriginalRemindBy()I:689 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 630: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getFirstReminder()I:694 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 631: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getFirstReminder()I:694 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 632: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getFirstReminder()I:694 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 633: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setFirstReminder(I)V:698 - InsertUnaryOp Negation of firstReminder - Status: Killed
+--> Mutation 634: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setFirstReminder(I)V:698 - InsertUnaryOp IINC 1 firstReminder - Status: Killed
+--> Mutation 635: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setFirstReminder(I)V:698 - InsertUnaryOp IINC -1 firstReminder - Status: Killed
+--> Mutation 636: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getSecondReminder()I:703 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 637: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getSecondReminder()I:703 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 638: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getSecondReminder()I:703 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 639: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setSecondReminder(I)V:707 - InsertUnaryOp Negation of secondReminder - Status: Killed
+--> Mutation 640: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setSecondReminder(I)V:707 - InsertUnaryOp IINC 1 secondReminder - Status: Killed
+--> Mutation 641: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.setSecondReminder(I)V:707 - InsertUnaryOp IINC -1 secondReminder - Status: Killed
+--> Mutation 642: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getColumnBitmask()J:711 - ReplaceVariable _columnBitmask -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 643: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getColumnBitmask()J:711 - ReplaceVariable _columnBitmask -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 644: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getColumnBitmask()J:711 - ReplaceVariable _columnBitmask -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 645: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getColumnBitmask()J:711 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 646: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getColumnBitmask()J:711 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 647: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getColumnBitmask()J:711 - ReplaceVariable _columnBitmask -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 648: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getColumnBitmask()J:711 - ReplaceVariable _columnBitmask -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 649: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.getColumnBitmask()J:711 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 650: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toEscapedModel()Lcom/liferay/portlet/calendar/model/CalEvent;:729 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 651: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:772 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 652: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:776 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 653: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:776 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 654: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:776 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 655: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:776 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 656: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:776 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 657: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:776 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 658: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:777 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 659: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:777 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 660: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:777 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 661: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:783 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 662: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:783 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 663: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:783 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 664: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:783 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 665: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:783 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 666: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:783 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 667: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:784 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 668: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:784 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 669: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:784 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 670: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.compareTo(Lcom/liferay/portlet/calendar/model/CalEvent;)I:787 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 671: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:792 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 672: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:793 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 673: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:802 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 674: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceVariable primaryKey -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 675: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceVariable primaryKey -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 676: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceVariable primaryKey -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 677: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceVariable primaryKey -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 678: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceVariable primaryKey -> COMPANYID_COLUMN_BITMASK - Status: Survived
+--> Mutation 679: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceVariable primaryKey -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 680: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceVariable primaryKey -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 681: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - InsertUnaryOp Negation of primaryKey - Status: Killed
+--> Mutation 682: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 683: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 684: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:807 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 685: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:808 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 686: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.equals(Ljava/lang/Object;)Z:811 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 687: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 688: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 689: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable _uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 690: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable _uuid -> TX_MANAGER - Status: Survived
+--> Mutation 691: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable _uuid -> TABLE_NAME - Status: Survived
+--> Mutation 692: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable _uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 693: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable _uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 694: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable _uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 695: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable _uuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 696: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:824 - ReplaceVariable _uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 697: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 698: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 699: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable _groupId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 700: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable _groupId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 701: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable _groupId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 702: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable _groupId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 703: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable _groupId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 704: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable _groupId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 705: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - ReplaceVariable _groupId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 706: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:826 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 707: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:828 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 708: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:828 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 709: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 710: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 711: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable _companyId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 712: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable _companyId -> REMINDBY_COLUMN_BITMASK - Status: Killed
+--> Mutation 713: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable _companyId -> GROUPID_COLUMN_BITMASK - Status: Killed
+--> Mutation 714: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable _companyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 715: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable _companyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 716: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable _companyId -> REPEATING_COLUMN_BITMASK - Status: Killed
+--> Mutation 717: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - ReplaceVariable _companyId -> TYPE_COLUMN_BITMASK - Status: Killed
+--> Mutation 718: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:830 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 719: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:832 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 720: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:832 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 721: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 722: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 723: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable _type -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 724: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable _type -> TX_MANAGER - Status: Survived
+--> Mutation 725: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable _type -> TABLE_NAME - Status: Killed
+--> Mutation 726: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable _type -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 727: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable _type -> DATA_SOURCE - Status: Killed
+--> Mutation 728: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable _type -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 729: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable _type -> ORDER_BY_SQL - Status: Killed
+--> Mutation 730: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:834 - ReplaceVariable _type -> SESSION_FACTORY - Status: Killed
+--> Mutation 731: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:836 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 732: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:836 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 733: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:836 - ReplaceVariable _repeating -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 734: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:836 - ReplaceVariable _repeating -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 735: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:836 - ReplaceVariable _repeating -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 736: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:836 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 737: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:838 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 738: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:838 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 739: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:840 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 740: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:840 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 741: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:840 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 742: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:840 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 743: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:840 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 744: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:842 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 745: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:842 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 746: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:844 - ReplaceVariable calEventModelImpl -> this - Status: Survived
+--> Mutation 747: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:844 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 748: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.resetOriginalValues()V:844 - ReplaceConstant - 0 -> -1 - Status: Killed
+--> Mutation 749: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 750: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> TX_MANAGER - Status: Survived
+--> Mutation 751: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> TABLE_NAME - Status: Survived
+--> Mutation 752: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 753: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 754: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 755: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 756: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 757: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 758: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 759: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> TX_MANAGER - Status: Survived
+--> Mutation 760: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> TABLE_NAME - Status: Survived
+--> Mutation 761: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 762: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 763: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 764: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 765: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 766: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 767: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 768: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:855 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 769: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 770: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> TX_MANAGER - Status: Survived
+--> Mutation 771: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> TABLE_NAME - Status: Survived
+--> Mutation 772: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 773: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> DATA_SOURCE - Status: Survived
+--> Mutation 774: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 775: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> uuid - Status: Survived
+--> Mutation 776: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> ORDER_BY_SQL - Status: Survived
+--> Mutation 777: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> SESSION_FACTORY - Status: Survived
+--> Mutation 778: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 779: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 780: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> TX_MANAGER - Status: Survived
+--> Mutation 781: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> TABLE_NAME - Status: Survived
+--> Mutation 782: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 783: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> DATA_SOURCE - Status: Survived
+--> Mutation 784: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 785: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> uuid - Status: Survived
+--> Mutation 786: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> ORDER_BY_SQL - Status: Survived
+--> Mutation 787: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceVariable userName -> SESSION_FACTORY - Status: Survived
+--> Mutation 788: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 789: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 790: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:871 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 791: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:877 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 792: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:881 - ReplaceConstant - -9223372036854775808 -> 0 - Status: Survived
+--> Mutation 793: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:881 - ReplaceConstant - -9223372036854775808 -> 1 - Status: Survived
+--> Mutation 794: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:881 - ReplaceConstant - -9223372036854775808 -> -1 - Status: Survived
+--> Mutation 795: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:881 - ReplaceConstant - -9223372036854775808 -> 9223372036854775807 - Status: Survived
+--> Mutation 796: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:881 - ReplaceConstant - -9223372036854775808 -> -9223372036854775807 - Status: Survived
+--> Mutation 797: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:886 - ReplaceVariable modifiedDate -> createDate - Status: Survived
+--> Mutation 798: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:886 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 799: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:887 - ReplaceVariable modifiedDate -> createDate - Status: Survived
+--> Mutation 800: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:890 - ReplaceConstant - -9223372036854775808 -> 0 - Status: Survived
+--> Mutation 801: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:890 - ReplaceConstant - -9223372036854775808 -> 1 - Status: Survived
+--> Mutation 802: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:890 - ReplaceConstant - -9223372036854775808 -> -1 - Status: Survived
+--> Mutation 803: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:890 - ReplaceConstant - -9223372036854775808 -> 9223372036854775807 - Status: Survived
+--> Mutation 804: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:890 - ReplaceConstant - -9223372036854775808 -> -9223372036854775807 - Status: Survived
+--> Mutation 805: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:972 - ReplaceConstant - 47 -> 0 - Status: Survived
+--> Mutation 806: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:972 - ReplaceConstant - 47 -> 1 - Status: Survived
+--> Mutation 807: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:972 - ReplaceConstant - 47 -> -1 - Status: Survived
+--> Mutation 808: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:972 - ReplaceConstant - 47 -> 46 - Status: Survived
+--> Mutation 809: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:972 - ReplaceConstant - 47 -> 48 - Status: Survived
+--> Mutation 810: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:974 - ReplaceConstant - {uuid= ->  - Status: Survived
+--> Mutation 811: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:976 - ReplaceConstant - , eventId= ->  - Status: Killed
+--> Mutation 812: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:978 - ReplaceConstant - , groupId= ->  - Status: Killed
+--> Mutation 813: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:980 - ReplaceConstant - , companyId= ->  - Status: Killed
+--> Mutation 814: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:982 - ReplaceConstant - , userId= ->  - Status: Killed
+--> Mutation 815: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:984 - ReplaceConstant - , userName= ->  - Status: Survived
+--> Mutation 816: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:986 - ReplaceConstant - , createDate= ->  - Status: Killed
+--> Mutation 817: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:988 - ReplaceConstant - , modifiedDate= ->  - Status: Killed
+--> Mutation 818: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toString()Ljava/lang/String;:990 - ReplaceConstant - , title= ->  - Status: Killed
+--> Mutation 819: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1026 - ReplaceConstant - 73 -> 0 - Status: Survived
+--> Mutation 820: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1026 - ReplaceConstant - 73 -> 1 - Status: Survived
+--> Mutation 821: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1026 - ReplaceConstant - 73 -> -1 - Status: Survived
+--> Mutation 822: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1026 - ReplaceConstant - 73 -> 72 - Status: Survived
+--> Mutation 823: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1026 - ReplaceConstant - 73 -> 74 - Status: Survived
+--> Mutation 824: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1028 - ReplaceConstant - <model><model-name> ->  - Status: Survived
+--> Mutation 825: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1029 - ReplaceConstant - com.liferay.portlet.calendar.model.CalEvent ->  - Status: Survived
+--> Mutation 826: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1030 - ReplaceConstant - </model-name> ->  - Status: Survived
+--> Mutation 827: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1032 - ReplaceConstant - <column><column-name>uuid</column-name><column-value><![CDATA[ ->  - Status: Survived
+--> Mutation 828: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1035 - ReplaceConstant - ]]></column-value></column> ->  - Status: Survived
+--> Mutation 829: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1036 - ReplaceConstant - <column><column-name>eventId</column-name><column-value><![CDATA[ ->  - Status: Survived
+--> Mutation 830: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1039 - ReplaceConstant - ]]></column-value></column> ->  - Status: Survived
+--> Mutation 831: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1040 - ReplaceConstant - <column><column-name>groupId</column-name><column-value><![CDATA[ ->  - Status: Survived
+--> Mutation 832: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1043 - ReplaceConstant - ]]></column-value></column> ->  - Status: Survived
+--> Mutation 833: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1044 - ReplaceConstant - <column><column-name>companyId</column-name><column-value><![CDATA[ ->  - Status: Survived
+--> Mutation 834: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1047 - ReplaceConstant - ]]></column-value></column> ->  - Status: Survived
+--> Mutation 835: com.liferay.portlet.calendar.model.impl.CalEventModelImpl.toXmlString()Ljava/lang/String;:1048 - ReplaceConstant - <column><column-name>userId</column-name><column-value><![CDATA[ ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

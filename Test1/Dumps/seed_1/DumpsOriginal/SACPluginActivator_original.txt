@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/61_noen/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\61_noen\evosuite-files\evosuite.properties
+* Connecting to master process on port 21555
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:16:55.184 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:16:55.273 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator
 * Test criteria:
@@ -20,9 +18,91 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 201
-* Using seed 2482030657809
+* Using seed 1710484558471
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 84 / 201
-[MASTER] 03:16:55.563 [logback-1] WARN  TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
-* Search finished after 185s and 4 generations, 1141 statements, best individual has fitness: 110.0
+[MASTER] 03:36:00.787 [logback-1] WARN  TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 03:36:07.170 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 185s and 7 generations, 1435 statements, best individual has fitness: 105.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 53%
+* Total number of goals: 96
+* Number of covered goals: 51
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 38%
+* Total number of goals: 26
+* Number of covered goals: 10
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 59%
+* Total number of goals: 41
+* Number of covered goals: 24
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 2
+* Number of covered goals: 1
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 60%
+* Total number of goals: 5
+* Number of covered goals: 3
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 38%
+* Total number of goals: 26
+* Number of covered goals: 10
+* Generated 7 tests with total length 18
+* Resulting test suite's coverage: 54% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 2%
+* There are surviving mutants: 
+--> Mutation 0: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.<init>()V:56 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 1: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.<init>()V:56 - ReplaceConstant - 1 -> -1 - Status: Survived
+--> Mutation 2: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.<init>()V:56 - ReplaceConstant - 1 -> 2 - Status: Survived
+--> Mutation 3: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.<init>(Ljava/util/Properties;)V:56 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 4: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.<init>(Ljava/util/Properties;)V:56 - ReplaceConstant - 1 -> -1 - Status: Survived
+--> Mutation 5: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.<init>(Ljava/util/Properties;)V:56 - ReplaceConstant - 1 -> 2 - Status: Survived
+--> Mutation 6: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:83 - ReplaceConstant - mfw_ws_url ->  - Status: Survived
+--> Mutation 7: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:84 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 8: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:85 - ReplaceConstant - Failed to read MFW WS URL from configuration file (noen-mfw.properties) with key mfw_ws_url ->  - Status: Survived
+--> Mutation 9: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:87 - ReplaceConstant - MFW_WS_URL:  ->  - Status: Survived
+--> Mutation 10: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:89 - ReplaceConstant - web_ui_id ->  - Status: Survived
+--> Mutation 11: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:90 - ReplaceConstant - WEB_UI_ID:  ->  - Status: Survived
+--> Mutation 12: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:90 - InsertUnaryOp Negation of webUiId - Status: Survived
+--> Mutation 13: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:91 - ReplaceConstant - web_ui_ws_url ->  - Status: Survived
+--> Mutation 14: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:92 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 15: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:93 - ReplaceConstant - Failed to read WEB UI WS URL from configuration file (noen-mfw.properties) with key web_ui_ws_url ->  - Status: Survived
+--> Mutation 16: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:95 - ReplaceConstant - WEB_UI_WS_URL:  ->  - Status: Survived
+--> Mutation 17: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:96 - InsertUnaryOp Negation of webUiId - Status: Survived
+--> Mutation 18: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:99 - ReplaceConstant - Failed to read WEB UI ID from configuration file (noen-mfw.properties) with key web_ui_id got: ->  - Status: Survived
+--> Mutation 19: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:99 - ReplaceConstant - web_ui_id ->  - Status: Survived
+--> Mutation 20: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:99 - ReplaceConstant -  should be a valid integer port value. ->  - Status: Survived
+--> Mutation 21: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.configure(Ljava/util/Properties;)V:104 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 22: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.readConfig()Ljava/util/Properties;:157 - ReplaceConstant - noen-mfw.properties ->  - Status: Killed
+--> Mutation 23: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.readConfig()Ljava/util/Properties;:159 - ReplaceConstant - Failed to load configuration ->  - Status: Survived
+--> Mutation 24: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.readConfig()Ljava/util/Properties;:160 - ReplaceConstant - Failed to load configuration ->  - Status: Survived
+--> Mutation 25: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:168 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 26: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:168 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 27: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:168 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 28: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:168 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 29: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:172 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 30: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:175 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 31: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:176 - ReplaceConstant - Sending initial availability information to SAC (ID: ->  - Status: Survived
+--> Mutation 32: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:176 - ReplaceConstant - ) ->  - Status: Survived
+--> Mutation 33: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:178 - InsertUnaryOp Negation of sacResponding - Status: Survived
+--> Mutation 34: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:178 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 35: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:179 - ReplaceConstant - SAC (ID: ->  - Status: Survived
+--> Mutation 36: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.start(Lorg/osgi/framework/BundleContext;)V:179 - ReplaceConstant - ) received initial availability information. ->  - Status: Survived
+--> Mutation 37: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.startServer()V:196 - ReplaceConstant - Starting SAC_MFW_service ->  - Status: Survived
+--> Mutation 38: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.startServer()V:197 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 39: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.startServer()V:201 - ReplaceConstant - Publishing MFW WS endpoint at: ->  - Status: Survived
+--> Mutation 40: fi.vtt.noen.mfw.bundle.server.plugins.sac.SACPluginActivator.startServer()V:203 - ReplaceConstant - SAC_MFW_service started ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

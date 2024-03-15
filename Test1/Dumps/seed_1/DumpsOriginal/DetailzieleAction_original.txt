@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/46_nutzenportfolio/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\46_nutzenportfolio\evosuite-files\evosuite.properties
+* Connecting to master process on port 8058
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:06:55.942 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 03:06:56.224 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 03:06:56.405 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
 * Finished analyzing classpath
 * Generating tests for class ch.bfh.egov.nutzenportfolio.action.DetailzieleAction
 * Test criteria:
@@ -21,10 +18,127 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 420
-* Using seed 2482030657809
+* Using seed 1710483991069
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 174 / 420
-[MASTER] 03:06:58.315 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 03:07:13.295 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-* Search finished after 181s and 817 generations, 512987 statements, best individual has fitness: 375.0
+[MASTER] 03:26:33.507 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.servlet.http.HttpServletRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 03:26:35.143 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 03:27:34.891 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+* Search finished after 181s and 2135 generations, 1300834 statements, best individual has fitness: 371.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 18%
+* Total number of goals: 162
+* Number of covered goals: 29
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 7%
+* Total number of goals: 55
+* Number of covered goals: 4
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 12%
+* Total number of goals: 76
+* Number of covered goals: 9
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 50
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 9%
+* Total number of goals: 11
+* Number of covered goals: 1
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 11%
+* Total number of goals: 55
+* Number of covered goals: 6
+* Generated 23 tests with total length 203
+* Resulting test suite's coverage: 22% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.list(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:70 - ReplaceConstant - list ->  - Status: Survived
+--> Mutation 1: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.prepare(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:80 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 2: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.prepare(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:82 - ReplaceConstant - org.apache.struts.action.GLOBAL_MESSAGE ->  - Status: Survived
+--> Mutation 3: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.prepare(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:82 - ReplaceConstant - errors.strategische.ziele.not.set ->  - Status: Survived
+--> Mutation 4: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.prepare(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:84 - ReplaceConstant - failure ->  - Status: Survived
+--> Mutation 5: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.prepare(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:86 - ReplaceConstant - form ->  - Status: Survived
+--> Mutation 6: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.edit(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:97 - ReplaceConstant - form ->  - Status: Survived
+--> Mutation 7: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.update(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:109 - ReplaceConstant - list ->  - Status: Survived
+--> Mutation 8: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.deletequestion(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:120 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 9: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.deletequestion(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:122 - ReplaceConstant - list ->  - Status: Survived
+--> Mutation 10: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.deletequestion(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:127 - ReplaceConstant - question ->  - Status: Survived
+--> Mutation 11: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.delete(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:138 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 12: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.delete(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:140 - ReplaceConstant - list ->  - Status: Survived
+--> Mutation 13: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.delete(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:146 - ReplaceConstant - list ->  - Status: Survived
+--> Mutation 14: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:158 - ReplaceConstant - detailzielId ->  - Status: Survived
+--> Mutation 15: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:159 - ReplaceConstant - projektattraktivitaetId ->  - Status: Survived
+--> Mutation 16: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:160 - ReplaceConstant - quantifizierbar ->  - Status: Survived
+--> Mutation 17: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:161 - ReplaceConstant - detailzielId= ->  - Status: Survived
+--> Mutation 18: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:161 - ReplaceVariable detailzielId -> paId - Status: Survived
+--> Mutation 19: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:162 - ReplaceConstant - paId= ->  - Status: Survived
+--> Mutation 20: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:162 - ReplaceVariable paId -> detailzielId - Status: Survived
+--> Mutation 21: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:163 - ReplaceConstant - quantifizierbar= ->  - Status: Survived
+--> Mutation 22: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:165 - ReplaceConstant - mandantId ->  - Status: Survived
+--> Mutation 23: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:168 - ReplaceVariable paId -> detailzielId - Status: Survived
+--> Mutation 24: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:168 - ReplaceVariable paId -> mandantId - Status: Survived
+--> Mutation 25: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:170 - ReplaceVariable mandantId -> paId - Status: Survived
+--> Mutation 26: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:170 - ReplaceVariable mandantId -> detailzielId - Status: Survived
+--> Mutation 27: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.remove(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:172 - ReplaceConstant -  Detailziele in der Liste ->  - Status: Survived
+--> Mutation 28: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.set(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:198 - ReplaceConstant - detailzielId ->  - Status: Survived
+--> Mutation 29: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.set(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:199 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 30: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.set(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:201 - ReplaceConstant - form ->  - Status: Survived
+--> Mutation 31: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.set(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:205 - ReplaceConstant - Detailziel zuweisen:  ->  - Status: Survived
+--> Mutation 32: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.set(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:213 - ReplaceConstant - form ->  - Status: Survived
+--> Mutation 33: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.next(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:224 - ReplaceConstant - lastStep ->  - Status: Survived
+--> Mutation 34: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.next(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:225 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 35: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.next(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:225 - ReplaceConstant - true ->  - Status: Survived
+--> Mutation 36: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.next(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:225 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 37: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.next(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:225 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 38: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.next(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:225 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 39: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.next(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:226 - ReplaceConstant - next ->  - Status: Survived
+--> Mutation 40: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.next(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:228 - ReplaceConstant - form ->  - Status: Survived
+--> Mutation 41: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.add(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:240 - ReplaceVariable errors -> messages - Status: Survived
+--> Mutation 42: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.add(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:240 - ReplaceVariable messages -> errors - Status: Survived
+--> Mutation 43: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.add(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:240 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 44: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.add(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:241 - ReplaceVariable errors -> messages - Status: Survived
+--> Mutation 45: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.add(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:242 - ReplaceVariable messages -> errors - Status: Survived
+--> Mutation 46: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.add(Lorg/apache/struts/action/ActionMapping;Lorg/apache/struts/action/ActionForm;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/apache/struts/action/ActionForward;:245 - ReplaceConstant - form ->  - Status: Survived
+--> Mutation 47: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:249 - ReplaceConstant - customizingId ->  - Status: Survived
+--> Mutation 48: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:251 - ReplaceConstant - mandantId ->  - Status: Survived
+--> Mutation 49: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:255 - ReplaceVariable customizingId -> projektattraktivitaetId - Status: Survived
+--> Mutation 50: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:255 - ReplaceVariable customizingId -> mandantId - Status: Survived
+--> Mutation 51: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:256 - ReplaceVariable mandantId -> projektattraktivitaetId - Status: Survived
+--> Mutation 52: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:256 - ReplaceVariable mandantId -> customizingId - Status: Survived
+--> Mutation 53: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:261 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 54: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:261 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 55: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:261 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 56: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:262 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 57: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:266 - ReplaceConstant - step ->  - Status: Survived
+--> Mutation 58: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:267 - ReplaceConstant - next ->  - Status: Survived
+--> Mutation 59: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:268 - ReplaceConstant - Angegebener step:  ->  - Status: Survived
+--> Mutation 60: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:268 - ReplaceVariable stepStr -> next - Status: Survived
+--> Mutation 61: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:270 - ReplaceVariable stepStr -> next - Status: Survived
+--> Mutation 62: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:272 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 63: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:276 - ReplaceVariable next -> stepStr - Status: Survived
+--> Mutation 64: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:276 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 65: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:276 - ReplaceVariable step -> projektattraktivitaetId - Status: Survived
+--> Mutation 66: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:276 - ReplaceVariable step -> mandantId - Status: Survived
+--> Mutation 67: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:276 - ReplaceVariable step -> szId - Status: Survived
+--> Mutation 68: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:276 - ReplaceVariable step -> customizingId - Status: Survived
+--> Mutation 69: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:276 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 70: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:276 - ReplaceComparisonOperator <= -> > - Status: Survived
+--> Mutation 71: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:277 - ReplaceVariable step -> projektattraktivitaetId - Status: Survived
+--> Mutation 72: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:277 - ReplaceVariable step -> mandantId - Status: Survived
+--> Mutation 73: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:277 - ReplaceVariable step -> szId - Status: Survived
+--> Mutation 74: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.populate(Ljavax/servlet/http/HttpServletRequest;)Z:277 - ReplaceVariable step -> customizingId - Status: Survived
+--> Mutation 75: ch.bfh.egov.nutzenportfolio.action.DetailzieleAction.getProjektattraktivitaetId(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/Integer;:365 - ReplaceConstant - customizingId ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

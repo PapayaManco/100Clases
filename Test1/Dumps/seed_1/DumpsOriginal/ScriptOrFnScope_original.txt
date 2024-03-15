@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.yahoo.platform.yui.compressor.ScriptOrFnScope
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/22_byuic/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\22_byuic\evosuite-files\evosuite.properties
+* Connecting to master process on port 17510
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 245
-* Using seed 2482030657809
+* Using seed 1710482233147
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 86 / 245
-* Search finished after 181s and 3801 generations, 3699485 statements, best individual has fitness: 57.0
+* Search finished after 182s and 6299 generations, 5886206 statements, best individual has fitness: 57.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -56,7 +56,7 @@
 * Coverage of criterion CBRANCH: 77%
 * Total number of goals: 39
 * Number of covered goals: 30
-* Generated 17 tests with total length 43
+* Generated 17 tests with total length 44
 * Resulting test suite's coverage: 79% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 47%
@@ -120,19 +120,4 @@
 --> Mutation 56: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:123 - ReplaceConstant - The YUI Compressor ran out of symbols. Aborting... ->  - Status: Survived
 --> Mutation 57: com.yahoo.platform.yui.compressor.ScriptOrFnScope.munge()V:127 - ReplaceComparisonOperator == -> != - Status: Killed
 * Compiling and checking tests
-[MASTER] 02:37:49.672 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:37:54.922 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:00.177 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:05.426 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:10.690 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:15.928 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:21.170 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:26.414 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:31.664 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:36.909 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 02:38:42.158 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'ScriptOrFnScope_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

@@ -1,12 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.heal.module.metadata.CompleteMetadataBean
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/96_heal/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\96_heal\evosuite-files\evosuite.properties
+* Connecting to master process on port 7815
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 04:48:37.519 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class org.heal.module.metadata.CompleteMetadataBean
 * Test criteria:
@@ -19,13 +18,14 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 602
-* Using seed 2482030657809
+* Using seed 1710490470878
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 354 / 602
-[MASTER] 04:48:41.382 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 04:48:41.957 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 04:48:52.316 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
-* Search finished after 181s and 4391 generations, 1994894 statements, best individual has fitness: 31.0
+[MASTER] 05:14:32.508 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 05:14:33.471 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 05:14:41.869 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 05:15:37.979 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+* Search finished after 181s and 7693 generations, 3409474 statements, best individual has fitness: 34.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -38,8 +38,8 @@
 * Number of covered goals: 89
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 16
-* Number of covered goals: 16
+* Total number of goals: 17
+* Number of covered goals: 17
 * Coverage analysis for criterion WEAKMUTATION
 * Coverage of criterion WEAKMUTATION: 92%
 * Total number of goals: 36
@@ -60,7 +60,7 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 89
 * Number of covered goals: 89
-* Generated 88 tests with total length 316
+* Generated 92 tests with total length 327
 * Resulting test suite's coverage: 92% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 75%
@@ -109,18 +109,4 @@
 --> Mutation 35: org.heal.module.metadata.CompleteMetadataBean.collectionToString(Ljava/util/Collection;)Ljava/lang/String;:506 - ReplaceConstant - 
  ->  - Status: Survived
 * Compiling and checking tests
-[MASTER] 04:51:53.906 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:51:59.167 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:52:04.425 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:52:09.673 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:52:14.930 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:52:20.189 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:52:25.429 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:52:30.739 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:52:35.985 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:52:41.241 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'CompleteMetadataBean_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

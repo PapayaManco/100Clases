@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.gudy.azureus2.ui.swt.mainwindow.MainMenu
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 2293
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:27:07.515 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:27:07.909 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class org.gudy.azureus2.ui.swt.mainwindow.MainMenu
 * Test criteria:
@@ -20,8 +18,131 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 305
-* Using seed 2482030657809
+* Using seed 1710474616684
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 218 / 305
-* Search finished after 183s and 134 generations, 10899 statements, best individual has fitness: 296.0
+* Search finished after 186s and 177 generations, 13875 statements, best individual has fitness: 296.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 2%
+* Total number of goals: 143
+* Number of covered goals: 3
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 3%
+* Total number of goals: 34
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 5%
+* Total number of goals: 83
+* Number of covered goals: 4
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 3
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 25%
+* Total number of goals: 4
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 4
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 3%
+* Total number of goals: 34
+* Number of covered goals: 1
+* Generated 1 tests with total length 1
+* Resulting test suite's coverage: 11% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:61 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 1: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:61 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 2: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:61 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 3: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:61 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 4: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:71 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 5: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:71 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 6: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:89 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 7: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:89 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 8: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:89 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 9: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.createMenus(Lorg/eclipse/swt/widgets/Shell;)V:94 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 10: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:143 - ReplaceVariable openMenuItem -> fileItem - Status: Survived
+--> Mutation 11: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:144 - ReplaceVariable openSubMenu -> fileMenu - Status: Survived
+--> Mutation 12: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:145 - ReplaceVariable openSubMenu -> fileMenu - Status: Survived
+--> Mutation 13: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:146 - ReplaceVariable openSubMenu -> fileMenu - Status: Survived
+--> Mutation 14: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:147 - ReplaceVariable openSubMenu -> fileMenu - Status: Survived
+--> Mutation 15: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:149 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 16: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:151 - ReplaceVariable shareMenuItem -> fileItem - Status: Survived
+--> Mutation 17: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:151 - ReplaceVariable shareMenuItem -> openMenuItem - Status: Survived
+--> Mutation 18: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:152 - ReplaceVariable shareSubMenu -> openSubMenu - Status: Survived
+--> Mutation 19: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:152 - ReplaceVariable shareSubMenu -> fileMenu - Status: Survived
+--> Mutation 20: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:153 - ReplaceVariable shareSubMenu -> openSubMenu - Status: Survived
+--> Mutation 21: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:153 - ReplaceVariable shareSubMenu -> fileMenu - Status: Survived
+--> Mutation 22: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:154 - ReplaceVariable shareSubMenu -> openSubMenu - Status: Survived
+--> Mutation 23: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:154 - ReplaceVariable shareSubMenu -> fileMenu - Status: Survived
+--> Mutation 24: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:155 - ReplaceVariable shareSubMenu -> openSubMenu - Status: Survived
+--> Mutation 25: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:155 - ReplaceVariable shareSubMenu -> fileMenu - Status: Survived
+--> Mutation 26: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:157 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 27: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:157 - ReplaceVariable fileMenu -> shareSubMenu - Status: Survived
+--> Mutation 28: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:159 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 29: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:159 - ReplaceVariable fileMenu -> shareSubMenu - Status: Survived
+--> Mutation 30: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:160 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 31: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:160 - ReplaceVariable fileMenu -> shareSubMenu - Status: Survived
+--> Mutation 32: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:161 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 33: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:161 - ReplaceVariable fileMenu -> shareSubMenu - Status: Survived
+--> Mutation 34: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:163 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 35: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:163 - ReplaceVariable fileMenu -> shareSubMenu - Status: Survived
+--> Mutation 36: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:164 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 37: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:164 - ReplaceVariable fileMenu -> shareSubMenu - Status: Survived
+--> Mutation 38: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:165 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 39: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:165 - ReplaceVariable fileMenu -> shareSubMenu - Status: Survived
+--> Mutation 40: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:166 - ReplaceVariable fileMenu -> openSubMenu - Status: Survived
+--> Mutation 41: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addFileMenu(Lorg/eclipse/swt/widgets/Shell;)V:166 - ReplaceVariable fileMenu -> shareSubMenu - Status: Survived
+--> Mutation 42: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addViewMenu(Lorg/eclipse/swt/widgets/Shell;)V:200 - ReplaceConstant - 22 -> 0 - Status: Survived
+--> Mutation 43: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addViewMenu(Lorg/eclipse/swt/widgets/Shell;)V:200 - ReplaceConstant - 22 -> 1 - Status: Survived
+--> Mutation 44: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addViewMenu(Lorg/eclipse/swt/widgets/Shell;)V:200 - ReplaceConstant - 22 -> -1 - Status: Survived
+--> Mutation 45: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addViewMenu(Lorg/eclipse/swt/widgets/Shell;)V:200 - ReplaceConstant - 22 -> 21 - Status: Survived
+--> Mutation 46: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addViewMenu(Lorg/eclipse/swt/widgets/Shell;)V:200 - ReplaceConstant - 22 -> 23 - Status: Survived
+--> Mutation 47: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addViewMenu(Lorg/eclipse/swt/widgets/Shell;)V:207 - ReplaceConstant - Error creating View Menu ->  - Status: Survived
+--> Mutation 48: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:213 - ReplaceConstant - MainWindow.menu.view.show ->  - Status: Survived
+--> Mutation 49: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:214 - ReplaceConstant - Beta Programme Enabled ->  - Status: Survived
+--> Mutation 50: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:215 - InsertUnaryOp Negation of enabled - Status: Survived
+--> Mutation 51: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:215 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 52: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:216 - ReplaceConstant - 32 -> 0 - Status: Survived
+--> Mutation 53: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:216 - ReplaceConstant - 32 -> 1 - Status: Survived
+--> Mutation 54: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:216 - ReplaceConstant - 32 -> -1 - Status: Survived
+--> Mutation 55: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:216 - ReplaceConstant - 32 -> 31 - Status: Survived
+--> Mutation 56: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:216 - ReplaceConstant - 32 -> 33 - Status: Survived
+--> Mutation 57: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:216 - ReplaceConstant - MainWindow.menu.view.beta ->  - Status: Survived
+--> Mutation 58: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:246 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 59: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:246 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 60: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.buildSimpleViewMenu(Lorg/eclipse/swt/widgets/Menu;)V:253 - ReplaceConstant - Error creating View Menu ->  - Status: Survived
+--> Mutation 61: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addTorrentMenu(Lorg/eclipse/swt/widgets/Shell;)V:267 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 62: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addTorrentMenu(Lorg/eclipse/swt/widgets/Shell;)V:267 - ReplaceConstant - show_torrents_menu ->  - Status: Survived
+--> Mutation 63: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addTorrentMenu(Lorg/eclipse/swt/widgets/Shell;)V:267 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 64: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addPluginsMenu(Lorg/eclipse/swt/widgets/Shell;)V:302 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 65: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addV2HelpMenu(Lorg/eclipse/swt/widgets/Shell;)V:314 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 66: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addV2HelpMenu(Lorg/eclipse/swt/widgets/Shell;)V:314 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 67: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addV2HelpMenu(Lorg/eclipse/swt/widgets/Shell;)V:314 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 68: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addV2HelpMenu(Lorg/eclipse/swt/widgets/Shell;)V:328 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 69: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.addV2HelpMenu(Lorg/eclipse/swt/widgets/Shell;)V:328 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 70: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.indent(Lorg/eclipse/swt/widgets/MenuItem;)V:341 - ReplaceConstant - IndentItem ->  - Status: Survived
+--> Mutation 71: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.indent(Lorg/eclipse/swt/widgets/MenuItem;)V:341 - ReplaceConstant - YES ->  - Status: Survived
+--> Mutation 72: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.indent(Lorg/eclipse/swt/widgets/MenuItem;)V:342 - ReplaceConstant -    ->  - Status: Survived
+--> Mutation 73: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.getMenu(Ljava/lang/String;)Lorg/eclipse/swt/widgets/Menu;:346 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 74: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.getMenu(Ljava/lang/String;)Lorg/eclipse/swt/widgets/Menu;:346 - ReplaceConstant - menu.bar ->  - Status: Survived
+--> Mutation 75: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.getMenu(Ljava/lang/String;)Lorg/eclipse/swt/widgets/Menu;:346 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 76: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.getMenu(Ljava/lang/String;)Lorg/eclipse/swt/widgets/Menu;:346 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 77: org.gudy.azureus2.ui.swt.mainwindow.MainMenu.getMenu(Ljava/lang/String;)Lorg/eclipse/swt/widgets/Menu;:346 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 78: org.gudy.azureus2.ui.swt.mainwindow.MainMenu$2.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:220 - ReplaceConstant - BetaProgramme ->  - Status: Survived
+--> Mutation 79: org.gudy.azureus2.ui.swt.mainwindow.MainMenu$2.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:220 - ReplaceConstant - main.area.beta ->  - Status: Survived
+--> Mutation 80: org.gudy.azureus2.ui.swt.mainwindow.MainMenu$2.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:220 - ReplaceConstant - {Sidebar.beta.title} ->  - Status: Survived
+--> Mutation 81: org.gudy.azureus2.ui.swt.mainwindow.MainMenu$2.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:220 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 82: org.gudy.azureus2.ui.swt.mainwindow.MainMenu$2.handleEvent(Lorg/eclipse/swt/widgets/Event;)V:225 - ReplaceConstant - image.sidebar.beta ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

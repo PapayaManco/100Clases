@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/102_squirrel-sql/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
+* Connecting to master process on port 11658
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 23:44:18.693 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 23:44:18.929 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 23:44:19.455 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl
 * Test criteria:
@@ -21,15 +18,221 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 429
-* Using seed 2482030657809
+* Using seed 1710472009520
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 207 / 429
-[MASTER] 23:44:22.071 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 23:44:23.246 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 23:44:38.354 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 23:44:51.619 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 23:44:51.625 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 23:44:52.049 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 23:46:19.531 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 183s and 1491 generations, 348446 statements, best individual has fitness: 131.0
+[MASTER] 00:06:53.487 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 00:06:55.639 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 00:07:07.725 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 00:07:10.491 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 00:07:30.347 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 2014 generations, 471692 statements, best individual has fitness: 144.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 50%
+* Total number of goals: 136
+* Number of covered goals: 68
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 28%
+* Total number of goals: 50
+* Number of covered goals: 14
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 42%
+* Total number of goals: 12
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 61%
+* Total number of goals: 168
+* Number of covered goals: 102
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 64%
+* Total number of goals: 11
+* Number of covered goals: 7
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 32%
+* Total number of goals: 50
+* Number of covered goals: 16
+* Generated 15 tests with total length 90
+* Resulting test suite's coverage: 71% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 8%
+* There are surviving mutants: 
+--> Mutation 0: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setUpdateUtil(Lnet/sourceforge/squirrel_sql/client/update/UpdateUtil;)V:91 - ReplaceConstant - setUpdateUtil ->  - Status: Survived
+--> Mutation 1: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setUpdateUtil(Lnet/sourceforge/squirrel_sql/client/update/UpdateUtil;)V:91 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 2: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setUpdateUtil(Lnet/sourceforge/squirrel_sql/client/update/UpdateUtil;)V:91 - ReplaceConstant - 2 -> 1 - Status: Killed
+--> Mutation 3: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setUpdateUtil(Lnet/sourceforge/squirrel_sql/client/update/UpdateUtil;)V:91 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 4: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setUpdateUtil(Lnet/sourceforge/squirrel_sql/client/update/UpdateUtil;)V:91 - ReplaceConstant - 2 -> 3 - Status: Killed
+--> Mutation 5: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setUpdateUtil(Lnet/sourceforge/squirrel_sql/client/update/UpdateUtil;)V:91 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 6: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setUpdateUtil(Lnet/sourceforge/squirrel_sql/client/update/UpdateUtil;)V:91 - ReplaceConstant - util ->  - Status: Survived
+--> Mutation 7: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setUpdateUtil(Lnet/sourceforge/squirrel_sql/client/update/UpdateUtil;)V:91 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 8: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setArtifactInstallerFactory(Lnet/sourceforge/squirrel_sql/client/update/gui/installer/ArtifactInstallerFactory;)V:101 - ReplaceConstant - setArtifactInstallerFactory ->  - Status: Survived
+--> Mutation 9: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setArtifactInstallerFactory(Lnet/sourceforge/squirrel_sql/client/update/gui/installer/ArtifactInstallerFactory;)V:101 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 10: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setArtifactInstallerFactory(Lnet/sourceforge/squirrel_sql/client/update/gui/installer/ArtifactInstallerFactory;)V:101 - ReplaceConstant - 2 -> 1 - Status: Killed
+--> Mutation 11: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setArtifactInstallerFactory(Lnet/sourceforge/squirrel_sql/client/update/gui/installer/ArtifactInstallerFactory;)V:101 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 12: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setArtifactInstallerFactory(Lnet/sourceforge/squirrel_sql/client/update/gui/installer/ArtifactInstallerFactory;)V:101 - ReplaceConstant - 2 -> 3 - Status: Killed
+--> Mutation 13: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setArtifactInstallerFactory(Lnet/sourceforge/squirrel_sql/client/update/gui/installer/ArtifactInstallerFactory;)V:101 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 14: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setArtifactInstallerFactory(Lnet/sourceforge/squirrel_sql/client/update/gui/installer/ArtifactInstallerFactory;)V:101 - ReplaceConstant - artifactInstallerFactory ->  - Status: Survived
+--> Mutation 15: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setArtifactInstallerFactory(Lnet/sourceforge/squirrel_sql/client/update/gui/installer/ArtifactInstallerFactory;)V:101 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 16: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setScriptLineFixers(Ljava/util/List;)V:111 - ReplaceConstant - setScriptLineFixers ->  - Status: Survived
+--> Mutation 17: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setScriptLineFixers(Ljava/util/List;)V:111 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 18: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setScriptLineFixers(Ljava/util/List;)V:111 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 19: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setScriptLineFixers(Ljava/util/List;)V:111 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 20: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setScriptLineFixers(Ljava/util/List;)V:111 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 21: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setScriptLineFixers(Ljava/util/List;)V:111 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 22: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setScriptLineFixers(Ljava/util/List;)V:111 - ReplaceConstant - scriptLineFixers ->  - Status: Survived
+--> Mutation 23: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setScriptLineFixers(Ljava/util/List;)V:111 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 24: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setIoutils(Lnet/sourceforge/squirrel_sql/fw/util/IOUtilities;)V:125 - ReplaceConstant - setIoutils ->  - Status: Survived
+--> Mutation 25: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setIoutils(Lnet/sourceforge/squirrel_sql/fw/util/IOUtilities;)V:125 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 26: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setIoutils(Lnet/sourceforge/squirrel_sql/fw/util/IOUtilities;)V:125 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 27: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setIoutils(Lnet/sourceforge/squirrel_sql/fw/util/IOUtilities;)V:125 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 28: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setIoutils(Lnet/sourceforge/squirrel_sql/fw/util/IOUtilities;)V:125 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 29: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setIoutils(Lnet/sourceforge/squirrel_sql/fw/util/IOUtilities;)V:125 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 30: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setIoutils(Lnet/sourceforge/squirrel_sql/fw/util/IOUtilities;)V:125 - ReplaceConstant - ioutils ->  - Status: Survived
+--> Mutation 31: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.setIoutils(Lnet/sourceforge/squirrel_sql/fw/util/IOUtilities;)V:125 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 32: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.<init>()V:138 - ReplaceConstant - PreLaunchHelperImpl.installUpdatesTitle ->  - Status: Survived
+--> Mutation 33: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.<init>()V:141 - ReplaceConstant - PreLaunchHelperImpl.installUpdatesMessage ->  - Status: Survived
+--> Mutation 34: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.<init>()V:144 - ReplaceConstant - PreLaunchHelperImpl.restoreFromBackupTitle ->  - Status: Survived
+--> Mutation 35: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.<init>()V:148 - ReplaceConstant - PreLaunchHelperImpl.restoreFromBackupMessage ->  - Status: Survived
+--> Mutation 36: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.<init>()V:152 - ReplaceConstant - PreLaunchHelperImpl.backupFailedMessage ->  - Status: Survived
+--> Mutation 37: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.<init>()V:155 - ReplaceConstant - PreLaunchHelperImpl.installFailedMessage ->  - Status: Survived
+--> Mutation 38: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.<init>()V:159 - ReplaceConstant - PreLaunchHelperImpl.restoreFailedMessage ->  - Status: Survived
+--> Mutation 39: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Z)V:170 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 40: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Z)V:172 - ReplaceConstant - Pre-launch update app detected a changeListFile to be processed ->  - Status: Survived
+--> Mutation 41: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Z)V:173 - InsertUnaryOp Negation of prompt - Status: Survived
+--> Mutation 42: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Z)V:173 - InsertUnaryOp IINC 1 prompt - Status: Survived
+--> Mutation 43: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Z)V:173 - InsertUnaryOp IINC -1 prompt - Status: Survived
+--> Mutation 44: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Z)V:173 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 45: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Z)V:175 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 46: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Z)V:181 - ReplaceConstant - User cancelled update installation ->  - Status: Survived
+--> Mutation 47: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.updateLaunchScript()V:203 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 48: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.updateLaunchScript()V:204 - ReplaceConstant - Applying updates to launch script:  ->  - Status: Survived
+--> Mutation 49: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.updateLaunchScript()V:210 - ReplaceVariable lines -> launchScriptLocations - Status: Survived
+--> Mutation 50: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:217 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 51: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:222 - ReplaceConstant - os.name ->  - Status: Survived
+--> Mutation 52: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:223 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 53: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:223 - ReplaceConstant - windows ->  - Status: Survived
+--> Mutation 54: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:223 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 55: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:223 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 56: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:223 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 57: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:223 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 58: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:224 - ReplaceConstant - squirrel-sql.bat ->  - Status: Survived
+--> Mutation 59: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:226 - ReplaceConstant - squirrel-sql.sh ->  - Status: Survived
+--> Mutation 60: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:228 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 61: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:228 - ReplaceConstant - mac ->  - Status: Survived
+--> Mutation 62: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:228 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 63: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:228 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 64: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:228 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 65: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:228 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 66: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:231 - ReplaceConstant - /MacOS/squirrel-sql.sh ->  - Status: Survived
+--> Mutation 67: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getLaunchScriptLocations()Ljava/util/List;:234 - ReplaceConstant - squirrel-sql.sh ->  - Status: Survived
+--> Mutation 68: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getMacOSContentsPath()Ljava/lang/String;:242 - ReplaceConstant - user.dir ->  - Status: Survived
+--> Mutation 69: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getMacOSContentsPath()Ljava/lang/String;:243 - ReplaceConstant - Contents ->  - Status: Survived
+--> Mutation 70: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getMacOSContentsPath()Ljava/lang/String;:244 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 71: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.getMacOSContentsPath()Ljava/lang/String;:244 - ReplaceConstant - /Contents ->  - Status: Survived
+--> Mutation 72: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:251 - ReplaceConstant - user.dir ->  - Status: Survived
+--> Mutation 73: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:254 - ReplaceConstant - /update/downloads/core/squirrel-sql.jar ->  - Status: Survived
+--> Mutation 74: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:255 - ReplaceConstant - splash.jpg ->  - Status: Survived
+--> Mutation 75: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:256 - ReplaceVariable squirrelHome -> jarFilename - Status: Survived
+--> Mutation 76: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:256 - ReplaceVariable squirrelHome -> resourceName - Status: Survived
+--> Mutation 77: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:256 - ReplaceConstant - /icons ->  - Status: Survived
+--> Mutation 78: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:257 - ReplaceVariable pathToIconsDir -> resourceName - Status: Survived
+--> Mutation 79: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:257 - ReplaceVariable pathToIconsDir -> squirrelHome - Status: Survived
+--> Mutation 80: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:257 - ReplaceVariable pathToIconsDir -> jarFilename - Status: Survived
+--> Mutation 81: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:257 - ReplaceConstant - / ->  - Status: Survived
+--> Mutation 82: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:257 - ReplaceVariable resourceName -> squirrelHome - Status: Survived
+--> Mutation 83: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:257 - ReplaceVariable resourceName -> jarFilename - Status: Survived
+--> Mutation 84: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:257 - ReplaceVariable resourceName -> pathToIconsDir - Status: Survived
+--> Mutation 85: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:259 - ReplaceVariable pathToIconsDir -> destinationFile - Status: Survived
+--> Mutation 86: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:259 - ReplaceVariable pathToIconsDir -> resourceName - Status: Survived
+--> Mutation 87: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:259 - ReplaceVariable pathToIconsDir -> squirrelHome - Status: Survived
+--> Mutation 88: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:259 - ReplaceVariable pathToIconsDir -> jarFilename - Status: Survived
+--> Mutation 89: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:260 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 90: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:261 - ReplaceConstant - Icons directory ( ->  - Status: Survived
+--> Mutation 91: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:261 - ReplaceVariable pathToIconsDir -> destinationFile - Status: Survived
+--> Mutation 92: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:261 - ReplaceVariable pathToIconsDir -> resourceName - Status: Survived
+--> Mutation 93: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:261 - ReplaceVariable pathToIconsDir -> squirrelHome - Status: Survived
+--> Mutation 94: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:261 - ReplaceVariable pathToIconsDir -> jarFilename - Status: Survived
+--> Mutation 95: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:261 - ReplaceConstant - ) doesn't exist, so attempting to create it. ->  - Status: Survived
+--> Mutation 96: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:263 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 97: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:263 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 98: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:264 - ReplaceConstant - Failed to create icons directory ( ->  - Status: Survived
+--> Mutation 99: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:264 - ReplaceVariable pathToIconsDir -> destinationFile - Status: Survived
+--> Mutation 100: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:264 - ReplaceVariable pathToIconsDir -> resourceName - Status: Survived
+--> Mutation 101: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:264 - ReplaceVariable pathToIconsDir -> squirrelHome - Status: Survived
+--> Mutation 102: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:264 - ReplaceVariable pathToIconsDir -> jarFilename - Status: Survived
+--> Mutation 103: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:264 - ReplaceConstant - ) ->  - Status: Survived
+--> Mutation 104: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:268 - ReplaceConstant - Copying splash.jpg from jarfile ( ->  - Status: Survived
+--> Mutation 105: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:268 - ReplaceVariable jarFilename -> destinationFile - Status: Survived
+--> Mutation 106: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:268 - ReplaceVariable jarFilename -> resourceName - Status: Survived
+--> Mutation 107: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:268 - ReplaceVariable jarFilename -> squirrelHome - Status: Survived
+--> Mutation 108: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:268 - ReplaceVariable jarFilename -> pathToIconsDir - Status: Survived
+--> Mutation 109: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.copySplashImage()V:268 - ReplaceConstant - ) to  ->  - Status: Survived
+--> Mutation 110: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.restoreFromBackup()V:279 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 111: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.restoreFromBackup()V:285 - ReplaceConstant - changeList.xml ->  - Status: Survived
+--> Mutation 112: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.restoreFromBackup()V:286 - ReplaceVariable changeListFile -> backupDir - Status: Survived
+--> Mutation 113: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.restoreFromBackup()V:289 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 114: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.restoreFromBackup()V:292 - ReplaceConstant - restoreFromBackup:  ->  - Status: Survived
+--> Mutation 115: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.restoreFromBackup()V:298 - ReplaceConstant - Unexpected error while attempting restore from backup:  ->  - Status: Survived
+--> Mutation 116: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.restoreFromBackup()V:303 - ReplaceConstant - Pre-launch update app finished ->  - Status: Survived
+--> Mutation 117: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:318 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 118: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:321 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 119: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - ReplaceConstant - hasChangesToBeApplied: changeListFile ( ->  - Status: Survived
+--> Mutation 120: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - InsertUnaryOp Negation of changeListSize - Status: Survived
+--> Mutation 121: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - InsertUnaryOp IINC 1 changeListSize - Status: Survived
+--> Mutation 122: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - InsertUnaryOp IINC -1 changeListSize - Status: Survived
+--> Mutation 123: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - ReplaceConstant - ) has  ->  - Status: Survived
+--> Mutation 124: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - InsertUnaryOp Negation of changeListSize - Status: Survived
+--> Mutation 125: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - InsertUnaryOp IINC 1 changeListSize - Status: Survived
+--> Mutation 126: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - InsertUnaryOp IINC -1 changeListSize - Status: Survived
+--> Mutation 127: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:326 - ReplaceConstant -  changes to be applied ->  - Status: Survived
+--> Mutation 128: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:329 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 129: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:329 - InsertUnaryOp Negation of changeListSize - Status: Survived
+--> Mutation 130: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:329 - InsertUnaryOp IINC 1 changeListSize - Status: Survived
+--> Mutation 131: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:329 - InsertUnaryOp IINC -1 changeListSize - Status: Survived
+--> Mutation 132: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:329 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 133: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:329 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 134: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:329 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 135: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:331 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 136: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:335 - ReplaceConstant - Aborting update: changeList was found with no updates ->  - Status: Survived
+--> Mutation 137: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:340 - ReplaceConstant - installUpdates: changeList file ( ->  - Status: Survived
+--> Mutation 138: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:340 - ReplaceConstant - ) doesn't exist ->  - Status: Survived
+--> Mutation 139: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:345 - ReplaceConstant - hasChangesToBeApplied: unable to get change list from file ( ->  - Status: Survived
+--> Mutation 140: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:345 - ReplaceConstant - ):  ->  - Status: Survived
+--> Mutation 141: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:349 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 142: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:349 - InsertUnaryOp IINC 1 result - Status: Killed
+--> Mutation 143: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.hasChangesToBeApplied(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)Z:349 - InsertUnaryOp IINC -1 result - Status: Killed
+--> Mutation 144: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.shutdown(Ljava/lang/String;)V:359 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 145: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.installUpdates(Lnet/sourceforge/squirrel_sql/fw/util/FileWrapper;)V:402 - ReplaceConstant - Update Installer Thread ->  - Status: Survived
+--> Mutation 146: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:417 - ReplaceVariable message -> title - Status: Survived
+--> Mutation 147: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:417 - ReplaceVariable title -> message - Status: Survived
+--> Mutation 148: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:417 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 149: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:417 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 150: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:417 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 151: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:417 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 152: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:417 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 153: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:417 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 154: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:420 - InsertUnaryOp Negation of choice - Status: Survived
+--> Mutation 155: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:420 - InsertUnaryOp IINC 1 choice - Status: Survived
+--> Mutation 156: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:420 - InsertUnaryOp IINC -1 choice - Status: Survived
+--> Mutation 157: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:420 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 158: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:420 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 159: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:420 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 160: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:420 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 161: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showConfirmDialog(Ljava/lang/String;Ljava/lang/String;)Z:420 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 162: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showErrorDialog(Ljava/lang/String;)V:431 - ReplaceConstant - Error ->  - Status: Survived
+--> Mutation 163: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.showErrorDialog(Ljava/lang/String;)V:431 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 164: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl.logInfo(Ljava/lang/String;)V:436 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 165: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl$1.run()V:381 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 166: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl$1.run()V:390 - ReplaceConstant - Pre-launch update app finished ->  - Status: Survived
+--> Mutation 167: net.sourceforge.squirrel_sql.client.update.gui.installer.PreLaunchHelperImpl$1.run()V:394 - ReplaceConstant - :  ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

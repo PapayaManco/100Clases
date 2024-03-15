@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 19008
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:33:29.859 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:33:29.944 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase
 * Test criteria:
@@ -20,12 +18,350 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 635
-* Using seed 2482030657809
+* Using seed 1710475028465
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 99 / 635
-[MASTER] 00:33:31.489 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself
-[MASTER] 00:33:31.489 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
-[MASTER] 00:33:34.513 [logback-1] WARN  TestCluster - Failed to check cache for com.aelitis.azureus.ui.common.table.TableView<DATASOURCETYPE> : Type points to itself
-[MASTER] 00:33:41.809 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-* Search finished after 181s and 2878 generations, 356219 statements, best individual has fitness: 590.0
+[MASTER] 00:57:12.503 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself
+[MASTER] 00:57:12.503 [logback-1] WARN  TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 00:57:14.173 [logback-1] WARN  TestCluster - Failed to check cache for com.aelitis.azureus.ui.common.table.TableView<DATASOURCETYPE> : Type points to itself
+[MASTER] 00:57:17.676 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 5044 generations, 619175 statements, best individual has fitness: 590.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 3%
+* Total number of goals: 143
+* Number of covered goals: 5
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 1%
+* Total number of goals: 92
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 13%
+* Total number of goals: 300
+* Number of covered goals: 38
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 25%
+* Total number of goals: 4
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 4
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 1%
+* Total number of goals: 92
+* Number of covered goals: 1
+* Generated 1 tests with total length 1
+* Resulting test suite's coverage: 24% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 1: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> HT_MD5 - Status: Survived
+--> Mutation 2: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_TIME - Status: Survived
+--> Mutation 3: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 4: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 5: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 6: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 7: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 8: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 9: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 10: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 11: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 12: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> hash_type - Status: Survived
+--> Mutation 13: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 14: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 15: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:74 - ReplaceVariable _hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 16: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:76 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 17: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:78 - ReplaceConstant - -2 -> 0 - Status: Survived
+--> Mutation 18: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:78 - ReplaceConstant - -2 -> 1 - Status: Survived
+--> Mutation 19: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:78 - ReplaceConstant - -2 -> -1 - Status: Survived
+--> Mutation 20: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:78 - ReplaceConstant - -2 -> -3 - Status: Survived
+--> Mutation 21: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceConstant - FilesView. ->  - Status: Survived
+--> Mutation 22: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 23: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 24: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 25: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 26: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 27: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 28: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 29: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 30: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 31: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 32: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 33: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 34: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 35: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 36: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 37: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:80 - ReplaceConstant - .calculate ->  - Status: Survived
+--> Mutation 38: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.<init>(Ljava/lang/String;I)V:82 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 39: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:107 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 40: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:107 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 41: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:107 - ReplaceConstant - content ->  - Status: Survived
+--> Mutation 42: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:110 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 43: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:110 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 44: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:110 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 45: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:110 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 46: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:119 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 47: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:126 - ReplaceConstant - < ->  - Status: Survived
+--> Mutation 48: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:126 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 49: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:126 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 50: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:126 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 51: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:126 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 52: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:128 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 53: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 54: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 55: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 56: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 57: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 58: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 59: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 60: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 61: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 62: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 63: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:134 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 64: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:136 - ReplaceConstant - 21 -> 0 - Status: Survived
+--> Mutation 65: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:136 - ReplaceConstant - 21 -> 1 - Status: Survived
+--> Mutation 66: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:136 - ReplaceConstant - 21 -> -1 - Status: Survived
+--> Mutation 67: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:136 - ReplaceConstant - 21 -> 20 - Status: Survived
+--> Mutation 68: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:136 - ReplaceConstant - 21 -> 22 - Status: Survived
+--> Mutation 69: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:137 - ReplaceConstant - FilesView.click.info ->  - Status: Survived
+--> Mutation 70: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 71: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 72: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 73: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 74: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 75: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 76: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 77: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 78: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 79: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 80: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:139 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 81: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:141 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 82: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:145 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 83: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:145 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 84: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:145 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 85: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:145 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 86: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:145 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 87: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:152 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 88: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:152 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 89: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:152 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 90: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:152 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 91: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:152 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 92: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:157 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 93: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 94: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 95: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 96: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 97: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 98: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 99: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 100: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 101: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 102: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 103: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 104: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 105: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 106: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 107: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.cellMouseTrigger(Lorg/gudy/azureus2/plugins/ui/tables/TableCellMouseEvent;)V:159 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 108: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:168 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 109: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 110: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 111: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 112: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 113: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 114: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 115: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 116: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 117: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 118: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 119: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 120: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 121: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 122: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 123: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:173 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 124: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:189 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 125: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:190 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 126: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:190 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 127: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:190 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 128: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:191 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 129: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:191 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 130: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:193 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 131: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:196 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 132: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:198 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 133: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:198 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 134: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:198 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 135: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:198 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 136: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:200 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 137: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.isFileReady(Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Z:203 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 138: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:211 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 139: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 140: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 141: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 142: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 143: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 144: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 145: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 146: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 147: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 148: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 149: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 150: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 151: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 152: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 153: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 154: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 155: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 156: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 157: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 158: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 159: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 160: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:220 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 161: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:225 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 162: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 163: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 164: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 165: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 166: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 167: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 168: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 169: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 170: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 171: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 172: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 173: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 174: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 175: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 176: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:232 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 177: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 178: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 179: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 180: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 181: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 182: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 183: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 184: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 185: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 186: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 187: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 188: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 189: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 190: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 191: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.updateHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)V:235 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 192: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:379 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 193: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:386 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 194: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 195: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 196: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 197: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 198: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 199: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 200: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 201: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 202: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 203: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 204: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 205: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 206: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 207: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 208: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 209: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 210: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 211: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 212: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 213: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 214: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 215: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:395 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 216: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 217: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_CONNECTION - Status: Survived
+--> Mutation 218: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> HT_MD5 - Status: Survived
+--> Mutation 219: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_TIME - Status: Survived
+--> Mutation 220: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_BYTES - Status: Survived
+--> Mutation 221: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 222: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 223: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> HT_CRC32 - Status: Survived
+--> Mutation 224: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_SHARING - Status: Survived
+--> Mutation 225: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_CONTENT - Status: Survived
+--> Mutation 226: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_SWARM - Status: Survived
+--> Mutation 227: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_SETTINGS - Status: Survived
+--> Mutation 228: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_PROGRESS - Status: Survived
+--> Mutation 229: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 230: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_PROTOCOL - Status: Survived
+--> Mutation 231: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable active_hash -> CAT_TRACKER - Status: Survived
+--> Mutation 232: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 233: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 234: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 235: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 236: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 237: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 238: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 239: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 240: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 241: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 242: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 243: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 244: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 245: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 246: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 247: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:397 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 248: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> INTERVAL_LIVE - Status: Survived
+--> Mutation 249: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> TYPE_GRAPHIC - Status: Survived
+--> Mutation 250: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> INTERVAL_GRAPHIC - Status: Survived
+--> Mutation 251: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> INTERVAL_INVALID_ONLY - Status: Survived
+--> Mutation 252: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> TYPE_TEXT_ONLY - Status: Survived
+--> Mutation 253: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> POSITION_LAST - Status: Survived
+--> Mutation 254: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> POSITION_INVISIBLE - Status: Survived
+--> Mutation 255: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> ALIGN_LEAD - Status: Survived
+--> Mutation 256: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> MENU_STYLE_HEADER - Status: Survived
+--> Mutation 257: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> ALIGN_CENTER - Status: Survived
+--> Mutation 258: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> ALIGN_TRAIL - Status: Survived
+--> Mutation 259: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> MENU_STYLE_COLUMN_DATA - Status: Survived
+--> Mutation 260: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> ALIGN_TOP - Status: Survived
+--> Mutation 261: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> ALIGN_BOTTOM - Status: Survived
+--> Mutation 262: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - ReplaceVariable active_percent -> TYPE_TEXT - Status: Survived
+--> Mutation 263: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 264: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 265: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:399 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 266: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:403 - ReplaceConstant - ... ->  - Status: Survived
+--> Mutation 267: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:408 - ReplaceConstant - fileotherhashes ->  - Status: Survived
+--> Mutation 268: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:410 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 269: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:414 - ReplaceVariable file_hashes -> other_hashes - Status: Survived
+--> Mutation 270: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:414 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 271: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable file_hashes -> other_hashes - Status: Survived
+--> Mutation 272: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_CONNECTION - Status: Survived
+--> Mutation 273: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> HT_MD5 - Status: Survived
+--> Mutation 274: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_TIME - Status: Survived
+--> Mutation 275: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_BYTES - Status: Survived
+--> Mutation 276: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_PEER_IDENTIFICATION - Status: Survived
+--> Mutation 277: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> UD_FORCE_VISIBLE - Status: Survived
+--> Mutation 278: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> HT_CRC32 - Status: Survived
+--> Mutation 279: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_SHARING - Status: Survived
+--> Mutation 280: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_CONTENT - Status: Survived
+--> Mutation 281: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_SWARM - Status: Survived
+--> Mutation 282: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_SETTINGS - Status: Survived
+--> Mutation 283: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_PROGRESS - Status: Survived
+--> Mutation 284: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_ESSENTIAL - Status: Survived
+--> Mutation 285: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_PROTOCOL - Status: Survived
+--> Mutation 286: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase.getHash(Ljava/lang/String;Lorg/gudy/azureus2/core3/disk/DiskManagerFileInfo;)Ljava/lang/String;:416 - ReplaceVariable hash_type -> CAT_TRACKER - Status: Survived
+--> Mutation 287: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$2.runSupport()V:244 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 288: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$2.runSupport()V:362 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 289: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$2.runSupport()V:362 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 290: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$2.runSupport()V:362 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 291: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$2.runSupport()V:249 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 292: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$2.runSupport()V:362 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 293: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$2.runSupport()V:362 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 294: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$2.runSupport()V:362 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 295: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$1.selected(Lorg/gudy/azureus2/plugins/ui/menus/MenuItem;Ljava/lang/Object;)V:93 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 296: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$1.selected(Lorg/gudy/azureus2/plugins/ui/menus/MenuItem;Ljava/lang/Object;)V:93 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 297: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$1.selected(Lorg/gudy/azureus2/plugins/ui/menus/MenuItem;Ljava/lang/Object;)V:93 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 298: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$1.selected(Lorg/gudy/azureus2/plugins/ui/menus/MenuItem;Ljava/lang/Object;)V:93 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 299: org.gudy.azureus2.ui.swt.views.tableitems.files.FileHashItemBase$1.selected(Lorg/gudy/azureus2/plugins/ui/menus/MenuItem;Ljava/lang/Object;)V:95 - ReplaceVariable _file -> target - Status: Survived
+* Compiling and checking tests
 * Computation finished

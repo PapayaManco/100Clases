@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: wheel.util.ActionRegistry
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/80_wheelwebtool/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\80_wheelwebtool\evosuite-files\evosuite.properties
+* Connecting to master process on port 4222
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 04:21:13.819 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 04:21:13.839 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
 * Finished analyzing classpath
 * Generating tests for class wheel.util.ActionRegistry
 * Test criteria:
@@ -20,8 +18,91 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 121
-* Using seed 2482030657809
+* Using seed 1710489114745
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 26 / 121
-* Search finished after 181s and 5217 generations, 2235319 statements, best individual has fitness: 23.0
+* Search finished after 182s and 8796 generations, 4010557 statements, best individual has fitness: 8.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 88%
+* Total number of goals: 43
+* Number of covered goals: 38
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 83%
+* Total number of goals: 6
+* Number of covered goals: 5
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Generated 9 tests with total length 37
+* Resulting test suite's coverage: 90% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 70%
+* There are surviving mutants: 
+--> Mutation 0: wheel.util.ActionRegistry.addEntry(Ljava/lang/String;Ljava/lang/String;Z)Lwheel/util/Entry;:37 - ReplaceVariable methodName -> className - Status: Killed
+--> Mutation 1: wheel.util.ActionRegistry.addEntry(Ljava/lang/String;Ljava/lang/String;Z)Lwheel/util/Entry;:37 - ReplaceVariable className -> methodName - Status: Killed
+--> Mutation 2: wheel.util.ActionRegistry.addEntry(Ljava/lang/String;Ljava/lang/String;Z)Lwheel/util/Entry;:37 - InsertUnaryOp Negation of rebuild - Status: Survived
+--> Mutation 3: wheel.util.ActionRegistry.addEntry(Ljava/lang/String;Ljava/lang/String;Z)Lwheel/util/Entry;:37 - InsertUnaryOp IINC 1 rebuild - Status: Killed
+--> Mutation 4: wheel.util.ActionRegistry.addEntry(Ljava/lang/String;Ljava/lang/String;Z)Lwheel/util/Entry;:37 - InsertUnaryOp IINC -1 rebuild - Status: Killed
+--> Mutation 5: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:47 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 6: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:47 - ReplaceConstant - wheel.components.StandaloneComponent ->  - Status: Survived
+--> Mutation 7: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:47 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 8: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:47 - ReplaceComparisonOperator > -> != - Status: Killed
+--> Mutation 9: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:47 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 10: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 46 -> 0 - Status: Killed
+--> Mutation 11: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 46 -> 1 - Status: Killed
+--> Mutation 12: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 46 -> -1 - Status: Killed
+--> Mutation 13: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 46 -> 45 - Status: Killed
+--> Mutation 14: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 46 -> 47 - Status: Killed
+--> Mutation 15: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 47 -> 0 - Status: Killed
+--> Mutation 16: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 47 -> 1 - Status: Killed
+--> Mutation 17: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 47 -> -1 - Status: Killed
+--> Mutation 18: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 47 -> 46 - Status: Killed
+--> Mutation 19: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:48 - ReplaceConstant - 47 -> 48 - Status: Killed
+--> Mutation 20: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:52 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 21: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 22: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 23: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 24: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 25: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 26: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 27: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 28: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 29: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:53 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 30: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:54 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 31: wheel.util.ActionRegistry.isActionMethod(Lwheel/components/Component;Ljava/lang/String;)Z:57 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 32: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:61 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 33: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:62 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 34: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:62 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 35: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:62 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 36: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:62 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 37: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:62 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 38: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:62 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 39: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:62 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 40: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:62 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 41: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:63 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 42: wheel.util.ActionRegistry.needsRebuilding(Lwheel/components/Component;Ljava/lang/String;)Z:66 - ReplaceConstant - 0 -> 1 - Status: Killed
+* Compiling and checking tests
 * Computation finished

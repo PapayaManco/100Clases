@@ -1,15 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/102_squirrel-sql/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\102_squirrel-sql\evosuite-files\evosuite.properties
+* Connecting to master process on port 19269
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 23:30:32.066 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 23:30:32.822 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 23:30:33.670 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 23:30:33.801 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame
 * Test criteria:
@@ -22,12 +18,537 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 1045
-* Using seed 2482030657809
+* Using seed 1710471236055
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 652 / 1045
-[MASTER] 23:30:43.816 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 23:30:43.824 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 23:30:44.051 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 23:30:52.325 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-* Search finished after 181s and 1174 generations, 639397 statements, best individual has fitness: 438.0
+[MASTER] 23:54:08.253 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+* Search finished after 181s and 1620 generations, 868605 statements, best individual has fitness: 438.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 68%
+* Total number of goals: 338
+* Number of covered goals: 231
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 36%
+* Total number of goals: 99
+* Number of covered goals: 36
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 61%
+* Total number of goals: 488
+* Number of covered goals: 298
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 67%
+* Total number of goals: 3
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 33%
+* Total number of goals: 9
+* Number of covered goals: 3
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 33%
+* Total number of goals: 9
+* Number of covered goals: 3
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 36%
+* Total number of goals: 99
+* Number of covered goals: 36
+* Generated 11 tests with total length 68
+* Resulting test suite's coverage: 48% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 31%
+* There are surviving mutants: 
+--> Mutation 0: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:144 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 1: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:144 - ReplaceConstant - Null IApplication passed ->  - Status: Survived
+--> Mutation 2: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:145 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 3: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:145 - ReplaceConstant - Null ISQLDriver passed ->  - Status: Survived
+--> Mutation 4: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - InsertUnaryOp Negation of maintType - Status: Killed
+--> Mutation 5: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - InsertUnaryOp IINC 1 maintType - Status: Survived
+--> Mutation 6: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - InsertUnaryOp IINC -1 maintType - Status: Killed
+--> Mutation 7: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 8: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceComparisonOperator < -> >= - Status: Killed
+--> Mutation 9: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - InsertUnaryOp Negation of maintType - Status: Survived
+--> Mutation 10: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - InsertUnaryOp IINC 1 maintType - Status: Killed
+--> Mutation 11: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - InsertUnaryOp IINC -1 maintType - Status: Survived
+--> Mutation 12: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - 3 -> 0 - Status: Killed
+--> Mutation 13: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - 3 -> 1 - Status: Killed
+--> Mutation 14: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - 3 -> -1 - Status: Killed
+--> Mutation 15: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - 3 -> 2 - Status: Killed
+--> Mutation 16: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 17: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 18: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 19: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 20: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - DriverInternalFrame.error.illegalvalue ->  - Status: Survived
+--> Mutation 21: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 22: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 23: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.<init>(Lnet/sourceforge/squirrel_sql/client/IApplication;Lnet/sourceforge/squirrel_sql/fw/sql/ISQLDriver;I)V:146 - InsertUnaryOp Negation of maintType - Status: Survived
+--> Mutation 24: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:194 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 25: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:194 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 26: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:194 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 27: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:194 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 28: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:194 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 29: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:194 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 30: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:194 - ReplaceComparisonOperator >= -> == - Status: Killed
+--> Mutation 31: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:196 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 32: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:196 - InsertUnaryOp IINC 1 i - Status: Killed
+--> Mutation 33: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:196 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 34: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:199 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 35: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:199 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 36: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:199 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 37: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.loadData()V:201 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 38: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 39: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 40: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 41: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 42: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 43: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 44: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 45: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 46: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 47: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 48: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 49: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 50: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 51: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 52: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 53: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.performOk()V:222 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 54: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.applyFromDialog()V:249 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 55: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:275 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 56: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:275 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 57: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:275 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 58: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:275 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 59: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:278 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 60: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 61: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 62: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 63: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 64: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 65: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 66: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 67: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 68: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 69: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:281 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 70: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:283 - ReplaceConstant - DriverInternalFrame.changedriver ->  - Status: Survived
+--> Mutation 71: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:283 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 72: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:283 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 73: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:287 - ReplaceConstant - DriverInternalFrame.adddriver ->  - Status: Survived
+--> Mutation 74: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:291 - ReplaceConstant - 25 -> 0 - Status: Killed
+--> Mutation 75: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:291 - ReplaceConstant - 25 -> 1 - Status: Survived
+--> Mutation 76: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:291 - ReplaceConstant - 25 -> -1 - Status: Killed
+--> Mutation 77: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:291 - ReplaceConstant - 25 -> 24 - Status: Killed
+--> Mutation 78: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:291 - ReplaceConstant - 25 -> 26 - Status: Survived
+--> Mutation 79: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:292 - ReplaceConstant - 25 -> 0 - Status: Killed
+--> Mutation 80: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:292 - ReplaceConstant - 25 -> 1 - Status: Survived
+--> Mutation 81: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:292 - ReplaceConstant - 25 -> -1 - Status: Killed
+--> Mutation 82: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:292 - ReplaceConstant - 25 -> 24 - Status: Survived
+--> Mutation 83: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:292 - ReplaceConstant - 25 -> 26 - Status: Killed
+--> Mutation 84: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:297 - ReplaceConstant - Panel.background ->  - Status: Survived
+--> Mutation 85: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:298 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 86: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:306 - ReplaceConstant - 18 -> 0 - Status: Killed
+--> Mutation 87: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:306 - ReplaceConstant - 18 -> 1 - Status: Killed
+--> Mutation 88: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:306 - ReplaceConstant - 18 -> -1 - Status: Survived
+--> Mutation 89: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:306 - ReplaceConstant - 18 -> 17 - Status: Survived
+--> Mutation 90: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:306 - ReplaceConstant - 18 -> 19 - Status: Survived
+--> Mutation 91: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:307 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 92: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:308 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 93: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:308 - ReplaceConstant - 1.0 -> -1.0 - Status: Killed
+--> Mutation 94: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:308 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 95: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:311 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 96: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createGUI()V:312 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 97: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:368 - ReplaceConstant - DriverInternalFrame.ok ->  - Status: Survived
+--> Mutation 98: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:376 - ReplaceConstant - DriverInternalFrame.close ->  - Status: Killed
+--> Mutation 99: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:377 - ReplaceVariable closeBtn -> okBtn - Status: Killed
+--> Mutation 100: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:385 - ReplaceVariable okBtn -> closeBtn - Status: Survived
+--> Mutation 101: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:386 - ReplaceVariable closeBtn -> okBtn - Status: Survived
+--> Mutation 102: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:388 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 103: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:388 - ReplaceConstant - 2 -> 1 - Status: Killed
+--> Mutation 104: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:388 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 105: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:388 - ReplaceConstant - 2 -> 3 - Status: Killed
+--> Mutation 106: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:388 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 107: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:388 - ReplaceVariable okBtn -> closeBtn - Status: Killed
+--> Mutation 108: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:388 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 109: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:388 - ReplaceVariable closeBtn -> okBtn - Status: Killed
+--> Mutation 110: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createButtonsPanel()Ljavax/swing/JPanel;:389 - ReplaceVariable okBtn -> closeBtn - Status: Survived
+--> Mutation 111: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:396 - ReplaceConstant - 25 -> 0 - Status: Killed
+--> Mutation 112: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:396 - ReplaceConstant - 25 -> 1 - Status: Survived
+--> Mutation 113: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:396 - ReplaceConstant - 25 -> -1 - Status: Killed
+--> Mutation 114: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:396 - ReplaceConstant - 25 -> 24 - Status: Killed
+--> Mutation 115: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:396 - ReplaceConstant - 25 -> 26 - Status: Survived
+--> Mutation 116: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:399 - ReplaceConstant - DriverInternalFrame.driver ->  - Status: Killed
+--> Mutation 117: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:402 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 118: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:402 - ReplaceConstant - 2 -> 1 - Status: Killed
+--> Mutation 119: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:402 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 120: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:402 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 121: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 122: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 123: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 124: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 125: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 126: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 127: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 128: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 129: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 130: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 131: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 132: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 133: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 134: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 135: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 136: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 137: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 138: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 139: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 140: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:403 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 141: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:405 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 142: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:406 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 143: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:407 - ReplaceConstant - DriverInternalFrame.name ->  - Status: Killed
+--> Mutation 144: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:407 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 145: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:407 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 146: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:407 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 147: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:407 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 148: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:407 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 149: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:409 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 150: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:409 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 151: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:409 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 152: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:409 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 153: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:409 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 154: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:409 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 155: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:409 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 156: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:409 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 157: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:410 - ReplaceConstant - DriverInternalFrame.egurl ->  - Status: Survived
+--> Mutation 158: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:410 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 159: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:410 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 160: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:410 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 161: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:410 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 162: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:410 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 163: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:412 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 164: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:412 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 165: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:412 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 166: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:412 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 167: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:412 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 168: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:412 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 169: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:412 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 170: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:412 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 171: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:413 - ReplaceConstant - DriverInternalFrame.weburl ->  - Status: Killed
+--> Mutation 172: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:413 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 173: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:413 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 174: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:413 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 175: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:413 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 176: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:413 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 177: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:415 - ReplaceConstant - 1.0 -> 0.0 - Status: Survived
+--> Mutation 178: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:415 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 179: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:415 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 180: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverPanel()Ljavax/swing/JPanel;:416 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 181: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:431 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 182: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:436 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 183: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:436 - ReplaceConstant - 2 -> 1 - Status: Killed
+--> Mutation 184: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:436 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 185: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:436 - ReplaceConstant - 2 -> 3 - Status: Killed
+--> Mutation 186: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 187: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 188: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 189: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 190: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 191: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 192: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 193: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 194: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 195: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 196: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 197: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 198: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 199: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 200: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 201: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 202: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 203: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 204: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 205: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:437 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 206: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:439 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 207: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:440 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 208: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:441 - ReplaceConstant - DriverInternalFrame.classname ->  - Status: Killed
+--> Mutation 209: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:441 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 210: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:441 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 211: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:441 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 212: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:441 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 213: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:441 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 214: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:443 - ReplaceConstant - 1.0 -> 0.0 - Status: Killed
+--> Mutation 215: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:443 - ReplaceConstant - 1.0 -> -1.0 - Status: Killed
+--> Mutation 216: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:443 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 217: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:444 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 218: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:444 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 219: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:444 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 220: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:444 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 221: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:444 - ReplaceArithmeticOperator + -> % - Status: Killed
+--> Mutation 222: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:444 - ReplaceArithmeticOperator + -> - - Status: Killed
+--> Mutation 223: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:444 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 224: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createDriverClassPanel()Ljava/awt/Component;:444 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 225: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:458 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 226: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:458 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 227: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:458 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 228: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:458 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 229: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:458 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 230: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:462 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 231: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:462 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 232: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:462 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 233: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:464 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 234: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 235: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 1 - Status: Killed
+--> Mutation 236: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 237: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 3 - Status: Killed
+--> Mutation 238: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 239: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 240: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 241: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 242: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 243: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 244: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 245: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 246: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> -1 - Status: Killed
+--> Mutation 247: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 248: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 249: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 0 - Status: Killed
+--> Mutation 250: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 251: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 252: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 253: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:469 - ReplaceConstant - 4 -> 5 - Status: Killed
+--> Mutation 254: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:470 - ReplaceConstant - 17 -> 0 - Status: Killed
+--> Mutation 255: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:470 - ReplaceConstant - 17 -> 1 - Status: Survived
+--> Mutation 256: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:470 - ReplaceConstant - 17 -> -1 - Status: Survived
+--> Mutation 257: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:470 - ReplaceConstant - 17 -> 16 - Status: Survived
+--> Mutation 258: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:470 - ReplaceConstant - 17 -> 18 - Status: Survived
+--> Mutation 259: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:471 - ReplaceConstant - 1.0 -> 0.0 - Status: Killed
+--> Mutation 260: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:471 - ReplaceConstant - 1.0 -> -1.0 - Status: Survived
+--> Mutation 261: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:471 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 262: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:475 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 263: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:476 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 264: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:477 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 265: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:478 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 266: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:479 - ReplaceConstant - 1.0 -> 0.0 - Status: Killed
+--> Mutation 267: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:479 - ReplaceConstant - 1.0 -> -1.0 - Status: Killed
+--> Mutation 268: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:479 - ReplaceConstant - 1.0 -> 2.0 - Status: Survived
+--> Mutation 269: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 22 -> 0 - Status: Killed
+--> Mutation 270: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 22 -> 1 - Status: Survived
+--> Mutation 271: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 22 -> -1 - Status: Killed
+--> Mutation 272: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 22 -> 21 - Status: Killed
+--> Mutation 273: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 22 -> 23 - Status: Killed
+--> Mutation 274: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 32 -> 0 - Status: Killed
+--> Mutation 275: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 32 -> 1 - Status: Killed
+--> Mutation 276: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 32 -> -1 - Status: Killed
+--> Mutation 277: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 32 -> 31 - Status: Survived
+--> Mutation 278: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createJavaClassPathPanel()Ljavax/swing/JPanel;:480 - ReplaceConstant - 32 -> 33 - Status: Killed
+--> Mutation 279: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createExtraClassPathPanel()Ljavax/swing/JPanel;:509 - ReplaceConstant - DriverInternalFrame.up ->  - Status: Killed
+--> Mutation 280: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createExtraClassPathPanel()Ljavax/swing/JPanel;:510 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 281: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createExtraClassPathPanel()Ljavax/swing/JPanel;:530 - ReplaceConstant - DriverInternalFrame.down ->  - Status: Killed
+--> Mutation 282: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createExtraClassPathPanel()Ljavax/swing/JPanel;:531 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 283: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createExtraClassPathPanel()Ljavax/swing/JPanel;:553 - ReplaceConstant - DriverInternalFrame.delete ->  - Status: Killed
+--> Mutation 284: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame.createExtraClassPathPanel()Ljavax/swing/JPanel;:554 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 285: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton.<init>(Lnet/sourceforge/squirrel_sql/client/gui/db/DriverInternalFrame;Lnet/sourceforge/squirrel_sql/fw/gui/FileListBox;)V:692 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 286: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:702 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 287: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:702 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 288: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:702 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 289: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:735 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 290: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:735 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 291: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:735 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 292: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:737 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 293: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:645 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 294: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:648 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 295: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:650 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 296: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:659 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 297: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:660 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 298: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:661 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 299: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:661 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 300: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:661 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 301: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:661 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 302: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - DriverInternalFrame.jarfiles ->  - Status: Survived
+--> Mutation 303: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 304: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 305: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 306: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 307: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 308: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - .jar ->  - Status: Survived
+--> Mutation 309: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 310: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$AddListEntryButton.actionPerformed(Ljava/awt/event/ActionEvent;)V:663 - ReplaceConstant - .zip ->  - Status: Survived
+--> Mutation 311: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - InsertUnaryOp Negation of selIdx - Status: Survived
+--> Mutation 312: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - InsertUnaryOp IINC 1 selIdx - Status: Survived
+--> Mutation 313: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - InsertUnaryOp IINC -1 selIdx - Status: Survived
+--> Mutation 314: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 315: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 316: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 317: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 318: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 319: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 320: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 321: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:784 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 322: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - InsertUnaryOp Negation of selIdx - Status: Survived
+--> Mutation 323: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - InsertUnaryOp IINC 1 selIdx - Status: Survived
+--> Mutation 324: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - InsertUnaryOp IINC -1 selIdx - Status: Survived
+--> Mutation 325: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 326: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 327: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 328: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 329: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - ReplaceComparisonOperator <= -> > - Status: Survived
+--> Mutation 330: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 331: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:786 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 332: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - InsertUnaryOp Negation of selIdx - Status: Survived
+--> Mutation 333: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - InsertUnaryOp IINC 1 selIdx - Status: Survived
+--> Mutation 334: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - InsertUnaryOp IINC -1 selIdx - Status: Survived
+--> Mutation 335: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 336: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 337: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 338: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 339: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 340: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 341: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - InsertUnaryOp Negation of selIdx - Status: Survived
+--> Mutation 342: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - InsertUnaryOp IINC 1 selIdx - Status: Survived
+--> Mutation 343: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - InsertUnaryOp IINC -1 selIdx - Status: Survived
+--> Mutation 344: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 345: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 346: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 347: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 348: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 349: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 350: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 351: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 352: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 353: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListBoxListener.valueChanged(Ljavax/swing/event/ListSelectionEvent;)V:787 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 354: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.contentsChanged(Ljavax/swing/event/ListDataEvent;)V:759 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 355: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.contentsChanged(Ljavax/swing/event/ListDataEvent;)V:759 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 356: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.contentsChanged(Ljavax/swing/event/ListDataEvent;)V:759 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 357: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.contentsChanged(Ljavax/swing/event/ListDataEvent;)V:759 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 358: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.contentsChanged(Ljavax/swing/event/ListDataEvent;)V:759 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 359: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.contentsChanged(Ljavax/swing/event/ListDataEvent;)V:760 - InsertUnaryOp Negation of enable - Status: Survived
+--> Mutation 360: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.contentsChanged(Ljavax/swing/event/ListDataEvent;)V:760 - InsertUnaryOp IINC 1 enable - Status: Survived
+--> Mutation 361: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.contentsChanged(Ljavax/swing/event/ListDataEvent;)V:760 - InsertUnaryOp IINC -1 enable - Status: Survived
+--> Mutation 362: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalAdded(Ljavax/swing/event/ListDataEvent;)V:765 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 363: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalAdded(Ljavax/swing/event/ListDataEvent;)V:765 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 364: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalAdded(Ljavax/swing/event/ListDataEvent;)V:765 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 365: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalAdded(Ljavax/swing/event/ListDataEvent;)V:765 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 366: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalAdded(Ljavax/swing/event/ListDataEvent;)V:765 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 367: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalAdded(Ljavax/swing/event/ListDataEvent;)V:766 - InsertUnaryOp Negation of enable - Status: Survived
+--> Mutation 368: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalAdded(Ljavax/swing/event/ListDataEvent;)V:766 - InsertUnaryOp IINC 1 enable - Status: Survived
+--> Mutation 369: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalAdded(Ljavax/swing/event/ListDataEvent;)V:766 - InsertUnaryOp IINC -1 enable - Status: Survived
+--> Mutation 370: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalRemoved(Ljavax/swing/event/ListDataEvent;)V:771 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 371: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalRemoved(Ljavax/swing/event/ListDataEvent;)V:771 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 372: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalRemoved(Ljavax/swing/event/ListDataEvent;)V:771 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 373: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalRemoved(Ljavax/swing/event/ListDataEvent;)V:771 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 374: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalRemoved(Ljavax/swing/event/ListDataEvent;)V:771 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 375: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalRemoved(Ljavax/swing/event/ListDataEvent;)V:772 - InsertUnaryOp Negation of enable - Status: Survived
+--> Mutation 376: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalRemoved(Ljavax/swing/event/ListDataEvent;)V:772 - InsertUnaryOp IINC 1 enable - Status: Survived
+--> Mutation 377: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ExtraClassPathListDataListener.intervalRemoved(Ljavax/swing/event/ListDataEvent;)V:772 - InsertUnaryOp IINC -1 enable - Status: Survived
+--> Mutation 378: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:518 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 379: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:518 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 380: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:518 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 381: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:518 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 382: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:518 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 383: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:518 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 384: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:521 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 385: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:521 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 386: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:521 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 387: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:523 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 388: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:523 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 389: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:523 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 390: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:524 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 391: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:524 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 392: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$5.actionPerformed(Ljava/awt/event/ActionEvent;)V:524 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 393: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 394: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 395: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 396: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 397: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 398: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 399: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 400: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 401: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 402: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 403: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 404: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 405: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 406: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 407: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 408: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 409: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 410: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 411: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 412: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:540 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 413: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:542 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 414: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:542 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 415: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:542 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 416: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:544 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 417: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:544 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 418: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:544 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 419: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:545 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 420: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:545 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 421: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$6.actionPerformed(Ljava/awt/event/ActionEvent;)V:545 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 422: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 423: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 424: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 425: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 426: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 427: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 428: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 429: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 430: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:560 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 431: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:563 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 432: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:563 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 433: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:563 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 434: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - ReplaceVariable idx -> size - Status: Survived
+--> Mutation 435: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 436: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 437: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 438: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - ReplaceVariable size -> idx - Status: Survived
+--> Mutation 439: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - InsertUnaryOp Negation of size - Status: Survived
+--> Mutation 440: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - InsertUnaryOp IINC 1 size - Status: Survived
+--> Mutation 441: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - InsertUnaryOp IINC -1 size - Status: Survived
+--> Mutation 442: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 443: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 444: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:565 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 445: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:567 - ReplaceVariable idx -> size - Status: Survived
+--> Mutation 446: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:567 - InsertUnaryOp Negation of idx - Status: Survived
+--> Mutation 447: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:567 - InsertUnaryOp IINC 1 idx - Status: Survived
+--> Mutation 448: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:567 - InsertUnaryOp IINC -1 idx - Status: Survived
+--> Mutation 449: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:569 - ReplaceVariable size -> idx - Status: Survived
+--> Mutation 450: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:569 - InsertUnaryOp Negation of size - Status: Survived
+--> Mutation 451: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:569 - InsertUnaryOp IINC 1 size - Status: Survived
+--> Mutation 452: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:569 - InsertUnaryOp IINC -1 size - Status: Survived
+--> Mutation 453: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:569 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 454: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:569 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 455: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:569 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 456: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - ReplaceVariable size -> idx - Status: Survived
+--> Mutation 457: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - InsertUnaryOp Negation of size - Status: Survived
+--> Mutation 458: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - InsertUnaryOp IINC 1 size - Status: Survived
+--> Mutation 459: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - InsertUnaryOp IINC -1 size - Status: Survived
+--> Mutation 460: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 461: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 462: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 463: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 464: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$7.actionPerformed(Ljava/awt/event/ActionEvent;)V:571 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 465: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:712 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 466: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:712 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 467: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:712 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 468: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:712 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 469: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:712 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 470: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:712 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 471: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:712 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 472: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:714 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 473: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:714 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 474: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:714 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 475: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:714 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 476: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:714 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 477: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:714 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 478: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:721 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 479: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:721 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 480: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:721 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 481: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:721 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 482: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:721 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 483: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:721 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 484: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:721 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 485: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:723 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 486: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:723 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 487: net.sourceforge.squirrel_sql.client.gui.db.DriverInternalFrame$ListDriversButton$1.run()V:723 - InsertUnaryOp IINC -1 i - Status: Survived
+* Compiling and checking tests
 * Computation finished

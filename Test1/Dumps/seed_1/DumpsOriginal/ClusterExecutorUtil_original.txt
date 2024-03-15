@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portal.kernel.cluster.ClusterExecutorUtil
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 11423
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:08:00.155 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 01:08:00.594 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 01:08:00.656 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class com.liferay.portal.kernel.cluster.ClusterExecutorUtil
 * Test criteria:
@@ -21,14 +18,76 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 231
-* Using seed 2482030657809
+* Using seed 1710476988755
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 111 / 231
-[MASTER] 01:08:04.086 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 01:08:04.264 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-[MASTER] 01:08:05.102 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 01:08:07.419 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 01:08:11.663 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
-[MASTER] 01:08:13.952 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 181s and 4408 generations, 373784 statements, best individual has fitness: 221.0
+[MASTER] 01:29:56.279 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:30:03.710 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 01:30:37.031 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 01:30:52.037 [logback-1] WARN  ClassResetter - class java.lang.reflect.InvocationTargetException thrown during execution of method  __STATIC_RESET() for class org.geotools.factory.Hints, java.lang.IllegalArgumentException: org.geotools.factory.Hints$ClassKey@4a447a42:0 already registered
+[MASTER] 01:31:18.867 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 5254 generations, 1247482 statements, best individual has fitness: 111.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 71%
+* Total number of goals: 72
+* Number of covered goals: 51
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 53%
+* Total number of goals: 36
+* Number of covered goals: 19
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 50%
+* Total number of goals: 30
+* Number of covered goals: 15
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 87%
+* Total number of goals: 23
+* Number of covered goals: 20
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 23%
+* Total number of goals: 30
+* Number of covered goals: 7
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 53%
+* Total number of goals: 36
+* Number of covered goals: 19
+* Generated 30 tests with total length 84
+* Resulting test suite's coverage: 67% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 78%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.addClusterEventListener(Lcom/liferay/portal/kernel/cluster/ClusterEventListener;)V:37 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 1: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.destroy()V:47 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 2: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.execute(Lcom/liferay/portal/kernel/cluster/ClusterRequest;)Lcom/liferay/portal/kernel/cluster/FutureClusterResponses;:59 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 3: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.execute(Lcom/liferay/portal/kernel/cluster/ClusterRequest;Lcom/liferay/portal/kernel/cluster/ClusterResponseCallback;)V:73 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 4: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.execute(Lcom/liferay/portal/kernel/cluster/ClusterRequest;Lcom/liferay/portal/kernel/cluster/ClusterResponseCallback;JLjava/util/concurrent/TimeUnit;)V:88 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 5: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.execute(Lcom/liferay/portal/kernel/cluster/ClusterRequest;Lcom/liferay/portal/kernel/cluster/ClusterResponseCallback;JLjava/util/concurrent/TimeUnit;)V:92 - InsertUnaryOp Negation of timeout - Status: Survived
+--> Mutation 6: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.getClusterExecutor()Lcom/liferay/portal/kernel/cluster/ClusterExecutor;:99 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 7: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.getClusterExecutor()Lcom/liferay/portal/kernel/cluster/ClusterExecutor;:99 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 8: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.getClusterExecutor()Lcom/liferay/portal/kernel/cluster/ClusterExecutor;:100 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 9: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.getClusterExecutor()Lcom/liferay/portal/kernel/cluster/ClusterExecutor;:101 - ReplaceConstant - ClusterExecutorUtil has not been initialized ->  - Status: Survived
+--> Mutation 10: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.getClusterNodeAddresses()Ljava/util/List;:113 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 11: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.getClusterNodes()Ljava/util/List;:123 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 12: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.getLocalClusterNode()Lcom/liferay/portal/kernel/cluster/ClusterNode;:133 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 13: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.getLocalClusterNodeAddress()Lcom/liferay/portal/kernel/cluster/Address;:143 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 14: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.initialize()V:153 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 15: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.isClusterNodeAlive(Lcom/liferay/portal/kernel/cluster/Address;)Z:163 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 16: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.isClusterNodeAlive(Lcom/liferay/portal/kernel/cluster/Address;)Z:164 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 17: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.isClusterNodeAlive(Ljava/lang/String;)Z:173 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 18: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.isClusterNodeAlive(Ljava/lang/String;)Z:174 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 19: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.isEnabled()Z:183 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 20: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.isEnabled()Z:184 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 21: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.isEnabled()Z:187 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 22: com.liferay.portal.kernel.cluster.ClusterExecutorUtil.removeClusterEventListener(Lcom/liferay/portal/kernel/cluster/ClusterEventListener;)V:195 - ReplaceComparisonOperator != null -> = null - Status: Killed
+* Compiling and checking tests
 * Computation finished

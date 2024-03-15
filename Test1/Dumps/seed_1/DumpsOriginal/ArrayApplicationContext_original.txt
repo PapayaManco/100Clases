@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portal.spring.context.ArrayApplicationContext
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 15143
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:36:33.038 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 01:36:33.844 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 01:36:34.845 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class com.liferay.portal.spring.context.ArrayApplicationContext
 * Test criteria:
@@ -21,14 +18,67 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 55
-* Using seed 2482030657809
+* Using seed 1710478624303
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 8 / 55
-[MASTER] 01:36:40.793 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-[MASTER] 01:36:41.129 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
-[MASTER] 01:36:41.130 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 01:36:47.195 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 01:36:56.803 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 01:37:26.402 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: ftpClientProvider
-* Search finished after 181s and 2702 generations, 1157601 statements, best individual has fitness: 9.0
+[MASTER] 01:57:18.644 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:57:19.917 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 01:59:47.257 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: closeClassLoader
+* Search finished after 181s and 2844 generations, 1023277 statements, best individual has fitness: 8.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 87%
+* Total number of goals: 15
+* Number of covered goals: 13
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 78%
+* Total number of goals: 9
+* Number of covered goals: 7
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 89%
+* Total number of goals: 18
+* Number of covered goals: 16
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 2
+* Number of covered goals: 1
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 78%
+* Total number of goals: 9
+* Number of covered goals: 7
+* Generated 5 tests with total length 25
+* Resulting test suite's coverage: 90% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 6%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:38 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 1: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:42 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 2: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:42 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 3: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:42 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 4: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:42 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 5: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> CONVERSION_SERVICE_BEAN_NAME - Status: Survived
+--> Mutation 6: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> LOAD_TIME_WEAVER_BEAN_NAME - Status: Survived
+--> Mutation 7: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> SYSTEM_ENVIRONMENT_BEAN_NAME - Status: Survived
+--> Mutation 8: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> SYSTEM_PROPERTIES_BEAN_NAME - Status: Survived
+--> Mutation 9: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> APPLICATION_EVENT_MULTICASTER_BEAN_NAME - Status: Survived
+--> Mutation 10: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> CLASSPATH_ALL_URL_PREFIX - Status: Survived
+--> Mutation 11: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> FACTORY_BEAN_PREFIX - Status: Survived
+--> Mutation 12: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> CONFIG_LOCATION_DELIMITERS - Status: Survived
+--> Mutation 13: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> LIFECYCLE_PROCESSOR_BEAN_NAME - Status: Survived
+--> Mutation 14: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> MESSAGE_SOURCE_BEAN_NAME - Status: Survived
+--> Mutation 15: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:44 - ReplaceVariable configLocation -> CLASSPATH_URL_PREFIX - Status: Survived
+--> Mutation 16: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:49 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 17: com.liferay.portal.spring.context.ArrayApplicationContext.loadBeanDefinitions(Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;)V:50 - ReplaceComparisonOperator == -> != - Status: Survived
+* Compiling and checking tests
 * Computation finished

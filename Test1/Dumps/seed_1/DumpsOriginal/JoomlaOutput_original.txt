@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.rakegroup.JoomlaOutput
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/16_templatedetails/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\16_templatedetails\evosuite-files\evosuite.properties
+* Connecting to master process on port 16829
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 02:20:38.737 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 02:20:38.852 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class com.rakegroup.JoomlaOutput
 * Test criteria:
@@ -20,11 +18,140 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 734
-* Using seed 2482030657809
+* Using seed 1710481482442
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 325 / 734
-[MASTER] 02:20:43.909 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 02:21:45.075 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 02:22:25.984 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-* Search finished after 181s and 2570 generations, 737622 statements, best individual has fitness: 189.0
+[MASTER] 02:44:48.731 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 182s and 1865 generations, 530710 statements, best individual has fitness: 186.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 97%
+* Total number of goals: 227
+* Number of covered goals: 220
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 98%
+* Total number of goals: 120
+* Number of covered goals: 118
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 86%
+* Total number of goals: 93
+* Number of covered goals: 80
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 99%
+* Total number of goals: 87
+* Number of covered goals: 86
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 97%
+* Total number of goals: 87
+* Number of covered goals: 84
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 98%
+* Total number of goals: 120
+* Number of covered goals: 118
+* Generated 74 tests with total length 208
+* Resulting test suite's coverage: 69% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 47%
+* There are surviving mutants: 
+--> Mutation 0: com.rakegroup.JoomlaOutput.<init>()V:36 - ReplaceConstant - templateDetails.xml ->  - Status: Killed
+--> Mutation 1: com.rakegroup.JoomlaOutput.<init>()V:37 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 2: com.rakegroup.JoomlaOutput.<init>()V:39 - ReplaceConstant - install ->  - Status: Survived
+--> Mutation 3: com.rakegroup.JoomlaOutput.<init>()V:40 - ReplaceConstant - -//Joomla! 1.5//DTD template 1.0//EN ->  - Status: Survived
+--> Mutation 4: com.rakegroup.JoomlaOutput.<init>()V:41 - ReplaceConstant - http://dev.joomla.org/xml/1.5/template-install.dtd ->  - Status: Survived
+--> Mutation 5: com.rakegroup.JoomlaOutput.validate()V:44 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 6: com.rakegroup.JoomlaOutput.validate()V:47 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 7: com.rakegroup.JoomlaOutput.validate()V:47 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 8: com.rakegroup.JoomlaOutput.validate()V:47 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 9: com.rakegroup.JoomlaOutput.validate()V:48 - ReplaceConstant - file exists ->  - Status: Survived
+--> Mutation 10: com.rakegroup.JoomlaOutput.validate()V:58 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 11: com.rakegroup.JoomlaOutput.validate()V:59 - ReplaceConstant - install not defined ->  - Status: Survived
+--> Mutation 12: com.rakegroup.JoomlaOutput.setOutput(Ljava/lang/String;)V:65 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 13: com.rakegroup.JoomlaOutput.setOutput(Ljava/lang/String;)V:65 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 14: com.rakegroup.JoomlaOutput.setOutput(Ljava/lang/String;)V:65 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 15: com.rakegroup.JoomlaOutput.setOverwrite(Z)V:74 - InsertUnaryOp Negation of overwrite - Status: Survived
+--> Mutation 16: com.rakegroup.JoomlaOutput.setOverwrite(Z)V:74 - InsertUnaryOp IINC 1 overwrite - Status: Survived
+--> Mutation 17: com.rakegroup.JoomlaOutput.setOverwrite(Z)V:74 - InsertUnaryOp IINC -1 overwrite - Status: Survived
+--> Mutation 18: com.rakegroup.JoomlaOutput.setOverwrite(Z)V:74 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 19: com.rakegroup.JoomlaOutput.setOverwrite(Z)V:74 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 20: com.rakegroup.JoomlaOutput.setOverwrite(Z)V:74 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 21: com.rakegroup.JoomlaOutput.execute()V:100 - ReplaceConstant - Done ->  - Status: Survived
+--> Mutation 22: com.rakegroup.JoomlaOutput$Install.setType(Ljava/lang/String;)V:111 - ReplaceConstant - type ->  - Status: Killed
+--> Mutation 23: com.rakegroup.JoomlaOutput$Install.setVersion(Ljava/lang/String;)V:115 - ReplaceConstant - version ->  - Status: Killed
+--> Mutation 24: com.rakegroup.JoomlaOutput$Install.setClient(Ljava/lang/String;)V:120 - ReplaceConstant - client ->  - Status: Killed
+--> Mutation 25: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:192 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 26: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:194 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 27: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:196 - ReplaceVariable v -> c - Status: Survived
+--> Mutation 28: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:196 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 29: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:196 - ReplaceVariable v -> c - Status: Survived
+--> Mutation 30: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:196 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 31: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:197 - ReplaceVariable v -> c - Status: Killed
+--> Mutation 32: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:197 - ReplaceVariable v -> c - Status: Killed
+--> Mutation 33: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:200 - ReplaceVariable v -> c - Status: Survived
+--> Mutation 34: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:200 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 35: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:201 - ReplaceVariable v -> c - Status: Killed
+--> Mutation 36: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:201 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 37: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:201 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 38: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:202 - ReplaceVariable v -> c - Status: Killed
+--> Mutation 39: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:203 - ReplaceVariable itFSets -> ci - Status: Survived
+--> Mutation 40: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:203 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 41: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:204 - ReplaceVariable itFSets -> ci - Status: Survived
+--> Mutation 42: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:207 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 43: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:207 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 44: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:207 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 45: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:207 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 46: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:207 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 47: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:207 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 48: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:207 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 49: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:208 - ReplaceVariable v -> c - Status: Survived
+--> Mutation 50: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:208 - ReplaceConstant - filename ->  - Status: Survived
+--> Mutation 51: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:208 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 52: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:208 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 53: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:208 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 54: com.rakegroup.JoomlaOutput$SimpleElement.fixup(Lorg/apache/tools/ant/Project;Lorg/jdom/Content;)V:214 - ReplaceVariable v -> c - Status: Killed
+--> Mutation 55: com.rakegroup.JoomlaOutput$Param.setNamE(Ljava/lang/String;)V:423 - ReplaceConstant - name ->  - Status: Killed
+--> Mutation 56: com.rakegroup.JoomlaOutput$Param.setType(Ljava/lang/String;)V:427 - ReplaceConstant - type ->  - Status: Killed
+--> Mutation 57: com.rakegroup.JoomlaOutput$Param.setLabel(Ljava/lang/String;)V:431 - ReplaceConstant - label ->  - Status: Killed
+--> Mutation 58: com.rakegroup.JoomlaOutput$Param.setSize(Ljava/lang/String;)V:435 - ReplaceConstant - size ->  - Status: Killed
+--> Mutation 59: com.rakegroup.JoomlaOutput$Param.setId(Ljava/lang/String;)V:439 - ReplaceConstant - id ->  - Status: Killed
+--> Mutation 60: com.rakegroup.JoomlaOutput$Param.setDefault(Ljava/lang/String;)V:443 - ReplaceConstant - default ->  - Status: Killed
+--> Mutation 61: com.rakegroup.JoomlaOutput$Param.setDescription(Ljava/lang/String;)V:447 - ReplaceConstant - description ->  - Status: Killed
+--> Mutation 62: com.rakegroup.JoomlaOutput$Param.setSection(Ljava/lang/String;)V:451 - ReplaceConstant - section ->  - Status: Killed
+--> Mutation 63: com.rakegroup.JoomlaOutput$Param.setScope(Ljava/lang/String;)V:455 - ReplaceConstant - scope ->  - Status: Killed
+--> Mutation 64: com.rakegroup.JoomlaOutput$Param.setDirectory(Ljava/lang/String;)V:459 - ReplaceConstant - directory ->  - Status: Killed
+--> Mutation 65: com.rakegroup.JoomlaOutput$Param.setFilter(Ljava/lang/String;)V:463 - ReplaceConstant - filter ->  - Status: Killed
+--> Mutation 66: com.rakegroup.JoomlaOutput$Param.setExclude(Ljava/lang/String;)V:467 - ReplaceConstant - exclude ->  - Status: Killed
+--> Mutation 67: com.rakegroup.JoomlaOutput$Param.setStripext(Ljava/lang/String;)V:471 - ReplaceConstant - stripext ->  - Status: Killed
+--> Mutation 68: com.rakegroup.JoomlaOutput$Param.setHide_none(Ljava/lang/String;)V:475 - ReplaceConstant - hide_none ->  - Status: Killed
+--> Mutation 69: com.rakegroup.JoomlaOutput$Param.setHide_default(Ljava/lang/String;)V:479 - ReplaceConstant - hide_default ->  - Status: Killed
+--> Mutation 70: com.rakegroup.JoomlaOutput$Param.setClient(Ljava/lang/String;)V:483 - ReplaceConstant - client ->  - Status: Killed
+--> Mutation 71: com.rakegroup.JoomlaOutput$Param.setMenu_type(Ljava/lang/String;)V:487 - ReplaceConstant - menu_type ->  - Status: Killed
+--> Mutation 72: com.rakegroup.JoomlaOutput$Param.setState(Ljava/lang/String;)V:491 - ReplaceConstant - state ->  - Status: Killed
+--> Mutation 73: com.rakegroup.JoomlaOutput$Param.setRows(Ljava/lang/String;)V:495 - ReplaceConstant - rows ->  - Status: Killed
+--> Mutation 74: com.rakegroup.JoomlaOutput$Param.setCols(Ljava/lang/String;)V:499 - ReplaceConstant - cols ->  - Status: Killed
+--> Mutation 75: com.rakegroup.JoomlaOutput$Option.setValue(Ljava/lang/String;)V:510 - ReplaceConstant - value ->  - Status: Killed
+--> Mutation 76: com.rakegroup.JoomlaOutput$Files.<init>()V:234 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 77: com.rakegroup.JoomlaOutput$Files.<init>()V:235 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 78: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:242 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 79: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:243 - ReplaceVariable setMode -> fileMode - Status: Survived
+--> Mutation 80: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:243 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 81: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:243 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 82: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:244 - ReplaceConstant - filename used in fileSet mode ->  - Status: Survived
+--> Mutation 83: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:246 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 84: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:248 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 85: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:249 - ReplaceVariable fileMode -> setMode - Status: Survived
+--> Mutation 86: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:249 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 87: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:249 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 88: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:250 - ReplaceConstant - FileSet used in filename mode ->  - Status: Survived
+--> Mutation 89: com.rakegroup.JoomlaOutput$Files.update(Lcom/rakegroup/JoomlaOutput$Filename;Lorg/apache/tools/ant/types/FileSet;)V:252 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 90: com.rakegroup.JoomlaOutput$Files.setFolder(Ljava/lang/String;)V:257 - ReplaceConstant - folder ->  - Status: Killed
+--> Mutation 91: com.rakegroup.JoomlaOutput$Administration.addConfiguredAdministraton(Lcom/rakegroup/JoomlaOutput$Administration;)V:308 - ReplaceVariable a -> this - Status: Killed
+--> Mutation 92: com.rakegroup.JoomlaOutput$Languages.setFolder(Ljava/lang/String;)V:286 - ReplaceConstant - folder ->  - Status: Killed
+* Compiling and checking tests
 * Computation finished

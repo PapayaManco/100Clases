@@ -1,15 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: macaw.presentationLayer.VariableLabelTableModel
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/69_lhamacaw/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\69_lhamacaw\evosuite-files\evosuite.properties
+* Connecting to master process on port 13893
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:39:43.306 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 03:39:43.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 03:39:43.863 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:39:45.052 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class macaw.presentationLayer.VariableLabelTableModel
 * Test criteria:
@@ -22,18 +18,259 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 474
-* Using seed 2482030657809
+* Using seed 1710485838305
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 192 / 474
-[MASTER] 03:39:49.259 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 03:39:50.709 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
-[MASTER] 03:39:51.180 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 03:39:56.878 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:39:56.883 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:39:57.123 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
-[MASTER] 03:40:12.296 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 03:41:12.807 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
-[MASTER] 03:41:39.344 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 03:42:03.079 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
-* Search finished after 186s and 2930 generations, 1182384 statements, best individual has fitness: 85.0
+[MASTER] 03:57:20.959 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 03:57:31.746 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 03:57:48.335 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 03:57:54.256 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 03:58:24.542 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowSorter<M> : Type points to itself
+* Search finished after 185s and 2482 generations, 1026232 statements, best individual has fitness: 46.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 94%
+* Total number of goals: 105
+* Number of covered goals: 99
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 90%
+* Total number of goals: 51
+* Number of covered goals: 46
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 206
+* Number of covered goals: 200
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 51%
+* Total number of goals: 35
+* Number of covered goals: 18
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 92%
+* Total number of goals: 51
+* Number of covered goals: 47
+* Generated 37 tests with total length 186
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 32%
+* There are surviving mutants: 
+--> Mutation 0: macaw.presentationLayer.VariableLabelTableModel.<init>(Lmacaw/businessLayer/MacawCurationAPI;Z)V:78 - InsertUnaryOp Negation of allowWriteAccess - Status: Survived
+--> Mutation 1: macaw.presentationLayer.VariableLabelTableModel.<init>(Lmacaw/businessLayer/MacawCurationAPI;Z)V:78 - InsertUnaryOp IINC 1 allowWriteAccess - Status: Killed
+--> Mutation 2: macaw.presentationLayer.VariableLabelTableModel.<init>(Lmacaw/businessLayer/MacawCurationAPI;Z)V:78 - InsertUnaryOp IINC -1 allowWriteAccess - Status: Killed
+--> Mutation 3: macaw.presentationLayer.VariableLabelTableModel.setData(Lmacaw/businessLayer/User;Lmacaw/businessLayer/Variable;)V:96 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 4: macaw.presentationLayer.VariableLabelTableModel.setData(Lmacaw/businessLayer/User;Lmacaw/businessLayer/Variable;)V:99 - ReplaceVariable cloneValueLabel -> valueLabel - Status: Survived
+--> Mutation 5: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:109 - ReplaceVariable row -> IS_MISSING_VALUE - Status: Killed
+--> Mutation 6: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:109 - ReplaceVariable row -> LABEL_COLUMN - Status: Killed
+--> Mutation 7: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:109 - ReplaceVariable row -> VALUE_COLUMN - Status: Survived
+--> Mutation 8: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:109 - InsertUnaryOp Negation of row - Status: Killed
+--> Mutation 9: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:109 - InsertUnaryOp IINC 1 row - Status: Killed
+--> Mutation 10: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:109 - InsertUnaryOp IINC -1 row - Status: Killed
+--> Mutation 11: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - ReplaceVariable row -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 12: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - ReplaceVariable row -> LABEL_COLUMN - Status: Survived
+--> Mutation 13: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - ReplaceVariable row -> VALUE_COLUMN - Status: Survived
+--> Mutation 14: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 15: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - InsertUnaryOp IINC 1 row - Status: Survived
+--> Mutation 16: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - InsertUnaryOp IINC -1 row - Status: Survived
+--> Mutation 17: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - ReplaceVariable row -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 18: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - ReplaceVariable row -> LABEL_COLUMN - Status: Survived
+--> Mutation 19: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - ReplaceVariable row -> VALUE_COLUMN - Status: Survived
+--> Mutation 20: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 21: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - InsertUnaryOp IINC 1 row - Status: Survived
+--> Mutation 22: macaw.presentationLayer.VariableLabelTableModel.addValueLabel(ILmacaw/businessLayer/ValueLabel;)V:110 - InsertUnaryOp IINC -1 row - Status: Survived
+--> Mutation 23: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:114 - ReplaceVariable row -> IS_MISSING_VALUE - Status: Killed
+--> Mutation 24: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:114 - ReplaceVariable row -> LABEL_COLUMN - Status: Killed
+--> Mutation 25: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:114 - ReplaceVariable row -> VALUE_COLUMN - Status: Survived
+--> Mutation 26: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:114 - InsertUnaryOp Negation of row - Status: Killed
+--> Mutation 27: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:114 - InsertUnaryOp IINC 1 row - Status: Killed
+--> Mutation 28: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:114 - InsertUnaryOp IINC -1 row - Status: Killed
+--> Mutation 29: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - ReplaceVariable row -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 30: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - ReplaceVariable row -> LABEL_COLUMN - Status: Survived
+--> Mutation 31: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - ReplaceVariable row -> VALUE_COLUMN - Status: Survived
+--> Mutation 32: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 33: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - InsertUnaryOp IINC 1 row - Status: Survived
+--> Mutation 34: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - InsertUnaryOp IINC -1 row - Status: Survived
+--> Mutation 35: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - ReplaceVariable row -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 36: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - ReplaceVariable row -> LABEL_COLUMN - Status: Survived
+--> Mutation 37: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - ReplaceVariable row -> VALUE_COLUMN - Status: Survived
+--> Mutation 38: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 39: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - InsertUnaryOp IINC 1 row - Status: Survived
+--> Mutation 40: macaw.presentationLayer.VariableLabelTableModel.deleteValueLabel(I)V:115 - InsertUnaryOp IINC -1 row - Status: Survived
+--> Mutation 41: macaw.presentationLayer.VariableLabelTableModel.save()V:120 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 42: macaw.presentationLayer.VariableLabelTableModel.save()V:132 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 43: macaw.presentationLayer.VariableLabelTableModel.save()V:133 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 44: macaw.presentationLayer.VariableLabelTableModel.save()V:133 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 45: macaw.presentationLayer.VariableLabelTableModel.save()V:134 - ReplaceVariable addedValueLabelItems -> deletedValueLabelItems - Status: Survived
+--> Mutation 46: macaw.presentationLayer.VariableLabelTableModel.save()V:134 - ReplaceVariable addedValueLabelItems -> editedValueLabelItems - Status: Survived
+--> Mutation 47: macaw.presentationLayer.VariableLabelTableModel.save()V:139 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 48: macaw.presentationLayer.VariableLabelTableModel.save()V:141 - ReplaceVariable copyValueLabel -> originalValueLabel - Status: Survived
+--> Mutation 49: macaw.presentationLayer.VariableLabelTableModel.save()V:141 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 50: macaw.presentationLayer.VariableLabelTableModel.save()V:143 - ReplaceVariable deletedValueLabelItems -> addedValueLabelItems - Status: Survived
+--> Mutation 51: macaw.presentationLayer.VariableLabelTableModel.save()V:143 - ReplaceVariable deletedValueLabelItems -> editedValueLabelItems - Status: Survived
+--> Mutation 52: macaw.presentationLayer.VariableLabelTableModel.save()V:143 - ReplaceVariable originalValueLabel -> copyValueLabel - Status: Survived
+--> Mutation 53: macaw.presentationLayer.VariableLabelTableModel.save()V:149 - ReplaceVariable editedValueLabelItems -> deletedValueLabelItems - Status: Survived
+--> Mutation 54: macaw.presentationLayer.VariableLabelTableModel.save()V:149 - ReplaceVariable editedValueLabelItems -> addedValueLabelItems - Status: Survived
+--> Mutation 55: macaw.presentationLayer.VariableLabelTableModel.save()V:149 - ReplaceVariable copyValueLabel -> originalValueLabel - Status: Survived
+--> Mutation 56: macaw.presentationLayer.VariableLabelTableModel.save()V:154 - ReplaceVariable addedValueLabelItems -> deletedValueLabelItems - Status: Survived
+--> Mutation 57: macaw.presentationLayer.VariableLabelTableModel.save()V:154 - ReplaceVariable addedValueLabelItems -> editedValueLabelItems - Status: Killed
+--> Mutation 58: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:167 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 59: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - ReplaceVariable currentCopy -> original - Status: Survived
+--> Mutation 60: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - ReplaceVariable originalIdentifier -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 61: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - ReplaceVariable originalIdentifier -> LABEL_COLUMN - Status: Survived
+--> Mutation 62: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - ReplaceVariable originalIdentifier -> VALUE_COLUMN - Status: Survived
+--> Mutation 63: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - InsertUnaryOp Negation of originalIdentifier - Status: Survived
+--> Mutation 64: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - InsertUnaryOp IINC 1 originalIdentifier - Status: Survived
+--> Mutation 65: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - InsertUnaryOp IINC -1 originalIdentifier - Status: Survived
+--> Mutation 66: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 67: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 68: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:168 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 69: macaw.presentationLayer.VariableLabelTableModel.findCopy(Lmacaw/businessLayer/ValueLabel;)Lmacaw/businessLayer/ValueLabel;:169 - ReplaceVariable currentCopy -> original - Status: Survived
+--> Mutation 70: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 71: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - ReplaceVariable column -> LABEL_COLUMN - Status: Survived
+--> Mutation 72: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - ReplaceVariable column -> VALUE_COLUMN - Status: Killed
+--> Mutation 73: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 74: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - InsertUnaryOp IINC 1 column - Status: Killed
+--> Mutation 75: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 76: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 77: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 78: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:191 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 79: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:194 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Killed
+--> Mutation 80: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:194 - ReplaceVariable column -> LABEL_COLUMN - Status: Killed
+--> Mutation 81: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:194 - ReplaceVariable column -> VALUE_COLUMN - Status: Killed
+--> Mutation 82: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:194 - InsertUnaryOp Negation of column - Status: Killed
+--> Mutation 83: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:194 - InsertUnaryOp IINC 1 column - Status: Killed
+--> Mutation 84: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:194 - InsertUnaryOp IINC -1 column - Status: Killed
+--> Mutation 85: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:194 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 86: macaw.presentationLayer.VariableLabelTableModel.getColumnClass(I)Ljava/lang/Class;:194 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 87: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 88: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - ReplaceVariable column -> LABEL_COLUMN - Status: Survived
+--> Mutation 89: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - ReplaceVariable column -> VALUE_COLUMN - Status: Killed
+--> Mutation 90: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 91: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 92: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 93: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 94: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 95: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:205 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 96: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:206 - ReplaceConstant - variableLabelValueEditor.value ->  - Status: Killed
+--> Mutation 97: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:210 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 98: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:210 - ReplaceVariable column -> LABEL_COLUMN - Status: Killed
+--> Mutation 99: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:210 - ReplaceVariable column -> VALUE_COLUMN - Status: Survived
+--> Mutation 100: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:210 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 101: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:210 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 102: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:210 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 103: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:210 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 104: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:210 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 105: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:211 - ReplaceConstant - variableLabelValueEditor.label ->  - Status: Killed
+--> Mutation 106: macaw.presentationLayer.VariableLabelTableModel.getColumnName(I)Ljava/lang/String;:216 - ReplaceConstant - variableLabelValueEditor.isMissingValue ->  - Status: Killed
+--> Mutation 107: macaw.presentationLayer.VariableLabelTableModel.isCellEditable(II)Z:223 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 108: macaw.presentationLayer.VariableLabelTableModel.getColumnCount()I:226 - ReplaceConstant - 3 -> 0 - Status: Killed
+--> Mutation 109: macaw.presentationLayer.VariableLabelTableModel.getColumnCount()I:226 - ReplaceConstant - 3 -> 1 - Status: Killed
+--> Mutation 110: macaw.presentationLayer.VariableLabelTableModel.getColumnCount()I:226 - ReplaceConstant - 3 -> -1 - Status: Killed
+--> Mutation 111: macaw.presentationLayer.VariableLabelTableModel.getColumnCount()I:226 - ReplaceConstant - 3 -> 2 - Status: Killed
+--> Mutation 112: macaw.presentationLayer.VariableLabelTableModel.getColumnCount()I:226 - ReplaceConstant - 3 -> 4 - Status: Killed
+--> Mutation 113: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:235 - ReplaceVariable row -> column - Status: Killed
+--> Mutation 114: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:235 - ReplaceVariable row -> IS_MISSING_VALUE - Status: Killed
+--> Mutation 115: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:235 - ReplaceVariable row -> LABEL_COLUMN - Status: Killed
+--> Mutation 116: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:235 - ReplaceVariable row -> VALUE_COLUMN - Status: Survived
+--> Mutation 117: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:235 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 118: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:235 - InsertUnaryOp IINC 1 row - Status: Killed
+--> Mutation 119: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:235 - InsertUnaryOp IINC -1 row - Status: Killed
+--> Mutation 120: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 121: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - ReplaceVariable column -> row - Status: Killed
+--> Mutation 122: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - ReplaceVariable column -> LABEL_COLUMN - Status: Killed
+--> Mutation 123: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - ReplaceVariable column -> VALUE_COLUMN - Status: Killed
+--> Mutation 124: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 125: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 126: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - InsertUnaryOp IINC -1 column - Status: Killed
+--> Mutation 127: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 128: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 129: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:238 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 130: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 131: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - ReplaceVariable column -> row - Status: Survived
+--> Mutation 132: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - ReplaceVariable column -> LABEL_COLUMN - Status: Killed
+--> Mutation 133: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - ReplaceVariable column -> VALUE_COLUMN - Status: Killed
+--> Mutation 134: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 135: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 136: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 137: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 138: macaw.presentationLayer.VariableLabelTableModel.getValueAt(II)Ljava/lang/Object;:241 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 139: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:261 - ReplaceVariable row -> column - Status: Killed
+--> Mutation 140: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:261 - ReplaceVariable row -> IS_MISSING_VALUE - Status: Killed
+--> Mutation 141: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:261 - ReplaceVariable row -> LABEL_COLUMN - Status: Killed
+--> Mutation 142: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:261 - ReplaceVariable row -> VALUE_COLUMN - Status: Survived
+--> Mutation 143: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:261 - InsertUnaryOp Negation of row - Status: Survived
+--> Mutation 144: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:261 - InsertUnaryOp IINC 1 row - Status: Killed
+--> Mutation 145: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:261 - InsertUnaryOp IINC -1 row - Status: Killed
+--> Mutation 146: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:264 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 147: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:264 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 148: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Killed
+--> Mutation 149: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceVariable column -> row - Status: Survived
+--> Mutation 150: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceVariable column -> LABEL_COLUMN - Status: Survived
+--> Mutation 151: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceVariable column -> VALUE_COLUMN - Status: Survived
+--> Mutation 152: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 153: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 154: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 155: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 156: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 157: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 158: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 159: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 160: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 161: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:265 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 162: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 163: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - ReplaceVariable column -> row - Status: Survived
+--> Mutation 164: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - ReplaceVariable column -> LABEL_COLUMN - Status: Survived
+--> Mutation 165: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - ReplaceVariable column -> VALUE_COLUMN - Status: Survived
+--> Mutation 166: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 167: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 168: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 169: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 170: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 171: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:271 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 172: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Killed
+--> Mutation 173: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceVariable column -> row - Status: Survived
+--> Mutation 174: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceVariable column -> LABEL_COLUMN - Status: Survived
+--> Mutation 175: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceVariable column -> VALUE_COLUMN - Status: Survived
+--> Mutation 176: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 177: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 178: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 179: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 180: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 181: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 182: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 183: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 184: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 185: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:280 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 186: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:283 - ReplaceVariable oldFieldValue -> newFieldValue - Status: Survived
+--> Mutation 187: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:283 - ReplaceVariable newFieldValue -> oldFieldValue - Status: Survived
+--> Mutation 188: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:283 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 189: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:284 - ReplaceVariable newFieldValue -> oldFieldValue - Status: Survived
+--> Mutation 190: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - ReplaceVariable column -> IS_MISSING_VALUE - Status: Survived
+--> Mutation 191: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - ReplaceVariable column -> row - Status: Survived
+--> Mutation 192: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - ReplaceVariable column -> LABEL_COLUMN - Status: Survived
+--> Mutation 193: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - ReplaceVariable column -> VALUE_COLUMN - Status: Survived
+--> Mutation 194: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - InsertUnaryOp Negation of column - Status: Survived
+--> Mutation 195: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - InsertUnaryOp IINC 1 column - Status: Survived
+--> Mutation 196: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - InsertUnaryOp IINC -1 column - Status: Survived
+--> Mutation 197: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 198: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 199: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:289 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 200: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:291 - ReplaceVariable oldFieldValue -> newFieldValue - Status: Survived
+--> Mutation 201: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:291 - ReplaceVariable newFieldValue -> oldFieldValue - Status: Survived
+--> Mutation 202: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:291 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 203: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:291 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 204: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:291 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 205: macaw.presentationLayer.VariableLabelTableModel.setValueAt(Ljava/lang/Object;II)V:292 - ReplaceVariable newFieldValue -> oldFieldValue - Status: Survived
+* Compiling and checking tests
 * Computation finished

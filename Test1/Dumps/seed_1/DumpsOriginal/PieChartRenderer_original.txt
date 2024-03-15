@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: de.progra.charting.render.PieChartRenderer
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/88_jopenchart/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\88_jopenchart\evosuite-files\evosuite.properties
+* Connecting to master process on port 4764
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 04:28:02.604 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 04:28:02.633 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
 * Finished analyzing classpath
 * Generating tests for class de.progra.charting.render.PieChartRenderer
 * Test criteria:
@@ -20,28 +18,28 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 201
-* Using seed 2482030657809
+* Using seed 1710489487520
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 63 / 201
-* Search finished after 181s and 27 generations, 16090 statements, best individual has fitness: 59.0
+* Search finished after 181s and 46 generations, 31074 statements, best individual has fitness: 16.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
-* Coverage of criterion LINE: 67%
+* Coverage of criterion LINE: 90%
 * Total number of goals: 39
-* Number of covered goals: 26
+* Number of covered goals: 35
 * Coverage analysis for criterion BRANCH
-* Coverage of criterion BRANCH: 43%
+* Coverage of criterion BRANCH: 79%
 * Total number of goals: 14
-* Number of covered goals: 6
+* Number of covered goals: 11
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
 * Total number of goals: 2
 * Number of covered goals: 2
 * Coverage analysis for criterion WEAKMUTATION
-* Coverage of criterion WEAKMUTATION: 86%
+* Coverage of criterion WEAKMUTATION: 98%
 * Total number of goals: 128
-* Number of covered goals: 110
+* Number of covered goals: 125
 * Coverage analysis for criterion OUTPUT
 * Coverage of criterion OUTPUT: 100% (no goals)
 * Coverage analysis for criterion METHOD
@@ -53,11 +51,11 @@
 * Total number of goals: 3
 * Number of covered goals: 2
 * Coverage analysis for criterion CBRANCH
-* Coverage of criterion CBRANCH: 43%
+* Coverage of criterion CBRANCH: 79%
 * Total number of goals: 14
-* Number of covered goals: 6
-* Generated 3 tests with total length 17
-* Resulting test suite's coverage: 68% (average coverage for all fitness functions)
+* Number of covered goals: 11
+* Generated 4 tests with total length 34
+* Resulting test suite's coverage: 83% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 0%
 * There are surviving mutants: 
@@ -190,13 +188,4 @@
 --> Mutation 126: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_y -> height - Status: Survived
 --> Mutation 127: de.progra.charting.render.PieChartRenderer.renderChart(Ljava/awt/Graphics2D;)V:85 - ReplaceVariable center_y -> center_x - Status: Survived
 * Compiling and checking tests
-[MASTER] 04:32:28.316 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:32:33.584 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:32:39.217 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:32:45.233 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:32:51.280 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'PieChartRenderer_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

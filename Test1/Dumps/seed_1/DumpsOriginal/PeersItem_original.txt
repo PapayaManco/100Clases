@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 10354
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:39:45.113 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 00:39:45.205 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
 * Finished analyzing classpath
 * Generating tests for class org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem
 * Test criteria:
@@ -20,12 +18,118 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 108
-* Using seed 2482030657809
+* Using seed 1710475406722
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 42 / 108
-[MASTER] 00:39:53.695 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 00:41:12.181 [logback-1] WARN  TestCluster - Failed to check cache for com.aelitis.azureus.ui.common.table.TableView<DATASOURCETYPE> : Type points to itself
-[MASTER] 00:42:06.681 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 00:42:20.800 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
-* Search finished after 186s and 1761 generations, 562608 statements, best individual has fitness: 31.0
+[MASTER] 01:03:53.347 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 01:05:19.898 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 183s and 2034 generations, 641834 statements, best individual has fitness: 32.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 80%
+* Total number of goals: 10
+* Number of covered goals: 8
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 66%
+* Total number of goals: 70
+* Number of covered goals: 46
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 80%
+* Total number of goals: 10
+* Number of covered goals: 8
+* Generated 6 tests with total length 20
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 30%
+* There are surviving mutants: 
+--> Mutation 0: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.<init>()V:44 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 1: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.<init>()V:44 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 2: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.<init>()V:44 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 3: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:51 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 4: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:51 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 5: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:51 - ReplaceConstant - essential ->  - Status: Survived
+--> Mutation 6: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.fillTableColumnInfo(Lorg/gudy/azureus2/plugins/ui/tables/TableColumnInfo;)V:54 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 7: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:63 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 8: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:63 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 9: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:63 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 10: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:63 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 11: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> INTERVAL_LIVE - Status: Survived
+--> Mutation 12: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> TYPE_GRAPHIC - Status: Survived
+--> Mutation 13: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> INTERVAL_GRAPHIC - Status: Survived
+--> Mutation 14: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> INTERVAL_INVALID_ONLY - Status: Survived
+--> Mutation 15: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> TYPE_TEXT_ONLY - Status: Survived
+--> Mutation 16: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> POSITION_LAST - Status: Survived
+--> Mutation 17: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> POSITION_INVISIBLE - Status: Survived
+--> Mutation 18: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> ALIGN_LEAD - Status: Survived
+--> Mutation 19: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> MENU_STYLE_HEADER - Status: Survived
+--> Mutation 20: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> ALIGN_CENTER - Status: Survived
+--> Mutation 21: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> ALIGN_TRAIL - Status: Survived
+--> Mutation 22: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> MENU_STYLE_COLUMN_DATA - Status: Survived
+--> Mutation 23: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> ALIGN_TOP - Status: Survived
+--> Mutation 24: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> ALIGN_BOTTOM - Status: Survived
+--> Mutation 25: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceVariable value -> TYPE_TEXT - Status: Survived
+--> Mutation 26: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 27: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 28: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 29: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 30: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:65 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 31: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> INTERVAL_LIVE - Status: Survived
+--> Mutation 32: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> TYPE_GRAPHIC - Status: Killed
+--> Mutation 33: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> INTERVAL_GRAPHIC - Status: Survived
+--> Mutation 34: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> INTERVAL_INVALID_ONLY - Status: Survived
+--> Mutation 35: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> TYPE_TEXT_ONLY - Status: Killed
+--> Mutation 36: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> POSITION_LAST - Status: Survived
+--> Mutation 37: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> POSITION_INVISIBLE - Status: Survived
+--> Mutation 38: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_LEAD - Status: Killed
+--> Mutation 39: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> MENU_STYLE_HEADER - Status: Killed
+--> Mutation 40: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_CENTER - Status: Killed
+--> Mutation 41: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_TRAIL - Status: Killed
+--> Mutation 42: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> MENU_STYLE_COLUMN_DATA - Status: Killed
+--> Mutation 43: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_TOP - Status: Killed
+--> Mutation 44: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_BOTTOM - Status: Killed
+--> Mutation 45: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> TYPE_TEXT - Status: Killed
+--> Mutation 46: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 47: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 48: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 49: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 50: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 51: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 52: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> INTERVAL_LIVE - Status: Survived
+--> Mutation 53: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> TYPE_GRAPHIC - Status: Survived
+--> Mutation 54: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> INTERVAL_GRAPHIC - Status: Survived
+--> Mutation 55: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> INTERVAL_INVALID_ONLY - Status: Survived
+--> Mutation 56: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> TYPE_TEXT_ONLY - Status: Survived
+--> Mutation 57: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> POSITION_LAST - Status: Survived
+--> Mutation 58: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> POSITION_INVISIBLE - Status: Survived
+--> Mutation 59: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_LEAD - Status: Survived
+--> Mutation 60: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> MENU_STYLE_HEADER - Status: Survived
+--> Mutation 61: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_CENTER - Status: Survived
+--> Mutation 62: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_TRAIL - Status: Survived
+--> Mutation 63: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> MENU_STYLE_COLUMN_DATA - Status: Survived
+--> Mutation 64: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_TOP - Status: Survived
+--> Mutation 65: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> ALIGN_BOTTOM - Status: Survived
+--> Mutation 66: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - ReplaceVariable value -> TYPE_TEXT - Status: Survived
+--> Mutation 67: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 68: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 69: org.gudy.azureus2.ui.swt.views.tableitems.tracker.PeersItem.refresh(Lorg/gudy/azureus2/plugins/ui/tables/TableCell;)V:70 - InsertUnaryOp IINC -1 value - Status: Survived
+* Compiling and checking tests
 * Computation finished

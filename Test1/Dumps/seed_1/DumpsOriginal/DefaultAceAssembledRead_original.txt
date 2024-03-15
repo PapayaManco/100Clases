@@ -1,12 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/92_jcvi-javacommon/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\92_jcvi-javacommon\evosuite-files\evosuite.properties
+* Connecting to master process on port 15579
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 04:32:55.046 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead
 * Test criteria:
@@ -19,12 +18,14 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 644
-* Using seed 2482030657809
+* Using seed 1710489723324
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 350 / 644
-[MASTER] 04:32:56.528 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 04:32:57.198 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-* Search finished after 181s and 1081 generations, 270045 statements, best individual has fitness: 613.0
+[MASTER] 05:02:05.098 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 05:02:05.113 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 05:02:05.477 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 05:02:05.845 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 181s and 2072 generations, 496767 statements, best individual has fitness: 613.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -59,19 +60,19 @@
 * Coverage of criterion CBRANCH: 2%
 * Total number of goals: 91
 * Number of covered goals: 2
-* Generated 4 tests with total length 18
+* Generated 5 tests with total length 19
 * Resulting test suite's coverage: 9% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 4%
+* Resulting test suite's mutation score: 8%
 * There are surviving mutants: 
 --> Mutation 0: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable reference -> validBases - Status: Survived
 --> Mutation 1: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable validBases -> reference - Status: Survived
---> Mutation 2: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable offset -> ungappedFullLength - Status: Survived
+--> Mutation 2: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable offset -> ungappedFullLength - Status: Killed
 --> Mutation 3: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp Negation of offset - Status: Survived
 --> Mutation 4: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp IINC 1 offset - Status: Killed
 --> Mutation 5: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp IINC -1 offset - Status: Killed
---> Mutation 6: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable ungappedFullLength -> offset - Status: Survived
---> Mutation 7: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp Negation of ungappedFullLength - Status: Survived
+--> Mutation 6: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - ReplaceVariable ungappedFullLength -> offset - Status: Killed
+--> Mutation 7: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp Negation of ungappedFullLength - Status: Killed
 --> Mutation 8: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp IINC 1 ungappedFullLength - Status: Killed
 --> Mutation 9: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.createBuilder(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)Lorg/jcvi/jillion/assembly/consed/ace/AceAssembledReadBuilder;:49 - InsertUnaryOp IINC -1 ungappedFullLength - Status: Killed
 --> Mutation 10: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.toString()Ljava/lang/String;:69 - ReplaceConstant - DefaultAcePlacedRead [placedRead= ->  - Status: Survived
@@ -150,12 +151,12 @@
 --> Mutation 83: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead.equals(Ljava/lang/Object;)Z:188 - ReplaceConstant - 1 -> 0 - Status: Survived
 --> Mutation 84: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable reference -> validBases - Status: Survived
 --> Mutation 85: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable validBases -> reference - Status: Survived
---> Mutation 86: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable offset -> ungappedFullLength - Status: Survived
+--> Mutation 86: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable offset -> ungappedFullLength - Status: Killed
 --> Mutation 87: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp Negation of offset - Status: Survived
 --> Mutation 88: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp IINC 1 offset - Status: Killed
 --> Mutation 89: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp IINC -1 offset - Status: Killed
---> Mutation 90: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable ungappedFullLength -> offset - Status: Survived
---> Mutation 91: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp Negation of ungappedFullLength - Status: Survived
+--> Mutation 90: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - ReplaceVariable ungappedFullLength -> offset - Status: Killed
+--> Mutation 91: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp Negation of ungappedFullLength - Status: Killed
 --> Mutation 92: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp IINC 1 ungappedFullLength - Status: Killed
 --> Mutation 93: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;Ljava/lang/String;Lorg/jcvi/jillion/core/residue/nt/NucleotideSequence;ILorg/jcvi/jillion/core/Direction;Lorg/jcvi/jillion/core/Range;Lorg/jcvi/jillion/assembly/consed/ace/PhdInfo;I)V:200 - InsertUnaryOp IINC -1 ungappedFullLength - Status: Killed
 --> Mutation 94: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.<init>(Lorg/jcvi/jillion/assembly/consed/ace/DefaultAceAssembledRead$Builder;)V:207 - ReplaceVariable copy -> this - Status: Survived
@@ -251,14 +252,4 @@
 --> Mutation 184: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:494 - ReplaceConstant - 0 -> 1 - Status: Survived
 --> Mutation 185: org.jcvi.jillion.assembly.consed.ace.DefaultAceAssembledRead$Builder.equals(Ljava/lang/Object;)Z:496 - ReplaceConstant - 1 -> 0 - Status: Survived
 * Compiling and checking tests
-[MASTER] 04:36:03.287 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:36:08.569 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:36:13.849 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:36:19.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:36:24.409 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:36:29.682 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'DefaultAceAssembledRead_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

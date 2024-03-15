@@ -1,12 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portal.kernel.scheduler.CronText
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 16415
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:17:41.242 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class com.liferay.portal.kernel.scheduler.CronText
 * Test criteria:
@@ -19,13 +18,14 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 467
-* Using seed 2482030657809
+* Using seed 1710477397336
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 185 / 467
-[MASTER] 01:17:45.419 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 01:18:12.368 [logback-1] WARN  TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
-[MASTER] 01:18:29.153 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
-* Search finished after 181s and 4957 generations, 2090173 statements, best individual has fitness: 11.0
+[MASTER] 01:36:43.878 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 01:37:02.719 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 01:38:36.936 [logback-1] WARN  TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 01:38:49.275 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 6994 generations, 4618298 statements, best individual has fitness: 11.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -60,10 +60,10 @@
 * Coverage of criterion CBRANCH: 97%
 * Total number of goals: 35
 * Number of covered goals: 34
-* Generated 30 tests with total length 99
+* Generated 26 tests with total length 99
 * Resulting test suite's coverage: 90% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 80%
+* Resulting test suite's mutation score: 76%
 * There are surviving mutants: 
 --> Mutation 0: com.liferay.portal.kernel.scheduler.CronText.<init>(Ljava/util/Calendar;II)V:47 - ReplaceVariable frequency -> MINUTELY_FREQUENCY - Status: Killed
 --> Mutation 1: com.liferay.portal.kernel.scheduler.CronText.<init>(Ljava/util/Calendar;II)V:47 - ReplaceVariable frequency -> WEEKLY_FREQUENCY - Status: Killed
@@ -90,10 +90,10 @@
 --> Mutation 22: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> MINUTELY_FREQUENCY - Status: Killed
 --> Mutation 23: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> WEEKLY_FREQUENCY - Status: Killed
 --> Mutation 24: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> DAILY_FREQUENCY - Status: Killed
---> Mutation 25: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> HOURLY_FREQUENCY - Status: Killed
+--> Mutation 25: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> HOURLY_FREQUENCY - Status: Survived
 --> Mutation 26: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> YEARLY_FREQUENCY - Status: Killed
 --> Mutation 27: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> MONTHLY_FREQUENCY - Status: Killed
---> Mutation 28: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> NO_FREQUENCY - Status: Killed
+--> Mutation 28: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - ReplaceVariable _frequency -> NO_FREQUENCY - Status: Survived
 --> Mutation 29: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - InsertUnaryOp Negation - Status: Killed
 --> Mutation 30: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - InsertUnaryOp +1 - Status: Killed
 --> Mutation 31: com.liferay.portal.kernel.scheduler.CronText.getFrequency()I:52 - InsertUnaryOp -1 - Status: Killed
@@ -104,7 +104,7 @@
 --> Mutation 36: com.liferay.portal.kernel.scheduler.CronText.getInterval()I:56 - ReplaceVariable _interval -> YEARLY_FREQUENCY - Status: Killed
 --> Mutation 37: com.liferay.portal.kernel.scheduler.CronText.getInterval()I:56 - ReplaceVariable _interval -> MONTHLY_FREQUENCY - Status: Killed
 --> Mutation 38: com.liferay.portal.kernel.scheduler.CronText.getInterval()I:56 - ReplaceVariable _interval -> NO_FREQUENCY - Status: Killed
---> Mutation 39: com.liferay.portal.kernel.scheduler.CronText.getInterval()I:56 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 39: com.liferay.portal.kernel.scheduler.CronText.getInterval()I:56 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 40: com.liferay.portal.kernel.scheduler.CronText.getInterval()I:56 - InsertUnaryOp +1 - Status: Killed
 --> Mutation 41: com.liferay.portal.kernel.scheduler.CronText.getInterval()I:56 - InsertUnaryOp -1 - Status: Killed
 --> Mutation 42: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> MINUTELY_FREQUENCY - Status: Killed
@@ -125,21 +125,21 @@
 --> Mutation 57: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceComparisonOperator == -> -2 - Status: Killed
 --> Mutation 58: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceComparisonOperator == -> >= - Status: Survived
 --> Mutation 59: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceComparisonOperator == -> <= - Status: Survived
---> Mutation 60: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> MINUTELY_FREQUENCY - Status: Killed
---> Mutation 61: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> WEEKLY_FREQUENCY - Status: Killed
---> Mutation 62: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> DAILY_FREQUENCY - Status: Killed
+--> Mutation 60: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> MINUTELY_FREQUENCY - Status: Survived
+--> Mutation 61: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> WEEKLY_FREQUENCY - Status: Survived
+--> Mutation 62: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> DAILY_FREQUENCY - Status: Survived
 --> Mutation 63: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> HOURLY_FREQUENCY - Status: Survived
 --> Mutation 64: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> YEARLY_FREQUENCY - Status: Killed
 --> Mutation 65: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> MONTHLY_FREQUENCY - Status: Killed
---> Mutation 66: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> NO_FREQUENCY - Status: Killed
+--> Mutation 66: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> NO_FREQUENCY - Status: Survived
 --> Mutation 67: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - InsertUnaryOp Negation of frequency - Status: Killed
 --> Mutation 68: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - InsertUnaryOp IINC 1 frequency - Status: Killed
 --> Mutation 69: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - InsertUnaryOp IINC -1 frequency - Status: Killed
 --> Mutation 70: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 3 -> 0 - Status: Killed
---> Mutation 71: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 3 -> 1 - Status: Killed
---> Mutation 72: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 3 -> -1 - Status: Killed
+--> Mutation 71: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 72: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 3 -> -1 - Status: Survived
 --> Mutation 73: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 3 -> 2 - Status: Killed
---> Mutation 74: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 3 -> 4 - Status: Killed
+--> Mutation 74: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 3 -> 4 - Status: Survived
 --> Mutation 75: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceComparisonOperator == -> -2 - Status: Killed
 --> Mutation 76: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceComparisonOperator == -> >= - Status: Survived
 --> Mutation 77: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceComparisonOperator == -> <= - Status: Survived
@@ -190,11 +190,11 @@
 --> Mutation 122: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - InsertUnaryOp IINC -1 frequency - Status: Killed
 --> Mutation 123: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 1 -> 0 - Status: Killed
 --> Mutation 124: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceComparisonOperator == -> != - Status: Killed
---> Mutation 125: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> MINUTELY_FREQUENCY - Status: Killed
+--> Mutation 125: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> MINUTELY_FREQUENCY - Status: Survived
 --> Mutation 126: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> WEEKLY_FREQUENCY - Status: Survived
 --> Mutation 127: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> DAILY_FREQUENCY - Status: Killed
 --> Mutation 128: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> HOURLY_FREQUENCY - Status: Killed
---> Mutation 129: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> YEARLY_FREQUENCY - Status: Killed
+--> Mutation 129: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> YEARLY_FREQUENCY - Status: Survived
 --> Mutation 130: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> MONTHLY_FREQUENCY - Status: Killed
 --> Mutation 131: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceVariable frequency -> NO_FREQUENCY - Status: Killed
 --> Mutation 132: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - InsertUnaryOp Negation of frequency - Status: Killed
@@ -202,7 +202,7 @@
 --> Mutation 134: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - InsertUnaryOp IINC -1 frequency - Status: Killed
 --> Mutation 135: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 5 -> 0 - Status: Killed
 --> Mutation 136: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 5 -> 1 - Status: Killed
---> Mutation 137: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 137: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 5 -> -1 - Status: Killed
 --> Mutation 138: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 5 -> 4 - Status: Killed
 --> Mutation 139: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceConstant - 5 -> 6 - Status: Killed
 --> Mutation 140: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:64 - ReplaceComparisonOperator == -> -2 - Status: Killed
@@ -246,7 +246,7 @@
 --> Mutation 178: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:75 - InsertUnaryOp Negation of frequency - Status: Killed
 --> Mutation 179: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:75 - InsertUnaryOp IINC 1 frequency - Status: Killed
 --> Mutation 180: com.liferay.portal.kernel.scheduler.CronText.setFrequency(I)V:75 - InsertUnaryOp IINC -1 frequency - Status: Killed
---> Mutation 181: com.liferay.portal.kernel.scheduler.CronText.setInterval(I)V:79 - ReplaceVariable interval -> MINUTELY_FREQUENCY - Status: Survived
+--> Mutation 181: com.liferay.portal.kernel.scheduler.CronText.setInterval(I)V:79 - ReplaceVariable interval -> MINUTELY_FREQUENCY - Status: Killed
 --> Mutation 182: com.liferay.portal.kernel.scheduler.CronText.setInterval(I)V:79 - ReplaceVariable interval -> WEEKLY_FREQUENCY - Status: Killed
 --> Mutation 183: com.liferay.portal.kernel.scheduler.CronText.setInterval(I)V:79 - ReplaceVariable interval -> DAILY_FREQUENCY - Status: Killed
 --> Mutation 184: com.liferay.portal.kernel.scheduler.CronText.setInterval(I)V:79 - ReplaceVariable interval -> HOURLY_FREQUENCY - Status: Killed
@@ -280,36 +280,36 @@
 --> Mutation 212: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceConstant - 2 -> 1 - Status: Killed
 --> Mutation 213: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceConstant - 2 -> -1 - Status: Killed
 --> Mutation 214: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceConstant - 2 -> 3 - Status: Killed
---> Mutation 215: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 215: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceConstant - 1 -> 0 - Status: Killed
 --> Mutation 216: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceArithmeticOperator + -> % - Status: Killed
 --> Mutation 217: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceArithmeticOperator + -> - - Status: Killed
 --> Mutation 218: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceArithmeticOperator + -> * - Status: Killed
---> Mutation 219: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 219: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:93 - ReplaceArithmeticOperator + -> / - Status: Killed
 --> Mutation 220: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:94 - ReplaceConstant - 7 -> 0 - Status: Survived
 --> Mutation 221: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:94 - ReplaceConstant - 7 -> 1 - Status: Survived
 --> Mutation 222: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:94 - ReplaceConstant - 7 -> -1 - Status: Killed
 --> Mutation 223: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:94 - ReplaceConstant - 7 -> 6 - Status: Survived
 --> Mutation 224: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:94 - ReplaceConstant - 7 -> 8 - Status: Survived
 --> Mutation 225: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:95 - ReplaceConstant - 1 -> 0 - Status: Killed
---> Mutation 226: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> MINUTELY_FREQUENCY - Status: Killed
+--> Mutation 226: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> MINUTELY_FREQUENCY - Status: Survived
 --> Mutation 227: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> WEEKLY_FREQUENCY - Status: Killed
---> Mutation 228: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> DAILY_FREQUENCY - Status: Survived
+--> Mutation 228: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> DAILY_FREQUENCY - Status: Killed
 --> Mutation 229: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> HOURLY_FREQUENCY - Status: Survived
 --> Mutation 230: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> YEARLY_FREQUENCY - Status: Killed
 --> Mutation 231: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> MONTHLY_FREQUENCY - Status: Killed
 --> Mutation 232: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceVariable _frequency -> NO_FREQUENCY - Status: Killed
---> Mutation 233: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - InsertUnaryOp Negation - Status: Survived
---> Mutation 234: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - InsertUnaryOp +1 - Status: Survived
---> Mutation 235: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 233: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 234: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 235: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - InsertUnaryOp -1 - Status: Killed
 --> Mutation 236: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceConstant - 1 -> 0 - Status: Survived
 --> Mutation 237: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:97 - ReplaceComparisonOperator != -> == - Status: Killed
 --> Mutation 238: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:98 - ReplaceConstant - ? ->  - Status: Killed
 --> Mutation 239: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> MINUTELY_FREQUENCY - Status: Killed
---> Mutation 240: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> WEEKLY_FREQUENCY - Status: Killed
---> Mutation 241: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> DAILY_FREQUENCY - Status: Killed
---> Mutation 242: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> HOURLY_FREQUENCY - Status: Killed
+--> Mutation 240: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> WEEKLY_FREQUENCY - Status: Survived
+--> Mutation 241: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> DAILY_FREQUENCY - Status: Survived
+--> Mutation 242: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> HOURLY_FREQUENCY - Status: Survived
 --> Mutation 243: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> YEARLY_FREQUENCY - Status: Killed
---> Mutation 244: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> MONTHLY_FREQUENCY - Status: Survived
+--> Mutation 244: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> MONTHLY_FREQUENCY - Status: Killed
 --> Mutation 245: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceVariable _frequency -> NO_FREQUENCY - Status: Killed
 --> Mutation 246: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - InsertUnaryOp Negation - Status: Killed
 --> Mutation 247: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - InsertUnaryOp +1 - Status: Survived
@@ -318,52 +318,39 @@
 --> Mutation 250: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceConstant - 2 -> 1 - Status: Survived
 --> Mutation 251: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceConstant - 2 -> -1 - Status: Survived
 --> Mutation 252: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceConstant - 2 -> 3 - Status: Killed
---> Mutation 253: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 253: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceComparisonOperator != -> -1 - Status: Survived
 --> Mutation 254: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceComparisonOperator != -> < - Status: Killed
 --> Mutation 255: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:100 - ReplaceComparisonOperator != -> > - Status: Survived
 --> Mutation 256: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceConstant - *_/ ->  - Status: Survived
 --> Mutation 257: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> MINUTELY_FREQUENCY - Status: Killed
---> Mutation 258: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> WEEKLY_FREQUENCY - Status: Killed
+--> Mutation 258: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> WEEKLY_FREQUENCY - Status: Survived
 --> Mutation 259: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> DAILY_FREQUENCY - Status: Survived
 --> Mutation 260: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> HOURLY_FREQUENCY - Status: Killed
 --> Mutation 261: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> YEARLY_FREQUENCY - Status: Killed
---> Mutation 262: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> MONTHLY_FREQUENCY - Status: Survived
---> Mutation 263: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> NO_FREQUENCY - Status: Killed
---> Mutation 264: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - InsertUnaryOp Negation - Status: Killed
---> Mutation 265: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 262: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> MONTHLY_FREQUENCY - Status: Killed
+--> Mutation 263: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - ReplaceVariable _interval -> NO_FREQUENCY - Status: Survived
+--> Mutation 264: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 265: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - InsertUnaryOp +1 - Status: Killed
 --> Mutation 266: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:101 - InsertUnaryOp -1 - Status: Survived
 --> Mutation 267: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:102 - ReplaceConstant - * ->  - Status: Killed
---> Mutation 268: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:103 - ReplaceConstant - * ->  - Status: Killed
---> Mutation 269: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:104 - ReplaceConstant - * ->  - Status: Killed
---> Mutation 270: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:105 - ReplaceConstant - ? ->  - Status: Killed
+--> Mutation 268: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:103 - ReplaceConstant - * ->  - Status: Survived
+--> Mutation 269: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:104 - ReplaceConstant - * ->  - Status: Survived
+--> Mutation 270: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:105 - ReplaceConstant - ? ->  - Status: Survived
 --> Mutation 271: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:106 - ReplaceConstant - * ->  - Status: Killed
---> Mutation 272: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> MINUTELY_FREQUENCY - Status: Killed
+--> Mutation 272: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> MINUTELY_FREQUENCY - Status: Survived
 --> Mutation 273: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> WEEKLY_FREQUENCY - Status: Killed
---> Mutation 274: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> DAILY_FREQUENCY - Status: Survived
+--> Mutation 274: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> DAILY_FREQUENCY - Status: Killed
 --> Mutation 275: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> HOURLY_FREQUENCY - Status: Killed
 --> Mutation 276: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> YEARLY_FREQUENCY - Status: Killed
 --> Mutation 277: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> MONTHLY_FREQUENCY - Status: Killed
---> Mutation 278: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> NO_FREQUENCY - Status: Killed
---> Mutation 279: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 278: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceVariable _frequency -> NO_FREQUENCY - Status: Survived
+--> Mutation 279: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - InsertUnaryOp Negation - Status: Killed
 --> Mutation 280: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - InsertUnaryOp +1 - Status: Killed
 --> Mutation 281: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - InsertUnaryOp -1 - Status: Killed
 --> Mutation 282: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceConstant - 3 -> 0 - Status: Killed
 --> Mutation 283: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceConstant - 3 -> 1 - Status: Survived
---> Mutation 284: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceConstant - 3 -> -1 - Status: Killed
---> Mutation 285: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceConstant - 3 -> 2 - Status: Killed
+--> Mutation 284: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 285: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceConstant - 3 -> 2 - Status: Survived
 --> Mutation 286: com.liferay.portal.kernel.scheduler.CronText.toString()Ljava/lang/String;:108 - ReplaceConstant - 3 -> 4 - Status: Killed
 * Compiling and checking tests
-[MASTER] 01:21:46.266 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:21:51.700 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:21:57.137 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:22:02.576 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:22:08.040 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:22:13.484 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:22:18.977 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:22:24.440 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:22:29.897 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'CronText_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

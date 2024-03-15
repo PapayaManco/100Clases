@@ -1,12 +1,653 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 15290
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:46:40.510 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-* Writing JUnit test case 'PollsChoiceModelImpl_ESTest' to test_seeds/seed_1/tests_original
-* Error while initializing target class: java.lang.ExceptionInInitializerError
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1182
+* Using seed 1710479635582
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 728 / 1182
+[MASTER] 02:14:05.077 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.polls.model.PollsChoiceWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:14:05.187 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 02:14:05.894 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutRevisionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:14:06.025 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:14:07.539 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portlet.polls.model.PollsChoiceWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.polls.model.impl.PollsChoiceImpl canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 02:14:12.154 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.evosuite.runtime.mock.java.util.MockCalendar canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 02:14:13.215 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getClassLoader.portal
+[MASTER] 02:14:24.000 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 02:14:30.215 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 02:14:45.109 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.TestRunner due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.testng.TestRunner canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:14:48.064 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.text.MockSimpleDateFormat due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.portlet.filter.EventRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class javax.portlet.filter.EventRequestWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:14:56.698 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 02:14:57.935 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowSorter<M> : Type points to itself
+[MASTER] 02:14:57.993 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.xy.DefaultOHLCDataset due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.jfree.data.xy.OHLCDataItem due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.javax.swing.MockSpinnerDateModel due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:15:11.666 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.service.ServiceContext canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:15:24.181 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.text.MockSimpleDateFormat due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.ServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.servlet.http.HttpServletRequestWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.service.ServiceContext canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:16:01.698 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for javax.print.attribute.standard.JobHoldUntil due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:16:02.259 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.TestRunner due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.ClassImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.internal.NoOpTestClass due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.testng.junit.JUnit3TestClass due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+* Search finished after 182s and 4543 generations, 1113543 statements, best individual has fitness: 110.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 211
+* Number of covered goals: 206
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 97%
+* Total number of goals: 92
+* Number of covered goals: 89
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 570
+* Number of covered goals: 557
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 45%
+* Total number of goals: 119
+* Number of covered goals: 54
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 49
+* Number of covered goals: 49
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 92%
+* Total number of goals: 49
+* Number of covered goals: 45
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 97%
+* Total number of goals: 92
+* Number of covered goals: 89
+* Generated 87 tests with total length 261
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 53%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toModel(Lcom/liferay/portlet/polls/model/PollsChoiceSoap;)Lcom/liferay/portlet/polls/model/PollsChoice;:103 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 1: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toModels([Lcom/liferay/portlet/polls/model/PollsChoiceSoap;)Ljava/util/List;:125 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 2: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toModels([Lcom/liferay/portlet/polls/model/PollsChoiceSoap;)Ljava/util/List;:131 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 3: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toModels([Lcom/liferay/portlet/polls/model/PollsChoiceSoap;)Ljava/util/List;:131 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 4: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toModels([Lcom/liferay/portlet/polls/model/PollsChoiceSoap;)Ljava/util/List;:131 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 5: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toModels([Lcom/liferay/portlet/polls/model/PollsChoiceSoap;)Ljava/util/List;:131 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 6: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKey()J:145 - ReplaceVariable _choiceId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 7: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKey()J:145 - ReplaceVariable _choiceId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 8: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKey()J:145 - ReplaceVariable _choiceId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 9: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKey()J:145 - ReplaceVariable _choiceId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 10: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKey()J:145 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 11: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setPrimaryKey(J)V:149 - ReplaceVariable primaryKey -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 12: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setPrimaryKey(J)V:149 - ReplaceVariable primaryKey -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 13: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setPrimaryKey(J)V:149 - ReplaceVariable primaryKey -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 14: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setPrimaryKey(J)V:149 - ReplaceVariable primaryKey -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 15: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setPrimaryKey(J)V:149 - InsertUnaryOp Negation of primaryKey - Status: Killed
+--> Mutation 16: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:153 - ReplaceVariable _choiceId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 17: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:153 - ReplaceVariable _choiceId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 18: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:153 - ReplaceVariable _choiceId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 19: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:153 - ReplaceVariable _choiceId -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 20: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:153 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 21: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getModelAttributes()Ljava/util/Map;:172 - ReplaceConstant - uuid ->  - Status: Survived
+--> Mutation 22: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getModelAttributes()Ljava/util/Map;:173 - ReplaceConstant - choiceId ->  - Status: Survived
+--> Mutation 23: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getModelAttributes()Ljava/util/Map;:174 - ReplaceConstant - questionId ->  - Status: Survived
+--> Mutation 24: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getModelAttributes()Ljava/util/Map;:175 - ReplaceConstant - name ->  - Status: Survived
+--> Mutation 25: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getModelAttributes()Ljava/util/Map;:176 - ReplaceConstant - description ->  - Status: Survived
+--> Mutation 26: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:183 - ReplaceConstant - uuid ->  - Status: Survived
+--> Mutation 27: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 28: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceVariable uuid -> TX_MANAGER - Status: Survived
+--> Mutation 29: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceVariable uuid -> TABLE_NAME - Status: Survived
+--> Mutation 30: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 31: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceVariable uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 32: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 33: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 34: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 35: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:185 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 36: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:186 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 37: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:186 - ReplaceVariable uuid -> TX_MANAGER - Status: Survived
+--> Mutation 38: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:186 - ReplaceVariable uuid -> TABLE_NAME - Status: Killed
+--> Mutation 39: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:186 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 40: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:186 - ReplaceVariable uuid -> DATA_SOURCE - Status: Killed
+--> Mutation 41: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:186 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 42: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:186 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 43: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:186 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 44: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:189 - ReplaceConstant - choiceId ->  - Status: Survived
+--> Mutation 45: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:191 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 46: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:195 - ReplaceConstant - questionId ->  - Status: Survived
+--> Mutation 47: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:197 - ReplaceVariable questionId -> choiceId - Status: Survived
+--> Mutation 48: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:197 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 49: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:198 - ReplaceVariable questionId -> choiceId - Status: Killed
+--> Mutation 50: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:201 - ReplaceConstant - name ->  - Status: Killed
+--> Mutation 51: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 52: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> TX_MANAGER - Status: Killed
+--> Mutation 53: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> TABLE_NAME - Status: Killed
+--> Mutation 54: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 55: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> DATA_SOURCE - Status: Killed
+--> Mutation 56: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 57: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> uuid - Status: Killed
+--> Mutation 58: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 59: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceVariable name -> SESSION_FACTORY - Status: Killed
+--> Mutation 60: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:203 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 61: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 62: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> TX_MANAGER - Status: Killed
+--> Mutation 63: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> TABLE_NAME - Status: Killed
+--> Mutation 64: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 65: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> DATA_SOURCE - Status: Killed
+--> Mutation 66: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 67: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> uuid - Status: Killed
+--> Mutation 68: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 69: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:204 - ReplaceVariable name -> SESSION_FACTORY - Status: Killed
+--> Mutation 70: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:207 - ReplaceConstant - description ->  - Status: Killed
+--> Mutation 71: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 72: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> TX_MANAGER - Status: Survived
+--> Mutation 73: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> TABLE_NAME - Status: Survived
+--> Mutation 74: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 75: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> name - Status: Survived
+--> Mutation 76: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> DATA_SOURCE - Status: Survived
+--> Mutation 77: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 78: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> uuid - Status: Killed
+--> Mutation 79: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> ORDER_BY_SQL - Status: Survived
+--> Mutation 80: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceVariable description -> SESSION_FACTORY - Status: Survived
+--> Mutation 81: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:209 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 82: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 83: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> TX_MANAGER - Status: Killed
+--> Mutation 84: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> TABLE_NAME - Status: Killed
+--> Mutation 85: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 86: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> name - Status: Killed
+--> Mutation 87: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> DATA_SOURCE - Status: Killed
+--> Mutation 88: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 89: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> uuid - Status: Killed
+--> Mutation 90: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> ORDER_BY_SQL - Status: Killed
+--> Mutation 91: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setModelAttributes(Ljava/util/Map;)V:210 - ReplaceVariable description -> SESSION_FACTORY - Status: Killed
+--> Mutation 92: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceVariable _uuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 93: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceVariable _uuid -> TX_MANAGER - Status: Killed
+--> Mutation 94: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceVariable _uuid -> TABLE_NAME - Status: Killed
+--> Mutation 95: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceVariable _uuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 96: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceVariable _uuid -> DATA_SOURCE - Status: Killed
+--> Mutation 97: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceVariable _uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 98: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceVariable _uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 99: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceVariable _uuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 100: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:216 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 101: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:220 - ReplaceVariable _uuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 102: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:220 - ReplaceVariable _uuid -> TX_MANAGER - Status: Killed
+--> Mutation 103: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:220 - ReplaceVariable _uuid -> TABLE_NAME - Status: Survived
+--> Mutation 104: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:220 - ReplaceVariable _uuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 105: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:220 - ReplaceVariable _uuid -> DATA_SOURCE - Status: Killed
+--> Mutation 106: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:220 - ReplaceVariable _uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 107: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:220 - ReplaceVariable _uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 108: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getUuid()Ljava/lang/String;:220 - ReplaceVariable _uuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 109: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceVariable _originalUuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 110: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceVariable _originalUuid -> TX_MANAGER - Status: Survived
+--> Mutation 111: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceVariable _originalUuid -> TABLE_NAME - Status: Survived
+--> Mutation 112: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceVariable _originalUuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 113: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceVariable _originalUuid -> DATA_SOURCE - Status: Survived
+--> Mutation 114: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceVariable _originalUuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 115: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceVariable _originalUuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 116: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceVariable _originalUuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 117: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:225 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 118: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:226 - ReplaceVariable _uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 119: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:226 - ReplaceVariable _uuid -> TX_MANAGER - Status: Survived
+--> Mutation 120: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:226 - ReplaceVariable _uuid -> TABLE_NAME - Status: Survived
+--> Mutation 121: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:226 - ReplaceVariable _uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 122: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:226 - ReplaceVariable _uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 123: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:226 - ReplaceVariable _uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 124: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:226 - ReplaceVariable _uuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 125: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:226 - ReplaceVariable _uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 126: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:229 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 127: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:229 - ReplaceVariable uuid -> TX_MANAGER - Status: Killed
+--> Mutation 128: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:229 - ReplaceVariable uuid -> TABLE_NAME - Status: Killed
+--> Mutation 129: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:229 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 130: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:229 - ReplaceVariable uuid -> DATA_SOURCE - Status: Killed
+--> Mutation 131: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:229 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 132: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:229 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 133: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setUuid(Ljava/lang/String;)V:229 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 134: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalUuid()Ljava/lang/String;:233 - ReplaceVariable _originalUuid -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 135: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalUuid()Ljava/lang/String;:233 - ReplaceVariable _originalUuid -> TX_MANAGER - Status: Killed
+--> Mutation 136: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalUuid()Ljava/lang/String;:233 - ReplaceVariable _originalUuid -> TABLE_NAME - Status: Killed
+--> Mutation 137: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalUuid()Ljava/lang/String;:233 - ReplaceVariable _originalUuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 138: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalUuid()Ljava/lang/String;:233 - ReplaceVariable _originalUuid -> DATA_SOURCE - Status: Killed
+--> Mutation 139: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalUuid()Ljava/lang/String;:233 - ReplaceVariable _originalUuid -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 140: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalUuid()Ljava/lang/String;:233 - ReplaceVariable _originalUuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 141: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalUuid()Ljava/lang/String;:233 - ReplaceVariable _originalUuid -> SESSION_FACTORY - Status: Killed
+--> Mutation 142: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getChoiceId()J:238 - ReplaceVariable _choiceId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 143: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getChoiceId()J:238 - ReplaceVariable _choiceId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 144: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getChoiceId()J:238 - ReplaceVariable _choiceId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 145: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getChoiceId()J:238 - ReplaceVariable _choiceId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 146: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getChoiceId()J:238 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 147: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setChoiceId(J)V:242 - ReplaceVariable choiceId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 148: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setChoiceId(J)V:242 - ReplaceVariable choiceId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 149: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setChoiceId(J)V:242 - ReplaceVariable choiceId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 150: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setChoiceId(J)V:242 - ReplaceVariable choiceId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 151: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setChoiceId(J)V:242 - InsertUnaryOp Negation of choiceId - Status: Killed
+--> Mutation 152: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getQuestionId()J:247 - ReplaceVariable _questionId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 153: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getQuestionId()J:247 - ReplaceVariable _questionId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 154: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getQuestionId()J:247 - ReplaceVariable _questionId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 155: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getQuestionId()J:247 - ReplaceVariable _questionId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 156: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getQuestionId()J:247 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 157: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:251 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 158: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:251 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 159: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:251 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 160: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:253 - ReplaceVariable _setOriginalQuestionId -> COLUMN_BITMASK_ENABLED - Status: Survived
+--> Mutation 161: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:253 - ReplaceVariable _setOriginalQuestionId -> FINDER_CACHE_ENABLED - Status: Survived
+--> Mutation 162: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:253 - ReplaceVariable _setOriginalQuestionId -> ENTITY_CACHE_ENABLED - Status: Survived
+--> Mutation 163: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:253 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 164: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:253 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 165: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:254 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 166: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:256 - ReplaceVariable _questionId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 167: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:256 - ReplaceVariable _questionId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 168: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:256 - ReplaceVariable _questionId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 169: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:256 - ReplaceVariable _questionId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 170: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:256 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 171: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:259 - ReplaceVariable questionId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 172: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:259 - ReplaceVariable questionId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 173: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:259 - ReplaceVariable questionId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 174: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:259 - ReplaceVariable questionId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 175: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setQuestionId(J)V:259 - InsertUnaryOp Negation of questionId - Status: Killed
+--> Mutation 176: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalQuestionId()J:263 - ReplaceVariable _originalQuestionId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 177: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalQuestionId()J:263 - ReplaceVariable _originalQuestionId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 178: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalQuestionId()J:263 - ReplaceVariable _originalQuestionId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 179: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalQuestionId()J:263 - ReplaceVariable _originalQuestionId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 180: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalQuestionId()J:263 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 181: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceVariable _name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 182: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceVariable _name -> TX_MANAGER - Status: Killed
+--> Mutation 183: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceVariable _name -> TABLE_NAME - Status: Killed
+--> Mutation 184: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceVariable _name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 185: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceVariable _name -> DATA_SOURCE - Status: Killed
+--> Mutation 186: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceVariable _name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 187: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceVariable _name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 188: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceVariable _name -> SESSION_FACTORY - Status: Killed
+--> Mutation 189: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:268 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 190: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:272 - ReplaceVariable _name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 191: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:272 - ReplaceVariable _name -> TX_MANAGER - Status: Killed
+--> Mutation 192: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:272 - ReplaceVariable _name -> TABLE_NAME - Status: Killed
+--> Mutation 193: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:272 - ReplaceVariable _name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 194: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:272 - ReplaceVariable _name -> DATA_SOURCE - Status: Killed
+--> Mutation 195: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:272 - ReplaceVariable _name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 196: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:272 - ReplaceVariable _name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 197: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getName()Ljava/lang/String;:272 - ReplaceVariable _name -> SESSION_FACTORY - Status: Killed
+--> Mutation 198: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:277 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 199: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:277 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 200: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:277 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 201: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceVariable _originalName -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 202: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceVariable _originalName -> TX_MANAGER - Status: Survived
+--> Mutation 203: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceVariable _originalName -> TABLE_NAME - Status: Survived
+--> Mutation 204: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceVariable _originalName -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 205: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceVariable _originalName -> DATA_SOURCE - Status: Survived
+--> Mutation 206: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceVariable _originalName -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 207: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceVariable _originalName -> ORDER_BY_SQL - Status: Survived
+--> Mutation 208: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceVariable _originalName -> SESSION_FACTORY - Status: Survived
+--> Mutation 209: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:279 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 210: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:280 - ReplaceVariable _name -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 211: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:280 - ReplaceVariable _name -> TX_MANAGER - Status: Survived
+--> Mutation 212: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:280 - ReplaceVariable _name -> TABLE_NAME - Status: Survived
+--> Mutation 213: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:280 - ReplaceVariable _name -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 214: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:280 - ReplaceVariable _name -> DATA_SOURCE - Status: Survived
+--> Mutation 215: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:280 - ReplaceVariable _name -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 216: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:280 - ReplaceVariable _name -> ORDER_BY_SQL - Status: Survived
+--> Mutation 217: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:280 - ReplaceVariable _name -> SESSION_FACTORY - Status: Survived
+--> Mutation 218: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:283 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 219: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:283 - ReplaceVariable name -> TX_MANAGER - Status: Killed
+--> Mutation 220: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:283 - ReplaceVariable name -> TABLE_NAME - Status: Killed
+--> Mutation 221: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:283 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 222: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:283 - ReplaceVariable name -> DATA_SOURCE - Status: Killed
+--> Mutation 223: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:283 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 224: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:283 - ReplaceVariable name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 225: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setName(Ljava/lang/String;)V:283 - ReplaceVariable name -> SESSION_FACTORY - Status: Killed
+--> Mutation 226: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalName()Ljava/lang/String;:287 - ReplaceVariable _originalName -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 227: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalName()Ljava/lang/String;:287 - ReplaceVariable _originalName -> TX_MANAGER - Status: Killed
+--> Mutation 228: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalName()Ljava/lang/String;:287 - ReplaceVariable _originalName -> TABLE_NAME - Status: Killed
+--> Mutation 229: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalName()Ljava/lang/String;:287 - ReplaceVariable _originalName -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 230: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalName()Ljava/lang/String;:287 - ReplaceVariable _originalName -> DATA_SOURCE - Status: Killed
+--> Mutation 231: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalName()Ljava/lang/String;:287 - ReplaceVariable _originalName -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 232: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalName()Ljava/lang/String;:287 - ReplaceVariable _originalName -> ORDER_BY_SQL - Status: Killed
+--> Mutation 233: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getOriginalName()Ljava/lang/String;:287 - ReplaceVariable _originalName -> SESSION_FACTORY - Status: Killed
+--> Mutation 234: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceVariable _description -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 235: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceVariable _description -> TX_MANAGER - Status: Killed
+--> Mutation 236: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceVariable _description -> TABLE_NAME - Status: Killed
+--> Mutation 237: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceVariable _description -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 238: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceVariable _description -> DATA_SOURCE - Status: Killed
+--> Mutation 239: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceVariable _description -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 240: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceVariable _description -> ORDER_BY_SQL - Status: Killed
+--> Mutation 241: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceVariable _description -> SESSION_FACTORY - Status: Killed
+--> Mutation 242: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:292 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 243: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:296 - ReplaceVariable _description -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 244: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:296 - ReplaceVariable _description -> TX_MANAGER - Status: Killed
+--> Mutation 245: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:296 - ReplaceVariable _description -> TABLE_NAME - Status: Killed
+--> Mutation 246: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:296 - ReplaceVariable _description -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 247: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:296 - ReplaceVariable _description -> DATA_SOURCE - Status: Killed
+--> Mutation 248: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:296 - ReplaceVariable _description -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 249: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:296 - ReplaceVariable _description -> ORDER_BY_SQL - Status: Killed
+--> Mutation 250: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription()Ljava/lang/String;:296 - ReplaceVariable _description -> SESSION_FACTORY - Status: Killed
+--> Mutation 251: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;)Ljava/lang/String;:303 - ReplaceVariable languageId -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 252: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;)Ljava/lang/String;:303 - ReplaceVariable languageId -> TX_MANAGER - Status: Survived
+--> Mutation 253: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;)Ljava/lang/String;:303 - ReplaceVariable languageId -> TABLE_NAME - Status: Survived
+--> Mutation 254: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;)Ljava/lang/String;:303 - ReplaceVariable languageId -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 255: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;)Ljava/lang/String;:303 - ReplaceVariable languageId -> DATA_SOURCE - Status: Survived
+--> Mutation 256: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;)Ljava/lang/String;:303 - ReplaceVariable languageId -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 257: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;)Ljava/lang/String;:303 - ReplaceVariable languageId -> ORDER_BY_SQL - Status: Survived
+--> Mutation 258: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;)Ljava/lang/String;:303 - ReplaceVariable languageId -> SESSION_FACTORY - Status: Survived
+--> Mutation 259: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable languageId -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 260: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable languageId -> TX_MANAGER - Status: Survived
+--> Mutation 261: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable languageId -> TABLE_NAME - Status: Survived
+--> Mutation 262: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable languageId -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 263: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable languageId -> DATA_SOURCE - Status: Survived
+--> Mutation 264: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable languageId -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 265: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable languageId -> ORDER_BY_SQL - Status: Survived
+--> Mutation 266: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable languageId -> SESSION_FACTORY - Status: Survived
+--> Mutation 267: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable useDefault -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 268: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable useDefault -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 269: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - ReplaceVariable useDefault -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 270: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - InsertUnaryOp Negation of useDefault - Status: Survived
+--> Mutation 271: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - InsertUnaryOp IINC 1 useDefault - Status: Killed
+--> Mutation 272: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/util/Locale;Z)Ljava/lang/String;:309 - InsertUnaryOp IINC -1 useDefault - Status: Killed
+--> Mutation 273: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;)Ljava/lang/String;:313 - ReplaceVariable languageId -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 274: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;)Ljava/lang/String;:313 - ReplaceVariable languageId -> TX_MANAGER - Status: Survived
+--> Mutation 275: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;)Ljava/lang/String;:313 - ReplaceVariable languageId -> TABLE_NAME - Status: Survived
+--> Mutation 276: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;)Ljava/lang/String;:313 - ReplaceVariable languageId -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 277: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;)Ljava/lang/String;:313 - ReplaceVariable languageId -> DATA_SOURCE - Status: Survived
+--> Mutation 278: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;)Ljava/lang/String;:313 - ReplaceVariable languageId -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 279: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;)Ljava/lang/String;:313 - ReplaceVariable languageId -> ORDER_BY_SQL - Status: Survived
+--> Mutation 280: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;)Ljava/lang/String;:313 - ReplaceVariable languageId -> SESSION_FACTORY - Status: Survived
+--> Mutation 281: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable languageId -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 282: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable languageId -> TX_MANAGER - Status: Survived
+--> Mutation 283: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable languageId -> TABLE_NAME - Status: Survived
+--> Mutation 284: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable languageId -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 285: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable languageId -> DATA_SOURCE - Status: Survived
+--> Mutation 286: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable languageId -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 287: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable languageId -> ORDER_BY_SQL - Status: Survived
+--> Mutation 288: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable languageId -> SESSION_FACTORY - Status: Survived
+--> Mutation 289: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable useDefault -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 290: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable useDefault -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 291: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - ReplaceVariable useDefault -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 292: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - InsertUnaryOp Negation of useDefault - Status: Survived
+--> Mutation 293: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - InsertUnaryOp IINC 1 useDefault - Status: Killed
+--> Mutation 294: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescription(Ljava/lang/String;Z)Ljava/lang/String;:317 - InsertUnaryOp IINC -1 useDefault - Status: Killed
+--> Mutation 295: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentLanguageId()Ljava/lang/String;:322 - ReplaceVariable _descriptionCurrentLanguageId -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 296: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentLanguageId()Ljava/lang/String;:322 - ReplaceVariable _descriptionCurrentLanguageId -> TX_MANAGER - Status: Killed
+--> Mutation 297: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentLanguageId()Ljava/lang/String;:322 - ReplaceVariable _descriptionCurrentLanguageId -> TABLE_NAME - Status: Killed
+--> Mutation 298: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentLanguageId()Ljava/lang/String;:322 - ReplaceVariable _descriptionCurrentLanguageId -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 299: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentLanguageId()Ljava/lang/String;:322 - ReplaceVariable _descriptionCurrentLanguageId -> DATA_SOURCE - Status: Killed
+--> Mutation 300: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentLanguageId()Ljava/lang/String;:322 - ReplaceVariable _descriptionCurrentLanguageId -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 301: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentLanguageId()Ljava/lang/String;:322 - ReplaceVariable _descriptionCurrentLanguageId -> ORDER_BY_SQL - Status: Killed
+--> Mutation 302: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentLanguageId()Ljava/lang/String;:322 - ReplaceVariable _descriptionCurrentLanguageId -> SESSION_FACTORY - Status: Killed
+--> Mutation 303: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentValue()Ljava/lang/String;:327 - ReplaceVariable _descriptionCurrentLanguageId -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 304: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentValue()Ljava/lang/String;:327 - ReplaceVariable _descriptionCurrentLanguageId -> TX_MANAGER - Status: Survived
+--> Mutation 305: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentValue()Ljava/lang/String;:327 - ReplaceVariable _descriptionCurrentLanguageId -> TABLE_NAME - Status: Survived
+--> Mutation 306: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentValue()Ljava/lang/String;:327 - ReplaceVariable _descriptionCurrentLanguageId -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 307: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentValue()Ljava/lang/String;:327 - ReplaceVariable _descriptionCurrentLanguageId -> DATA_SOURCE - Status: Survived
+--> Mutation 308: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentValue()Ljava/lang/String;:327 - ReplaceVariable _descriptionCurrentLanguageId -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 309: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentValue()Ljava/lang/String;:327 - ReplaceVariable _descriptionCurrentLanguageId -> ORDER_BY_SQL - Status: Survived
+--> Mutation 310: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getDescriptionCurrentValue()Ljava/lang/String;:327 - ReplaceVariable _descriptionCurrentLanguageId -> SESSION_FACTORY - Status: Survived
+--> Mutation 311: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;)V:337 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 312: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;)V:337 - ReplaceVariable description -> TX_MANAGER - Status: Killed
+--> Mutation 313: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;)V:337 - ReplaceVariable description -> TABLE_NAME - Status: Killed
+--> Mutation 314: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;)V:337 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 315: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;)V:337 - ReplaceVariable description -> DATA_SOURCE - Status: Killed
+--> Mutation 316: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;)V:337 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 317: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;)V:337 - ReplaceVariable description -> ORDER_BY_SQL - Status: Killed
+--> Mutation 318: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;)V:337 - ReplaceVariable description -> SESSION_FACTORY - Status: Killed
+--> Mutation 319: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;)V:341 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 320: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;)V:341 - ReplaceVariable description -> TX_MANAGER - Status: Survived
+--> Mutation 321: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;)V:341 - ReplaceVariable description -> TABLE_NAME - Status: Survived
+--> Mutation 322: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;)V:341 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 323: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;)V:341 - ReplaceVariable description -> DATA_SOURCE - Status: Survived
+--> Mutation 324: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;)V:341 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 325: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;)V:341 - ReplaceVariable description -> ORDER_BY_SQL - Status: Survived
+--> Mutation 326: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;)V:341 - ReplaceVariable description -> SESSION_FACTORY - Status: Survived
+--> Mutation 327: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:346 - ReplaceVariable locale -> defaultLocale - Status: Survived
+--> Mutation 328: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:347 - ReplaceVariable defaultLocale -> locale - Status: Survived
+--> Mutation 329: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 330: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> TX_MANAGER - Status: Killed
+--> Mutation 331: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> TABLE_NAME - Status: Killed
+--> Mutation 332: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 333: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> languageId - Status: Killed
+--> Mutation 334: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> DATA_SOURCE - Status: Killed
+--> Mutation 335: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> defaultLanguageId - Status: Killed
+--> Mutation 336: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 337: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> ORDER_BY_SQL - Status: Killed
+--> Mutation 338: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceVariable description -> SESSION_FACTORY - Status: Killed
+--> Mutation 339: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:349 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 340: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceConstant - Description ->  - Status: Survived
+--> Mutation 341: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 342: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> TX_MANAGER - Status: Survived
+--> Mutation 343: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> TABLE_NAME - Status: Survived
+--> Mutation 344: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 345: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> languageId - Status: Survived
+--> Mutation 346: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> DATA_SOURCE - Status: Survived
+--> Mutation 347: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> defaultLanguageId - Status: Survived
+--> Mutation 348: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 349: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> ORDER_BY_SQL - Status: Survived
+--> Mutation 350: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable description -> SESSION_FACTORY - Status: Survived
+--> Mutation 351: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 352: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> TX_MANAGER - Status: Survived
+--> Mutation 353: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> TABLE_NAME - Status: Survived
+--> Mutation 354: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 355: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> description - Status: Survived
+--> Mutation 356: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> DATA_SOURCE - Status: Survived
+--> Mutation 357: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> defaultLanguageId - Status: Survived
+--> Mutation 358: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 359: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> ORDER_BY_SQL - Status: Survived
+--> Mutation 360: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable languageId -> SESSION_FACTORY - Status: Survived
+--> Mutation 361: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 362: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> TX_MANAGER - Status: Survived
+--> Mutation 363: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> TABLE_NAME - Status: Survived
+--> Mutation 364: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 365: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> languageId - Status: Survived
+--> Mutation 366: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> description - Status: Survived
+--> Mutation 367: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> DATA_SOURCE - Status: Survived
+--> Mutation 368: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 369: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> ORDER_BY_SQL - Status: Survived
+--> Mutation 370: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:351 - ReplaceVariable defaultLanguageId -> SESSION_FACTORY - Status: Survived
+--> Mutation 371: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceConstant - Description ->  - Status: Survived
+--> Mutation 372: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 373: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> TX_MANAGER - Status: Survived
+--> Mutation 374: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> TABLE_NAME - Status: Survived
+--> Mutation 375: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 376: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> description - Status: Survived
+--> Mutation 377: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> DATA_SOURCE - Status: Survived
+--> Mutation 378: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> defaultLanguageId - Status: Survived
+--> Mutation 379: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 380: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> ORDER_BY_SQL - Status: Survived
+--> Mutation 381: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescription(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;)V:356 - ReplaceVariable languageId -> SESSION_FACTORY - Status: Survived
+--> Mutation 382: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionCurrentLanguageId(Ljava/lang/String;)V:361 - ReplaceVariable languageId -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 383: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionCurrentLanguageId(Ljava/lang/String;)V:361 - ReplaceVariable languageId -> TX_MANAGER - Status: Killed
+--> Mutation 384: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionCurrentLanguageId(Ljava/lang/String;)V:361 - ReplaceVariable languageId -> TABLE_NAME - Status: Killed
+--> Mutation 385: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionCurrentLanguageId(Ljava/lang/String;)V:361 - ReplaceVariable languageId -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 386: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionCurrentLanguageId(Ljava/lang/String;)V:361 - ReplaceVariable languageId -> DATA_SOURCE - Status: Killed
+--> Mutation 387: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionCurrentLanguageId(Ljava/lang/String;)V:361 - ReplaceVariable languageId -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 388: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionCurrentLanguageId(Ljava/lang/String;)V:361 - ReplaceVariable languageId -> ORDER_BY_SQL - Status: Killed
+--> Mutation 389: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionCurrentLanguageId(Ljava/lang/String;)V:361 - ReplaceVariable languageId -> SESSION_FACTORY - Status: Killed
+--> Mutation 390: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionMap(Ljava/util/Map;Ljava/util/Locale;)V:370 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 391: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.setDescriptionMap(Ljava/util/Map;Ljava/util/Locale;)V:375 - ReplaceConstant - Description ->  - Status: Survived
+--> Mutation 392: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getColumnBitmask()J:380 - ReplaceVariable _columnBitmask -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 393: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getColumnBitmask()J:380 - ReplaceVariable _columnBitmask -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 394: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getColumnBitmask()J:380 - ReplaceVariable _columnBitmask -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 395: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getColumnBitmask()J:380 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 396: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getColumnBitmask()J:380 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 397: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getExpandoBridge()Lcom/liferay/portlet/expando/model/ExpandoBridge;:385 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 398: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.getExpandoBridge()Lcom/liferay/portlet/expando/model/ExpandoBridge;:385 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 399: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toEscapedModel()Lcom/liferay/portlet/polls/model/PollsChoice;:405 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 400: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:430 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 401: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:432 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 402: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:432 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 403: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:432 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 404: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:433 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 405: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:433 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 406: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:433 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 407: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:435 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 408: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:435 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 409: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:435 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 410: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:436 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 411: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:439 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 412: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:442 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 413: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:442 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 414: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:442 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 415: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:442 - ReplaceComparisonOperator == -> -2 - Status: Killed
+--> Mutation 416: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:442 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 417: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:442 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 418: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:443 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 419: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:443 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 420: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:443 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 421: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:448 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 422: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:448 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 423: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:448 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 424: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:448 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 425: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:448 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 426: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:448 - ReplaceComparisonOperator == -> <= - Status: Killed
+--> Mutation 427: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:449 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 428: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:449 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 429: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:449 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 430: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.compareTo(Lcom/liferay/portlet/polls/model/PollsChoice;)I:452 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 431: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:457 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 432: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:458 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 433: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:467 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 434: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:472 - ReplaceVariable primaryKey -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 435: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:472 - ReplaceVariable primaryKey -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 436: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:472 - ReplaceVariable primaryKey -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 437: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:472 - ReplaceVariable primaryKey -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 438: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:472 - InsertUnaryOp Negation of primaryKey - Status: Killed
+--> Mutation 439: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:472 - ReplaceComparisonOperator != -> -1 - Status: Killed
+--> Mutation 440: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:472 - ReplaceComparisonOperator != -> < - Status: Killed
+--> Mutation 441: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:472 - ReplaceComparisonOperator != -> > - Status: Killed
+--> Mutation 442: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:473 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 443: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.equals(Ljava/lang/Object;)Z:476 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 444: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable pollsChoiceModelImpl -> this - Status: Survived
+--> Mutation 445: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable pollsChoiceModelImpl -> this - Status: Survived
+--> Mutation 446: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable _uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 447: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable _uuid -> TX_MANAGER - Status: Killed
+--> Mutation 448: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable _uuid -> TABLE_NAME - Status: Survived
+--> Mutation 449: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable _uuid -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 450: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable _uuid -> DATA_SOURCE - Status: Killed
+--> Mutation 451: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable _uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 452: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable _uuid -> ORDER_BY_SQL - Status: Killed
+--> Mutation 453: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:489 - ReplaceVariable _uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 454: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:491 - ReplaceVariable pollsChoiceModelImpl -> this - Status: Survived
+--> Mutation 455: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:491 - ReplaceVariable pollsChoiceModelImpl -> this - Status: Survived
+--> Mutation 456: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:491 - ReplaceVariable _questionId -> UUID_COLUMN_BITMASK - Status: Killed
+--> Mutation 457: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:491 - ReplaceVariable _questionId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 458: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:491 - ReplaceVariable _questionId -> QUESTIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 459: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:491 - ReplaceVariable _questionId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 460: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:491 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 461: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:493 - ReplaceVariable pollsChoiceModelImpl -> this - Status: Survived
+--> Mutation 462: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:493 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 463: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable pollsChoiceModelImpl -> this - Status: Survived
+--> Mutation 464: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable pollsChoiceModelImpl -> this - Status: Survived
+--> Mutation 465: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable _name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 466: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable _name -> TX_MANAGER - Status: Killed
+--> Mutation 467: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable _name -> TABLE_NAME - Status: Killed
+--> Mutation 468: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable _name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 469: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable _name -> DATA_SOURCE - Status: Killed
+--> Mutation 470: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable _name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 471: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable _name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 472: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:495 - ReplaceVariable _name -> SESSION_FACTORY - Status: Killed
+--> Mutation 473: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:497 - ReplaceVariable pollsChoiceModelImpl -> this - Status: Survived
+--> Mutation 474: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:497 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 475: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.resetOriginalValues()V:497 - ReplaceConstant - 0 -> -1 - Status: Killed
+--> Mutation 476: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 477: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> TX_MANAGER - Status: Survived
+--> Mutation 478: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> TABLE_NAME - Status: Survived
+--> Mutation 479: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 480: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 481: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 482: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 483: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 484: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 485: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 486: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> TX_MANAGER - Status: Survived
+--> Mutation 487: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> TABLE_NAME - Status: Survived
+--> Mutation 488: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 489: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> DATA_SOURCE - Status: Survived
+--> Mutation 490: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 491: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> ORDER_BY_SQL - Status: Survived
+--> Mutation 492: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceVariable uuid -> SESSION_FACTORY - Status: Survived
+--> Mutation 493: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 494: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 495: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:508 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 496: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 497: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> TX_MANAGER - Status: Survived
+--> Mutation 498: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> TABLE_NAME - Status: Survived
+--> Mutation 499: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 500: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> DATA_SOURCE - Status: Survived
+--> Mutation 501: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 502: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> uuid - Status: Survived
+--> Mutation 503: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> ORDER_BY_SQL - Status: Survived
+--> Mutation 504: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> SESSION_FACTORY - Status: Survived
+--> Mutation 505: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 506: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 507: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> TX_MANAGER - Status: Survived
+--> Mutation 508: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> TABLE_NAME - Status: Survived
+--> Mutation 509: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 510: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> DATA_SOURCE - Status: Survived
+--> Mutation 511: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 512: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> uuid - Status: Survived
+--> Mutation 513: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> ORDER_BY_SQL - Status: Survived
+--> Mutation 514: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceVariable name -> SESSION_FACTORY - Status: Survived
+--> Mutation 515: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 516: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 517: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:520 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 518: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 519: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> TX_MANAGER - Status: Survived
+--> Mutation 520: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> TABLE_NAME - Status: Survived
+--> Mutation 521: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 522: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> name - Status: Survived
+--> Mutation 523: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> DATA_SOURCE - Status: Survived
+--> Mutation 524: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 525: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> uuid - Status: Survived
+--> Mutation 526: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> ORDER_BY_SQL - Status: Survived
+--> Mutation 527: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> SESSION_FACTORY - Status: Survived
+--> Mutation 528: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 529: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 530: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> TX_MANAGER - Status: Survived
+--> Mutation 531: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> TABLE_NAME - Status: Survived
+--> Mutation 532: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 533: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> name - Status: Survived
+--> Mutation 534: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> DATA_SOURCE - Status: Survived
+--> Mutation 535: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 536: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> uuid - Status: Survived
+--> Mutation 537: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> ORDER_BY_SQL - Status: Survived
+--> Mutation 538: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceVariable description -> SESSION_FACTORY - Status: Survived
+--> Mutation 539: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 540: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 541: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:528 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 542: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:537 - ReplaceConstant - 11 -> 0 - Status: Survived
+--> Mutation 543: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:537 - ReplaceConstant - 11 -> 1 - Status: Survived
+--> Mutation 544: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:537 - ReplaceConstant - 11 -> -1 - Status: Survived
+--> Mutation 545: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:537 - ReplaceConstant - 11 -> 10 - Status: Survived
+--> Mutation 546: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:537 - ReplaceConstant - 11 -> 12 - Status: Survived
+--> Mutation 547: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:539 - ReplaceConstant - {uuid= ->  - Status: Killed
+--> Mutation 548: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:541 - ReplaceConstant - , choiceId= ->  - Status: Killed
+--> Mutation 549: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:543 - ReplaceConstant - , questionId= ->  - Status: Killed
+--> Mutation 550: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:545 - ReplaceConstant - , name= ->  - Status: Killed
+--> Mutation 551: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:547 - ReplaceConstant - , description= ->  - Status: Killed
+--> Mutation 552: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toString()Ljava/lang/String;:549 - ReplaceConstant - } ->  - Status: Killed
+--> Mutation 553: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:555 - ReplaceConstant - 19 -> 0 - Status: Survived
+--> Mutation 554: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:555 - ReplaceConstant - 19 -> 1 - Status: Survived
+--> Mutation 555: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:555 - ReplaceConstant - 19 -> -1 - Status: Survived
+--> Mutation 556: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:555 - ReplaceConstant - 19 -> 18 - Status: Survived
+--> Mutation 557: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:555 - ReplaceConstant - 19 -> 20 - Status: Survived
+--> Mutation 558: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:557 - ReplaceConstant - <model><model-name> ->  - Status: Killed
+--> Mutation 559: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:558 - ReplaceConstant - com.liferay.portlet.polls.model.PollsChoice ->  - Status: Killed
+--> Mutation 560: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:559 - ReplaceConstant - </model-name> ->  - Status: Killed
+--> Mutation 561: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:561 - ReplaceConstant - <column><column-name>uuid</column-name><column-value><![CDATA[ ->  - Status: Killed
+--> Mutation 562: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:564 - ReplaceConstant - ]]></column-value></column> ->  - Status: Killed
+--> Mutation 563: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:565 - ReplaceConstant - <column><column-name>choiceId</column-name><column-value><![CDATA[ ->  - Status: Killed
+--> Mutation 564: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:568 - ReplaceConstant - ]]></column-value></column> ->  - Status: Killed
+--> Mutation 565: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:569 - ReplaceConstant - <column><column-name>questionId</column-name><column-value><![CDATA[ ->  - Status: Killed
+--> Mutation 566: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:572 - ReplaceConstant - ]]></column-value></column> ->  - Status: Killed
+--> Mutation 567: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:573 - ReplaceConstant - <column><column-name>name</column-name><column-value><![CDATA[ ->  - Status: Killed
+--> Mutation 568: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:576 - ReplaceConstant - ]]></column-value></column> ->  - Status: Killed
+--> Mutation 569: com.liferay.portlet.polls.model.impl.PollsChoiceModelImpl.toXmlString()Ljava/lang/String;:577 - ReplaceConstant - <column><column-name>description</column-name><column-value><![CDATA[ ->  - Status: Killed
+* Compiling and checking tests
 * Computation finished

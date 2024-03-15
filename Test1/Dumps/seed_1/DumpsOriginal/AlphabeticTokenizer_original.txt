@@ -1,9 +1,9 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: weka.core.tokenizers.AlphabeticTokenizer
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/107_weka/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\107_weka\evosuite-files\evosuite.properties
+* Connecting to master process on port 14411
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
 * Finished analyzing classpath
@@ -18,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 423
-* Using seed 2482030657809
+* Using seed 1710476366884
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 72 / 423
-* Search finished after 181s and 3366 generations, 1292614 statements, best individual has fitness: 77.0
+* Search finished after 181s and 5633 generations, 2204735 statements, best individual has fitness: 77.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -56,25 +56,25 @@
 * Coverage of criterion CBRANCH: 83%
 * Total number of goals: 47
 * Number of covered goals: 39
-* Generated 13 tests with total length 66
+* Generated 15 tests with total length 62
 * Resulting test suite's coverage: 80% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 22%
+* Resulting test suite's mutation score: 25%
 * There are surviving mutants: 
 --> Mutation 0: weka.core.tokenizers.AlphabeticTokenizer.globalInfo()Ljava/lang/String;:56 - ReplaceConstant - Alphabetic string tokenizer, tokens are to be formed only from contiguous alphabetic sequences. ->  - Status: Killed
---> Mutation 1: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:67 - InsertUnaryOp Negation - Status: Survived
---> Mutation 2: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:67 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 1: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:67 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 2: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:67 - InsertUnaryOp +1 - Status: Killed
 --> Mutation 3: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:67 - InsertUnaryOp -1 - Status: Killed
 --> Mutation 4: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
---> Mutation 5: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 6: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC 1 beginpos - Status: Survived
+--> Mutation 5: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp Negation of beginpos - Status: Killed
+--> Mutation 6: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC 1 beginpos - Status: Killed
 --> Mutation 7: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC -1 beginpos - Status: Killed
 --> Mutation 8: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator >= -> -1 - Status: Survived
 --> Mutation 9: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator >= -> > - Status: Survived
 --> Mutation 10: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator >= -> == - Status: Killed
 --> Mutation 11: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 12: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 13: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC 1 beginpos - Status: Survived
+--> Mutation 13: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC 1 beginpos - Status: Killed
 --> Mutation 14: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC -1 beginpos - Status: Killed
 --> Mutation 15: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 97 -> 0 - Status: Survived
 --> Mutation 16: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 97 -> 1 - Status: Survived
@@ -98,42 +98,42 @@
 --> Mutation 34: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator <= -> == - Status: Survived
 --> Mutation 35: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 36: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 37: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC 1 beginpos - Status: Survived
+--> Mutation 37: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC 1 beginpos - Status: Killed
 --> Mutation 38: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC -1 beginpos - Status: Killed
 --> Mutation 39: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 65 -> 0 - Status: Survived
 --> Mutation 40: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 65 -> 1 - Status: Survived
 --> Mutation 41: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 65 -> -1 - Status: Survived
 --> Mutation 42: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 65 -> 64 - Status: Survived
 --> Mutation 43: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 65 -> 66 - Status: Survived
---> Mutation 44: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 44: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator < -> != - Status: Killed
 --> Mutation 45: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator < -> -2 - Status: Survived
 --> Mutation 46: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator < -> <= - Status: Survived
 --> Mutation 47: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 48: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 49: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC 1 beginpos - Status: Survived
+--> Mutation 49: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC 1 beginpos - Status: Killed
 --> Mutation 50: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - InsertUnaryOp IINC -1 beginpos - Status: Killed
---> Mutation 51: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 90 -> 0 - Status: Survived
---> Mutation 52: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 90 -> 1 - Status: Survived
---> Mutation 53: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 90 -> -1 - Status: Survived
+--> Mutation 51: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 90 -> 0 - Status: Killed
+--> Mutation 52: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 90 -> 1 - Status: Killed
+--> Mutation 53: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 90 -> -1 - Status: Killed
 --> Mutation 54: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 90 -> 89 - Status: Survived
 --> Mutation 55: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceConstant - 90 -> 91 - Status: Survived
 --> Mutation 56: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator <= -> -1 - Status: Survived
 --> Mutation 57: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator <= -> < - Status: Survived
---> Mutation 58: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 58: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:69 - ReplaceComparisonOperator <= -> == - Status: Killed
 --> Mutation 59: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:74 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 60: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:74 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 61: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:74 - InsertUnaryOp IINC 1 beginpos - Status: Survived
+--> Mutation 61: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:74 - InsertUnaryOp IINC 1 beginpos - Status: Killed
 --> Mutation 62: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:74 - InsertUnaryOp IINC -1 beginpos - Status: Killed
 --> Mutation 63: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
---> Mutation 64: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 65: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC 1 beginpos - Status: Survived
+--> Mutation 64: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp Negation of beginpos - Status: Killed
+--> Mutation 65: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC 1 beginpos - Status: Killed
 --> Mutation 66: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC -1 beginpos - Status: Killed
 --> Mutation 67: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator >= -> -1 - Status: Killed
 --> Mutation 68: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator >= -> > - Status: Survived
 --> Mutation 69: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator >= -> == - Status: Killed
 --> Mutation 70: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 71: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 72: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC 1 beginpos - Status: Survived
+--> Mutation 72: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC 1 beginpos - Status: Killed
 --> Mutation 73: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC -1 beginpos - Status: Killed
 --> Mutation 74: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 97 -> 0 - Status: Survived
 --> Mutation 75: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 97 -> 1 - Status: Survived
@@ -163,13 +163,13 @@
 --> Mutation 99: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 65 -> 1 - Status: Survived
 --> Mutation 100: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 65 -> -1 - Status: Survived
 --> Mutation 101: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 65 -> 64 - Status: Survived
---> Mutation 102: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 65 -> 66 - Status: Killed
---> Mutation 103: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 102: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 65 -> 66 - Status: Survived
+--> Mutation 103: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator < -> != - Status: Killed
 --> Mutation 104: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator < -> -2 - Status: Survived
---> Mutation 105: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator < -> <= - Status: Killed
+--> Mutation 105: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator < -> <= - Status: Survived
 --> Mutation 106: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 107: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 108: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC 1 beginpos - Status: Killed
+--> Mutation 108: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC 1 beginpos - Status: Survived
 --> Mutation 109: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - InsertUnaryOp IINC -1 beginpos - Status: Killed
 --> Mutation 110: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 90 -> 0 - Status: Killed
 --> Mutation 111: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceConstant - 90 -> 1 - Status: Killed
@@ -180,10 +180,10 @@
 --> Mutation 116: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator > -> -2 - Status: Survived
 --> Mutation 117: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:76 - ReplaceComparisonOperator > -> >= - Status: Survived
 --> Mutation 118: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:79 - ReplaceConstant - 1 -> 0 - Status: Killed
---> Mutation 119: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:82 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 119: weka.core.tokenizers.AlphabeticTokenizer.hasMoreElements()Z:82 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 120: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:94 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 121: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:94 - InsertUnaryOp +1 - Status: Killed
---> Mutation 122: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:94 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 122: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:94 - InsertUnaryOp -1 - Status: Killed
 --> Mutation 123: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 124: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - InsertUnaryOp Negation of beginpos - Status: Survived
 --> Mutation 125: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - InsertUnaryOp IINC 1 beginpos - Status: Killed
@@ -206,7 +206,7 @@
 --> Mutation 142: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 143: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - InsertUnaryOp Negation of beginpos - Status: Survived
 --> Mutation 144: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - InsertUnaryOp IINC 1 beginpos - Status: Killed
---> Mutation 145: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - InsertUnaryOp IINC -1 beginpos - Status: Killed
+--> Mutation 145: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - InsertUnaryOp IINC -1 beginpos - Status: Survived
 --> Mutation 146: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - ReplaceConstant - 122 -> 0 - Status: Survived
 --> Mutation 147: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - ReplaceConstant - 122 -> 1 - Status: Survived
 --> Mutation 148: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - ReplaceConstant - 122 -> -1 - Status: Survived
@@ -241,8 +241,8 @@
 --> Mutation 177: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:96 - ReplaceComparisonOperator <= -> == - Status: Survived
 --> Mutation 178: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:101 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 179: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:101 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 180: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:101 - InsertUnaryOp IINC 1 beginpos - Status: Killed
---> Mutation 181: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:101 - InsertUnaryOp IINC -1 beginpos - Status: Survived
+--> Mutation 180: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:101 - InsertUnaryOp IINC 1 beginpos - Status: Survived
+--> Mutation 181: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:101 - InsertUnaryOp IINC -1 beginpos - Status: Killed
 --> Mutation 182: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:103 - ReplaceVariable beginpos -> endpos - Status: Survived
 --> Mutation 183: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:103 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 184: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:103 - InsertUnaryOp Negation of beginpos - Status: Survived
@@ -252,26 +252,26 @@
 --> Mutation 188: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:103 - ReplaceComparisonOperator < -> -2 - Status: Killed
 --> Mutation 189: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:103 - ReplaceComparisonOperator < -> <= - Status: Survived
 --> Mutation 190: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:104 - ReplaceConstant - No more tokens present ->  - Status: Survived
---> Mutation 191: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> beginpos - Status: Killed
---> Mutation 192: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> m_CurrentPos - Status: Killed
---> Mutation 193: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp Negation of endpos - Status: Killed
---> Mutation 194: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC 1 endpos - Status: Survived
---> Mutation 195: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC -1 endpos - Status: Survived
---> Mutation 196: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 191: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> beginpos - Status: Survived
+--> Mutation 192: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> m_CurrentPos - Status: Survived
+--> Mutation 193: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp Negation of endpos - Status: Survived
+--> Mutation 194: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC 1 endpos - Status: Killed
+--> Mutation 195: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC -1 endpos - Status: Killed
+--> Mutation 196: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator >= -> -1 - Status: Survived
 --> Mutation 197: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator >= -> > - Status: Survived
 --> Mutation 198: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator >= -> == - Status: Survived
 --> Mutation 199: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> beginpos - Status: Survived
 --> Mutation 200: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> m_CurrentPos - Status: Survived
 --> Mutation 201: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp Negation of endpos - Status: Survived
---> Mutation 202: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC 1 endpos - Status: Survived
+--> Mutation 202: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC 1 endpos - Status: Killed
 --> Mutation 203: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC -1 endpos - Status: Killed
---> Mutation 204: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 97 -> 0 - Status: Survived
---> Mutation 205: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 97 -> 1 - Status: Survived
---> Mutation 206: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 97 -> -1 - Status: Survived
+--> Mutation 204: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 97 -> 0 - Status: Killed
+--> Mutation 205: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 97 -> 1 - Status: Killed
+--> Mutation 206: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 97 -> -1 - Status: Killed
 --> Mutation 207: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 97 -> 96 - Status: Survived
 --> Mutation 208: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 97 -> 98 - Status: Survived
 --> Mutation 209: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator < -> != - Status: Survived
---> Mutation 210: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator < -> -2 - Status: Survived
+--> Mutation 210: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator < -> -2 - Status: Killed
 --> Mutation 211: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator < -> <= - Status: Survived
 --> Mutation 212: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> beginpos - Status: Survived
 --> Mutation 213: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> m_CurrentPos - Status: Survived
@@ -289,14 +289,14 @@
 --> Mutation 225: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> beginpos - Status: Survived
 --> Mutation 226: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> m_CurrentPos - Status: Survived
 --> Mutation 227: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp Negation of endpos - Status: Survived
---> Mutation 228: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC 1 endpos - Status: Survived
+--> Mutation 228: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC 1 endpos - Status: Killed
 --> Mutation 229: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC -1 endpos - Status: Killed
 --> Mutation 230: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 65 -> 0 - Status: Survived
 --> Mutation 231: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 65 -> 1 - Status: Survived
 --> Mutation 232: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 65 -> -1 - Status: Survived
 --> Mutation 233: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 65 -> 64 - Status: Survived
 --> Mutation 234: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 65 -> 66 - Status: Survived
---> Mutation 235: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator < -> != - Status: Killed
+--> Mutation 235: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator < -> != - Status: Survived
 --> Mutation 236: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator < -> -2 - Status: Survived
 --> Mutation 237: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator < -> <= - Status: Survived
 --> Mutation 238: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceVariable endpos -> beginpos - Status: Survived
@@ -304,55 +304,40 @@
 --> Mutation 240: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp Negation of endpos - Status: Survived
 --> Mutation 241: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC 1 endpos - Status: Killed
 --> Mutation 242: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - InsertUnaryOp IINC -1 endpos - Status: Killed
---> Mutation 243: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 90 -> 0 - Status: Killed
---> Mutation 244: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 90 -> 1 - Status: Killed
---> Mutation 245: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 90 -> -1 - Status: Killed
+--> Mutation 243: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 90 -> 0 - Status: Survived
+--> Mutation 244: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 90 -> 1 - Status: Survived
+--> Mutation 245: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 90 -> -1 - Status: Survived
 --> Mutation 246: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 90 -> 89 - Status: Survived
 --> Mutation 247: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceConstant - 90 -> 91 - Status: Survived
---> Mutation 248: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator > -> != - Status: Killed
---> Mutation 249: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 248: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 249: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator > -> -2 - Status: Killed
 --> Mutation 250: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:106 - ReplaceComparisonOperator > -> >= - Status: Survived
---> Mutation 251: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:109 - ReplaceVariable endpos -> beginpos - Status: Killed
---> Mutation 252: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceVariable beginpos -> endpos - Status: Killed
+--> Mutation 251: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:109 - ReplaceVariable endpos -> beginpos - Status: Survived
+--> Mutation 252: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceVariable beginpos -> endpos - Status: Survived
 --> Mutation 253: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceVariable beginpos -> m_CurrentPos - Status: Survived
 --> Mutation 254: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp Negation of beginpos - Status: Survived
---> Mutation 255: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp IINC 1 beginpos - Status: Killed
+--> Mutation 255: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp IINC 1 beginpos - Status: Survived
 --> Mutation 256: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp IINC -1 beginpos - Status: Killed
---> Mutation 257: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceVariable endpos -> beginpos - Status: Killed
---> Mutation 258: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceVariable endpos -> m_CurrentPos - Status: Killed
+--> Mutation 257: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceVariable endpos -> beginpos - Status: Survived
+--> Mutation 258: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceVariable endpos -> m_CurrentPos - Status: Survived
 --> Mutation 259: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp Negation of endpos - Status: Survived
 --> Mutation 260: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp IINC 1 endpos - Status: Killed
 --> Mutation 261: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp IINC -1 endpos - Status: Killed
 --> Mutation 262: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp Negation - Status: Survived
---> Mutation 263: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 263: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp +1 - Status: Survived
 --> Mutation 264: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - InsertUnaryOp -1 - Status: Killed
 --> Mutation 265: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceArithmeticOperator - -> + - Status: Survived
 --> Mutation 266: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceArithmeticOperator - -> % - Status: Killed
---> Mutation 267: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceArithmeticOperator - -> * - Status: Killed
---> Mutation 268: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 267: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 268: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:112 - ReplaceArithmeticOperator - -> / - Status: Killed
 --> Mutation 269: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:113 - ReplaceVariable endpos -> beginpos - Status: Survived
 --> Mutation 270: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:113 - ReplaceVariable endpos -> m_CurrentPos - Status: Survived
 --> Mutation 271: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:113 - InsertUnaryOp Negation of endpos - Status: Survived
 --> Mutation 272: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:113 - InsertUnaryOp IINC 1 endpos - Status: Survived
 --> Mutation 273: weka.core.tokenizers.AlphabeticTokenizer.nextElement()Ljava/lang/Object;:113 - InsertUnaryOp IINC -1 endpos - Status: Survived
 --> Mutation 274: weka.core.tokenizers.AlphabeticTokenizer.tokenize(Ljava/lang/String;)V:124 - ReplaceConstant - 0 -> 1 - Status: Killed
---> Mutation 275: weka.core.tokenizers.AlphabeticTokenizer.tokenize(Ljava/lang/String;)V:126 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 275: weka.core.tokenizers.AlphabeticTokenizer.tokenize(Ljava/lang/String;)V:126 - ReplaceConstant - 0 -> 1 - Status: Survived
 --> Mutation 276: weka.core.tokenizers.AlphabeticTokenizer.tokenize(Ljava/lang/String;)V:126 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 277: weka.core.tokenizers.AlphabeticTokenizer.getRevision()Ljava/lang/String;:135 - ReplaceConstant - $Revision: 8034 $ ->  - Status: Killed
 * Compiling and checking tests
-[MASTER] 01:00:20.030 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:00:25.279 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:00:30.533 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:00:35.786 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:00:41.053 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:00:46.324 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:00:51.577 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:00:56.822 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:01:02.068 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:01:07.310 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:01:12.563 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'AlphabeticTokenizer_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

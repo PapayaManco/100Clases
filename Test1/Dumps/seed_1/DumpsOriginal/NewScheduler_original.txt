@@ -1,12 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.lts.util.scheduler.NewScheduler
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/78_caloriecount/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\78_caloriecount\evosuite-files\evosuite.properties
+* Connecting to master process on port 20936
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:59:40.922 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class com.lts.util.scheduler.NewScheduler
 * Test criteria:
@@ -19,48 +18,56 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 304
-* Using seed 2482030657809
+* Using seed 1710487476895
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 131 / 304
-* Search finished after 195s and 1 generations, 495 statements, best individual has fitness: 111.0
+[MASTER] 04:26:19.717 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I: I19 Branch 17 IFLE L48 - true
+[MASTER] 04:26:19.719 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 108: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> <
+[MASTER] 04:27:55.118 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.lts.util.scheduler.NewScheduler.implementOneCycle()V: Line 196
+[MASTER] 04:27:55.118 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.lts.util.scheduler.NewScheduler.implementOneCycle()V: Line 194
+[MASTER] 04:27:55.118 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.lts.util.scheduler.NewScheduler.implementOneCycle()V: Line 193
+[MASTER] 04:27:55.118 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 89: com.lts.util.scheduler.NewScheduler.implementOneCycle()V:196 - ReplaceComparisonOperator != -> ==
+* Search finished after 198s and 1 generations, 698 statements, best individual has fitness: 91.0
 * Minimizing test suite
+[MASTER] 04:38:45.503 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
-* Coverage of criterion LINE: 72%
+* Coverage of criterion LINE: 70%
 * Total number of goals: 82
-* Number of covered goals: 59
+* Number of covered goals: 57
 * Coverage analysis for criterion BRANCH
-* Coverage of criterion BRANCH: 59%
+* Coverage of criterion BRANCH: 69%
 * Total number of goals: 39
-* Number of covered goals: 23
+* Number of covered goals: 27
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 1
-* Number of covered goals: 1
-* Coverage analysis for criterion WEAKMUTATION
-* Coverage of criterion WEAKMUTATION: 59%
-* Total number of goals: 111
-* Number of covered goals: 66
-* Coverage analysis for criterion OUTPUT
-* Coverage of criterion OUTPUT: 40%
-* Total number of goals: 5
+* Total number of goals: 2
 * Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 72%
+* Total number of goals: 111
+* Number of covered goals: 80
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 60%
+* Total number of goals: 5
+* Number of covered goals: 3
 * Coverage analysis for criterion METHOD
-* Coverage of criterion METHOD: 93%
+* Coverage of criterion METHOD: 86%
 * Total number of goals: 14
-* Number of covered goals: 13
+* Number of covered goals: 12
 * Coverage analysis for criterion METHODNOEXCEPTION
-* Coverage of criterion METHODNOEXCEPTION: 93%
+* Coverage of criterion METHODNOEXCEPTION: 86%
 * Total number of goals: 14
-* Number of covered goals: 13
+* Number of covered goals: 12
 * Coverage analysis for criterion CBRANCH
-* Coverage of criterion CBRANCH: 59%
+* Coverage of criterion CBRANCH: 69%
 * Total number of goals: 39
-* Number of covered goals: 23
-* Generated 15 tests with total length 47
-* Resulting test suite's coverage: 68% (average coverage for all fitness functions)
+* Number of covered goals: 27
+* Generated 22 tests with total length 453
+* Resulting test suite's coverage: 73% (average coverage for all fitness functions)
 * Generating assertions
-* Resulting test suite's mutation score: 45%
+[MASTER] 04:48:00.912 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.8854566666666667% of time used, but only 7/22 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 31%
 * There are surviving mutants: 
 --> Mutation 0: com.lts.util.scheduler.NewScheduler.getInstance()Lcom/lts/util/scheduler/NewScheduler;:78 - ReplaceComparisonOperator != -> == - Status: Killed
 --> Mutation 1: com.lts.util.scheduler.NewScheduler.startSystem()V:86 - ReplaceComparisonOperator == -> != - Status: Killed
@@ -84,7 +91,7 @@
 --> Mutation 19: com.lts.util.scheduler.NewScheduler.deliverEvents()V:124 - ReplaceComparisonOperator <= -> -1 - Status: Survived
 --> Mutation 20: com.lts.util.scheduler.NewScheduler.deliverEvents()V:124 - ReplaceComparisonOperator <= -> == - Status: Survived
 --> Mutation 21: com.lts.util.scheduler.NewScheduler.deliverEvents()V:124 - ReplaceComparisonOperator <= -> < - Status: Killed
---> Mutation 22: com.lts.util.scheduler.NewScheduler.deliverEvents()V:125 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 22: com.lts.util.scheduler.NewScheduler.deliverEvents()V:125 - ReplaceConstant - 0 -> 1 - Status: Killed
 --> Mutation 23: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 24: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - InsertUnaryOp Negation - Status: Survived
 --> Mutation 25: com.lts.util.scheduler.NewScheduler.deliverEvents()V:128 - ReplaceVariable now -> CYCLE_TIME - Status: Survived
@@ -148,7 +155,7 @@
 --> Mutation 83: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:169 - ReplaceComparisonOperator == -> != - Status: Survived
 --> Mutation 84: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:171 - ReplaceVariable old -> event - Status: Survived
 --> Mutation 85: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:174 - ReplaceVariable event -> old - Status: Survived
---> Mutation 86: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:175 - ReplaceVariable event -> old - Status: Killed
+--> Mutation 86: com.lts.util.scheduler.NewScheduler.notifyAt(Lcom/lts/util/SharedQueue;J)V:175 - ReplaceVariable event -> old - Status: Survived
 --> Mutation 87: com.lts.util.scheduler.NewScheduler.cancel(Lcom/lts/util/SharedQueue;)V:183 - ReplaceComparisonOperator == -> != - Status: Survived
 --> Mutation 88: com.lts.util.scheduler.NewScheduler.implementOneCycle()V:196 - ReplaceVariable currentStatus -> myState - Status: Survived
 --> Mutation 89: com.lts.util.scheduler.NewScheduler.implementOneCycle()V:196 - ReplaceComparisonOperator != -> == - Status: Survived
@@ -156,30 +163,22 @@
 --> Mutation 91: com.lts.util.scheduler.NewScheduler$ScheduledEvent.<init>(JLcom/lts/util/SharedQueue;Ljava/lang/Object;)V:39 - InsertUnaryOp Negation of time - Status: Killed
 --> Mutation 92: com.lts.util.scheduler.NewScheduler$ScheduledEvent.<init>(JLcom/lts/util/SharedQueue;Ljava/lang/Object;)V:40 - ReplaceVariable theData -> data - Status: Survived
 --> Mutation 93: com.lts.util.scheduler.NewScheduler$ScheduledEvent.<init>(JLcom/lts/util/SharedQueue;Ljava/lang/Object;)V:41 - ReplaceVariable queue -> queue - Status: Survived
---> Mutation 94: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - InsertUnaryOp Negation - Status: Killed
---> Mutation 95: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceVariable o -> this - Status: Killed
---> Mutation 96: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - InsertUnaryOp Negation - Status: Killed
---> Mutation 97: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> -1 - Status: Killed
---> Mutation 98: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> == - Status: Killed
---> Mutation 99: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> > - Status: Killed
---> Mutation 100: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> 0 - Status: Killed
---> Mutation 101: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> 1 - Status: Killed
---> Mutation 102: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> -2 - Status: Killed
---> Mutation 103: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - InsertUnaryOp Negation - Status: Killed
---> Mutation 104: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceVariable o -> this - Status: Killed
---> Mutation 105: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - InsertUnaryOp Negation - Status: Killed
---> Mutation 106: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 94: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 95: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceVariable o -> this - Status: Survived
+--> Mutation 96: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 97: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 98: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 99: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:46 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 100: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 101: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 102: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:47 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 103: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 104: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceVariable o -> this - Status: Survived
+--> Mutation 105: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 106: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> -1 - Status: Survived
 --> Mutation 107: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> == - Status: Survived
---> Mutation 108: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> < - Status: Killed
---> Mutation 109: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:49 - ReplaceConstant - 1 -> 0 - Status: Killed
---> Mutation 110: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:51 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 108: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:48 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 109: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:49 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 110: com.lts.util.scheduler.NewScheduler$ScheduledEvent.compareTo(Lcom/lts/util/scheduler/NewScheduler$ScheduledEvent;)I:51 - ReplaceConstant - 0 -> 1 - Status: Survived
 * Compiling and checking tests
-[MASTER] 04:17:12.708 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:17:17.954 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:17:26.211 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 04:17:31.453 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Writing tests to file
-* Writing JUnit test case 'NewScheduler_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

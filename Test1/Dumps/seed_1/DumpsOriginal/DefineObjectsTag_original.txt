@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.taglib.portlet.DefineObjectsTag
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 14465
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:49:59.781 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 01:50:02.927 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 01:50:05.009 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class com.liferay.taglib.portlet.DefineObjectsTag
 * Test criteria:
@@ -21,22 +18,86 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 134
-* Using seed 2482030657809
+* Using seed 1710480027359
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 26 / 134
-[MASTER] 01:50:15.439 [logback-1] WARN  TestCluster - Failed to check cache for com.caucho.jms.FileTopic<E> : Type points to itself
-[MASTER] 01:50:15.642 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-[MASTER] 01:50:15.915 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.reflect.Constructor<T> : Type points to itself
-[MASTER] 01:50:20.363 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.PriorityBlockingQueue<E> : Type points to itself
-[MASTER] 01:50:22.547 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 01:50:22.572 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 01:50:22.586 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 01:50:29.722 [logback-1] WARN  TestCluster - Failed to check cache for com.liferay.portal.model.BaseModel<T> : Type points to itself
-[MASTER] 01:50:32.304 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.LinkedBlockingQueue<E> : Type points to itself
-[MASTER] 01:50:51.029 [logback-1] WARN  TestCluster - Failed to check cache for java.util.TreeSet<E> : Type points to itself
-[MASTER] 01:51:22.116 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 01:51:28.081 [logback-1] WARN  TestCluster - Failed to check cache for java.util.ArrayDeque<E> : Type points to itself
-[MASTER] 01:53:11.120 [logback-1] WARN  TestCluster - Failed to check cache for java.util.PriorityQueue<E> : Type points to itself
-[MASTER] 01:53:11.180 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 181s and 4049 generations, 515070 statements, best individual has fitness: 126.0
+[MASTER] 02:20:55.154 [logback-1] WARN  TestCluster - Failed to check cache for com.liferay.portal.model.BaseModel<T> : Type points to itself
+[MASTER] 02:20:59.845 [logback-1] WARN  TestCluster - Failed to check cache for com.caucho.amber.collection.SetImpl<E> : Type points to itself
+[MASTER] 02:21:00.471 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ArrayBlockingQueue<E> : Type points to itself
+[MASTER] 02:21:28.404 [logback-1] WARN  FunctionalMockStatement - Problem with class org.hibernate.cache.jbc.collection.CollectionRegionImpl: java.lang.NoClassDefFoundError: org/jboss/cache/Fqn
+[MASTER] 02:21:40.243 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 02:23:41.061 [logback-1] WARN  TestCluster - Failed to check cache for java.util.ArrayList<E> : Type points to itself
+* Search finished after 183s and 6087 generations, 790816 statements, best individual has fitness: 126.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 8%
+* Total number of goals: 49
+* Number of covered goals: 4
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 4%
+* Total number of goals: 23
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 3%
+* Total number of goals: 32
+* Number of covered goals: 1
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 3
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 2
+* Number of covered goals: 1
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 4%
+* Total number of goals: 23
+* Number of covered goals: 1
+* Generated 1 tests with total length 5
+* Resulting test suite's coverage: 21% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:39 - ReplaceConstant - javax.portlet.lifecycle_phase ->  - Status: Survived
+--> Mutation 1: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:42 - ReplaceConstant - javax.portlet.config ->  - Status: Survived
+--> Mutation 2: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:45 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 3: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:46 - ReplaceConstant - portletConfig ->  - Status: Survived
+--> Mutation 4: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:47 - ReplaceConstant - portletName ->  - Status: Survived
+--> Mutation 5: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:51 - ReplaceConstant - javax.portlet.request ->  - Status: Survived
+--> Mutation 6: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:54 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 7: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:55 - ReplaceConstant - liferayPortletRequest ->  - Status: Survived
+--> Mutation 8: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:61 - ReplaceVariable lifecycle -> portletRequestAttrName - Status: Survived
+--> Mutation 9: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:61 - ReplaceConstant - ACTION_PHASE ->  - Status: Survived
+--> Mutation 10: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:61 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 11: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:61 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 12: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:61 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 13: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:62 - ReplaceConstant - actionRequest ->  - Status: Survived
+--> Mutation 14: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:64 - ReplaceVariable lifecycle -> portletRequestAttrName - Status: Survived
+--> Mutation 15: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:64 - ReplaceConstant - EVENT_PHASE ->  - Status: Survived
+--> Mutation 16: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:64 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 17: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:64 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 18: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:64 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 19: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:65 - ReplaceConstant - eventRequest ->  - Status: Survived
+--> Mutation 20: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:67 - ReplaceVariable lifecycle -> portletRequestAttrName - Status: Survived
+--> Mutation 21: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:67 - ReplaceConstant - RENDER_PHASE ->  - Status: Survived
+--> Mutation 22: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:67 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 23: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:67 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 24: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:67 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 25: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:68 - ReplaceConstant - renderRequest ->  - Status: Survived
+--> Mutation 26: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:70 - ReplaceVariable lifecycle -> portletRequestAttrName - Status: Survived
+--> Mutation 27: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:70 - ReplaceConstant - RESOURCE_PHASE ->  - Status: Survived
+--> Mutation 28: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:70 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 29: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:70 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 30: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:70 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 31: com.liferay.taglib.portlet.DefineObjectsTag.doStartTag()I:71 - ReplaceConstant - resourceRequest ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

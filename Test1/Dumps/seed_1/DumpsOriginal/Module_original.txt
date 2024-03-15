@@ -1,0 +1,137 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Configuration: EvoSuite_fixed
+* Going to generate test cases for class: com.atlassw.tools.eclipse.checkstyle.config.Module
+* Starting Client-0
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\106_checkstyle\evosuite-files\evosuite.properties
+* Connecting to master process on port 7762
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.atlassw.tools.eclipse.checkstyle.config.Module
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 329
+* Using seed 1710508277442
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 118 / 329
+[MASTER] 10:13:04.761 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+* Search finished after 181s and 4826 generations, 1980547 statements, best individual has fitness: 74.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 84%
+* Total number of goals: 74
+* Number of covered goals: 62
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 85%
+* Total number of goals: 53
+* Number of covered goals: 45
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 67%
+* Total number of goals: 70
+* Number of covered goals: 47
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 76%
+* Total number of goals: 41
+* Number of covered goals: 31
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 85%
+* Total number of goals: 53
+* Number of covered goals: 45
+* Generated 34 tests with total length 137
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 10:14:21.780 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown during execution of method  __STATIC_RESET() for class com.atlassw.tools.eclipse.checkstyle.config.meta.MetadataFactory, null
+* Resulting test suite's mutation score: 30%
+* There are surviving mutants: 
+--> Mutation 0: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:89 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 1: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:94 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 2: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:94 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 3: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 4: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 5: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 6: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 7: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 8: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - ReplaceVariable size -> i - Status: Survived
+--> Mutation 9: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - InsertUnaryOp Negation of size - Status: Survived
+--> Mutation 10: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - InsertUnaryOp IINC 1 size - Status: Killed
+--> Mutation 11: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - InsertUnaryOp IINC -1 size - Status: Survived
+--> Mutation 12: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 13: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 14: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 15: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:98 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 16: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:98 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 17: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:98 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 18: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:98 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 19: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:102 - InsertUnaryOp Negation of withDefaults - Status: Survived
+--> Mutation 20: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:102 - InsertUnaryOp IINC 1 withDefaults - Status: Survived
+--> Mutation 21: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:102 - InsertUnaryOp IINC -1 withDefaults - Status: Survived
+--> Mutation 22: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:102 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 23: com.atlassw.tools.eclipse.checkstyle.config.Module.<init>(Lcom/atlassw/tools/eclipse/checkstyle/config/meta/RuleMetadata;Z)V:95 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 24: com.atlassw.tools.eclipse.checkstyle.config.Module.getName()Ljava/lang/String;:127 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 25: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:213 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 26: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:213 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 27: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 28: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 29: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 30: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 31: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 32: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - ReplaceVariable size -> i - Status: Survived
+--> Mutation 33: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - InsertUnaryOp Negation of size - Status: Survived
+--> Mutation 34: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - InsertUnaryOp IINC 1 size - Status: Killed
+--> Mutation 35: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - InsertUnaryOp IINC -1 size - Status: Survived
+--> Mutation 36: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 37: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 38: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 39: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:216 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 40: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:216 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 41: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:216 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 42: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:216 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 43: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:218 - ReplaceVariable tmp -> propertyObj - Status: Survived
+--> Mutation 44: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:218 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 45: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:218 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 46: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:218 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 47: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:220 - ReplaceVariable tmp -> propertyObj - Status: Survived
+--> Mutation 48: com.atlassw.tools.eclipse.checkstyle.config.Module.getProperty(Ljava/lang/String;)Lcom/atlassw/tools/eclipse/checkstyle/config/ConfigProperty;:214 - ReplaceVariable i -> size - Status: Survived
+--> Mutation 49: com.atlassw.tools.eclipse.checkstyle.config.Module.getSeverity()Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;:254 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 50: com.atlassw.tools.eclipse.checkstyle.config.Module.getSeverity()Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;:254 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 51: com.atlassw.tools.eclipse.checkstyle.config.Module.getSeverity()Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;:257 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 52: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:297 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 53: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:297 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 54: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:301 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 55: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:306 - ReplaceVariable defaultLevel -> severityLevel - Status: Survived
+--> Mutation 56: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:306 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 57: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:308 - ReplaceVariable severityLevel -> defaultLevel - Status: Killed
+--> Mutation 58: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:308 - ReplaceVariable defaultLevel -> severityLevel - Status: Killed
+--> Mutation 59: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:308 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 60: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:313 - ReplaceVariable severityLevel -> defaultLevel - Status: Survived
+--> Mutation 61: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:313 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 62: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:315 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 63: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:315 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 64: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:320 - ReplaceVariable severityLevel -> defaultLevel - Status: Survived
+--> Mutation 65: com.atlassw.tools.eclipse.checkstyle.config.Module.setSeverity(Lcom/puppycrawl/tools/checkstyle/api/SeverityLevel;)V:324 - ReplaceVariable severityLevel -> defaultLevel - Status: Killed
+--> Mutation 66: com.atlassw.tools.eclipse.checkstyle.config.Module.clone()Ljava/lang/Object;:347 - ReplaceVariable clone -> this - Status: Survived
+--> Mutation 67: com.atlassw.tools.eclipse.checkstyle.config.Module.clone()Ljava/lang/Object;:349 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 68: com.atlassw.tools.eclipse.checkstyle.config.Module.clone()Ljava/lang/Object;:352 - ReplaceVariable clone -> this - Status: Survived
+--> Mutation 69: com.atlassw.tools.eclipse.checkstyle.config.Module.clone()Ljava/lang/Object;:355 - ReplaceVariable clone -> this - Status: Killed
+* Compiling and checking tests
+* Computation finished

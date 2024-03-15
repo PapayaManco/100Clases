@@ -1,12 +1,712 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portal.model.impl.OrganizationModelImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 5858
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:25:56.183 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-* Writing JUnit test case 'OrganizationModelImpl_ESTest' to test_seeds/seed_1/tests_original
-* Error while initializing target class: java.lang.ExceptionInInitializerError
+* Finished analyzing classpath
+* Generating tests for class com.liferay.portal.model.impl.OrganizationModelImpl
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1373
+* Using seed 1710477831890
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 920 / 1373
+[MASTER] 01:43:59.221 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.service.ServiceContext canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:43:59.665 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.AddressWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.liferay.portal.model.OrganizationWrapper due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 01:44:14.051 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 01:44:15.285 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 01:44:48.654 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 01:44:56.999 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.RepositoryWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:45:36.330 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PortletItemWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:45:51.414 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.SubscriptionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:46:12.079 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutRevisionWrapper canUseFunctionalMocks=false, canBeMocked: true
+* Search finished after 182s and 4066 generations, 1046951 statements, best individual has fitness: 124.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 99%
+* Total number of goals: 271
+* Number of covered goals: 269
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 101
+* Number of covered goals: 97
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 638
+* Number of covered goals: 625
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 42%
+* Total number of goals: 164
+* Number of covered goals: 69
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 49
+* Number of covered goals: 49
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 49
+* Number of covered goals: 47
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 96%
+* Total number of goals: 101
+* Number of covered goals: 97
+* Generated 85 tests with total length 249
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 63%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.portal.model.impl.OrganizationModelImpl.toModel(Lcom/liferay/portal/model/OrganizationSoap;)Lcom/liferay/portal/model/Organization;:103 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 1: com.liferay.portal.model.impl.OrganizationModelImpl.toModels([Lcom/liferay/portal/model/OrganizationSoap;)Ljava/util/List;:131 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 2: com.liferay.portal.model.impl.OrganizationModelImpl.toModels([Lcom/liferay/portal/model/OrganizationSoap;)Ljava/util/List;:137 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 3: com.liferay.portal.model.impl.OrganizationModelImpl.toModels([Lcom/liferay/portal/model/OrganizationSoap;)Ljava/util/List;:137 - ReplaceComparisonOperator >= -> -1 - Status: Killed
+--> Mutation 4: com.liferay.portal.model.impl.OrganizationModelImpl.toModels([Lcom/liferay/portal/model/OrganizationSoap;)Ljava/util/List;:137 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 5: com.liferay.portal.model.impl.OrganizationModelImpl.toModels([Lcom/liferay/portal/model/OrganizationSoap;)Ljava/util/List;:137 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 6: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKey()J:167 - ReplaceVariable _organizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 7: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKey()J:167 - ReplaceVariable _organizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 8: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKey()J:167 - ReplaceVariable _organizationId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 9: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKey()J:167 - ReplaceVariable _organizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 10: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKey()J:167 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 11: com.liferay.portal.model.impl.OrganizationModelImpl.setPrimaryKey(J)V:171 - ReplaceVariable primaryKey -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 12: com.liferay.portal.model.impl.OrganizationModelImpl.setPrimaryKey(J)V:171 - ReplaceVariable primaryKey -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 13: com.liferay.portal.model.impl.OrganizationModelImpl.setPrimaryKey(J)V:171 - ReplaceVariable primaryKey -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 14: com.liferay.portal.model.impl.OrganizationModelImpl.setPrimaryKey(J)V:171 - ReplaceVariable primaryKey -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 15: com.liferay.portal.model.impl.OrganizationModelImpl.setPrimaryKey(J)V:171 - InsertUnaryOp Negation of primaryKey - Status: Killed
+--> Mutation 16: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:175 - ReplaceVariable _organizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 17: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:175 - ReplaceVariable _organizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 18: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:175 - ReplaceVariable _organizationId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 19: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:175 - ReplaceVariable _organizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 20: com.liferay.portal.model.impl.OrganizationModelImpl.getPrimaryKeyObj()Ljava/io/Serializable;:175 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 21: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:194 - ReplaceConstant - organizationId ->  - Status: Survived
+--> Mutation 22: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:195 - ReplaceConstant - companyId ->  - Status: Survived
+--> Mutation 23: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:196 - ReplaceConstant - parentOrganizationId ->  - Status: Survived
+--> Mutation 24: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:197 - ReplaceConstant - treePath ->  - Status: Survived
+--> Mutation 25: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:198 - ReplaceConstant - name ->  - Status: Killed
+--> Mutation 26: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:199 - ReplaceConstant - type ->  - Status: Survived
+--> Mutation 27: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:200 - ReplaceConstant - recursable ->  - Status: Survived
+--> Mutation 28: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:201 - ReplaceConstant - regionId ->  - Status: Survived
+--> Mutation 29: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:202 - ReplaceConstant - countryId ->  - Status: Survived
+--> Mutation 30: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:203 - ReplaceConstant - statusId ->  - Status: Survived
+--> Mutation 31: com.liferay.portal.model.impl.OrganizationModelImpl.getModelAttributes()Ljava/util/Map;:204 - ReplaceConstant - comments ->  - Status: Survived
+--> Mutation 32: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:211 - ReplaceConstant - organizationId ->  - Status: Survived
+--> Mutation 33: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:213 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 34: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:217 - ReplaceConstant - companyId ->  - Status: Killed
+--> Mutation 35: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:219 - ReplaceVariable companyId -> organizationId - Status: Killed
+--> Mutation 36: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:219 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 37: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:220 - ReplaceVariable companyId -> organizationId - Status: Killed
+--> Mutation 38: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:223 - ReplaceConstant - parentOrganizationId ->  - Status: Survived
+--> Mutation 39: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:225 - ReplaceVariable parentOrganizationId -> organizationId - Status: Survived
+--> Mutation 40: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:225 - ReplaceVariable parentOrganizationId -> companyId - Status: Killed
+--> Mutation 41: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:225 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 42: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:226 - ReplaceVariable parentOrganizationId -> organizationId - Status: Survived
+--> Mutation 43: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:226 - ReplaceVariable parentOrganizationId -> companyId - Status: Killed
+--> Mutation 44: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:229 - ReplaceConstant - treePath ->  - Status: Survived
+--> Mutation 45: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 46: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> TABLE_NAME - Status: Survived
+--> Mutation 47: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 48: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 49: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> DATA_SOURCE - Status: Survived
+--> Mutation 50: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 51: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 52: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 53: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 54: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> TX_MANAGER - Status: Survived
+--> Mutation 55: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> ORDER_BY_SQL - Status: Survived
+--> Mutation 56: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceVariable treePath -> SESSION_FACTORY - Status: Survived
+--> Mutation 57: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:231 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 58: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 59: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> TABLE_NAME - Status: Survived
+--> Mutation 60: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 61: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 62: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> DATA_SOURCE - Status: Killed
+--> Mutation 63: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 64: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 65: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 66: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 67: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> TX_MANAGER - Status: Killed
+--> Mutation 68: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> ORDER_BY_SQL - Status: Killed
+--> Mutation 69: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:232 - ReplaceVariable treePath -> SESSION_FACTORY - Status: Survived
+--> Mutation 70: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:235 - ReplaceConstant - name ->  - Status: Survived
+--> Mutation 71: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 72: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> TABLE_NAME - Status: Killed
+--> Mutation 73: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 74: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 75: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> DATA_SOURCE - Status: Killed
+--> Mutation 76: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 77: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 78: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 79: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 80: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> TX_MANAGER - Status: Killed
+--> Mutation 81: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 82: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> treePath - Status: Killed
+--> Mutation 83: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceVariable name -> SESSION_FACTORY - Status: Killed
+--> Mutation 84: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:237 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 85: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 86: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> TABLE_NAME - Status: Killed
+--> Mutation 87: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 88: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 89: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> DATA_SOURCE - Status: Killed
+--> Mutation 90: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 91: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 92: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 93: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 94: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> TX_MANAGER - Status: Killed
+--> Mutation 95: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 96: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> treePath - Status: Killed
+--> Mutation 97: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:238 - ReplaceVariable name -> SESSION_FACTORY - Status: Killed
+--> Mutation 98: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:241 - ReplaceConstant - type ->  - Status: Survived
+--> Mutation 99: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 100: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> TABLE_NAME - Status: Survived
+--> Mutation 101: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 102: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 103: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> DATA_SOURCE - Status: Survived
+--> Mutation 104: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 105: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 106: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 107: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 108: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> TX_MANAGER - Status: Survived
+--> Mutation 109: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> name - Status: Survived
+--> Mutation 110: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> ORDER_BY_SQL - Status: Survived
+--> Mutation 111: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> treePath - Status: Survived
+--> Mutation 112: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceVariable type -> SESSION_FACTORY - Status: Survived
+--> Mutation 113: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:243 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 114: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 115: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> TABLE_NAME - Status: Killed
+--> Mutation 116: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 117: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 118: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> DATA_SOURCE - Status: Killed
+--> Mutation 119: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 120: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 121: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 122: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 123: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> TX_MANAGER - Status: Killed
+--> Mutation 124: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> name - Status: Survived
+--> Mutation 125: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> ORDER_BY_SQL - Status: Survived
+--> Mutation 126: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> treePath - Status: Killed
+--> Mutation 127: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:244 - ReplaceVariable type -> SESSION_FACTORY - Status: Survived
+--> Mutation 128: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:247 - ReplaceConstant - recursable ->  - Status: Survived
+--> Mutation 129: com.liferay.portal.model.impl.OrganizationModelImpl.setModelAttributes(Ljava/util/Map;)V:249 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 130: com.liferay.portal.model.impl.OrganizationModelImpl.getOrganizationId()J:280 - ReplaceVariable _organizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 131: com.liferay.portal.model.impl.OrganizationModelImpl.getOrganizationId()J:280 - ReplaceVariable _organizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 132: com.liferay.portal.model.impl.OrganizationModelImpl.getOrganizationId()J:280 - ReplaceVariable _organizationId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 133: com.liferay.portal.model.impl.OrganizationModelImpl.getOrganizationId()J:280 - ReplaceVariable _organizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 134: com.liferay.portal.model.impl.OrganizationModelImpl.getOrganizationId()J:280 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 135: com.liferay.portal.model.impl.OrganizationModelImpl.setOrganizationId(J)V:284 - ReplaceVariable organizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 136: com.liferay.portal.model.impl.OrganizationModelImpl.setOrganizationId(J)V:284 - ReplaceVariable organizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 137: com.liferay.portal.model.impl.OrganizationModelImpl.setOrganizationId(J)V:284 - ReplaceVariable organizationId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 138: com.liferay.portal.model.impl.OrganizationModelImpl.setOrganizationId(J)V:284 - ReplaceVariable organizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 139: com.liferay.portal.model.impl.OrganizationModelImpl.setOrganizationId(J)V:284 - InsertUnaryOp Negation of organizationId - Status: Killed
+--> Mutation 140: com.liferay.portal.model.impl.OrganizationModelImpl.getCompanyId()J:289 - ReplaceVariable _companyId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 141: com.liferay.portal.model.impl.OrganizationModelImpl.getCompanyId()J:289 - ReplaceVariable _companyId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 142: com.liferay.portal.model.impl.OrganizationModelImpl.getCompanyId()J:289 - ReplaceVariable _companyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 143: com.liferay.portal.model.impl.OrganizationModelImpl.getCompanyId()J:289 - ReplaceVariable _companyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 144: com.liferay.portal.model.impl.OrganizationModelImpl.getCompanyId()J:289 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 145: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceVariable _columnBitmask -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 146: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceVariable _columnBitmask -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 147: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 148: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Survived
+--> Mutation 149: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 150: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 151: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 152: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceVariable COMPANYID_COLUMN_BITMASK -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 153: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 154: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceBitwiseOperator | -> ^ - Status: Killed
+--> Mutation 155: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:293 - ReplaceBitwiseOperator | -> & - Status: Killed
+--> Mutation 156: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:295 - ReplaceVariable _setOriginalCompanyId -> COLUMN_BITMASK_ENABLED - Status: Survived
+--> Mutation 157: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:295 - ReplaceVariable _setOriginalCompanyId -> FINDER_CACHE_ENABLED - Status: Survived
+--> Mutation 158: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:295 - ReplaceVariable _setOriginalCompanyId -> ENTITY_CACHE_ENABLED - Status: Survived
+--> Mutation 159: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:295 - ReplaceVariable _setOriginalCompanyId -> FINDER_CACHE_ENABLED_GROUPS_ORGS - Status: Survived
+--> Mutation 160: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:295 - ReplaceVariable _setOriginalCompanyId -> FINDER_CACHE_ENABLED_USERS_ORGS - Status: Survived
+--> Mutation 161: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:295 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 162: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:295 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 163: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:296 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 164: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:298 - ReplaceVariable _companyId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 165: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:298 - ReplaceVariable _companyId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 166: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:298 - ReplaceVariable _companyId -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 167: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:298 - ReplaceVariable _companyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 168: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:298 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 169: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:301 - ReplaceVariable companyId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 170: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:301 - ReplaceVariable companyId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 171: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:301 - ReplaceVariable companyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 172: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:301 - ReplaceVariable companyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 173: com.liferay.portal.model.impl.OrganizationModelImpl.setCompanyId(J)V:301 - InsertUnaryOp Negation of companyId - Status: Killed
+--> Mutation 174: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalCompanyId()J:305 - ReplaceVariable _originalCompanyId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 175: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalCompanyId()J:305 - ReplaceVariable _originalCompanyId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 176: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalCompanyId()J:305 - ReplaceVariable _originalCompanyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 177: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalCompanyId()J:305 - ReplaceVariable _originalCompanyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 178: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalCompanyId()J:305 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 179: com.liferay.portal.model.impl.OrganizationModelImpl.getParentOrganizationId()J:310 - ReplaceVariable _parentOrganizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 180: com.liferay.portal.model.impl.OrganizationModelImpl.getParentOrganizationId()J:310 - ReplaceVariable _parentOrganizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 181: com.liferay.portal.model.impl.OrganizationModelImpl.getParentOrganizationId()J:310 - ReplaceVariable _parentOrganizationId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 182: com.liferay.portal.model.impl.OrganizationModelImpl.getParentOrganizationId()J:310 - ReplaceVariable _parentOrganizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 183: com.liferay.portal.model.impl.OrganizationModelImpl.getParentOrganizationId()J:310 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 184: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceVariable _columnBitmask -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 185: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceVariable _columnBitmask -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 186: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 187: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 188: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 189: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceVariable PARENTORGANIZATIONID_COLUMN_BITMASK -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 190: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceVariable PARENTORGANIZATIONID_COLUMN_BITMASK -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 191: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceVariable PARENTORGANIZATIONID_COLUMN_BITMASK -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 192: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 193: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceBitwiseOperator | -> ^ - Status: Survived
+--> Mutation 194: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:314 - ReplaceBitwiseOperator | -> & - Status: Killed
+--> Mutation 195: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:316 - ReplaceVariable _setOriginalParentOrganizationId -> COLUMN_BITMASK_ENABLED - Status: Survived
+--> Mutation 196: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:316 - ReplaceVariable _setOriginalParentOrganizationId -> FINDER_CACHE_ENABLED - Status: Survived
+--> Mutation 197: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:316 - ReplaceVariable _setOriginalParentOrganizationId -> ENTITY_CACHE_ENABLED - Status: Survived
+--> Mutation 198: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:316 - ReplaceVariable _setOriginalParentOrganizationId -> FINDER_CACHE_ENABLED_GROUPS_ORGS - Status: Survived
+--> Mutation 199: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:316 - ReplaceVariable _setOriginalParentOrganizationId -> FINDER_CACHE_ENABLED_USERS_ORGS - Status: Survived
+--> Mutation 200: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:316 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 201: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:316 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 202: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:317 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 203: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:319 - ReplaceVariable _parentOrganizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 204: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:319 - ReplaceVariable _parentOrganizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 205: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:319 - ReplaceVariable _parentOrganizationId -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 206: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:319 - ReplaceVariable _parentOrganizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 207: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:319 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 208: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:322 - ReplaceVariable parentOrganizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 209: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:322 - ReplaceVariable parentOrganizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 210: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:322 - ReplaceVariable parentOrganizationId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 211: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:322 - ReplaceVariable parentOrganizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 212: com.liferay.portal.model.impl.OrganizationModelImpl.setParentOrganizationId(J)V:322 - InsertUnaryOp Negation of parentOrganizationId - Status: Killed
+--> Mutation 213: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalParentOrganizationId()J:326 - ReplaceVariable _originalParentOrganizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 214: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalParentOrganizationId()J:326 - ReplaceVariable _originalParentOrganizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 215: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalParentOrganizationId()J:326 - ReplaceVariable _originalParentOrganizationId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 216: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalParentOrganizationId()J:326 - ReplaceVariable _originalParentOrganizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 217: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalParentOrganizationId()J:326 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 218: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 219: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> TABLE_NAME - Status: Killed
+--> Mutation 220: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 221: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 222: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> DATA_SOURCE - Status: Killed
+--> Mutation 223: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 224: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 225: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 226: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 227: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> TX_MANAGER - Status: Killed
+--> Mutation 228: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> ORDER_BY_SQL - Status: Killed
+--> Mutation 229: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceVariable _treePath -> SESSION_FACTORY - Status: Killed
+--> Mutation 230: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:331 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 231: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 232: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> TABLE_NAME - Status: Killed
+--> Mutation 233: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 234: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 235: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> DATA_SOURCE - Status: Killed
+--> Mutation 236: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 237: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 238: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 239: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 240: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> TX_MANAGER - Status: Killed
+--> Mutation 241: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> ORDER_BY_SQL - Status: Killed
+--> Mutation 242: com.liferay.portal.model.impl.OrganizationModelImpl.getTreePath()Ljava/lang/String;:335 - ReplaceVariable _treePath -> SESSION_FACTORY - Status: Killed
+--> Mutation 243: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 244: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> TABLE_NAME - Status: Killed
+--> Mutation 245: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 246: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 247: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> DATA_SOURCE - Status: Killed
+--> Mutation 248: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 249: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 250: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 251: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 252: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> TX_MANAGER - Status: Killed
+--> Mutation 253: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> ORDER_BY_SQL - Status: Killed
+--> Mutation 254: com.liferay.portal.model.impl.OrganizationModelImpl.setTreePath(Ljava/lang/String;)V:340 - ReplaceVariable treePath -> SESSION_FACTORY - Status: Killed
+--> Mutation 255: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 256: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> TABLE_NAME - Status: Killed
+--> Mutation 257: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 258: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 259: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> DATA_SOURCE - Status: Killed
+--> Mutation 260: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 261: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 262: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 263: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 264: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> TX_MANAGER - Status: Killed
+--> Mutation 265: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 266: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceVariable _name -> SESSION_FACTORY - Status: Killed
+--> Mutation 267: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:345 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 268: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 269: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> TABLE_NAME - Status: Killed
+--> Mutation 270: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 271: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 272: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> DATA_SOURCE - Status: Killed
+--> Mutation 273: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 274: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 275: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 276: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 277: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> TX_MANAGER - Status: Killed
+--> Mutation 278: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 279: com.liferay.portal.model.impl.OrganizationModelImpl.getName()Ljava/lang/String;:349 - ReplaceVariable _name -> SESSION_FACTORY - Status: Killed
+--> Mutation 280: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:354 - ReplaceConstant - -1 -> 0 - Status: Killed
+--> Mutation 281: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:354 - ReplaceConstant - -1 -> 1 - Status: Killed
+--> Mutation 282: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:354 - ReplaceConstant - -1 -> -2 - Status: Killed
+--> Mutation 283: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 284: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> TABLE_NAME - Status: Survived
+--> Mutation 285: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 286: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 287: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> DATA_SOURCE - Status: Killed
+--> Mutation 288: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 289: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 290: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 291: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 292: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> TX_MANAGER - Status: Killed
+--> Mutation 293: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> ORDER_BY_SQL - Status: Killed
+--> Mutation 294: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceVariable _originalName -> SESSION_FACTORY - Status: Survived
+--> Mutation 295: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:356 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 296: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 297: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> TABLE_NAME - Status: Killed
+--> Mutation 298: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 299: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 300: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> DATA_SOURCE - Status: Killed
+--> Mutation 301: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 302: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 303: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 304: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 305: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> TX_MANAGER - Status: Survived
+--> Mutation 306: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 307: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:357 - ReplaceVariable _name -> SESSION_FACTORY - Status: Survived
+--> Mutation 308: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 309: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> TABLE_NAME - Status: Killed
+--> Mutation 310: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 311: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 312: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> DATA_SOURCE - Status: Killed
+--> Mutation 313: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 314: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 315: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 316: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 317: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> TX_MANAGER - Status: Killed
+--> Mutation 318: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> ORDER_BY_SQL - Status: Killed
+--> Mutation 319: com.liferay.portal.model.impl.OrganizationModelImpl.setName(Ljava/lang/String;)V:360 - ReplaceVariable name -> SESSION_FACTORY - Status: Killed
+--> Mutation 320: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 321: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> TABLE_NAME - Status: Killed
+--> Mutation 322: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 323: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 324: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> DATA_SOURCE - Status: Killed
+--> Mutation 325: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 326: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 327: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 328: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 329: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> TX_MANAGER - Status: Killed
+--> Mutation 330: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> ORDER_BY_SQL - Status: Killed
+--> Mutation 331: com.liferay.portal.model.impl.OrganizationModelImpl.getOriginalName()Ljava/lang/String;:364 - ReplaceVariable _originalName -> SESSION_FACTORY - Status: Killed
+--> Mutation 332: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 333: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> TABLE_NAME - Status: Killed
+--> Mutation 334: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 335: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 336: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> DATA_SOURCE - Status: Killed
+--> Mutation 337: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 338: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 339: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 340: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 341: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> TX_MANAGER - Status: Killed
+--> Mutation 342: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> ORDER_BY_SQL - Status: Killed
+--> Mutation 343: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceVariable _type -> SESSION_FACTORY - Status: Killed
+--> Mutation 344: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:369 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 345: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 346: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> TABLE_NAME - Status: Killed
+--> Mutation 347: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 348: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 349: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> DATA_SOURCE - Status: Killed
+--> Mutation 350: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 351: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 352: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 353: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 354: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> TX_MANAGER - Status: Killed
+--> Mutation 355: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> ORDER_BY_SQL - Status: Killed
+--> Mutation 356: com.liferay.portal.model.impl.OrganizationModelImpl.getType()Ljava/lang/String;:373 - ReplaceVariable _type -> SESSION_FACTORY - Status: Killed
+--> Mutation 357: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 358: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> TABLE_NAME - Status: Killed
+--> Mutation 359: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 360: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 361: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> DATA_SOURCE - Status: Killed
+--> Mutation 362: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 363: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 364: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 365: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 366: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> TX_MANAGER - Status: Killed
+--> Mutation 367: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> ORDER_BY_SQL - Status: Killed
+--> Mutation 368: com.liferay.portal.model.impl.OrganizationModelImpl.setType(Ljava/lang/String;)V:378 - ReplaceVariable type -> SESSION_FACTORY - Status: Killed
+--> Mutation 369: com.liferay.portal.model.impl.OrganizationModelImpl.getRecursable()Z:383 - ReplaceVariable _recursable -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 370: com.liferay.portal.model.impl.OrganizationModelImpl.getRecursable()Z:383 - ReplaceVariable _recursable -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 371: com.liferay.portal.model.impl.OrganizationModelImpl.getRecursable()Z:383 - ReplaceVariable _recursable -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 372: com.liferay.portal.model.impl.OrganizationModelImpl.getRecursable()Z:383 - ReplaceVariable _recursable -> FINDER_CACHE_ENABLED_GROUPS_ORGS - Status: Killed
+--> Mutation 373: com.liferay.portal.model.impl.OrganizationModelImpl.getRecursable()Z:383 - ReplaceVariable _recursable -> FINDER_CACHE_ENABLED_USERS_ORGS - Status: Killed
+--> Mutation 374: com.liferay.portal.model.impl.OrganizationModelImpl.getRecursable()Z:383 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 375: com.liferay.portal.model.impl.OrganizationModelImpl.isRecursable()Z:387 - ReplaceVariable _recursable -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 376: com.liferay.portal.model.impl.OrganizationModelImpl.isRecursable()Z:387 - ReplaceVariable _recursable -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 377: com.liferay.portal.model.impl.OrganizationModelImpl.isRecursable()Z:387 - ReplaceVariable _recursable -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 378: com.liferay.portal.model.impl.OrganizationModelImpl.isRecursable()Z:387 - ReplaceVariable _recursable -> FINDER_CACHE_ENABLED_GROUPS_ORGS - Status: Killed
+--> Mutation 379: com.liferay.portal.model.impl.OrganizationModelImpl.isRecursable()Z:387 - ReplaceVariable _recursable -> FINDER_CACHE_ENABLED_USERS_ORGS - Status: Killed
+--> Mutation 380: com.liferay.portal.model.impl.OrganizationModelImpl.isRecursable()Z:387 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 381: com.liferay.portal.model.impl.OrganizationModelImpl.setRecursable(Z)V:391 - ReplaceVariable recursable -> COLUMN_BITMASK_ENABLED - Status: Killed
+--> Mutation 382: com.liferay.portal.model.impl.OrganizationModelImpl.setRecursable(Z)V:391 - ReplaceVariable recursable -> FINDER_CACHE_ENABLED - Status: Killed
+--> Mutation 383: com.liferay.portal.model.impl.OrganizationModelImpl.setRecursable(Z)V:391 - ReplaceVariable recursable -> ENTITY_CACHE_ENABLED - Status: Killed
+--> Mutation 384: com.liferay.portal.model.impl.OrganizationModelImpl.setRecursable(Z)V:391 - ReplaceVariable recursable -> FINDER_CACHE_ENABLED_GROUPS_ORGS - Status: Killed
+--> Mutation 385: com.liferay.portal.model.impl.OrganizationModelImpl.setRecursable(Z)V:391 - ReplaceVariable recursable -> FINDER_CACHE_ENABLED_USERS_ORGS - Status: Killed
+--> Mutation 386: com.liferay.portal.model.impl.OrganizationModelImpl.setRecursable(Z)V:391 - InsertUnaryOp Negation of recursable - Status: Survived
+--> Mutation 387: com.liferay.portal.model.impl.OrganizationModelImpl.setRecursable(Z)V:391 - InsertUnaryOp IINC 1 recursable - Status: Killed
+--> Mutation 388: com.liferay.portal.model.impl.OrganizationModelImpl.setRecursable(Z)V:391 - InsertUnaryOp IINC -1 recursable - Status: Killed
+--> Mutation 389: com.liferay.portal.model.impl.OrganizationModelImpl.getRegionId()J:396 - ReplaceVariable _regionId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 390: com.liferay.portal.model.impl.OrganizationModelImpl.getRegionId()J:396 - ReplaceVariable _regionId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 391: com.liferay.portal.model.impl.OrganizationModelImpl.getRegionId()J:396 - ReplaceVariable _regionId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 392: com.liferay.portal.model.impl.OrganizationModelImpl.getRegionId()J:396 - ReplaceVariable _regionId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 393: com.liferay.portal.model.impl.OrganizationModelImpl.getRegionId()J:396 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 394: com.liferay.portal.model.impl.OrganizationModelImpl.setRegionId(J)V:400 - ReplaceVariable regionId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 395: com.liferay.portal.model.impl.OrganizationModelImpl.setRegionId(J)V:400 - ReplaceVariable regionId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 396: com.liferay.portal.model.impl.OrganizationModelImpl.setRegionId(J)V:400 - ReplaceVariable regionId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 397: com.liferay.portal.model.impl.OrganizationModelImpl.setRegionId(J)V:400 - ReplaceVariable regionId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 398: com.liferay.portal.model.impl.OrganizationModelImpl.setRegionId(J)V:400 - InsertUnaryOp Negation of regionId - Status: Killed
+--> Mutation 399: com.liferay.portal.model.impl.OrganizationModelImpl.getCountryId()J:405 - ReplaceVariable _countryId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 400: com.liferay.portal.model.impl.OrganizationModelImpl.getCountryId()J:405 - ReplaceVariable _countryId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 401: com.liferay.portal.model.impl.OrganizationModelImpl.getCountryId()J:405 - ReplaceVariable _countryId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 402: com.liferay.portal.model.impl.OrganizationModelImpl.getCountryId()J:405 - ReplaceVariable _countryId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 403: com.liferay.portal.model.impl.OrganizationModelImpl.getCountryId()J:405 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 404: com.liferay.portal.model.impl.OrganizationModelImpl.setCountryId(J)V:409 - ReplaceVariable countryId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 405: com.liferay.portal.model.impl.OrganizationModelImpl.setCountryId(J)V:409 - ReplaceVariable countryId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 406: com.liferay.portal.model.impl.OrganizationModelImpl.setCountryId(J)V:409 - ReplaceVariable countryId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 407: com.liferay.portal.model.impl.OrganizationModelImpl.setCountryId(J)V:409 - ReplaceVariable countryId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 408: com.liferay.portal.model.impl.OrganizationModelImpl.setCountryId(J)V:409 - InsertUnaryOp Negation of countryId - Status: Killed
+--> Mutation 409: com.liferay.portal.model.impl.OrganizationModelImpl.getStatusId()I:414 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 410: com.liferay.portal.model.impl.OrganizationModelImpl.getStatusId()I:414 - InsertUnaryOp +1 - Status: Killed
+--> Mutation 411: com.liferay.portal.model.impl.OrganizationModelImpl.getStatusId()I:414 - InsertUnaryOp -1 - Status: Killed
+--> Mutation 412: com.liferay.portal.model.impl.OrganizationModelImpl.setStatusId(I)V:418 - InsertUnaryOp Negation of statusId - Status: Killed
+--> Mutation 413: com.liferay.portal.model.impl.OrganizationModelImpl.setStatusId(I)V:418 - InsertUnaryOp IINC 1 statusId - Status: Killed
+--> Mutation 414: com.liferay.portal.model.impl.OrganizationModelImpl.setStatusId(I)V:418 - InsertUnaryOp IINC -1 statusId - Status: Killed
+--> Mutation 415: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 416: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> TABLE_NAME - Status: Killed
+--> Mutation 417: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 418: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 419: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> DATA_SOURCE - Status: Killed
+--> Mutation 420: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 421: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 422: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 423: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 424: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> TX_MANAGER - Status: Killed
+--> Mutation 425: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> ORDER_BY_SQL - Status: Killed
+--> Mutation 426: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceVariable _comments -> SESSION_FACTORY - Status: Killed
+--> Mutation 427: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:423 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 428: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 429: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> TABLE_NAME - Status: Killed
+--> Mutation 430: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 431: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 432: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> DATA_SOURCE - Status: Killed
+--> Mutation 433: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 434: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 435: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 436: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 437: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> TX_MANAGER - Status: Killed
+--> Mutation 438: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> ORDER_BY_SQL - Status: Killed
+--> Mutation 439: com.liferay.portal.model.impl.OrganizationModelImpl.getComments()Ljava/lang/String;:427 - ReplaceVariable _comments -> SESSION_FACTORY - Status: Killed
+--> Mutation 440: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> TABLE_SQL_CREATE - Status: Killed
+--> Mutation 441: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> TABLE_NAME - Status: Killed
+--> Mutation 442: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> TABLE_SQL_DROP - Status: Killed
+--> Mutation 443: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Killed
+--> Mutation 444: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> DATA_SOURCE - Status: Killed
+--> Mutation 445: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 446: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> ORDER_BY_JPQL - Status: Killed
+--> Mutation 447: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Killed
+--> Mutation 448: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Killed
+--> Mutation 449: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> TX_MANAGER - Status: Killed
+--> Mutation 450: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> ORDER_BY_SQL - Status: Killed
+--> Mutation 451: com.liferay.portal.model.impl.OrganizationModelImpl.setComments(Ljava/lang/String;)V:432 - ReplaceVariable comments -> SESSION_FACTORY - Status: Killed
+--> Mutation 452: com.liferay.portal.model.impl.OrganizationModelImpl.getColumnBitmask()J:436 - ReplaceVariable _columnBitmask -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 453: com.liferay.portal.model.impl.OrganizationModelImpl.getColumnBitmask()J:436 - ReplaceVariable _columnBitmask -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 454: com.liferay.portal.model.impl.OrganizationModelImpl.getColumnBitmask()J:436 - ReplaceVariable _columnBitmask -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 455: com.liferay.portal.model.impl.OrganizationModelImpl.getColumnBitmask()J:436 - ReplaceVariable _columnBitmask -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 456: com.liferay.portal.model.impl.OrganizationModelImpl.getColumnBitmask()J:436 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 457: com.liferay.portal.model.impl.OrganizationModelImpl.toEscapedModel()Lcom/liferay/portal/model/Organization;:454 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 458: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:485 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 459: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:489 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 460: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:489 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 461: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:489 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 462: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:489 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 463: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:489 - ReplaceComparisonOperator == -> >= - Status: Killed
+--> Mutation 464: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:489 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 465: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:490 - InsertUnaryOp Negation of value - Status: Killed
+--> Mutation 466: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:490 - InsertUnaryOp IINC 1 value - Status: Killed
+--> Mutation 467: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:490 - InsertUnaryOp IINC -1 value - Status: Killed
+--> Mutation 468: com.liferay.portal.model.impl.OrganizationModelImpl.compareTo(Lcom/liferay/portal/model/Organization;)I:493 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 469: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:498 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 470: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:499 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 471: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:508 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 472: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:513 - ReplaceVariable primaryKey -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 473: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:513 - ReplaceVariable primaryKey -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Survived
+--> Mutation 474: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:513 - ReplaceVariable primaryKey -> LOCK_EXPIRATION_TIME - Status: Survived
+--> Mutation 475: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:513 - ReplaceVariable primaryKey -> COMPANYID_COLUMN_BITMASK - Status: Survived
+--> Mutation 476: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:513 - InsertUnaryOp Negation of primaryKey - Status: Killed
+--> Mutation 477: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:513 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 478: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:513 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 479: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:513 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 480: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:514 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 481: com.liferay.portal.model.impl.OrganizationModelImpl.equals(Ljava/lang/Object;)Z:517 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 482: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:530 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 483: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:530 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 484: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:530 - ReplaceVariable _companyId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 485: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:530 - ReplaceVariable _companyId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 486: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:530 - ReplaceVariable _companyId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 487: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:530 - ReplaceVariable _companyId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 488: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:530 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 489: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:532 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 490: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:532 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 491: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:534 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 492: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:534 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 493: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:534 - ReplaceVariable _parentOrganizationId -> NAME_COLUMN_BITMASK - Status: Killed
+--> Mutation 494: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:534 - ReplaceVariable _parentOrganizationId -> PARENTORGANIZATIONID_COLUMN_BITMASK - Status: Killed
+--> Mutation 495: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:534 - ReplaceVariable _parentOrganizationId -> LOCK_EXPIRATION_TIME - Status: Killed
+--> Mutation 496: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:534 - ReplaceVariable _parentOrganizationId -> COMPANYID_COLUMN_BITMASK - Status: Killed
+--> Mutation 497: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:534 - InsertUnaryOp Negation - Status: Killed
+--> Mutation 498: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:536 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 499: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:536 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 500: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 501: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 502: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 503: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> TABLE_NAME - Status: Survived
+--> Mutation 504: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 505: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 506: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> DATA_SOURCE - Status: Survived
+--> Mutation 507: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 508: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 509: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 510: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 511: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> TX_MANAGER - Status: Survived
+--> Mutation 512: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> ORDER_BY_SQL - Status: Survived
+--> Mutation 513: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:538 - ReplaceVariable _name -> SESSION_FACTORY - Status: Survived
+--> Mutation 514: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:540 - ReplaceVariable organizationModelImpl -> this - Status: Survived
+--> Mutation 515: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:540 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 516: com.liferay.portal.model.impl.OrganizationModelImpl.resetOriginalValues()V:540 - ReplaceConstant - 0 -> -1 - Status: Killed
+--> Mutation 517: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 518: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> TABLE_NAME - Status: Survived
+--> Mutation 519: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 520: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 521: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> DATA_SOURCE - Status: Survived
+--> Mutation 522: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 523: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 524: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 525: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 526: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> TX_MANAGER - Status: Survived
+--> Mutation 527: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> ORDER_BY_SQL - Status: Survived
+--> Mutation 528: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> SESSION_FACTORY - Status: Survived
+--> Mutation 529: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 530: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 531: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> TABLE_NAME - Status: Survived
+--> Mutation 532: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 533: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 534: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> DATA_SOURCE - Status: Survived
+--> Mutation 535: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 536: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 537: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 538: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 539: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> TX_MANAGER - Status: Survived
+--> Mutation 540: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> ORDER_BY_SQL - Status: Survived
+--> Mutation 541: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceVariable treePath -> SESSION_FACTORY - Status: Survived
+--> Mutation 542: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 543: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 544: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:557 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 545: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 546: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> TABLE_NAME - Status: Survived
+--> Mutation 547: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 548: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 549: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> DATA_SOURCE - Status: Survived
+--> Mutation 550: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 551: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 552: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 553: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 554: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> TX_MANAGER - Status: Survived
+--> Mutation 555: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> ORDER_BY_SQL - Status: Survived
+--> Mutation 556: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> treePath - Status: Survived
+--> Mutation 557: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> SESSION_FACTORY - Status: Survived
+--> Mutation 558: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 559: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 560: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> TABLE_NAME - Status: Survived
+--> Mutation 561: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 562: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 563: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> DATA_SOURCE - Status: Survived
+--> Mutation 564: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 565: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 566: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 567: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 568: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> TX_MANAGER - Status: Survived
+--> Mutation 569: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> ORDER_BY_SQL - Status: Survived
+--> Mutation 570: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> treePath - Status: Survived
+--> Mutation 571: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceVariable name -> SESSION_FACTORY - Status: Survived
+--> Mutation 572: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 573: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 574: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:565 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 575: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 576: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> TABLE_NAME - Status: Survived
+--> Mutation 577: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 578: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 579: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> DATA_SOURCE - Status: Survived
+--> Mutation 580: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 581: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 582: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 583: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 584: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> TX_MANAGER - Status: Survived
+--> Mutation 585: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> name - Status: Survived
+--> Mutation 586: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> ORDER_BY_SQL - Status: Survived
+--> Mutation 587: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> treePath - Status: Survived
+--> Mutation 588: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> SESSION_FACTORY - Status: Survived
+--> Mutation 589: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 590: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> TABLE_SQL_CREATE - Status: Survived
+--> Mutation 591: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> TABLE_NAME - Status: Survived
+--> Mutation 592: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> TABLE_SQL_DROP - Status: Survived
+--> Mutation 593: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_NAME - Status: Survived
+--> Mutation 594: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> DATA_SOURCE - Status: Survived
+--> Mutation 595: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> MAPPING_TABLE_USERS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 596: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> ORDER_BY_JPQL - Status: Survived
+--> Mutation 597: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_NAME - Status: Survived
+--> Mutation 598: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> MAPPING_TABLE_GROUPS_ORGS_SQL_CREATE - Status: Survived
+--> Mutation 599: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> TX_MANAGER - Status: Survived
+--> Mutation 600: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> name - Status: Survived
+--> Mutation 601: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> ORDER_BY_SQL - Status: Survived
+--> Mutation 602: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> treePath - Status: Survived
+--> Mutation 603: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceVariable type -> SESSION_FACTORY - Status: Survived
+--> Mutation 604: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 605: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 606: com.liferay.portal.model.impl.OrganizationModelImpl.toCacheModel()Lcom/liferay/portal/model/CacheModel;:573 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 607: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:598 - ReplaceConstant - 23 -> 0 - Status: Survived
+--> Mutation 608: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:598 - ReplaceConstant - 23 -> 1 - Status: Survived
+--> Mutation 609: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:598 - ReplaceConstant - 23 -> -1 - Status: Survived
+--> Mutation 610: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:598 - ReplaceConstant - 23 -> 22 - Status: Survived
+--> Mutation 611: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:598 - ReplaceConstant - 23 -> 24 - Status: Survived
+--> Mutation 612: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:600 - ReplaceConstant - {organizationId= ->  - Status: Killed
+--> Mutation 613: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:602 - ReplaceConstant - , companyId= ->  - Status: Killed
+--> Mutation 614: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:604 - ReplaceConstant - , parentOrganizationId= ->  - Status: Killed
+--> Mutation 615: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:606 - ReplaceConstant - , treePath= ->  - Status: Killed
+--> Mutation 616: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:608 - ReplaceConstant - , name= ->  - Status: Killed
+--> Mutation 617: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:610 - ReplaceConstant - , type= ->  - Status: Killed
+--> Mutation 618: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:612 - ReplaceConstant - , recursable= ->  - Status: Killed
+--> Mutation 619: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:614 - ReplaceConstant - , regionId= ->  - Status: Killed
+--> Mutation 620: com.liferay.portal.model.impl.OrganizationModelImpl.toString()Ljava/lang/String;:616 - ReplaceConstant - , countryId= ->  - Status: Killed
+--> Mutation 621: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:628 - ReplaceConstant - 37 -> 0 - Status: Survived
+--> Mutation 622: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:628 - ReplaceConstant - 37 -> 1 - Status: Survived
+--> Mutation 623: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:628 - ReplaceConstant - 37 -> -1 - Status: Survived
+--> Mutation 624: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:628 - ReplaceConstant - 37 -> 36 - Status: Survived
+--> Mutation 625: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:628 - ReplaceConstant - 37 -> 38 - Status: Survived
+--> Mutation 626: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:630 - ReplaceConstant - <model><model-name> ->  - Status: Survived
+--> Mutation 627: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:631 - ReplaceConstant - com.liferay.portal.model.Organization ->  - Status: Survived
+--> Mutation 628: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:632 - ReplaceConstant - </model-name> ->  - Status: Survived
+--> Mutation 629: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:634 - ReplaceConstant - <column><column-name>organizationId</column-name><column-value><![CDATA[ ->  - Status: Survived
+--> Mutation 630: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:637 - ReplaceConstant - ]]></column-value></column> ->  - Status: Survived
+--> Mutation 631: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:638 - ReplaceConstant - <column><column-name>companyId</column-name><column-value><![CDATA[ ->  - Status: Survived
+--> Mutation 632: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:641 - ReplaceConstant - ]]></column-value></column> ->  - Status: Survived
+--> Mutation 633: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:642 - ReplaceConstant - <column><column-name>parentOrganizationId</column-name><column-value><![CDATA[ ->  - Status: Survived
+--> Mutation 634: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:645 - ReplaceConstant - ]]></column-value></column> ->  - Status: Survived
+--> Mutation 635: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:646 - ReplaceConstant - <column><column-name>treePath</column-name><column-value><![CDATA[ ->  - Status: Survived
+--> Mutation 636: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:649 - ReplaceConstant - ]]></column-value></column> ->  - Status: Survived
+--> Mutation 637: com.liferay.portal.model.impl.OrganizationModelImpl.toXmlString()Ljava/lang/String;:650 - ReplaceConstant - <column><column-name>name</column-name><column-value><![CDATA[ ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

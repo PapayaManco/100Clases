@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.gudy.azureus2.ui.swt.views.TorrentOptionsView
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 6369
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:30:20.462 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:30:20.732 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class org.gudy.azureus2.ui.swt.views.TorrentOptionsView
 * Test criteria:
@@ -20,8 +18,668 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 1334
-* Using seed 2482030657809
+* Using seed 1710474810300
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 186 / 1334
-* Search finished after 183s and 56 generations, 20316 statements, best individual has fitness: 991.0
+[MASTER] 00:55:05.905 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 183s and 23 generations, 9043 statements, best individual has fitness: 1075.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 19%
+* Total number of goals: 397
+* Number of covered goals: 77
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 31%
+* Total number of goals: 142
+* Number of covered goals: 44
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 18%
+* Total number of goals: 619
+* Number of covered goals: 110
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 2
+* Number of covered goals: 1
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 16
+* Number of covered goals: 16
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 81%
+* Total number of goals: 16
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 31%
+* Total number of goals: 142
+* Number of covered goals: 44
+* Generated 20 tests with total length 71
+* Resulting test suite's coverage: 31% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 5%
+* There are surviving mutants: 
+--> Mutation 0: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:121 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 1: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:121 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 2: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:122 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 3: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:124 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 4: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:127 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 5: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:128 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 6: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:129 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 7: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:133 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 8: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:136 - ReplaceConstant - 1808 -> 0 - Status: Survived
+--> Mutation 9: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:136 - ReplaceConstant - 1808 -> 1 - Status: Survived
+--> Mutation 10: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:136 - ReplaceConstant - 1808 -> -1 - Status: Survived
+--> Mutation 11: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:136 - ReplaceConstant - 1808 -> 1807 - Status: Survived
+--> Mutation 12: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:136 - ReplaceConstant - 1808 -> 1809 - Status: Survived
+--> Mutation 13: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:141 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 14: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:145 - ReplaceConstant - User Mode ->  - Status: Survived
+--> Mutation 15: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:149 - ReplaceConstant - 2048 -> 0 - Status: Survived
+--> Mutation 16: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:149 - ReplaceConstant - 2048 -> 1 - Status: Survived
+--> Mutation 17: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:149 - ReplaceConstant - 2048 -> -1 - Status: Survived
+--> Mutation 18: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:149 - ReplaceConstant - 2048 -> 2047 - Status: Survived
+--> Mutation 19: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:149 - ReplaceConstant - 2048 -> 2049 - Status: Survived
+--> Mutation 20: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:151 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 21: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:151 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 22: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:151 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 23: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:151 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 24: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.initialize(Lorg/eclipse/swt/widgets/Composite;)V:151 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 25: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:487 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 26: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:487 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 27: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:488 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 28: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:488 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 29: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:489 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 30: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:489 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 31: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:490 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 32: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:490 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 33: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:492 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 34: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:492 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 35: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:493 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 36: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:493 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 37: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:495 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 38: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:495 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 39: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:496 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 40: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:496 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 41: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 42: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - ReplaceVariable i -> WRITTEN - Status: Survived
+--> Mutation 43: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - ReplaceVariable i -> WILL_BE_READ - Status: Survived
+--> Mutation 44: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 45: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 46: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 47: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 48: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 49: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:498 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 50: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:500 - ReplaceVariable i -> WRITTEN - Status: Survived
+--> Mutation 51: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:500 - ReplaceVariable i -> WILL_BE_READ - Status: Survived
+--> Mutation 52: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:500 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 53: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:500 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 54: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:500 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 55: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceVariable total_size -> total_uploaded - Status: Survived
+--> Mutation 56: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceVariable total_size -> total_downloaded - Status: Survived
+--> Mutation 57: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceVariable total_size -> total_data_down_speed - Status: Survived
+--> Mutation 58: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceVariable total_size -> total_prot_down_speed - Status: Survived
+--> Mutation 59: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceVariable total_size -> total_good_downloaded - Status: Survived
+--> Mutation 60: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceVariable total_size -> total_prot_up_speed - Status: Survived
+--> Mutation 61: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceVariable total_size -> total_data_up_speed - Status: Survived
+--> Mutation 62: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - InsertUnaryOp Negation of total_size - Status: Survived
+--> Mutation 63: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 64: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 65: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 66: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:502 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 67: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> total_uploaded - Status: Survived
+--> Mutation 68: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> total_size - Status: Survived
+--> Mutation 69: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> total_downloaded - Status: Survived
+--> Mutation 70: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> good_received - Status: Survived
+--> Mutation 71: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> received - Status: Survived
+--> Mutation 72: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> total_data_down_speed - Status: Survived
+--> Mutation 73: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> total_prot_down_speed - Status: Survived
+--> Mutation 74: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> sent - Status: Survived
+--> Mutation 75: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> total_prot_up_speed - Status: Survived
+--> Mutation 76: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable total_good_downloaded -> total_data_up_speed - Status: Survived
+--> Mutation 77: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - InsertUnaryOp Negation of total_good_downloaded - Status: Survived
+--> Mutation 78: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> total_uploaded - Status: Survived
+--> Mutation 79: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> total_size - Status: Survived
+--> Mutation 80: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> total_downloaded - Status: Survived
+--> Mutation 81: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> received - Status: Survived
+--> Mutation 82: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> total_data_down_speed - Status: Survived
+--> Mutation 83: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> total_prot_down_speed - Status: Survived
+--> Mutation 84: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> sent - Status: Survived
+--> Mutation 85: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> total_good_downloaded - Status: Survived
+--> Mutation 86: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> total_prot_up_speed - Status: Survived
+--> Mutation 87: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceVariable good_received -> total_data_up_speed - Status: Survived
+--> Mutation 88: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - InsertUnaryOp Negation of good_received - Status: Survived
+--> Mutation 89: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 90: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 91: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 92: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:510 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 93: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> total_uploaded - Status: Survived
+--> Mutation 94: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> total_size - Status: Survived
+--> Mutation 95: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> good_received - Status: Survived
+--> Mutation 96: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> received - Status: Survived
+--> Mutation 97: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> total_data_down_speed - Status: Survived
+--> Mutation 98: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> total_prot_down_speed - Status: Survived
+--> Mutation 99: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> sent - Status: Survived
+--> Mutation 100: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> total_good_downloaded - Status: Survived
+--> Mutation 101: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> total_prot_up_speed - Status: Survived
+--> Mutation 102: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable total_downloaded -> total_data_up_speed - Status: Survived
+--> Mutation 103: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - InsertUnaryOp Negation of total_downloaded - Status: Survived
+--> Mutation 104: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> total_uploaded - Status: Survived
+--> Mutation 105: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> total_size - Status: Survived
+--> Mutation 106: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> total_downloaded - Status: Survived
+--> Mutation 107: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> good_received - Status: Survived
+--> Mutation 108: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> total_data_down_speed - Status: Survived
+--> Mutation 109: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> total_prot_down_speed - Status: Survived
+--> Mutation 110: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> sent - Status: Survived
+--> Mutation 111: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> total_good_downloaded - Status: Survived
+--> Mutation 112: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> total_prot_up_speed - Status: Survived
+--> Mutation 113: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceVariable received -> total_data_up_speed - Status: Survived
+--> Mutation 114: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - InsertUnaryOp Negation of received - Status: Survived
+--> Mutation 115: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 116: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 117: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 118: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:511 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 119: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> total_size - Status: Survived
+--> Mutation 120: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> total_downloaded - Status: Survived
+--> Mutation 121: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> good_received - Status: Survived
+--> Mutation 122: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> received - Status: Survived
+--> Mutation 123: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> total_data_down_speed - Status: Survived
+--> Mutation 124: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> total_prot_down_speed - Status: Survived
+--> Mutation 125: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> sent - Status: Survived
+--> Mutation 126: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> total_good_downloaded - Status: Survived
+--> Mutation 127: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> total_prot_up_speed - Status: Survived
+--> Mutation 128: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable total_uploaded -> total_data_up_speed - Status: Survived
+--> Mutation 129: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - InsertUnaryOp Negation of total_uploaded - Status: Survived
+--> Mutation 130: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> total_uploaded - Status: Survived
+--> Mutation 131: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> total_size - Status: Survived
+--> Mutation 132: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> total_downloaded - Status: Survived
+--> Mutation 133: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> good_received - Status: Survived
+--> Mutation 134: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> received - Status: Survived
+--> Mutation 135: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> total_data_down_speed - Status: Survived
+--> Mutation 136: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> total_prot_down_speed - Status: Survived
+--> Mutation 137: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> total_good_downloaded - Status: Survived
+--> Mutation 138: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> total_prot_up_speed - Status: Survived
+--> Mutation 139: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceVariable sent -> total_data_up_speed - Status: Survived
+--> Mutation 140: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - InsertUnaryOp Negation of sent - Status: Survived
+--> Mutation 141: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 142: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 143: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 144: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:512 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 145: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> total_uploaded - Status: Survived
+--> Mutation 146: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> total_size - Status: Survived
+--> Mutation 147: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> total_downloaded - Status: Survived
+--> Mutation 148: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> good_received - Status: Survived
+--> Mutation 149: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> received - Status: Survived
+--> Mutation 150: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> total_data_down_speed - Status: Survived
+--> Mutation 151: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> total_prot_down_speed - Status: Survived
+--> Mutation 152: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> sent - Status: Survived
+--> Mutation 153: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> total_good_downloaded - Status: Survived
+--> Mutation 154: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceVariable total_data_up_speed -> total_prot_up_speed - Status: Survived
+--> Mutation 155: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - InsertUnaryOp Negation of total_data_up_speed - Status: Survived
+--> Mutation 156: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 157: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 158: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 159: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:514 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 160: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> total_uploaded - Status: Survived
+--> Mutation 161: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> total_size - Status: Survived
+--> Mutation 162: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> total_downloaded - Status: Survived
+--> Mutation 163: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> good_received - Status: Survived
+--> Mutation 164: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> received - Status: Survived
+--> Mutation 165: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> total_data_down_speed - Status: Survived
+--> Mutation 166: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> total_prot_down_speed - Status: Survived
+--> Mutation 167: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> sent - Status: Survived
+--> Mutation 168: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> total_good_downloaded - Status: Survived
+--> Mutation 169: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceVariable total_prot_up_speed -> total_data_up_speed - Status: Survived
+--> Mutation 170: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - InsertUnaryOp Negation of total_prot_up_speed - Status: Survived
+--> Mutation 171: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 172: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 173: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 174: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:515 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 175: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> total_uploaded - Status: Survived
+--> Mutation 176: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> total_size - Status: Survived
+--> Mutation 177: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> total_downloaded - Status: Survived
+--> Mutation 178: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> good_received - Status: Survived
+--> Mutation 179: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> received - Status: Survived
+--> Mutation 180: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> total_prot_down_speed - Status: Survived
+--> Mutation 181: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> sent - Status: Survived
+--> Mutation 182: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> total_good_downloaded - Status: Survived
+--> Mutation 183: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> total_prot_up_speed - Status: Survived
+--> Mutation 184: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceVariable total_data_down_speed -> total_data_up_speed - Status: Survived
+--> Mutation 185: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - InsertUnaryOp Negation of total_data_down_speed - Status: Survived
+--> Mutation 186: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 187: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 188: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 189: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.refresh()V:517 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 190: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:570 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 191: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 192: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - ReplaceVariable i -> WRITTEN - Status: Survived
+--> Mutation 193: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - ReplaceVariable i -> WILL_BE_READ - Status: Survived
+--> Mutation 194: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 195: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 196: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 197: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 198: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 199: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:574 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 200: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:576 - ReplaceVariable i -> WRITTEN - Status: Survived
+--> Mutation 201: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:576 - ReplaceVariable i -> WILL_BE_READ - Status: Survived
+--> Mutation 202: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:576 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 203: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:576 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 204: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:576 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 205: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:576 - ReplaceVariable key -> MSGID_PREFIX - Status: Survived
+--> Mutation 206: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:582 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 207: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:586 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 208: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:590 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 209: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:590 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 210: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.setDefaults()V:593 - ReplaceConstant - Unknown parameter type:  ->  - Status: Survived
+--> Mutation 211: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.attributeEventOccurred(Lorg/gudy/azureus2/core3/download/DownloadManager;Ljava/lang/String;I)V:603 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 212: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.getFullTitle()Ljava/lang/String;:636 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 213: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.getFullTitle()Ljava/lang/String;:636 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 214: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.getFullTitle()Ljava/lang/String;:636 - ReplaceConstant - TorrentOptionsView.multi.title.full ->  - Status: Survived
+--> Mutation 215: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.getFullTitle()Ljava/lang/String;:636 - ReplaceConstant - TorrentOptionsView.title.full ->  - Status: Survived
+--> Mutation 216: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:642 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 217: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:647 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 218: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 219: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - ReplaceVariable i -> WRITTEN - Status: Survived
+--> Mutation 220: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - ReplaceVariable i -> WILL_BE_READ - Status: Survived
+--> Mutation 221: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 222: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 223: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 224: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 225: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 226: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:648 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 227: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:649 - ReplaceVariable i -> WRITTEN - Status: Survived
+--> Mutation 228: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:649 - ReplaceVariable i -> WILL_BE_READ - Status: Survived
+--> Mutation 229: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:649 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 230: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:649 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 231: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:649 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 232: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:649 - ReplaceConstant - parameters ->  - Status: Survived
+--> Mutation 233: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.delete()V:649 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 234: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.dataSourceChanged(Ljava/lang/Object;)V:832 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 235: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.dataSourceChanged(Ljava/lang/Object;)V:833 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 236: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.dataSourceChanged(Ljava/lang/Object;)V:834 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 237: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.dataSourceChanged(Ljava/lang/Object;)V:834 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 238: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.dataSourceChanged(Ljava/lang/Object;)V:835 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 239: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.dataSourceChanged(Ljava/lang/Object;)V:836 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 240: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.dataSourceChanged(Ljava/lang/Object;)V:839 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 241: org.gudy.azureus2.ui.swt.views.TorrentOptionsView.eventOccurred(Lorg/gudy/azureus2/ui/swt/plugins/UISWTViewEvent;)Z:880 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 242: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;)I:748 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 243: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:756 - InsertUnaryOp Negation of def - Status: Killed
+--> Mutation 244: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:756 - InsertUnaryOp IINC 1 def - Status: Killed
+--> Mutation 245: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:756 - InsertUnaryOp IINC -1 def - Status: Killed
+--> Mutation 246: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 247: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 248: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 249: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 250: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 251: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 252: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 253: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 254: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 255: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:759 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 256: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:759 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 257: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:759 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 258: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:759 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 259: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:759 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 260: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - ReplaceVariable i -> val - Status: Survived
+--> Mutation 261: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 262: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 263: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 264: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 265: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 266: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 267: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 268: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:761 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 269: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:762 - ReplaceVariable val -> result - Status: Survived
+--> Mutation 270: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:762 - ReplaceVariable val -> i - Status: Survived
+--> Mutation 271: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:762 - ReplaceVariable val -> def - Status: Survived
+--> Mutation 272: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:762 - InsertUnaryOp Negation of val - Status: Survived
+--> Mutation 273: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:762 - InsertUnaryOp IINC 1 val - Status: Survived
+--> Mutation 274: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:762 - InsertUnaryOp IINC -1 val - Status: Survived
+--> Mutation 275: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceVariable result -> val - Status: Survived
+--> Mutation 276: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceVariable result -> i - Status: Survived
+--> Mutation 277: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceVariable result -> def - Status: Survived
+--> Mutation 278: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 279: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 280: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 281: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceVariable val -> result - Status: Survived
+--> Mutation 282: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceVariable val -> i - Status: Survived
+--> Mutation 283: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceVariable val -> def - Status: Survived
+--> Mutation 284: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - InsertUnaryOp Negation of val - Status: Survived
+--> Mutation 285: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - InsertUnaryOp IINC 1 val - Status: Survived
+--> Mutation 286: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - InsertUnaryOp IINC -1 val - Status: Survived
+--> Mutation 287: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 288: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 289: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:763 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 290: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:764 - ReplaceVariable def -> val - Status: Survived
+--> Mutation 291: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:764 - ReplaceVariable def -> result - Status: Survived
+--> Mutation 292: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:764 - ReplaceVariable def -> i - Status: Survived
+--> Mutation 293: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:764 - InsertUnaryOp Negation of def - Status: Survived
+--> Mutation 294: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:764 - InsertUnaryOp IINC 1 def - Status: Survived
+--> Mutation 295: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:764 - InsertUnaryOp IINC -1 def - Status: Survived
+--> Mutation 296: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 297: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:758 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 298: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:768 - ReplaceVariable result -> def - Status: Survived
+--> Mutation 299: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:768 - InsertUnaryOp Negation of result - Status: Killed
+--> Mutation 300: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:768 - InsertUnaryOp IINC 1 result - Status: Killed
+--> Mutation 301: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getIntValue(Ljava/lang/String;I)I:768 - InsertUnaryOp IINC -1 result - Status: Killed
+--> Mutation 302: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 303: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - ReplaceVariable i -> value - Status: Killed
+--> Mutation 304: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 305: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 306: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 307: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 308: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 309: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 310: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:778 - ReplaceVariable i -> value - Status: Survived
+--> Mutation 311: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:778 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 312: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:778 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 313: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:778 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 314: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:780 - ReplaceVariable value -> i - Status: Survived
+--> Mutation 315: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:780 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 316: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:780 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 317: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:780 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 318: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:780 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 319: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:780 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 320: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:780 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 321: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:782 - ReplaceVariable value -> i - Status: Survived
+--> Mutation 322: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:782 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 323: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:782 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 324: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:782 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 325: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setIntValue(Ljava/lang/String;I)V:776 - ReplaceVariable i -> value - Status: Survived
+--> Mutation 326: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;)Z:791 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 327: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:799 - InsertUnaryOp Negation of def - Status: Survived
+--> Mutation 328: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:799 - InsertUnaryOp IINC 1 def - Status: Killed
+--> Mutation 329: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:799 - InsertUnaryOp IINC -1 def - Status: Killed
+--> Mutation 330: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:801 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 331: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:801 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 332: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:801 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 333: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:801 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 334: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:801 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 335: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:801 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 336: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:801 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 337: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:802 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 338: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:802 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 339: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:802 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 340: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:804 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 341: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:804 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 342: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:804 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 343: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:804 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 344: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:805 - ReplaceVariable val -> result - Status: Survived
+--> Mutation 345: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:805 - ReplaceVariable val -> def - Status: Survived
+--> Mutation 346: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:805 - InsertUnaryOp Negation of val - Status: Survived
+--> Mutation 347: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:806 - ReplaceVariable result -> val - Status: Survived
+--> Mutation 348: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:806 - ReplaceVariable result -> def - Status: Survived
+--> Mutation 349: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:806 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 350: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:806 - ReplaceVariable val -> result - Status: Survived
+--> Mutation 351: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:806 - ReplaceVariable val -> def - Status: Survived
+--> Mutation 352: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:806 - InsertUnaryOp Negation of val - Status: Survived
+--> Mutation 353: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:806 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 354: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:807 - ReplaceVariable def -> val - Status: Survived
+--> Mutation 355: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:807 - ReplaceVariable def -> result - Status: Survived
+--> Mutation 356: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:807 - InsertUnaryOp Negation of def - Status: Survived
+--> Mutation 357: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:811 - ReplaceVariable result -> def - Status: Survived
+--> Mutation 358: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:811 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 359: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:811 - InsertUnaryOp IINC 1 result - Status: Killed
+--> Mutation 360: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.getBooleanValue(Ljava/lang/String;Z)Z:811 - InsertUnaryOp IINC -1 result - Status: Killed
+--> Mutation 361: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:819 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 362: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:819 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 363: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:819 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 364: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:819 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 365: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:819 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 366: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:819 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 367: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:819 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 368: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:821 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 369: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:821 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 370: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:821 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 371: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:823 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 372: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:823 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 373: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:823 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 374: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:823 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 375: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:825 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 376: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:825 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 377: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$downloadStateParameterAdapter.setBooleanValue(Ljava/lang/String;Z)V:825 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 378: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;)I:666 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 379: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:674 - ReplaceConstant - max.upload ->  - Status: Survived
+--> Mutation 380: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:674 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 381: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:675 - InsertUnaryOp Negation of def - Status: Survived
+--> Mutation 382: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:675 - InsertUnaryOp IINC 1 def - Status: Survived
+--> Mutation 383: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:675 - InsertUnaryOp IINC -1 def - Status: Survived
+--> Mutation 384: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 385: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 386: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 387: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 388: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 389: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 390: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 391: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 392: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 393: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 394: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 395: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 396: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 397: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 398: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceConstant - 1024 -> 0 - Status: Survived
+--> Mutation 399: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceConstant - 1024 -> 1 - Status: Survived
+--> Mutation 400: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceConstant - 1024 -> -1 - Status: Survived
+--> Mutation 401: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceConstant - 1024 -> 1023 - Status: Survived
+--> Mutation 402: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceConstant - 1024 -> 1025 - Status: Survived
+--> Mutation 403: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 404: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 405: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 406: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:678 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 407: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - ReplaceVariable i -> val - Status: Survived
+--> Mutation 408: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 409: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 410: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 411: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 412: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 413: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 414: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 415: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:680 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 416: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:681 - ReplaceVariable val -> result - Status: Survived
+--> Mutation 417: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:681 - ReplaceVariable val -> i - Status: Survived
+--> Mutation 418: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:681 - ReplaceVariable val -> def - Status: Survived
+--> Mutation 419: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:681 - InsertUnaryOp Negation of val - Status: Survived
+--> Mutation 420: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:681 - InsertUnaryOp IINC 1 val - Status: Survived
+--> Mutation 421: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:681 - InsertUnaryOp IINC -1 val - Status: Survived
+--> Mutation 422: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceVariable result -> val - Status: Survived
+--> Mutation 423: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceVariable result -> i - Status: Survived
+--> Mutation 424: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceVariable result -> def - Status: Survived
+--> Mutation 425: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 426: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 427: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 428: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceVariable val -> result - Status: Survived
+--> Mutation 429: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceVariable val -> i - Status: Survived
+--> Mutation 430: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceVariable val -> def - Status: Survived
+--> Mutation 431: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - InsertUnaryOp Negation of val - Status: Survived
+--> Mutation 432: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - InsertUnaryOp IINC 1 val - Status: Survived
+--> Mutation 433: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - InsertUnaryOp IINC -1 val - Status: Survived
+--> Mutation 434: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 435: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 436: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:682 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 437: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:683 - ReplaceVariable def -> val - Status: Survived
+--> Mutation 438: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:683 - ReplaceVariable def -> result - Status: Survived
+--> Mutation 439: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:683 - ReplaceVariable def -> i - Status: Survived
+--> Mutation 440: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:683 - InsertUnaryOp Negation of def - Status: Survived
+--> Mutation 441: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:683 - InsertUnaryOp IINC 1 def - Status: Survived
+--> Mutation 442: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:683 - InsertUnaryOp IINC -1 def - Status: Survived
+--> Mutation 443: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 444: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:677 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 445: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:687 - ReplaceVariable result -> def - Status: Survived
+--> Mutation 446: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:687 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 447: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:687 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 448: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:687 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 449: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:689 - ReplaceConstant - max.download ->  - Status: Survived
+--> Mutation 450: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:689 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 451: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:690 - InsertUnaryOp Negation of def - Status: Survived
+--> Mutation 452: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:690 - InsertUnaryOp IINC 1 def - Status: Survived
+--> Mutation 453: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:690 - InsertUnaryOp IINC -1 def - Status: Survived
+--> Mutation 454: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 455: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 456: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 457: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 458: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 459: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 460: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 461: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 462: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 463: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 464: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 465: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 466: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 467: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 468: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceConstant - 1024 -> 0 - Status: Survived
+--> Mutation 469: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceConstant - 1024 -> 1 - Status: Survived
+--> Mutation 470: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceConstant - 1024 -> -1 - Status: Survived
+--> Mutation 471: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceConstant - 1024 -> 1023 - Status: Survived
+--> Mutation 472: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceConstant - 1024 -> 1025 - Status: Survived
+--> Mutation 473: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 474: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 475: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 476: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:693 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 477: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - ReplaceVariable i -> val - Status: Survived
+--> Mutation 478: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 479: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 480: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 481: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 482: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 483: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 484: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 485: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:695 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 486: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:696 - ReplaceVariable val -> result - Status: Survived
+--> Mutation 487: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:696 - ReplaceVariable val -> i - Status: Survived
+--> Mutation 488: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:696 - ReplaceVariable val -> def - Status: Survived
+--> Mutation 489: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:696 - InsertUnaryOp Negation of val - Status: Survived
+--> Mutation 490: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:696 - InsertUnaryOp IINC 1 val - Status: Survived
+--> Mutation 491: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:696 - InsertUnaryOp IINC -1 val - Status: Survived
+--> Mutation 492: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceVariable result -> val - Status: Survived
+--> Mutation 493: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceVariable result -> i - Status: Survived
+--> Mutation 494: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceVariable result -> def - Status: Survived
+--> Mutation 495: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 496: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 497: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 498: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceVariable val -> result - Status: Survived
+--> Mutation 499: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceVariable val -> i - Status: Survived
+--> Mutation 500: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceVariable val -> def - Status: Survived
+--> Mutation 501: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - InsertUnaryOp Negation of val - Status: Survived
+--> Mutation 502: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - InsertUnaryOp IINC 1 val - Status: Survived
+--> Mutation 503: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - InsertUnaryOp IINC -1 val - Status: Survived
+--> Mutation 504: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 505: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 506: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:697 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 507: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:698 - ReplaceVariable def -> val - Status: Survived
+--> Mutation 508: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:698 - ReplaceVariable def -> result - Status: Survived
+--> Mutation 509: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:698 - ReplaceVariable def -> i - Status: Survived
+--> Mutation 510: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:698 - InsertUnaryOp Negation of def - Status: Survived
+--> Mutation 511: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:698 - InsertUnaryOp IINC 1 def - Status: Survived
+--> Mutation 512: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:698 - InsertUnaryOp IINC -1 def - Status: Survived
+--> Mutation 513: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - ReplaceVariable i -> result - Status: Survived
+--> Mutation 514: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:692 - ReplaceVariable i -> def - Status: Survived
+--> Mutation 515: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:702 - ReplaceVariable result -> def - Status: Survived
+--> Mutation 516: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:702 - InsertUnaryOp Negation of result - Status: Survived
+--> Mutation 517: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:702 - InsertUnaryOp IINC 1 result - Status: Survived
+--> Mutation 518: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.getIntValue(Ljava/lang/String;I)I:702 - InsertUnaryOp IINC -1 result - Status: Survived
+--> Mutation 519: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:714 - ReplaceConstant - max.upload ->  - Status: Survived
+--> Mutation 520: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:714 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 521: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 522: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - ReplaceVariable i -> value - Status: Survived
+--> Mutation 523: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 524: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 525: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 526: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 527: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 528: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 529: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:717 - ReplaceVariable i -> value - Status: Survived
+--> Mutation 530: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:717 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 531: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:717 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 532: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:717 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 533: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceVariable value -> i - Status: Survived
+--> Mutation 534: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 535: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 536: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 537: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceConstant - 1024 -> 0 - Status: Survived
+--> Mutation 538: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceConstant - 1024 -> 1 - Status: Survived
+--> Mutation 539: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceConstant - 1024 -> -1 - Status: Survived
+--> Mutation 540: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceConstant - 1024 -> 1023 - Status: Survived
+--> Mutation 541: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceConstant - 1024 -> 1025 - Status: Survived
+--> Mutation 542: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 543: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 544: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 545: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 546: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 547: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 548: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:719 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 549: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceVariable value -> i - Status: Survived
+--> Mutation 550: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 551: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 552: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 553: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceConstant - 1024 -> 0 - Status: Survived
+--> Mutation 554: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceConstant - 1024 -> 1 - Status: Survived
+--> Mutation 555: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceConstant - 1024 -> -1 - Status: Survived
+--> Mutation 556: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceConstant - 1024 -> 1023 - Status: Survived
+--> Mutation 557: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceConstant - 1024 -> 1025 - Status: Survived
+--> Mutation 558: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 559: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 560: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 561: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:721 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 562: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:715 - ReplaceVariable i -> value - Status: Survived
+--> Mutation 563: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:724 - ReplaceConstant - max.download ->  - Status: Survived
+--> Mutation 564: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:724 - ReplaceComparisonOperator != -> == - Status: Killed
+--> Mutation 565: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 566: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - ReplaceVariable i -> value - Status: Survived
+--> Mutation 567: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 568: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 569: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 570: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 571: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 572: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 573: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:727 - ReplaceVariable i -> value - Status: Survived
+--> Mutation 574: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:727 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 575: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:727 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 576: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:727 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 577: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceVariable value -> i - Status: Survived
+--> Mutation 578: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 579: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 580: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 581: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceConstant - 1024 -> 0 - Status: Survived
+--> Mutation 582: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceConstant - 1024 -> 1 - Status: Survived
+--> Mutation 583: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceConstant - 1024 -> -1 - Status: Survived
+--> Mutation 584: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceConstant - 1024 -> 1023 - Status: Survived
+--> Mutation 585: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceConstant - 1024 -> 1025 - Status: Survived
+--> Mutation 586: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceArithmeticOperator / -> + - Status: Survived
+--> Mutation 587: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceArithmeticOperator / -> % - Status: Survived
+--> Mutation 588: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceArithmeticOperator / -> - - Status: Survived
+--> Mutation 589: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceArithmeticOperator / -> * - Status: Survived
+--> Mutation 590: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 591: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 592: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:729 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 593: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceVariable value -> i - Status: Survived
+--> Mutation 594: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 595: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 596: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 597: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceConstant - 1024 -> 0 - Status: Survived
+--> Mutation 598: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceConstant - 1024 -> 1 - Status: Survived
+--> Mutation 599: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceConstant - 1024 -> -1 - Status: Survived
+--> Mutation 600: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceConstant - 1024 -> 1023 - Status: Survived
+--> Mutation 601: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceConstant - 1024 -> 1025 - Status: Survived
+--> Mutation 602: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceArithmeticOperator * -> + - Status: Survived
+--> Mutation 603: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceArithmeticOperator * -> % - Status: Survived
+--> Mutation 604: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceArithmeticOperator * -> - - Status: Survived
+--> Mutation 605: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:731 - ReplaceArithmeticOperator * -> / - Status: Survived
+--> Mutation 606: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:725 - ReplaceVariable i -> value - Status: Survived
+--> Mutation 607: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:735 - ReplaceConstant - Unknown key ' ->  - Status: Survived
+--> Mutation 608: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$adhocParameterAdapter.setIntValue(Ljava/lang/String;I)V:735 - ReplaceConstant - ' ->  - Status: Survived
+--> Mutation 609: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:606 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 610: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:611 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 611: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:614 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 612: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:614 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 613: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:614 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 614: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:615 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 615: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:618 - InsertUnaryOp Negation of value - Status: Survived
+--> Mutation 616: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:618 - InsertUnaryOp IINC 1 value - Status: Survived
+--> Mutation 617: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:618 - InsertUnaryOp IINC -1 value - Status: Survived
+--> Mutation 618: org.gudy.azureus2.ui.swt.views.TorrentOptionsView$2.run()V:620 - ReplaceConstant - Unknown parameter type:  ->  - Status: Survived
+* Compiling and checking tests
 * Computation finished

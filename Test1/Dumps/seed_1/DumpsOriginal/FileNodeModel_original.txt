@@ -1,21 +1,17 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: freemind.modes.filemode.FileNodeModel
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/105_freemind/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\105_freemind\evosuite-files\evosuite.properties
+* Connecting to master process on port 4212
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:49:41.587 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 00:49:42.197 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:49:42.907 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:49:42.907 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
-[MASTER] 00:49:42.907 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:49:42.907 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:49:42.907 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:49:42.907 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 00:49:45.115 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
-[MASTER] 00:49:46.514 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
+[MASTER] 01:13:10.965 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:13:10.966 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
+[MASTER] 01:13:10.966 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:13:10.966 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:13:10.966 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 01:13:10.966 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
 * Finished analyzing classpath
 * Generating tests for class freemind.modes.filemode.FileNodeModel
 * Test criteria:
@@ -28,14 +24,113 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 287
-* Using seed 2482030657809
+* Using seed 1710475988015
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 137 / 287
-[MASTER] 00:49:56.693 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 00:49:58.544 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 00:49:58.914 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 00:49:58.934 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Stack<E> for wildcard ? extends java.util.Vector
-[MASTER] 00:51:01.312 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 00:52:22.717 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-* Search finished after 181s and 1977 generations, 300695 statements, best individual has fitness: 8.0
+[MASTER] 01:13:33.620 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:15:08.051 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+* Search finished after 181s and 3150 generations, 492848 statements, best individual has fitness: 8.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 0%
+* Total number of goals: 43
+* Number of covered goals: 0
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 0%
+* Total number of goals: 38
+* Number of covered goals: 0
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 65
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 79
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 0%
+* Total number of goals: 12
+* Number of covered goals: 0
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 12
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 0%
+* Total number of goals: 38
+* Number of covered goals: 0
+* Generated 0 tests with total length 0
+* Resulting test suite's coverage: 0% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: freemind.modes.filemode.FileNodeModel.<init>(Ljava/io/File;Lfreemind/main/FreeMindMain;Lfreemind/modes/MindMap;)V:52 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 1: freemind.modes.filemode.FileNodeModel.<init>(Ljava/io/File;Lfreemind/main/FreeMindMain;Lfreemind/modes/MindMap;)V:52 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 2: freemind.modes.filemode.FileNodeModel.<init>(Ljava/io/File;Lfreemind/main/FreeMindMain;Lfreemind/modes/MindMap;)V:52 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 3: freemind.modes.filemode.FileNodeModel.getStyle()Ljava/lang/String;:57 - ReplaceConstant - fork ->  - Status: Survived
+--> Mutation 4: freemind.modes.filemode.FileNodeModel.getColor()Ljava/awt/Color;:81 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 5: freemind.modes.filemode.FileNodeModel.getColor()Ljava/awt/Color;:91 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 6: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:102 - ReplaceVariable name -> STYLE_BUBBLE - Status: Survived
+--> Mutation 7: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:102 - ReplaceVariable name -> STYLE_COMBINED - Status: Survived
+--> Mutation 8: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:102 - ReplaceVariable name -> STYLE_FORK - Status: Survived
+--> Mutation 9: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:102 - ReplaceVariable name -> STYLE_AS_PARENT - Status: Survived
+--> Mutation 10: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:102 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 11: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:102 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 12: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:102 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 13: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:103 - ReplaceConstant - Root ->  - Status: Survived
+--> Mutation 14: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:105 - ReplaceVariable name -> STYLE_BUBBLE - Status: Survived
+--> Mutation 15: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:105 - ReplaceVariable name -> STYLE_COMBINED - Status: Survived
+--> Mutation 16: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:105 - ReplaceVariable name -> STYLE_FORK - Status: Survived
+--> Mutation 17: freemind.modes.filemode.FileNodeModel.toString()Ljava/lang/String;:105 - ReplaceVariable name -> STYLE_AS_PARENT - Status: Survived
+--> Mutation 18: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 19: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 20: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 21: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 22: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 23: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 24: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 25: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 26: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 27: freemind.modes.filemode.FileNodeModel.hasChildren()Z:113 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 28: freemind.modes.filemode.FileNodeModel.childrenFolded()Ljava/util/ListIterator;:120 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 29: freemind.modes.filemode.FileNodeModel.childrenFolded()Ljava/util/ListIterator;:121 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 30: freemind.modes.filemode.FileNodeModel.childrenFolded()Ljava/util/ListIterator;:121 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 31: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:130 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 32: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:136 - ReplaceVariable files -> NODE_STYLES - Status: Survived
+--> Mutation 33: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:136 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 34: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 35: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceVariable i -> VGAP - Status: Survived
+--> Mutation 36: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceVariable i -> RIGHT_POSITION - Status: Survived
+--> Mutation 37: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceVariable i -> LEFT_POSITION - Status: Survived
+--> Mutation 38: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceVariable i -> UNKNOWN_POSITION - Status: Survived
+--> Mutation 39: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceVariable i -> HGAP - Status: Survived
+--> Mutation 40: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 41: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 42: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 43: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceVariable files -> NODE_STYLES - Status: Survived
+--> Mutation 44: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 45: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 46: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:140 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 47: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable path -> STYLE_BUBBLE - Status: Survived
+--> Mutation 48: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable path -> STYLE_COMBINED - Status: Survived
+--> Mutation 49: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable path -> STYLE_FORK - Status: Survived
+--> Mutation 50: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable path -> STYLE_AS_PARENT - Status: Survived
+--> Mutation 51: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable files -> NODE_STYLES - Status: Survived
+--> Mutation 52: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable i -> VGAP - Status: Survived
+--> Mutation 53: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable i -> RIGHT_POSITION - Status: Survived
+--> Mutation 54: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable i -> LEFT_POSITION - Status: Survived
+--> Mutation 55: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable i -> UNKNOWN_POSITION - Status: Survived
+--> Mutation 56: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - ReplaceVariable i -> HGAP - Status: Survived
+--> Mutation 57: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 58: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 59: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:141 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 60: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:142 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 61: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:145 - ReplaceVariable fileNodeModel -> this - Status: Survived
+--> Mutation 62: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:146 - ReplaceVariable fileNodeModel -> this - Status: Survived
+--> Mutation 63: freemind.modes.filemode.FileNodeModel.childrenUnfolded()Ljava/util/ListIterator;:153 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 64: freemind.modes.filemode.FileNodeModel.isWriteable()Z:171 - ReplaceConstant - 0 -> 1 - Status: Survived
+* Compiling and checking tests
 * Computation finished

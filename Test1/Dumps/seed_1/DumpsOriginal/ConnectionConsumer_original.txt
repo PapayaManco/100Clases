@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/44_summa/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\44_summa\evosuite-files\evosuite.properties
+* Connecting to master process on port 6337
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:03:50.667 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:03:50.813 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer
 * Test criteria:
@@ -20,9 +18,127 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 168
-* Using seed 2482030657809
+* Using seed 1710483752564
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 59 / 168
-[MASTER] 03:03:51.750 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: nashorn.createContext
-* Search finished after 182s and 68 generations, 22745 statements, best individual has fitness: 19.0
+[MASTER] 03:22:35.465 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: nashorn.createContext
+* Search finished after 181s and 66 generations, 18871 statements, best individual has fitness: 20.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 90%
+* Total number of goals: 39
+* Number of covered goals: 35
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 88%
+* Total number of goals: 16
+* Number of covered goals: 14
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 78
+* Number of covered goals: 72
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 80%
+* Total number of goals: 5
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 88%
+* Total number of goals: 16
+* Number of covered goals: 14
+* Generated 19 tests with total length 59
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 33%
+* There are surviving mutants: 
+--> Mutation 0: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:157 - ReplaceConstant - summa.rpc.vendor ->  - Status: Killed
+--> Mutation 1: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:157 - ReplaceVariable defaultVendor -> CONF_INITIAL_RETRIES - Status: Killed
+--> Mutation 2: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:157 - ReplaceVariable defaultVendor -> CONF_RPC_TARGET - Status: Killed
+--> Mutation 3: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:157 - ReplaceVariable defaultVendor -> CONF_INITIAL_GRACE_TIME - Status: Killed
+--> Mutation 4: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:157 - ReplaceVariable defaultVendor -> connId - Status: Killed
+--> Mutation 5: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:157 - ReplaceVariable defaultVendor -> CONF_SUBSEQUENT_RETRIES - Status: Killed
+--> Mutation 6: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:157 - ReplaceVariable defaultVendor -> CONF_SUBSEQUENT_GRACE_TIME - Status: Killed
+--> Mutation 7: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:158 - ReplaceVariable connId -> CONF_INITIAL_RETRIES - Status: Survived
+--> Mutation 8: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:158 - ReplaceVariable connId -> CONF_RPC_TARGET - Status: Survived
+--> Mutation 9: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:158 - ReplaceVariable connId -> CONF_INITIAL_GRACE_TIME - Status: Survived
+--> Mutation 10: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:158 - ReplaceVariable connId -> CONF_SUBSEQUENT_RETRIES - Status: Survived
+--> Mutation 11: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:158 - ReplaceVariable connId -> CONF_SUBSEQUENT_GRACE_TIME - Status: Survived
+--> Mutation 12: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:158 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 13: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:159 - ReplaceConstant - %s not set. No RPC vendor ->  - Status: Survived
+--> Mutation 14: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:159 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 15: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:159 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 16: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:159 - ReplaceConstant - summa.rpc.vendor ->  - Status: Survived
+--> Mutation 17: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:162 - ReplaceConstant - summa.rpc.initial.gracetime ->  - Status: Survived
+--> Mutation 18: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:162 - ReplaceConstant - 1000 -> 0 - Status: Survived
+--> Mutation 19: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:162 - ReplaceConstant - 1000 -> 1 - Status: Survived
+--> Mutation 20: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:162 - ReplaceConstant - 1000 -> -1 - Status: Survived
+--> Mutation 21: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:162 - ReplaceConstant - 1000 -> 999 - Status: Survived
+--> Mutation 22: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:162 - ReplaceConstant - 1000 -> 1001 - Status: Survived
+--> Mutation 23: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:163 - ReplaceConstant - summa.rpc.initial.retries ->  - Status: Survived
+--> Mutation 24: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:163 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 25: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:163 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 26: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:163 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 27: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:163 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 28: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:164 - ReplaceConstant - summa.rpc.subsequent.gracetime ->  - Status: Survived
+--> Mutation 29: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:164 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 30: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:165 - ReplaceConstant - summa.rpc.subsequent.retries ->  - Status: Survived
+--> Mutation 31: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:165 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 32: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceConstant - Created ConnectionConsumer '%s' for %s ->  - Status: Survived
+--> Mutation 33: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceConstant - 2 -> 0 - Status: Killed
+--> Mutation 34: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceConstant - 2 -> 1 - Status: Killed
+--> Mutation 35: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceConstant - 2 -> -1 - Status: Killed
+--> Mutation 36: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 37: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 38: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 39: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceVariable connId -> CONF_INITIAL_RETRIES - Status: Survived
+--> Mutation 40: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceVariable connId -> CONF_RPC_TARGET - Status: Survived
+--> Mutation 41: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceVariable connId -> CONF_INITIAL_GRACE_TIME - Status: Survived
+--> Mutation 42: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceVariable connId -> CONF_SUBSEQUENT_RETRIES - Status: Survived
+--> Mutation 43: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.<init>(Ldk/statsbiblioteket/summa/common/configuration/Configuration;Ljava/lang/String;)V:166 - ReplaceVariable connId -> CONF_SUBSEQUENT_GRACE_TIME - Status: Survived
+--> Mutation 44: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:183 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 45: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:184 - ReplaceConstant - getConnection called for  ->  - Status: Survived
+--> Mutation 46: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:184 - ReplaceVariable connId -> CONF_INITIAL_RETRIES - Status: Survived
+--> Mutation 47: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:184 - ReplaceVariable connId -> CONF_RPC_TARGET - Status: Survived
+--> Mutation 48: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:184 - ReplaceVariable connId -> CONF_INITIAL_GRACE_TIME - Status: Survived
+--> Mutation 49: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:184 - ReplaceVariable connId -> CONF_SUBSEQUENT_RETRIES - Status: Survived
+--> Mutation 50: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:184 - ReplaceVariable connId -> CONF_SUBSEQUENT_GRACE_TIME - Status: Survived
+--> Mutation 51: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:186 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 52: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:187 - ReplaceVariable connId -> CONF_INITIAL_RETRIES - Status: Killed
+--> Mutation 53: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:187 - ReplaceVariable connId -> CONF_RPC_TARGET - Status: Killed
+--> Mutation 54: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:187 - ReplaceVariable connId -> CONF_INITIAL_GRACE_TIME - Status: Killed
+--> Mutation 55: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:187 - ReplaceVariable connId -> CONF_SUBSEQUENT_RETRIES - Status: Killed
+--> Mutation 56: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:187 - ReplaceVariable connId -> CONF_SUBSEQUENT_GRACE_TIME - Status: Killed
+--> Mutation 57: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:190 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 58: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:191 - ReplaceConstant - getConnection: ConnectionContext is null for id  ->  - Status: Survived
+--> Mutation 59: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:191 - ReplaceVariable connId -> CONF_INITIAL_RETRIES - Status: Survived
+--> Mutation 60: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:191 - ReplaceVariable connId -> CONF_RPC_TARGET - Status: Survived
+--> Mutation 61: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:191 - ReplaceVariable connId -> CONF_INITIAL_GRACE_TIME - Status: Survived
+--> Mutation 62: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:191 - ReplaceVariable connId -> CONF_SUBSEQUENT_RETRIES - Status: Survived
+--> Mutation 63: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getConnection()Ljava/lang/Object;:191 - ReplaceVariable connId -> CONF_SUBSEQUENT_GRACE_TIME - Status: Survived
+--> Mutation 64: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.releaseConnection()V:207 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 65: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.connectionError(Ljava/lang/Throwable;)V:225 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 66: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.connectionError(Ljava/lang/String;)V:244 - ReplaceComparisonOperator != null -> = null - Status: Killed
+--> Mutation 67: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.connectionError(Ljava/lang/String;)V:248 - ReplaceVariable cause -> CONF_INITIAL_RETRIES - Status: Survived
+--> Mutation 68: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.connectionError(Ljava/lang/String;)V:248 - ReplaceVariable cause -> CONF_RPC_TARGET - Status: Survived
+--> Mutation 69: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.connectionError(Ljava/lang/String;)V:248 - ReplaceVariable cause -> CONF_INITIAL_GRACE_TIME - Status: Survived
+--> Mutation 70: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.connectionError(Ljava/lang/String;)V:248 - ReplaceVariable cause -> connId - Status: Survived
+--> Mutation 71: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.connectionError(Ljava/lang/String;)V:248 - ReplaceVariable cause -> CONF_SUBSEQUENT_RETRIES - Status: Survived
+--> Mutation 72: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.connectionError(Ljava/lang/String;)V:248 - ReplaceVariable cause -> CONF_SUBSEQUENT_GRACE_TIME - Status: Survived
+--> Mutation 73: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getVendorId()Ljava/lang/String;:260 - ReplaceVariable connId -> CONF_INITIAL_RETRIES - Status: Killed
+--> Mutation 74: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getVendorId()Ljava/lang/String;:260 - ReplaceVariable connId -> CONF_RPC_TARGET - Status: Killed
+--> Mutation 75: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getVendorId()Ljava/lang/String;:260 - ReplaceVariable connId -> CONF_INITIAL_GRACE_TIME - Status: Killed
+--> Mutation 76: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getVendorId()Ljava/lang/String;:260 - ReplaceVariable connId -> CONF_SUBSEQUENT_RETRIES - Status: Killed
+--> Mutation 77: dk.statsbiblioteket.summa.common.rpc.ConnectionConsumer.getVendorId()Ljava/lang/String;:260 - ReplaceVariable connId -> CONF_SUBSEQUENT_GRACE_TIME - Status: Killed
+* Compiling and checking tests
 * Computation finished

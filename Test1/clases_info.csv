@@ -27,6 +27,8 @@
 105_freemind,accessories.plugins.NewParentNode,NewParentNode
 105_freemind,freemind.controller.printpreview.PreviewDialog,PreviewDialog
 105_freemind,freemind.modes.filemode.FileNodeModel,FileNodeModel
+106_checkstyle,com.atlassw.tools.eclipse.checkstyle.config.Module,Module
+107_weka,weka.associations.ItemSet,ItemSet
 107_weka,weka.core.Version,Version
 107_weka,weka.core.tokenizers.AlphabeticTokenizer,AlphabeticTokenizer
 107_weka,weka.gui.beans.SubstringLabeler,SubstringLabeler

@@ -1,12 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 7125
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:46:49.280 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class com.liferay.portlet.shopping.model.ShoppingCategoryWrapper
 * Test criteria:
@@ -19,21 +18,111 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 499
-* Using seed 2482030657809
+* Using seed 1710479832895
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 313 / 499
-[MASTER] 01:46:51.064 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutRevisionWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 01:46:51.541 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.shopping.model.ShoppingCategoryWrapper canUseFunctionalMocks=false, canBeMocked: false
-[MASTER] 01:46:51.597 [logback-1] WARN  TestCluster - Failed to check cache for com.liferay.portal.model.CacheModel<T> : Type points to itself
-[MASTER] 01:46:54.655 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ContactWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 01:46:55.565 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-[MASTER] 01:47:07.169 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.JapaneseChronology canUseFunctionalMocks=true, canBeMocked: false
-[MASTER] 01:47:39.638 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.AccountWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 01:47:42.238 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.AddressWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 01:47:52.030 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PasswordPolicyWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 01:48:16.316 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.service.ServiceContext canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 01:48:29.982 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutSetBranchWrapper canUseFunctionalMocks=false, canBeMocked: true
-[MASTER] 01:48:36.377 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.ThaiBuddhistChronology canUseFunctionalMocks=true, canBeMocked: false
-[MASTER] 01:48:57.580 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.time.chrono.HijrahChronology canUseFunctionalMocks=true, canBeMocked: false
-* Search finished after 181s and 4649 generations, 1006869 statements, best individual has fitness: 71.0
+[MASTER] 02:17:19.135 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portlet.shopping.model.ShoppingCategoryWrapper canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 02:17:19.223 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 02:17:19.351 [logback-1] WARN  TestCluster - Failed to check cache for com.liferay.portal.model.CacheModel<T> : Type points to itself
+[MASTER] 02:17:26.165 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.ContactWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:17:26.776 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutRevisionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:17:36.417 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.SubscriptionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:17:38.299 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.service.ServiceContext canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:17:49.993 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.TeamWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:17:53.536 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.AccountWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:18:37.860 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PortletItemWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:18:56.623 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.AddressWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:19:27.306 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.LayoutSetBranchWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:20:11.155 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.liferay.portal.model.PasswordPolicyWrapper canUseFunctionalMocks=false, canBeMocked: true
+* Search finished after 182s and 7759 generations, 1648570 statements, best individual has fitness: 79.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 111
+* Number of covered goals: 111
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 69
+* Number of covered goals: 69
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 81
+* Number of covered goals: 81
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 50
+* Number of covered goals: 50
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 73%
+* Total number of goals: 100
+* Number of covered goals: 73
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 50
+* Number of covered goals: 50
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 50
+* Number of covered goals: 50
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 69
+* Number of covered goals: 69
+* Generated 168 tests with total length 523
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 12%
+* There are surviving mutants: 
+--> Mutation 0: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:49 - ReplaceConstant - categoryId ->  - Status: Survived
+--> Mutation 1: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:50 - ReplaceConstant - groupId ->  - Status: Survived
+--> Mutation 2: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:51 - ReplaceConstant - companyId ->  - Status: Survived
+--> Mutation 3: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:52 - ReplaceConstant - userId ->  - Status: Survived
+--> Mutation 4: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:53 - ReplaceConstant - userName ->  - Status: Survived
+--> Mutation 5: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:54 - ReplaceConstant - createDate ->  - Status: Survived
+--> Mutation 6: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:55 - ReplaceConstant - modifiedDate ->  - Status: Survived
+--> Mutation 7: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:56 - ReplaceConstant - parentCategoryId ->  - Status: Survived
+--> Mutation 8: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:57 - ReplaceConstant - name ->  - Status: Survived
+--> Mutation 9: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.getModelAttributes()Ljava/util/Map;:58 - ReplaceConstant - description ->  - Status: Survived
+--> Mutation 10: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:64 - ReplaceConstant - categoryId ->  - Status: Survived
+--> Mutation 11: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:66 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 12: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:70 - ReplaceConstant - groupId ->  - Status: Survived
+--> Mutation 13: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:72 - ReplaceVariable groupId -> categoryId - Status: Survived
+--> Mutation 14: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:72 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 15: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:73 - ReplaceVariable groupId -> categoryId - Status: Survived
+--> Mutation 16: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:76 - ReplaceConstant - companyId ->  - Status: Survived
+--> Mutation 17: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:78 - ReplaceVariable companyId -> categoryId - Status: Survived
+--> Mutation 18: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:78 - ReplaceVariable companyId -> groupId - Status: Survived
+--> Mutation 19: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:78 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 20: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:79 - ReplaceVariable companyId -> categoryId - Status: Killed
+--> Mutation 21: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:79 - ReplaceVariable companyId -> groupId - Status: Killed
+--> Mutation 22: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:82 - ReplaceConstant - userId ->  - Status: Survived
+--> Mutation 23: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:84 - ReplaceVariable userId -> companyId - Status: Survived
+--> Mutation 24: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:84 - ReplaceVariable userId -> categoryId - Status: Survived
+--> Mutation 25: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:84 - ReplaceVariable userId -> groupId - Status: Survived
+--> Mutation 26: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:84 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 27: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:85 - ReplaceVariable userId -> companyId - Status: Survived
+--> Mutation 28: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:85 - ReplaceVariable userId -> categoryId - Status: Killed
+--> Mutation 29: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:85 - ReplaceVariable userId -> groupId - Status: Killed
+--> Mutation 30: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:88 - ReplaceConstant - userName ->  - Status: Survived
+--> Mutation 31: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:90 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 32: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:94 - ReplaceConstant - createDate ->  - Status: Survived
+--> Mutation 33: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:96 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 34: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:100 - ReplaceConstant - modifiedDate ->  - Status: Survived
+--> Mutation 35: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:102 - ReplaceVariable modifiedDate -> createDate - Status: Survived
+--> Mutation 36: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:102 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 37: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setModelAttributes(Ljava/util/Map;)V:103 - ReplaceVariable modifiedDate -> createDate - Status: Survived
+--> Mutation 38: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setPrimaryKey(J)V:140 - InsertUnaryOp Negation of primaryKey - Status: Survived
+--> Mutation 39: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setCategoryId(J)V:158 - InsertUnaryOp Negation of categoryId - Status: Survived
+--> Mutation 40: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setGroupId(J)V:176 - InsertUnaryOp Negation of groupId - Status: Survived
+--> Mutation 41: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setCompanyId(J)V:194 - InsertUnaryOp Negation of companyId - Status: Survived
+--> Mutation 42: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setUserId(J)V:212 - InsertUnaryOp Negation of userId - Status: Survived
+--> Mutation 43: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setParentCategoryId(J)V:304 - InsertUnaryOp Negation of parentCategoryId - Status: Survived
+--> Mutation 44: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setNew(Z)V:348 - InsertUnaryOp Negation of n - Status: Survived
+--> Mutation 45: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setNew(Z)V:348 - InsertUnaryOp IINC 1 n - Status: Survived
+--> Mutation 46: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setNew(Z)V:348 - InsertUnaryOp IINC -1 n - Status: Survived
+--> Mutation 47: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setCachedModel(Z)V:356 - InsertUnaryOp Negation of cachedModel - Status: Survived
+--> Mutation 48: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setCachedModel(Z)V:356 - InsertUnaryOp IINC 1 cachedModel - Status: Survived
+--> Mutation 49: com.liferay.portlet.shopping.model.ShoppingCategoryWrapper.setCachedModel(Z)V:356 - InsertUnaryOp IINC -1 cachedModel - Status: Survived
+* Compiling and checking tests
 * Computation finished

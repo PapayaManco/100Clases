@@ -1,13 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/104_vuze/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\104_vuze\evosuite-files\evosuite.properties
+* Connecting to master process on port 4541
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 00:17:30.020 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 00:17:30.063 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl
 * Test criteria:
@@ -20,9 +18,265 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 652
-* Using seed 2482030657809
+* Using seed 1710474035776
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 110 / 652
-[MASTER] 00:17:40.486 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 185s and 52 generations, 11047 statements, best individual has fitness: 607.0
+[MASTER] 00:40:48.456 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 185s and 72 generations, 14826 statements, best individual has fitness: 606.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 12%
+* Total number of goals: 200
+* Number of covered goals: 25
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 7%
+* Total number of goals: 107
+* Number of covered goals: 8
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 2%
+* Total number of goals: 211
+* Number of covered goals: 4
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 14%
+* Total number of goals: 7
+* Number of covered goals: 1
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 10
+* Number of covered goals: 5
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 7%
+* Total number of goals: 107
+* Number of covered goals: 8
+* Generated 9 tests with total length 23
+* Resulting test suite's coverage: 21% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* There are surviving mutants: 
+--> Mutation 0: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:103 - InsertUnaryOp Negation of _use_filter - Status: Survived
+--> Mutation 1: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:103 - InsertUnaryOp IINC 1 _use_filter - Status: Survived
+--> Mutation 2: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:103 - InsertUnaryOp IINC -1 _use_filter - Status: Survived
+--> Mutation 3: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:110 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 4: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:110 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 5: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:116 - ReplaceConstant - http.proxyHost ->  - Status: Survived
+--> Mutation 6: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:117 - ReplaceConstant - socksProxyHost ->  - Status: Survived
+--> Mutation 7: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceVariable http_proxy -> NL - Status: Survived
+--> Mutation 8: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceVariable http_proxy -> socks_proxy - Status: Survived
+--> Mutation 9: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 10: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceVariable http_proxy -> NL - Status: Survived
+--> Mutation 11: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceVariable http_proxy -> socks_proxy - Status: Survived
+--> Mutation 12: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 13: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 14: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 15: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceVariable socks_proxy -> http_proxy - Status: Survived
+--> Mutation 16: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceVariable socks_proxy -> NL - Status: Survived
+--> Mutation 17: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 18: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceVariable socks_proxy -> http_proxy - Status: Survived
+--> Mutation 19: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:121 - ReplaceVariable socks_proxy -> NL - Status: Survived
+--> Mutation 20: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:122 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 21: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:122 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 22: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:122 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 23: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:122 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 24: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:123 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 25: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:127 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 26: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:136 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 27: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:140 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 28: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.setGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;Z)V:144 - ReplaceVariable address -> bindIP - Status: Survived
+--> Mutation 29: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.checkGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;)V:268 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 30: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.checkGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;)V:268 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 31: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.checkGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;)V:270 - ReplaceConstant - Generator isn't trusted -  ->  - Status: Survived
+--> Mutation 32: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.checkGenerator(Lorg/gudy/azureus2/plugins/clientid/ClientIDGenerator;)V:272 - ReplaceConstant - Generator isn't trusted ->  - Status: Survived
+--> Mutation 33: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generatePeerID(Lorg/gudy/azureus2/core3/torrent/TOTorrent;Z)[B:283 - InsertUnaryOp Negation of for_tracker - Status: Survived
+--> Mutation 34: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generatePeerID(Lorg/gudy/azureus2/core3/torrent/TOTorrent;Z)[B:283 - InsertUnaryOp IINC 1 for_tracker - Status: Survived
+--> Mutation 35: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generatePeerID(Lorg/gudy/azureus2/core3/torrent/TOTorrent;Z)[B:283 - InsertUnaryOp IINC -1 for_tracker - Status: Survived
+--> Mutation 36: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:292 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 37: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:292 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 38: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:297 - ReplaceConstant - URL ->  - Status: Survived
+--> Mutation 39: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:299 - ReplaceConstant - http ->  - Status: Survived
+--> Mutation 40: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:299 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 41: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:299 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 42: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:299 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 43: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:301 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 44: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:301 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 45: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:301 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 46: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:301 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 47: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:301 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 48: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:301 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 49: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:301 - ReplaceConstant - ClientIDManager only supports filtering of http, not https ->  - Status: Survived
+--> Mutation 50: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - InsertUnaryOp Negation of target_port - Status: Survived
+--> Mutation 51: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - InsertUnaryOp IINC 1 target_port - Status: Survived
+--> Mutation 52: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - InsertUnaryOp IINC -1 target_port - Status: Survived
+--> Mutation 53: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 54: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 55: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 56: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 57: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 58: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:313 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 59: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:318 - ReplaceVariable url_str -> target_host - Status: Survived
+--> Mutation 60: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:318 - ReplaceVariable url_str -> NL - Status: Survived
+--> Mutation 61: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:318 - ReplaceVariable target_host -> url_str - Status: Survived
+--> Mutation 62: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:318 - ReplaceVariable target_host -> NL - Status: Survived
+--> Mutation 63: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - ReplaceVariable url_str -> target_host - Status: Survived
+--> Mutation 64: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - ReplaceVariable url_str -> NL - Status: Survived
+--> Mutation 65: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 66: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - ReplaceVariable host_pos -> target_port - Status: Survived
+--> Mutation 67: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - InsertUnaryOp Negation of host_pos - Status: Survived
+--> Mutation 68: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - ReplaceConstant - 127.0.0.1: ->  - Status: Survived
+--> Mutation 69: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 70: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - InsertUnaryOp +1 - Status: Survived
+--> Mutation 71: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:320 - InsertUnaryOp -1 - Status: Survived
+--> Mutation 72: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceVariable url_str -> new_url - Status: Survived
+--> Mutation 73: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceVariable url_str -> target_host - Status: Survived
+--> Mutation 74: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceVariable url_str -> NL - Status: Survived
+--> Mutation 75: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceVariable host_pos -> target_port - Status: Survived
+--> Mutation 76: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - InsertUnaryOp Negation of host_pos - Status: Survived
+--> Mutation 77: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - InsertUnaryOp IINC 1 host_pos - Status: Survived
+--> Mutation 78: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - InsertUnaryOp IINC -1 host_pos - Status: Survived
+--> Mutation 79: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceVariable target_host -> new_url - Status: Survived
+--> Mutation 80: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceVariable target_host -> url_str - Status: Survived
+--> Mutation 81: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceVariable target_host -> NL - Status: Survived
+--> Mutation 82: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 83: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 84: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 85: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl.generateHTTPProperties(Ljava/util/Properties;)V:322 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 86: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:192 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 87: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:192 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 88: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:193 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 89: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:193 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 90: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - ReplaceVariable successfull_accepts -> failed_accepts - Status: Survived
+--> Mutation 91: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - InsertUnaryOp Negation of successfull_accepts - Status: Survived
+--> Mutation 92: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 93: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - ReplaceConstant - 1 -> -1 - Status: Survived
+--> Mutation 94: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - ReplaceConstant - 1 -> 2 - Status: Survived
+--> Mutation 95: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 96: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 97: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 98: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:200 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 99: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - ReplaceVariable failed_accepts -> successfull_accepts - Status: Survived
+--> Mutation 100: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - InsertUnaryOp Negation of failed_accepts - Status: Survived
+--> Mutation 101: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 102: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - ReplaceConstant - 1 -> -1 - Status: Survived
+--> Mutation 103: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - ReplaceConstant - 1 -> 2 - Status: Survived
+--> Mutation 104: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - ReplaceArithmeticOperator + -> % - Status: Survived
+--> Mutation 105: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - ReplaceArithmeticOperator + -> - - Status: Survived
+--> Mutation 106: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - ReplaceArithmeticOperator + -> * - Status: Survived
+--> Mutation 107: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:206 - ReplaceArithmeticOperator + -> / - Status: Survived
+--> Mutation 108: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:208 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 109: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:209 - ReplaceConstant - ClientIDManager: listener failed on port  ->  - Status: Survived
+--> Mutation 110: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceVariable failed_accepts -> successfull_accepts - Status: Survived
+--> Mutation 111: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - InsertUnaryOp Negation of failed_accepts - Status: Survived
+--> Mutation 112: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceConstant - 100 -> 0 - Status: Survived
+--> Mutation 113: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceConstant - 100 -> 1 - Status: Survived
+--> Mutation 114: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceConstant - 100 -> -1 - Status: Survived
+--> Mutation 115: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceConstant - 100 -> 99 - Status: Survived
+--> Mutation 116: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceConstant - 100 -> 101 - Status: Survived
+--> Mutation 117: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 118: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 119: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 120: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceVariable successfull_accepts -> failed_accepts - Status: Survived
+--> Mutation 121: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - InsertUnaryOp Negation of successfull_accepts - Status: Survived
+--> Mutation 122: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 123: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceConstant - 0 -> -1 - Status: Survived
+--> Mutation 124: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 125: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 126: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:213 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 127: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 128: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 129: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 130: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 131: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 132: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 133: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - Network.alert.acceptfail ->  - Status: Survived
+--> Mutation 134: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 135: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 136: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 137: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 138: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:218 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 139: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:220 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 140: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$1.runSupport()V:220 - ReplaceConstant - TCP ->  - Status: Survived
+--> Mutation 141: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:362 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 142: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:366 - ReplaceConstant - reading header ->  - Status: Survived
+--> Mutation 143: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:370 - ReplaceConstant - 1024 -> 0 - Status: Survived
+--> Mutation 144: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:370 - ReplaceConstant - 1024 -> 1 - Status: Survived
+--> Mutation 145: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:370 - ReplaceConstant - 1024 -> -1 - Status: Survived
+--> Mutation 146: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:370 - ReplaceConstant - 1024 -> 1023 - Status: Survived
+--> Mutation 147: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:370 - ReplaceConstant - 1024 -> 1025 - Status: Survived
+--> Mutation 148: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - ReplaceVariable len -> written - Status: Survived
+--> Mutation 149: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - InsertUnaryOp Negation of len - Status: Survived
+--> Mutation 150: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - InsertUnaryOp IINC 1 len - Status: Survived
+--> Mutation 151: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - InsertUnaryOp IINC -1 len - Status: Survived
+--> Mutation 152: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 153: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 154: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 155: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 156: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 157: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:378 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 158: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:383 - ReplaceVariable header -> report_error - Status: Survived
+--> Mutation 159: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:383 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 160: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:383 - ReplaceVariable len -> written - Status: Survived
+--> Mutation 161: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:383 - InsertUnaryOp Negation of len - Status: Survived
+--> Mutation 162: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:383 - ReplaceConstant - ISO-8859-1 ->  - Status: Survived
+--> Mutation 163: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:385 - ReplaceVariable header -> report_error - Status: Survived
+--> Mutation 164: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:385 - ReplaceConstant - 
+
+ ->  - Status: Survived
+--> Mutation 165: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:385 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 166: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:385 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 167: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:385 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 168: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:385 - ReplaceVariable header -> report_error - Status: Survived
+--> Mutation 169: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:385 - ReplaceConstant - 
+
+ ->  - Status: Survived
+--> Mutation 170: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:386 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 171: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:386 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 172: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:386 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 173: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:386 - ReplaceComparisonOperator == -> -2 - Status: Survived
+--> Mutation 174: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:386 - ReplaceComparisonOperator == -> >= - Status: Survived
+--> Mutation 175: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:386 - ReplaceComparisonOperator == -> <= - Status: Survived
+--> Mutation 176: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:394 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 177: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:398 - ReplaceVariable header -> report_error - Status: Survived
+--> Mutation 178: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:398 - ReplaceConstant - 
+ ->  - Status: Survived
+--> Mutation 179: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:398 - ReplaceVariable pos -> written - Status: Survived
+--> Mutation 180: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:398 - InsertUnaryOp Negation of pos - Status: Survived
+--> Mutation 181: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:398 - InsertUnaryOp IINC 1 pos - Status: Survived
+--> Mutation 182: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:398 - InsertUnaryOp IINC -1 pos - Status: Survived
+--> Mutation 183: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - ReplaceVariable p1 -> pos - Status: Survived
+--> Mutation 184: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - ReplaceVariable p1 -> written - Status: Survived
+--> Mutation 185: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - InsertUnaryOp Negation of p1 - Status: Survived
+--> Mutation 186: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - InsertUnaryOp IINC 1 p1 - Status: Survived
+--> Mutation 187: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - InsertUnaryOp IINC -1 p1 - Status: Survived
+--> Mutation 188: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - ReplaceConstant - -1 -> 0 - Status: Survived
+--> Mutation 189: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - ReplaceConstant - -1 -> 1 - Status: Survived
+--> Mutation 190: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - ReplaceConstant - -1 -> -2 - Status: Survived
+--> Mutation 191: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 192: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 193: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:402 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 194: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:404 - ReplaceVariable header -> report_error - Status: Survived
+--> Mutation 195: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:404 - ReplaceVariable pos -> p1 - Status: Survived
+--> Mutation 196: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:404 - ReplaceVariable pos -> written - Status: Survived
+--> Mutation 197: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:404 - InsertUnaryOp Negation of pos - Status: Survived
+--> Mutation 198: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:404 - InsertUnaryOp IINC 1 pos - Status: Survived
+--> Mutation 199: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:404 - InsertUnaryOp IINC -1 pos - Status: Survived
+--> Mutation 200: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - ReplaceVariable header -> report_error - Status: Survived
+--> Mutation 201: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - ReplaceVariable pos -> p1 - Status: Survived
+--> Mutation 202: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - ReplaceVariable pos -> written - Status: Survived
+--> Mutation 203: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - InsertUnaryOp Negation of pos - Status: Survived
+--> Mutation 204: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - InsertUnaryOp IINC 1 pos - Status: Survived
+--> Mutation 205: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - InsertUnaryOp IINC -1 pos - Status: Survived
+--> Mutation 206: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - ReplaceVariable p1 -> pos - Status: Survived
+--> Mutation 207: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - ReplaceVariable p1 -> written - Status: Survived
+--> Mutation 208: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - InsertUnaryOp Negation of p1 - Status: Survived
+--> Mutation 209: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - InsertUnaryOp IINC 1 p1 - Status: Survived
+--> Mutation 210: org.gudy.azureus2.pluginsimpl.local.clientid.ClientIDManagerImpl$httpFilter.runSupport()V:408 - InsertUnaryOp IINC -1 p1 - Status: Survived
+* Compiling and checking tests
 * Computation finished

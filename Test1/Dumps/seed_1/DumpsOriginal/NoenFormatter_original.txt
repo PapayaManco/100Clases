@@ -1,12 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: fi.vtt.noen.testgen.observations.formatter.NoenFormatter
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/61_noen/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\61_noen\evosuite-files\evosuite.properties
+* Connecting to master process on port 16143
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:20:04.989 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
 * Finished analyzing classpath
 * Generating tests for class fi.vtt.noen.testgen.observations.formatter.NoenFormatter
 * Test criteria:
@@ -19,10 +18,10 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 128
-* Using seed 2482030657809
+* Using seed 1710484887935
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 57 / 128
-* Search finished after 182s and 1587 generations, 349454 statements, best individual has fitness: 16.0
+* Search finished after 186s and 2098 generations, 457745 statements, best individual has fitness: 16.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -57,7 +56,7 @@
 * Coverage of criterion CBRANCH: 100%
 * Total number of goals: 17
 * Number of covered goals: 17
-* Generated 15 tests with total length 61
+* Generated 15 tests with total length 62
 * Resulting test suite's coverage: 85% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 28%
@@ -92,23 +91,4 @@
 --> Mutation 27: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.observations(Lfi/vtt/noen/testgen/observations/data/ProgramRun;)Ljava/lang/String;:78 - ReplaceComparisonOperator == -> != - Status: Killed
 --> Mutation 28: fi.vtt.noen.testgen.observations.formatter.NoenFormatter.fileNameExtension()Ljava/lang/String;:96 - ReplaceConstant - xml ->  - Status: Killed
 * Compiling and checking tests
-[MASTER] 03:23:16.594 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:23:21.941 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:23:27.293 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:23:32.622 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:23:37.947 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:23:43.281 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:23:48.642 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:23:53.979 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:23:59.302 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:24:04.626 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:24:09.957 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 03:24:09.959 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
-* Permissions denied during test execution: 
-  - java.lang.RuntimePermission: 
-         writeFileDescriptor: 226
-* Writing tests to file
-* Writing JUnit test case 'NoenFormatter_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished

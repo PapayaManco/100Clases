@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: visu.handball.moves.views.Field
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/56_jhandballmoves/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\56_jhandballmoves\evosuite-files\evosuite.properties
+* Connecting to master process on port 13327
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 03:13:46.063 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 03:13:46.405 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 03:13:48.119 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class visu.handball.moves.views.Field
 * Test criteria:
@@ -21,17 +18,131 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 176
-* Using seed 2482030657809
+* Using seed 1710484369878
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 129 / 176
-[MASTER] 03:13:51.429 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
-[MASTER] 03:13:54.664 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JList<E> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {E=? extends javax.swing.JLayer<java.awt.ScrollPane>}
-[MASTER] 03:13:54.974 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
-[MASTER] 03:13:56.405 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-[MASTER] 03:15:21.622 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 03:16:00.734 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:16:00.739 [logback-1] WARN  CastClassManager - Nothing is assignable after adding java.util.Vector<E> for wildcard ? extends java.util.Vector
-[MASTER] 03:16:00.893 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
-[MASTER] 03:16:05.989 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
-* Search finished after 182s and 3302 generations, 932541 statements, best individual has fitness: 8.0
+[MASTER] 03:33:05.463 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 03:34:42.970 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+* Search finished after 181s and 6145 generations, 1691623 statements, best individual has fitness: 8.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 38
+* Number of covered goals: 38
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 16
+* Number of covered goals: 16
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 81
+* Number of covered goals: 81
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 55%
+* Total number of goals: 11
+* Number of covered goals: 6
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 16
+* Number of covered goals: 16
+* Generated 16 tests with total length 85
+* Resulting test suite's coverage: 90% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 49%
+* There are surviving mutants: 
+--> Mutation 0: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 500 -> 0 - Status: Survived
+--> Mutation 1: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 500 -> 1 - Status: Survived
+--> Mutation 2: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 500 -> -1 - Status: Survived
+--> Mutation 3: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 500 -> 499 - Status: Survived
+--> Mutation 4: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 500 -> 501 - Status: Survived
+--> Mutation 5: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 550 -> 0 - Status: Survived
+--> Mutation 6: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 550 -> 1 - Status: Survived
+--> Mutation 7: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 550 -> -1 - Status: Survived
+--> Mutation 8: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 550 -> 549 - Status: Survived
+--> Mutation 9: visu.handball.moves.views.Field.<init>(Lvisu/handball/moves/model/HandballModel;Lvisu/handball/moves/model/ColorModel;)V:68 - ReplaceConstant - 550 -> 551 - Status: Survived
+--> Mutation 10: visu.handball.moves.views.Field.paintComponent(Ljava/awt/Graphics;)V:84 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 11: visu.handball.moves.views.Field.paintComponent(Ljava/awt/Graphics;)V:85 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 12: visu.handball.moves.views.Field.paintComponent(Ljava/awt/Graphics;)V:86 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 13: visu.handball.moves.views.Field.paintComponent(Ljava/awt/Graphics;)V:89 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 14: visu.handball.moves.views.Field.paintComponent(Ljava/awt/Graphics;)V:89 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 15: visu.handball.moves.views.Field.paintComponent(Ljava/awt/Graphics;)V:89 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 16: visu.handball.moves.views.Field.paintComponent(Ljava/awt/Graphics;)V:94 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 17: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> ABORT - Status: Killed
+--> Mutation 18: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> PROPERTIES - Status: Killed
+--> Mutation 19: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> SOMEBITS - Status: Killed
+--> Mutation 20: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> WIDTH - Status: Killed
+--> Mutation 21: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> HEIGHT - Status: Killed
+--> Mutation 22: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 23: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> FRAMEBITS - Status: Killed
+--> Mutation 24: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Killed
+--> Mutation 25: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> WHEN_FOCUSED - Status: Killed
+--> Mutation 26: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> ALLBITS - Status: Killed
+--> Mutation 27: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> y - Status: Killed
+--> Mutation 28: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> ERROR - Status: Killed
+--> Mutation 29: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable x -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 30: visu.handball.moves.views.Field.insideGoal(II)Z:100 - InsertUnaryOp Negation of x - Status: Killed
+--> Mutation 31: visu.handball.moves.views.Field.insideGoal(II)Z:100 - InsertUnaryOp IINC 1 x - Status: Survived
+--> Mutation 32: visu.handball.moves.views.Field.insideGoal(II)Z:100 - InsertUnaryOp IINC -1 x - Status: Survived
+--> Mutation 33: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> ABORT - Status: Killed
+--> Mutation 34: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> PROPERTIES - Status: Killed
+--> Mutation 35: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> SOMEBITS - Status: Killed
+--> Mutation 36: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> WIDTH - Status: Killed
+--> Mutation 37: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> HEIGHT - Status: Killed
+--> Mutation 38: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 39: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> FRAMEBITS - Status: Survived
+--> Mutation 40: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Killed
+--> Mutation 41: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> WHEN_FOCUSED - Status: Killed
+--> Mutation 42: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> ALLBITS - Status: Survived
+--> Mutation 43: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> x - Status: Killed
+--> Mutation 44: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> ERROR - Status: Killed
+--> Mutation 45: visu.handball.moves.views.Field.insideGoal(II)Z:100 - ReplaceVariable y -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 46: visu.handball.moves.views.Field.insideGoal(II)Z:100 - InsertUnaryOp Negation of y - Status: Killed
+--> Mutation 47: visu.handball.moves.views.Field.insideGoal(II)Z:100 - InsertUnaryOp IINC 1 y - Status: Survived
+--> Mutation 48: visu.handball.moves.views.Field.insideGoal(II)Z:100 - InsertUnaryOp IINC -1 y - Status: Survived
+--> Mutation 49: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> ABORT - Status: Survived
+--> Mutation 50: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> PROPERTIES - Status: Killed
+--> Mutation 51: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> SOMEBITS - Status: Killed
+--> Mutation 52: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> WIDTH - Status: Killed
+--> Mutation 53: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> HEIGHT - Status: Killed
+--> Mutation 54: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 55: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> FRAMEBITS - Status: Killed
+--> Mutation 56: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Killed
+--> Mutation 57: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> WHEN_FOCUSED - Status: Killed
+--> Mutation 58: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> ALLBITS - Status: Killed
+--> Mutation 59: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> y - Status: Killed
+--> Mutation 60: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> ERROR - Status: Killed
+--> Mutation 61: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable x -> WHEN_IN_FOCUSED_WINDOW - Status: Killed
+--> Mutation 62: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - InsertUnaryOp Negation of x - Status: Killed
+--> Mutation 63: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - InsertUnaryOp IINC 1 x - Status: Survived
+--> Mutation 64: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - InsertUnaryOp IINC -1 x - Status: Survived
+--> Mutation 65: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> ABORT - Status: Survived
+--> Mutation 66: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> PROPERTIES - Status: Survived
+--> Mutation 67: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> SOMEBITS - Status: Survived
+--> Mutation 68: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> WIDTH - Status: Survived
+--> Mutation 69: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> HEIGHT - Status: Survived
+--> Mutation 70: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 71: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> FRAMEBITS - Status: Survived
+--> Mutation 72: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 73: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> WHEN_FOCUSED - Status: Survived
+--> Mutation 74: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> ALLBITS - Status: Survived
+--> Mutation 75: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> x - Status: Killed
+--> Mutation 76: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> ERROR - Status: Survived
+--> Mutation 77: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - ReplaceVariable y -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 78: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - InsertUnaryOp Negation of y - Status: Survived
+--> Mutation 79: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - InsertUnaryOp IINC 1 y - Status: Survived
+--> Mutation 80: visu.handball.moves.views.Field.insideSixMeter(II)Z:108 - InsertUnaryOp IINC -1 y - Status: Survived
+* Compiling and checking tests
 * Computation finished

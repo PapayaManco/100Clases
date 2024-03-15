@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: weka.gui.beans.SubstringLabeler
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/107_weka/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\107_weka\evosuite-files\evosuite.properties
+* Connecting to master process on port 18418
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:01:18.181 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 01:01:18.919 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 01:01:20.149 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.lang.module.ModuleFinder
 * Finished analyzing classpath
 * Generating tests for class weka.gui.beans.SubstringLabeler
 * Test criteria:
@@ -21,11 +18,909 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 1864
-* Using seed 2482030657809
+* Using seed 1710476561045
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 683 / 1864
-[MASTER] 01:01:21.229 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
-[MASTER] 01:01:21.487 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
-[MASTER] 01:02:23.434 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-* Search finished after 185s and 160 generations, 67154 statements, best individual has fitness: 741.0
+[MASTER] 01:22:45.339 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 01:22:48.914 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 01:22:48.925 [logback-1] WARN  TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+* Search finished after 184s and 138 generations, 58949 statements, best individual has fitness: 789.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 66%
+* Total number of goals: 378
+* Number of covered goals: 250
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 55%
+* Total number of goals: 233
+* Number of covered goals: 128
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 59%
+* Total number of goals: 858
+* Number of covered goals: 505
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 41%
+* Total number of goals: 54
+* Number of covered goals: 22
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 54
+* Number of covered goals: 54
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 54
+* Number of covered goals: 52
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 55%
+* Total number of goals: 233
+* Number of covered goals: 127
+* Generated 85 tests with total length 252
+* Resulting test suite's coverage: 57% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 36%
+* There are surviving mutants: 
+--> Mutation 0: weka.gui.beans.SubstringLabeler.<init>()V:487 - ReplaceConstant - Match ->  - Status: Killed
+--> Mutation 1: weka.gui.beans.SubstringLabeler.<init>()V:498 - ReplaceConstant - SubstringLabeler ->  - Status: Survived
+--> Mutation 2: weka.gui.beans.SubstringLabeler.<init>()V:498 - ReplaceConstant - weka/gui/beans/icons/DefaultFilter.gif ->  - Status: Survived
+--> Mutation 3: weka.gui.beans.SubstringLabeler.<init>()V:498 - ReplaceConstant - weka/gui/beans/icons/DefaultFilter_animated.gif ->  - Status: Survived
+--> Mutation 4: weka.gui.beans.SubstringLabeler.<init>()V:509 - ReplaceConstant - Center ->  - Status: Killed
+--> Mutation 5: weka.gui.beans.SubstringLabeler.globalInfo()Ljava/lang/String;:520 - ReplaceConstant - Matches substrings in String attributes using either literal or regular expression matches. The value of a new attribute is set to reflect the status of the match. The new attribute can be either binary (in which case values indicate match or no match) or multi-valued nominal, in which case a label must be associated with each distinct matching rule. In the case of labeled matches, the user can opt to have non matching instances output with missing value set for the new attribute or not output at all (i.e. consumed by the step). ->  - Status: Killed
+--> Mutation 6: weka.gui.beans.SubstringLabeler.setMatchDetails(Ljava/lang/String;)V:539 - ReplaceVariable details -> m_attName - Status: Killed
+--> Mutation 7: weka.gui.beans.SubstringLabeler.setMatchDetails(Ljava/lang/String;)V:539 - ReplaceVariable details -> m_matchDetails - Status: Killed
+--> Mutation 8: weka.gui.beans.SubstringLabeler.setMatchDetails(Ljava/lang/String;)V:539 - ReplaceVariable details -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 9: weka.gui.beans.SubstringLabeler.getMatchDetails()Ljava/lang/String;:548 - ReplaceVariable m_matchDetails -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 10: weka.gui.beans.SubstringLabeler.getMatchDetails()Ljava/lang/String;:548 - ReplaceVariable m_matchDetails -> m_attName - Status: Killed
+--> Mutation 11: weka.gui.beans.SubstringLabeler.setNominalBinary(Z)V:558 - ReplaceVariable nom -> m_consumeNonMatchingInstances - Status: Killed
+--> Mutation 12: weka.gui.beans.SubstringLabeler.setNominalBinary(Z)V:558 - ReplaceVariable nom -> m_nominalBinary - Status: Killed
+--> Mutation 13: weka.gui.beans.SubstringLabeler.setNominalBinary(Z)V:558 - ReplaceVariable nom -> m_busy - Status: Killed
+--> Mutation 14: weka.gui.beans.SubstringLabeler.setNominalBinary(Z)V:558 - ReplaceVariable nom -> m_hasLabels - Status: Killed
+--> Mutation 15: weka.gui.beans.SubstringLabeler.setNominalBinary(Z)V:558 - InsertUnaryOp Negation of nom - Status: Survived
+--> Mutation 16: weka.gui.beans.SubstringLabeler.setNominalBinary(Z)V:558 - InsertUnaryOp IINC 1 nom - Status: Killed
+--> Mutation 17: weka.gui.beans.SubstringLabeler.setNominalBinary(Z)V:558 - InsertUnaryOp IINC -1 nom - Status: Killed
+--> Mutation 18: weka.gui.beans.SubstringLabeler.getNominalBinary()Z:568 - ReplaceVariable m_nominalBinary -> m_consumeNonMatchingInstances - Status: Survived
+--> Mutation 19: weka.gui.beans.SubstringLabeler.getNominalBinary()Z:568 - ReplaceVariable m_nominalBinary -> m_busy - Status: Survived
+--> Mutation 20: weka.gui.beans.SubstringLabeler.getNominalBinary()Z:568 - ReplaceVariable m_nominalBinary -> m_hasLabels - Status: Survived
+--> Mutation 21: weka.gui.beans.SubstringLabeler.getNominalBinary()Z:568 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 22: weka.gui.beans.SubstringLabeler.setConsumeNonMatching(Z)V:580 - ReplaceVariable consume -> m_consumeNonMatchingInstances - Status: Killed
+--> Mutation 23: weka.gui.beans.SubstringLabeler.setConsumeNonMatching(Z)V:580 - ReplaceVariable consume -> m_nominalBinary - Status: Killed
+--> Mutation 24: weka.gui.beans.SubstringLabeler.setConsumeNonMatching(Z)V:580 - ReplaceVariable consume -> m_busy - Status: Killed
+--> Mutation 25: weka.gui.beans.SubstringLabeler.setConsumeNonMatching(Z)V:580 - ReplaceVariable consume -> m_hasLabels - Status: Killed
+--> Mutation 26: weka.gui.beans.SubstringLabeler.setConsumeNonMatching(Z)V:580 - InsertUnaryOp Negation of consume - Status: Survived
+--> Mutation 27: weka.gui.beans.SubstringLabeler.setConsumeNonMatching(Z)V:580 - InsertUnaryOp IINC 1 consume - Status: Killed
+--> Mutation 28: weka.gui.beans.SubstringLabeler.setConsumeNonMatching(Z)V:580 - InsertUnaryOp IINC -1 consume - Status: Killed
+--> Mutation 29: weka.gui.beans.SubstringLabeler.getConsumeNonMatching()Z:592 - ReplaceVariable m_consumeNonMatchingInstances -> m_nominalBinary - Status: Survived
+--> Mutation 30: weka.gui.beans.SubstringLabeler.getConsumeNonMatching()Z:592 - ReplaceVariable m_consumeNonMatchingInstances -> m_busy - Status: Survived
+--> Mutation 31: weka.gui.beans.SubstringLabeler.getConsumeNonMatching()Z:592 - ReplaceVariable m_consumeNonMatchingInstances -> m_hasLabels - Status: Survived
+--> Mutation 32: weka.gui.beans.SubstringLabeler.getConsumeNonMatching()Z:592 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 33: weka.gui.beans.SubstringLabeler.setMatchAttributeName(Ljava/lang/String;)V:596 - ReplaceVariable name -> m_attName - Status: Killed
+--> Mutation 34: weka.gui.beans.SubstringLabeler.setMatchAttributeName(Ljava/lang/String;)V:596 - ReplaceVariable name -> m_matchDetails - Status: Killed
+--> Mutation 35: weka.gui.beans.SubstringLabeler.setMatchAttributeName(Ljava/lang/String;)V:596 - ReplaceVariable name -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 36: weka.gui.beans.SubstringLabeler.getMatchAttributeName()Ljava/lang/String;:600 - ReplaceVariable m_attName -> m_matchDetails - Status: Killed
+--> Mutation 37: weka.gui.beans.SubstringLabeler.getMatchAttributeName()Ljava/lang/String;:600 - ReplaceVariable m_attName -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 38: weka.gui.beans.SubstringLabeler.addDataSourceListener(Lweka/gui/beans/DataSourceListener;)V:609 - ReplaceVariable m_dataListeners -> m_instanceListeners - Status: Survived
+--> Mutation 39: weka.gui.beans.SubstringLabeler.removeDataSourceListener(Lweka/gui/beans/DataSourceListener;)V:618 - ReplaceVariable m_dataListeners -> m_instanceListeners - Status: Survived
+--> Mutation 40: weka.gui.beans.SubstringLabeler.addInstanceListener(Lweka/gui/beans/InstanceListener;)V:627 - ReplaceVariable m_instanceListeners -> m_dataListeners - Status: Survived
+--> Mutation 41: weka.gui.beans.SubstringLabeler.removeInstanceListener(Lweka/gui/beans/InstanceListener;)V:636 - ReplaceVariable m_instanceListeners -> m_dataListeners - Status: Survived
+--> Mutation 42: weka.gui.beans.SubstringLabeler.setEnvironment(Lweka/core/Environment;)V:643 - ReplaceVariable env -> m_env - Status: Survived
+--> Mutation 43: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:654 - ReplaceComparisonOperator != null -> = null - Status: Survived
+--> Mutation 44: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:655 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 45: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceVariable eventName -> m_attName - Status: Survived
+--> Mutation 46: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceVariable eventName -> m_matchDetails - Status: Survived
+--> Mutation 47: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 48: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceConstant - instance ->  - Status: Survived
+--> Mutation 49: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 50: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 51: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 52: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceVariable eventName -> m_attName - Status: Survived
+--> Mutation 53: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceVariable eventName -> m_matchDetails - Status: Survived
+--> Mutation 54: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 55: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceConstant - dataSet ->  - Status: Survived
+--> Mutation 56: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 57: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 58: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:658 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 59: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:659 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 60: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:662 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 61: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:663 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 62: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:665 - ReplaceVariable eventName -> m_attName - Status: Survived
+--> Mutation 63: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:665 - ReplaceVariable eventName -> m_matchDetails - Status: Survived
+--> Mutation 64: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:665 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 65: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:669 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 66: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:670 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 67: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:673 - ReplaceVariable eventName -> m_attName - Status: Survived
+--> Mutation 68: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:673 - ReplaceVariable eventName -> m_matchDetails - Status: Survived
+--> Mutation 69: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:673 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 70: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:673 - ReplaceConstant - dataSet ->  - Status: Survived
+--> Mutation 71: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:673 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 72: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:673 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 73: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:673 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 74: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:674 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 75: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:677 - ReplaceConstant - trainingSet ->  - Status: Survived
+--> Mutation 76: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:677 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 77: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:678 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 78: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:683 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 79: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:684 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 80: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:687 - ReplaceVariable eventName -> m_attName - Status: Survived
+--> Mutation 81: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:687 - ReplaceVariable eventName -> m_matchDetails - Status: Survived
+--> Mutation 82: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:687 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 83: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:687 - ReplaceConstant - dataSet ->  - Status: Survived
+--> Mutation 84: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:687 - ReplaceComparisonOperator > -> -2 - Status: Survived
+--> Mutation 85: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:687 - ReplaceComparisonOperator > -> != - Status: Survived
+--> Mutation 86: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:687 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 87: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:688 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 88: weka.gui.beans.SubstringLabeler.eventGeneratable(Ljava/lang/String;)Z:691 - ReplaceConstant - testSet ->  - Status: Survived
+--> Mutation 89: weka.gui.beans.SubstringLabeler.useDefaultVisual()V:704 - ReplaceConstant - weka/gui/beans/icons/DefaultFilter.gif ->  - Status: Killed
+--> Mutation 90: weka.gui.beans.SubstringLabeler.useDefaultVisual()V:704 - ReplaceConstant - weka/gui/beans/icons/DefaultFilter_animated.gif ->  - Status: Killed
+--> Mutation 91: weka.gui.beans.SubstringLabeler.useDefaultVisual()V:706 - ReplaceConstant - SubstringLabeler ->  - Status: Killed
+--> Mutation 92: weka.gui.beans.SubstringLabeler.setVisual(Lweka/gui/beans/BeanVisual;)V:715 - ReplaceVariable newVisual -> m_visual - Status: Killed
+--> Mutation 93: weka.gui.beans.SubstringLabeler.setCustomName(Ljava/lang/String;)V:733 - ReplaceVariable name -> m_attName - Status: Killed
+--> Mutation 94: weka.gui.beans.SubstringLabeler.setCustomName(Ljava/lang/String;)V:733 - ReplaceVariable name -> m_matchDetails - Status: Killed
+--> Mutation 95: weka.gui.beans.SubstringLabeler.setCustomName(Ljava/lang/String;)V:733 - ReplaceVariable name -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 96: weka.gui.beans.SubstringLabeler.stop()V:749 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 97: weka.gui.beans.SubstringLabeler.stop()V:750 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 98: weka.gui.beans.SubstringLabeler.stop()V:755 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 99: weka.gui.beans.SubstringLabeler.stop()V:756 - ReplaceConstant - Stopped ->  - Status: Survived
+--> Mutation 100: weka.gui.beans.SubstringLabeler.stop()V:759 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 101: weka.gui.beans.SubstringLabeler.isBusy()Z:769 - ReplaceVariable m_busy -> m_consumeNonMatchingInstances - Status: Killed
+--> Mutation 102: weka.gui.beans.SubstringLabeler.isBusy()Z:769 - ReplaceVariable m_busy -> m_nominalBinary - Status: Killed
+--> Mutation 103: weka.gui.beans.SubstringLabeler.isBusy()Z:769 - ReplaceVariable m_busy -> m_hasLabels - Status: Killed
+--> Mutation 104: weka.gui.beans.SubstringLabeler.isBusy()Z:769 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 105: weka.gui.beans.SubstringLabeler.setLog(Lweka/gui/Logger;)V:778 - ReplaceVariable logger -> m_log - Status: Survived
+--> Mutation 106: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> m_attName - Status: Killed
+--> Mutation 107: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> m_matchDetails - Status: Killed
+--> Mutation 108: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 109: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceConstant - instance ->  - Status: Killed
+--> Mutation 110: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceComparisonOperator > -> -2 - Status: Killed
+--> Mutation 111: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceComparisonOperator > -> != - Status: Killed
+--> Mutation 112: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 113: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> m_attName - Status: Killed
+--> Mutation 114: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> m_matchDetails - Status: Killed
+--> Mutation 115: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 116: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceConstant - dataSet ->  - Status: Killed
+--> Mutation 117: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceComparisonOperator > -> -2 - Status: Killed
+--> Mutation 118: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceComparisonOperator > -> != - Status: Killed
+--> Mutation 119: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 120: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> m_attName - Status: Killed
+--> Mutation 121: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> m_matchDetails - Status: Killed
+--> Mutation 122: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 123: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:800 - ReplaceConstant - trainingSet ->  - Status: Killed
+--> Mutation 124: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceComparisonOperator > -> -2 - Status: Killed
+--> Mutation 125: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceComparisonOperator > -> != - Status: Killed
+--> Mutation 126: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 127: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceVariable eventName -> m_attName - Status: Killed
+--> Mutation 128: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceVariable eventName -> m_matchDetails - Status: Killed
+--> Mutation 129: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 130: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceConstant - testSet ->  - Status: Killed
+--> Mutation 131: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceComparisonOperator > -> -2 - Status: Killed
+--> Mutation 132: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceComparisonOperator > -> != - Status: Killed
+--> Mutation 133: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:801 - ReplaceComparisonOperator > -> >= - Status: Survived
+--> Mutation 134: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:802 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 135: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:805 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 136: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:806 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 137: weka.gui.beans.SubstringLabeler.connectionAllowed(Ljava/lang/String;)Z:809 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 138: weka.gui.beans.SubstringLabeler.connectionNotification(Ljava/lang/String;Ljava/lang/Object;)V:822 - ReplaceVariable eventName -> m_attName - Status: Survived
+--> Mutation 139: weka.gui.beans.SubstringLabeler.connectionNotification(Ljava/lang/String;Ljava/lang/Object;)V:822 - ReplaceVariable eventName -> m_matchDetails - Status: Survived
+--> Mutation 140: weka.gui.beans.SubstringLabeler.connectionNotification(Ljava/lang/String;Ljava/lang/Object;)V:822 - ReplaceVariable eventName -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 141: weka.gui.beans.SubstringLabeler.connectionNotification(Ljava/lang/String;Ljava/lang/Object;)V:822 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 142: weka.gui.beans.SubstringLabeler.connectionNotification(Ljava/lang/String;Ljava/lang/Object;)V:823 - ReplaceVariable source -> m_listenee - Status: Survived
+--> Mutation 143: weka.gui.beans.SubstringLabeler.disconnectionNotification(Ljava/lang/String;Ljava/lang/Object;)V:837 - ReplaceVariable source -> m_listenee - Status: Survived
+--> Mutation 144: weka.gui.beans.SubstringLabeler.disconnectionNotification(Ljava/lang/String;Ljava/lang/Object;)V:837 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 145: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:852 - ReplaceVariable m_matchDetails -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 146: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:852 - ReplaceVariable m_matchDetails -> m_attName - Status: Survived
+--> Mutation 147: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:852 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 148: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:852 - ReplaceVariable m_matchDetails -> TOOL_TIP_TEXT_KEY - Status: Killed
+--> Mutation 149: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:852 - ReplaceVariable m_matchDetails -> m_attName - Status: Killed
+--> Mutation 150: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:852 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 151: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:852 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 152: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:852 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 153: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:854 - ReplaceVariable m_matchDetails -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 154: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:854 - ReplaceVariable m_matchDetails -> m_attName - Status: Survived
+--> Mutation 155: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:854 - ReplaceConstant - @@match-rule@@ ->  - Status: Survived
+--> Mutation 156: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:855 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 157: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:855 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 158: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:855 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 159: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:855 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 160: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:856 - ReplaceVariable p -> m_attName - Status: Survived
+--> Mutation 161: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:856 - ReplaceVariable p -> m_matchDetails - Status: Survived
+--> Mutation 162: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:856 - ReplaceVariable p -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 163: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:859 - ReplaceVariable inputStructure -> m_outputStructure - Status: Survived
+--> Mutation 164: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:863 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 165: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:867 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 166: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:868 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 167: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:868 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 168: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:868 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 169: weka.gui.beans.SubstringLabeler.makeOutputStructure(Lweka/core/Instances;)V:868 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 170: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:927 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 171: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:929 - ReplaceVariable e -> m_ie - Status: Survived
+--> Mutation 172: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:929 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 173: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:929 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 174: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:929 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 175: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:930 - ReplaceVariable e -> m_ie - Status: Survived
+--> Mutation 176: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:933 - ReplaceVariable structure -> m_outputStructure - Status: Survived
+--> Mutation 177: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:935 - ReplaceConstant - ERROR: unable to create output instances structure. ->  - Status: Survived
+--> Mutation 178: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:936 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 179: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:937 - ReplaceVariable msg -> m_attName - Status: Survived
+--> Mutation 180: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:937 - ReplaceVariable msg -> m_matchDetails - Status: Survived
+--> Mutation 181: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:937 - ReplaceVariable msg -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 182: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:938 - ReplaceConstant - [SubstringLabeler]  ->  - Status: Survived
+--> Mutation 183: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:943 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 184: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:947 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 185: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:948 - ReplaceConstant - Processing stream... ->  - Status: Survived
+--> Mutation 186: weka.gui.beans.SubstringLabeler.acceptInstance(Lweka/gui/beans/InstanceEvent;)V:954 - ReplaceVariable e -> m_ie - Status: Survived
+--> Mutation 187: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:990 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 188: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:990 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 189: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:990 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 190: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:990 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 191: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:990 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 192: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:993 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 193: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:993 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 194: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:993 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 195: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:995 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 196: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:996 - ReplaceVariable inputI -> result - Status: Survived
+--> Mutation 197: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:998 - ReplaceVariable label -> m_attName - Status: Survived
+--> Mutation 198: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:998 - ReplaceVariable label -> m_matchDetails - Status: Survived
+--> Mutation 199: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:998 - ReplaceVariable label -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 200: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:998 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 201: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 202: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 203: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 204: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 205: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> newAttIndex - Status: Survived
+--> Mutation 206: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 207: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 208: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 209: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 210: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 211: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 212: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 213: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 214: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 215: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 216: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 217: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 218: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceVariable inputI -> result - Status: Survived
+--> Mutation 219: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 220: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceComparisonOperator >= -> > - Status: Survived
+--> Mutation 221: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1004 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 222: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable inputI -> result - Status: Survived
+--> Mutation 223: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 224: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 225: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 226: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> newAttIndex - Status: Survived
+--> Mutation 227: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 228: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 229: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 230: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 231: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 232: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 233: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 234: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 235: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 236: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 237: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 238: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 239: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1005 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 240: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 241: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 242: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 243: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> newAttIndex - Status: Survived
+--> Mutation 244: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 245: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 246: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 247: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 248: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 249: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 250: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 251: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 252: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 253: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 254: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 255: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 256: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable inputI -> result - Status: Survived
+--> Mutation 257: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 258: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 259: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 260: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> newAttIndex - Status: Survived
+--> Mutation 261: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 262: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 263: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 264: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 265: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 266: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 267: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 268: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 269: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 270: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 271: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 272: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1006 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 273: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1008 - ReplaceVariable batch -> m_consumeNonMatchingInstances - Status: Survived
+--> Mutation 274: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1008 - ReplaceVariable batch -> m_nominalBinary - Status: Survived
+--> Mutation 275: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1008 - ReplaceVariable batch -> m_busy - Status: Survived
+--> Mutation 276: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1008 - ReplaceVariable batch -> m_hasLabels - Status: Survived
+--> Mutation 277: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1008 - InsertUnaryOp Negation of batch - Status: Survived
+--> Mutation 278: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1008 - InsertUnaryOp IINC 1 batch - Status: Survived
+--> Mutation 279: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1008 - InsertUnaryOp IINC -1 batch - Status: Survived
+--> Mutation 280: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1008 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 281: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 282: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 283: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 284: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> newAttIndex - Status: Survived
+--> Mutation 285: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 286: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 287: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 288: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 289: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 290: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 291: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 292: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 293: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 294: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 295: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 296: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 297: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceConstant - 0.0 -> 1.0 - Status: Survived
+--> Mutation 298: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1009 - ReplaceConstant - 0.0 -> -1.0 - Status: Survived
+--> Mutation 299: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable inputI -> result - Status: Survived
+--> Mutation 300: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 301: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 302: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 303: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> newAttIndex - Status: Survived
+--> Mutation 304: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 305: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 306: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 307: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 308: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 309: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 310: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 311: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 312: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 313: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 314: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 315: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1010 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 316: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 317: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 318: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 319: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> newAttIndex - Status: Survived
+--> Mutation 320: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 321: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 322: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 323: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 324: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 325: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 326: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 327: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 328: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 329: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 330: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 331: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 332: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable v -> label - Status: Survived
+--> Mutation 333: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable v -> m_attName - Status: Survived
+--> Mutation 334: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable v -> m_matchDetails - Status: Survived
+--> Mutation 335: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1011 - ReplaceVariable v -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 336: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable inputI -> result - Status: Survived
+--> Mutation 337: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 338: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 339: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 340: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> newAttIndex - Status: Survived
+--> Mutation 341: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 342: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 343: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 344: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 345: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 346: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 347: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 348: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 349: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 350: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 351: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 352: weka.gui.beans.SubstringLabeler.makeOutputInstance(Lweka/core/Instance;Z)Lweka/core/Instance;:1013 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 353: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1052 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 354: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1053 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 355: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1054 - ReplaceConstant - Processing batch... ->  - Status: Survived
+--> Mutation 356: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1058 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 357: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1060 - ReplaceConstant - ERROR: unable to create output instances structure. ->  - Status: Survived
+--> Mutation 358: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1061 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 359: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1062 - ReplaceVariable msg -> m_attName - Status: Survived
+--> Mutation 360: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1062 - ReplaceVariable msg -> m_matchDetails - Status: Survived
+--> Mutation 361: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1062 - ReplaceVariable msg -> TOOL_TIP_TEXT_KEY - Status: Survived
+--> Mutation 362: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1063 - ReplaceConstant - [SubstringLabeler]  ->  - Status: Survived
+--> Mutation 363: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1068 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 364: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 365: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 366: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 367: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 368: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 369: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 370: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Killed
+--> Mutation 371: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 372: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 373: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 374: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 375: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 376: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 377: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 378: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 379: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 380: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceVariable toProcess -> m_outputStructure - Status: Survived
+--> Mutation 381: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 382: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 383: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1074 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 384: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable toProcess -> m_outputStructure - Status: Survived
+--> Mutation 385: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> ABORT - Status: Survived
+--> Mutation 386: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> PROPERTIES - Status: Survived
+--> Mutation 387: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> SOMEBITS - Status: Survived
+--> Mutation 388: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> WIDTH - Status: Survived
+--> Mutation 389: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> HEIGHT - Status: Survived
+--> Mutation 390: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> UNDEFINED_CONDITION - Status: Survived
+--> Mutation 391: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> FRAMEBITS - Status: Survived
+--> Mutation 392: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT - Status: Survived
+--> Mutation 393: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> WHEN_FOCUSED - Status: Survived
+--> Mutation 394: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> ALLBITS - Status: Survived
+--> Mutation 395: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> ERROR - Status: Survived
+--> Mutation 396: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - ReplaceVariable i -> WHEN_IN_FOCUSED_WINDOW - Status: Survived
+--> Mutation 397: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 398: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 399: weka.gui.beans.SubstringLabeler.acceptDataSet(Lweka/gui/beans/DataSetEvent;)V:1075 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 400: weka.gui.beans.SubstringLabeler.acceptTestSet(Lweka/gui/beans/TestSetEvent;)V:1102 - ReplaceVariable test -> m_outputStructure - Status: Killed
+--> Mutation 401: weka.gui.beans.SubstringLabeler.acceptTrainingSet(Lweka/gui/beans/TrainingSetEvent;)V:1114 - ReplaceVariable train -> m_outputStructure - Status: Survived
+--> Mutation 402: weka.gui.beans.SubstringLabeler.notifyDataListeners(Lweka/gui/beans/DataSetEvent;)V:1122 - ReplaceVariable m_dataListeners -> m_instanceListeners - Status: Survived
+--> Mutation 403: weka.gui.beans.SubstringLabeler.notifyDataListeners(Lweka/gui/beans/DataSetEvent;)V:1124 - ReplaceVariable l -> m_matchRules - Status: Survived
+--> Mutation 404: weka.gui.beans.SubstringLabeler.notifyDataListeners(Lweka/gui/beans/DataSetEvent;)V:1124 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 405: weka.gui.beans.SubstringLabeler.notifyDataListeners(Lweka/gui/beans/DataSetEvent;)V:1124 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 406: weka.gui.beans.SubstringLabeler.notifyDataListeners(Lweka/gui/beans/DataSetEvent;)V:1124 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 407: weka.gui.beans.SubstringLabeler.notifyDataListeners(Lweka/gui/beans/DataSetEvent;)V:1125 - ReplaceVariable l -> m_matchRules - Status: Survived
+--> Mutation 408: weka.gui.beans.SubstringLabeler.notifyDataListeners(Lweka/gui/beans/DataSetEvent;)V:1125 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 409: weka.gui.beans.SubstringLabeler.notifyInstanceListeners(Lweka/gui/beans/InstanceEvent;)V:1135 - ReplaceVariable m_instanceListeners -> m_dataListeners - Status: Survived
+--> Mutation 410: weka.gui.beans.SubstringLabeler.notifyInstanceListeners(Lweka/gui/beans/InstanceEvent;)V:1137 - ReplaceVariable l -> m_matchRules - Status: Killed
+--> Mutation 411: weka.gui.beans.SubstringLabeler.notifyInstanceListeners(Lweka/gui/beans/InstanceEvent;)V:1137 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 412: weka.gui.beans.SubstringLabeler.notifyInstanceListeners(Lweka/gui/beans/InstanceEvent;)V:1137 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 413: weka.gui.beans.SubstringLabeler.notifyInstanceListeners(Lweka/gui/beans/InstanceEvent;)V:1137 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 414: weka.gui.beans.SubstringLabeler.notifyInstanceListeners(Lweka/gui/beans/InstanceEvent;)V:1138 - ReplaceVariable l -> m_matchRules - Status: Survived
+--> Mutation 415: weka.gui.beans.SubstringLabeler.notifyInstanceListeners(Lweka/gui/beans/InstanceEvent;)V:1138 - ReplaceComparisonOperator == -> != - Status: Survived
+--> Mutation 416: weka.gui.beans.SubstringLabeler.notifyInstanceListeners(Lweka/gui/beans/InstanceEvent;)V:1139 - ReplaceVariable e -> m_ie - Status: Survived
+--> Mutation 417: weka.gui.beans.SubstringLabeler.statusMessagePrefix()Ljava/lang/String;:1145 - ReplaceConstant - $ ->  - Status: Killed
+--> Mutation 418: weka.gui.beans.SubstringLabeler.statusMessagePrefix()Ljava/lang/String;:1145 - ReplaceConstant - | ->  - Status: Killed
+--> Mutation 419: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;)V:115 - ReplaceVariable setup -> m_label - Status: Survived
+--> Mutation 420: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;)V:115 - ReplaceVariable setup -> m_labelS - Status: Survived
+--> Mutation 421: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;)V:115 - ReplaceVariable setup -> m_match - Status: Survived
+--> Mutation 422: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;)V:115 - ReplaceVariable setup -> m_statusMessagePrefix - Status: Survived
+--> Mutation 423: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;)V:115 - ReplaceVariable setup -> m_matchS - Status: Survived
+--> Mutation 424: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;)V:115 - ReplaceVariable setup -> m_attsToApplyTo - Status: Survived
+--> Mutation 425: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:128 - ReplaceVariable match -> m_label - Status: Killed
+--> Mutation 426: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:128 - ReplaceVariable match -> m_labelS - Status: Killed
+--> Mutation 427: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:128 - ReplaceVariable match -> m_match - Status: Killed
+--> Mutation 428: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:128 - ReplaceVariable match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 429: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:128 - ReplaceVariable match -> selectedAtts - Status: Killed
+--> Mutation 430: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:128 - ReplaceVariable match -> m_matchS - Status: Killed
+--> Mutation 431: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:128 - ReplaceVariable match -> m_attsToApplyTo - Status: Killed
+--> Mutation 432: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:129 - ReplaceVariable regex -> m_regex - Status: Killed
+--> Mutation 433: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:129 - ReplaceVariable regex -> ignoreCase - Status: Killed
+--> Mutation 434: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:129 - ReplaceVariable regex -> m_ignoreCase - Status: Killed
+--> Mutation 435: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:129 - InsertUnaryOp Negation of regex - Status: Survived
+--> Mutation 436: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:129 - InsertUnaryOp IINC 1 regex - Status: Killed
+--> Mutation 437: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:129 - InsertUnaryOp IINC -1 regex - Status: Killed
+--> Mutation 438: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:130 - ReplaceVariable ignoreCase -> m_regex - Status: Killed
+--> Mutation 439: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:130 - ReplaceVariable ignoreCase -> regex - Status: Killed
+--> Mutation 440: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:130 - ReplaceVariable ignoreCase -> m_ignoreCase - Status: Killed
+--> Mutation 441: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:130 - InsertUnaryOp Negation of ignoreCase - Status: Survived
+--> Mutation 442: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:130 - InsertUnaryOp IINC 1 ignoreCase - Status: Killed
+--> Mutation 443: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:130 - InsertUnaryOp IINC -1 ignoreCase - Status: Killed
+--> Mutation 444: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:131 - ReplaceVariable selectedAtts -> m_label - Status: Killed
+--> Mutation 445: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:131 - ReplaceVariable selectedAtts -> m_labelS - Status: Killed
+--> Mutation 446: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:131 - ReplaceVariable selectedAtts -> m_match - Status: Killed
+--> Mutation 447: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:131 - ReplaceVariable selectedAtts -> m_statusMessagePrefix - Status: Killed
+--> Mutation 448: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:131 - ReplaceVariable selectedAtts -> match - Status: Killed
+--> Mutation 449: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:131 - ReplaceVariable selectedAtts -> m_matchS - Status: Killed
+--> Mutation 450: weka.gui.beans.SubstringLabeler$Match.<init>(Ljava/lang/String;ZZLjava/lang/String;)V:131 - ReplaceVariable selectedAtts -> m_attsToApplyTo - Status: Killed
+--> Mutation 451: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:135 - ReplaceVariable setup -> m_label - Status: Survived
+--> Mutation 452: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:135 - ReplaceVariable setup -> m_labelS - Status: Survived
+--> Mutation 453: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:135 - ReplaceVariable setup -> m_match - Status: Survived
+--> Mutation 454: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:135 - ReplaceVariable setup -> m_statusMessagePrefix - Status: Survived
+--> Mutation 455: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:135 - ReplaceVariable setup -> m_matchS - Status: Survived
+--> Mutation 456: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:135 - ReplaceVariable setup -> m_attsToApplyTo - Status: Survived
+--> Mutation 457: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:135 - ReplaceConstant - @@MR@@ ->  - Status: Survived
+--> Mutation 458: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 459: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 460: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 461: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 462: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 463: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceComparisonOperator < -> != - Status: Survived
+--> Mutation 464: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceComparisonOperator < -> -2 - Status: Survived
+--> Mutation 465: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceComparisonOperator < -> <= - Status: Survived
+--> Mutation 466: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 467: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 468: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 469: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 470: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 471: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 472: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 473: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:136 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 474: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:137 - ReplaceConstant - Malformed match definition:  ->  - Status: Survived
+--> Mutation 475: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:137 - ReplaceVariable setup -> m_label - Status: Survived
+--> Mutation 476: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:137 - ReplaceVariable setup -> m_labelS - Status: Survived
+--> Mutation 477: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:137 - ReplaceVariable setup -> m_match - Status: Survived
+--> Mutation 478: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:137 - ReplaceVariable setup -> m_statusMessagePrefix - Status: Survived
+--> Mutation 479: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:137 - ReplaceVariable setup -> m_matchS - Status: Survived
+--> Mutation 480: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:137 - ReplaceVariable setup -> m_attsToApplyTo - Status: Survived
+--> Mutation 481: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:141 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 482: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:142 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 483: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:142 - ReplaceConstant - t ->  - Status: Survived
+--> Mutation 484: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:143 - ReplaceConstant - 2 -> 0 - Status: Survived
+--> Mutation 485: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:143 - ReplaceConstant - 2 -> 1 - Status: Survived
+--> Mutation 486: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:143 - ReplaceConstant - 2 -> -1 - Status: Survived
+--> Mutation 487: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:143 - ReplaceConstant - 2 -> 3 - Status: Survived
+--> Mutation 488: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:143 - ReplaceConstant - t ->  - Status: Survived
+--> Mutation 489: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:144 - ReplaceConstant - 3 -> 0 - Status: Survived
+--> Mutation 490: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:144 - ReplaceConstant - 3 -> 1 - Status: Survived
+--> Mutation 491: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:144 - ReplaceConstant - 3 -> -1 - Status: Survived
+--> Mutation 492: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:144 - ReplaceConstant - 3 -> 2 - Status: Survived
+--> Mutation 493: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:144 - ReplaceConstant - 3 -> 4 - Status: Survived
+--> Mutation 494: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_label - Status: Survived
+--> Mutation 495: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_labelS - Status: Survived
+--> Mutation 496: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_statusMessagePrefix - Status: Survived
+--> Mutation 497: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_matchS - Status: Survived
+--> Mutation 498: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_attsToApplyTo - Status: Survived
+--> Mutation 499: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 500: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_label - Status: Survived
+--> Mutation 501: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_labelS - Status: Survived
+--> Mutation 502: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_statusMessagePrefix - Status: Survived
+--> Mutation 503: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_matchS - Status: Survived
+--> Mutation 504: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceVariable m_match -> m_attsToApplyTo - Status: Survived
+--> Mutation 505: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 506: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 507: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:146 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 508: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:147 - ReplaceConstant - Must provide something to match! ->  - Status: Survived
+--> Mutation 509: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:150 - ReplaceConstant - 5 -> 0 - Status: Survived
+--> Mutation 510: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:150 - ReplaceConstant - 5 -> 1 - Status: Survived
+--> Mutation 511: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:150 - ReplaceConstant - 5 -> -1 - Status: Survived
+--> Mutation 512: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:150 - ReplaceConstant - 5 -> 4 - Status: Survived
+--> Mutation 513: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:150 - ReplaceConstant - 5 -> 6 - Status: Survived
+--> Mutation 514: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:150 - ReplaceComparisonOperator != -> -1 - Status: Survived
+--> Mutation 515: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:150 - ReplaceComparisonOperator != -> < - Status: Survived
+--> Mutation 516: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:150 - ReplaceComparisonOperator != -> > - Status: Survived
+--> Mutation 517: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:151 - ReplaceConstant - 4 -> 0 - Status: Survived
+--> Mutation 518: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:151 - ReplaceConstant - 4 -> 1 - Status: Survived
+--> Mutation 519: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:151 - ReplaceConstant - 4 -> -1 - Status: Survived
+--> Mutation 520: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:151 - ReplaceConstant - 4 -> 3 - Status: Survived
+--> Mutation 521: weka.gui.beans.SubstringLabeler$Match.parseFromInternal(Ljava/lang/String;)V:151 - ReplaceConstant - 4 -> 5 - Status: Survived
+--> Mutation 522: weka.gui.beans.SubstringLabeler$Match.setMatch(Ljava/lang/String;)V:161 - ReplaceVariable match -> m_label - Status: Killed
+--> Mutation 523: weka.gui.beans.SubstringLabeler$Match.setMatch(Ljava/lang/String;)V:161 - ReplaceVariable match -> m_labelS - Status: Survived
+--> Mutation 524: weka.gui.beans.SubstringLabeler$Match.setMatch(Ljava/lang/String;)V:161 - ReplaceVariable match -> m_match - Status: Killed
+--> Mutation 525: weka.gui.beans.SubstringLabeler$Match.setMatch(Ljava/lang/String;)V:161 - ReplaceVariable match -> m_statusMessagePrefix - Status: Survived
+--> Mutation 526: weka.gui.beans.SubstringLabeler$Match.setMatch(Ljava/lang/String;)V:161 - ReplaceVariable match -> m_matchS - Status: Survived
+--> Mutation 527: weka.gui.beans.SubstringLabeler$Match.setMatch(Ljava/lang/String;)V:161 - ReplaceVariable match -> m_attsToApplyTo - Status: Killed
+--> Mutation 528: weka.gui.beans.SubstringLabeler$Match.getMatch()Ljava/lang/String;:170 - ReplaceVariable m_match -> m_label - Status: Killed
+--> Mutation 529: weka.gui.beans.SubstringLabeler$Match.getMatch()Ljava/lang/String;:170 - ReplaceVariable m_match -> m_labelS - Status: Killed
+--> Mutation 530: weka.gui.beans.SubstringLabeler$Match.getMatch()Ljava/lang/String;:170 - ReplaceVariable m_match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 531: weka.gui.beans.SubstringLabeler$Match.getMatch()Ljava/lang/String;:170 - ReplaceVariable m_match -> m_matchS - Status: Killed
+--> Mutation 532: weka.gui.beans.SubstringLabeler$Match.getMatch()Ljava/lang/String;:170 - ReplaceVariable m_match -> m_attsToApplyTo - Status: Killed
+--> Mutation 533: weka.gui.beans.SubstringLabeler$Match.setLabel(Ljava/lang/String;)V:180 - ReplaceVariable label -> m_label - Status: Killed
+--> Mutation 534: weka.gui.beans.SubstringLabeler$Match.setLabel(Ljava/lang/String;)V:180 - ReplaceVariable label -> m_labelS - Status: Survived
+--> Mutation 535: weka.gui.beans.SubstringLabeler$Match.setLabel(Ljava/lang/String;)V:180 - ReplaceVariable label -> m_match - Status: Killed
+--> Mutation 536: weka.gui.beans.SubstringLabeler$Match.setLabel(Ljava/lang/String;)V:180 - ReplaceVariable label -> m_statusMessagePrefix - Status: Survived
+--> Mutation 537: weka.gui.beans.SubstringLabeler$Match.setLabel(Ljava/lang/String;)V:180 - ReplaceVariable label -> m_matchS - Status: Survived
+--> Mutation 538: weka.gui.beans.SubstringLabeler$Match.setLabel(Ljava/lang/String;)V:180 - ReplaceVariable label -> m_attsToApplyTo - Status: Killed
+--> Mutation 539: weka.gui.beans.SubstringLabeler$Match.getLabel()Ljava/lang/String;:190 - ReplaceVariable m_label -> m_labelS - Status: Killed
+--> Mutation 540: weka.gui.beans.SubstringLabeler$Match.getLabel()Ljava/lang/String;:190 - ReplaceVariable m_label -> m_match - Status: Killed
+--> Mutation 541: weka.gui.beans.SubstringLabeler$Match.getLabel()Ljava/lang/String;:190 - ReplaceVariable m_label -> m_statusMessagePrefix - Status: Killed
+--> Mutation 542: weka.gui.beans.SubstringLabeler$Match.getLabel()Ljava/lang/String;:190 - ReplaceVariable m_label -> m_matchS - Status: Killed
+--> Mutation 543: weka.gui.beans.SubstringLabeler$Match.getLabel()Ljava/lang/String;:190 - ReplaceVariable m_label -> m_attsToApplyTo - Status: Killed
+--> Mutation 544: weka.gui.beans.SubstringLabeler$Match.setRegex(Z)V:199 - ReplaceVariable regex -> m_regex - Status: Killed
+--> Mutation 545: weka.gui.beans.SubstringLabeler$Match.setRegex(Z)V:199 - ReplaceVariable regex -> m_ignoreCase - Status: Killed
+--> Mutation 546: weka.gui.beans.SubstringLabeler$Match.setRegex(Z)V:199 - InsertUnaryOp Negation of regex - Status: Survived
+--> Mutation 547: weka.gui.beans.SubstringLabeler$Match.setRegex(Z)V:199 - InsertUnaryOp IINC 1 regex - Status: Killed
+--> Mutation 548: weka.gui.beans.SubstringLabeler$Match.setRegex(Z)V:199 - InsertUnaryOp IINC -1 regex - Status: Killed
+--> Mutation 549: weka.gui.beans.SubstringLabeler$Match.getRegex()Z:208 - ReplaceVariable m_regex -> m_ignoreCase - Status: Killed
+--> Mutation 550: weka.gui.beans.SubstringLabeler$Match.getRegex()Z:208 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 551: weka.gui.beans.SubstringLabeler$Match.setIgnoreCase(Z)V:217 - ReplaceVariable ignore -> m_regex - Status: Killed
+--> Mutation 552: weka.gui.beans.SubstringLabeler$Match.setIgnoreCase(Z)V:217 - ReplaceVariable ignore -> m_ignoreCase - Status: Killed
+--> Mutation 553: weka.gui.beans.SubstringLabeler$Match.setIgnoreCase(Z)V:217 - InsertUnaryOp Negation of ignore - Status: Survived
+--> Mutation 554: weka.gui.beans.SubstringLabeler$Match.setIgnoreCase(Z)V:217 - InsertUnaryOp IINC 1 ignore - Status: Killed
+--> Mutation 555: weka.gui.beans.SubstringLabeler$Match.setIgnoreCase(Z)V:217 - InsertUnaryOp IINC -1 ignore - Status: Killed
+--> Mutation 556: weka.gui.beans.SubstringLabeler$Match.getIgnoreCase()Z:226 - ReplaceVariable m_ignoreCase -> m_regex - Status: Killed
+--> Mutation 557: weka.gui.beans.SubstringLabeler$Match.getIgnoreCase()Z:226 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 558: weka.gui.beans.SubstringLabeler$Match.setAttsToApplyTo(Ljava/lang/String;)V:235 - ReplaceVariable a -> m_label - Status: Survived
+--> Mutation 559: weka.gui.beans.SubstringLabeler$Match.setAttsToApplyTo(Ljava/lang/String;)V:235 - ReplaceVariable a -> m_labelS - Status: Survived
+--> Mutation 560: weka.gui.beans.SubstringLabeler$Match.setAttsToApplyTo(Ljava/lang/String;)V:235 - ReplaceVariable a -> m_match - Status: Killed
+--> Mutation 561: weka.gui.beans.SubstringLabeler$Match.setAttsToApplyTo(Ljava/lang/String;)V:235 - ReplaceVariable a -> m_statusMessagePrefix - Status: Survived
+--> Mutation 562: weka.gui.beans.SubstringLabeler$Match.setAttsToApplyTo(Ljava/lang/String;)V:235 - ReplaceVariable a -> m_matchS - Status: Survived
+--> Mutation 563: weka.gui.beans.SubstringLabeler$Match.setAttsToApplyTo(Ljava/lang/String;)V:235 - ReplaceVariable a -> m_attsToApplyTo - Status: Killed
+--> Mutation 564: weka.gui.beans.SubstringLabeler$Match.getAttsToApplyTo()Ljava/lang/String;:244 - ReplaceVariable m_attsToApplyTo -> m_label - Status: Killed
+--> Mutation 565: weka.gui.beans.SubstringLabeler$Match.getAttsToApplyTo()Ljava/lang/String;:244 - ReplaceVariable m_attsToApplyTo -> m_labelS - Status: Killed
+--> Mutation 566: weka.gui.beans.SubstringLabeler$Match.getAttsToApplyTo()Ljava/lang/String;:244 - ReplaceVariable m_attsToApplyTo -> m_match - Status: Killed
+--> Mutation 567: weka.gui.beans.SubstringLabeler$Match.getAttsToApplyTo()Ljava/lang/String;:244 - ReplaceVariable m_attsToApplyTo -> m_statusMessagePrefix - Status: Killed
+--> Mutation 568: weka.gui.beans.SubstringLabeler$Match.getAttsToApplyTo()Ljava/lang/String;:244 - ReplaceVariable m_attsToApplyTo -> m_matchS - Status: Killed
+--> Mutation 569: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:258 - ReplaceVariable m_match -> m_label - Status: Survived
+--> Mutation 570: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:258 - ReplaceVariable m_match -> m_labelS - Status: Killed
+--> Mutation 571: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:258 - ReplaceVariable m_match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 572: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:258 - ReplaceVariable m_match -> m_matchS - Status: Killed
+--> Mutation 573: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:258 - ReplaceVariable m_match -> m_attsToApplyTo - Status: Killed
+--> Mutation 574: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:259 - ReplaceVariable m_label -> m_labelS - Status: Survived
+--> Mutation 575: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:259 - ReplaceVariable m_label -> m_match - Status: Survived
+--> Mutation 576: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:259 - ReplaceVariable m_label -> m_statusMessagePrefix - Status: Survived
+--> Mutation 577: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:259 - ReplaceVariable m_label -> m_matchS - Status: Survived
+--> Mutation 578: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:259 - ReplaceVariable m_label -> m_attsToApplyTo - Status: Survived
+--> Mutation 579: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:260 - ReplaceVariable m_attsToApplyTo -> m_label - Status: Survived
+--> Mutation 580: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:260 - ReplaceVariable m_attsToApplyTo -> m_labelS - Status: Survived
+--> Mutation 581: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:260 - ReplaceVariable m_attsToApplyTo -> m_match - Status: Survived
+--> Mutation 582: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:260 - ReplaceVariable m_attsToApplyTo -> m_statusMessagePrefix - Status: Killed
+--> Mutation 583: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:260 - ReplaceVariable m_attsToApplyTo -> m_matchS - Status: Survived
+--> Mutation 584: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:263 - ReplaceVariable m_matchS -> m_label - Status: Survived
+--> Mutation 585: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:263 - ReplaceVariable m_matchS -> m_labelS - Status: Survived
+--> Mutation 586: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:263 - ReplaceVariable m_matchS -> m_match - Status: Survived
+--> Mutation 587: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:263 - ReplaceVariable m_matchS -> m_statusMessagePrefix - Status: Survived
+--> Mutation 588: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:263 - ReplaceVariable m_matchS -> m_attsToApplyTo - Status: Survived
+--> Mutation 589: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:264 - ReplaceVariable m_labelS -> m_label - Status: Survived
+--> Mutation 590: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:264 - ReplaceVariable m_labelS -> m_match - Status: Survived
+--> Mutation 591: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:264 - ReplaceVariable m_labelS -> m_statusMessagePrefix - Status: Survived
+--> Mutation 592: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:264 - ReplaceVariable m_labelS -> m_matchS - Status: Survived
+--> Mutation 593: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:264 - ReplaceVariable m_labelS -> m_attsToApplyTo - Status: Survived
+--> Mutation 594: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:265 - ReplaceVariable attsToApplyToS -> m_label - Status: Survived
+--> Mutation 595: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:265 - ReplaceVariable attsToApplyToS -> m_labelS - Status: Survived
+--> Mutation 596: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:265 - ReplaceVariable attsToApplyToS -> m_match - Status: Survived
+--> Mutation 597: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:265 - ReplaceVariable attsToApplyToS -> m_statusMessagePrefix - Status: Survived
+--> Mutation 598: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:265 - ReplaceVariable attsToApplyToS -> m_matchS - Status: Survived
+--> Mutation 599: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:265 - ReplaceVariable attsToApplyToS -> m_attsToApplyTo - Status: Survived
+--> Mutation 600: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:268 - ReplaceVariable m_regex -> m_ignoreCase - Status: Killed
+--> Mutation 601: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:268 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 602: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:268 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 603: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:269 - ReplaceVariable m_matchS -> m_label - Status: Killed
+--> Mutation 604: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:269 - ReplaceVariable m_matchS -> m_labelS - Status: Killed
+--> Mutation 605: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:269 - ReplaceVariable m_matchS -> m_match - Status: Survived
+--> Mutation 606: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:269 - ReplaceVariable m_matchS -> m_statusMessagePrefix - Status: Killed
+--> Mutation 607: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:269 - ReplaceVariable m_matchS -> m_attsToApplyTo - Status: Killed
+--> Mutation 608: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:270 - ReplaceVariable m_ignoreCase -> m_regex - Status: Survived
+--> Mutation 609: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:270 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 610: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:270 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 611: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:271 - ReplaceVariable match -> m_label - Status: Killed
+--> Mutation 612: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:271 - ReplaceVariable match -> m_labelS - Status: Survived
+--> Mutation 613: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:271 - ReplaceVariable match -> m_match - Status: Survived
+--> Mutation 614: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:271 - ReplaceVariable match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 615: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:271 - ReplaceVariable match -> m_matchS - Status: Survived
+--> Mutation 616: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:271 - ReplaceVariable match -> attsToApplyToS - Status: Killed
+--> Mutation 617: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:271 - ReplaceVariable match -> m_attsToApplyTo - Status: Killed
+--> Mutation 618: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:275 - ReplaceVariable match -> m_label - Status: Killed
+--> Mutation 619: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:275 - ReplaceVariable match -> m_labelS - Status: Killed
+--> Mutation 620: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:275 - ReplaceVariable match -> m_match - Status: Survived
+--> Mutation 621: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:275 - ReplaceVariable match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 622: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:275 - ReplaceVariable match -> m_matchS - Status: Killed
+--> Mutation 623: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:275 - ReplaceVariable match -> attsToApplyToS - Status: Killed
+--> Mutation 624: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:275 - ReplaceVariable match -> m_attsToApplyTo - Status: Killed
+--> Mutation 625: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:279 - ReplaceVariable attsToApplyToS -> m_label - Status: Survived
+--> Mutation 626: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:279 - ReplaceVariable attsToApplyToS -> m_labelS - Status: Survived
+--> Mutation 627: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:279 - ReplaceVariable attsToApplyToS -> m_match - Status: Survived
+--> Mutation 628: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:279 - ReplaceVariable attsToApplyToS -> m_statusMessagePrefix - Status: Killed
+--> Mutation 629: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:279 - ReplaceVariable attsToApplyToS -> m_matchS - Status: Survived
+--> Mutation 630: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:279 - ReplaceVariable attsToApplyToS -> m_attsToApplyTo - Status: Survived
+--> Mutation 631: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceVariable tempRangeS -> m_label - Status: Survived
+--> Mutation 632: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceVariable tempRangeS -> m_labelS - Status: Survived
+--> Mutation 633: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceVariable tempRangeS -> m_match - Status: Survived
+--> Mutation 634: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceVariable tempRangeS -> m_statusMessagePrefix - Status: Killed
+--> Mutation 635: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceVariable tempRangeS -> m_matchS - Status: Survived
+--> Mutation 636: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceVariable tempRangeS -> attsToApplyToS - Status: Survived
+--> Mutation 637: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceVariable tempRangeS -> m_attsToApplyTo - Status: Survived
+--> Mutation 638: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceConstant - /first ->  - Status: Survived
+--> Mutation 639: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceConstant - first ->  - Status: Survived
+--> Mutation 640: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceConstant - /last ->  - Status: Survived
+--> Mutation 641: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:280 - ReplaceConstant - last ->  - Status: Survived
+--> Mutation 642: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:282 - ReplaceVariable attsToApplyToS -> m_label - Status: Survived
+--> Mutation 643: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:282 - ReplaceVariable attsToApplyToS -> m_labelS - Status: Survived
+--> Mutation 644: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:282 - ReplaceVariable attsToApplyToS -> tempRangeS - Status: Survived
+--> Mutation 645: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:282 - ReplaceVariable attsToApplyToS -> m_match - Status: Survived
+--> Mutation 646: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:282 - ReplaceVariable attsToApplyToS -> m_statusMessagePrefix - Status: Killed
+--> Mutation 647: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:282 - ReplaceVariable attsToApplyToS -> m_matchS - Status: Survived
+--> Mutation 648: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:282 - ReplaceVariable attsToApplyToS -> m_attsToApplyTo - Status: Survived
+--> Mutation 649: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:284 - ReplaceConstant - 1 -> 0 - Status: Survived
+--> Mutation 650: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:284 - ReplaceArithmeticOperator - -> + - Status: Survived
+--> Mutation 651: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:284 - ReplaceArithmeticOperator - -> % - Status: Survived
+--> Mutation 652: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:284 - ReplaceArithmeticOperator - -> * - Status: Survived
+--> Mutation 653: weka.gui.beans.SubstringLabeler$Match.init(Lweka/core/Environment;Lweka/core/Instances;)V:284 - ReplaceArithmeticOperator - -> / - Status: Survived
+--> Mutation 654: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:356 - ReplaceConstant - 0 -> 1 - Status: Survived
+--> Mutation 655: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:356 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 656: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:356 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 657: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:356 - InsertUnaryOp IINC -1 i - Status: Killed
+--> Mutation 658: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:356 - ReplaceComparisonOperator >= -> -1 - Status: Survived
+--> Mutation 659: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:356 - ReplaceComparisonOperator >= -> > - Status: Killed
+--> Mutation 660: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:356 - ReplaceComparisonOperator >= -> == - Status: Survived
+--> Mutation 661: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:357 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 662: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:357 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 663: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:357 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 664: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:357 - ReplaceComparisonOperator != -> == - Status: Survived
+--> Mutation 665: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:358 - InsertUnaryOp Negation of i - Status: Survived
+--> Mutation 666: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:358 - InsertUnaryOp IINC 1 i - Status: Survived
+--> Mutation 667: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:358 - InsertUnaryOp IINC -1 i - Status: Survived
+--> Mutation 668: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:360 - ReplaceVariable value -> m_label - Status: Survived
+--> Mutation 669: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:360 - ReplaceVariable value -> m_labelS - Status: Survived
+--> Mutation 670: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:360 - ReplaceVariable value -> m_match - Status: Survived
+--> Mutation 671: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:360 - ReplaceVariable value -> m_statusMessagePrefix - Status: Survived
+--> Mutation 672: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:360 - ReplaceVariable value -> m_matchS - Status: Survived
+--> Mutation 673: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:360 - ReplaceVariable value -> m_attsToApplyTo - Status: Survived
+--> Mutation 674: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:361 - ReplaceVariable result -> m_label - Status: Survived
+--> Mutation 675: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:361 - ReplaceVariable result -> m_labelS - Status: Survived
+--> Mutation 676: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:361 - ReplaceVariable result -> m_match - Status: Survived
+--> Mutation 677: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:361 - ReplaceVariable result -> m_statusMessagePrefix - Status: Survived
+--> Mutation 678: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:361 - ReplaceVariable result -> value - Status: Survived
+--> Mutation 679: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:361 - ReplaceVariable result -> m_matchS - Status: Survived
+--> Mutation 680: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:361 - ReplaceVariable result -> m_attsToApplyTo - Status: Survived
+--> Mutation 681: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:361 - ReplaceComparisonOperator = null -> != null - Status: Survived
+--> Mutation 682: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:363 - ReplaceVariable result -> m_label - Status: Survived
+--> Mutation 683: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:363 - ReplaceVariable result -> m_labelS - Status: Survived
+--> Mutation 684: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:363 - ReplaceVariable result -> m_match - Status: Survived
+--> Mutation 685: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:363 - ReplaceVariable result -> m_statusMessagePrefix - Status: Survived
+--> Mutation 686: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:363 - ReplaceVariable result -> value - Status: Survived
+--> Mutation 687: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:363 - ReplaceVariable result -> m_matchS - Status: Survived
+--> Mutation 688: weka.gui.beans.SubstringLabeler$Match.apply(Lweka/core/Instance;)Ljava/lang/String;:363 - ReplaceVariable result -> m_attsToApplyTo - Status: Survived
+--> Mutation 689: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:381 - ReplaceVariable source -> m_label - Status: Killed
+--> Mutation 690: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:381 - ReplaceVariable source -> m_labelS - Status: Killed
+--> Mutation 691: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:381 - ReplaceVariable source -> m_match - Status: Killed
+--> Mutation 692: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:381 - ReplaceVariable source -> m_statusMessagePrefix - Status: Killed
+--> Mutation 693: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:381 - ReplaceVariable source -> m_matchS - Status: Killed
+--> Mutation 694: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:381 - ReplaceVariable source -> m_attsToApplyTo - Status: Killed
+--> Mutation 695: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:382 - ReplaceVariable m_matchS -> m_label - Status: Killed
+--> Mutation 696: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:382 - ReplaceVariable m_matchS -> m_labelS - Status: Killed
+--> Mutation 697: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:382 - ReplaceVariable m_matchS -> m_match - Status: Killed
+--> Mutation 698: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:382 - ReplaceVariable m_matchS -> m_statusMessagePrefix - Status: Killed
+--> Mutation 699: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:382 - ReplaceVariable m_matchS -> m_attsToApplyTo - Status: Survived
+--> Mutation 700: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:383 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 701: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:384 - ReplaceVariable m_ignoreCase -> m_regex - Status: Survived
+--> Mutation 702: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:384 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 703: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:384 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 704: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:385 - ReplaceVariable result -> m_label - Status: Killed
+--> Mutation 705: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:385 - ReplaceVariable result -> m_labelS - Status: Killed
+--> Mutation 706: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:385 - ReplaceVariable result -> m_match - Status: Killed
+--> Mutation 707: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:385 - ReplaceVariable result -> m_statusMessagePrefix - Status: Killed
+--> Mutation 708: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:385 - ReplaceVariable result -> match - Status: Killed
+--> Mutation 709: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:385 - ReplaceVariable result -> source - Status: Survived
+--> Mutation 710: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:385 - ReplaceVariable result -> m_matchS - Status: Killed
+--> Mutation 711: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:385 - ReplaceVariable result -> m_attsToApplyTo - Status: Killed
+--> Mutation 712: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:386 - ReplaceVariable match -> result - Status: Survived
+--> Mutation 713: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:386 - ReplaceVariable match -> m_label - Status: Killed
+--> Mutation 714: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:386 - ReplaceVariable match -> m_labelS - Status: Killed
+--> Mutation 715: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:386 - ReplaceVariable match -> m_match - Status: Killed
+--> Mutation 716: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:386 - ReplaceVariable match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 717: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:386 - ReplaceVariable match -> source - Status: Killed
+--> Mutation 718: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:386 - ReplaceVariable match -> m_matchS - Status: Survived
+--> Mutation 719: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:386 - ReplaceVariable match -> m_attsToApplyTo - Status: Survived
+--> Mutation 720: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_label - Status: Killed
+--> Mutation 721: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_labelS - Status: Killed
+--> Mutation 722: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_match - Status: Killed
+--> Mutation 723: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_statusMessagePrefix - Status: Killed
+--> Mutation 724: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> match - Status: Survived
+--> Mutation 725: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> source - Status: Survived
+--> Mutation 726: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_matchS - Status: Survived
+--> Mutation 727: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_attsToApplyTo - Status: Killed
+--> Mutation 728: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 729: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_label - Status: Killed
+--> Mutation 730: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_labelS - Status: Killed
+--> Mutation 731: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_match - Status: Killed
+--> Mutation 732: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_statusMessagePrefix - Status: Killed
+--> Mutation 733: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> match - Status: Killed
+--> Mutation 734: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> source - Status: Survived
+--> Mutation 735: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_matchS - Status: Killed
+--> Mutation 736: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceVariable result -> m_attsToApplyTo - Status: Killed
+--> Mutation 737: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 738: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 739: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:388 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 740: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:389 - ReplaceVariable m_regex -> m_ignoreCase - Status: Killed
+--> Mutation 741: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:389 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 742: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:389 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 743: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceVariable result -> m_label - Status: Survived
+--> Mutation 744: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceVariable result -> m_labelS - Status: Killed
+--> Mutation 745: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceVariable result -> m_match - Status: Killed
+--> Mutation 746: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceVariable result -> m_statusMessagePrefix - Status: Killed
+--> Mutation 747: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceVariable result -> match - Status: Killed
+--> Mutation 748: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceVariable result -> source - Status: Survived
+--> Mutation 749: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceVariable result -> m_matchS - Status: Killed
+--> Mutation 750: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceVariable result -> m_attsToApplyTo - Status: Killed
+--> Mutation 751: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceComparisonOperator <= -> -1 - Status: Survived
+--> Mutation 752: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceComparisonOperator <= -> == - Status: Killed
+--> Mutation 753: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:390 - ReplaceComparisonOperator <= -> < - Status: Survived
+--> Mutation 754: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:392 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 755: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable result -> m_label - Status: Killed
+--> Mutation 756: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable result -> m_labelS - Status: Killed
+--> Mutation 757: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable result -> m_match - Status: Killed
+--> Mutation 758: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable result -> m_statusMessagePrefix - Status: Killed
+--> Mutation 759: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable result -> match - Status: Killed
+--> Mutation 760: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable result -> source - Status: Killed
+--> Mutation 761: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable result -> m_matchS - Status: Killed
+--> Mutation 762: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable result -> m_attsToApplyTo - Status: Killed
+--> Mutation 763: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable match -> result - Status: Killed
+--> Mutation 764: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable match -> m_label - Status: Killed
+--> Mutation 765: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable match -> m_labelS - Status: Killed
+--> Mutation 766: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable match -> m_match - Status: Killed
+--> Mutation 767: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 768: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable match -> source - Status: Killed
+--> Mutation 769: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable match -> m_matchS - Status: Killed
+--> Mutation 770: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceVariable match -> m_attsToApplyTo - Status: Killed
+--> Mutation 771: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceComparisonOperator < -> -2 - Status: Killed
+--> Mutation 772: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceComparisonOperator < -> != - Status: Killed
+--> Mutation 773: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceComparisonOperator < -> <= - Status: Killed
+--> Mutation 774: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceConstant - 1 -> 0 - Status: Killed
+--> Mutation 775: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:395 - ReplaceConstant - 0 -> 1 - Status: Killed
+--> Mutation 776: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - ReplaceVariable ruleMatches -> m_regex - Status: Killed
+--> Mutation 777: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - ReplaceVariable ruleMatches -> m_ignoreCase - Status: Killed
+--> Mutation 778: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - InsertUnaryOp Negation of ruleMatches - Status: Survived
+--> Mutation 779: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 780: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - ReplaceVariable m_label -> m_labelS - Status: Killed
+--> Mutation 781: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - ReplaceVariable m_label -> m_match - Status: Killed
+--> Mutation 782: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - ReplaceVariable m_label -> m_statusMessagePrefix - Status: Killed
+--> Mutation 783: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - ReplaceVariable m_label -> m_matchS - Status: Killed
+--> Mutation 784: weka.gui.beans.SubstringLabeler$Match.apply(Ljava/lang/String;)Ljava/lang/String;:399 - ReplaceVariable m_label -> m_attsToApplyTo - Status: Killed
+--> Mutation 785: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:412 - ReplaceVariable m_regex -> m_ignoreCase - Status: Killed
+--> Mutation 786: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:412 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 787: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:412 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 788: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:412 - ReplaceConstant - Regex:  ->  - Status: Killed
+--> Mutation 789: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:412 - ReplaceConstant - Substring:  ->  - Status: Killed
+--> Mutation 790: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:413 - ReplaceVariable m_match -> m_label - Status: Killed
+--> Mutation 791: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:413 - ReplaceVariable m_match -> m_labelS - Status: Killed
+--> Mutation 792: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:413 - ReplaceVariable m_match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 793: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:413 - ReplaceVariable m_match -> m_matchS - Status: Killed
+--> Mutation 794: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:413 - ReplaceVariable m_match -> m_attsToApplyTo - Status: Killed
+--> Mutation 795: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:413 - ReplaceConstant -    ->  - Status: Killed
+--> Mutation 796: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:414 - ReplaceVariable m_ignoreCase -> m_regex - Status: Killed
+--> Mutation 797: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:414 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 798: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:414 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 799: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:414 - ReplaceConstant - [ignore case] ->  - Status: Killed
+--> Mutation 800: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:414 - ReplaceConstant -    ->  - Status: Killed
+--> Mutation 801: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_labelS - Status: Killed
+--> Mutation 802: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_match - Status: Survived
+--> Mutation 803: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_statusMessagePrefix - Status: Killed
+--> Mutation 804: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_matchS - Status: Killed
+--> Mutation 805: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_attsToApplyTo - Status: Survived
+--> Mutation 806: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceComparisonOperator = null -> != null - Status: Killed
+--> Mutation 807: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_labelS - Status: Killed
+--> Mutation 808: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_match - Status: Killed
+--> Mutation 809: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_statusMessagePrefix - Status: Killed
+--> Mutation 810: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_matchS - Status: Killed
+--> Mutation 811: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceVariable m_label -> m_attsToApplyTo - Status: Killed
+--> Mutation 812: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceComparisonOperator <= -> -1 - Status: Killed
+--> Mutation 813: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceComparisonOperator <= -> == - Status: Survived
+--> Mutation 814: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:415 - ReplaceComparisonOperator <= -> < - Status: Killed
+--> Mutation 815: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:416 - ReplaceConstant - Label:  ->  - Status: Killed
+--> Mutation 816: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:416 - ReplaceVariable m_label -> m_labelS - Status: Killed
+--> Mutation 817: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:416 - ReplaceVariable m_label -> m_match - Status: Killed
+--> Mutation 818: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:416 - ReplaceVariable m_label -> m_statusMessagePrefix - Status: Killed
+--> Mutation 819: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:416 - ReplaceVariable m_label -> m_matchS - Status: Killed
+--> Mutation 820: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:416 - ReplaceVariable m_label -> m_attsToApplyTo - Status: Killed
+--> Mutation 821: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:416 - ReplaceConstant -    ->  - Status: Killed
+--> Mutation 822: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:418 - ReplaceConstant - [Atts:  ->  - Status: Killed
+--> Mutation 823: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:418 - ReplaceVariable m_attsToApplyTo -> m_label - Status: Killed
+--> Mutation 824: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:418 - ReplaceVariable m_attsToApplyTo -> m_labelS - Status: Killed
+--> Mutation 825: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:418 - ReplaceVariable m_attsToApplyTo -> m_match - Status: Killed
+--> Mutation 826: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:418 - ReplaceVariable m_attsToApplyTo -> m_statusMessagePrefix - Status: Killed
+--> Mutation 827: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:418 - ReplaceVariable m_attsToApplyTo -> m_matchS - Status: Killed
+--> Mutation 828: weka.gui.beans.SubstringLabeler$Match.toString()Ljava/lang/String;:418 - ReplaceConstant - ] ->  - Status: Killed
+--> Mutation 829: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:428 - ReplaceVariable m_attsToApplyTo -> m_label - Status: Killed
+--> Mutation 830: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:428 - ReplaceVariable m_attsToApplyTo -> m_labelS - Status: Killed
+--> Mutation 831: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:428 - ReplaceVariable m_attsToApplyTo -> m_match - Status: Killed
+--> Mutation 832: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:428 - ReplaceVariable m_attsToApplyTo -> m_statusMessagePrefix - Status: Killed
+--> Mutation 833: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:428 - ReplaceVariable m_attsToApplyTo -> m_matchS - Status: Killed
+--> Mutation 834: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:428 - ReplaceConstant - @@MR@@ ->  - Status: Killed
+--> Mutation 835: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:429 - ReplaceVariable m_regex -> m_ignoreCase - Status: Killed
+--> Mutation 836: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:429 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 837: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:429 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 838: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:429 - ReplaceConstant - t ->  - Status: Killed
+--> Mutation 839: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:429 - ReplaceConstant - f ->  - Status: Killed
+--> Mutation 840: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:429 - ReplaceConstant - @@MR@@ ->  - Status: Killed
+--> Mutation 841: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:430 - ReplaceVariable m_ignoreCase -> m_regex - Status: Killed
+--> Mutation 842: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:430 - InsertUnaryOp Negation - Status: Survived
+--> Mutation 843: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:430 - ReplaceComparisonOperator == -> != - Status: Killed
+--> Mutation 844: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:430 - ReplaceConstant - t ->  - Status: Killed
+--> Mutation 845: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:430 - ReplaceConstant - f ->  - Status: Killed
+--> Mutation 846: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:430 - ReplaceConstant - @@MR@@ ->  - Status: Killed
+--> Mutation 847: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:431 - ReplaceVariable m_match -> m_label - Status: Killed
+--> Mutation 848: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:431 - ReplaceVariable m_match -> m_labelS - Status: Killed
+--> Mutation 849: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:431 - ReplaceVariable m_match -> m_statusMessagePrefix - Status: Killed
+--> Mutation 850: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:431 - ReplaceVariable m_match -> m_matchS - Status: Killed
+--> Mutation 851: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:431 - ReplaceVariable m_match -> m_attsToApplyTo - Status: Killed
+--> Mutation 852: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:431 - ReplaceConstant - @@MR@@ ->  - Status: Killed
+--> Mutation 853: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:432 - ReplaceVariable m_label -> m_labelS - Status: Killed
+--> Mutation 854: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:432 - ReplaceVariable m_label -> m_match - Status: Killed
+--> Mutation 855: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:432 - ReplaceVariable m_label -> m_statusMessagePrefix - Status: Killed
+--> Mutation 856: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:432 - ReplaceVariable m_label -> m_matchS - Status: Killed
+--> Mutation 857: weka.gui.beans.SubstringLabeler$Match.toStringInternal()Ljava/lang/String;:432 - ReplaceVariable m_label -> m_attsToApplyTo - Status: Killed
+* Compiling and checking tests
 * Computation finished

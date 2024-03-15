@@ -1,14 +1,11 @@
 * EvoSuite 1.2.1-SNAPSHOT
-* Configuration: EvoSuite_fixed-Dalgorithm=DynaMOSA
+* Configuration: EvoSuite_fixed
 * Going to generate test cases for class: com.liferay.portal.module.framework.LogBridge
 * Starting Client-0
-* Properties loaded from /Users/njimenez/Documents/Magister/100Clases/Test1/projects og/108_liferay/evosuite-files/evosuite.properties
-* Connecting to master process on port 3310
+* Properties loaded from C:\Users\super\Documents\Magister\100Clases\Test1\projects og\108_liferay\evosuite-files\evosuite.properties
+* Connecting to master process on port 8756
 * Analyzing classpath: 
 * Inheritance tree loaded from evosuite-files/inheritance.xml.gz
-[MASTER] 01:26:05.278 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
-[MASTER] 01:26:05.633 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
-[MASTER] 01:26:05.741 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.ShardingKey
 * Finished analyzing classpath
 * Generating tests for class com.liferay.portal.module.framework.LogBridge
 * Test criteria:
@@ -21,16 +18,15 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Total number of test goals for DYNAMOSA: 136
-* Using seed 2482030657809
+* Using seed 1710478032868
 * Starting evolution
 * Initial Number of Goals in DynaMOSA = 52 / 136
-[MASTER] 01:26:09.990 [logback-1] WARN  TestCluster - Failed to check cache for org.osgi.framework.ServiceReference<S> : Type points to itself
-[MASTER] 01:26:11.115 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
-[MASTER] 01:26:30.447 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 01:26:31.377 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 01:26:39.187 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: getStackWalkerWithClassReference
-[MASTER] 01:27:18.455 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
-* Search finished after 181s and 3590 generations, 531990 statements, best individual has fitness: 110.0
+[MASTER] 01:47:21.416 [logback-1] WARN  TestCluster - Failed to check cache for org.osgi.framework.ServiceReference<S> : Type points to itself
+[MASTER] 01:47:31.298 [logback-1] WARN  TestCluster - Failed to check cache for java.util.concurrent.ForkJoinTask<V> : Type points to itself
+[MASTER] 01:47:42.486 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 01:48:34.063 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 01:49:20.882 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 181s and 5902 generations, 880692 statements, best individual has fitness: 110.0
 * Minimizing test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
@@ -38,9 +34,9 @@
 * Total number of goals: 33
 * Number of covered goals: 11
 * Coverage analysis for criterion BRANCH
-* Coverage of criterion BRANCH: 25%
+* Coverage of criterion BRANCH: 17%
 * Total number of goals: 24
-* Number of covered goals: 6
+* Number of covered goals: 4
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
 * Total number of goals: 5
@@ -65,7 +61,7 @@
 * Coverage of criterion CBRANCH: 25%
 * Total number of goals: 24
 * Number of covered goals: 6
-* Generated 6 tests with total length 16
+* Generated 6 tests with total length 17
 * Resulting test suite's coverage: 31% (average coverage for all fitness functions)
 * Generating assertions
 * Resulting test suite's mutation score: 0%
@@ -110,21 +106,4 @@
 --> Mutation 37: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:75 - ReplaceComparisonOperator == -> != - Status: Survived
 --> Mutation 38: com.liferay.portal.module.framework.LogBridge.logged(Lorg/osgi/service/log/LogEntry;)V:76 - ReplaceVariable message -> symbolicName - Status: Survived
 * Compiling and checking tests
-[MASTER] 01:29:18.878 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:29:24.367 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:29:29.826 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:29:35.289 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:29:40.734 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-[MASTER] 01:29:46.184 [logback-1] WARN  JUnitAnalyzer - Found unstable test named initializationError -> class java.lang.RuntimeException: java.lang.IllegalStateException: Could not self-attach to current VM using external process
-* Permissions denied during test execution: 
-  - java.lang.RuntimePermission: 
-         preferences: 1
-         getStackWalkerWithClassReference: 1
-         writeFileDescriptor: 2
-  - java.security.AllPermission: 
-         <all actions> <all permissions>: 45006
-* Writing tests to file
-* Writing JUnit test case 'LogBridge_ESTest' to test_seeds/seed_1/tests_original
-* Done!
-
 * Computation finished
