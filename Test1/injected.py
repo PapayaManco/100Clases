@@ -11,8 +11,8 @@ copiar_a_proyectos_inyectados()
 copiar_a_original()
 
 for iteracion in range(1,2):
-    #seed = str(random.randint(1000000000000, 9999999999999))
-    seed = str(5072178650187)
+    seed = str(random.randint(1000000000000, 9999999999999))
+    #seed = str(5072178650187)
     # Injected
     for fila in info:
         clase_path = fila[1]
